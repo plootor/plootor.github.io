@@ -3,13 +3,11 @@ a {text-decoration: none;}
 
 .box{
     width: 1200px;
-    background-color: lightgoldenrodyellow;
     margin: 0 auto;
 }
 
 .header{
-    height: 168px;
-    background-color: floralwhite;
+    height: 200px;
 }
 
 .logo{
@@ -17,30 +15,36 @@ a {text-decoration: none;}
     float: left;
 }
 
+.logo img{
+    height: 200px;
+    margin-left: 51px;
+}
+
 .navigation{
     float: right;
     margin-top: 130px;
     margin-right: 10px;
-    border-bottom: 1px solid saddlebrown;
+    border-bottom: 1px solid black;
 }
 
 .navigation a{
     margin-right:25px;
     margin-left: 25px;
-    color: saddlebrown;
+    color: black;
     font-family: fantasy;
     font-size: 20px;
 }
 
 .sidebar{
     width: 300px;
-    background-color: lightpink;
     float: left;
 }
 
 .box1{
     text-align: justify;
-    color: red;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
 }
 
 .box2{}
@@ -56,30 +60,32 @@ a {text-decoration: none;}
 }
 
 .box li a{
-    color: red;
+    color: black;
 }
 
 .box3{
 
 }
 
+.box3 img{
+    width: 80px;
+    border: 1px solid black;
+    margin-right: 5px;
+}
+
 .boxcell{
-    background-color: floralwhite;
-    padding: 10px;
+    margin: 10px;
 }
 
 .content{
     width: 900px;
-    background-color: lightcoral;
     float: left;
 }
 
 .post{
     height: 400px;
-    width: 800px;
     border: 1px solid black;
-    background-color: lightpink;
-    margin-left: 50px;
+    margin-left: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -88,7 +94,6 @@ a {text-decoration: none;}
     height: 200px;
     width: 200px;
     margin: 10px;
-    border: 1px solid black;
     float: left;
 }
 
@@ -100,6 +105,7 @@ a {text-decoration: none;}
 .date{
     font-family: lora, serif;
     margin: 10px;
+    text-align: right;
 }
 
 .text{
@@ -122,4 +128,43 @@ a {text-decoration: none;}
 .footer{
     height: 200px;
     background-color: lightcyan;
+}
+
+.contact{
+    width: 380px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+}
+
+.contact p{
+    font-family: lora, serif;
+    text-align: left;
+    line-height: 30px;
+}
+
+.footerpost{
+    width: 380px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+}
+
+.footerpost p{
+    font-family: lora, serif;
+    text-align: left;
+    line-height: 30px;
+}
+
+.news{
+    width: 380px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+}
+
+.news p{
+    font-family: lora, serif;
+    text-align: left;
+    line-height: 30px;
 }
