@@ -125,6 +125,15 @@ a {text-decoration: none;}
     clear: both;
 }
 
+.posttitle{
+    color: blueviolet;
+}
+
+.blog-post img{
+    width: 880px;
+    margin: 10px;
+}
+
 .footer{
     height: 200px;
     background-color: lightcyan;
