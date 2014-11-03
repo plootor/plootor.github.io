@@ -1,4 +1,5 @@
-a {text-decoration: none;}
+*HOME PAGE*
+ a {text-decoration: none;}
 
 *{
     margin: 0px;
@@ -16,6 +17,10 @@ li{
 
 body{
     background-image: url("../images/Dior-classic-1.jpg");
+}
+
+.header{
+    margin-bottom: 80px;
 }
 
 .header .logo{
@@ -45,25 +50,162 @@ body{
     margin-top: 76px;
 }
 
-.content .title{
+.content-home .title{
     line-height: 65px;
     font-size: 55px;
-    margin-top: 80px;
     margin-bottom: 80px;
 }
 
-.content .description{
+.content-home .description{
     width: 460px;
     line-height: 25px;
     font-size: 20px;
     text-align: justify;
-    margin-bottom: 80px;
 }
 
 .footer{
     height: 40px;
     background-color: black;
     opacity: 0.8;
+    margin-top: 80px;
+}
+
+.footer .message{
+    color: #bbbab0;
+    line-height: 40px;
+    font-size: 20px;
+    margin-left: 10px;
+    float: left;
+}
+
+.footer .social-media li{
+    float: right;
+    margin-right: 10px;
+    padding-top: 2.5px;
+}
+
+.footer .social-media li a{
+    height: 40px;
+}
+
+.clear{
+    clear: both;
+}
+
+
+
+
+
+
+
+*ABOUT*
+a {text-decoration: none;}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    list-style: none;
+}
+
+.wrapper{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+body{
+    background-image: url("../images/Dior-classic-1.jpg");
+}
+
+.header{
+    margin-bottom: 80px;
+}
+
+.header .logo{
+    float: left;
+    height: 107px;
+}
+
+.header .navigation a{
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.header .navigation{
+    float: left;
+    height: 106px;
+    margin-right: 10px;
+    border-bottom: 1px solid black;
+}
+.header .navigation li{
+    float: left;
+}
+
+.header .navigation .menu{
+    margin-top: 76px;
+}
+
+.content-about{
+    background-color: black;
+    opacity: 0.8;
+}
+
+.content-about .main-about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content-about .main-about .main1{
+    width: 940px;
+}
+
+.content-about .main-about .main1 .history{
+    width: 940px;
+    line-height: 20px;
+    font-size: 18px;
+    text-align: justify;
+    color: #bbbab0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #bbbab0;
+}
+
+.content-about .main-about .main1 .development{
+    width: 940px;
+    line-height: 20px;
+    font-size: 18px;
+    text-align: justify;
+    color: #bbbab0;
+    padding-bottom:10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #bbbab0;
+}
+
+.content-about .main-about .main1 .important{
+    width: 940px;
+    line-height: 20px;
+    font-size: 18px;
+    text-align: justify;
+    color: #bbbab0;
+}
+
+.main-about .main1 h1{
+    color: #bbbab0;
+    font-size: 18px;
+}
+
+.footer{
+    height: 40px;
+    background-color: black;
+    opacity: 0.8;
+    margin-top: 80px;
 }
 
 .footer .message{
