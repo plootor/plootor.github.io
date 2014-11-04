@@ -62,8 +62,7 @@ body{
 /*FOOTER*/
 .footer{
     height: 40px;
-    background-color: black;
-    opacity: 0.8;
+    background-color: rgba(0,0,0,0.8);
     margin-top: 80px;
 }
 
@@ -99,8 +98,7 @@ body{
 
 /*ABOUT*/
 .content-about{
-    background-color: black;
-    opacity: 0.8;
+    background-color: rgba(0,0,0,0.8);
     padding: 50px 10px;
     height: 400px;
 }
@@ -154,8 +152,7 @@ body{
 
 /*NEWS*/
 .content-news{
-     background-color: black;
-     opacity: 0.8;
+     background-color: rgba(0,0,0,0.8);
      padding: 50px 10px;
      height: 400px;
 }
@@ -195,5 +192,23 @@ body{
 
 .content-news .cell2 img{
      border: 1px solid #bbbab0;
+     display: block;
+     margin-bottom: 20px;
 }
+
+
+/*GALLERY*/
+.content-gallery{
+    background-color: rgba(0,0,0,0.8);
+    padding: 50px 10px;
+    height: 400px;
+}
+
+ .content-gallery .photo-gallery img{
+     border: 1px solid #bbbab0;
+     display: block;
+     float: left;
+     margin-bottom: 10px;
+ }
+
 
