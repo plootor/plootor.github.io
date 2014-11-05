@@ -1,8 +1,8 @@
  a {text-decoration: none;}
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 li{
@@ -37,7 +37,7 @@ body{
     height: 107px;
 }
 
-.header .navigation a{
+.header .navigation .menu>li>a{
     color: black;
     font-size: 20px;
     line-height: 30px;
@@ -51,12 +51,31 @@ body{
     margin-right: 10px;
     border-bottom: 1px solid black;
 }
-.header .navigation li{
+
+.header .navigation .menu>li{
     float: left;
 }
 
 .header .navigation .menu{
     margin-top: 76px;
+}
+
+.header .navigation .menu .submenu{
+    border-left: 1px solid black;
+    margin-left: 15px;
+    margin-top: 10px;
+    display: none;
+}
+
+.header .navigation .submenu li a{
+     color: black;
+     font-size: 18px;
+     line-height: 24px;
+     margin-left: 5px;
+}
+
+.header .navigation .menu>li:hover .submenu{
+     display: block;
 }
 
 /*FOOTER*/
@@ -258,7 +277,6 @@ body{
      font-size: 18px;
      text-align: justify;
      color: #bbbab0;
-     text-align: center;
      padding: 10px;
 }
 
@@ -267,7 +285,6 @@ body{
      font-size: 14px;
      text-align: justify;
      color: #bbbab0;
-     text-align: center;
      padding: 10px;
 }
 
@@ -276,7 +293,58 @@ body{
      font-size: 20px;
      text-align: justify;
      color: #bbbab0;
-     text-align: center;
 }
+
+/*CONTACT*/
+.content-contact{
+     background-color: rgba(0,0,0,0.8);
+     padding: 50px 10px;
+     height: 400px;
+}
+
+.content-contact .cell1{
+     width: 380px;
+     float: left;
+     border-right: 1px solid #bbbab0;
+     height: 400px;
+     padding: 0 9px 0 10px;
+}
+
+.content-contact .cell1 .contact-form input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #bbbab0;
+    background-color: rgba(0,0,0,0);
+    color: #bbbab0;
+}
+
+.content-contact .cell1 .contact-form textarea{
+     width: 100%;
+     height: 250px;
+     border: none;
+     border-bottom: 1px solid #bbbab0;
+     background-color: rgba(0,0,0,0);
+     color: #bbbab0;
+}
+
+.content-contact .cell1 .contact-form button{
+     width: 100px;
+     height: 30px;
+     border: none;
+     background-color: rgba(0,0,0,0);
+     color: #bbbab0;
+    text-align: left;
+    cursor: pointer;
+}
+
+textarea:focus, input:focus{
+     outline: 0;
+}
+
+textarea{
+     resize: none;
+}
+
 
 
