@@ -302,15 +302,24 @@ body{
      height: 400px;
 }
 
-.content-contact .cell1{
+.content-team .cell{
      width: 380px;
      float: left;
      border-right: 1px solid #bbbab0;
      height: 400px;
      padding: 0 9px 0 10px;
+ }
+
+.content-team .cell:first-child{
+     padding: 0 9px 0 0;
 }
 
-.content-contact .cell1 .contact-form input{
+.content-team .cell:last-child{
+     padding: 0 0 0 10px;
+     border-right: none;
+}
+
+.content-contact .cell .contact-form input{
     width: 100%;
     height: 50px;
     border: none;
@@ -319,7 +328,7 @@ body{
     color: #bbbab0;
 }
 
-.content-contact .cell1 .contact-form textarea{
+.content-contact .cell .contact-form textarea{
      width: 100%;
      height: 250px;
      border: none;
@@ -328,14 +337,14 @@ body{
      color: #bbbab0;
 }
 
-.content-contact .cell1 .contact-form button{
+.content-contact .cell .contact-form button{
      width: 100px;
      height: 30px;
      border: none;
      background-color: rgba(0,0,0,0);
      color: #bbbab0;
-    text-align: left;
-    cursor: pointer;
+     text-align: left;
+     cursor: pointer;
 }
 
 textarea:focus, input:focus{
@@ -344,6 +353,20 @@ textarea:focus, input:focus{
 
 textarea{
      resize: none;
+}
+
+.content-contact .cell p{
+     color: #bbbab0;
+     font-size: 20px;
+     text-align: center;
+}
+
+.content-contact .cell .small-space{
+     padding-top:10px;
+}
+
+.content-contact .cell .photo-contact img{
+     border: 1px solid #bbbab0;
 }
 
 
