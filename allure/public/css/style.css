@@ -319,8 +319,8 @@ body{
      border-right: none;
 }
 
-.content-contact .cell:last-child::after{
-     clear: both;
+.centered:after{
+     clear:both;
 }
 
 .content-contact .cell .contact-form input{
@@ -369,10 +369,53 @@ textarea{
      padding-top:10px;
 }
 
-.content-contact .cell .photo-contact img{
-     border: 1px solid #bbbab0;
-     margin: 0 auto;
+.content-contact .cell p:first-child{
+    padding-top: 100px;
 }
+
+.content-contact .cell img{
+     border: 1px solid #bbbab0;
+     display: block;
+     margin: 0 auto;
+     margin-top: 50px;
+}
+
+
+/*PORTFOLIO*/
+ .content-portfolio{
+     background-color: rgba(0,0,0,0.8);
+     padding: 50px 10px;
+     height: 400px;
+ }
+
+ .content-portfolio .cell{
+     width: 180px;
+     float: left;
+     border-right: 1px solid #bbbab0;
+     height: 400px;
+     padding: 0 9px 0 10px;
+ }
+
+ .content-portfolio .cell:first-child{
+     padding: 0 9px 0 0;
+ }
+
+ .content-portfolio .cell:last-child{
+     padding: 0 0 0 10px;
+     border-right: none;
+ }
+
+ .content-portfolio .cell img{
+     border: 1px solid #bbbab0;
+     display: block;
+ }
+
+ .content-portfolio .cell h1{
+     color: #bbbab0;
+     font-size: 22px;
+     text-align: center;
+     padding-top: 10px;
+ }
 
 
 
