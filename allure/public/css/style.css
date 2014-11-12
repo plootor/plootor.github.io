@@ -15,6 +15,7 @@ li{
 
 body{
     background-image: url("../images/Dior-classic-1.jpg");
+    font-family: 'PT Sans', sans-serif;
 }
 
 .clear{
@@ -95,6 +96,7 @@ body{
 .footer .social-media li{
     float: right;
     padding-top: 2px;
+    padding-right: 7px;
 }
 
 .footer .social-media li a{
