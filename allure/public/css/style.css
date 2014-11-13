@@ -173,47 +173,52 @@ body{
     border: 1px solid #bbbab0;
 }
 
-/*NEWS*/
-.content-news{
+/*BLOG*/
+.content-blog{
      background-color: rgba(0,0,0,0.8);
      padding: 50px 10px;
      height: 400px;
 }
 
-.content-news .cell1{
+.content-blog .cell1{
      width: 940px;
      float: left;
 }
 
-.content-news .cell1 div{
+.content-blog .cell1 div{
      line-height: 20px;
      font-size: 18px;
      text-align: justify;
      color: #bbbab0;
-     padding-bottom: 10px;
+     padding-bottom: 5px;
      border-bottom: 1px solid #bbbab0;
 }
 
-.content-news .cell1 div:last-child{
+.content-blog .cell1 div:last-child{
      border-bottom: none;
 }
 
-.content-news .cell1 div:first-child h1{
+.content-blog .cell1 div:first-child h1{
      padding-top: 0;
 }
 
-.content-news .cell1 h1{
+.content-blog .cell1 h1{
      color: #bbbab0;
      font-size: 18px;
      padding-top: 9px;
 }
 
-.content-news .cell2{
+.content-blog .cell1 .stars{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.content-blog .cell2{
      float: right;
      width: 220px;
 }
 
-.content-news .cell2 img{
+.content-blog .cell2 img{
      border: 1px solid #bbbab0;
      display: block;
      margin-bottom: 20px;
@@ -424,28 +429,28 @@ textarea{
  }
 
 /*BLOG POST*/
- .content-blog{
+ .content-blogpost{
      background-color: rgba(0,0,0,0.8);
      padding: 50px 10px;
      height: 400px;
  }
 
- .content-blog .cell1{
+ .content-blogpost .cell1{
      width: 380px;
      float: left;
      padding-right: 20px;
  }
 
- .content-blog .cell1 img{
+ .content-blogpost .cell1 img{
      border: 1px solid #bbbab0;
  }
 
- .content-blog .cell2{
+ .content-blogpost .cell2{
      width: 780px;
      float: left;
  }
 
- .content-blog .cell2 div{
+ .content-blogpost .cell2 div{
      line-height: 20px;
      font-size: 18px;
      text-align: justify;
@@ -453,21 +458,22 @@ textarea{
      padding-bottom: 10px;
  }
 
- .content-blog .cell2 h1{
+ .content-blogpost .cell2 h1{
       color: #bbbab0;
       font-size: 22px;
   }
 
- .content-blog .cell2 h2{
+ .content-blogpost .cell2 h2{
      color: #bbbab0;
      font-size: 16px;
      text-align: right;
  }
 
- .content-blog .cell2 p{
+ .content-blogpost .cell2 p{
      color: #bbbab0;
      font-size: 17px;
      text-align: justify;
+     text-indent: 30px;
      padding-top: 10px;
      height: 400px;
  }
