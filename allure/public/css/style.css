@@ -9,12 +9,11 @@ li{
     list-style: none;
 }
 
-.wrapper{
-
-}
+ html, body{
+     height:100%;
+ }
 
 body{
-    background-image: url("../images/Dior-classic-1.jpg");
     font-family: 'Josefin Slab', serif;
 }
 
@@ -81,9 +80,11 @@ body{
 
 /*FOOTER*/
 .footer{
+    position: relative;
+    z-index: 30;
     height: 40px;
     background-color: rgba(0,0,0,0.8);
-    margin-top: 80px;
+    margin-top: -45px;
 }
 
 .footer .message{
@@ -104,6 +105,34 @@ body{
 }
 
 /*HOME PAGE*/
+ .wrapper{
+     position: relative;
+     z-index: 30;
+     min-height: 100%;
+ }
+
+.background{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background div{
+    width: 100%;
+}
+
+.content-home{
+    padding-bottom: 45px;
+}
+
 .content-home .title{
     line-height: 65px;
     font-size: 55px;
