@@ -292,11 +292,12 @@ body{
 }
 
 .content-team .cell{
-     width: 380px;
-     float: left;
-     border-right: 1px solid #bbbab0;
-     height: 400px;
-     padding: 0 9px 0 10px;
+    width: 330px;
+    float: left;
+    height: 400px;
+    padding: 0 9px 0 10px;
+    border: 1px solid white;
+    margin-right: 70px;
 }
 
 .content-team .cell:first-child{
@@ -304,8 +305,8 @@ body{
 }
 
 .content-team .cell:last-child{
-     padding: 0 0 0 10px;
-    border-right: none;
+    padding: 0 0 0 10px;
+    margin-right: 0;
 }
 
 .content-team .cell img{
@@ -340,6 +341,41 @@ body{
     margin: auto;
     padding-top: 15px;
 }
+/*TEAM EXPERIMENT*/
+
+ .social {
+     float: left;
+     margin: 0 45px;
+     width: 300px;
+     height: 400px;
+     display: block; text-align: center; line-height:103px; color: #fff;
+
+     position: relative;
+     transform:rotateY(0deg);
+     transition:transform .25s ease-out;
+     transform-style:preserve-3d;
+ }
+ .social > div {
+     width: 300px; height: 400px; background: #000; border: 1px solid white;
+     position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+ }
+ .social >.front {
+     transform:translateZ(40px);
+ }
+ .social >.back {
+     font-size: 3em;
+     border: 1px solid white;
+     background-color: #555;
+     transform:rotateY(-100deg) translateZ(40px);
+ }
+
+ /* Hover */
+ .social:hover {
+     transform: rotateY(100deg);
+ }
+
+/*END TEAM EXPERIMENT*/
+
 
 /*CONTACT*/
 .content-contact{
