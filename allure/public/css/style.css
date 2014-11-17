@@ -301,15 +301,20 @@ body{
      float: left;
      width: 298px;
      height: 398px;
-     background: #676667;
      border: 1px solid #bbbab0;
      display: block;
      text-align: center;
+     line-height:30px;
+     margin-right: 140px;
 
      position: relative;
      transform:rotateY(0deg);
      transition:transform .25s ease-out;
      transform-style:preserve-3d;
+}
+
+.social:last-child{
+    margin-right: 0;
 }
 
 .social > div {
@@ -318,6 +323,7 @@ body{
 
 .social >.front {
      transform:translateZ(40px);
+     background: #676667;
 }
 
 .social >.back {
@@ -340,19 +346,17 @@ body{
 .content-team .name{
     padding-top: 15px;
     font-size: 20px;
-    line-height:30px;
     color: #bbbab0;
 }
 
 .content-team .job{
     padding-top: 15px;
     font-size: 15px;
-    line-height:30px;
     color: #bbbab0;
 }
 
 .content-team .back-text{
-    padding: 50px 10px 50px 10px;
+    padding: 100px 10px 50px 10px;
     color: #bbbab0;
 }
 
