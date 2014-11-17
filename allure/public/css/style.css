@@ -299,12 +299,12 @@ body{
 
 .social{
      float: left;
-     width: 298px;
+     width: 328px;
      height: 398px;
      display: block;
      text-align: center;
      line-height:30px;
-     margin-right: 140px;
+     margin-right: 95px;
 
      position: relative;
      transform:rotateY(0deg);
@@ -322,7 +322,7 @@ body{
 
 .social >.front {
      transform:translateZ(40px);
-     background: #676667;
+     background: #555;
      border: 1px solid #bbbab0;
 }
 
