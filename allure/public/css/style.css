@@ -27,6 +27,7 @@ body{
      margin: 0 auto;
 }
 
+
 /*HEADER*/
 .header{
     margin-bottom: 80px;
@@ -78,13 +79,14 @@ body{
      display: block;
 }
 
+
 /*FOOTER*/
 .footer{
     position: relative;
     z-index: 30;
     height: 40px;
     background-color: rgba(0,0,0,0.8);
-    margin-top: -45px;
+    margin-top: 20px;
 }
 
 .footer .message{
@@ -104,12 +106,13 @@ body{
     height: 38px;
 }
 
+
 /*HOME PAGE*/
- .wrapper{
+.wrapper{
      position: relative;
      z-index: 30;
      min-height: 100%;
- }
+}
 
 .background{
     -webkit-background-size: cover;
@@ -145,6 +148,7 @@ body{
     font-size: 20px;
     text-align: justify;
 }
+
 
 /*ABOUT*/
 .content-about{
@@ -213,6 +217,7 @@ body{
 .content-about .cell2 img{
     border: 1px solid #bbbab0;
 }
+
 
 /*BLOG*/
 .content-blog{
@@ -284,6 +289,7 @@ body{
     margin-right: 0;
 }
 
+
 /*TEAM*/
 .content-team{
      background-color: rgba(0,0,0,0.8);
@@ -291,90 +297,64 @@ body{
      height: 400px;
 }
 
-.content-team .cell{
-    width: 330px;
-    float: left;
-    height: 400px;
-    padding: 0 9px 0 10px;
-    border: 1px solid white;
-    margin-right: 70px;
-}
-
-.content-team .cell:first-child{
-     padding: 0 9px 0 0;
-}
-
-.content-team .cell:last-child{
-    padding: 0 0 0 10px;
-    margin-right: 0;
-}
-
-.content-team .cell img{
+.social{
+     float: left;
+     width: 298px;
+     height: 398px;
+     background: #676667;
      border: 1px solid #bbbab0;
      display: block;
-     margin: auto;
-}
-
-.content-team .cell p{
-    color: #bbbab0;
-}
-
-.content-team .cell h1{
-     font-size: 25px;
-     color: #bbbab0;
      text-align: center;
-     padding: 5px;
-}
-
-.content-team .cell .job{
-     line-height: 18px;
-     font-size: 14px;
-     text-align: center;
-     padding: 5px;
-}
-
-.content-team .cell .text{
-    line-height: 23px;
-    font-size: 17px;
-    text-align: justify;
-    width: 280px;
-    margin: auto;
-    padding-top: 15px;
-}
-/*TEAM EXPERIMENT*/
-
- .social {
-     float: left;
-     margin: 0 45px;
-     width: 300px;
-     height: 400px;
-     display: block; text-align: center; line-height:103px; color: #fff;
 
      position: relative;
      transform:rotateY(0deg);
      transition:transform .25s ease-out;
      transform-style:preserve-3d;
- }
- .social > div {
-     width: 300px; height: 400px; background: #000; border: 1px solid white;
+}
+
+.social > div {
      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
- }
- .social >.front {
+}
+
+.social >.front {
      transform:translateZ(40px);
- }
- .social >.back {
-     font-size: 3em;
-     border: 1px solid white;
+}
+
+.social >.back {
+     font-size: 20px;
+     border: 1px solid #bbbab0;
      background-color: #555;
      transform:rotateY(-100deg) translateZ(40px);
- }
+}
 
- /* Hover */
- .social:hover {
+.social:hover {
      transform: rotateY(100deg);
- }
+}
 
-/*END TEAM EXPERIMENT*/
+.content-team img{
+    margin-top: 50px;
+    border: 1px solid #bbbab0;
+    text-align: center;
+}
+
+.content-team .name{
+    padding-top: 15px;
+    font-size: 20px;
+    line-height:30px;
+    color: #bbbab0;
+}
+
+.content-team .job{
+    padding-top: 15px;
+    font-size: 15px;
+    line-height:30px;
+    color: #bbbab0;
+}
+
+.content-team .back-text{
+    padding: 50px 10px 50px 10px;
+    color: #bbbab0;
+}
 
 
 /*CONTACT*/
@@ -390,7 +370,7 @@ body{
      border-right: 1px solid #bbbab0;
      height: 400px;
      padding: 0 9px 0 10px;
- }
+}
 
 .content-contact .cell:first-child{
      padding: 0 9px 0 0;
@@ -466,91 +446,88 @@ textarea{
 
 
 /*PORTFOLIO*/
- .content-portfolio{
+.content-portfolio{
      background-color: rgba(0,0,0,0.8);
      padding: 50px 10px;
      height: 400px;
- }
+}
 
- .content-portfolio .cell{
+.content-portfolio .cell{
      width: 180px;
      float: left;
      border-right: 1px solid #bbbab0;
      height: 400px;
      padding: 0 9px 0 10px;
- }
+}
 
- .content-portfolio .cell:first-child{
+.content-portfolio .cell:first-child{
      padding: 0 9px 0 0;
- }
+}
 
- .content-portfolio .cell:last-child{
+.content-portfolio .cell:last-child{
      padding: 0 0 0 10px;
      border-right: none;
- }
+}
 
- .content-portfolio .cell img{
+.content-portfolio .cell img{
      border: 1px solid #bbbab0;
      display: block;
- }
+}
 
- .content-portfolio .cell h1{
+.content-portfolio .cell h1{
      color: #bbbab0;
      font-size: 22px;
      text-align: center;
      padding-top: 10px;
- }
+}
+
 
 /*BLOG POST*/
- .content-blogpost{
+.content-blogpost{
      background-color: rgba(0,0,0,0.8);
      padding: 50px 10px;
      height: 400px;
- }
+}
 
- .content-blogpost .cell1{
+.content-blogpost .cell1{
      width: 380px;
      float: left;
      padding-right: 20px;
- }
+}
 
- .content-blogpost .cell1 img{
+.content-blogpost .cell1 img{
      border: 1px solid #bbbab0;
- }
+}
 
- .content-blogpost .cell2{
+.content-blogpost .cell2{
      width: 780px;
      float: left;
- }
+}
 
- .content-blogpost .cell2 div{
+.content-blogpost .cell2 div{
      line-height: 20px;
      font-size: 18px;
      text-align: justify;
      color: #bbbab0;
      padding-bottom: 10px;
- }
+}
 
- .content-blogpost .cell2 h1{
+.content-blogpost .cell2 h1{
       color: #bbbab0;
       font-size: 22px;
-  }
+ }
 
- .content-blogpost .cell2 h2{
+.content-blogpost .cell2 h2{
      color: #bbbab0;
      font-size: 16px;
      text-align: right;
- }
+}
 
- .content-blogpost .cell2 p{
+.content-blogpost .cell2 p{
      color: #bbbab0;
      font-size: 17px;
      text-align: justify;
      text-indent: 30px;
      padding-top: 10px;
      height: 400px;
- }
-
-
-
-
+}
