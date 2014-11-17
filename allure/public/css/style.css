@@ -301,7 +301,6 @@ body{
      float: left;
      width: 298px;
      height: 398px;
-     border: 1px solid #bbbab0;
      display: block;
      text-align: center;
      line-height:30px;
@@ -324,6 +323,7 @@ body{
 .social >.front {
      transform:translateZ(40px);
      background: #676667;
+     border: 1px solid #bbbab0;
 }
 
 .social >.back {
