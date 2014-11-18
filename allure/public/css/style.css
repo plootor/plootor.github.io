@@ -299,12 +299,12 @@ body{
 
 .social{
      float: left;
-     width: 328px;
+     width: 263px;
      height: 398px;
      display: block;
      text-align: center;
      line-height:30px;
-     margin-right: 95px;
+     margin-right: 40px;
 
      position: relative;
      transform:rotateY(0deg);
@@ -321,9 +321,14 @@ body{
 }
 
 .social >.front {
-     transform:translateZ(40px);
-     background: #555;
-     border: 1px solid #bbbab0;
+    transform:translateZ(40px);
+    background: url("http://subtlepatterns.com/patterns/natural_paper.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    /*background: url("http://www.designbolts.com/wp-content/uploads/2013/02/Rough-Grey-Seamless-Pattern-For-Website-Background.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+    /*background: url("http://www.designbolts.com/wp-content/uploads/2013/02/Old-Husk-Grey-Seamless-Pattern-For-Website-Background.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+    /*background: url("http://www.designbolts.com/wp-content/uploads/2013/02/Rough-Cloth-Grey-Seamless-Pattern-For-Website-Background.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+    /*background: url("http://www.designbolts.com/wp-content/uploads/2013/02/Noise-Light-Grey-Tileable-Pattern-For-Website-Background.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+    /*background: url("http://www.designbolts.com/wp-content/uploads/2013/02/Cork-Grey-Seamless-Pattern-For-Website-Background.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+    border: 1px solid #bbbab0;
 }
 
 .social >.back {
@@ -346,13 +351,13 @@ body{
 .content-team .name{
     padding-top: 15px;
     font-size: 20px;
-    color: #bbbab0;
+    color: darkslategray;
 }
 
 .content-team .job{
     padding-top: 15px;
     font-size: 15px;
-    color: #bbbab0;
+    color: darkslategray;
 }
 
 .content-team .back-text{
