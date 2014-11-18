@@ -220,18 +220,26 @@ body{
 
 .content-about .cell p{
     color: #bbbab0;
-    font-size: 14px;
+    font-size: 16px;
     text-align: justify;
+    padding-top: 20px;
+    line-height: 20px;
 }
 
 .content-about .cell{
     width: 540px;
+    height: 200px;
     float: left;
-    padding-right: 50px;
+    padding-right: 100px;
 }
 
-.content-about .cell:last-child{
+.content-about .cell:nth-child(2n){
     padding-right: 0;
+}
+
+.content-about .cell img{
+    display: block;
+    margin: 0 auto;
 }
 
 
