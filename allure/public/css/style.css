@@ -157,7 +157,7 @@ body{
     height: 400px;
 }
 
-.content-about .cell1{
+/*.content-about .cell1{
     width: 940px;
     float: left;
 }
@@ -216,6 +216,22 @@ body{
 
 .content-about .cell2 img{
     border: 1px solid #bbbab0;
+}*/
+
+.content-about .cell p{
+    color: #bbbab0;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.content-about .cell{
+    width: 540px;
+    float: left;
+    padding-right: 50px;
+}
+
+.content-about .cell:last-child{
+    padding-right: 0;
 }
 
 
