@@ -285,7 +285,8 @@ body{
 
 .social >.front {
     transform:translateZ(40px);
-    background: url("http://subtlepatterns.com/patterns/natural_paper.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("http://cdns2.freepik.com/free-photo/dark-gray-perforated-background_23-2147491256.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    /*background: url("http://subtlepatterns.com/patterns/natural_paper.png") repeat scroll 0 0 rgba(0, 0, 0, 0);*/
     /*background: url("http://www.designbolts.com/wp-content/uploads/2013/02/Rough-Grey-Seamless-Pattern-For-Website-Background.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);*/
     /*background: url("http://www.designbolts.com/wp-content/uploads/2013/02/Old-Husk-Grey-Seamless-Pattern-For-Website-Background.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);*/
     /*background: url("http://www.designbolts.com/wp-content/uploads/2013/02/Rough-Cloth-Grey-Seamless-Pattern-For-Website-Background.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);*/
