@@ -157,73 +157,12 @@ body{
     height: 400px;
 }
 
-/*.content-about .cell1{
-    width: 940px;
-    float: left;
-}
-
-.content-about .cell1>div{
-    line-height: 25px;
-    font-size: 18px;
-    text-align: justify;
-    color: #bbbab0;
-
-}
-
-.content-about .cell1 div:first-child{
-    margin-top: 0;
-}
-
-.content-about .cell1 div:last-child{
-     border-bottom: none;
-}
-
-.a-line{
-    margin:9px 0 10px 0;
-    background-color: #bbbab0 !important;
-    height: 1px !important;
-}
-
-.content-about .cell1 div:last-child{
-     margin-bottom: 0;
-}
-
-.content-about .cell1 h1{
-    color: #bbbab0;
-    font-size: 18px;
-    height: 20px;
-}
-
-.content-about .cell1 p{
-    height: 100px;
-    overflow: hidden;
-}
-
-.content-about .cell2{
-    float: right;
-    width: 220px;
-}
-
-.content-about .cell2 p{
-    color: #bbbab0;
-    font-size: 14px;
-    text-align: center;
-}
-
-.content-about .small-space{
-     padding-top:10px;
- }
-
-.content-about .cell2 img{
-    border: 1px solid #bbbab0;
-}*/
-
 .content-about .cell p{
     color: #bbbab0;
-    font-size: 16px;
-    text-align: justify;
+    font-size: 18px;
+    text-align: center;
     padding-top: 20px;
-    line-height: 20px;
+    line-height: 22px;
 }
 
 .content-about .cell{
