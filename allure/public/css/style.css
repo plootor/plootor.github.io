@@ -30,12 +30,18 @@ body{
 
 /*HEADER*/
 .header{
+    position: relative;
+    z-index: 30;
+    height: 100px;
+    background-color: rgba(300,300,300,0.8);
     margin-bottom: 80px;
+    width: 100%;
 }
 
 .header .logo{
     float: left;
-    height: 107px;
+    height: 100px;
+    margin-top: 15px;
 }
 
 .header .navigation .menu>li>a{
@@ -48,7 +54,7 @@ body{
 
 .header .navigation{
     float: left;
-    height: 106px;
+    height: 99px;
     margin-right: 10px;
     border-bottom: 1px solid black;
 }
@@ -58,7 +64,7 @@ body{
 }
 
 .header .navigation .menu{
-    margin-top: 76px;
+    margin-top: 70px;
 }
 
 .header .navigation .menu .submenu{
