@@ -98,7 +98,7 @@ body, input, textarea,button{
     z-index: 30;
     height: 40px;
     background-color: rgba(0,0,0,0.8);
-    margin-top: -45px;
+    /*margin-top: -45px;*/
 }
 
 .footer .message{
@@ -472,6 +472,80 @@ textarea{
      text-align: center;
      padding-top: 10px;
 }
+
+
+/*PORTFOLIO2*/
+ .content-portfolio2{
+     background-color: rgba(0,0,0,0.8);
+     padding: 50px 10px;
+     height: 400px;
+ }
+
+ .content-portfolio2 .cell{
+     width: 380px;
+     float: left;
+     border-right: 1px solid #bbbab0;
+     height: 400px;
+     padding: 0 9px 0 10px;
+ }
+
+ .content-portfolio2 .cell:first-child{
+     padding: 0 9px 0 0;
+ }
+
+ .content-portfolio2 .cell:last-child{
+     padding: 0 0 0 10px;
+     border-right: none;
+ }
+
+ .content-portfolio2 .cell img{
+     border: 1px solid #bbbab0;
+     display: block;
+ }
+
+ .content-portfolio2 .cell h1{
+     color: #bbbab0;
+     font-size: 22px;
+     text-align: center;
+     padding-top: 10px;
+ }
+
+
+ /*PORTFOLIO3*/
+ .content-portfolio3{
+     background-color: rgba(0,0,0,0.8);
+     padding: 50px 10px;
+     height: 400px;
+ }
+
+ .content-portfolio3 .cell{
+     width: 580px;
+     float: left;
+     border-right: 1px solid #bbbab0;
+     height: 400px;
+     padding: 0 9px 0 10px;
+ }
+
+ .content-portfolio3 .cell:first-child{
+     padding: 0 9px 0 0;
+ }
+
+ .content-portfolio3 .cell:last-child{
+     padding: 0 0 0 10px;
+     border-right: none;
+ }
+
+ .content-portfolio3 .cell img{
+     border: 1px solid #bbbab0;
+     display: block;
+ }
+
+ .content-portfolio3 .cell h1{
+     color: #bbbab0;
+     font-size: 22px;
+     text-align: center;
+     padding-top: 10px;
+ }
 
 
 /*BLOG POST*/
