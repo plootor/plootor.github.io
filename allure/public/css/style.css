@@ -542,6 +542,7 @@ textarea{
 
  .content-portfolio2 .cell img{
      border: 1px solid #bbbab0;
+     transition: all 1s ease;
      display: block;
  }
 
@@ -564,8 +565,8 @@ textarea{
 
  .content-portfolio2 .cell .photo-portfolio .hover{
      position: absolute;
-     top: 30%;
-     transform: translateY(-50px);
+     top: 35%;
+     transform: translateY(-30px);
      opacity: 0;
      transition: transform 0.4s 0.4s ease-out, opacity 0.3s ease-in-out;
      width: 90%;
@@ -576,7 +577,7 @@ textarea{
  .content-portfolio2 .cell:hover .photo-portfolio .hover{
      transform: translateY(0);
      opacity: 1;
-     /*background-color: rgba(0,0,0,0.8);*/
+     background-color: rgba(300,300,300,0.5);
  }
 
  /*.content-portfolio2 .cell:hover h1{
@@ -586,8 +587,9 @@ textarea{
  .content-portfolio2 .cell .photo-portfolio .text{
      font-size: 18px;
      line-height: 22px;
-     color: #bbbab0;
-     padding: 10px 40px 10px 40px;
+     text-align: center;
+     color: black;
+     padding: 15px 40px 15px 40px;
  }
 
  /*.content-portfolio2 .cell .photo-portfolio .line{
@@ -595,6 +597,19 @@ textarea{
      height: 1px;
      background-color: #bbbab0;
  }*/
+
+ .content-portfolio2 .cell .photo-portfolio .hoverbg{
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     top: 0;
+     background-color: black;
+     opacity: 0;
+ }
+
+ .content-portfolio2 .cell:hover .photo-portfolio. hoverbg{
+     opacity:0.7;
+ }
 
 
 /*PORTFOLIO3*/
