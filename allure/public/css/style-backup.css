@@ -1,6 +1,4 @@
-header, section, footer, aside, nav, main, article, figure {display: block;}
-
-a {text-decoration: none;}
+ a {text-decoration: none;}
 
 *{
     margin: 0;
@@ -23,12 +21,6 @@ body, input, textarea,button{
     clear: both;
 }
 
-main{
-    background-color: rgba(0,0,0,0.8);
-    padding: 50px 10px;
-    height: 400px;
-}
-
 .centered{
      width: 1180px;
      padding: 0 10px;
@@ -43,20 +35,27 @@ main{
 
 
 /*HEADER*/
-header{
+.header{
     position: relative;
+    z-index: 30;
     height: 100px;
+    /*background-color: rgba(300,300,300,0.9);*/
     margin-bottom: 80px;
     width: 100%;
 }
+/*
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+ }*/
 
-header .logo{
+.header .logo{
     float: left;
     height: 100px;
     margin-top: 15px;
 }
 
-header nav .menu>li>a{
+.header .navigation .menu>li>a{
     color: black;
     font-size: 20px;
     line-height: 30px;
@@ -64,76 +63,73 @@ header nav .menu>li>a{
     margin-right: 15px;
 }
 
-header nav{
+.header .navigation{
     float: left;
     height: 99px;
     margin-right: 10px;
     border-bottom: 1px solid black;
 }
 
-header nav .menu>li{
+.header .navigation .menu>li{
     float: left;
 }
 
-header nav .menu{
+.header .navigation .menu{
     margin-top: 70px;
 }
 
-header nav .menu .submenu{
+.header .navigation .menu .submenu{
     border-left: 1px solid black;
     margin-left: 15px;
     margin-top: 10px;
     display: none;
 }
 
-header nav .submenu li a{
+.header .navigation .submenu li a{
      color: black;
      font-size: 18px;
      line-height: 24px;
      margin-left: 5px;
 }
 
-header nav .menu>li:hover .submenu{
+.header .navigation .menu>li:hover .submenu{
      display: block;
 }
 
 
 /*FOOTER*/
-footer{
+.footer{
     position: relative;
-    z-index: 10;
+    z-index: 30;
     height: 40px;
     background-color: rgba(0,0,0,0.8);
+    /*margin-top: -45px;*/
 }
 
-footer .message{
+.footer .message{
     color: #bbbab0;
     line-height: 40px;
     font-size: 20px;
     float: left;
 }
 
-footer .social-media li{
+.footer .social-media li{
     float: right;
     padding-top: 2px;
     padding-right: 7px;
 }
 
-footer .social-media li a{
-    height: 35px;
-    display: block;
+.footer .social-media li a{
+    height: 38px;
 }
 
 
 /*HOME PAGE*/
 .wrapper{
-    position: relative;
-    z-index: 10;
-    min-height: 100%;
-    overflow: hidden;
-    padding-bottom: 55px;
-    box-sizing: border-box;
-    margin-bottom: -45px;
+     position: relative;
+     z-index: 30;
+     height: 100%;
+     overflow: hidden;
 }
 
 .background{
@@ -173,12 +169,18 @@ footer .social-media li a{
 
 
 /*ABOUT*/
-.about .row:last-child .cell img{
+.content-about{
+    background-color: rgba(0,0,0,0.8);
+    padding: 50px 10px;
+    height: 400px;
+}
+
+.content-about .row:last-child .cell img{
     margin-top: 22px;
 
 }
 
-.about .cell p{
+.content-about .cell p{
     color: #bbbab0;
     font-size: 18px;
     text-align: center;
@@ -186,18 +188,18 @@ footer .social-media li a{
     line-height: 24px;
 }
 
-.about .cell{
+.content-about .cell{
     width: 540px;
     height: 200px;
     float: left;
     padding-right: 100px;
 }
 
-.about .cell:nth-child(2n){
+.content-about .cell:nth-child(2n){
     padding-right: 0;
 }
 
-.about .cell img{
+.content-about .cell img{
     display: block;
     margin: 0 auto;
 }

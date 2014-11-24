@@ -1,4 +1,6 @@
- a {text-decoration: none;}
+header, section, footer, aside, nav, main, article, figure {display: block;}
+
+a {text-decoration: none;}
 
 *{
     margin: 0;
@@ -21,6 +23,12 @@ body, input, textarea,button{
     clear: both;
 }
 
+main{
+    background-color: rgba(0,0,0,0.8);
+    padding: 50px 10px;
+    height: 400px;
+}
+
 .centered{
      width: 1180px;
      padding: 0 10px;
@@ -35,27 +43,20 @@ body, input, textarea,button{
 
 
 /*HEADER*/
-.header{
+header{
     position: relative;
-    z-index: 30;
     height: 100px;
-    /*background-color: rgba(300,300,300,0.9);*/
     margin-bottom: 80px;
     width: 100%;
 }
-/*
-*, *:after, *:before {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
- }*/
 
-.header .logo{
+header .logo{
     float: left;
     height: 100px;
     margin-top: 15px;
 }
 
-.header .navigation .menu>li>a{
+header nav .menu>li>a{
     color: black;
     font-size: 20px;
     line-height: 30px;
@@ -63,73 +64,76 @@ body, input, textarea,button{
     margin-right: 15px;
 }
 
-.header .navigation{
+header nav{
     float: left;
     height: 99px;
     margin-right: 10px;
     border-bottom: 1px solid black;
 }
 
-.header .navigation .menu>li{
+header nav .menu>li{
     float: left;
 }
 
-.header .navigation .menu{
+header nav .menu{
     margin-top: 70px;
 }
 
-.header .navigation .menu .submenu{
+header nav .menu .submenu{
     border-left: 1px solid black;
     margin-left: 15px;
     margin-top: 10px;
     display: none;
 }
 
-.header .navigation .submenu li a{
+header nav .submenu li a{
      color: black;
      font-size: 18px;
      line-height: 24px;
      margin-left: 5px;
 }
 
-.header .navigation .menu>li:hover .submenu{
+header nav .menu>li:hover .submenu{
      display: block;
 }
 
 
 /*FOOTER*/
-.footer{
+footer{
     position: relative;
-    z-index: 30;
+    z-index: 10;
     height: 40px;
     background-color: rgba(0,0,0,0.8);
-    /*margin-top: -45px;*/
 }
 
-.footer .message{
+footer .message{
     color: #bbbab0;
     line-height: 40px;
     font-size: 20px;
     float: left;
 }
 
-.footer .social-media li{
+footer .social-media li{
     float: right;
     padding-top: 2px;
     padding-right: 7px;
 }
 
-.footer .social-media li a{
-    height: 38px;
+footer .social-media li a{
+    height: 35px;
+    display: block;
 }
 
 
 /*HOME PAGE*/
 .wrapper{
-     position: relative;
-     z-index: 30;
-     height: 100%;
-     overflow: hidden;
+    position: relative;
+    z-index: 10;
+    min-height: 100%;
+    overflow: hidden;
+    padding-bottom: 55px;
+    box-sizing: border-box;
+    margin-bottom: -45px;
 }
 
 .background{
@@ -169,18 +173,12 @@ body, input, textarea,button{
 
 
 /*ABOUT*/
-.content-about{
-    background-color: rgba(0,0,0,0.8);
-    padding: 50px 10px;
-    height: 400px;
-}
-
-.content-about .row:last-child .cell img{
+.about .row:last-child .cell img{
     margin-top: 22px;
 
 }
 
-.content-about .cell p{
+.about .cell p{
     color: #bbbab0;
     font-size: 18px;
     text-align: center;
@@ -188,36 +186,30 @@ body, input, textarea,button{
     line-height: 24px;
 }
 
-.content-about .cell{
+.about .cell{
     width: 540px;
     height: 200px;
     float: left;
     padding-right: 100px;
 }
 
-.content-about .cell:nth-child(2n){
+.about .cell:nth-child(2n){
     padding-right: 0;
 }
 
-.content-about .cell img{
+.about .cell img{
     display: block;
     margin: 0 auto;
 }
 
 
 /*BLOG*/
-.content-blog{
-     background-color: rgba(0,0,0,0.8);
-     padding: 50px 10px;
-     height: 400px;
-}
-
-.content-blog .cell1{
+.blog .cell1{
      width: 940px;
      float: left;
 }
 
-.content-blog .cell1 div{
+.blog .cell1 div{
      line-height: 20px;
      font-size: 18px;
      text-align: justify;
@@ -226,31 +218,31 @@ body, input, textarea,button{
      border-bottom: 1px solid #bbbab0;
 }
 
-.content-blog .cell1 div:last-child{
+.blog .cell1 div:last-child{
      border-bottom: none;
 }
 
-.content-blog .cell1 div:first-child h1{
+.blog .cell1 div:first-child h1{
      padding-top: 0;
 }
 
-.content-blog .cell1 h1{
+.blog .cell1 h1{
      color: #bbbab0;
      font-size: 18px;
      padding-top: 9px;
 }
 
-.content-blog .cell1 .stars{
+.blog .cell1 .stars{
     text-align: center;
     padding-top: 5px;
 }
 
-.content-blog .cell2{
+.blog .cell2{
      float: right;
      width: 220px;
 }
 
-.content-blog .cell2 img{
+.blog .cell2 img{
      border: 1px solid #bbbab0;
      display: block;
      margin-bottom: 20px;
@@ -303,9 +295,6 @@ body, input, textarea,button{
      font-size: 20px;
      line-height: 26px;
      color: #bbbab0;
-
-     width: ;
-     height: ;
      border: none;
      background-color: rgba(0,0,0,0);
      text-align: left;
@@ -332,31 +321,19 @@ body, input, textarea,button{
 
 
 /*GALLERY*/
-.content-gallery{
-    background-color: rgba(0,0,0,0.8);
-    padding: 50px 10px;
-    height: 400px;
-}
-
-.content-gallery .photo-gallery img{
+.gallery .photo-gallery img{
      border: 1px solid #bbbab0;
      display: block;
      float: left;
      margin: 0 5px 10px 0;
 }
 
-.content-gallery .photo-gallery div img:last-child{
+.gallery .photo-gallery div img:last-child{
     margin-right: 0;
 }
 
 
 /*TEAM*/
-.content-team{
-     background-color: rgba(0,0,0,0.8);
-     padding: 50px 10px;
-     height: 400px;
-}
-
 .social{
      float: left;
      width: 265px;
@@ -404,44 +381,31 @@ body, input, textarea,button{
      transform: rotateY(100deg);
 }
 
-.content-team img{
+.team img{
     margin-top: 50px;
     border: 1px solid #bbbab0;
     text-align: center;
 }
 
-.content-team .name{
+.team .name{
     padding-top: 15px;
     font-size: 20px;
     color: #bbbab0;
 }
 
-.content-team .job{
+.team .job{
     padding-top: 15px;
     font-size: 15px;
     color: #bbbab0;
 }
 
-.content-team .back-text{
+.team .back-text{
     padding: 100px 10px 50px 10px;
     color: #bbbab0;
 }
 
-
-/*.content-team .border{
-    height: 394px;
-    border: 1px solid darkslategray;
-}*/
-
-
 /*CONTACT*/
-.content-contact{
-     background-color: rgba(0,0,0,0.8);
-     padding: 50px 10px;
-     height: 400px;
-}
-
-.content-contact .cell{
+.contact .cell{
      width: 380px;
      float: left;
      border-right: 1px solid #bbbab0;
@@ -449,16 +413,16 @@ body, input, textarea,button{
      padding: 0 9px 0 10px;
 }
 
-.content-contact .cell:first-child{
+.contact .cell:first-child{
      padding: 0 9px 0 0;
 }
 
-.content-contact .cell:last-child{
+.contact .cell:last-child{
      padding: 0 0 0 10px;
      border-right: none;
 }
 
-.content-contact .cell .contact-form input{
+.contact .cell .contact-form input{
     width: 100%;
     height: 50px;
     border: none;
@@ -467,7 +431,7 @@ body, input, textarea,button{
     color: #bbbab0;
 }
 
-.content-contact .cell .contact-form textarea{
+.contact .cell .contact-form textarea{
      width: 100%;
      height: 250px;
      border: none;
@@ -476,7 +440,7 @@ body, input, textarea,button{
      color: #bbbab0;
 }
 
-.content-contact .cell .contact-form button{
+.contact .cell .contact-form button{
      width: 100px;
      height: 30px;
      border: none;
@@ -494,21 +458,21 @@ textarea{
      resize: none;
 }
 
-.content-contact .cell p{
+.contact .cell p{
      color: #bbbab0;
      font-size: 23px;
      text-align: center;
 }
 
-.content-contact .cell .small-space{
+.contact .cell .small-space{
      padding-top:10px;
 }
 
-.content-contact .cell p:first-child{
+.contact .cell p:first-child{
     padding-top: 100px;
 }
 
-.content-contact .cell img{
+.contact .cell img{
      border: 1px solid #bbbab0;
      display: block;
      margin: 0 auto;
@@ -517,13 +481,7 @@ textarea{
 
 
 /*PORTFOLIO*/
-.content-portfolio{
-     background-color: rgba(0,0,0,0.8);
-     padding: 50px 10px;
-     height: 400px;
-}
-
-.content-portfolio .cell{
+.portfolio .cell{
      width: 180px;
      float: left;
      border-right: 1px solid #bbbab0;
@@ -531,21 +489,21 @@ textarea{
      padding: 0 9px 0 10px;
 }
 
-.content-portfolio .cell:first-child{
+.portfolio .cell:first-child{
      padding: 0 9px 0 0;
 }
 
-.content-portfolio .cell:last-child{
+.portfolio .cell:last-child{
      padding: 0 0 0 10px;
      border-right: none;
 }
 
-.content-portfolio .cell img{
+.portfolio .cell img{
      border: 1px solid #bbbab0;
      display: block;
 }
 
-.content-portfolio .cell h1{
+.portfolio .cell h1{
      color: #bbbab0;
      font-size: 22px;
      text-align: center;
@@ -554,13 +512,7 @@ textarea{
 
 
  /*PORTFOLIO2*/
- .content-portfolio2{
-     background-color: rgba(0,0,0,0.8);
-     padding: 50px 10px;
-     height: 400px;
- }
-
- .content-portfolio2 .cell{
+ .portfolio2 .cell{
      width: 580px;
      float: left;
      border-right: 1px solid #bbbab0;
@@ -568,38 +520,38 @@ textarea{
      padding: 0 9px 0 10px;
  }
 
- .content-portfolio2 .cell:first-child{
+ .portfolio2 .cell:first-child{
      padding: 0 9px 0 0;
  }
 
- .content-portfolio2 .cell:last-child{
+ .portfolio2 .cell:last-child{
      padding: 0 0 0 10px;
      border-right: none;
  }
 
- .content-portfolio2 .cell img{
+ .portfolio2 .cell img{
      transition: all 1s ease;
      display: block;
  }
 
- .content-portfolio2 .cell h1{
+ .portfolio2 .cell h1{
      color: #bbbab0;
      font-size: 22px;
      text-align: center;
      padding-top: 10px;
  }
 
- .content-portfolio2 .cell .photo-portfolio{
+ .portfolio2 .cell .photo-portfolio{
      overflow: hidden;
      position: relative;
      border: 1px solid #bbbab0;
  }
 
- .content-portfolio2 .cell:hover .photo-portfolio img{
+ .portfolio2 .cell:hover .photo-portfolio img{
      transform: scale(1.10);
  }
 
- .content-portfolio2 .cell .photo-portfolio .hover{
+ .portfolio2 .cell .photo-portfolio .hover{
      position: absolute;
      top: 35%;
      transform: translateY(-30px);
@@ -610,7 +562,7 @@ textarea{
      /*border: 1px solid #bbbab0;*/
  }
 
- .content-portfolio2 .cell:hover .photo-portfolio .hover{
+ .portfolio2 .cell:hover .photo-portfolio .hover{
      transform: translateY(0);
      opacity: 1;
      /*background-color: rgba(300,300,300,0.5);*/
@@ -620,7 +572,7 @@ textarea{
      font-size: 26px;
  }*/
 
- .content-portfolio2 .cell .photo-portfolio .text{
+ .portfolio2 .cell .photo-portfolio .text{
      font-size: 18px;
      line-height: 22px;
      text-align: center;
@@ -634,7 +586,7 @@ textarea{
      background-color: #bbbab0;
  }*/
 
- .content-portfolio2 .cell .photo-portfolio .hoverbg{
+ .portfolio2 .cell .photo-portfolio .hoverbg{
      position: absolute;
      height: 100%;
      width: 100%;
@@ -643,19 +595,19 @@ textarea{
      opacity: 0;
  }
 
- .content-portfolio2 .cell:hover .photo-portfolio .hoverbg{
+ .portfolio2 .cell:hover .photo-portfolio .hoverbg{
      opacity:0.2;
  }
 
 
 /*PORTFOLIO3*/
- .content-portfolio3{
+ .portfolio3{
      background-color: rgba(0,0,0,0.8);
      padding: 50px 10px;
      height: 400px;
  }
 
- .content-portfolio3 .cell{
+ .portfolio3 .cell{
      width: 380px;
      float: left;
      border-right: 1px solid #bbbab0;
@@ -663,21 +615,21 @@ textarea{
      padding: 0 9px 0 10px;
  }
 
- .content-portfolio3 .cell:first-child{
+ .portfolio3 .cell:first-child{
      padding: 0 9px 0 0;
  }
 
- .content-portfolio3 .cell:last-child{
+ .portfolio3 .cell:last-child{
      padding: 0 0 0 10px;
      border-right: none;
  }
 
- .content-portfolio3 .cell img{
+ .portfolio3 .cell img{
      transition: all 1s ease;
      display: block;
  }
 
- .content-portfolio3 .cell h1{
+ .portfolio3 .cell h1{
      color: #bbbab0;
      font-size: 22px;
      line-height: 50px;
@@ -686,17 +638,17 @@ textarea{
      box-sizing: border-box;
  }
 
- .content-portfolio3 .cell .photo-portfolio{
+ .portfolio3 .cell .photo-portfolio{
      overflow: hidden;
      position: relative;
      border: 1px solid #bbbab0;
  }
 
- .content-portfolio3 .cell:hover .photo-portfolio img{
+ .portfolio3 .cell:hover .photo-portfolio img{
      transform: scale(1.10);
  }
 
- .content-portfolio3 .cell .photo-portfolio .hover{
+ .portfolio3 .cell .photo-portfolio .hover{
      position: absolute;
      top: 35%;
      transform: translateY(-30px);
@@ -707,7 +659,7 @@ textarea{
      border: 1px solid #bbbab0;
  }
 
- .content-portfolio3 .cell:hover .photo-portfolio .hover{
+ .portfolio3 .cell:hover .photo-portfolio .hover{
      transform: translateY(0);
      opacity: 1;
      background-color: rgba(300,300,300,0.5);
@@ -717,7 +669,7 @@ textarea{
      font-size: 26px;
  }*/
 
- .content-portfolio3 .cell .photo-portfolio .text{
+ .portfolio3 .cell .photo-portfolio .text{
      font-size: 18px;
      line-height: 22px;
      text-align: center;
@@ -731,7 +683,7 @@ textarea{
      background-color: #bbbab0;
  }*/
 
- .content-portfolio3 .cell .photo-portfolio .hoverbg{
+ .portfolio3 .cell .photo-portfolio .hoverbg{
      position: absolute;
      height: 100%;
      width: 100%;
@@ -740,19 +692,13 @@ textarea{
      opacity: 0;
  }
 
- .content-portfolio3 .cell:hover .photo-portfolio .hoverbg{
+ .portfolio3 .cell:hover .photo-portfolio .hoverbg{
      opacity:0.2;
  }
 
 
  /*PORTFOLIO4*/
- .content-portfolio4{
-     background-color: rgba(0,0,0,0.8);
-     padding: 50px 10px;
-     height: 400px;
- }
-
- .content-portfolio4 .cell{
+ .portfolio4 .cell{
      width: 280px;
      float: left;
      border-right: 1px solid #bbbab0;
@@ -760,38 +706,38 @@ textarea{
      padding: 0 9px 0 10px;
  }
 
- .content-portfolio4 .cell:first-child{
+ .portfolio4 .cell:first-child{
      padding: 0 9px 0 0;
  }
 
- .content-portfolio4 .cell:last-child{
+ .portfolio4 .cell:last-child{
      padding: 0 0 0 10px;
      border-right: none;
  }
 
- .content-portfolio4 .cell img{
+ .portfolio4 .cell img{
      transition: all 1s ease;
      display: block;
  }
 
- .content-portfolio4 .cell h1{
+ .portfolio4 .cell h1{
      color: #bbbab0;
      font-size: 22px;
      text-align: center;
      padding-top: 10px;
  }
 
- .content-portfolio4 .cell .photo-portfolio{
+ .portfolio4 .cell .photo-portfolio{
      overflow: hidden;
      position: relative;
      border: 1px solid #bbbab0;
  }
 
- .content-portfolio4 .cell:hover .photo-portfolio img{
+ .portfolio4 .cell:hover .photo-portfolio img{
      transform: scale(1.10);
  }
 
- .content-portfolio4 .cell .photo-portfolio .hover{
+ .portfolio4 .cell .photo-portfolio .hover{
      position: absolute;
      top: 35%;
      transform: translateY(-30px);
@@ -802,7 +748,7 @@ textarea{
      border: 1px solid #bbbab0;
  }
 
- .content-portfolio4 .cell:hover .photo-portfolio .hover{
+ .portfolio4 .cell:hover .photo-portfolio .hover{
      transform: translateY(0);
      opacity: 1;
      background-color: rgba(300,300,300,0.5);
@@ -812,7 +758,7 @@ textarea{
      font-size: 26px;
  }*/
 
- .content-portfolio4 .cell .photo-portfolio .text{
+ .portfolio4 .cell .photo-portfolio .text{
      font-size: 18px;
      line-height: 22px;
      text-align: center;
@@ -826,7 +772,7 @@ textarea{
      background-color: #bbbab0;
  }*/
 
- .content-portfolio4 .cell .photo-portfolio .hoverbg{
+ .portfolio4 .cell .photo-portfolio .hoverbg{
      position: absolute;
      height: 100%;
      width: 100%;
@@ -835,34 +781,28 @@ textarea{
      opacity: 0;
  }
 
- .content-portfolio4 .cell:hover .photo-portfolio .hoverbg{
+ .portfolio4 .cell:hover .photo-portfolio .hoverbg{
      opacity:0.2;
  }
 
 
 /*BLOG POST*/
-.content-blogpost{
-     background-color: rgba(0,0,0,0.8);
-     padding: 50px 10px;
-     height: 400px;
-}
-
-.content-blogpost .cell1{
+.bpost .cell1{
      width: 380px;
      float: left;
      padding-right: 20px;
 }
 
-.content-blogpost .cell1 img{
+.bpost .cell1 img{
      border: 1px solid #bbbab0;
 }
 
-.content-blogpost .cell2{
+.bpost .cell2{
      width: 780px;
      float: left;
 }
 
-.content-blogpost .cell2 div{
+.bpost .cell2 div{
      line-height: 20px;
      font-size: 18px;
      text-align: justify;
@@ -870,18 +810,18 @@ textarea{
      padding-bottom: 10px;
 }
 
-.content-blogpost .cell2 h1{
+.bpost .cell2 h1{
       color: #bbbab0;
       font-size: 22px;
  }
 
-.content-blogpost .cell2 h2{
+.bpost .cell2 h2{
      color: #bbbab0;
      font-size: 16px;
      text-align: right;
 }
 
-.content-blogpost .cell2 p{
+.bpost .cell2 p{
      color: #bbbab0;
      font-size: 17px;
      text-align: justify;
