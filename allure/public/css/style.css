@@ -103,7 +103,7 @@ body, input, textarea,button{
     z-index: 30;
     height: 40px;
     background-color: rgba(0,0,0,0.8);
-    margin-top: -45px;
+    /*margin-top: -45px;*/
 }
 
 .footer .message{
@@ -551,6 +551,50 @@ textarea{
      text-align: center;
      padding-top: 10px;
  }
+
+ .content-portfolio2 .cell .photo-portfolio{
+     overflow: hidden;
+     position: relative;
+     border: 1px solid #bbbab0;
+ }
+
+ .content-portfolio2 .cell:hover .photo-portfolio img{
+     transform: scale(1.10);
+ }
+
+ .content-portfolio2 .cell .photo-portfolio .hover{
+     position: absolute;
+     top: 30%;
+     transform: translateY(-50px);
+     opacity: 0;
+     transition: transform 0.4s 0.4s ease-out, opacity 0.3s ease-in-out;
+     width: 90%;
+     margin-left: 5%;
+     border: 1px solid #bbbab0;
+ }
+
+ .content-portfolio2 .cell:hover .photo-portfolio .hover{
+     transform: translateY(0);
+     opacity: 1;
+     /*background-color: rgba(0,0,0,0.8);*/
+ }
+
+ /*.content-portfolio2 .cell:hover h1{
+     font-size: 26px;
+ }*/
+
+ .content-portfolio2 .cell .photo-portfolio .text{
+     font-size: 18px;
+     line-height: 22px;
+     color: #bbbab0;
+     padding: 10px 40px 10px 40px;
+ }
+
+ /*.content-portfolio2 .cell .photo-portfolio .line{
+     width: 100%;
+     height: 1px;
+     background-color: #bbbab0;
+ }*/
 
 
 /*PORTFOLIO3*/
