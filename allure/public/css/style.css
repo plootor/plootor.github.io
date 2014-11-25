@@ -250,13 +250,7 @@ footer .social-media li a{
 
 
  /*BLOG2*/
- .content-blog2{
-     background-color: rgba(0,0,0,0.8);
-     padding: 50px 10px;
-     height: 400px;
- }
-
- .content-blog2 .text-area{
+ .blog2 .text-area{
      margin-left: 30px;
      padding-left: 10px;
      border-left: 2px solid #bbbab0;
@@ -266,24 +260,24 @@ footer .social-media li a{
      float: left
  }
 
- .content-blog2 img{
+ .blog2 img{
      float: left;
      box-sizing: border-box;
      border: 1px solid #bbbab0;
  }
- .content-blog2 .date{
+ .blog2 .date{
      font-size: 16px;
      padding-bottom: 20px;
      color: #bbbab0;
  }
 
- .content-blog2 h1{
+ .blog2 h1{
      font-size: 22px;
      color: #bbbab0;
      padding-bottom: 20px;
  }
 
- .content-blog2 .text{
+ .blog2 .text{
      font-size: 20px;
      line-height: 26px;
      color: #bbbab0;
@@ -291,7 +285,7 @@ footer .social-media li a{
      padding-bottom: 20px;
  }
 
- .content-blog2 button{
+ .blog2 button{
      font-size: 20px;
      line-height: 26px;
      color: #bbbab0;
@@ -299,24 +293,6 @@ footer .social-media li a{
      background-color: rgba(0,0,0,0);
      text-align: left;
      cursor: pointer;
- }
-
- .content-blog2 .cell .photo-blog2{
-     position: relative;
- }
-
- .content-blog2 .cell .photo-blog2 .transparent{
-     position: absolute;
-     background-color: whitesmoke;
-     opacity: 0.4;
-     width: 295px;
-     height: 200px;
-     top: 0;
-     left: 0;
- }
-
- .content-blog2 .cell .photo-blog2 .transparent:hover {
-     opacity: 0;
  }
 
 
