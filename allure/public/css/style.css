@@ -84,6 +84,8 @@ header nav .menu .submenu{
     margin-left: 15px;
     margin-top: 10px;
     display: none;
+    position: relative;
+    z-index: 15;
 }
 
 header nav .submenu li a{
@@ -338,7 +340,7 @@ footer .social-media li a{
 
 .social >.front {
     transform:translateZ(40px);
-    background: url("http://cdns2.freepik.com/free-photo/dark-gray-perforated-background_23-2147491256.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("http://cdns2.freepik.com/free-photo/fabric-vector-background_23-2147491263.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
     border: 1px solid #bbbab0;
 }
 
@@ -402,6 +404,7 @@ footer .social-media li a{
     border-bottom: 1px solid #bbbab0;
     background-color: rgba(0,0,0,0);
     color: #bbbab0;
+    font-size: 18px;
 }
 
 .contact .cell .contact-form textarea{
@@ -411,6 +414,8 @@ footer .social-media li a{
      border-bottom: 1px solid #bbbab0;
      background-color: rgba(0,0,0,0);
      color: #bbbab0;
+     padding-top: 15px;
+     font-size: 18px;
 }
 
 .contact .cell .contact-form button{
@@ -421,6 +426,7 @@ footer .social-media li a{
      color: #bbbab0;
      text-align: left;
      cursor: pointer;
+     font-size: 18px;
 }
 
 textarea:focus, input:focus{
@@ -433,16 +439,17 @@ textarea{
 
 .contact .cell p{
      color: #bbbab0;
-     font-size: 23px;
+     font-size: 20px;
+     line-height: 35px;
      text-align: center;
 }
 
 .contact .cell .small-space{
-     padding-top:10px;
+     padding-top:20px;
 }
 
 .contact .cell p:first-child{
-    padding-top: 100px;
+    padding-top: 60px;
 }
 
 .contact .cell img{
