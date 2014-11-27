@@ -479,8 +479,8 @@ textarea{
 }
 
 .portfolio .cell img{
-     border: 1px solid #bbbab0;
-     display: block;
+    transition: all 1s ease;
+    display: block;
 }
 
 .portfolio .cell h1{
@@ -488,6 +488,52 @@ textarea{
      font-size: 22px;
      text-align: center;
      padding-top: 10px;
+}
+
+.portfolio .cell .photo-portfolio{
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #bbbab0;
+}
+
+.portfolio .cell:hover .photo-portfolio img{
+    transform: scale(1.10);
+}
+
+.portfolio .cell .photo-portfolio .hover{
+    position: absolute;
+    top: 35%;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: transform 0.4s 0.4s ease-out, opacity 0.3s ease-in-out;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.portfolio .cell:hover .photo-portfolio .hover{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.portfolio .cell .photo-portfolio .text{
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    padding: 15px 40px 15px 40px;
+}
+
+.portfolio .cell .photo-portfolio .hoverbg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    opacity: 0;
+}
+
+.portfolio .cell:hover .photo-portfolio .hoverbg{
+    opacity:0.2;
 }
 
 
@@ -539,18 +585,12 @@ textarea{
      transition: transform 0.4s 0.4s ease-out, opacity 0.3s ease-in-out;
      width: 90%;
      margin-left: 5%;
-     /*border: 1px solid #bbbab0;*/
  }
 
  .portfolio2 .cell:hover .photo-portfolio .hover{
      transform: translateY(0);
      opacity: 1;
-     /*background-color: rgba(300,300,300,0.5);*/
  }
-
- /*.content-portfolio2 .cell:hover h1{
-     font-size: 26px;
- }*/
 
  .portfolio2 .cell .photo-portfolio .text{
      font-size: 18px;
@@ -559,12 +599,6 @@ textarea{
      color: #ffffff;
      padding: 15px 40px 15px 40px;
  }
-
- /*.content-portfolio2 .cell .photo-portfolio .line{
-     width: 100%;
-     height: 1px;
-     background-color: #bbbab0;
- }*/
 
  .portfolio2 .cell .photo-portfolio .hoverbg{
      position: absolute;
@@ -624,57 +658,45 @@ textarea{
      border: 1px solid #bbbab0;
  }
 
- .portfolio3 .cell:hover .photo-portfolio img{
-     transform: scale(1.10);
- }
+.portfolio3 .cell:hover .photo-portfolio img{
+    transform: scale(1.10);
+}
 
- .portfolio3 .cell .photo-portfolio .hover{
-     position: absolute;
-     top: 35%;
-     transform: translateY(-30px);
-     opacity: 0;
-     transition: transform 0.4s 0.4s ease-out, opacity 0.3s ease-in-out;
-     width: 90%;
-     margin-left: 5%;
-     border: 1px solid #bbbab0;
- }
+.portfolio3 .cell .photo-portfolio .hover{
+    position: absolute;
+    top: 35%;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: transform 0.4s 0.4s ease-out, opacity 0.3s ease-in-out;
+    width: 90%;
+    margin-left: 5%;
+}
 
- .portfolio3 .cell:hover .photo-portfolio .hover{
-     transform: translateY(0);
-     opacity: 1;
-     background-color: rgba(300,300,300,0.5);
- }
+.portfolio3 .cell:hover .photo-portfolio .hover{
+    transform: translateY(0);
+    opacity: 1;
+}
 
- /*.content-portfolio3 .cell:hover h1{
-     font-size: 26px;
- }*/
+.portfolio3 .cell .photo-portfolio .text{
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    padding: 15px 40px 15px 40px;
+}
 
- .portfolio3 .cell .photo-portfolio .text{
-     font-size: 18px;
-     line-height: 22px;
-     text-align: center;
-     color: black;
-     padding: 15px 40px 15px 40px;
- }
+.portfolio3 .cell .photo-portfolio .hoverbg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    opacity: 0;
+}
 
- /*.content-portfolio3 .cell .photo-portfolio .line{
-     width: 100%;
-     height: 1px;
-     background-color: #bbbab0;
- }*/
-
- .portfolio3 .cell .photo-portfolio .hoverbg{
-     position: absolute;
-     height: 100%;
-     width: 100%;
-     top: 0;
-     background-color: black;
-     opacity: 0;
- }
-
- .portfolio3 .cell:hover .photo-portfolio .hoverbg{
-     opacity:0.2;
- }
+.portfolio3 .cell:hover .photo-portfolio .hoverbg{
+    opacity:0.2;
+}
 
 
  /*PORTFOLIO4*/
@@ -713,99 +735,83 @@ textarea{
      border: 1px solid #bbbab0;
  }
 
- .portfolio4 .cell:hover .photo-portfolio img{
-     transform: scale(1.10);
- }
+.portfolio4 .cell:hover .photo-portfolio img{
+    transform: scale(1.10);
+}
 
- .portfolio4 .cell .photo-portfolio .hover{
-     position: absolute;
-     top: 35%;
-     transform: translateY(-30px);
-     opacity: 0;
-     transition: transform 0.4s 0.4s ease-out, opacity 0.3s ease-in-out;
-     width: 90%;
-     margin-left: 5%;
-     border: 1px solid #bbbab0;
- }
+.portfolio4 .cell .photo-portfolio .hover{
+    position: absolute;
+    top: 35%;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: transform 0.4s 0.4s ease-out, opacity 0.3s ease-in-out;
+    width: 90%;
+    margin-left: 5%;
+}
 
- .portfolio4 .cell:hover .photo-portfolio .hover{
-     transform: translateY(0);
-     opacity: 1;
-     background-color: rgba(300,300,300,0.5);
- }
+.portfolio4 .cell:hover .photo-portfolio .hover{
+    transform: translateY(0);
+    opacity: 1;
+}
 
- /*.content-portfolio4 .cell:hover h1{
-     font-size: 26px;
- }*/
+.portfolio4 .cell .photo-portfolio .text{
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    padding: 15px 40px 15px 40px;
+}
 
- .portfolio4 .cell .photo-portfolio .text{
-     font-size: 18px;
-     line-height: 22px;
-     text-align: center;
-     color: black;
-     padding: 15px 40px 15px 40px;
- }
+.portfolio4 .cell .photo-portfolio .hoverbg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    opacity: 0;
+}
 
- /*.content-portfolio4 .cell .photo-portfolio .line{
-     width: 100%;
-     height: 1px;
-     background-color: #bbbab0;
- }*/
-
- .portfolio4 .cell .photo-portfolio .hoverbg{
-     position: absolute;
-     height: 100%;
-     width: 100%;
-     top: 0;
-     background-color: black;
-     opacity: 0;
- }
-
- .portfolio4 .cell:hover .photo-portfolio .hoverbg{
-     opacity:0.2;
- }
+.portfolio4 .cell:hover .photo-portfolio .hoverbg{
+    opacity:0.2;
+}
 
 
 /*BLOG POST*/
-.bpost .cell1{
-     width: 380px;
-     float: left;
-     padding-right: 20px;
+.bpost .text-area{
+    margin-left: 40px;
+    /*padding-left: 10px;
+    border-left: 2px solid #bbbab0;*/
+    height: 100%;
+    width: 640px;
+    float: left;
+    box-sizing: border-box;
 }
 
-.bpost .cell1 img{
-     border: 1px solid #bbbab0;
+.bpost img{
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid #bbbab0;
+    height: 400px;
+    width: 500px;
+}
+.bpost .date{
+    font-size: 16px;
+    padding-bottom: 20px;
+    color: #bbbab0;
 }
 
-.bpost .cell2{
-     width: 780px;
-     float: left;
+.bpost h1{
+    font-size: 22px;
+    color: #bbbab0;
+    padding-bottom: 20px;
 }
 
-.bpost .cell2 div{
-     line-height: 20px;
-     font-size: 18px;
-     text-align: justify;
-     color: #bbbab0;
-     padding-bottom: 10px;
-}
+.bpost .text{
+    font-size: 20px;
+    line-height: 26px;
+    color: #bbbab0;
+    text-align: justify;
 
-.bpost .cell2 h1{
-      color: #bbbab0;
-      font-size: 22px;
- }
-
-.bpost .cell2 h2{
-     color: #bbbab0;
-     font-size: 16px;
-     text-align: right;
-}
-
-.bpost .cell2 p{
-     color: #bbbab0;
-     font-size: 17px;
-     text-align: justify;
-     text-indent: 30px;
-     padding-top: 10px;
-     height: 400px;
+    padding-left: 20px;
+    border-left: 2px solid #bbbab0
 }
