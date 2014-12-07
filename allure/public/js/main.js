@@ -1,7 +1,7 @@
 /**
  * Created by niunea on 11/16/14.
  */
-$(document).ready(function(){
+$(function () {
 
     var winHeight = $( window ).height();
     $(".background div").each(function() {
@@ -12,4 +12,8 @@ $(document).ready(function(){
         fx:    'fade',
         speed:  1500
     });
+
+    $('.fluidbox').fluidbox();
+
+    $('.scroll').jScrollPane();
 });

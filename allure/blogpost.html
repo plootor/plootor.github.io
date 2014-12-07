@@ -5,12 +5,19 @@
     <meta charset="utf-8"/>
 
     <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="public/css/jquery.jscrollpane.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/fluidbox/1.4.2/css/fluidbox.css"/>
+
     <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fluidbox/1.4.2/jquery.fluidbox.min.js"></script>
+    <script type="text/javascript" src="public/js/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="public/js/jquery.mousewheel.js"></script>
+
     <script type="text/javascript" src="public/js/main.js"></script>
 </head>
 <body>
@@ -55,11 +62,14 @@
     <main class="bpost">
         <div class="centered">
             <div class="image-area">
-                <img src="public/images/blog1.jpg">
+                <a class="fluidbox" href="public/images/blog1.jpg">
+                    <img src="public/images/blog1.jpg">
+                </a>
             </div>
             <div class="text-area">
                 <p class="date">November 24th, 2014</p>
                 <h1>TITLE OF THE BLOG POST WILL BE HERE</h1>
+                <div class="scroll">
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor link to Collections et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                     ex ea. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor link to Collections et
@@ -69,6 +79,7 @@
                     ex ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor link to Collections et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                     ex ea. </p>
+                </div>
             </div>
             <div class="clear"></div>
         </div>

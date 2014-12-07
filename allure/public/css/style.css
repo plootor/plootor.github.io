@@ -308,12 +308,12 @@ footer .social-media li a{
      display: block;
      float: left;
      margin: 0 5px 10px 0;
+    cursor: -webkit-zoom-in;
 }
 
-.gallery .photo-gallery div img:last-child{
+.gallery .photo-gallery div a:last-child img{
     margin-right: 0;
 }
-
 
 /*TEAM*/
 .social{
@@ -813,6 +813,12 @@ textarea{
     color: #bbbab0;
     text-align: justify;
 
-    padding-left: 20px;
+    padding: 0 15px;
     border-left: 2px solid #bbbab0
+}
+
+.bpost .scroll{
+    width: 640px;
+    height: 300px;
+    overflow: auto;
 }
