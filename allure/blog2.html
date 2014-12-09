@@ -6,6 +6,9 @@
     <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="public/css/background.css"/>
     <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="public/js/jquery.cycle2.js"></script>
 <body>
 <div class="background">
     <div style="background: url('public/images/man-471192_1920.jpg') no-repeat center top fixed;background-size: cover;"></div>
@@ -45,17 +48,64 @@
     </header>
     <main class="blog2">
         <div class="centered">
-            <div class="image-area">
-                <img src="public/images/blog1.jpg">
+            <div class="center">
+                <span class="prev"><a href="#">&lt;&lt; Prev</a></span>
+                <span class="next" style="margin-left:20px"><a href="#">Next &gt;&gt;</a></span>
             </div>
-            <div class="text-area">
-                <p class="date">November 24th, 2014</p>
-                <h1>TITLE OF THE BLOG POST WILL BE HERE</h1>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor link to Collections et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea.</p>
-                <button>Continue reading . . .</button>
-            </div>
+            <section class="blog-sec cycle-slideshow" data-cycle-prev=".prev" data-cycle-next=".next" data-cycle-fx="scrollHorz" data-cycle-timeout="0" data-cycle-slides="article">
+                <article data-cycle-hash="post">
+                    <div class="image-area">
+                        <img src="public/images/blog1.jpg">
+                    </div>
+                    <div class="text-area">
+                        <p class="date">November 24th, 2014</p>
+                        <h1>TITLE OF THE BLOG POST WILL BE HERE</h1>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor link to Collections et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea.</p>
+                        <button>Continue reading . . .</button>
+                    </div>
+                </article>
+                <article data-cycle-hash="post2">
+                    <div class="image-area">
+                        <img src="public/images/blog1.jpg">
+                    </div>
+                    <div class="text-area">
+                        <p class="date">November 24th, 2014</p>
+                        <h1>TITLE OF THE BLOG POST WILL BE HERE 2</h1>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor link to Collections et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea.</p>
+                        <button>Continue reading . . .</button>
+                    </div>
+                </article>
+                <article data-cycle-hash="post3">
+                    <div class="image-area">
+                        <img src="public/images/blog1.jpg">
+                    </div>
+                    <div class="text-area">
+                        <p class="date">November 24th, 2014</p>
+                        <h1>TITLE OF THE BLOG POST WILL BE HERE 3</h1>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor link to Collections et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea.</p>
+                        <button>Continue reading . . .</button>
+                    </div>
+                </article>
+                <article data-cycle-hash="post4">
+                    <div class="image-area">
+                        <img src="public/images/blog1.jpg">
+                    </div>
+                    <div class="text-area">
+                        <p class="date">November 24th, 2014</p>
+                        <h1>TITLE OF THE BLOG POST WILL BE HERE 4</h1>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor link to Collections et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea.</p>
+                        <button>Continue reading . . .</button>
+                    </div>
+                </article>
+            </section>
         </div>
     </main>
 </div>

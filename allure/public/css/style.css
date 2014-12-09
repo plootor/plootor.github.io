@@ -301,6 +301,9 @@ footer .social-media li a{
      cursor: pointer;
  }
 
+ .blog2 .blog-sec article{
+     width: 1180px;
+ }
 
 /*GALLERY*/
 .gallery .photo-gallery img{
