@@ -5,7 +5,7 @@ $(function () {
     if($('.fluidbox').length){
         $('.fluidbox').fluidbox();
     }
-    if($('.scroll').length){
-        $('.scroll').jScrollPane();
+    if($('.nano').length){
+        $('.nano').nanoScroller();
     }
 });

@@ -1,6 +1,6 @@
 header, section, footer, aside, nav, main, article, figure {display: block;}
 
-a {text-decoration: none;}
+a {text-decoration: none; color:#bbbab0;}
 
 *{
     margin: 0;
@@ -103,7 +103,7 @@ header nav .menu>li:hover .submenu{
 /*FOOTER*/
 footer{
     position: relative;
-    z-index: 10;
+    z-index: 9;
     height: 40px;
     background-color: rgba(0,0,0,0.8);
 }
@@ -253,7 +253,11 @@ footer .social-media li a{
 
 
  /*BLOG2*/
- .blog2 .text-area{
+.slider{
+    position: relative;
+}
+
+ .slider .text-area{
      margin-left: 40px;
      padding-left: 10px;
      border-left: 2px solid #bbbab0;
@@ -264,26 +268,26 @@ footer .social-media li a{
      box-sizing: border-box;
  }
 
- .blog2 img{
+ .slider img{
      float: left;
      box-sizing: border-box;
      border: 1px solid #bbbab0;
      height: 400px;
      width: 500px;
  }
- .blog2 .date{
+ .slider .date{
      font-size: 16px;
      padding-bottom: 20px;
      color: #bbbab0;
  }
 
- .blog2 h1{
+ .slider h1{
      font-size: 22px;
      color: #bbbab0;
      padding-bottom: 20px;
  }
 
- .blog2 .text{
+ .slider .text{
      font-size: 20px;
      line-height: 26px;
      color: #bbbab0;
@@ -291,7 +295,7 @@ footer .social-media li a{
      padding-bottom: 20px;
  }
 
- .blog2 button{
+ .slider button{
      font-size: 20px;
      line-height: 26px;
      color: #bbbab0;
@@ -301,9 +305,38 @@ footer .social-media li a{
      cursor: pointer;
  }
 
- .blog2 .blog-sec article{
+ .slider .blog-sec article{
      width: 1180px;
  }
+
+ .slider .text-area a{
+     font-size: 18px;
+ }
+
+.slider .text-area a:hover{
+    font-weight: bold;
+}
+
+.slider .next{
+    background-image: url("../images/next.png");
+    background-size: cover;
+    background-color: #ffffff;
+    position: absolute;
+    right: -50px;
+    top: 43%;
+    width: 50px;
+    height: 50px;
+}
+.slider .prev{
+    background-image: url("../images/previous.png");
+    background-size: cover;
+    background-color: #ffffff;
+    position: absolute;
+    left: -50px;
+    top: 43%;
+    width: 50px;
+    height: 50px;
+}
 
 /*GALLERY*/
 .gallery .photo-gallery img{
@@ -817,10 +850,4 @@ textarea{
     text-align: justify;
     padding: 0 15px;
     border-left: 2px solid #bbbab0
-}
-
-.bpost .scroll{
-    width: 640px;
-    height: 321px;
-    overflow: auto;
 }
