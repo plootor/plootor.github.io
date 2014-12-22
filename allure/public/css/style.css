@@ -853,7 +853,7 @@ textarea{
 }
 
 .bpost .comment h1{
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .bpost .comment p{
@@ -871,13 +871,13 @@ textarea{
     margin-right: 15px;
 }
 
-.bpost .comment button{
+.bpost .comment .comment-form button{
     border: none;
     background-color: rgba(0,0,0,0);
     color: #bbbab0;
     cursor: pointer;
     font-size: 18px;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
 }
 
 .comment .comment-form input{
