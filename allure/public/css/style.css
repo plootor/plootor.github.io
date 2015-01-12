@@ -816,8 +816,6 @@ textarea{
 /*BLOG POST*/
 .bpost .text-area{
     margin-left: 40px;
-    /*padding-left: 10px;
-    border-left: 2px solid #bbbab0;*/
     height: 100%;
     width: 640px;
     float: left;
@@ -852,62 +850,55 @@ textarea{
     border-left: 2px solid #bbbab0;
 }
 
-.bpost .comment h1{
-    padding-top: 100px;
+.comment h1{
+    margin-top: 45px;
+    font-size: 20px;
 }
 
-.bpost .comment p{
-    font-size: 18px;
+.comm .name-date{
+    float: right;
+    width: 518px;
+    margin-bottom: 15px;
 }
 
-.bpost .comment .date{
+.comm .name{
+    float: left;
+}
+
+.comm span{
     font-size: 13px;
     font-style: italic;
+    float: right;
 }
 
-.bpost .comment img{
+.comment img{
     width: 80px;
     height: 60px;
     margin-right: 15px;
 }
 
-.bpost .comment .comment-form button{
-    border: none;
-    background-color: rgba(0,0,0,0);
-    color: #bbbab0;
-    cursor: pointer;
-    font-size: 18px;
-    padding-bottom: 10px;
+.comment .comment-form{
+    margin-top: 30px;
 }
 
-.comment .comment-form input{
-    width: 100%;
-    height: 50px;
-    border: none;
-    border-bottom: 1px solid #bbbab0;
+.comment-form input, .comment-form textarea, .comment-form button{
+    width: 320px;
+    height: 35px;
+    border: 1px solid #bbbab0;
     background-color: rgba(0,0,0,0);
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
     color: #bbbab0;
     font-size: 16px;
 }
 
-.comment .comment-form textarea{
-    width: 100%;
+.comment-form textarea{
     height: 100px;
-    border: none;
-    border-bottom: 1px solid #bbbab0;
-    background-color: rgba(0,0,0,0);
-    color: #bbbab0;
-    padding-top: 15px;
-    font-size: 16px;
+    margin: 15px 0;
+    display: block;
 }
 
 .comment .comment-form button{
     width: 100px;
-    height: 30px;
-    border: none;
-    background-color: rgba(0,0,0,0);
-    color: #bbbab0;
-    text-align: left;
-    cursor: pointer;
-    font-size: 18px;
 }
