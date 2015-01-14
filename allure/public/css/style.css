@@ -373,6 +373,7 @@ footer .social-media li a{
 
 .social > div {
      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+     border-radius: 15px;
 }
 
 .social >.front {
