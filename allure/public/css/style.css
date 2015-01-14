@@ -417,6 +417,65 @@ footer .social-media li a{
     color: #bbbab0;
 }
 
+/*TEAM2*/
+.team2 .cell{
+    float: left;
+    width: 265px;
+    height: 400px;
+    display: block;
+    text-align: center;
+    line-height:30px;
+    margin-right: 40px;
+    border-top: 2px solid #bbbab0;
+    border-bottom: 2px solid #bbbab0;
+}
+
+.cell:last-child{
+    margin-right: 0;
+}
+
+.team2 img{
+    margin-top: 50px;
+    border: 1px solid #bbbab0;
+    text-align: center;
+}
+
+.team2 .name{
+    padding-top: 15px;
+    font-size: 20px;
+    color: #bbbab0;
+}
+
+.team2 .job{
+    padding-top: 15px;
+    font-size: 15px;
+    color: #bbbab0;
+}
+
+.team2 .cell .hover{
+    position: absolute;
+    top: 35%;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: transform 0.4s 0.4s ease-out, opacity 0.3s ease-in-out;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.team2 .cell:hover .hover{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.team2 .cell .text{
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    padding: 15px 40px 15px 40px;
+}
+
+
 /*CONTACT*/
 .contact .cell{
      width: 380px;
