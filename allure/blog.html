@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>news</title>
+    <title>team</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="public/css/background.css"/>
     <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
-</head>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="public/js/jquery.cycle2.js"></script>
+    <script type="text/javascript" src="public/js/main.js"></script>
 <body>
 <div class="background">
     <div style="background: url('public/images/background/sailor-504098_1920.jpg') no-repeat left bottom fixed;background-size: cover;"></div>
@@ -25,56 +28,98 @@
             <nav>
                 <ul class="menu">
                     <li><a href="index.html">home</a></li>
-                    <li><a href="about.html">about</a>
-                        <ul class="submenu">
-                            <li><a href="team2.html">team2</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="blog.html">blog</a></li>
                     <li><a href="portfolio.html">portfolio</a>
                         <ul class="submenu">
                             <li><a href="portfolio2.html">portfolio2</a></li>
                             <li><a href="portfolio3.html">portfolio3</a></li>
                             <li><a href="portfolio4.html">portfolio4</a></li>
-                            <li><a href="blog.html">blog</a></li>
-                            <li><a href="blog2.html">blog2</a></li>
-                            <li><a href="team.html">team</a></li>
-                            <li><a href="blogpost.html">blogpost</a></li>
                         </ul>
                     </li>
-                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="about.html">about</a>
+                        <ul class="submenu">
+                            <li><a href="team2.html">team2</a></li>
+                        </ul>
+                    </li>
                     <li><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
         </div>
         <div class="clear"></div>
     </header>
-    <main class="blog">
-        <div class="centered">
-            <div class="cell1">
-                <div>
-                    <h1>History</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor link to Collections et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor link to Collections et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </p>
-                    <p class="stars">* * *</p>
-                </div>
-                <div>
-                    <h1>Development</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor link to Collections et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor link to Collections et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </p>
-                    <p class="stars">* * *</p>
-                </div>
-                <div>
-                    <h1>Important facts</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor link to Collections et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor link to Collections et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </p>
-                    <p class="stars">* * *</p>
-                </div>
-            </div>
-            <div class="cell2">
-                <div class="photo-blog">
-                    <img src="public/images/news1.jpg">
-                    <img src="public/images/news2.jpg">
-                    <img src="public/images/news3.jpg">
-                </div>
-            </div>
-            <div class="clear"></div>
+    <main class="blog2">
+        <div class="centered slider">
+            <span class="prev"></span>
+            <span class="next"></span>
+            <section class="blog-sec cycle-slideshow" data-cycle-prev=".prev" data-cycle-next=".next" data-cycle-fx="scrollHorz" data-cycle-timeout="0" data-cycle-slides="article">
+                <article data-cycle-hash="post">
+                    <div class="image-area">
+                        <a href="blogpost.html">
+                            <img src="public/images/blog1.jpg">
+                        </a>
+                    </div>
+                    <div class="text-area">
+                        <p class="date">November 24th, 2014</p>
+                        <h1>
+                            <a href="blogpost.html">TITLE OF THE BLOG POST WILL BE HERE</a>
+                        </h1>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor link to Collections et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea.</p>
+                        <a href="blogpost.html">Continue reading . . .</a>
+                    </div>
+                </article>
+                <article data-cycle-hash="post2">
+                    <div class="image-area">
+                        <img src="public/images/blog1.jpg">
+                    </div>
+                    <div class="text-area">
+                        <p class="date">November 24th, 2014</p>
+                        <h1>
+                            <a href="blogpost.html">TITLE OF THE BLOG POST WILL BE HERE 2</a>
+                        </h1>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor link to Collections et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea.</p>
+                        <a href="blogpost.html">Continue reading . . .</a>
+                    </div>
+                </article>
+                <article data-cycle-hash="post3">
+                    <div class="image-area">
+                        <a href="blogpost.html">
+                            <img src="public/images/blog1.jpg">
+                        </a>
+                    </div>
+                    <div class="text-area">
+                        <p class="date">November 24th, 2014</p>
+                        <h1>
+                            <a href="blogpost.html">TITLE OF THE BLOG POST WILL BE HERE 3</a>
+                        </h1>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor link to Collections et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea.</p>
+                        <a href="blogpost.html">Continue reading . . .</a>
+                    </div>
+                </article>
+                <article data-cycle-hash="post4">
+                    <div class="image-area">
+                        <a href="blogpost.html">
+                            <img src="public/images/blog1.jpg">
+                        </a>
+                    </div>
+                    <div class="text-area">
+                        <p class="date">November 24th, 2014</p>
+                        <h1>
+                            <a href="blogpost.html">TITLE OF THE BLOG POST WILL BE HERE 4</a>
+                        </h1>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor link to Collections et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea.</p>
+                        <a href="blogpost.html">Continue reading . . .</a>
+                    </div>
+                </article>
+            </section>
         </div>
     </main>
 </div>

@@ -58,10 +58,16 @@ header .logo{
 
 header nav .menu>li>a{
     color: black;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 30px;
     margin-left: 15px;
     margin-right: 15px;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+    text-shadow: 2px 3px 3px rgba(0,0,0,0.3);
 }
 
 header nav{
@@ -73,6 +79,7 @@ header nav{
 
 header nav .menu>li{
     float: left;
+    position: relative;
 }
 
 header nav .menu{
@@ -82,10 +89,18 @@ header nav .menu{
 header nav .menu .submenu{
     border-left: 1px solid black;
     margin-left: 15px;
-    margin-top: 10px;
-    display: none;
-    position: relative;
+    margin-top: 15px;
+    visibility: hidden;
+    position: absolute;
     z-index: 15;
+    opacity: 0;
+    top: 10px;
+
+    -webkit-transition: all 6s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
 }
 
 header nav .submenu li a{
@@ -96,9 +111,23 @@ header nav .submenu li a{
 }
 
 header nav .menu>li:hover .submenu{
-     display: block;
+    visibility: visible;
+    opacity: 1;
+    top: 25px;
 }
 
+.submenu li {
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.submenu li:hover {
+    border-left: 2px solid black;
+    color: #ccc !important;
+}
 
 /*FOOTER*/
 footer{
@@ -205,6 +234,13 @@ footer .social-media li a{
     margin: 0 auto;
 }
 
+.about .cell img:hover{
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}
 
 /*BLOG*/
 .blog .cell1{
