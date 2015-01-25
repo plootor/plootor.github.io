@@ -330,7 +330,7 @@ footer .social-media li a{
 .slider .prev{
     background-image: url("../images/previous.png");
     background-size: cover;
-    background-color: #ffffff;
+    background-color: #909090;
     position: absolute;
     left: -50px;
     top: 43%;
@@ -345,12 +345,40 @@ footer .social-media li a{
      float: left;
      margin: 0 5px 10px 0;
     cursor: -webkit-zoom-in;
+    height: 195px;
+    box-sizing: border-box;
 }
 
 .gallery .photo-gallery div a:last-child img{
     margin-right: 0;
 }
 
+.gallery .row1 a:nth-child(1) img{
+    width: 490px;
+}
+.gallery .row1 a:nth-child(2) img{
+    width: 145px;
+}
+.gallery .row1 a:nth-child(3) img{
+    width: 345px;
+}
+.gallery .row1 a:nth-child(4) img{
+    width: 185px;
+}
+
+
+.gallery .row2 a:nth-child(1) img{
+    width: 300px;
+}
+.gallery .row2 a:nth-child(2) img{
+    width: 255px;
+}
+.gallery .row2 a:nth-child(3) img{
+    width: 375px;
+}
+.gallery .row2 a:nth-child(4) img{
+    width: 235px;
+}
 /*TEAM*/
 .social{
      float: left;
