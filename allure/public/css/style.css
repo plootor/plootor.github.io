@@ -370,7 +370,6 @@ footer .social-media li a{
 .slider .prev{
     background-image: url("../images/arrow/previous.png");
     background-size: cover;
-    background-color: #909090;
     position: absolute;
     left: -50px;
     top: 43%;
