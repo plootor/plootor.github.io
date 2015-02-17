@@ -1033,7 +1033,7 @@ textarea{
 }
 
 
-/*home Slider*/
+/*home Slider
 .slider {
     position: relative;
 }
@@ -1134,6 +1134,11 @@ textarea{
     -o-animation-delay: 0;
     animation-delay: 0;
     -webkit-transition: transform 0.3s 1s ease-out, opacity 1.5s ease-in-out;
+}
+*/
+.sliderContainer{
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .slide1 .title, .slide3 .title{
