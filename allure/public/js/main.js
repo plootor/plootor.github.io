@@ -18,14 +18,10 @@ $(function () {
         auto: true,
         pause: 6000,
         controls: false,
-        onSlideAfter: function(){
-            // do mind-blowing JS stuff here
+        onSlideBefore: function(){
             var selectedIndex = $(".slider > :visible").index() + 1;
-            console.log('Slide index: ' + selectedIndex);
-            $('.background  > :visible').fadeOut( "slow" );
-console.log('current: ' + selectedIndex);
-            $('.background div:nth-child(' + selectedIndex + ')').fadeTo( "slow", 1 );
+            $('.bg-home  > :visible').css('opacity', 0);
+            $('.bg-home div:nth-child(' + selectedIndex + ')').css('opacity', 1);
         }
-
     });
 });

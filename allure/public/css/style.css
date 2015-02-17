@@ -56,20 +56,6 @@ header .logo{
     padding-right: 20px;
 }
 
-header nav .menu>li>a{
-    color: black;
-    font-size: 22px;
-    line-height: 30px;
-    margin-left: 15px;
-    margin-right: 15px;
-    -webkit-transition: all .25s ease;
-    -moz-transition: all .25s ease;
-    -ms-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    transition: all .25s ease;
-    text-shadow: 2px 3px 3px rgba(0,0,0,0.3);
-}
-
 header nav{
     float: left;
     height: 99px;
@@ -77,13 +63,20 @@ header nav{
     border-bottom: 1px solid black;
 }
 
+header nav .menu{
+    margin-top: 70px;
+}
+
 header nav .menu>li{
     float: left;
     position: relative;
 }
 
-header nav .menu{
-    margin-top: 70px;
+header nav .menu>li>a{
+    color: black;
+    font-size: 22px;
+    line-height: 30px;
+    margin:0 15px;
 }
 
 header nav .menu .submenu{
@@ -95,11 +88,7 @@ header nav .menu .submenu{
     z-index: 15;
     opacity: 0;
     top: 10px;
-
-    -webkit-transition: all 6s ease;
-    -moz-transition: all .25s ease;
-    -ms-transition: all .25s ease;
-    -o-transition: all .25s ease;
+    -webkit-transition: all .25s ease;
     transition: all .25s ease;
 }
 
@@ -114,14 +103,6 @@ header nav .menu>li:hover .submenu{
     visibility: visible;
     opacity: 1;
     top: 25px;
-}
-
-.submenu li {
-    -webkit-transition: all .25s ease;
-    -moz-transition: all .25s ease;
-    -ms-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    transition: all .25s ease;
 }
 
 .submenu li:hover {
@@ -165,24 +146,6 @@ footer .social-media li a{
     padding-bottom: 55px;
     box-sizing: border-box;
     margin-bottom: -45px;
-}
-
-.background{
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.background div{
-    width: 100%;
 }
 
 .home{
@@ -410,18 +373,19 @@ footer .social-media li a{
 }
 /*TEAM*/
 .social{
-     float: left;
-     width: 265px;
-     height: 400px;
-     display: block;
-     text-align: center;
-     line-height:30px;
-     margin-right: 40px;
+    float: left;
+    width: 265px;
+    height: 400px;
+    display: block;
+    text-align: center;
+    line-height:30px;
+    margin-right: 40px;
 
-     position: relative;
-     transform:rotateY(0deg);
-     transition:transform .25s ease-out;
-     transform-style:preserve-3d;
+    position: relative;
+    transform: rotateY(0deg);
+    transition: transform .25s ease-out;
+    -web-transition: transform .25s ease-out;
+    transform-style: preserve-3d;
 }
 
 .social:last-child{
@@ -1030,141 +994,4 @@ textarea{
 
 .comment .comment-form button{
     width: 100px;
-}
-
-
-/*home Slider
-.slider {
-    position: relative;
-}
-
-.slider>div {
-    position: absolute;
-    top: 0;
-    left:0;
-    height: 100%;
-    width: 100%;
-}
-
-
-@keyframes contentSlider {
-    0% {
-        opacity:1;
-    }
-    17% {
-        opacity:1;
-    }
-    25% {
-        opacity:0;
-    }
-    92% {
-        opacity:0;
-    }
-    100% {
-        opacity:1;
-    }
-}
-@-webkit-keyframes contentSlider {
-    0% {
-        opacity:1;
-    }
-    17% {
-        opacity:1;
-    }
-    25% {
-        opacity:0;
-    }
-    92% {
-        opacity:0;
-    }
-    100% {
-        opacity:1;
-    }
-}
-
-.slider>div {
-    opacity: 0;
-    -webkit-animation-name: contentSlider;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 24s;
-
-    -moz-animation-name: contentSlider;
-    -moz-animation-timing-function: ease-in-out;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-duration: 24s;
-
-    -o-animation-name: contentSlider;
-    -o-animation-timing-function: ease-in-out;
-    -o-animation-iteration-count: infinite;
-    -o-animation-duration: 24s;
-
-    animation-name: contentSlider;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 24s;
-}
-
-
-.slider>.slide1 {
-    -webkit-animation-delay: 18s;
-    -moz-animation-delay: 18s;
-    -o-animation-delay: 18s;
-    animation-delay: 18s;
-    -webkit-transition: transform 0.3s 1s ease-out, opacity 1.5s ease-in-out;
-
-}
-.slider>.slide2 {
-    -webkit-animation-delay: 12s;
-    -moz-animation-delay: 12s;
-    -o-animation-delay: 12s;
-    animation-delay: 12s;
-    -webkit-transition: transform 0.3s 1s ease-out, opacity 1.5s ease-in-out;
-}
-.slider>.slide3 {
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    animation-delay: 6s;
-    -webkit-transition: transform 0.3s 1s ease-out, opacity 1.5s ease-in-out;
-}
-.slider>.slide4 {
-    -webkit-animation-delay: 0;
-    -moz-animation-delay: 0;
-    -o-animation-delay: 0;
-    animation-delay: 0;
-    -webkit-transition: transform 0.3s 1s ease-out, opacity 1.5s ease-in-out;
-}
-*/
-.sliderContainer{
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.slide1 .title, .slide3 .title{
-    line-height: 65px;
-    font-size: 55px;
-    margin-bottom: 80px;
-    text-align: right;
-}
-
-.slide1 .description, .slide3 .description{
-    width: 700px;
-    line-height: 25px;
-    font-size: 20px;
-    text-align: justify;
-    float: right;
-}
-
-.slide2 .title, .slide4 .title{
-    line-height: 65px;
-    font-size: 55px;
-    margin-bottom: 80px;
-}
-
-.slide2 .description, .slide4 .description{
-    width: 700px;
-    line-height: 25px;
-    font-size: 20px;
-    text-align: justify;
 }
