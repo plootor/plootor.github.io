@@ -18,8 +18,8 @@ $(function () {
         auto: true,
         pause: 6000,
         controls: false,
-        onSlideBefore: function(){
-            var selectedIndex = $(".slider > :visible").index() + 1;
+        onSlideBefore: function($slideElement, oldIndex, newIndex){
+            var selectedIndex = newIndex + 1;
             $('.bg-home  > :visible').css('opacity', 0);
             $('.bg-home div:nth-child(' + selectedIndex + ')').css('opacity', 1);
         }

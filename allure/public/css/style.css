@@ -106,12 +106,6 @@ header nav .menu>li:hover .submenu{
     top: 25px;
 }
 
-.submenu li:hover {
-    /*border-left: 2px solid black;*/
-    color: #ccc !important;
-    background-color: rgba(0,0,0,0.5);;
-}
-
 /*FOOTER*/
 footer{
     position: relative;
@@ -1059,8 +1053,8 @@ nav {
 
 .submenu li:hover {
     /*border-left: 2px solid black;*/
-    color: #ccc !important;
-    background-color: rgba(0,0,0,0.5);;
+    padding-left: 2px;
+
 }
 
 
