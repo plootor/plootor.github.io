@@ -53,7 +53,8 @@ header{
 header .logo{
     float: left;
     height: 100px;
-    padding-right: 20px;
+    /*padding-right: 20px;*/
+    margin-top: 15px;
 }
 
 header nav{
@@ -1000,26 +1001,69 @@ textarea{
 
 
 
-/* rewrite here
+/* rewrite here */
 nav {
     width: 500px;
     margin: 0 auto;
 }
 
-ul li {
-    float: left;
-
-    text-align: center;
+.navigation {
+    margin-top: 70px;
 }
 
-a {
+.navigation li {
     display: inline-block;
+    text-align: center;
+    position: relative;
     width: 25%;
-    padding: .75rem 0;
-    margin: 0;
-    text-decoration: none;
-    color: #333;
 }
+
+.navigation>li>a{
+    display: inline-block;
+    /*width: 25%;*/
+    text-decoration: none;
+    color: #000000;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.navigation .submenu{
+    border-left: 1px solid black;
+    margin-left: 15px;
+    margin-top: 15px;
+    visibility: hidden;
+    position: absolute;
+    z-index: 15;
+    opacity: 0;
+    top: 10px;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.navigation .submenu li{
+    display: block;
+}
+
+.navigation .submenu li a{
+    color: black;
+    font-size: 18px;
+    line-height: 24px;
+    margin:0 5px;
+}
+
+.navigation>li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    top: 25px;
+}
+
+.submenu li:hover {
+    /*border-left: 2px solid black;*/
+    color: #ccc !important;
+    background-color: rgba(0,0,0,0.5);;
+}
+
+
 
 .two:hover ~ hr {
     margin-left: 25%;
@@ -1041,4 +1085,3 @@ hr {
     border: none;
     transition: .3s ease-in-out;
 }
-*/
