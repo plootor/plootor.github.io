@@ -96,7 +96,7 @@ header nav .submenu li a{
      color: black;
      font-size: 18px;
      line-height: 24px;
-     margin-left: 5px;
+     margin:0 5px;
 }
 
 header nav .menu>li:hover .submenu{
@@ -106,8 +106,9 @@ header nav .menu>li:hover .submenu{
 }
 
 .submenu li:hover {
-    border-left: 2px solid black;
+    /*border-left: 2px solid black;*/
     color: #ccc !important;
+    background-color: rgba(0,0,0,0.5);;
 }
 
 /*FOOTER*/
@@ -995,3 +996,49 @@ textarea{
 .comment .comment-form button{
     width: 100px;
 }
+
+
+
+
+/* rewrite here
+nav {
+    width: 500px;
+    margin: 0 auto;
+}
+
+ul li {
+    float: left;
+
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+    width: 25%;
+    padding: .75rem 0;
+    margin: 0;
+    text-decoration: none;
+    color: #333;
+}
+
+.two:hover ~ hr {
+    margin-left: 25%;
+}
+
+.three:hover ~ hr {
+    margin-left: 50%;
+}
+
+.four:hover ~ hr {
+    margin-left: 75%;
+}
+
+hr {
+    height: .25rem;
+    width: 25%;
+    margin: 0;
+    background: tomato;
+    border: none;
+    transition: .3s ease-in-out;
+}
+*/
