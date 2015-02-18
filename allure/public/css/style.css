@@ -1003,7 +1003,7 @@ textarea{
 
 /* rewrite here */
 nav {
-    width: 500px;
+    width:600px;
     margin: 0 auto;
 }
 
@@ -1015,7 +1015,7 @@ nav {
     display: inline-block;
     text-align: center;
     position: relative;
-    width: 25%;
+    width: 20%;
 }
 
 .navigation>li>a{
@@ -1066,20 +1066,24 @@ nav {
 
 
 .two:hover ~ hr {
-    margin-left: 25%;
+    margin-left: 20%;
 }
 
 .three:hover ~ hr {
-    margin-left: 50%;
+    margin-left: 40%;
 }
 
 .four:hover ~ hr {
-    margin-left: 75%;
+    margin-left: 60%;
+}
+
+.five:hover ~ hr {
+    margin-left: 80%;
 }
 
 hr {
     height: .25rem;
-    width: 25%;
+    width: 20%;
     margin: 0;
     background: tomato;
     border: none;
