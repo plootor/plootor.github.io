@@ -1002,7 +1002,7 @@ nav {
 }
 
 .navigation {
-    margin-top: 70px;
+    margin-top: 68px;
 }
 
 .navigation li {
@@ -1017,14 +1017,13 @@ nav {
     /*width: 25%;*/
     text-decoration: none;
     color: #000000;
-    font-size: 22px;
+    font-size: 25px;
     line-height: 30px;
 }
 
 .navigation .submenu{
-    border-left: 1px solid black;
     margin-left: 15px;
-    margin-top: 15px;
+    padding-top: 15px;
     visibility: hidden;
     position: absolute;
     z-index: 15;
@@ -1036,6 +1035,7 @@ nav {
 
 .navigation .submenu li{
     display: block;
+    border-left: 1px solid #000;
 }
 
 .navigation .submenu li a{
@@ -1076,12 +1076,14 @@ nav {
 }
 
 hr {
-    height: .25rem;
+    height: 3px;
     width: 20%;
     margin: 0;
-    background: tomato;
+    background: #000;
     border: none;
     transition: .3s ease-in-out;
+    position: relative;
+    top: -1px;
 }
 
 
