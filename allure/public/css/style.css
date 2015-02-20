@@ -1083,3 +1083,31 @@ hr {
     border: none;
     transition: .3s ease-in-out;
 }
+
+
+
+/*SVG*/
+.team2 .cell{
+    border: none;
+}
+
+.border{
+    position: relative;
+    top: -410px;
+}
+.shape {
+    fill: transparent;
+    stroke-width: 5px;
+    stroke: #fff;
+    stroke-dasharray: 178 484;
+    stroke-dashoffset: -2031;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s, stroke-opacity 1s;
+}
+
+.cell:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 13273;
+    fill-opacity: 0.8;
+    fill: #000;
+}
