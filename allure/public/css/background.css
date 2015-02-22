@@ -18,6 +18,11 @@
     width: 100%;
 }
 
+.bg-home div{
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
 @keyframes cf4FadeInOut {
     0% {
         opacity:1;
@@ -87,41 +92,42 @@
 
 .slide .title {
     line-height: 65px;
-    font-size: 55px;
-    margin-bottom: 80px;
+    font-size: 50px;
+    margin-bottom: 40px;
 }
 
 .slide .description {
     width: 700px;
-    line-height: 25px;
-    font-size: 20px;
     text-align: justify;
-}
-/*
-.slide1 .title, .slide3 .title{
-    text-align: right;
+    line-height: 55px;
+    font-size: 33px;
 }
 
-.slide1 .description, .slide3 .description{
-
+.slide3 .description {
     float: right;
+    margin-right: 125px;
+    width: 612px;
+}
+.slide3 .title {
+    text-align: right;
+    margin-right: 154px;
 }
 
-.slide2 .title, .slide4 .title{
-    line-height: 65px;
-    font-size: 55px;
-    margin-bottom: 80px;
+.slide2 .description{
+    width: 752px;
+    margin-left: 133px;
+}
+.slide2 .title{
+ text-align: center;
 }
 
-.slide2 .description, .slide4 .description{
-    width: 700px;
-    line-height: 25px;
-    font-size: 20px;
-    text-align: justify;
-}*/
+.slide4 .title {
+    text-align: right;
+    margin-right: 30px;
+}
+.slide4 .description {
+    float: right;
+    margin-right: 30px;
+}
 
 /*slider*/
-.bg-home div{
-    -webkit-transition: all 1.5s ease;
-    transition: all 1.5s ease;
-}
