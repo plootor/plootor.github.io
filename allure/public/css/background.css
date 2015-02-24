@@ -11,6 +11,7 @@
 }
 
 .background div, .bg-home div{
+    background-size: cover !important;
     position: absolute;
     top:0;
     left:0;
