@@ -962,8 +962,8 @@ nav {
 
 .navigation .submenu li a{
     color: black;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 28px;
     margin:0 5px;
 }
 
@@ -974,12 +974,31 @@ nav {
 }
 
 .submenu li:hover {
-    /*border-left: 2px solid black;*/
+    font-weight: bold;
     padding-left: 2px;
+    transition: .2s ease-in-out;
 
 }
 
+.two.active ~ hr {
+    margin-left: 20%;
+}
 
+.three.active ~ hr {
+    margin-left: 40%;
+}
+
+.four.active ~ hr {
+    margin-left: 60%;
+}
+
+.five.active ~ hr {
+    margin-left: 80%;
+}
+
+.one:hover ~ hr {
+    margin-left: 0%;
+}
 
 .two:hover ~ hr {
     margin-left: 20%;
