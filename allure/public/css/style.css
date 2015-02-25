@@ -290,6 +290,17 @@ footer .social-media li a{
      width: 1180px;
  }
 
+.text-area .upper {
+     text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 6px;
+ }
+
+.text-area .semi-paragraf{
+    font-weight: bold;
+    padding-top: 10px;
+}
+
  .slider .text-area a{
      font-size: 18px;
  }
