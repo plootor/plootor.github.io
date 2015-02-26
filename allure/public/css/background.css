@@ -106,12 +106,12 @@
 
 .slide3 .description {
     float: right;
-    margin-right: 125px;
+    margin-right: 90px;
     width: 612px;
 }
 .slide3 .title {
     text-align: right;
-    margin-right: 154px;
+    margin-right: 90px;
 }
 
 .slide2 .description{
@@ -129,6 +129,7 @@
 .slide4 .description {
     float: right;
     margin-right: 30px;
+    text-align: right;
 }
 
 /*slider*/
