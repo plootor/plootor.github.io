@@ -86,50 +86,32 @@
 
 
 /*home slider*/
+.slide{
+    height: 480px;
+}
+
 .sliderContainer{
     width: 1200px;
     margin: 0 auto;
 }
 
 .slide .title {
-    line-height: 65px;
+    line-height: 80px;
     font-size: 50px;
-    margin-bottom: 40px;
-}
-
-.slide .description {
-    width: 700px;
-    text-align: justify;
-    line-height: 55px;
-    font-size: 33px;
+    margin-bottom: 35px;
+    color: mintcream;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .slide3 .description {
-    float: right;
-    margin-right: 90px;
-    width: 612px;
-}
-.slide3 .title {
-    text-align: right;
-    margin-right: 90px;
+    text-align: center;
+    font-size: 30px;
 }
 
-.slide2 .description{
-    width: 752px;
-    margin-left: 133px;
-}
-.slide2 .title{
- text-align: center;
-}
-
-.slide4 .title {
-    text-align: right;
-    margin-right: 30px;
-}
-.slide4 .description {
-    float: right;
-    margin-right: 30px;
-    text-align: right;
+.slide3 .description p{
+    font-size: 25px;
+    font-style: italic;
 }
 
 /*slider*/

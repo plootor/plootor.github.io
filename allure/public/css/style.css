@@ -16,7 +16,7 @@ li{
  }
 
 body, input, textarea,button{
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Raleway';
 }
 
 .clear{
@@ -117,7 +117,7 @@ footer{
 footer .message{
     color: #bbbab0;
     line-height: 40px;
-    font-size: 20px;
+    font-size: 15px;
     float: left;
 }
 
@@ -157,10 +157,10 @@ footer .social-media li a{
 
 .about .cell p{
     color: #bbbab0;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
     padding-top: 20px;
-    line-height: 24px;
+    line-height: 26px;
 }
 
 .about .cell{
@@ -256,24 +256,27 @@ footer .social-media li a{
      height: 400px;
      width: 500px;
  }
- .slider .date{
-     font-size: 16px;
+
+ .text-area .text{
+     font-size: 15px;
+     line-height: 26px;
+     color: #bbbab0;
+     text-align: justify;
+ }
+
+ .text-area .date{
+     font-size: 13px;
      padding-bottom: 20px;
      color: #bbbab0;
  }
 
  .slider h1{
-     font-size: 22px;
-     color: #bbbab0;
      padding-bottom: 20px;
  }
 
- .slider .text{
-     font-size: 20px;
-     line-height: 26px;
-     color: #bbbab0;
-     text-align: justify;
-     padding-bottom: 20px;
+ .text-area .continue{
+     font-size: 13px !important;
+     font-style: italic;
  }
 
  .slider button{
@@ -291,7 +294,8 @@ footer .social-media li a{
  }
 
 .text-area .upper {
-     text-transform: uppercase;
+    font-size: 16px;
+    text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 6px;
  }
@@ -302,7 +306,7 @@ footer .social-media li a{
 }
 
  .slider .text-area a{
-     font-size: 18px;
+     font-size: 16px;
  }
 
 .slider .text-area a:hover{
@@ -422,31 +426,8 @@ footer .social-media li a{
      transform: rotateY(100deg);
 }
 
-.team img{
-    margin-top: 50px;
-    border: 1px solid #bbbab0;
-    text-align: center;
-}
-
-.team .name{
-    padding-top: 15px;
-    font-size: 20px;
-    color: #bbbab0;
-}
-
-.team .job{
-    padding-top: 15px;
-    font-size: 15px;
-    color: #bbbab0;
-}
-
-.team .back-text{
-    padding: 100px 10px 50px 10px;
-    color: #bbbab0;
-}
-
 /*TEAM2*/
-.team2 .cell{
+.team .cell{
     float: left;
     width: 265px;
     height: 400px;
@@ -462,25 +443,25 @@ footer .social-media li a{
     margin-right: 0;
 }
 
-.team2 img{
+.team img{
     margin-top: 50px;
     border: 1px solid #bbbab0;
     text-align: center;
 }
 
-.team2 .name{
+.team .name{
     padding-top: 15px;
-    font-size: 20px;
+    font-size: 19px;
     color: #bbbab0;
 }
 
-.team2 .job{
+.team .job{
     padding-top: 15px;
     font-size: 15px;
     color: #bbbab0;
 }
 
-.team2 .cell .hover{
+.team .cell .hover{
     position: absolute;
     top: 35%;
     transform: translateY(-30px);
@@ -490,12 +471,12 @@ footer .social-media li a{
     margin-left: 5%;
 }
 
-.team2 .cell:hover .hover{
+.team .cell:hover .hover{
     transform: translateY(0);
     opacity: 1;
 }
 
-.team2 .cell .text{
+.team .cell .text{
     font-size: 18px;
     line-height: 22px;
     text-align: center;
@@ -522,36 +503,32 @@ footer .social-media li a{
      border-right: none;
 }
 
+.contact .contact-form input, .contact .contact-form textarea, .contact .contact-form button{
+    font-size: 14px;
+    color: #bbbab0;
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
 .contact .cell .contact-form input{
     width: 100%;
     height: 50px;
-    border: none;
     border-bottom: 1px solid #bbbab0;
-    background-color: rgba(0,0,0,0);
-    color: #bbbab0;
-    font-size: 18px;
+
 }
 
 .contact .cell .contact-form textarea{
-     width: 100%;
-     height: 250px;
-     border: none;
-     border-bottom: 1px solid #bbbab0;
-     background-color: rgba(0,0,0,0);
-     color: #bbbab0;
-     padding-top: 15px;
-     font-size: 18px;
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px solid #bbbab0;
+    padding-top: 15px;
 }
 
 .contact .cell .contact-form button{
-     width: 100px;
-     height: 30px;
-     border: none;
-     background-color: rgba(0,0,0,0);
-     color: #bbbab0;
-     text-align: left;
-     cursor: pointer;
-     font-size: 18px;
+    width: 100px;
+    height: 30px;
+    text-align: left;
+    cursor: pointer;
 }
 
 textarea:focus, input:focus{
@@ -564,7 +541,7 @@ textarea{
 
 .contact .cell p{
      color: #bbbab0;
-     font-size: 20px;
+     font-size: 16px;
      line-height: 35px;
      text-align: center;
 }
@@ -584,6 +561,21 @@ textarea{
      margin-top: 50px;
 }
 
+.portf h1 {
+    color: #bbbab0;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: normal;
+}
+
+.portf .cell .photo-portfolio .text{
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    padding: 15px 40px 15px 40px;
+}
  /*PORTFOLIO2*/
  .portfolio2 .cell{
      width: 580px;
@@ -605,13 +597,6 @@ textarea{
  .portfolio2 .cell img{
      transition: all 1s ease;
      display: block;
- }
-
- .portfolio2 .cell h1{
-     color: #bbbab0;
-     font-size: 22px;
-     text-align: center;
-     padding-top: 10px;
  }
 
  .portfolio2 .cell .photo-portfolio{
@@ -637,14 +622,6 @@ textarea{
  .portfolio2 .cell:hover .photo-portfolio .hover{
      transform: translateY(0);
      opacity: 1;
- }
-
- .portfolio2 .cell .photo-portfolio .text{
-     font-size: 18px;
-     line-height: 22px;
-     text-align: center;
-     color: #ffffff;
-     padding: 15px 40px 15px 40px;
  }
 
  .portfolio2 .cell .photo-portfolio .hoverbg{
@@ -692,11 +669,12 @@ textarea{
 
  .portfolio3 .cell h1{
      color: #bbbab0;
-     font-size: 22px;
+     font-size: 17px;
      line-height: 50px;
      text-align: center;
      height: 50px;
      box-sizing: border-box;
+     font-weight: normal;
  }
 
  .portfolio3 .cell .photo-portfolio{
@@ -722,14 +700,6 @@ textarea{
 .portfolio3 .cell:hover .photo-portfolio .hover{
     transform: translateY(0);
     opacity: 1;
-}
-
-.portfolio3 .cell .photo-portfolio .text{
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    color: #ffffff;
-    padding: 15px 40px 15px 40px;
 }
 
 .portfolio3 .cell .photo-portfolio .hoverbg{
@@ -769,13 +739,6 @@ textarea{
      display: block;
  }
 
- .portfolio4 .cell h1{
-     color: #bbbab0;
-     font-size: 22px;
-     text-align: center;
-     padding-top: 10px;
- }
-
  .portfolio4 .cell .photo-portfolio{
      overflow: hidden;
      position: relative;
@@ -799,14 +762,6 @@ textarea{
 .portfolio4 .cell:hover .photo-portfolio .hover{
     transform: translateY(0);
     opacity: 1;
-}
-
-.portfolio4 .cell .photo-portfolio .text{
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    color: #ffffff;
-    padding: 15px 40px 15px 40px;
 }
 
 .portfolio4 .cell .photo-portfolio .hoverbg{
@@ -839,11 +794,6 @@ textarea{
     height: 400px;
     width: 500px;
 }
-.bpost .date{
-    font-size: 16px;
-    padding-bottom: 20px;
-    color: #bbbab0;
-}
 
 .bpost h1{
     font-size: 22px;
@@ -852,17 +802,12 @@ textarea{
 }
 
 .bpost .text{
-    font-size: 18px;
-    line-height: 25px;
-    color: #bbbab0;
-    text-align: justify;
     padding: 0 15px;
     border-left: 2px solid #bbbab0;
 }
 
 .comment h1{
     margin-top: 45px;
-    font-size: 20px;
 }
 
 .comm .name-date{
@@ -873,13 +818,13 @@ textarea{
 
 .comm .name{
     float: left;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 1px;
     font-style: italic;
 }
 
 .comm p{
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .comm span{
@@ -912,7 +857,7 @@ textarea{
     border-radius: 5px;
     box-sizing: border-box;
     color: #bbbab0;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .comment-form textarea{
@@ -950,8 +895,9 @@ nav {
     /*width: 25%;*/
     text-decoration: none;
     color: #000000;
-    font-size: 25px;
+    font-size: 14px;
     line-height: 30px;
+    text-transform: uppercase;
 }
 
 .navigation .submenu{
@@ -969,13 +915,15 @@ nav {
 .navigation .submenu li{
     display: block;
     border-left: 1px solid #000;
+    transition: .2s ease-in-out;
 }
 
 .navigation .submenu li a{
     color: black;
-    font-size: 20px;
+    font-size: 13px;
     line-height: 28px;
     margin:0 5px;
+    text-transform: uppercase;
 }
 
 .navigation>li:hover .submenu{
@@ -985,9 +933,7 @@ nav {
 }
 
 .submenu li:hover {
-    font-weight: bold;
-    padding-left: 2px;
-    transition: .2s ease-in-out;
+    border-left: 3px solid #000000;
 
 }
 
@@ -1041,7 +987,7 @@ hr {
 
 
 /*SVG*/
-.team2 .cell{
+.team .cell{
     border: none;
 }
 
