@@ -17,8 +17,7 @@ $(function () {
         infiniteLoop: true,
         auto: true,
         pause: 6000,
-        controls: true,
-        autoControls: true,
+        controls: false,
         onSlideBefore: function($slideElement, oldIndex, newIndex){
 
             //for css3 effects
