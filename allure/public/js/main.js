@@ -2,14 +2,9 @@
  * Created by niunea on 11/16/14.
  */
 $(function () {
-
-    if($('.fluidbox').length){
-        $('.fluidbox').fluidbox();
-    }
-
-    if($('.nano').length){
-        $('.nano').nanoScroller();
-    }
+    'use strict';
+    $('.fluidbox').fluidbox();
+    $('.nano').nanoScroller();
 
     $('.slider').bxSlider({
         mode: 'fade',
@@ -20,14 +15,12 @@ $(function () {
         autoControls: true,
         autoControlsCombine: true,
         controls: false,
-        onSlideBefore: function($slideElement, oldIndex, newIndex){
-
-            //for css3 effects
-            $('.slide.active').removeClass('active');
-            $slideElement.addClass('active');
-
+        onSlideBefore: function ($slideElement, oldIndex, newIndex) {
             var selectedIndex = newIndex + 1;
-            $('.bg-home  > :visible').css('opacity', 0);
+
+            $('.slide.active').removeClass('active');
+            $slideElement.addClass('active');            
+            $('.bg-home>:visible').css('opacity', 0);
             $('.bg-home div:nth-child(' + selectedIndex + ')').css('opacity', 1);
         }
     });
