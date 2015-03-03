@@ -3,9 +3,12 @@
  */
 $(function () {
     'use strict';
-    $('.fluidbox').fluidbox();
-    $('.nano').nanoScroller();
-
+    if ($('.fluidbox').length) {
+        $('.fluidbox').fluidbox();
+    }
+    if ($('.nano').length) {
+        $('.nano').nanoScroller();
+    }
     $('.slider').bxSlider({
         mode: 'fade',
         speed: 1500,
