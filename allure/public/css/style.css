@@ -110,7 +110,7 @@ header nav .menu>li:hover .submenu{
 /*FOOTER*/
 footer{
     position: relative;
-    z-index: 9;
+    z-index: 12;
     height: 40px;
     background-color: rgba(0,0,0,0.8);
 }
@@ -124,16 +124,52 @@ footer .message{
 
 footer .social-media li{
     float: right;
-    padding-top: 2px;
+    padding-top: 4px;
     padding-right: 7px;
 }
 
 footer .social-media li a{
-    height: 35px;
+    height: 32px;
+    width: 32px;
     display: block;
 }
 
+footer .social-media li .facebook{
+    background-image: url('../images/social/white_facebook.png');
+}
 
+footer .social-media li .facebook:hover{
+    background-image: url('../images/social/hover/white_facebookh.png');
+}
+
+footer .social-media li .pinterest{
+    background-image: url('../images/social/white_pinterest.png');
+}
+
+footer .social-media li .pinterest:hover{
+    background-image: url('../images/social/hover/white_pinteresth.png');
+}
+footer .social-media li .twitter{
+    background-image: url('../images/social/white_twitter_bird.png');
+}
+
+footer .social-media li .twitter:hover{
+    background-image: url('../images/social/hover/white_twitter_birdh.png');
+}
+footer .social-media li .heart{
+    background-image: url('../images/social/white_heart.png');
+}
+
+footer .social-media li .heart:hover{
+    background-image: url('../images/social/hover/white_hearth.png');
+}
+footer .social-media li .podcast{
+    background-image: url('../images/social/white_podcast.png');
+}
+
+footer .social-media li .podcast:hover{
+    background-image: url('../images/social/hover/white_podcasth.png');
+}
 /*HOME PAGE*/
 .wrapper{
     position: relative;
