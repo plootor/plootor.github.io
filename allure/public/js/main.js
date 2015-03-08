@@ -4,7 +4,9 @@
 $(function () {
     'use strict';
     if ($('.fluidbox').length) {
-        $('.fluidbox').fluidbox();
+        $('.fluidbox').fluidbox()
+            .on('openstart', function(){ $('footer').css('z-index', 9); })
+            .on('closeend', function(){ $('footer').css('z-index', 12); });
     }
     if ($('.nano').length) {
         $('.nano').nanoScroller();
