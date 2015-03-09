@@ -1077,7 +1077,7 @@ hr {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media only screen and (min-device-width: 1000px) and (max-device-width: 1200px) {
     .centered, .sliderContainer {
         width: 980px;
     }
@@ -1196,7 +1196,7 @@ hr {
     }
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 876px) {
+@media only screen and (min-device-width: 876px) and (max-device-width: 999px) {
     .centered, .sliderContainer {
         width: 847px;
     }
@@ -1237,6 +1237,11 @@ hr {
     }
 
     .bpost .text-area{
-        width: 427px !important;
+        width: 455px !important;
+    }
+
+    .bpost img {
+        width: 350px;
+        height: auto;
     }
 }
