@@ -1063,17 +1063,17 @@ hr {
     }
 
     .slider{
-        width: 870px !important;
+        width: 870px;
     }
 
     .slider img{
-        width: 400px;
-        height: 320px;
+        width: 300px;
+        height: auto;
     }
 
     .slider .text-area{
         margin-left: 20px;
-        width: 445px;
+        width: 400px;
     }
 }
 
@@ -1083,7 +1083,7 @@ hr {
     }
 
     .about .cell {
-        width: 485px;
+        width: 480px;
         padding-right: 20px;
     }
 
@@ -1162,7 +1162,7 @@ hr {
     }
 
     .comm .name-date{
-        width: 432px;
+        width: 425px;
     }
 
 
@@ -1243,5 +1243,99 @@ hr {
     .bpost img {
         width: 350px;
         height: auto;
+    }
+
+    .comm .name-date{
+        width: 280px;
+    }
+
+    .nano-pane{
+        opacity: 1 !important;
+    }
+
+    .comment img{
+        width: 80px;
+        height: 60px;
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 875px) {
+    .centered, .sliderContainer {
+        width: 748px;
+    }
+
+    main {
+        height: auto;
+    }
+
+/*temporary nav*/
+    nav {
+        width: 550px;
+        margin: 0 auto;
+    }
+
+
+    .portfolio3 .cell {
+        width: 235px;
+    }
+
+    .portfolio2 .cell {
+        width: 363px;
+    }
+
+    .portfolio4 .cell {
+        width: 171px;
+    }
+
+    .portf .cell .photo-portfolio .text{
+        padding: 0;
+    }
+
+    .about .cell {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .contact .cell {
+        width: 235px;
+    }
+
+    .team .cell {
+        /* width: 230px; */
+        margin-right: 155px;
+        margin-bottom: 25px;
+    }
+
+    .bpost .nano {
+        width: 420px !important;
+    }
+
+    .bpost .text-area{
+        width: 408px !important;
+    }
+
+    .bpost img {
+        width: 300px;
+        height: auto;
+    }
+
+    .blog2 .text-area .text{
+        overflow: hidden;
+        max-height: 103px;
+    }
+
+    .comm .name-date{
+        width: 280px;
+    }
+
+    .nano-pane{
+        opacity: 1 !important;
+    }
+
+    .comment img{
+        width: 80px;
+        height: 60px;
+        margin-right: 15px;
     }
 }
