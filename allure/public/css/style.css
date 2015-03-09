@@ -1139,7 +1139,7 @@ hr {
 
     .bpost .text-area{
         margin-left: 20px;
-        width: 445px;
+        width: 555px;
     }
 
     .bpost img{
@@ -1193,5 +1193,50 @@ hr {
     }
     .gallery .row2 a:nth-child(4) img{
         width: 200px;
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 876px) {
+    .centered, .sliderContainer {
+        width: 847px;
+    }
+
+    main {
+        height: auto;
+    }
+
+    .portfolio3 .cell {
+        width: 269px;
+    }
+
+    .portfolio2 .cell {
+        width: 413px;
+    }
+
+    .portfolio4 .cell {
+        width: 195px;
+    }
+
+    .about .cell {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .contact .cell {
+        width: 269px;
+    }
+
+    .team .cell {
+        /* width: 230px; */
+        margin-right: 155px;
+        margin-bottom: 25px;
+    }
+
+    .bpost .nano {
+        width: 420px !important;
+    }
+
+    .bpost .text-area{
+        width: 427px !important;
     }
 }
