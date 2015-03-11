@@ -12,6 +12,11 @@
     <script src="http://plootor.github.io/allure/public/js/jquery.bxslider.js"></script>
     <script type="text/javascript" src="http://plootor.github.io/allure/public/js/main.js"></script>
 
+    <script type="text/javascript">
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            document.write('<script type="text/javascript" src="public/js/mobile.js"><\/script>');
+        }
+    </script>
 </head>
 <body>
 

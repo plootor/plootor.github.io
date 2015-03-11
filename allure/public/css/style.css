@@ -1265,7 +1265,7 @@ hr {
         width: 748px;
     }
 
-    main {
+    main.gallery, main.about, main.team {
         height: auto;
     }
 
@@ -1294,7 +1294,8 @@ hr {
 
     .about .cell {
         float: none;
-        margin: 0 auto;
+        margin-left: 75px;
+        width: 565px;
     }
 
     .contact .cell {
@@ -1302,9 +1303,7 @@ hr {
     }
 
     .team .cell {
-        /* width: 230px; */
-        margin-right: 155px;
-        margin-bottom: 25px;
+        margin: 25px 52px;
     }
 
     .bpost .nano {
@@ -1337,5 +1336,36 @@ hr {
         width: 80px;
         height: 60px;
         margin-right: 15px;
+    }
+
+    .gallery .row1 a:nth-child(1) img{
+        width: 282px;
+    }
+    .gallery .row1 a:nth-child(2) img{
+        width: 100px;
+    }
+    .gallery .row1 a:nth-child(3) img{
+        width: 250px;
+    }
+    .gallery .row1 a:nth-child(4) img{
+        width: 100px;
+    }
+
+
+    .gallery .row2 a:nth-child(1) img{
+        width: 180px;
+    }
+    .gallery .row2 a:nth-child(2) img{
+        width: 170px;
+    }
+    .gallery .row2 a:nth-child(3) img{
+        width: 250px;
+    }
+    .gallery .row2 a:nth-child(4) img{
+        width: 132px;
+    }
+
+    .gallery .photo-gallery img{
+        height: 178px;
     }
 }
