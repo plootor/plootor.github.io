@@ -195,6 +195,14 @@ footer .social-media li .podcast:hover{
     z-index: 10 !important;
 }
 
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #EFEFEF !important;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus{
+    background: #5B564D !important;
+}
+
 /*ABOUT*/
 .about .row:last-child .cell img{
     margin-top: 22px;
