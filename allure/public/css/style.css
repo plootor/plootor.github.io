@@ -188,6 +188,13 @@ footer .social-media li .podcast:hover{
     position: relative;
 }
 
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+    left: 90px !important;
+    width: 35px !important;
+    height: 11px !important;
+    z-index: 10 !important;
+}
+
 /*ABOUT*/
 .about .row:last-child .cell img{
     margin-top: 22px;
