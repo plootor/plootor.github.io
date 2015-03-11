@@ -565,6 +565,7 @@ footer .social-media li .podcast:hover{
     height: 250px;
     border-bottom: 1px solid #bbbab0;
     padding-top: 15px;
+    border-radius: 0;
 }
 
 .contact .cell .contact-form button{
