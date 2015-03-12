@@ -1343,6 +1343,7 @@ hr {
     .bpost .text-area{
         width: 380px !important;
         overflow: hidden;
+        margin-left: 15px;
     }
 
     .bpost img {
