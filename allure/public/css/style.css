@@ -1279,7 +1279,7 @@ hr {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 875px) {
+@media only screen and (min-device-width: 368px) and (max-device-width: 875px) {
     .centered, .sliderContainer {
         width: 748px;
     }
