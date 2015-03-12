@@ -1401,3 +1401,21 @@ hr {
         height: 178px;
     }
 }
+
+@media only screen and (min-device-height: 900px) {
+    .sliderContainer {
+        margin-top: 200px;
+    }
+}
+
+@media only screen and (min-device-height: 700px) {
+    .sliderContainer {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .sliderContainer {
+        margin-top: 300px;
+    }
+}
