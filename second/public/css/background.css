@@ -192,10 +192,6 @@
     animation-duration: 3s;
 }
 
-.slide3 .description {
-    color: #ffffff;
-}
-
 .slide3.active .description {
     position: relative;
     -webkit-animation: slide3DIn;

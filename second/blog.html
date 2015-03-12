@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Harmony - Blog</title>
+    <title>Free Spirit - Blog</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="public/css/background.css"/>
@@ -9,6 +9,11 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script type="text/javascript" src="public/js/jquery.cycle2.js"></script>
+    <script type="text/javascript">
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            document.write('<script type="text/javascript" src="public/js/mobile.js"><\/script>');
+        }
+    </script>
 <body>
 <div class="background">
     <div style="background: url('public/images/bg/sailor-504098_1920.jpg') no-repeat left bottom fixed;"></div>
@@ -21,7 +26,7 @@
         <div class="centered">
             <div class="logo">
                 <a href="index.html">
-                    <img src="public/images/catlogo.png">
+                    <img src="public/images/logos/spirit1.png">
                 </a>
             </div>
             <nav>
@@ -65,7 +70,7 @@
                         </h1>
                         <p class="text">The wild animals you see in your backyard aren’t trespassing—it’s their home too.
                             As humans increasingly move into animals’ habitats, we can unwittingly cause our wild animal
-                        neighbors far more trouble than they cause us.</p>
+                            neighbors far more trouble than they cause us.</p>
                         <a class="continue" href="blogpost.html">Continue reading . . .</a>
                     </div>
                 </article>
@@ -130,11 +135,11 @@
         <div class="message">Copyright &#169; 2015 - info@harmony.com</div>
         <div class="social-media">
             <ul>
-                <li><a href="index.html"><img src="public/images/social/socialm1.png"></a></li>
-                <li><a href="index.html"><img src="public/images/social/socialm2.png"></a></li>
-                <li><a href="index.html"><img src="public/images/social/socialm3.png"></a></li>
-                <li><a href="index.html"><img src="public/images/social/socialm4.png"></a></li>
-                <li><a href="index.html"><img src="public/images/social/socialm5.png"></a></li>
+                <li><a class="facebook" href="index.html"></a></li>
+                <li><a class="pinterest" href="index.html"></a></li>
+                <li><a class="twitter" href="index.html"></a></li>
+                <li><a class="heart" href="index.html"></a></li>
+                <li><a class="podcast" href="index.html"></a></li>
             </ul>
         </div>
         <div class="clear"></div>
