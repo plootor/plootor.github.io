@@ -1337,10 +1337,12 @@ hr {
     
     .bpost .nano {
         width: 380px !important;
+        overflow: hidden;
     }
 
     .bpost .text-area{
-        width: 408px !important;
+        width: 380px !important;
+        overflow: hidden;
     }
 
     .bpost img {
