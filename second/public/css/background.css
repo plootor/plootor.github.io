@@ -193,6 +193,7 @@
 }
 
 .slide3.active .description {
+    color: mintcream;
     position: relative;
     -webkit-animation: slide3DIn;
     animation: slide3DIn;
