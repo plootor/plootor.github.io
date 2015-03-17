@@ -141,7 +141,7 @@ footer .social-media li .facebook{
 }
 
 footer .social-media li .facebook:hover{
-    background-image: url('../images/social/hover/white_facebookh.png');
+    background-image: url('../images/social/hover/facebook.png');
 }
 
 footer .social-media li .pinterest{
@@ -149,28 +149,28 @@ footer .social-media li .pinterest{
 }
 
 footer .social-media li .pinterest:hover{
-    background-image: url('../images/social/hover/white_pinteresth.png');
+    background-image: url('../images/social/hover/pinterest.png');
 }
 footer .social-media li .twitter{
     background-image: url('../images/social/white_twitter_bird.png');
 }
 
 footer .social-media li .twitter:hover{
-    background-image: url('../images/social/hover/white_twitter_birdh.png');
+    background-image: url('../images/social/hover/twitter.png');
 }
 footer .social-media li .heart{
     background-image: url('../images/social/white_heart.png');
 }
 
 footer .social-media li .heart:hover{
-    background-image: url('../images/social/hover/white_hearth.png');
+    background-image: url('../images/social/hover/heart.png');
 }
 footer .social-media li .podcast{
     background-image: url('../images/social/white_podcast.png');
 }
 
 footer .social-media li .podcast:hover{
-    background-image: url('../images/social/hover/white_podcasth.png');
+    background-image: url('../images/social/hover/podcast.png');
 }
 /*HOME PAGE*/
 .wrapper{
