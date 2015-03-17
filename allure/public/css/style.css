@@ -382,7 +382,7 @@ footer .social-media li .podcast:hover{
 }
 
 .slider .prev{
-    background-image: url("../images/arrow/previous.png");
+    background-image: url("../images/arrow/left.png");
     background-size: cover;
     position: absolute;
     left: -50px;
