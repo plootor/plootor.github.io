@@ -51,42 +51,52 @@ header{
 }
 
 header .logo{
-    float: left;
-    margin-right: 30px;
+    margin: 30px auto;
+    width: 200px;
 }
 
-header .logo img{
-    height: 120px;
-    background-color: rgba(253, 253, 253, 0.4);
+header .logo a{
+    color: #909090;
+    font-size: 30px;
 }
 
 header nav{
     float: left;
-    height: 99px;
+    height: 31px;
     margin-right: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #909090;
+    width: 100%;
+}
+nav {
+    width:600px;
+    margin: 0 auto;
 }
 
-header nav .menu{
-    margin-top: 70px;
+.navigation {
+    width: 600px;
+    margin: 0 auto;
 }
 
-header nav .menu>li{
-    float: left;
+.navigation li {
+    display: inline-block;
+    text-align: center;
     position: relative;
+    width: 20%;
 }
 
-header nav .menu>li>a{
-    color: black;
-    font-size: 22px;
+.navigation>li>a{
+    display: inline-block;
+    /*width: 25%;*/
+    text-decoration: none;
+    color: #909090;
+    font-size: 14px;
     line-height: 30px;
-    margin:0 15px;
+    text-transform: uppercase;
 }
 
-header nav .menu .submenu{
-    border-left: 1px solid black;
+.navigation .submenu{
     margin-left: 15px;
-    margin-top: 15px;
+    padding-top: 15px;
     visibility: hidden;
     position: absolute;
     z-index: 15;
@@ -96,18 +106,79 @@ header nav .menu .submenu{
     transition: all .25s ease;
 }
 
-header nav .submenu li a{
-     color: black;
-     font-size: 18px;
-     line-height: 24px;
-     margin:0 5px;
+.navigation .submenu li{
+    display: block;
+    border-left: 1px solid #000;
+    transition: .2s ease-in-out;
 }
 
-header nav .menu>li:hover .submenu{
+.navigation .submenu li a{
+    color: black;
+    font-size: 13px;
+    line-height: 28px;
+    margin:0 5px;
+    text-transform: uppercase;
+}
+
+.navigation>li:hover .submenu{
     visibility: visible;
     opacity: 1;
     top: 25px;
 }
+
+.submenu li:hover {
+    border-left: 3px solid #000000;
+
+}
+
+.two.active ~ hr {
+    margin-left: 20%;
+}
+
+.three.active ~ hr {
+    margin-left: 40%;
+}
+
+.four.active ~ hr {
+    margin-left: 60%;
+}
+
+.five.active ~ hr {
+    margin-left: 80%;
+}
+
+.one:hover ~ hr {
+    margin-left: 0%;
+}
+
+.two:hover ~ hr {
+    margin-left: 20%;
+}
+
+.three:hover ~ hr {
+    margin-left: 40%;
+}
+
+.four:hover ~ hr {
+    margin-left: 60%;
+}
+
+.five:hover ~ hr {
+    margin-left: 80%;
+}
+
+hr {
+    height: 3px;
+    width: 20%;
+    margin: 0;
+    background: #909090;
+    border: none;
+    transition: .3s ease-in-out;
+    position: relative;
+    top: -1px;
+    float: left;
+}
+
 
 /*FOOTER*/
 footer{
@@ -408,7 +479,7 @@ footer .social-media li .podcast:hover{
      float: left;
      margin: 0 50px 50px 0;
      cursor: -webkit-zoom-in;
-     height: 200px;
+     height: 300px;
      box-sizing: border-box;
 }
 
@@ -938,123 +1009,6 @@ textarea{
 .comment .comment-form button{
     width: 100px;
 }
-
-
-
-
-/* rewrite here */
-nav {
-    width:600px;
-    margin: 0 auto;
-}
-
-.navigation {
-    margin-top: 68px;
-}
-
-.navigation li {
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    width: 20%;
-}
-
-.navigation>li>a{
-    display: inline-block;
-    /*width: 25%;*/
-    text-decoration: none;
-    color: #000000;
-    font-size: 14px;
-    line-height: 30px;
-    text-transform: uppercase;
-}
-
-.navigation .submenu{
-    margin-left: 15px;
-    padding-top: 15px;
-    visibility: hidden;
-    position: absolute;
-    z-index: 15;
-    opacity: 0;
-    top: 10px;
-    -webkit-transition: all .25s ease;
-    transition: all .25s ease;
-}
-
-.navigation .submenu li{
-    display: block;
-    border-left: 1px solid #000;
-    transition: .2s ease-in-out;
-}
-
-.navigation .submenu li a{
-    color: black;
-    font-size: 13px;
-    line-height: 28px;
-    margin:0 5px;
-    text-transform: uppercase;
-}
-
-.navigation>li:hover .submenu{
-    visibility: visible;
-    opacity: 1;
-    top: 25px;
-}
-
-.submenu li:hover {
-    border-left: 3px solid #000000;
-
-}
-
-.two.active ~ hr {
-    margin-left: 20%;
-}
-
-.three.active ~ hr {
-    margin-left: 40%;
-}
-
-.four.active ~ hr {
-    margin-left: 60%;
-}
-
-.five.active ~ hr {
-    margin-left: 80%;
-}
-
-.one:hover ~ hr {
-    margin-left: 0%;
-}
-
-.two:hover ~ hr {
-    margin-left: 20%;
-}
-
-.three:hover ~ hr {
-    margin-left: 40%;
-}
-
-.four:hover ~ hr {
-    margin-left: 60%;
-}
-
-.five:hover ~ hr {
-    margin-left: 80%;
-}
-
-hr {
-    height: 3px;
-    width: 20%;
-    margin: 0;
-    background: #000;
-    border: none;
-    transition: .3s ease-in-out;
-    position: relative;
-    top: -1px;
-    float: left;
-}
-
-
 
 /*SVG*/
 .team .cell{
