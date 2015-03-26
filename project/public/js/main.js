@@ -11,6 +11,7 @@ $(function () {
     if ($('.nano').length) {
         $('.nano').nanoScroller();
     }
+    if ($('.slider').length) {
     $('.slider').bxSlider({
         mode: 'fade',
         speed: 1500,
@@ -29,4 +30,5 @@ $(function () {
             $('.bg-home div:nth-child(' + selectedIndex + ')').css('opacity', 1);
         }
     });
+    }
 });
