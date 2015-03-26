@@ -23,11 +23,11 @@ body, input, textarea,button{
     clear: both;
 }
 
-main{
+/*main{
     background-color: rgba(0,0,0,0.8);
     padding: 50px 10px;
     height: 400px;
-}
+}*/
 
 .centered{
      width: 1180px;
@@ -406,10 +406,10 @@ footer .social-media li .podcast:hover{
      border: 1px solid #bbbab0;
      display: block;
      float: left;
-     margin: 0 5px 10px 0;
-    cursor: -webkit-zoom-in;
-    height: 195px;
-    box-sizing: border-box;
+     margin: 0 30px 30px 0;
+     cursor: -webkit-zoom-in;
+     height: 300px;
+     box-sizing: border-box;
 }
 
 .gallery .photo-gallery div a:last-child img{
@@ -417,30 +417,32 @@ footer .social-media li .podcast:hover{
 }
 
 .gallery .row1 a:nth-child(1) img{
-    width: 490px;
+    width: 400px;
 }
 .gallery .row1 a:nth-child(2) img{
-    width: 145px;
+    width: 350px;
 }
 .gallery .row1 a:nth-child(3) img{
-    width: 345px;
-}
-.gallery .row1 a:nth-child(4) img{
-    width: 185px;
+    width: 370px;
 }
 
 
+.gallery .row2 a:nth-child(4) img{
+    width: 350px;
+}
 .gallery .row2 a:nth-child(1) img{
-    width: 300px;
+    width: 370px;
 }
 .gallery .row2 a:nth-child(2) img{
-    width: 255px;
+    width: 400px;
 }
-.gallery .row2 a:nth-child(3) img{
-    width: 375px;
+
+
+.gallery .row3 a:nth-child(3) img{
+    width: 370px;
 }
-.gallery .row2 a:nth-child(4) img{
-    width: 235px;
+.gallery .row3 a:nth-child(4) img{
+    width: 400px;
 }
 /*TEAM*/
 .social{
