@@ -1,6 +1,6 @@
 .countdown{
     padding-top: 150px;
-    width: 600px;
+    width: 523px;
     margin: 0 auto;
     font-size: 0;
 }
@@ -21,12 +21,14 @@
     text-align: center;
     font-family: Raleway;
     font-size: 50px;
+    margin-top: 0;
 }
 
 .countdown_part p{
     text-align: center;
     font-family: Raleway;
     font-size: 20px;
+    margin-bottom: 0;
 }
 
 .text{
