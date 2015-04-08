@@ -42,3 +42,8 @@
     margin-top: 50px;
     line-height: 40px;
 }
+
+.wrapper{
+    position: relative;
+    z-index: 10;
+}
