@@ -1,6 +1,6 @@
 .countdown{
-    padding-top: 150px;
-    width: 523px;
+    padding-top: 100px;
+    width: 643px;
     margin: 0 auto;
     font-size: 0;
 }
@@ -8,8 +8,8 @@
 .countdown_part{
     display: inline-block;
     padding: 0px 30px 0px 30px;
-    border-right: 1px solid #888888;
-    width: 70px;
+    border-right: 1px solid #ffffff;
+    width: 100px;
     margin: 0 auto;
 }
 
@@ -22,6 +22,7 @@
     font-family: Raleway;
     font-size: 50px;
     margin-top: 0;
+    color: #ffffff;
 }
 
 .countdown_part p{
@@ -29,6 +30,7 @@
     font-family: Raleway;
     font-size: 20px;
     margin-bottom: 0;
+    color: #ffffff;
 }
 
 .text{
@@ -41,6 +43,7 @@
     font-size: 25px;
     margin-top: 50px;
     line-height: 40px;
+    color: #ffffff;
 }
 
 .wrapper{
