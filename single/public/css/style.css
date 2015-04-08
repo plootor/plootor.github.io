@@ -1,0 +1,41 @@
+.countdown{
+    padding-top: 150px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.countdown_part{
+    display: inline-block;
+    padding: 0px 30px 0px 30px;
+    border-right: 1px solid #888888;
+    width: 70px;
+    margin: 0 auto;
+}
+
+.countdown_part:last-child{
+    border-right: none;
+}
+
+.countdown_part h1{
+    text-align: center;
+    font-family: Raleway;
+    font-size: 50px;
+}
+
+.countdown_part p{
+    text-align: center;
+    font-family: Raleway;
+    font-size: 20px;
+}
+
+.text{
+    margin: 0 auto;
+}
+
+.text p{
+    text-align: center;
+    font-family: Raleway;
+    font-size: 25px;
+    margin-top: 50px;
+    line-height: 40px;
+}
