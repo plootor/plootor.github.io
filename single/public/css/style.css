@@ -1,5 +1,5 @@
 .countdown{
-    padding-top: 150px;
+    padding-top: 130px;
     width: 643px;
     margin: 0 auto;
     font-size: 0;
@@ -79,6 +79,7 @@
     height: 50px;
     border-bottom: 1px solid #000000 !important;
     border-radius: 0;
+    background: none;
 }
 
 .form-container textarea{
@@ -89,14 +90,15 @@
     border-radius: 0;
     overflow: auto;
     box-sizing: border-box;
+    background: none;
 }
 
 .form-container button{
-    width: 50px;
+    width: 100px;
     height: 30px;
-    text-align: left;
     cursor: pointer;
     text-align: center;
+    background-color: #bdffe9;
 }
 
 textarea:focus, input:focus{
@@ -110,4 +112,20 @@ textarea{
 .form-container{
     width: 600px;
     margin: 50px auto;
+}
+
+*::-webkit-input-placeholder {
+    color: #000000;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #000000;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #000000;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #000000;
 }
