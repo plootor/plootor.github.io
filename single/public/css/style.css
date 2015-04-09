@@ -3,12 +3,14 @@
     width: 643px;
     margin: 0 auto;
     font-size: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000000;
 }
 
 .countdown_part{
     display: inline-block;
     padding: 0px 30px 0px 30px;
-    border-right: 1px solid #ffffff;
+    /*border-right: 1px solid #000000;*/
     width: 100px;
     margin: 0 auto;
 }
@@ -22,7 +24,7 @@
     font-family: Raleway;
     font-size: 50px;
     margin-top: 0;
-    color: #ffffff;
+    color: #000000;
 }
 
 .countdown_part p{
@@ -30,7 +32,7 @@
     font-family: Raleway;
     font-size: 20px;
     margin-bottom: 0;
-    color: #ffffff;
+    color: #000000;
 }
 
 .text{
@@ -43,10 +45,72 @@
     font-size: 25px;
     margin-top: 50px;
     line-height: 40px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .wrapper{
     position: relative;
     z-index: 10;
 }
+
+.contact p{
+    text-align: center;
+    font-family: Raleway;
+    font-size: 20px;
+    margin-top: 50px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.contact img{
+    display: block;
+    margin: 0 auto;
+}
+
+.contact .contact-form input, .contact .contact-form textarea, .contact .contact-form button{
+    font-size: 14px;
+    color: #bbbab0;
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.contact .cell .contact-form input{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #bbbab0;
+    border-radius: 0;
+}
+
+.contact .cell .contact-form textarea{
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px solid #bbbab0;
+    padding-top: 15px;
+    border-radius: 0;
+    overflow: auto;
+}
+
+.contact .cell .contact-form button{
+    width: 100px;
+    height: 30px;
+    text-align: left;
+    cursor: pointer;
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+textarea{
+    resize: none;
+}
+
+/*.subscription button{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 auto;
+}*/
