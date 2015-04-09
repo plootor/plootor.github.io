@@ -71,7 +71,7 @@
     font-size: 14px;
     color: #bbbab0;
     background-color: rgba(0,0,0,0);
-    border: none;
+    border: 1px solid #000000;
 }
 
 .contact .cell .contact-form input{
