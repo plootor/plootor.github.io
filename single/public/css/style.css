@@ -69,22 +69,22 @@
 
 .contact .contact-form input, .contact .contact-form textarea, .contact .contact-form button{
     font-size: 14px;
-    color: #bbbab0;
-    background-color: #EFEFEF;
+    font-family: Raleway;
+    color: #000000;
     border: none;
 }
 
 .form-container input{
     width: 100%;
     height: 50px;
-    border-bottom: 1px solid #bbbab0 !important;
+    border-bottom: 1px solid #000000 !important;
     border-radius: 0;
 }
 
 .form-container textarea{
     width: 100%;
-    height: 250px;
-    border-bottom: 1px solid #bbbab0 !important;
+    height: 150px;
+    border-bottom: 1px solid #000000 !important;
     padding-top: 15px;
     border-radius: 0;
     overflow: auto;
@@ -92,10 +92,11 @@
 }
 
 .form-container button{
-    width: 100px;
+    width: 50px;
     height: 30px;
     text-align: left;
     cursor: pointer;
+    text-align: center;
 }
 
 textarea:focus, input:focus{
@@ -106,19 +107,7 @@ textarea{
     resize: none;
 }
 
-/*.subscription button{
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 20px;
-    cursor: pointer;
-    margin: 0 auto;
-}*/
-
-
-
 .form-container{
-    width: 643px;
+    width: 600px;
     margin: 50px auto;
 }
