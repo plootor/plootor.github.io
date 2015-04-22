@@ -19,63 +19,57 @@
     <div style="background: url('public/css/images/cherry-tomatoes-523100_1920.jpg') no-repeat center center fixed;background-size: cover;opacity: 1;"></div>
 </div>
 <div class="wrapper">
-    <header>
-
-    </header>
-    <div class="countdown">
-        <div class="countdown_part">
-            <h1>72</h1>
-            <p>days</p>
+    <section>
+        <div class="countdown">
+            <div class="countdown_part">
+                <h1>72</h1>
+                <p>days</p>
+            </div>
+            <div class="countdown_part">
+                <h1>14</h1>
+                <p>hours</p>
+            </div>
+            <div class="countdown_part">
+                <h1>54</h1>
+                <p>minutes</p>
+            </div>
+            <div class="countdown_part">
+                <h1>12</h1>
+                <p>seconds</p>
+            </div>
         </div>
-        <div class="countdown_part">
-            <h1>14</h1>
-            <p>hours</p>
+
+        <div class="text">
+            <p>Our website is coming soon<br>Come back on July 14th 2015</p>
         </div>
-        <div class="countdown_part">
-            <h1>54</h1>
-            <p>minutes</p>
+        <div class="contact">
+            <p>Want to contact us?<br>Fill in the form below</p>
+            <img src="public/css/images/arrow.png">
+            <div class="form-container">
+                <form is="ajax-form" action="simulate-server" method="post">
+
+                    <paper-input-decorator label="Name" floatingLabel>
+                        <input is="core-input">
+                    </paper-input-decorator>
+
+                    <paper-input-decorator label="Email" floatingLabel>
+                        <input is="core-input">
+                    </paper-input-decorator>
+
+                    <paper-input-decorator floatingLabel label="Message">
+                        <textarea class="message"></textarea>
+                    </paper-input-decorator>
+
+                    <paper-button id="submitButton" raised class="colored" role="button" tabindex="0">Send</paper-button>
+                    <script>
+                        document.getElementById('submitButton').addEventListener('click', function() {
+                            document.forms[0].submit();
+                        });
+                    </script>
+                </form>
+            </div>
         </div>
-        <div class="countdown_part">
-            <h1>12</h1>
-            <p>seconds</p>
-        </div>
-    </div>
-<!--
-    <flip-clock displayMode="countdown" startFrom="70" commandButtons="true" auto></flip-clock> -->
-
-    <div class="text">
-        <p>Our website is coming soon<br>Come back on July 14th 2015</p>
-    </div>
-    <div class="contact">
-        <p>Want to contact us?<br>Fill in the form below</p>
-        <img src="public/css/images/arrow.png">
-        <div class="form-container">
-            <form is="ajax-form" action="simulate-server" method="post">
-
-                <paper-input-decorator label="Name" floatingLabel>
-                    <input is="core-input">
-                </paper-input-decorator>
-
-                <paper-input-decorator label="Email" floatingLabel>
-                    <input is="core-input">
-                </paper-input-decorator>
-
-                <paper-input-decorator floatingLabel label="Message">
-                    <textarea class="message"></textarea>
-                </paper-input-decorator>
-
-                <paper-button id="submitButton" raised class="colored" role="button" tabindex="0">Send</paper-button>
-                <script>
-                    document.getElementById('submitButton').addEventListener('click', function() {
-                        document.forms[0].submit();
-                    });
-                </script>
-            </form>
-        </div>
-    </div>
+    </section>
 </div>
-<footer>
-
-</footer>
 </body>
 </html>
