@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
     <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="../bower_components/flip-clock/flip-clock.html">
     <link rel="import" href="../bower_components/ajax-form/ajax-form.html">
@@ -44,7 +46,7 @@
         </div>
         <div class="contact">
             <p>Want to contact us?<br>Fill in the form below</p>
-            <img src="public/css/images/arrow.png">
+            <img class="image" src="public/css/images/arrow.png">
             <div class="form-container">
                 <form is="ajax-form" action="simulate-server" method="post">
 
@@ -71,5 +73,11 @@
         </div>
     </section>
 </div>
+
+<script>
+    $( ".image" ).click(function() {
+        $( ".form-container" ).toggle('slow');
+    });
+</script>
 </body>
 </html>

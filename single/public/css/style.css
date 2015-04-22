@@ -69,9 +69,10 @@ section {
     color: #000000;
 }
 
-.contact img{
+.contact .image{
     display: block;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .form-container{
@@ -80,6 +81,7 @@ section {
 
     /*temporary*/
     display: none;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 *::-webkit-input-placeholder {
