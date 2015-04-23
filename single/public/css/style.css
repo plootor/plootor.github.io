@@ -71,13 +71,20 @@ section {
 
 .contact .image{
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 50px;
     cursor: pointer;
+    -webkit-transition: all 1s;-moz-transition: all 1s;-ms-transition: all 1s;-o-transition: all 1s;transition: all 1s;
 }
+.contact .image.active{
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
 
 .form-container{
     width: 600px;
-    margin: 50px auto;
+    margin:0 auto;
 
     /*temporary*/
     display: none;

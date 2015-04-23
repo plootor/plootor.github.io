@@ -7,10 +7,12 @@
     <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script src="public/js/jquery.plugins.js"></script>
+    <script src="public/js/jquery.countdown.js"></script>
 
     <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="../bower_components/flip-clock/flip-clock.html">
     <link rel="import" href="../bower_components/ajax-form/ajax-form.html">
     <link rel="import" href="../bower_components/paper-button/paper-button.html">
     <link rel="import" href="../bower_components/paper-input/paper-input-decorator.html">
@@ -22,24 +24,14 @@
 </div>
 <div class="wrapper">
     <section>
-        <div class="countdown">
-            <div class="countdown_part">
-                <h1>72</h1>
-                <p>days</p>
-            </div>
-            <div class="countdown_part">
-                <h1>14</h1>
-                <p>hours</p>
-            </div>
-            <div class="countdown_part">
-                <h1>54</h1>
-                <p>minutes</p>
-            </div>
-            <div class="countdown_part">
-                <h1>12</h1>
-                <p>seconds</p>
-            </div>
-        </div>
+
+        <div id="timer"></div>
+        <script>
+            var newYear = new Date();
+            newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1);
+            $('#timer').countdown({until: newYear, layout:'<div class="countdown"><div class="countdown_part"><h1>{d<}{dn}</h1><p>{dl}</p></div><div class="countdown_part"><h1>{d>} {hn}</h1><p>{hl}</p></div><div class="countdown_part"><h1>{mn}</h1><p>{ml}</p></div><div class="countdown_part"><h1>{sn}</h1><p>{sl}</p></div></div>'});
+
+        </script>
 
         <div class="text">
             <p>Our website is coming soon<br>Come back on July 14th 2015</p>
@@ -76,7 +68,13 @@
 
 <script>
     $( ".image" ).click(function() {
-        $( ".form-container" ).toggle('slow');
+        if($( ".form-container" ).is(":visible")){
+            $(this).removeClass('active');
+            $( ".form-container").delay(1000).slideToggle();
+        } else {
+            $(this).addClass('active');
+            $( ".form-container").delay(1000).slideToggle();
+        }
     });
 </script>
 </body>
