@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Free Spirit - Home</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="public/css/background.css"/>
+    <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script src="public/js/jquery.plugins.js"></script>
+    <script src="public/js/jquery.countdown.js"></script>
+</head>
+<body>
+<div class="bg-home">
+    <div style="background: url('public/css/images/cherry-tomatoes-523100_1920.jpg') no-repeat center center fixed;background-size: cover;opacity: 1;"></div>
+</div>
+<div class="wrapper">
+    <section>
+
+        <div id="timer"></div>
+        <script>
+            var newYear = new Date();
+            newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1);
+            $('#timer').countdown({until: newYear, layout:'<div class="countdown"><div class="countdown_part"><h1>{d<}{dn}</h1><p>{dl}</p></div><div class="countdown_part"><h1>{d>} {hn}</h1><p>{hl}</p></div><div class="countdown_part"><h1>{mn}</h1><p>{ml}</p></div><div class="countdown_part"><h1>{sn}</h1><p>{sl}</p></div></div>'});
+
+        </script>
+
+        <div class="text">
+            <p>Our website is coming soon<br>Come back on July 14th 2015</p>
+        </div>
+        <div class="contact">
+            <p>Want to contact us?<br>Fill in the form below</p>
+            <img class="image" src="public/css/images/arrow.png">
+            <div class="form-container">
+                <form action="simulate-server" method="post">
+                    <div class="group">
+                        <input type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Name</label>
+                    </div>
+
+                    <div class="group">
+                        <input type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Email</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    $( ".image" ).click(function() {
+        if($( ".form-container" ).is(":visible")){
+            $(this).removeClass('active');
+            $( ".form-container").delay(1000).slideToggle();
+        } else {
+            $(this).addClass('active');
+            $( ".form-container").delay(1000).slideToggle();
+        }
+    });
+</script>
+</body>
+</html>
