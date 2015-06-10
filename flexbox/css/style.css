@@ -27,9 +27,17 @@ html, body {
     align-items: center;
 }
 
-/*.item {
-    border: 1px solid red;
-}*/
+.header .logo{
+    border-bottom: 1px solid #cccccc;
+    font-size: 30px;
+    padding: 20px 0 10px 0;
+    text-transform: uppercase;
+}
+
+.header div{
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
 
 .social {
     width: 80px;
@@ -59,6 +67,7 @@ html, body {
 .timer .text{
     font-size: 20px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .timer .number{
@@ -69,6 +78,7 @@ html, body {
 .main {
     width: 700px;
     height: 700px;
+    border: 1px solid #cccccc;
 }
 
 .main .top{
@@ -77,6 +87,7 @@ html, body {
 }
 
 .main .top img{
+    padding-top: 10px;
     display: block;
     margin: 0 auto;
 }
@@ -102,6 +113,7 @@ html, body {
     margin-right: auto;
     width: 50%;*/
     text-align: center;
+    text-transform: uppercase;
 }
 
 /*.main .clear{
