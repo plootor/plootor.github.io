@@ -92,19 +92,33 @@ html, body {
 }
 
 .main .buttons div{
-    float: left;
+    /*float: left;*/
     padding: 0 20px 60px 20px;
+    display: inline-block;
 }
 
-.main .clear{
-    clear: both;
+.main .buttons{
+    /*margin-left: auto;
+    margin-right: auto;
+    width: 50%;*/
+    text-align: center;
 }
+
+/*.main .clear{
+    clear: both;
+}*/
 
 .main .gallery img{
     border: 3px solid #cccccc;
     margin: 25px;
 }
 
+.main .gallery div{
+    display: inline-block;
+}
+
 .main .gallery{
-    background-color: blue;
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
 }
