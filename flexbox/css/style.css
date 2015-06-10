@@ -96,12 +96,6 @@ html, body {
     padding: 0 20px 60px 20px;
 }
 
-.main .buttons{
-    width: 400px;
-    display: block;
-    margin: 0 auto;
-}
-
 .main .clear{
     clear: both;
 }
@@ -112,7 +106,5 @@ html, body {
 }
 
 .main .gallery{
-    width: 600px;
-    display: block;
-    margin: 0 auto;
+    background-color: blue;
 }
