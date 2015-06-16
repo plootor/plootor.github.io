@@ -134,8 +134,12 @@ html, body {
     margin: 25px;
 }
 
-.main .gallery .g_container div{
+.g_container>div, .cell_box{
     display: inline-block;
+}
+
+.about_box img {
+    margin: 25px;
 }
 
 .cycle-slideshow article{
