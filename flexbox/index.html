@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <title>Flexbox come here!</title>
         <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140415/jquery.cycle2.min.js"></script>
+
     </head>
     <body>
     <div class="header">
@@ -19,51 +22,117 @@
             <img src="images/pomodoro_images/twitter.png">
         </div>
     </div>
-
         <div class="container">
-            <div class="item timer">
-                <div>
-                    <p class="text">days</p>
-                    <p class="number">74</p>
-                </div>
-                <div>
-                    <p class="text">hours</p>
-                    <p class="number">14</p>
-                </div>
-                <div>
-                    <p class="text">minutes</p>
-                    <p class="number">50</p>
-                </div>
-                <div>
-                    <p class="text">seconds</p>
-                    <p class="number">40</p>
+            <div class="timer-container">
+                <div class="timer">
+                    <div>
+                        <p class="text">days</p>
+                        <p class="number">74</p>
+                    </div>
+                    <div>
+                        <p class="text">hours</p>
+                        <p class="number">14</p>
+                    </div>
+                    <div>
+                        <p class="text">minutes</p>
+                        <p class="number">50</p>
+                    </div>
+                    <div>
+                        <p class="text">seconds</p>
+                        <p class="number">40</p>
+                    </div>
                 </div>
             </div>
-            <div class="item main">
-                <div class="top">
-                    <img src="images/pomodoro_images/image5.png">
-                    <p>Our website is comming soon</p>
-                    <p class="under_text">Come back on July 23rd</p>
-                </div>
-                <div class="buttons">
-                    <div>products</div>
-                    <div>about us</div>
-                    <div>contacts</div>
-                </div>
-                <div class="clear"></div>
-                <div class="gallery">
-                    <div><img src="images/pomodoro_images/image1.jpg"></div>
-                    <div><img src="images/pomodoro_images/image2.jpg"></div>
-                    <div><img src="images/pomodoro_images/image3.jpg"></div>
-                    <div><img src="images/pomodoro_images/image4.jpg"></div>
-                    <div><img src="images/pomodoro_images/image1.jpg"></div>
-                    <div><img src="images/pomodoro_images/image2.jpg"></div>
-                    <div><img src="images/pomodoro_images/image3.jpg"></div>
-                    <div><img src="images/pomodoro_images/image4.jpg"></div>
-                    <div><img src="images/pomodoro_images/image1.jpg"></div>
-                    <div><img src="images/pomodoro_images/image2.jpg"></div>
-                    <div><img src="images/pomodoro_images/image3.jpg"></div>
-                    <div><img src="images/pomodoro_images/image4.jpg"></div>
+            <div class="main-container">
+                <div class="main">
+                    <div class="box">
+                        <div class="top">
+                            <img src="images/pomodoro_images/image5.png">
+                            <p>Our website is comming soon</p>
+                            <p class="under_text">Come back on July 23rd</p>
+                        </div>
+                        <div class="buttons">
+                            <div>products</div>
+                            <div>about us</div>
+                            <div>contacts</div>
+                        </div>
+                        <div class="cycle-slideshow" data-cycle-slides="article" data-cycle-timeout="0">
+                            <article class="gallery slide1">
+                                <div class="g_container">
+                                    <div><img src="images/pomodoro_images/image1.jpg"></div>
+                                    <div><img src="images/pomodoro_images/image2.jpg"></div>
+                                    <div><img src="images/pomodoro_images/image3.jpg"></div>
+                                    <div><img src="images/pomodoro_images/image4.jpg"></div>
+                                    <div><img src="images/pomodoro_images/image1.jpg"></div>
+                                    <div><img src="images/pomodoro_images/image2.jpg"></div>
+                                    <div><img src="images/pomodoro_images/image3.jpg"></div>
+                                    <div><img src="images/pomodoro_images/image4.jpg"></div>
+                                    <div><img src="images/pomodoro_images/image1.jpg"></div>
+                                    <div><img src="images/pomodoro_images/image2.jpg"></div>
+                                    <div><img src="images/pomodoro_images/image3.jpg"></div>
+                                    <div><img src="images/pomodoro_images/image4.jpg"></div>
+                                </div>
+                            </article>
+                            <article class="gallery">
+                                <div class="g_container">
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                            culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <div>
+                                            <img src="images/pomodoro_images/about1.png">
+                                            <p>User friendly</p>
+                                        </div>
+                                        <div>
+                                            <img src="images/pomodoro_images/about2.png">
+                                            <p>Quick to edit</p>
+                                        </div>
+                                        <div>
+                                            <img src="images/pomodoro_images/about3.png">
+                                            <p>Popular content</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="gallery">
+                                <div class="g_container">
+                                    <div>
+                                        <div>
+                                            <img src="images/pomodoro_images/contact1.png">
+                                            <p>adress:<br>165 Gardens Blvd, Paris</p>
+                                        </div>
+                                        <div>
+                                            <img src="images/pomodoro_images/contact2.png">
+                                            <p>email:<br>pomodoro@gmail.com</p>
+                                        </div>
+                                        <div>
+                                            <img src="images/pomodoro_images/contact3.png">
+                                            <p>phone:<br>+375 765 983</p>
+                                        </div>
+                                        <div class="contactform">
+                                            <div>Name</div>
+                                            <div>Email</div>
+                                            <div>Message</div>
+                                            <div>Send</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <button data-cycle-cmd="prev"><img src="images/pomodoro_images/left.png"></button>
+                        <button data-cycle-cmd="next"><img src="images/pomodoro_images/right.png"></button>
+
+                    </div>
+                    <div class="subscribe">
+                        <form>
+                            <input type="search" name="subscribe" class="s_button" placeholder="Subscribe">
+                            <input type="image" value="submit" class="s_submit" src="images/pomodoro_images/magnifier.png" alt="submit Button">
+                        </form>
+
+                    </div>
                 </div>
             </div>
         </div>

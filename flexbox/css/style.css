@@ -9,7 +9,7 @@ html, body {
 }
 
 .social-container {
-    height: 100%;
+    height: calc(100% - 105px);
     width: 100px;
     float: left;
     display: flex;
@@ -22,21 +22,22 @@ html, body {
     display: -webkit-flex;
     display: flex;
 
-    height: 100%; /* Or whatever */
+    height: calc(100% - 105px); /* Or whatever */
     justify-content: space-around;
     align-items: center;
+    margin: 0px 185px;
 }
 
 .header .logo{
     border-bottom: 1px solid #cccccc;
     font-size: 30px;
-    padding: 20px 0 10px 0;
+    padding: 30px 0 10px 0;
     text-transform: uppercase;
 }
 
 .header div{
     text-align: center;
-    padding: 10px 0 20px 0;
+    padding: 10px 0 0 0;
 }
 
 .social {
@@ -49,9 +50,14 @@ html, body {
     margin-bottom: 10px;
 }
 
+
+.timer-container, .main-container {
+    padding: 15px;
+    margin: 10px;
+}
+
 .timer {
     width: 250px;
-    height: 600px;
 }
 
 .timer div{
@@ -77,7 +83,10 @@ html, body {
 
 .main {
     width: 700px;
-    height: 700px;
+   /* height: 700px; */
+}
+
+.box {
     border: 1px solid #cccccc;
 }
 
@@ -125,12 +134,38 @@ html, body {
     margin: 25px;
 }
 
-.main .gallery div{
+.main .gallery .g_container div{
     display: inline-block;
 }
 
-.main .gallery{
+.cycle-slideshow article{
+    height: 100%;
+    width: 100%;
+}
+
+.g_container{
     margin-right: auto;
     margin-left: auto;
     width: 75%;
+}
+
+.subscribe{
+    float: right;
+    margin-top: 15px;
+}
+
+.s_button {
+    height: 30px;
+    padding: 5px;
+    float: left;
+}
+
+.s_submit {
+    height: 20px;
+    padding: 5px;
+}
+
+button{
+    background: none;
+    border: none;
 }
