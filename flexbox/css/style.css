@@ -9,6 +9,10 @@ html, body {
     font-family: "Roboto", sans-serif;
 }
 
+button, .s_submit{
+    outline: none;
+}
+
 .social-container {
     height: calc(100% - 105px);
     width: 100px;
@@ -72,13 +76,13 @@ html, body {
 }
 
 .timer .text{
-    font-size: 20px;
+    font-size: 14px;
     text-align: center;
     text-transform: uppercase;
 }
 
 .timer .number{
-    font-size: 90px;
+    font-size: 80px;
     text-align: center;
 }
 
@@ -89,6 +93,24 @@ html, body {
 
 .box {
     border: 1px solid #cccccc;
+    position: relative;
+}
+
+.box>button {
+    position: absolute;
+    top: 50%;
+    height: 27px;
+    width: 13px;
+}
+
+.box .prev {
+    background: url("../images/pomodoro_images/left.png") no-repeat 100% 100%;
+    left: -25px;
+}
+
+.box .next {
+    background: url("../images/pomodoro_images/right.png") no-repeat;
+    right: -25px;;
 }
 
 .main .top{
@@ -109,12 +131,11 @@ html, body {
 }
 
 .main .top .under_text{
-    font-size: 25px;
+    font-size: 24px;
 }
 
 .main .buttons div{
-    /*float: left;*/
-    padding: 0 20px 60px 20px;
+    margin: 0 20px;
     display: inline-block;
 }
 
@@ -124,6 +145,7 @@ html, body {
     width: 50%;*/
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 60px;
 }
 
 /*.main .clear{
@@ -176,11 +198,9 @@ button{
 }
 
 .about p{
-    text-align: center;
-}
-
-.about .cell_box{
-    padding: 60px 30px 0 30px;
+    text-align: justify;
+    margin-bottom: 50px;
+    line-height: 25px;
 }
 
 .about img{
@@ -189,12 +209,13 @@ button{
     margin: 0 auto;
 }
 
-.contact p{
+.cell_box p{
     text-align: center;
 }
 
-.contact .cell_box{
+.cell_box{
     padding: 0 4px 50px 4px;
+    width: 163px;
 }
 
 .contact img{
@@ -207,5 +228,5 @@ button{
     border: 1px solid #cccccc;
     width: 300px;
     padding: 10px;
-    margin: 0 0 10px 0;
+    margin: 0 auto 10px;
 }

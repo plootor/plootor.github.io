@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140415/jquery.cycle2.min.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400italic,100,300,100italic,300italic,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
     </head>
     <body>
     <div class="header">
@@ -51,10 +51,10 @@
                             <p>Our website is comming soon</p>
                             <p class="under_text">Come back on July 23rd</p>
                         </div>
-                        <div class="buttons">
-                            <div>products</div>
-                            <div>about us</div>
-                            <div>contacts</div>
+                        <div class="buttons cycle-pager">
+                            <div data-cycle-cmd="goto" data-cycle-arg="0">products</div>
+                            <div data-cycle-cmd="goto" data-cycle-arg="1">about us</div>
+                            <div data-cycle-cmd="goto" data-cycle-arg="2">contacts</div>
                         </div>
                         <div class="cycle-slideshow" data-cycle-slides="article" data-cycle-timeout="0">
                             <article class="gallery slide1">
@@ -102,7 +102,7 @@
                                     <div>
                                         <div class="cell_box">
                                             <img src="images/pomodoro_images/contact1.png">
-                                            <p>adress:<br>165 Gardens Blvd, Paris</p>
+                                            <p>adress:<br>165 Gardens Blvd, NYC</p>
                                         </div>
                                         <div class="cell_box">
                                             <img src="images/pomodoro_images/contact2.png">
@@ -122,8 +122,8 @@
                                 </div>
                             </article>
                         </div>
-                        <button data-cycle-cmd="prev"><img src="images/pomodoro_images/left.png"></button>
-                        <button data-cycle-cmd="next"><img src="images/pomodoro_images/right.png"></button>
+                        <button class="prev" data-cycle-cmd="prev"></button>
+                        <button class="next" data-cycle-cmd="next"></button>
 
                     </div>
                     <div class="subscribe">
