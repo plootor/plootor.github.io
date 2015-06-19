@@ -47,7 +47,7 @@ button, .s_submit{
 }
 
 .header .logo{
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #ffffff;
     font-size: 30px;
     padding: 30px 0 10px 0;
     text-transform: uppercase;
@@ -84,7 +84,7 @@ button, .s_submit{
 }
 
 .timer div{
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #ffffff;
     margin: 0 0 30px 0;
     padding: 0 0 15px 0;
 }
@@ -97,11 +97,13 @@ button, .s_submit{
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
+    color: #ffffff;
 }
 
 .timer .number{
     font-size: 80px;
     text-align: center;
+    color: #ffffff;
 }
 
 .main {
@@ -110,7 +112,7 @@ button, .s_submit{
 }
 
 .box {
-    border: 1px solid #cccccc;
+    border: 1px solid #ffffff;
     position: relative;
 }
 
@@ -132,7 +134,7 @@ button, .s_submit{
 }
 
 .main .top{
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #ffffff;
     margin-bottom: 20px;
 }
 
@@ -146,10 +148,12 @@ button, .s_submit{
     text-align: center;
     font-size: 30px;
     margin: 15px;
+    color: #ffffff;
 }
 
 .main .top .under_text{
     font-size: 24px;
+    color: #ffffff;
 }
 
 .main .buttons div{
@@ -164,6 +168,7 @@ button, .s_submit{
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 60px;
+    color: #ffffff;
 }
 
 /*.main .clear{
@@ -180,7 +185,7 @@ button, .s_submit{
 
 .gallery .g_container>div {
     margin: 0 25px 50px 25px;
-    border: 3px solid #cccccc;
+    border: 3px solid #ffffff;
 }
 
 .about_box img {
@@ -207,16 +212,16 @@ button, .s_submit{
     height: 30px;
     padding: 5px;
     float: left;
-    background: rgba(255, 255, 255, 0.5);
-    border: 1px solid #cccccc;
+    background: none;
+    border: 1px solid #ffffff;
     outline: none;
 }
 
 .s_submit {
     height: 20px;
     padding: 4px;
-    background: rgba(255, 255, 255, 0.5);
-    border: 1px solid #cccccc;
+    background: none;
+    border: 1px solid #ffffff;
     border-left: none;
 }
 
@@ -230,6 +235,7 @@ button{
     margin-bottom: 50px;
     line-height: 25px;
     font-size: 14px;
+    color: #ffffff;
 }
 
 .about img{
@@ -241,6 +247,7 @@ button{
 .cell_box p{
     text-align: center;
     font-size: 14px;
+    color: #ffffff;
 }
 
 .cell_box{
@@ -255,11 +262,12 @@ button{
 }
 
 .contact .contactform div{
-    border: 1px solid #cccccc;
+    border: 1px solid #ffffff;
     width: 300px;
     padding: 8px;
     margin: 0 auto 10px;
     font-size: 15px;
+    color: #ffffff;
 }
 
 .contact .contactform .send{
