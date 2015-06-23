@@ -6,6 +6,10 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140415/jquery.cycle2.min.js"></script>
+
+        <script src="js/jquery.plugins.js"></script>
+        <script src="js/jquery.countdown.js"></script>
+
         <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -28,24 +32,13 @@
         </div>
         <div class="container">
             <div class="timer-container">
-                <div class="timer">
-                    <div>
-                        <p class="text">days</p>
-                        <p class="number">74</p>
-                    </div>
-                    <div>
-                        <p class="text">hours</p>
-                        <p class="number">14</p>
-                    </div>
-                    <div>
-                        <p class="text">minutes</p>
-                        <p class="number">50</p>
-                    </div>
-                    <div>
-                        <p class="text">seconds</p>
-                        <p class="number">40</p>
-                    </div>
-                </div>
+                <div class="timer"></div>
+                <script>
+                    var newYear = new Date();
+                    newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1);
+                    $('.timer').countdown({until: newYear, layout:'<div><p class="text">{dl}</p> <p class="number">{d<}{dn}</p></div>     <div><p class="text">{hl}</p><p class="number">{d>} {hn}</p></div>    <div><p class="text">{ml}</p><p class="number">{mn}</p></div>    <div><p class="text">{sl}</p><p class="number">{sn}</p></div>'});
+
+                </script>
             </div>
             <div class="main-container">
                 <div class="main">
@@ -133,7 +126,7 @@
                     <div class="subscribe">
                         <form>
                             <input type="search" name="subscribe" class="s_button" placeholder="Email">
-                            <input type="image" value="submit" class="s_submit" src="images/pomodoro_images/subscribe.png" alt="submit Button">
+                            <input type="submit" value="submit" class="s_submit">
                         </form>
                     </div>
                 </div>

@@ -35,8 +35,9 @@ html, body {
     z-index: 2;
 }
 
-button, .s_submit, .send{
+button, input, .s_submit, .send{
     outline: none;
+    font-family: "Roboto", sans-serif;
 }
 
 .social-container {
@@ -152,7 +153,8 @@ button, .s_submit, .send{
 
 .main .top{
     border-bottom: 1px solid #ffffff;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    width: 80%;
 }
 
 .main .top img{
@@ -232,14 +234,16 @@ button, .s_submit, .send{
     background: none;
     border: 1px solid #ffffff;
     outline: none;
+    color: #fff;
 }
 
 .s_submit {
-    height: 20px;
-    padding: 4px;
+    height: 30px;
+    padding: 5px;
     background: none;
     border: 1px solid #ffffff;
     border-left: none;
+    color: #ffffff;
 }
 
 button{
