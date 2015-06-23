@@ -86,10 +86,10 @@ button, .s_submit, .send{
     margin-bottom: 10px;
 }
 
-.social img:hover{
+/*.social img:hover{
     background-color: #ffffff;
     opacity: 0.5;
-}
+}*/
 
 .timer-container, .main-container {
     padding: 15px;
@@ -129,7 +129,7 @@ button, .s_submit, .send{
 }
 
 .box {
-    border: 1px solid #ffffff;
+    /*border: 1px solid #ffffff;*/
     position: relative;
 }
 
