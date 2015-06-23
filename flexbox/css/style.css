@@ -18,14 +18,14 @@ html, body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url("../images/pomodoro_images/background/cherries-690576_1280.jpg");
+    background: url("../images/pomodoro_images/background/ingredients-498199_1920.jpg");
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position: center;
 }
 
 .filter{
-    background-color: rgba(153, 5, 5, 0.2);
+    background-color: rgba(23, 23, 24, 0.4);
     height: 100%;
 }
 
@@ -41,9 +41,13 @@ button, .s_submit, .send{
 
 .social-container {
     height: calc(100% - 105px);
-    width: 100px;
+    width: 70px;
     float: left;
     display: flex;
+}
+
+.buttons>.cycle-pager-active {
+
 }
 
 .container {
@@ -73,7 +77,7 @@ button, .s_submit, .send{
 }
 
 .social {
-    width: 80px;
+    width: 40px;
     height: 300px;
     margin: auto;
 }
@@ -132,17 +136,17 @@ button, .s_submit, .send{
 .box>button {
     position: absolute;
     top: 50%;
-    height: 27px;
-    width: 13px;
+    height: 33px;
+    width: 17px;
 }
 
 .box .prev {
-    background: url("../images/pomodoro_images/left.png") no-repeat 100% 100%;
+    background: url("../images/pomodoro_images/white_icons/left.png") no-repeat 100% 100%;
     left: -25px;
 }
 
 .box .next {
-    background: url("../images/pomodoro_images/right.png") no-repeat;
+    background: url("../images/pomodoro_images/white_icons/right.png") no-repeat;
     right: -25px;;
 }
 
@@ -283,6 +287,7 @@ button{
     color: #ffffff;
     display: block;
     background: none;
+    outline: none;
 }
 
 .contactform input::-webkit-input-placeholder {
