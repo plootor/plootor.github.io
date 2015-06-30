@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+#wrapper{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: url("../images/pomodoro_images/background/ingredients-498199_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: center;
+}
+
+.filter{
+    background-color: rgba(23, 23, 24, 0.6);
+    height: 70%;
+    margin-top: 9%;
+}
+
+.content {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+
+    /*review after fade in effect*/
+    overflow: hidden;
+}
+
+button, input, .s_submit, .send{
+    outline: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.social-container {
+    height: calc(100% - 105px);
+    width: 70px;
+    float: left;
+    display: flex;
+}
+
+.buttons>.cycle-pager-active:after {
+    background: url("../images/pomodoro_images/white_icons/down.png") no-repeat;
+    width: 19px;
+    height: 10px;
+    content: '';
+    position: absolute;
+    left: 38%;
+    top: 30px;
+}
+
+.container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    height: calc(100% - 105px); /* Or whatever */
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 185px;
+}
+
+.header .logo{
+    border-bottom: 1px solid #ffffff;
+    font-size: 30px;
+    padding: 30px 0 10px 0;
+    text-transform: uppercase;
+}
+
+.header div{
+    text-align: center;
+    padding: 10px 0 0 0;
+    color: #ffffff;
+}
+
+.social {
+    width: 40px;
+    height: 300px;
+    margin: auto;
+}
+
+.social img{
+    margin-bottom: 10px;
+}
+
+/*.social img:hover{
+    background-color: #ffffff;
+    opacity: 0.5;
+}*/
+
+.timer-container, .main-container {
+    padding: 15px;
+    margin: 10px;
+}
+
+.timer {
+    width: 250px;
+}
+
+.timer div{
+    border-bottom: 1px solid #ffffff;
+    margin: 0 0 30px 0;
+    padding: 0 0 15px 0;
+}
+
+.timer div:last-child{
+    border-bottom: none;
+}
+
+.timer .text{
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.timer .number{
+    font-size: 80px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.main {
+    width: 700px;
+    /*background: rgba(255, 255, 255, 0.5);*/
+}
+
+.box {
+    /*border: 1px solid #ffffff;*/
+    position: relative;
+}
+
+.box>button {
+    position: absolute;
+    top: 50%;
+    height: 33px;
+    width: 17px;
+}
+
+.box .prev {
+    background: url("../images/pomodoro_images/white_icons/left.png") no-repeat 100% 100%;
+    left: -25px;
+}
+
+.box .next {
+    background: url("../images/pomodoro_images/white_icons/right.png") no-repeat;
+    right: -25px;;
+}
+
+.main .top{
+    border-bottom: 1px solid #ffffff;
+    margin: 0 auto 20px;
+    width: 80%;
+}
+
+.main .top img{
+    padding-top: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.main .top p{
+    text-align: center;
+    font-size: 30px;
+    margin: 15px;
+    color: #ffffff;
+}
+
+.main .top .under_text{
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.main .buttons div{
+    margin: 0 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.main .buttons{
+    /*margin-left: auto;
+    margin-right: auto;
+    width: 50%;*/
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: #ffffff;
+}
+
+/*.main .clear{
+    clear: both;
+}*/
+
+.main .gallery img{
+    display: block;
+}
+
+.g_container>div, .cell_box{
+    display: inline-block;
+}
+
+.gallery .g_container>div {
+    margin: 0 25px 50px 25px;
+    border: 3px solid #ffffff;
+}
+
+.about_box img {
+    margin: 25px;
+}
+
+.cycle-slideshow article{
+    height: 100%;
+    width: 100%;
+}
+
+.g_container{
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+}
+
+.subscribe-form {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 45px;
+    width: 300px;
+    height: 181px !important;
+    /*background: rgba(145, 145, 145, 0.95);*/
+    border: 1px solid #ffffff;
+    background: none;
+}
+
+.subscribe-container {
+    position: absolute;
+    right: 0;
+    top: 105px;
+    z-index: 10;
+    height: calc(100% - 105px);
+    display: flex;
+}
+
+.subscribe-form.active {
+
+}
+
+.subscribe {
+    margin: auto;
+    position: relative;
+}
+
+.lab-container {
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    height: 179px;
+    position: relative;
+    width: 40px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.subscribe-container label {
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    height: 180px;
+    width: 199px;
+}
+
+.s_button {
+    height: 40px;
+    padding: 5px;
+    outline: none;
+    color: #fff;
+    display: block;
+    width: 200px;
+    background: #fff;
+    box-sizing: border-box;
+    margin: 33px auto;
+}
+
+.s_submit {
+    padding: 5px;
+    border: none;
+    color: #ffffff;
+    display: block;
+    width: 200px;
+    background: #555;
+    box-sizing: border-box;
+    margin: 33px auto;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+.about p{
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.about img{
+    padding-bottom: 40px;
+    display: block;
+    margin: 0 auto;
+}
+
+.cell_box p{
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.cell_box{
+    padding: 0 4px 50px 4px;
+    width: 163px;
+}
+
+.contact img{
+    padding-bottom: 40px;
+    display: block;
+    margin: 0 auto;
+}
+
+.contactform input{
+    border: 1px solid #ffffff;
+    width: 300px;
+    padding: 8px;
+    margin: 0 auto 10px;
+    font-size: 15px;
+    color: #ffffff;
+    display: block;
+    background: none;
+    outline: none;
+}
+
+.contactform input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.contact .contactform .send{
+    border: none;
+    width: auto;
+    cursor:pointer;
+}
