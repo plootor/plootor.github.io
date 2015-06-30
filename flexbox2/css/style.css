@@ -51,6 +51,14 @@ button, input, .s_submit, .send{
     display: flex;
 }
 
+.social-container img{
+    border: 1px solid #ffffff;
+}
+
+.social-container img:hover{
+    border: none;
+}
+
 .buttons>.cycle-pager-active:after {
     background: url("../images/pomodoro_images/white_icons/down.png") no-repeat;
     width: 19px;
