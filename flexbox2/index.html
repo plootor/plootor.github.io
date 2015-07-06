@@ -3,13 +3,10 @@
     <head lang="en">
         <meta charset="UTF-8">
         <title>Flexbox come here!</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+        <link href="css/jquery.pageLoading.css" rel="stylesheet" type="text/css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140415/jquery.cycle2.min.js"></script>
-
-        <script src="js/jquery.plugins.js"></script>
-        <script src="js/jquery.countdown.js"></script>
-
         <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -23,22 +20,26 @@
         </div>
         <div class="social-container">
             <div class="item social">
-                <img src="images/pomodoro_images/white_icons/social/no_frame/pinterest.png">
-                <img src="images/pomodoro_images/white_icons/social/no_frame/facebook.png">
-                <img src="images/pomodoro_images/white_icons/social/no_frame/podcast.png">
-                <img src="images/pomodoro_images/white_icons/social/no_frame/heart.png">
+                <a href="#">
+                    <img src="images/pomodoro_images/white_icons/social/no_frame/pinterest.png">
+                </a>
+                <a href="#">
+                    <img src="images/pomodoro_images/white_icons/social/no_frame/facebook.png">
+                </a>
+                <a href="#">
+                    <img src="images/pomodoro_images/white_icons/social/no_frame/podcast.png">
+                </a>
+                <a href="#">
+                    <img src="images/pomodoro_images/white_icons/social/no_frame/heart.png">
+                </a>
+                <a href="#">
                 <img src="images/pomodoro_images/white_icons/social/no_frame/twitter.png">
+                </a>
             </div>
         </div>
         <div class="container">
             <div class="timer-container">
                 <div class="timer"></div>
-                <script>
-                    var newYear = new Date();
-                    newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1);
-                    $('.timer').countdown({until: newYear, layout:'<div><p class="text">{dl}</p> <p class="number">{d<}{dn}</p></div>     <div><p class="text">{hl}</p><p class="number">{d>} {hn}</p></div>    <div><p class="text">{ml}</p><p class="number">{mn}</p></div>    <div><p class="text">{sl}</p><p class="number">{sn}</p></div>'});
-
-                </script>
             </div>
             <div class="main-container">
                 <div class="main">
@@ -119,8 +120,13 @@
                                 </div>
                             </article>
                         </div>
-                        <button class="prev" data-cycle-cmd="prev"></button>
-                        <button class="next" data-cycle-cmd="next"></button>
+                        <button class="prev" data-cycle-cmd="prev">
+                            <i class="fa fa-angle-left"></i>
+                        </button>
+                        <button class="next" data-cycle-cmd="next">
+                            <i class="fa fa-angle-right"></i>
+
+                        </button>
                     </div>
                 </div>
             </div>
@@ -134,11 +140,15 @@
             <div class="subscribe-form">
                 <form>
                     <input type="search" name="subscribe" class="s_button" placeholder="Email">
-                    <input type="submit" value="submit" class="s_submit">
+                    <input type="submit" value="Submit" class="s_submit">
                 </form>
             </div>
         </div>
     </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140415/jquery.cycle2.min.js"></script>
+        <script src="js/jquery.plugins.js"></script>
+        <script src="js/jquery.countdown.js"></script>
     <script>
         // bind to C2's bootstrap event in order to get a reference to the API object
         $('.cycle-slideshow').on('cycle-bootstrap', function(e, opts, API) {
@@ -150,8 +160,27 @@
         $( ".lab-container" ).click(function() {
             $( ".subscribe-form" ).toggle('slow');
             $( ".subscribe").mouseleave(function(){
-                $( ".subscribe-form" ).hide();
+                $( ".subscribe-form" ).hide('slow');
             });
+        });
+    </script>
+    <script>
+        var newYear = new Date();
+        newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1);
+        $('.timer').countdown({until: newYear, layout:'<div><p class="text">{dl}</p> <p class="number">{d<}{dn}</p></div>     <div><p class="text">{hl}</p><p class="number">{d>} {hn}</p></div>    <div><p class="text">{ml}</p><p class="number">{mn}</p></div>    <div><p class="text">{sl}</p><p class="number">{sn}</p></div>'});
+
+    </script>
+    <script src="js/jquery.pageLoading.js"></script>
+    <script>
+        pageLoading({
+            barColor:'#DA4453', //Bar'ın rengini belirler
+            barTop:'100px',     //Barın top değerini belirler. Tüm yükseklik birimleri kulanılabilir(px,%,...)
+            textTop:'200px',    //Text'in top değerini belirler. Tüm yükseklik birimleri kulanılabilir(px,%,...)
+            backColor:'rgba(44,62,80, 0.90)', //Arka perde rengini belirler.
+            backBarColor:'#dfe8ea',     //Bar'ın arka rengini belirler.
+            text:'Loading <b>{process} %</b>',    //Text'in içeriğini belirler. {process} = yüklenme değeri.
+            textVisible:true,   //false durumunda Text'i kaldırır.
+            loadOut:true    //true durumunda sayfanın ilk açılışının tamamlanmasıyla otomatik biter.
         });
     </script>
     </body>
