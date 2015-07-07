@@ -124,6 +124,7 @@ button, input, .s_submit, .send{
     margin-bottom: 10px;
     text-align: center;
     font-size: 20px;
+    line-height: 42px;
 }
 
 .timer-container, .main-container {
@@ -166,7 +167,7 @@ button, input, .s_submit, .send{
 
 .box>button {
     position: absolute;
-    top: 50%;
+    top: 65%;
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
     cursor: pointer;
@@ -276,6 +277,13 @@ button, input, .s_submit, .send{
     background: none;
 }
 
+.subscribe-form p{
+    font-size: 17px;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 5px 5px 5px;
+}
+
 .subscribe-container {
     position: absolute;
     right: 0;
@@ -327,7 +335,7 @@ button, input, .s_submit, .send{
     width: 200px;
     background: none;
     box-sizing: border-box;
-    margin: 33px auto;
+    margin: 23px auto;
     border-width: 1px;
 }
 
@@ -336,11 +344,12 @@ button, input, .s_submit, .send{
     padding: 5px;
     border: none;
     display: block;
-    width: 200px;
+    width: 100%;
     /*background: rgba(87, 87, 91, 0.60);*/
     box-sizing: border-box;
-    margin: 33px auto;
+    margin: 0 auto;
     background: none;
+    background-color: gray;
 }
 
 button{
