@@ -24,7 +24,7 @@ html, body {
 }
 
 /* Change here entire color */
-*, ::-webkit-input-placeholder {
+*, ::-webkit-input-placeholder, :after {
     color: #ffffff;
     border-style: solid;
     border-color: #ffffff;
@@ -144,6 +144,7 @@ button, input, .s_submit, .send{
 
 .timer div:last-child{
     border-bottom: none;
+    margin-bottom: 0;
 }
 
 .timer .text{
@@ -167,7 +168,7 @@ button, input, .s_submit, .send{
 
 .box>button {
     position: absolute;
-    top: 65%;
+    top: 60%;
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
     cursor: pointer;
@@ -191,8 +192,7 @@ button, input, .s_submit, .send{
     margin: 0 auto 20px;
 }
 
-.main .top img{
-    padding-top: 10px;
+.main .top img {
     display: block;
     margin: 0 auto;
 }
@@ -214,11 +214,12 @@ button, input, .s_submit, .send{
     cursor: pointer;
 }
 
-.main .buttons div:after {
+.main .buttons .cycle-pager-active:after {
     content: '';
     display: block;
-    border-bottom-width: 1px;
-    width: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-top: none;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
     margin-top: 10px;
