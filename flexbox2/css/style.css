@@ -60,23 +60,33 @@ button, input, .s_submit, .send{
 
 .social-container a {
     display: block;
-}
-
-.social-container i{
-    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
     border-width: 1px;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
     box-sizing: border-box;
     height: 42px;
     width: 42px;
 }
 
-.social-container i:hover{
+.social-container a:last-child {
+    margin-bottom: 0;
+}
+
+.social-container i{
+    display: block;
+
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    line-height: 42px;
+}
+
+
+.social-container a:hover{
     border: none;
-    -ms-transform: scale(1.2,1.2); /* IE 9 */
-    -webkit-transform: scale(1.2,1.2); /* Safari */
-    transform: scale(1.2,1.2);
+    font-size: 24px;
 }
 /*
 .buttons>.cycle-pager-active:after {
@@ -115,16 +125,7 @@ button, input, .s_submit, .send{
 }
 
 .social {
-    width: 40px;
-    height: 300px;
     margin: auto;
-}
-
-.social i{
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 20px;
-    line-height: 42px;
 }
 
 .timer-container, .main-container {
@@ -160,6 +161,7 @@ button, input, .s_submit, .send{
 
 .main {
     width: 550px;
+    height: 595px;
 }
 
 .box {
@@ -173,14 +175,11 @@ button, input, .s_submit, .send{
     -webkit-transition: all 0.3s;
     cursor: pointer;
     font-size: 40px;
+
 }
 
 .box .prev {
     left: -25px;
-}
-
-.box .next:hover, .box .prev:hover {
-    font-size: 45px;
 }
 
 .box .next {
@@ -214,17 +213,16 @@ button, input, .s_submit, .send{
     cursor: pointer;
 }
 
-.main .buttons .cycle-pager-active:after {
+.main .buttons>div:after {
     content: '';
     display: block;
-    border-width: 1px;
-    border-style: solid;
-    border-top: none;
+    border-bottom-width: 1px;
+    width: 0;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
     margin-top: 10px;
 }
-.main .buttons div:hover:after { width: 100%; }
+.main .buttons>div.cycle-pager-active:after { width: 100%; }
 
 .main .buttons{
     text-align: center;
@@ -245,7 +243,7 @@ button, input, .s_submit, .send{
 }
 
 .gallery .g_container>div {
-    margin: 10px 25px 40px 25px;
+    margin: 10px 25px 30px 25px;
     border-width: 3px;
 }
 
@@ -270,7 +268,7 @@ button, input, .s_submit, .send{
     display: none;
     position: absolute;
     top: 0;
-    right: 45px;
+    right: 41px;
     width: 300px;
     height: 179px !important;
     /*background: rgba(145, 145, 145, 0.95);*/
@@ -283,6 +281,9 @@ button, input, .s_submit, .send{
     text-align: center;
     color: #ffffff;
     padding: 20px 5px 5px 5px;
+    height: 45px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .subscribe-container {
@@ -336,7 +337,7 @@ button, input, .s_submit, .send{
     width: 200px;
     background: none;
     box-sizing: border-box;
-    margin: 23px auto;
+    margin: 27px auto;
     border-width: 1px;
 }
 
