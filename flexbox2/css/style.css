@@ -351,7 +351,7 @@ button, input, .s_submit, .send{
     box-sizing: border-box;
     margin: 0 auto;
     background: none;
-    background-color: gray;
+    background-color: #252225;
 }
 
 button{
