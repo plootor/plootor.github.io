@@ -47,6 +47,7 @@ html, body {
 
     /*review after fade in effect*/
     overflow: hidden;
+    min-height: 780px;
 }
 
 button, input, .s_submit, .send{
@@ -416,9 +417,8 @@ button{
 }
 
 @media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
+and (max-width : 1024px)
+ {
 
     .timer {
         width: 200px;
@@ -438,9 +438,21 @@ and (orientation : landscape) {
 }
 
 @media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) { /* STYLES GO HERE */
+and (max-width : 1300px) {
+    .container {
+        margin: 0 100px;
+    }
+}
+
+@media only screen
+and (max-width : 1150px) {
+    .container {
+        margin: 0 40px;
+    }
+}
+
+@media only screen
+and (max-width : 900px) { /* STYLES GO HERE */
     .timer {
         width: 150px;
     }
@@ -466,6 +478,145 @@ and (orientation : portrait) { /* STYLES GO HERE */
         display: none;
     }
 
+    .social-container {
+        display: block;
+        width: 330px;
+        margin: 20px auto 0 auto;
+        float: none;
+        height: 0;
+    }
+
+    .social-container a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .subscribe-container {
+        display: block;
+        position: relative;
+        height: auto;
+        top: 0;
+    }
+
+    .lab-container {
+        display: block;
+        margin: -50px auto 0 auto;
+        height: 30px;
+        position: relative;
+        width: 200px;
+    }
+
+    .subscribe-container label {
+        height: 30px;
+        width: 200px;
+        transform: none;
+        line-height: 30px;
+    }
 
 
+    .subscribe-form {
+        position: relative;
+        margin: 20px auto;
+        right: 0;
+    }
+}
+
+@media only screen
+and (max-width : 750px) {
+
+    .g_container {
+        display: block;
+    }
+
+    .gallery .g_container>div {
+        margin: 0 5% 5% 5%;
+        width: 13.8%;
+        height: 13.8%;
+        display: inline-block;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .filter {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .content {
+        height: auto;
+    }
+
+    .container {
+        margin: 15px;
+    }
+
+    .timer {
+        width: 100%;
+    }
+
+    .timer div {
+        display: inline-block;
+        width: 20%;
+        margin: 0 2%;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .timer div:last-child {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+
+    .timer .number {
+        font-size: 40px;
+    }
+
+    .cell_box {
+        padding: 0 0 50px;
+        width: 32.2%;
+    }
+
+    .cell_box p {
+        font-size: 12px;
+    }
+
+    .social-container {
+        width: 330px;
+        margin: 20px auto 0 auto;
+        display: block;
+        float: none;
+    }
+
+    .social-container a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .subscribe-container {
+        display: block;
+        position: relative;
+        height: auto;
+        top: 0;
+    }
+
+    .lab-container {
+        display: none;
+    }
+
+    .subscribe-form {
+        position: relative;
+        margin: 20px auto;
+        display: block;
+        right: 0;
+    }
 }

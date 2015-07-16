@@ -161,6 +161,8 @@
         });
         $( ".lab-container" ).click(function() {
             $( ".subscribe-form" ).show('slow', 'swing');
+
+            $('html, body').animate({scrollTop:$(document).height()}, 'slow');
             $( ".subscribe").mouseleave(function(){
                 $( ".subscribe-form" ).hide('slow', 'swing');
             });
