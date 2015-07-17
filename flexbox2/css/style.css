@@ -26,11 +26,27 @@ html, body {
 }
 
 /* Change here entire color */
-*, ::-webkit-input-placeholder, :after {
+*, :after {
     color: #ffffff;
     border-style: solid;
     border-color: #ffffff;
     border-width: 0;
+}
+
+::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #ffffff;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #ffffff;
+}
+
+:-ms-input-placeholder {
+    color: #ffffff;
 }
 
 .filter{
