@@ -76,6 +76,7 @@ button, input, .s_submit, .send{
     width: 70px;
     float: left;
     display: flex;
+    align-items: center;
 }
 
 .social-container a {
@@ -311,6 +312,7 @@ button, input, .s_submit, .send{
     z-index: 10;
     height: calc(100% - 105px);
     display: flex;
+    align-items: center;
 }
 
 .subscribe-form.active {
