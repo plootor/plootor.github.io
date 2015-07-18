@@ -1,6 +1,12 @@
+html, body, .content {
+    min-width: 900px;
+}
+
 
 .container {
     display: table;
+    margin: 0 15%;
+    width: 70%;
 }
 
 .timer-container, .main-container {
@@ -18,9 +24,22 @@
 
 .social-container, .subscribe-container {
     display: table;
+    height: 100%;
+    margin-top: -105px;
 }
 
 .social, .subscribe {
     display: table-cell;
     vertical-align: middle;
+}
+
+.subscribe {
+    position: absolute;
+    top: 50%;
+    margin-top: -70px;/* half of #content height*/
+    right: 0;
+}
+
+.main {
+    margin: 0 auto;
 }

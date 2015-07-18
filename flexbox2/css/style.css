@@ -25,6 +25,19 @@ html, body {
     align-items: center;
 }
 
+.subscribe-form:before {
+    filter: blur(10px);
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: url(../images/pomodoro_images/background/ingredients-498199_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover!important;
+    background-position: center;
+}
+
 /* Change here entire color */
 *, :after {
     color: #ffffff;
@@ -303,6 +316,11 @@ button, input, .s_submit, .send{
     height: 45px;
     box-sizing: border-box;
     overflow: hidden;
+    filter: blur(0px);
+}
+
+.subscribe-form form {
+    filter: blur(0px);
 }
 
 .subscribe-container {
