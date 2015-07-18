@@ -1,0 +1,9 @@
+
+.container {
+    display: table;
+}
+
+.timer-container, .main-container {
+    display: table-cell;
+    vertical-align: middle;
+}
