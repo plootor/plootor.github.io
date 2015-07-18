@@ -15,3 +15,12 @@
 .gallery .g_container>div {
     display: table-cell;
 }
+
+.social-container, .subscribe-container {
+    display: table;
+}
+
+.social, .subscribe {
+    display: table-cell;
+    vertical-align: middle;
+}
