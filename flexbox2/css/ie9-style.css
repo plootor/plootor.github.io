@@ -7,3 +7,11 @@
     display: table-cell;
     vertical-align: middle;
 }
+
+.g_container {
+    display: table;
+}
+
+.gallery .g_container>div {
+    display: table-cell;
+}
