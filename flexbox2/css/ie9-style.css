@@ -9,11 +9,11 @@
 }
 
 .g_container {
-    display: table;
+    display: block;
 }
 
 .gallery .g_container>div {
-    display: table-cell;
+    display: inline-block;
 }
 
 .social-container, .subscribe-container {
