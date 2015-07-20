@@ -670,6 +670,10 @@ and (max-width : 750px) {
         display: block;
         right: 0;
     }
+
+    .subscribe-form:before {
+        display: none;
+    }
 }
 
 @media only screen
@@ -681,5 +685,9 @@ and (max-width : 450px) {
 
     .contactform input {
         width: 250px;
+    }
+
+    .subscribe-form:before {
+        display: none;
     }
 }
