@@ -567,8 +567,8 @@ and (max-width : 750px) {
 
     .gallery .g_container>div {
         margin: 0 5% 5% 5%;
-        width: 13.8%;
-        height: 13.8%;
+        width: 13.4%;
+        height: 13.4%;
         display: inline-block;
     }
 
@@ -609,6 +609,10 @@ and (max-width : 750px) {
         display: block;
     }
 
+    .timer-container {
+
+    }
+
     .timer div:last-child {
         border-bottom-width: 1px;
         border-bottom-style: solid;
@@ -632,6 +636,7 @@ and (max-width : 750px) {
         margin: 20px auto 0 auto;
         display: block;
         float: none;
+        height: auto;
     }
 
     .social-container a {
