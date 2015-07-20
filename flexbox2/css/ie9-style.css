@@ -43,3 +43,14 @@ html, body, .content {
 .main {
     margin: 0 auto;
 }
+
+.subscribe-form>form, .subscribe-form>p {
+    filter: none;
+    z-index: 3;
+    position: relative;
+}
+
+.subscribe-form:before {
+    z-index: 1;
+    background: rgba(23,23,24,.85);
+}

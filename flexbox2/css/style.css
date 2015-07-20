@@ -83,6 +83,8 @@ html, body {
 button, input, .s_submit, .send{
     outline: none;
     font-family: "Roboto", sans-serif;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 .social-container {
@@ -416,6 +418,7 @@ button{
     text-align: center;
     font-size: 14px;
     padding-top: 25px;
+    word-break: break-word;
 }
 
 .cell_box{
@@ -556,6 +559,10 @@ and (max-width : 900px) { /* STYLES GO HERE */
         margin: 20px auto;
         right: 0;
     }
+
+    .subscribe-form {
+        display: block;
+    }
 }
 
 @media only screen
@@ -678,9 +685,18 @@ and (max-width : 750px) {
 
 @media only screen
 and (max-width : 450px) {
+
+    .social-container {
+        width: 320px;
+    }
+
+    .social {
+        width: 295px;
+    }
+
     .gallery .g_container>div{
-        width: 12%;
-        height: 12%;
+        width: 20%;
+        height: 20%;
     }
 
     .contactform input {
@@ -689,5 +705,41 @@ and (max-width : 450px) {
 
     .subscribe-form:before {
         display: none;
+    }
+
+    .timer .text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .timer .number {
+        font-size: 26px;
+    }
+
+    .timer div {
+        width: 19%;
+    }
+
+    .social-container a {
+        height: 35px;
+        width: 35px;
+    }
+
+    .social-container i{
+        line-height: 34px;
+    }
+
+    .about p {
+        padding: 0;
+    }
+
+    .main .top p {
+        margin: 0;
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    .main .top .under_text {
+        font-size: 20px;
     }
 }
