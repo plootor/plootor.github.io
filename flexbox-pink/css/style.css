@@ -17,7 +17,7 @@ html, body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url("../images/pomodoro_images/background/ingredients-498199_1920.jpg");
+    background: url("../images/pomodoro_images/background/strawberries-in-bowl-783351_1920.jpg");
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position: center;
@@ -32,7 +32,7 @@ html, body {
     height: 100%;
     display: block;
     position: absolute;
-    background: url(../images/pomodoro_images/background/ingredients-498199_1920.jpg);
+    background: url("../images/pomodoro_images/background/strawberries-in-bowl-783351_1920.jpg");
     background-repeat: no-repeat;
     background-size: cover!important;
     background-position: center;
@@ -64,7 +64,7 @@ html, body {
 }
 
 .filter{
-    background-color: rgba(23, 23, 24, 0.6);
+    background-color: rgba(229, 126, 153, 0.43);
     height: 650px;
     margin-top: 105px;
     width: 100%;

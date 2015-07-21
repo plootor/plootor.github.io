@@ -17,7 +17,7 @@ html, body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url("../images/pomodoro_images/background/ingredients-498199_1920.jpg");
+    background: url("../images/pomodoro_images/background/columns-801715_1280.jpg");
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position: center;
@@ -32,7 +32,7 @@ html, body {
     height: 100%;
     display: block;
     position: absolute;
-    background: url(../images/pomodoro_images/background/ingredients-498199_1920.jpg);
+    background: url("../images/pomodoro_images/background/columns-801715_1280.jpg");
     background-repeat: no-repeat;
     background-size: cover!important;
     background-position: center;
@@ -40,31 +40,31 @@ html, body {
 
 /* Change here entire color */
 *, :after {
-    color: #ffffff;
+    color: #000000;
     border-style: solid;
-    border-color: #ffffff;
+    border-color: #000000;
     border-width: 0;
     border-radius: 0 !important;
 }
 
 ::-webkit-input-placeholder {
-    color: #ffffff;
+    color: #000000;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-    color: #ffffff;
+    color: #000000;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-    color: #ffffff;
+    color: #000000;
 }
 
 :-ms-input-placeholder {
-    color: #ffffff;
+    color: #000000;
 }
 
 .filter{
-    background-color: rgba(23, 23, 24, 0.6);
+    background-color: rgba(255, 255, 255, 0.52);
     height: 650px;
     margin-top: 105px;
     width: 100%;
@@ -314,7 +314,7 @@ button, input, .s_submit, .send{
 .subscribe-form p{
     font-size: 17px;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     padding: 20px 5px 5px 5px;
     height: 45px;
     box-sizing: border-box;
