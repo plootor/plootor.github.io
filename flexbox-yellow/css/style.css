@@ -17,7 +17,7 @@ html, body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url("../images/pomodoro_images/background/tea-with-lemon-783352_1280.jpg");
+    background: url("../images/pomodoro_images/background/pastry-731823_1280.jpg");
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position: center;
@@ -45,11 +45,11 @@ html, body {
 }
 
 .fa {
-    color:yellow;
+    color: #eeaaaa;
 }
 
 .s_submit {
-    background-color: yellow !important;
+    background-color: #eeaaaa !important;
     color: #fff;
 }
 
@@ -57,7 +57,7 @@ html, body {
 *, :after {
     color: #ffffff;
     border-style: solid;
-    border-color: yellow;
+    border-color: #eeaaaa;
     border-width: 0;
     border-radius: 0 !important;
 }
@@ -79,8 +79,9 @@ html, body {
 }
 
 .filter{
-    background-color: rgba(23, 23, 24, 0.6);
-    height: 100%;
+    background-color: rgba(23,23,24,.6);
+    height: 650px;
+    margin-top: 105px;
     width: 100%;
 }
 
@@ -434,7 +435,7 @@ button{
     text-align: center;
     font-size: 14px;
     padding-top: 25px;
-    word-break: break-word;
+    word-break: break-all;
 }
 
 .cell_box{
