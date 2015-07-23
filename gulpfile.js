@@ -10,7 +10,7 @@ gulp.task('css', function () {
         mqpacker,
         csswring
     ];
-    return gulp.src('./flexbox-red/css/style.css')
+    return gulp.src('./flexbox-pink/css/style.css')
         .pipe(postcss(processors))
         .pipe(gulp.dest('./dest'));
 });

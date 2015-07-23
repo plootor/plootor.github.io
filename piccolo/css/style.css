@@ -13,13 +13,11 @@ html, body {
     font-family: "Roboto", sans-serif;
 }
 
-/* START CUSTOMIZATION ZONE */
-
 #wrapper{
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url(../images/pomodoro_images/background/cherries-in-a-bowl-773021_1280.jpg);
+    background: url("../images/pomodoro_images/background/ingredients-498199_1920.jpg");
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position: center;
@@ -34,30 +32,19 @@ html, body {
     height: 100%;
     display: block;
     position: absolute;
-    background: url(../images/pomodoro_images/background/cherries-in-a-bowl-773021_1280.jpg);
+    background: url(../images/pomodoro_images/background/ingredients-498199_1920.jpg);
     background-repeat: no-repeat;
     background-size: cover!important;
     background-position: center;
 }
 
+/* Change here entire color */
 *, :after {
     color: #ffffff;
     border-style: solid;
-    border-color: #eeaaaa;
+    border-color: #ffffff;
     border-width: 0;
     border-radius: 0 !important;
-}
-
-.fa {
-    color: #eeaaaa;
-}
-
-.s_submit {
-    background-color: #eeaaaa;
-}
-
-.social-container i {
-    color: #ffffff;
 }
 
 ::-webkit-input-placeholder {
@@ -77,13 +64,11 @@ html, body {
 }
 
 .filter{
-    background-color: rgba(23,23,24, .6);
+    background-color: rgba(23, 23, 24, 0.6);
     height: 650px;
     margin-top: 105px;
     width: 100%;
 }
-
-/* END CUSTOMIZATION ZONE */
 
 .content {
     height: 100%;
@@ -406,6 +391,8 @@ button, input, .s_submit, .send{
     /*background: rgba(87, 87, 91, 0.60);*/
     box-sizing: border-box;
     margin: 0 auto;
+    background: none;
+    background-color: #252225;
 }
 
 button{
@@ -431,7 +418,7 @@ button{
     text-align: center;
     font-size: 14px;
     padding-top: 25px;
-    word-break: break-word;
+    word-break: break-all;
 }
 
 .cell_box{
@@ -471,7 +458,7 @@ button{
 
 @media only screen
 and (max-width : 1024px)
-{
+ {
 
     .timer {
         width: 200px;
