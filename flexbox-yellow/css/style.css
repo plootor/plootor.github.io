@@ -17,7 +17,7 @@ html, body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url("../images/pomodoro_images/background/pastry-731823_1280.jpg");
+    background: url("../images/pomodoro_images/background/person-802035_1280.jpg");
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position: center;
@@ -45,11 +45,11 @@ html, body {
 }
 
 .fa {
-    color: #eeaaaa;
+    color: #CA6657;
 }
 
 .s_submit {
-    background-color: #eeaaaa !important;
+    background-color: #CA6657 !important;
     color: #fff;
 }
 
@@ -57,7 +57,7 @@ html, body {
 *, :after {
     color: #ffffff;
     border-style: solid;
-    border-color: #eeaaaa;
+    border-color: #CA6657;
     border-width: 0;
     border-radius: 0 !important;
 }
