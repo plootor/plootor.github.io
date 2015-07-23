@@ -17,7 +17,7 @@ html, body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url("../images/pomodoro_images/background/flower-721559_1280.jpg");
+    background: url("../images/pomodoro_images/background/still-life-598317_1280.jpg");
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position: center;
@@ -33,7 +33,7 @@ html, body {
     height: 100%;
     display: block;
     position: absolute;
-    background: url("../images/pomodoro_images/background/tea-with-lemon-783352_1280.jpg");
+    background: url("../images/pomodoro_images/background/flower-721559_1280.jpg");
     background-repeat: no-repeat;
     background-size: cover!important;
     background-position: center;
@@ -45,19 +45,19 @@ html, body {
 }
 
 .fa {
-    color: #CA6657;
+    color: #000000;
 }
 
 .s_submit {
-    background-color: #CA6657 !important;
+    background-color: #000000 !important;
     color: #fff;
 }
 
 /* Change here entire color */
 *, :after {
-    color: #ffffff;
+    color: #000000;
     border-style: solid;
-    border-color: #CA6657;
+    border-color: #000000;
     border-width: 0;
     border-radius: 0 !important;
 }
@@ -79,7 +79,7 @@ html, body {
 }
 
 .filter{
-    background-color: rgba(23,23,24,.6);
+    background-color: rgba(255,255,255,.5);
     height: 650px;
     margin-top: 105px;
     width: 100%;
