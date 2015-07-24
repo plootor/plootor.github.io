@@ -56,15 +56,19 @@ section article {
 ul li {
     list-style: none;
     display: inline-block;
-    transition: all 0.28s ease-in-out;
-    -moz-transition: all 0.28s ease-in-out;
-    -webkit-transition: all 0.28s ease-in-out;
-    -o-transition: all 0.28s ease-in-out;
+
     margin-bottom: 70px;
     width: 33%;
 }
 
-ul li:hover {
+.hover{
+    transition: all 0.28s ease-in-out;
+    -moz-transition: all 0.28s ease-in-out;
+    -webkit-transition: all 0.28s ease-in-out;
+    -o-transition: all 0.28s ease-in-out;
+}
+
+.hover:hover {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
