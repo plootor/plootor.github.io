@@ -53,12 +53,12 @@ html, body {
     border-radius: 0 !important;
 }
 
-.fa {
-    color: #ffffff;
-}
-
 .s_submit {
     background-color: rgba(23,23,24, .6);
+}
+
+.fa {
+    color: #ffffff;
 }
 
 .social-container i {
@@ -94,8 +94,6 @@ html, body {
     height: 100%;
     position: relative;
     z-index: 2;
-
-    /*review after fade in effect*/
     overflow: hidden;
     min-height: 780px;
 }
@@ -301,20 +299,16 @@ button, input, .s_submit, .send{
 
 .main .gallery img{
     display: block;
-    height: 75px;
     width: 75px;
+    height: 75px;
 }
 
 .cell_box{
     display: inline-block;
 }
 
-.g_container>div {
-    padding: 0 20px;
-}
-
 .gallery .g_container>div {
-    margin: 10px 20px 28px 20px;
+    margin: 10px 20px 30px 20px;
     border-width: 2px;
     padding: 0;
 }
@@ -334,8 +328,8 @@ button, input, .s_submit, .send{
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
     justify-content: space-between;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -356,7 +350,7 @@ button, input, .s_submit, .send{
 
 .subscribe-form p{
     font-family: 'Playfair Display', serif;
-    font-size: 16px;
+    font-size: 17px;
     text-align: center;
     color: #ffffff;
     padding: 20px 5px 5px 5px;
@@ -473,14 +467,18 @@ button{
     text-align: center;
 }
 
+.contact>.g_container>div {
+    width: 100%;
+}
+
 .contact img{
     padding-bottom: 40px;
     display: block;
     margin: 0 auto;
 }
 
-.contact>.g_container>div {
-    width: 100%;
+.g_container>div {
+    padding: 0 20px;
 }
 
 .contactform input{
@@ -517,6 +515,7 @@ and (max-width : 1024px)
 
     .gallery .g_container>div {
         margin: 10px 15px 30px 15px;
+        width: 100%;
     }
     .container {
         margin: 0 80px;
@@ -661,9 +660,9 @@ and (max-width : 750px) {
     }
 
     .timer div {
-        border-bottom-width: 1px;
-        box-sizing: border-box;
-        padding: 25px 0 14px 0;
+        display: inline-block;
+        width: 20%;
+        margin: 0 2%;
     }
 
     .main {
@@ -679,8 +678,8 @@ and (max-width : 750px) {
     }
 
     .timer div:last-child {
-        border-bottom: none;
-        padding-bottom: 15px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
     }
 
     .timer .number {
@@ -757,10 +756,8 @@ and (max-width : 450px) {
     }
 
     .timer .text {
-        font-size: 14px;
-        text-align: center;
-        text-transform: uppercase;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 18px;
     }
 
     .timer .number {

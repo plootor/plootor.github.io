@@ -1,16 +1,12 @@
 var postcss = require('gulp-postcss');
 var gulp = require('gulp');
 var autoprefixer = require('autoprefixer-core');
-var mqpacker = require('css-mqpacker');
-var csswring = require('csswring');
 
 gulp.task('css', function () {
     var processors = [
-        autoprefixer({browsers: ['last 3 version']}),
-        mqpacker,
-        csswring
+        autoprefixer({browsers: ['last 3 version']})
     ];
-    return gulp.src('.main/piccolo/css/style.css')
+    return gulp.src('./main/piccolo-green/css/style.css')
         .pipe(postcss(processors))
         .pipe(gulp.dest('./dest'));
 });

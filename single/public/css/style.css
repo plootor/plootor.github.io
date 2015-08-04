@@ -6,7 +6,7 @@ html, body{
 
 .wrapper{
     height: 100%;
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
 }
 
@@ -17,7 +17,6 @@ section {
 .countdown{
     font-size: 0;
     padding-bottom: 20px;
-    border-bottom: 1px solid #000000;
 }
 
 .countdown_part{
@@ -32,7 +31,7 @@ section {
 
 .countdown_part h1{
     text-align: center;
-    font-family: Raleway;
+    font-family: Roboto;
     font-size: 50px;
     margin-top: 0;
     color: #000000;
@@ -40,7 +39,7 @@ section {
 
 .countdown_part p{
     text-align: center;
-    font-family: Raleway;
+    font-family: Roboto;
     font-size: 20px;
     margin-bottom: 0;
     color: #000000;
@@ -48,7 +47,7 @@ section {
 
 .text p{
     text-align: center;
-    font-family: Raleway;
+    font-family: Roboto;
     font-size: 25px;
     margin-top: 50px;
     line-height: 40px;
@@ -62,7 +61,7 @@ section {
 
 .contact p{
     text-align: center;
-    font-family: Raleway;
+    font-family: Roboto;
     font-size: 20px;
     margin-top: 50px;
     line-height: 40px;

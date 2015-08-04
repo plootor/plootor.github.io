@@ -19,7 +19,7 @@ html, body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url(../images/pomodoro_images/background/ingredients-498199_1280.jpg);
+    background: url(../images/pomodoro_images/background/macaroons-699351_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position: center;
@@ -39,7 +39,7 @@ html, body {
     height: 100%;
     display: block;
     position: absolute;
-    background: url(../images/pomodoro_images/background/ingredients-498199_1280.jpg);
+    background: url(../images/pomodoro_images/background/macaroons-699351_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover!important;
     background-position: center;
@@ -48,17 +48,17 @@ html, body {
 *, :after {
     color: #ffffff;
     border-style: solid;
-    border-color: #ffffff;
+    border-color: #839e7b;
     border-width: 0;
     border-radius: 0 !important;
 }
 
 .fa {
-    color: #ffffff;
+    color: #839e7b;
 }
 
 .s_submit {
-    background-color: #ffffff;
+    background-color: #839e7b;
 }
 
 .social-container i {
