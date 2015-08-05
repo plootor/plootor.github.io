@@ -19,7 +19,7 @@ html, body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url(../images/pomodoro_images/background/macaroons-699351_1280.jpg);
+    background: url(../images/background/macaroons-699351_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position: center;
@@ -34,7 +34,7 @@ html, body {
     height: 100%;
     display: block;
     position: absolute;
-    background: url(../images/pomodoro_images/background/macaroons-699351_1280.jpg);
+    background: url(../images/background/macaroons-699351_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover!important;
     background-position: center;
@@ -49,7 +49,7 @@ html, body {
 }
 
 .fa {
-    color: #839e7b;
+    color: #ffffff;
 }
 
 .s_submit {
@@ -57,7 +57,7 @@ html, body {
 }
 
 .social-container i {
-    color: #ffffff;
+    color: #839e7b;
 }
 
 ::-webkit-input-placeholder {
@@ -184,34 +184,36 @@ button, input, .s_submit, .send{
 }
 
 .timer {
-    width: 250px;
+    width: 200px;
 }
 
 .timer div{
     border-bottom-width: 1px;
-    margin: 0 0 30px 0;
-    padding: 0 0 15px 0;
+    box-sizing: border-box;
+    padding: 25px 0 14px 0;
 }
 
 .timer div:last-child{
     border-bottom: none;
-    margin-bottom: 0;
+    padding-bottom: 15px;
 }
 
 .timer .text{
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
+    line-height: 20px;
 }
 
 .timer .number{
-    font-size: 80px;
+    font-size: 70px;
     text-align: center;
+    line-height: 90px;
 }
 
 .main {
     width: 550px;
-    height: 595px;
+    height: 600px;
 }
 
 .box {
@@ -238,7 +240,7 @@ button, input, .s_submit, .send{
 
 .main .top{
     border-bottom-width: 1px;
-    margin: 0 auto 20px;
+    margin: 0 auto 30px;
 }
 
 .main .top img {
@@ -248,12 +250,14 @@ button, input, .s_submit, .send{
 
 .main .top p{
     text-align: center;
-    font-size: 30px;
-    margin: 15px;
+    font-size: 34px;
+    margin: 15px 0 5px 0;
+    font-family: 'Playfair Display', serif;
 }
 
 .main .top .under_text{
-    font-size: 24px;
+    font-size: 21px;
+    margin: 5px 0 30px 0;
 }
 
 .main .buttons div{
@@ -268,16 +272,16 @@ button, input, .s_submit, .send{
     display: block;
     border-bottom-width: 1px;
     width: 0;
-    -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .main .buttons>div.cycle-pager-active:after { width: 100%; }
 
 .main .buttons{
     text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 50px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-size: 16px;
 }
 
 /*.main .clear{
@@ -286,15 +290,22 @@ button, input, .s_submit, .send{
 
 .main .gallery img{
     display: block;
+    height: 75px;
+    width: 75px;
 }
 
 .cell_box{
     display: inline-block;
 }
 
+.g_container>div {
+    padding: 0 20px;
+}
+
 .gallery .g_container>div {
-    margin: 10px 25px 30px 25px;
+    margin: 10px 20px 28px 20px;
     border-width: 2px;
+    padding: 0;
 }
 
 .about_box img {
@@ -310,7 +321,7 @@ button, input, .s_submit, .send{
     margin-right: auto;
     margin-left: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -327,7 +338,8 @@ button, input, .s_submit, .send{
 }
 
 .subscribe-form p{
-    font-size: 17px;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
     text-align: center;
     color: #ffffff;
     padding: 20px 5px 5px 5px;
@@ -386,26 +398,25 @@ button, input, .s_submit, .send{
 }
 
 .s_button {
-    height: 40px;
-    padding: 5px;
+    padding: 8px;
     outline: none;
     display: block;
     width: 200px;
     background: none;
     box-sizing: border-box;
-    margin: 27px auto;
+    margin: 29px auto;
     border-width: 1px;
+    font-size: 15px;
 }
 
 .s_submit {
-    height: 40px;
-    padding: 5px;
+    padding: 11px;
     border: none;
     display: block;
     width: 100%;
-    /*background: rgba(87, 87, 91, 0.60);*/
     box-sizing: border-box;
     margin: 0 auto;
+    font-size: 15px;
 }
 
 button{
@@ -414,11 +425,10 @@ button{
 }
 
 .about p{
-    text-align: center;
+    text-align: justify;
     margin-bottom: 50px;
-    line-height: 25px;
+    line-height: 24px;
     font-size: 14px;
-    padding: 0 20px;
 }
 
 .about img{
@@ -464,9 +474,12 @@ button{
 }
 
 .contact .contactform .send{
-    border: none;
     width: auto;
     cursor:pointer;
+    background-color: gray;
+    padding: 8px 60px;
+    text-transform: uppercase;
+    margin-top: 20px;
 }
 
 @media only screen
@@ -625,9 +638,9 @@ and (max-width : 750px) {
     }
 
     .timer div {
-        display: inline-block;
-        width: 20%;
-        margin: 0 2%;
+        border-bottom-width: 1px;
+        box-sizing: border-box;
+        padding: 25px 0 14px 0;
     }
 
     .main {
@@ -643,8 +656,8 @@ and (max-width : 750px) {
     }
 
     .timer div:last-child {
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
+        border-bottom: none;
+        padding-bottom: 15px;
     }
 
     .timer .number {
@@ -721,8 +734,10 @@ and (max-width : 450px) {
     }
 
     .timer .text {
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 20px;
     }
 
     .timer .number {
