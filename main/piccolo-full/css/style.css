@@ -658,6 +658,7 @@ and (max-width : 750px) {
     .timer div:last-child {
         border-bottom-width: 1px;
         border-bottom-style: solid;
+        border-bottom-color: inherit;
     }
 
     .timer .number {
