@@ -615,8 +615,8 @@ and (max-width : 750px) {
     }
 
     .gallery img {
-        width: 100%;
-        height: 100%;
+        width: 100% !important;
+        height: 100% !important;
     }
 
     .filter {
@@ -638,9 +638,9 @@ and (max-width : 750px) {
     }
 
     .timer div {
-        border-bottom-width: 1px;
-        box-sizing: border-box;
-        padding: 25px 0 14px 0;
+        display: inline-block;
+        width: 20%;
+        margin: 0 2%;
     }
 
     .main {
@@ -656,8 +656,8 @@ and (max-width : 750px) {
     }
 
     .timer div:last-child {
-        border-bottom: none;
-        padding-bottom: 15px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
     }
 
     .timer .number {
@@ -734,10 +734,8 @@ and (max-width : 450px) {
     }
 
     .timer .text {
-        font-size: 14px;
-        text-align: center;
-        text-transform: uppercase;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 18px;
     }
 
     .timer .number {
