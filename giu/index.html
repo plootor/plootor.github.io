@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Piccolo</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+        <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="css/ie9-style.css" media="screen" />
+        <![endif]-->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Bowlby+One+SC' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Bowlby+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Rammetto+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Chonburi' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="content">
+            <div class="header">
+                <!--<div class="logo"><a href="."><img src="images/logo.png"></a></div>-->
+                <div class="logo">name of</div>
+                <div class="navigation">
+                    <div class="buttons">
+                        <span>About</span>
+                        <span>Gallery</span>
+                        <span>Subscribe</span>
+                        <span>Contacts</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="info">
+                    <p class="headline">THIS IS A <br> BIG HEADLINE</p>
+                    <p class="headline_small">This is the second smaller headline with some information</p>
+                </div>
+                <div class="timer-container">
+                    <div class="timer">
+                        <div>
+                            <p class="number">44</p> <p class="text">Days</p>
+                        </div>
+                        <div>
+                            <p class="number"> 4</p> <p class="text">Hours</p>
+                        </div>
+                        <div>
+                            <p class="number">58</p> <p class="text">Minutes</p>
+                        </div>
+                        <div>
+                            <p class="number">43</p> <p class="text">Seconds</p>
+                        </div>
+                    </div>
+                    <p class="timer_text">until we launch</p>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.plugins.js"></script>
+        <script src="js/jquery.countdown.js"></script>
+        <script>
+            var newYear = new Date();
+            newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1);
+           // $('.timer').countdown({until: newYear, layout:'<div><p class="text">{dl}</p> <p class="number">{d<}{dn}</p></div>     <div><p class="text">{hl}</p><p class="number">{d>} {hn}</p></div>    <div><p class="text">{ml}</p><p class="number">{mn}</p></div>    <div><p class="text">{sl}</p><p class="number">{sn}</p></div>'});
+
+    </script>
+    </body>
+</html>
