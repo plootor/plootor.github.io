@@ -25,6 +25,7 @@
     "gulp-postcss": "~5.1.10",
     "autoprefixer-core": "~5.2.1",
     "css-mqpacker": "~3.1.0",
-    "csswring": "~3.0.5"
+    "csswring": "~3.0.5",
+    "gulp-uncss": "~1.0.3"
   }
 }
