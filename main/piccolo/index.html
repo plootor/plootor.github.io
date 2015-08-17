@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head lang="en">
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>Piccolo</title>
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome-4.4.0/css/font-awesome.min.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/style-processed.css" media="screen" />
         <!--[if IE 9]>
         <link rel="stylesheet" type="text/css" href="css/ie9-style.css" media="screen" />
         <![endif]-->
 
-
         <link href="css/jquery.pageLoading.css" rel="stylesheet" type="text/css">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div id="wrapper">
             <div class="filter"></div>
         </div>
         <div class="content">
-        <div class="header" style="height: 105px;">
+        <header>
             <div class="logo"><a href="."><img src="images/logo.png"></a></div>
-        </div>
+        </header>
         <div class="social-container">
             <div class="item social">
                 <a href="#">
@@ -46,116 +42,122 @@
             </div>
         </div>
         <div class="container">
-            <div class="timer-container">
-                <div class="timer"></div>
-            </div>
-            <div class="main-container">
-                <div class="main">
 
-                    <svg width="550" height="600" xmlns="http://www.w3.org/2000/svg">
-                        <rect class="shape" height="600" width="550"></rect>
+                <div class="timer"></div>
+
+
+                <div class="main">
+                    <svg xmlns="http://www.w3.org/2000/svg">
+                        <rect class="shape"></rect>
                     </svg>
                     <div class="box">
-                        <!--<div class="top">
-                            <img src="images/white_icons/image5.png">
-                            <p>Our website is comming soon</p>
-                            <p class="under_text">Come back on July 23rd</p>
-                        </div>-->
-                        <div class="buttons cycle-pager">
-                        </div>
+                        <nav class="cycle-pager"></nav>
+                        <img src="images/white_icons/image5.png">
                         <div class="cycle-slideshow" data-cycle-slides="article" data-cycle-timeout="0"
-                             data-cycle-pager=".buttons"
+                             data-cycle-pager="nav"
+                             data-cycle-fx="scrollVert"
                              data-cycle-pager-template="<div>{{API.customGetImageSrc}}</div>"
                                 >
-                            <article title="products" class="gallery slide1">
+
+                            <article title="about us"  class="about">
+                                <h1 class="headline">Welcome!</h1>
+                                <h2 class="small_headline">We are launching on November 16th, 2015</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <figure>
+                                    <i class="fa fa-users"></i>
+                                    <p>User friendly</p>
+                                </figure>
+                                <figure>
+                                    <i class="fa fa-pencil"></i>
+                                    <p>Quick to edit</p>
+                                </figure>
+                                <figure>
+                                    <i class="fa fa-file-text"></i>
+                                    <p>Popular content</p>
+                                </figure>
+                            </article>
+                            <article title="gallery" class="gallery slide1">
                                 <div class="g_container">
                                     <div>
                                         <img src="images/gallery_img/image1.jpg">
-                                        <p>Tasty tea</p>
+
                                     </div>
                                     <div>
                                         <img src="images/gallery_img/image2.jpg">
-                                        <p>Sweet berries</p>
+
                                     </div>
                                     <div>
                                         <img src="images/gallery_img/image3.jpg">
-                                        <p>Spice blend</p>
+
                                     </div>
                                     <div>
                                         <img src="images/gallery_img/image12.jpg">
-                                        <p>Nutritious nuts</p>
+
                                     </div>
                                     <div>
                                         <img src="images/gallery_img/image4.jpg">
-                                        <p>Light snaks</p>
+
                                     </div>
                                     <div>
                                         <img src="images/gallery_img/image7.jpg">
-                                        <p>Coffe aroma</p>
+
                                     </div>
-                                </div>
-                            </article>
-                            <article title="about us"  class="about">
-                                <div class="g_container">
                                     <div>
-                                        <h1 class="headline">Welcome</h1>
-                                        <h2 class="small_headline">We are launching on November 16th, 2015</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                            culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        <div class="cell_box">
-                                            <i class="fa fa-users"></i>
-                                            <p>User friendly</p>
-                                        </div>
-                                        <div class="cell_box">
-                                            <i class="fa fa-pencil"></i>
-                                            <p>Quick to edit</p>
-                                        </div>
-                                        <div class="cell_box">
-                                            <i class="fa fa-file-text"></i>
-                                            <p>Popular content</p>
-                                        </div>
+                                        <img src="images/gallery_img/image1.jpg">
+
+                                    </div>
+                                    <div>
+                                        <img src="images/gallery_img/image1.jpg">
+
+                                    </div>
+                                    <div>
+                                        <img src="images/gallery_img/image1.jpg">
+
+                                    </div>
+                                    <div>
+                                        <img src="images/gallery_img/image1.jpg">
+
+                                    </div>
+                                    <div>
+                                        <img src="images/gallery_img/image1.jpg">
+
+                                    </div>
+                                    <div>
+                                        <img src="images/gallery_img/image1.jpg">
+
                                     </div>
                                 </div>
                             </article>
                             <article title="contacts"  class="contact">
-                                <div class="g_container">
-                                    <div>
-                                        <p class="contact_headline">Don't hesitate to contact us</p>
-                                        <form class="contactform">
-                                            <input type="text" name="name" placeholder="Name">
-                                            <input type="text" name="email" placeholder="Email">
-                                            <input type="text" name="message" placeholder="Message">
-                                            <input type="submit" value="Send" class="send">
-                                        </form>
-                                        <div class="cell_box">
-                                            <i class="fa fa-home"></i>
-                                            <p>Adress:<br>15 Avenue, NYC</p>
-                                        </div>
-                                        <div class="cell_box">
-                                            <i class="fa fa-envelope"></i>
-                                            <p>Email:<br>piccolo@info.eu</p>
-                                        </div>
-                                        <div class="cell_box">
-                                            <i class="fa fa-phone"></i>
-                                            <p>Phone:<br>+375 765 9835</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <p class="contact_headline">Don't hesitate to contact us!</p>
+                                <form class="contactform">
+                                    <input type="text" name="name" placeholder="Name">
+                                    <input type="text" name="email" placeholder="Email">
+                                    <input type="text" name="message" placeholder="Message">
+                                    <input type="submit" value="Send" class="send">
+                                </form>
+                                <figure>
+                                    <i class="fa fa-home"></i>
+                                    <p>Adress:<br>15 Avenue, NYC</p>
+                                </figure>
+                                <figure>
+                                    <i class="fa fa-envelope"></i>
+                                    <p>Email:<br>piccolo@info.eu</p>
+                                </figure>
+                                <figure>
+                                    <i class="fa fa-phone"></i>
+                                    <p>Phone:<br>+375 765 9835</p>
+                                </figure>
                             </article>
                         </div>
-                        <!--<button class="prev" data-cycle-cmd="prev">
-                            <i class="fa fa-angle-left"></i>
-                        </button>
-                        <button class="next" data-cycle-cmd="next">
-                            <i class="fa fa-angle-right"></i>
-                        </button>-->
                     </div>
                 </div>
-            </div>
+
         </div>
     </div>
     <div class="subscribe-container">
@@ -172,10 +174,11 @@
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140415/jquery.cycle2.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="js/jquery.pageLoading.js"></script>
+    <script src="js/jquery.cycle2.min.js"></script>
     <script src="js/jquery.plugins.js"></script>
     <script src="js/jquery.countdown.js"></script>
-    <script src="js/jquery.pageLoading.js"></script>
     <script src="js/main.js"></script>
     </body>
 </html>
