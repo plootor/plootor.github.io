@@ -78,7 +78,8 @@ html, body {
 
 .filter{
     background-color: rgba(23,23,24, .6);
-    height: 100%;
+    height: 650px;
+    margin-top: 105px;
     width: 100%;
 }
 

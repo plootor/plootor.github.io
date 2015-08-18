@@ -1,3 +1,19 @@
+/*! scrollVert transition plugin for Cycle2;  version: 20140128 */
+(function($) {
+    "use strict";
+
+    $.fn.cycle.transitions.scrollVert = {
+        before: function( opts, curr, next, fwd ) {
+            opts.API.stackSlides( opts, curr, next, fwd );
+            var height = opts.container.css('overflow','hidden').height();
+            opts.cssBefore = { top: fwd ? height : -height, left: 0, opacity: 1, display: 'block', visibility: 'visible' };
+            opts.animIn = { top: 0 };
+            opts.animOut = { top: fwd ? -height : height };
+        }
+    };
+
+})(jQuery);
+
 // bind to C2's bootstrap event in order to get a reference to the API object
 $('.cycle-slideshow').on('cycle-bootstrap', function(e, opts, API) {
     // add a new method to the C2 API:
@@ -18,15 +34,20 @@ $( ".lab-container" ).click(function() {
 
 var newYear = new Date();
 newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1);
-$('.timer').countdown({until: newYear, layout:'<div><p class="text">{dl}</p> <p class="number">{d<}{dn}</p></div>     <div><p class="text">{hl}</p><p class="number">{d>} {hn}</p></div>    <div><p class="text">{ml}</p><p class="number">{mn}</p></div>    <div><p class="text">{sl}</p><p class="number">{sn}</p></div>'});
+$('.timer').countdown({until: newYear, layout:
+    '<div><time class="text">{dl}</time> <time class="number">{d<}{dn}</time></div>'
+    +'<div><time class="text">{hl}</time><time class="number">{d>} {hn}</time></div>'
+    +'<div><time class="text">{ml}</time><time class="number">{mn}</time></div>'
+    +'<div><time class="text">{sl}</time><time class="number">{sn}</time></div>'}
+);
 
 pageLoading({
-    barColor:'#3D3C3C', //Bar'ın rengini belirler
-    barTop:'75px',     //Barın top değerini belirler. Tüm yükseklik birimleri kulanılabilir(px,%,...)
-    textTop:'100px',    //Text'in top değerini belirler. Tüm yükseklik birimleri kulanılabilir(px,%,...)
-    backColor:'rgba(255,255, 255, 0.90)', //Arka perde rengini belirler.
-    backBarColor:'#dfe8ea',     //Bar'ın arka rengini belirler.
-    text:'Loading <b>{process} %</b>',    //Text'in içeriğini belirler. {process} = yüklenme değeri.
-    textVisible:false,   //false durumunda Text'i kaldırır.
-    loadOut:true    //true durumunda sayfanın ilk açılışının tamamlanmasıyla otomatik biter.
+    barColor:'#3D3C3C',
+    barTop:'75px',
+    textTop:'100px',
+    backColor:'rgba(255,255, 255, 0.90)',
+    backBarColor:'#dfe8ea',
+    text:'Loading <b>{process} %</b>',
+    textVisible:false,
+    loadOut:true
 });

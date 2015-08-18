@@ -19,7 +19,7 @@ html, body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url(../images/background/macaroons-699351_1280.jpg);
+    background: url(../images/background/ingredients-498199_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position: center;
@@ -34,7 +34,7 @@ html, body {
     height: 100%;
     display: block;
     position: absolute;
-    background: url(../images/background/macaroons-699351_1280.jpg);
+    background: url(../images/background/ingredients-498199_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover!important;
     background-position: center;
@@ -43,7 +43,7 @@ html, body {
 *, :after {
     color: #ffffff;
     border-style: solid;
-    border-color: #839e7b;
+    border-color: #ffffff;
     border-width: 0;
     border-radius: 0 !important;
 }
@@ -53,11 +53,11 @@ html, body {
 }
 
 .s_submit {
-    background-color: #839e7b;
+    background-color: rgba(23,23,24, .6);
 }
 
 .social-container i {
-    color: #839e7b;
+    color: #ffffff;
 }
 
 ::-webkit-input-placeholder {
@@ -78,7 +78,8 @@ html, body {
 
 .filter{
     background-color: rgba(23,23,24, .6);
-    height: 100%;
+    height: 650px;
+    margin-top: 105px;
     width: 100%;
 }
 

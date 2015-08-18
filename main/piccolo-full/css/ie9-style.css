@@ -1,7 +1,6 @@
 html, body, .content {
-    min-width: 900px;
+    min-width: 1050px;
 }
-
 
 .container {
     display: table;
@@ -9,8 +8,8 @@ html, body, .content {
     width: 70%;
 }
 
-.timer-container, .main-container {
-    display: table-cell;
+.timer, .main {
+    display: inline-block;
     vertical-align: middle;
 }
 
@@ -20,6 +19,8 @@ html, body, .content {
 
 .gallery .g_container>div {
     display: inline-block;
+    margin-left: 18px;
+    margin-right: 18px;
 }
 
 .social-container, .subscribe-container {
@@ -40,9 +41,11 @@ html, body, .content {
     right: 0;
 }
 
-.main {
-    margin: 0 auto;
+.timer {
+    float: left;
+    margin-right: 20%;
 }
+
 
 .subscribe-form>form, .subscribe-form>p {
     filter: none;
@@ -53,4 +56,28 @@ html, body, .content {
 .subscribe-form:before {
     z-index: 1;
     background: rgba(23,23,24,.85);
+}
+
+@media only screen
+and (max-width : 1550px) {
+    .timer {
+        margin-right: 12%;
+    }
+
+    .container {
+        margin: 0 10%;
+        width: 80%;
+    }
+}
+
+@media only screen
+and (max-width : 1200px) {
+    .timer {
+        margin-right: 5%;
+    }
+
+    .container {
+        margin: 0 5%;
+        width: 90%;
+    }
 }

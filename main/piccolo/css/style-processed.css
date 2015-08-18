@@ -55,6 +55,10 @@ body {
     border-radius: 0 !important;
 }
 
+.shape {
+    stroke: #ffffff;
+}
+
 .fa {
     color: #ffffff;
 }
@@ -67,8 +71,7 @@ body {
     color: #ffffff;
 }
 
-:-moz-placeholder {
-    /* Firefox 18- */
+::-webkit-input-placeholder {
     color: #ffffff;
 }
 
@@ -258,7 +261,6 @@ nav>div.cycle-pager-active:after {
 .shape {
     fill: transparent;
     stroke-width: 2px;
-    stroke: #ffffff;
     stroke-dasharray: 50px 450 100 500 100 450 100 500;
 }
 
@@ -423,7 +425,7 @@ nav {
 
 .about .small_headline {
     font-size: 18px;
-    border-bottom: 1px solid #ffffff;
+    border-bottom-width: 1px;
     margin-bottom: 30px;
     padding-bottom: 6px;
     color: #ffffff;
@@ -477,7 +479,7 @@ figure p {
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 50px;
-    border: 1px solid #ffffff;
+    border-width: 1px;
 }
 
 .contact .contact_headline {
