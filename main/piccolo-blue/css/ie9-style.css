@@ -17,7 +17,7 @@ html, body, .content {
     display: block;
 }
 
-.gallery .g_container>div {
+.gallery .g_container>.row>div {
     display: inline-block;
     margin-left: 18px;
     margin-right: 18px;
