@@ -51,3 +51,6 @@ pageLoading({
     textVisible:false,
     loadOut:true
 });
+
+document.querySelector('.shape').setAttribute("width", document.querySelector('.main').offsetWidth-30);
+document.querySelector('.shape').setAttribute("height", document.querySelector('.main').offsetHeight-30);
