@@ -461,7 +461,7 @@ nav {
 figure {
     display: inline-block;
     padding: 0 4px;
-    width: 32.7%;
+    width: 32.5%;
     box-sizing: border-box;
     font-size: 30px;
     text-align: center;
@@ -538,6 +538,10 @@ and (max-width : 1024px) {
 
     .container {
         margin: 0 80px;
+    }
+
+    .about p {
+        margin-bottom: 30px;
     }
 }
 
@@ -663,6 +667,7 @@ and (max-width : 750px) {
     .gallery img {
         width: 100% !important;
         height: 100% !important;
+        box-sizing: border-box;
     }
 
     .content {
@@ -751,6 +756,11 @@ and (max-width : 750px) {
 
 @media only screen
 and (max-width : 450px) {
+
+    nav>div {
+        margin: 25px 15px 0 15px;
+    }
+
     .cycle-slideshow article {
         padding: 0;
     }
@@ -774,6 +784,7 @@ and (max-width : 450px) {
     .gallery>.g_container>.row>div {
         width: 20%;
         height: 20%;
+        margin: 0 0 5% 0;
     }
 
     .contactform input {
