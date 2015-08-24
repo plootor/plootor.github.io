@@ -10,7 +10,7 @@ a {
 html, body {
     width: 100%;
     height: 100%;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* START CUSTOMIZATION ZONE */
@@ -23,69 +23,103 @@ html, body {
     border-radius: 0 !important;
 }
 
-.content{
+.content {
     height: 100%;
     width: 1200px;
     margin: 0 auto;
 }
 
-.header .navigation{
-    height: 35px;
+.header .navigation {
+    height: 40px;
     box-sizing: border-box;
     border-bottom: 1px solid #000000;
     border-top: 1px solid #000000;
     margin-top: 80px;
 }
 
-.header .navigation .buttons{
-    text-align: right;
+.header .navigation .buttons {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
-.header .navigation .buttons span{
+.header .navigation nav div {
     margin: 0 5px 0 25px;
-    line-height: 35px;
+    line-height: 40px;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .container {
     height: calc(100% - 136px); /* Or whatever */
 }
 
-.container .info{
+article {
+    width: 100%;
+}
+
+.container .section1 {
     text-align: right;
-    margin-top: 200px;
+    width: 50%;
+    float: left;
+    padding: 200px 25px 0 0;
 }
 
-.container .info .headline{
+.container .section1 .headline {
     font-size: 80px;
-    font-family: 'Chonburi', cursive;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
-.container .info .headline_small{
+.container .section1 .headline_small {
     font-size: 25px;
     padding: 30px 0 80px 0;
+    font-weight: 300;
 }
 
-.timer{
+.container .section2 {
+    padding: 200px 0 0 25px;
+}
+
+.container .section2 p {
+    line-height: 26px;
+    font-weight: 300;
+    padding-top: 22px;
+}
+
+.subscribe-form input {
+    outline: none;
+    background: none;
+    width: 460px;
+    height: 56px;
+    border: 1px solid #000000;
+}
+
+.subscribe-form .s_submit {
+    cursor: pointer;
+}
+
+.timer {
     float: right;
     font-size: 0;
     display: inline-block;
 }
 
-.timer div{
+.timer div {
     border-bottom-width: 1px;
     box-sizing: border-box;
     padding: 5px 0 5px 20px;
     display: inline-block;
 }
 
-.timer .text{
+.timer .text {
     font-size: 15px;
     text-align: right;
     line-height: 20px;
     display: inline-block;
 }
 
-.timer .number{
+.timer .number {
     font-size: 20px;
     text-align: right;
     line-height: 30px;
@@ -93,7 +127,26 @@ html, body {
     padding: 0 5px 0 0;
 }
 
-.timer-container p{
+.timer-container p {
     text-align: right;
     clear: both;
+}
+
+.contactform input {
+    border-bottom: 1px solid black;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 15px;
+    display: block;
+    background: none;
+    outline: none;
+}
+
+.contactform .send {
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-top: 10px;
 }

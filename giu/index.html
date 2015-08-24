@@ -10,11 +10,7 @@
         <![endif]-->
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Bowlby+One+SC' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Bowlby+One' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Rammetto+One' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Chonburi' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div class="content">
@@ -22,35 +18,77 @@
                 <!--<div class="logo"><a href="."><img src="images/logo.png"></a></div>-->
                 <div class="logo">name of</div>
                 <div class="navigation">
-                    <div class="buttons">
-                        <span>About</span>
-                        <span>Gallery</span>
-                        <span>Subscribe</span>
-                        <span>Contacts</span>
-                    </div>
+                    <nav class="buttons cycle-pager"></nav>
                 </div>
             </div>
             <div class="container">
-                <div class="info">
-                    <p class="headline">THIS IS A <br> BIG HEADLINE</p>
-                    <p class="headline_small">This is the second smaller headline with some information</p>
-                </div>
-                <div class="timer-container">
-                    <div class="timer">
-                        <div>
-                            <p class="number">44</p> <p class="text">Days</p>
+                <div class="cycle-slideshow" data-cycle-slides="article" data-cycle-timeout="0"
+                     data-cycle-pager="nav"
+                     data-cycle-fx="scrollVert"
+                     data-cycle-pager-template="<div>{{API.customGetImageSrc}}</div>"
+                        >
+                    <article title="home">
+                        <div class="section1">
+                            <p class="headline">Modern and clean design</p>
+                            <p class="headline_small">Our website is comming soon. Subscribe on the right for updates and notifications.</p>
                         </div>
-                        <div>
-                            <p class="number"> 4</p> <p class="text">Hours</p>
+                        <div class="section2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                fugiat nulla pariatur.</p>
+                            <div class="subscribe-form">
+                                <form>
+                                    <input type="search" name="subscribe" class="s_button" placeholder="Email">
+                                    <input type="submit" value="Submit" class="s_submit">
+                                </form>
+                            </div>
                         </div>
-                        <div>
-                            <p class="number">58</p> <p class="text">Minutes</p>
+                        <div class="timer-container">
+                            <div class="timer">
+                                <div>
+                                    <p class="number">44</p> <p class="text">Days</p>
+                                </div>
+                                <div>
+                                    <p class="number"> 4</p> <p class="text">Hours</p>
+                                </div>
+                                <div>
+                                    <p class="number">58</p> <p class="text">Minutes</p>
+                                </div>
+                                <div>
+                                    <p class="number">43</p> <p class="text">Seconds</p>
+                                </div>
+                            </div>
                         </div>
+                    </article>
+
+                    <article title="about us">
                         <div>
-                            <p class="number">43</p> <p class="text">Seconds</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                            culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
-                    </div>
-                    <p class="timer_text">until we launch</p>
+                    </article>
+
+                    <article title="portfolio">
+
+                    </article>
+
+                    <article title="contacts">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <form class="contactform">
+                            <input type="text" name="name" placeholder="Name">
+                            <input type="text" name="email" placeholder="Email">
+                            <input type="text" name="message" placeholder="Message">
+                            <input type="submit" value="Send" class="send">
+                        </form>
+                    </article>
                 </div>
             </div>
         </div>
@@ -62,5 +100,7 @@
            // $('.timer').countdown({until: newYear, layout:'<div><p class="text">{dl}</p> <p class="number">{d<}{dn}</p></div>     <div><p class="text">{hl}</p><p class="number">{d>} {hn}</p></div>    <div><p class="text">{ml}</p><p class="number">{mn}</p></div>    <div><p class="text">{sl}</p><p class="number">{sn}</p></div>'});
 
     </script>
+        <script src="js/jquery.cycle2.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
