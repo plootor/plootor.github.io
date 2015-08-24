@@ -97,12 +97,18 @@ article {
 
 .subscribe-form .s_submit {
     cursor: pointer;
+    width: 100px;
+}
+
+.timer-container {
+    clear: both;
 }
 
 .timer {
-    float: right;
     font-size: 0;
-    display: inline-block;
+    display: block;
+    width: 380px;
+    margin: 0 auto;
 }
 
 .timer div {
