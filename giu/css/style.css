@@ -51,37 +51,37 @@ html, body {
 }
 
 .container {
-    height: calc(100% - 136px); /* Or whatever */
+    height: calc(100% - 142px); /* Or whatever */
 }
 
 article {
     width: 100%;
 }
 
-.container .section1 {
+.section1 {
     text-align: right;
-    width: 50%;
+    width: 49%;
     float: left;
-    padding: 150px 25px 0 0;
+    padding: 14% 2% 0 0 ;
 }
 
-.container .section1 .headline {
+.section2 {
+    padding: 14% 0 0 0;
+}
+
+.home .section1 .headline {
     font-size: 80px;
     text-transform: uppercase;
     font-weight: 600;
 }
 
-.container .section1 .headline_small {
+.home .section1 .headline_small {
     font-size: 25px;
     padding: 50px 0 80px 0;
     font-weight: 300;
 }
 
-.container .section2 {
-    padding: 150px 0 0 25px;
-}
-
-.container .section2 p {
+.home .section2 p {
     line-height: 26px;
     font-weight: 300;
     padding-top: 22px;
@@ -168,7 +168,7 @@ article {
     color: #000000;
 }
 
-figure {
+.about figure {
     display: inline-block;
     padding: 100px 4px 0 4px;
     width: 32.7%;
@@ -177,7 +177,7 @@ figure {
     text-align: center;
 }
 
-figure p {
+.about figure p {
     text-align: center !important;
     font-size: 16px;
     padding-top: 25px;
@@ -187,13 +187,39 @@ figure p {
     text-transform: uppercase;
 }
 
+.contacts h1 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 32px;
+    padding: 50px 0 30px 0;
+    text-transform: uppercase;
+}
+
+.contacts figure {
+    box-sizing: border-box;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: right;
+    /*padding: 15px 0 15px 0;*/
+}
+
+.contacts figure p {
+    display: inline-block;
+    font-size: 16px;
+    word-break: break-all;
+    margin: 0 !important;
+    font-weight: 300;
+    padding-right: 20px;
+}
+
 .contactform input {
     border-bottom: 1px solid black;
-    width: 50%;
+    width: 35%;
     box-sizing: border-box;
-    padding: 20px;
-    margin: 0 auto;
+    padding: 0 0 0 20px;
+    /*margin: 0 auto;*/
     font-size: 15px;
+    line-height: 60px;
     display: block;
     background: none;
     outline: none;
@@ -201,7 +227,9 @@ figure p {
 
 .contactform .send {
     cursor: pointer;
+    width: 6%;
+    text-align: left;
     border: 1px solid black;
     border-radius: 25px;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
 }
