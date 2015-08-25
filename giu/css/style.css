@@ -20,7 +20,7 @@ html, body {
     border-style: solid;
     border-color: #ffffff;
     border-width: 0;
-    border-radius: 0 !important;
+    border-radius: 0;
 }
 
 .content {
@@ -41,6 +41,7 @@ html, body {
     text-align: center;
     text-transform: uppercase;
     font-weight: 300;
+    font-size: 14px;
 }
 
 .header .navigation nav div {
@@ -60,9 +61,9 @@ article {
 
 .section1 {
     text-align: right;
-    width: 49%;
+    width: 48%;
     float: left;
-    padding: 14% 2% 0 0 ;
+    padding: 14% 4% 0 0 ;
 }
 
 .section2 {
@@ -96,13 +97,16 @@ article {
     outline: none;
     background: none;
     width: 460px;
-    height: 56px;
+    height: 38px;
     border: 1px solid #000000;
+    border-radius: 5px;
 }
 
 .subscribe-form .s_submit {
     cursor: pointer;
     width: 100px;
+    border-radius: 5px;
+    border-width: 2px;
 }
 
 .timer-container {
@@ -146,21 +150,21 @@ article {
 .about h1 {
     text-align: center;
     font-weight: 300;
-    font-size: 32px;
+    font-size: 28px;
     padding: 50px 0 30px 0;
     text-transform: uppercase;
 }
 
 .about h2 {
     font-weight: 300;
-    font-size: 26px;
+    font-size: 22px;
     padding: 16px 0 10px 0;
 }
 
 .about .text {
     text-align: justify;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 26px;
 }
 
@@ -190,7 +194,7 @@ article {
 .contacts h1 {
     text-align: center;
     font-weight: 300;
-    font-size: 32px;
+    font-size: 28px;
     padding: 50px 0 30px 0;
     text-transform: uppercase;
 }
@@ -217,7 +221,6 @@ article {
     width: 35%;
     box-sizing: border-box;
     padding: 0 0 0 20px;
-    /*margin: 0 auto;*/
     font-size: 15px;
     line-height: 60px;
     display: block;
@@ -227,8 +230,10 @@ article {
 
 .contactform .send {
     cursor: pointer;
-    width: 6%;
-    text-align: left;
-    border: 1px solid black;
-    border-radius: 25px;
+    width: auto;
+    padding: 8px 50px 8px 50px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    line-height: inherit;
 }
