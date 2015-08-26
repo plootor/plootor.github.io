@@ -29,8 +29,15 @@ html, body {
     margin: 0 auto;
 }
 
-.logo>a {
+.logo {
+    width: 180px;
+    margin: 0 auto;
+}
 
+.logo>a {
+    display: block;
+    font-size: 0;
+    padding: 10px 0 10px 0;
 }
 
 .header .navigation {
@@ -38,6 +45,7 @@ html, body {
     box-sizing: border-box;
     border-bottom: 1px solid #000000;
     border-top: 1px solid #000000;
+    margin-bottom: 20px;
 }
 
 .header .navigation .buttons {
@@ -70,11 +78,12 @@ article {
     text-align: right;
     width: 48%;
     float: left;
-    padding: 14% 4% 0 0 ;
+    padding: 0% 2% 0 0;
+    margin: 14% 2% 0 0;
 }
 
 .section2 {
-    padding: 14% 0 0 0;
+    margin: 14% 0 0 0;
     width: 48%;
     float: left;
 }
@@ -99,7 +108,10 @@ article {
 }
 
 .subscribe-form {
-    padding-top: 122px;
+    padding-top: 140px;
+    clear: both;
+    width: 48%;
+    margin: 0 auto;
 }
 
 .subscribe-form input {
@@ -159,15 +171,18 @@ article {
 .about h1 {
     text-align: center;
     font-weight: 300;
-    font-size: 28px;
-    padding: 50px 0 30px 0;
+    font-size: 26px;
+    padding: 20px 0 15px 0;
     text-transform: uppercase;
 }
 
 .about h2 {
     font-weight: 300;
     font-size: 22px;
-    padding: 16px 0 10px 0;
+    padding: 20px 0 5px 0;
+    display: inline-block;
+    border-bottom: 2px solid #000000;
+    margin-bottom: 10px;
 }
 
 .about .text {
@@ -175,6 +190,7 @@ article {
     font-weight: 300;
     font-size: 15px;
     line-height: 26px;
+    padding: 5px 0 0 0;
 }
 
 .fa {
@@ -184,7 +200,7 @@ article {
 .about figure {
     display: inline-block;
     padding: 100px 4px 0 4px;
-    width: 32.7%;
+    width: 24.7%;
     box-sizing: border-box;
     font-size: 45px;
     text-align: center;
@@ -200,11 +216,33 @@ article {
     text-transform: uppercase;
 }
 
+.portfolio img {
+    display: block;
+    float: left;
+    border: 10px solid #ffffff;
+    box-sizing: border-box;
+}
+
+.portfolio .row1 img {
+    width: 600px;
+    height: 400px;
+}
+
+.portfolio .row2 img {
+    width: 400px;
+    height: 400px;
+}
+
+.contacts .section1 {
+    border-right: 1px solid black;
+    box-sizing: border-box;
+}
+
 .contacts h1 {
     text-align: center;
     font-weight: 300;
-    font-size: 28px;
-    padding: 50px 0 30px 0;
+    font-size: 26px;
+    padding: 20px 0 15px 0;
     text-transform: uppercase;
 }
 
