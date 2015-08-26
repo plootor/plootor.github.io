@@ -29,12 +29,15 @@ html, body {
     margin: 0 auto;
 }
 
+.logo>a {
+
+}
+
 .header .navigation {
     height: 40px;
     box-sizing: border-box;
     border-bottom: 1px solid #000000;
     border-top: 1px solid #000000;
-    margin-top: 80px;
 }
 
 .header .navigation .buttons {
@@ -55,6 +58,10 @@ html, body {
     height: calc(100% - 142px); /* Or whatever */
 }
 
+.cycle-slideshow, .cycle-slideshow>article {
+    height: 100%;
+}
+
 article {
     width: 100%;
 }
@@ -68,6 +75,8 @@ article {
 
 .section2 {
     padding: 14% 0 0 0;
+    width: 48%;
+    float: left;
 }
 
 .home .section1 .headline {
@@ -216,9 +225,14 @@ article {
     padding-right: 20px;
 }
 
+.contacts figure .fa {
+    width: 40px;
+    text-align: center;
+}
+
 .contactform input {
     border-bottom: 1px solid black;
-    width: 35%;
+    width: 65%;
     box-sizing: border-box;
     padding: 0 0 0 20px;
     font-size: 15px;
