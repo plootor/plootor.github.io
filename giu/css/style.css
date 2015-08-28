@@ -216,6 +216,15 @@ article {
     text-transform: uppercase;
 }
 
+.portfolio div {
+    position: relative;
+}
+
+.portfolio .text {
+    position: absolute;
+    bottom: 0;
+}
+
 .portfolio img {
     display: block;
     float: left;
@@ -236,6 +245,11 @@ article {
 .contacts .section1 {
     border-right: 1px solid black;
     box-sizing: border-box;
+}
+
+.contacts img {
+    width: 1200px;
+    height: 300px;
 }
 
 .contacts h1 {
