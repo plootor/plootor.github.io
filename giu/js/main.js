@@ -20,3 +20,24 @@ $('.cycle-slideshow').on('cycle-bootstrap', function(e, opts, API) {
         return $( slideEl ).attr('title');
     }
 });
+
+
+function startSecond(selector) {
+var element = document.getElementById(selector);
+var seconds = new ProgressBar.Circle(element, {
+    duration: 200,
+    color: "#FCB03C",
+    trailColor: "#ddd"
+});
+
+setInterval(function() {
+    var second = new Date().getSeconds();
+    seconds.animate(second / 60, function() {
+        seconds.setText(second);
+    });
+}, 1000);
+
+}
+
+startSecond('example-clock-container');
+startSecond('example-clock-container2');
