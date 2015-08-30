@@ -22,7 +22,7 @@ $('.cycle-slideshow').on('cycle-bootstrap', function(e, opts, API) {
 });
 
 
-function startSecond(selector) {
+function startSecond(selector, type) {
 var element = document.getElementById(selector);
 var seconds = new ProgressBar.Circle(element, {
     duration: 200,
@@ -31,7 +31,13 @@ var seconds = new ProgressBar.Circle(element, {
 });
 
 setInterval(function() {
-    var second = new Date().getSeconds();
+    var second = new Date().getSeconds(),
+        minute = new Date().getMinutes(),
+        hour = new Date().getHours(),
+        date = new Date().getDate(),
+        currentType = type;
+
+
     seconds.animate(second / 60, function() {
         seconds.setText(second);
     });
@@ -39,5 +45,7 @@ setInterval(function() {
 
 }
 
-startSecond('example-clock-container');
-startSecond('example-clock-container2');
+startSecond('example-clock-container', 'second');
+startSecond('example-clock-container2', 'minute');
+startSecond('example-clock-container3', 'hour');
+startSecond('example-clock-container4', 'date');
