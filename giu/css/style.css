@@ -45,7 +45,7 @@ html, body {
     box-sizing: border-box;
     border-bottom: 1px solid #000000;
     border-top: 1px solid #000000;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .header .navigation .buttons {
@@ -74,7 +74,7 @@ article {
     width: 100%;
 }
 
-.section1 {
+.home .section1 {
     text-align: right;
     width: 48%;
     float: left;
@@ -82,7 +82,7 @@ article {
     margin: 14% 2% 0 0;
 }
 
-.section2 {
+.home .section2 {
     margin: 14% 0 0 0;
     width: 48%;
     float: left;
@@ -168,18 +168,19 @@ article {
     clear: both;
 }
 
-.about h1 {
+.about h1, .contacts h1 {
     text-align: center;
     font-weight: 300;
-    font-size: 26px;
-    padding: 20px 0 15px 0;
+    font-size: 24px;
+    padding: 15px 0 15px 0;
     text-transform: uppercase;
 }
 
 .about h2 {
     font-weight: 300;
     font-size: 22px;
-    padding: 20px 0 5px 0;
+    line-height: 22px;
+    padding: 25px 0 10px 0;
     display: inline-block;
     border-bottom: 2px solid #000000;
     margin-bottom: 10px;
@@ -190,7 +191,6 @@ article {
     font-weight: 300;
     font-size: 15px;
     line-height: 26px;
-    padding: 5px 0 0 0;
 }
 
 .fa {
@@ -218,6 +218,7 @@ article {
 
 .portfolio div {
     position: relative;
+    float: left;
 }
 
 .portfolio .text {
@@ -242,22 +243,42 @@ article {
     height: 400px;
 }
 
-.contacts .section1 {
-    border-right: 1px solid black;
-    box-sizing: border-box;
+.contacts .map {
+    font-size: 0;
 }
 
 .contacts img {
     width: 1200px;
     height: 300px;
+    padding: 25px 0 0 0;  /*move all to div above when add the map*/
 }
 
-.contacts h1 {
-    text-align: center;
-    font-weight: 300;
-    font-size: 26px;
-    padding: 20px 0 15px 0;
-    text-transform: uppercase;
+.contacts .row {
+    margin-top: 5%;
+}
+
+.row:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.contacts .section1 {
+    border-right: 1px solid black;
+    box-sizing: border-box;
+    text-align: right;
+    width: 49%;
+    float: left;
+    padding: 0 2% 0 0;
+    margin-right: 2%;
+}
+
+.contacts .section2 {
+    width: 49%;
+    float: left;
 }
 
 .contacts figure {
