@@ -27,6 +27,7 @@ html, body {
     height: 100%;
     width: 1200px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .logo {
@@ -63,7 +64,7 @@ html, body {
 }
 
 .container {
-    height: calc(100% - 142px); /* Or whatever */
+    height: calc(100% - 185px); /* Or whatever */
 }
 
 .cycle-slideshow, .cycle-slideshow>article {
@@ -74,22 +75,31 @@ article {
     width: 100%;
 }
 
+.flex-container{
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .home .section1 {
     text-align: right;
-    width: 48%;
+    width: 49%;
     float: left;
     padding: 0% 2% 0 0;
-    margin: 14% 2% 0 0;
+    margin: 0 2% 0 0;
+    box-sizing: border-box;
 }
 
 .home .section2 {
-    margin: 14% 0 0 0;
-    width: 48%;
+    width: 49%;
     float: left;
 }
 
 .home .section1 .headline {
-    font-size: 80px;
+    font-size: 75px;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -108,10 +118,9 @@ article {
 }
 
 .subscribe-form {
-    padding-top: 140px;
     clear: both;
     width: 48%;
-    margin: 0 auto;
+    margin: -60px auto 0 auto;
 }
 
 .subscribe-form input {
@@ -121,6 +130,8 @@ article {
     height: 38px;
     border: 1px solid #000000;
     border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px;
 }
 
 .subscribe-form .s_submit {
@@ -132,49 +143,24 @@ article {
 
 .timer-container {
     clear: both;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .timer-container div{
-    width: 130px;
-    height: 130px;
+    width: 22%;
     display: inline-block;
+    margin-right: 3%;
 }
 
-/*
-.timer {
-    font-size: 0;
-    display: block;
-    width: 380px;
-    margin: 0 auto;
-}
-
-.timer div {
-    border-bottom-width: 1px;
-    box-sizing: border-box;
-    padding: 5px 0 5px 20px;
-    display: inline-block;
-}
-
-.timer .text {
-    font-size: 15px;
-    text-align: right;
-    line-height: 20px;
-    display: inline-block;
-}
-
-.timer .number {
-    font-size: 20px;
-    text-align: right;
-    line-height: 30px;
-    display: inline-block;
-    padding: 0 5px 0 0;
+.timer-container div:last-child{
+    margin-right: 0;
 }
 
 .timer-container p {
-    text-align: right;
-    clear: both;
+    text-align: center !important;
+    font-size: 20px;
 }
-*/
 
 .about h1, .contacts h1 {
     text-align: center;
@@ -224,31 +210,41 @@ article {
     text-transform: uppercase;
 }
 
-.portfolio div {
+.portfolio .row {
+    height: 47%;
+    margin-bottom: 2%;
+    overflow: hidden;
+}
+.portfolio>.row>div {
     position: relative;
     float: left;
+    margin-right: 18px;
+    height: 100%;
+}
+
+.portfolio>.row>div:last-child {
+    margin-right: 0;
 }
 
 .portfolio .text {
     position: absolute;
     bottom: 0;
+    width: 264px;
+    left: 50%;
+    margin-left: -128px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.portfolio .text h1 {
+    border-bottom: 1px solid #000000;
+    text-transform: uppercase;
 }
 
 .portfolio img {
     display: block;
     float: left;
-    border: 10px solid #ffffff;
     box-sizing: border-box;
-}
-
-.portfolio .row1 img {
-    width: 600px;
-    height: 400px;
-}
-
-.portfolio .row2 img {
-    width: 400px;
-    height: 400px;
 }
 
 .contacts .map {
