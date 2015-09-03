@@ -46,7 +46,7 @@ html, body {
     box-sizing: border-box;
     border-bottom: 1px solid #000000;
     border-top: 1px solid #000000;
-    margin-bottom: 25px;
+    /*margin-bottom: 25px;*/
 }
 
 .header .navigation .buttons {
@@ -193,7 +193,7 @@ article {
 
 .about figure {
     display: inline-block;
-    padding: 100px 4px 0 4px;
+    padding: 100px 4px 110px 4px;
     width: 24.7%;
     box-sizing: border-box;
     font-size: 45px;
@@ -254,11 +254,11 @@ article {
 .contacts img {
     width: 1200px;
     height: 300px;
-    padding: 25px 0 0 0;  /*move all to div above when add the map*/
+    padding: 15px 0 0 0;  /*move all to div above when add the map*/
 }
 
 .contacts .row {
-    margin-top: 5%;
+    margin: 5% 0 3% 0;
 }
 
 .row:after {
