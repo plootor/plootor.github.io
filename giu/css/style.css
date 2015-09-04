@@ -44,9 +44,8 @@ html, body {
 .header .navigation {
     height: 40px;
     box-sizing: border-box;
-    border-bottom: 1px solid #000000;
-    border-top: 1px solid #000000;
-    /*margin-bottom: 25px;*/
+    box-shadow: inset 0 4px 6px -6px #222,
+                inset 0 -4px 6px -6px #222;
 }
 
 .header .navigation .buttons {
@@ -126,9 +125,23 @@ article {
 
 .home .headline_small {
     font-size: 23px;
-    padding: 25px 0 120px 0;
+    padding: 25px 0 70px 0;
     font-weight: 300;
     text-align: center;
+}
+
+.home .social {
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 130px;
+}
+
+.home .social figure {
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
 }
 
 .subscribe-form {
@@ -160,7 +173,7 @@ article {
     text-align: center;
     width: 30%;
     margin: 0 auto;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 }
 
 .timer-container div{
