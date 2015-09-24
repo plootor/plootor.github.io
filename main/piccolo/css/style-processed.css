@@ -116,6 +116,7 @@ input,
     outline: none;
     -webkit-appearance: none;
     border-radius: 0;
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 .social-container {
