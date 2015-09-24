@@ -525,7 +525,7 @@ and (max-width : 1024px) {
     }
 
     .shape {
-        stroke-dasharray: 50px 380 100 500 100 380 100 500;
+        stroke-dasharray: 50px 380 100 500 100 380 100 500 50;
     }
 
     .main .gallery img {
