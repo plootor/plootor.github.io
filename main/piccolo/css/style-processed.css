@@ -114,7 +114,6 @@ input,
 .s_submit,
 .send {
     outline: none;
-    font-family: "Roboto", sans-serif;
     -webkit-appearance: none;
     border-radius: 0;
 }
