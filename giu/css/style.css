@@ -278,7 +278,14 @@ article {
 
 .portfolio .text h1 {
     border-bottom: 1px solid #000000;
+    margin-bottom: 10px;
     text-transform: uppercase;
+    font-weight: 400;
+}
+
+.portfolio .text p {
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .portfolio img {
