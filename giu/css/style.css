@@ -62,6 +62,14 @@ html, body {
     cursor: pointer;
 }
 
+.header .navigation nav div:hover {
+    color: #ee6557;
+}
+
+.cycle-pager-active {
+    color: #ee6557;
+}
+
 .container {
     height: calc(100% - 185px); /* Or whatever */
 }
@@ -138,11 +146,15 @@ article {
     padding-bottom: 130px;
 }
 
-.home .social figure {
+.home .social a {
     display: inline-block;
     padding: 10px;
     box-sizing: border-box;
     font-size: 18px;
+}
+
+.home .social i:hover {
+    color: #ee6557;
 }
 
 .subscribe-form {
@@ -167,6 +179,11 @@ article {
     width: 100px;
     border-radius: 5px;
     border-width: 2px;
+    border-color: #ee6557;
+}
+
+.subscribe-form .s_submit:hover {
+    background-color: #ee6557;
 }
 
 .timer-container {
