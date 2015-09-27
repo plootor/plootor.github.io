@@ -342,6 +342,7 @@ nav {
     height: 179px !important;
     border-width: 1px;
     background: none;
+    overflow: hidden;
 }
 
 .subscribe-form p {
@@ -759,7 +760,7 @@ and (max-width : 750px) {
 and (max-width : 450px) {
 
     nav>div {
-        margin: 25px 15px 0 15px;
+        margin: 25px 10px 0 10px;
     }
 
     .cycle-slideshow article {

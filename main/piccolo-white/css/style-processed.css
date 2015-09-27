@@ -343,6 +343,7 @@ nav {
     height: 179px !important;
     border-width: 1px;
     background: none;
+    overflow: hidden;
 }
 
 .subscribe-form p {
