@@ -114,9 +114,9 @@ input,
 .s_submit,
 .send {
     outline: none;
-    font-family: "Roboto", sans-serif;
     -webkit-appearance: none;
     border-radius: 0;
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 .social-container {
@@ -526,7 +526,7 @@ and (max-width : 1024px) {
     }
 
     .shape {
-        stroke-dasharray: 50px 380 100 500 100 380 100 500;
+        stroke-dasharray: 50px 380 100 500 100 380 100 500 50;
     }
 
     .main .gallery img {
