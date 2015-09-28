@@ -325,6 +325,7 @@ article {
   height: 50%;
   border: 1px solid black;
   box-sizing: border-box;
+  margin-top: 2%;
 }
 
 .contacts .row {
