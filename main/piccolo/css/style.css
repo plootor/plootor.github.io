@@ -19,7 +19,7 @@ html, body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url(../images/background/ingredients-498199_1280.jpg);
+    background: url(../images/ingredients-498199_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position: center;
@@ -34,7 +34,7 @@ html, body {
     height: 100%;
     display: block;
     position: absolute;
-    background: url(../images/background/ingredients-498199_1280.jpg);
+    background: url(../images/ingredients-498199_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover!important;
     background-position: center;

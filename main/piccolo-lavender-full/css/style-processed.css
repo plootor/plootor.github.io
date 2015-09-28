@@ -21,7 +21,7 @@ body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url(../images/background/lavender-823600_1280.jpg);
+    background: url(../images/ingredients-498199_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position: center;
@@ -41,7 +41,7 @@ body {
     height: 100%;
     display: block;
     position: absolute;
-    background: url(../images/background/lavender-823600_1280.jpg);
+    background: url(../images/ingredients-498199_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover!important;
     background-position: center;
@@ -52,21 +52,21 @@ body {
 :after {
     color: #ffffff;
     border-style: solid;
-    border-color: #CFB3FF;
+    border-color: #ffffff;
     border-width: 0;
     border-radius: 0 !important;
 }
 
 .shape {
-    stroke: #CFB3FF;
+    stroke: #ffffff;
 }
 
 .fa {
-    color: #CFB3FF;
+    color: #ffffff;
 }
 
 .s_submit {
-    background-color: #CFB3FF;
+    background-color: rgba(23,23,24, .6);
 }
 
 .social-container i {
@@ -95,7 +95,8 @@ body {
 
 .filter {
     background-color: rgba(23,23,24, .6);
-    height: 100%;
+    height: 650px;
+    margin-top: 105px;
     width: 100%;
 }
 
@@ -113,9 +114,9 @@ input,
 .s_submit,
 .send {
     outline: none;
-    font-family: "Roboto", sans-serif;
     -webkit-appearance: none;
     border-radius: 0;
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 .social-container {
@@ -341,6 +342,7 @@ nav {
     height: 179px !important;
     border-width: 1px;
     background: none;
+    overflow: hidden;
 }
 
 .subscribe-form p {
@@ -479,23 +481,25 @@ figure p {
     border-bottom-width: 1px;
     width: 100%;
     box-sizing: border-box;
-    padding: 8px;
-    margin: 0 auto 18px;
+    padding: 0 8px;
+    margin: 0 auto 16px;
     font-size: 15px;
     display: block;
     background: none;
     outline: none;
+    height: 34px;
 }
 
 .contactform .send {
     width: auto;
     cursor: pointer;
     background-color: gray;
-    padding: 8px 60px;
+    padding: 0 60px;
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 50px;
     border-width: 1px;
+    height: 38px;
 }
 
 article .title {
@@ -524,7 +528,7 @@ and (max-width : 1024px) {
     }
 
     .shape {
-        stroke-dasharray: 50px 380 100 500 100 380 100 500;
+        stroke-dasharray: 50px 380 100 500 100 380 100 500 50;
     }
 
     .main .gallery img {
@@ -758,7 +762,7 @@ and (max-width : 750px) {
 and (max-width : 450px) {
 
     nav>div {
-        margin: 25px 15px 0 15px;
+        margin: 25px 10px 0 10px;
     }
 
     .cycle-slideshow article {
@@ -826,3 +830,4 @@ and (max-width : 450px) {
         width: 19%;
     }
 }
+

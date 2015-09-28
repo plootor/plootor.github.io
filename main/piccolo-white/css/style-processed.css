@@ -21,7 +21,7 @@ body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url(../images/background/still-life-598317_1280.jpg);
+    background: url(../images/ingredients-498199_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position: center;
@@ -41,7 +41,7 @@ body {
     height: 100%;
     display: block;
     position: absolute;
-    background: url(../images/background/still-life-598317_1280.jpg);
+    background: url(../images/ingredients-498199_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover!important;
     background-position: center;
@@ -50,51 +50,51 @@ body {
 
 *,
 :after {
-    color: #000000;
+    color: #ffffff;
     border-style: solid;
-    border-color: #000000;
+    border-color: #ffffff;
     border-width: 0;
     border-radius: 0 !important;
 }
 
 .shape {
-    stroke: #000000;
+    stroke: #ffffff;
 }
 
 .fa {
-    color: #000000;
+    color: #ffffff;
 }
 
 .s_submit {
-    background-color: #ffffff;
+    background-color: rgba(23,23,24, .6);
 }
 
 .social-container i {
-    color: #000000;
+    color: #ffffff;
 }
 
 ::-webkit-input-placeholder {
-    color: #000000;
+    color: #ffffff;
 }
 
 ::-moz-placeholder {
     /* Firefox 19+ */
-    color: #000000;
+    color: #ffffff;
     opacity: 1;
 }
 
 :-moz-placeholder {
     /* Firefox 19+ */
-    color: #000000;
+    color: #ffffff;
     opacity: 1;
 }
 
 :-ms-input-placeholder {
-    color: #000000;
+    color: #ffffff;
 }
 
 .filter {
-    background-color: rgba(252,252,252, .6);
+    background-color: rgba(23,23,24, .6);
     height: 650px;
     margin-top: 105px;
     width: 100%;
@@ -114,9 +114,9 @@ input,
 .s_submit,
 .send {
     outline: none;
-    font-family: "Roboto", sans-serif;
     -webkit-appearance: none;
     border-radius: 0;
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 .social-container {
@@ -305,7 +305,6 @@ nav {
     height: 77px;
     width: 77px;
     border-width: 5px;
-    border-color: #ffffff;
 }
 
 .gallery>.g_container>.row>div {
@@ -350,7 +349,7 @@ nav {
     font-family: 'Playfair Display', serif;
     font-size: 16px;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
     padding: 20px 5px 5px 5px;
     height: 45px;
     box-sizing: border-box;
@@ -447,7 +446,7 @@ nav {
     border-bottom-width: 1px;
     margin-bottom: 30px;
     padding-bottom: 6px;
-    color: #000000;
+    color: #ffffff;
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-style: italic;
@@ -482,23 +481,25 @@ figure p {
     border-bottom-width: 1px;
     width: 100%;
     box-sizing: border-box;
-    padding: 8px;
-    margin: 0 auto 18px;
+    padding: 0 8px;
+    margin: 0 auto 16px;
     font-size: 15px;
     display: block;
     background: none;
     outline: none;
+    height: 34px;
 }
 
 .contactform .send {
     width: auto;
     cursor: pointer;
-    background-color: #ffffff;
-    padding: 8px 60px;
+    background-color: gray;
+    padding: 0 60px;
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 50px;
     border-width: 1px;
+    height: 38px;
 }
 
 article .title {
@@ -527,7 +528,7 @@ and (max-width : 1024px) {
     }
 
     .shape {
-        stroke-dasharray: 50px 380 100 500 100 380 100 500;
+        stroke-dasharray: 50px 380 100 500 100 380 100 500 50;
     }
 
     .main .gallery img {
@@ -761,7 +762,7 @@ and (max-width : 750px) {
 and (max-width : 450px) {
 
     nav>div {
-        margin: 25px 15px 0 15px;
+        margin: 25px 10px 0 10px;
     }
 
     .cycle-slideshow article {
@@ -829,3 +830,4 @@ and (max-width : 450px) {
         width: 19%;
     }
 }
+

@@ -21,7 +21,7 @@ body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url(../images/background/ingredients-498199_1280.jpg);
+    background: url(../images/ingredients-498199_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position: center;
@@ -41,7 +41,7 @@ body {
     height: 100%;
     display: block;
     position: absolute;
-    background: url(../images/background/ingredients-498199_1280.jpg);
+    background: url(../images/ingredients-498199_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover!important;
     background-position: center;
@@ -481,23 +481,25 @@ figure p {
     border-bottom-width: 1px;
     width: 100%;
     box-sizing: border-box;
-    padding: 8px;
-    margin: 0 auto 18px;
+    padding: 0 8px;
+    margin: 0 auto 16px;
     font-size: 15px;
     display: block;
     background: none;
     outline: none;
+    height: 34px;
 }
 
 .contactform .send {
     width: auto;
     cursor: pointer;
     background-color: gray;
-    padding: 8px 60px;
+    padding: 0 60px;
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 50px;
     border-width: 1px;
+    height: 38px;
 }
 
 article .title {

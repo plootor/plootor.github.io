@@ -21,7 +21,7 @@ body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url(../images/background/flower-721559_1280.jpg);
+    background: url(../images/flower-721559_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position: center;
@@ -41,7 +41,7 @@ body {
     height: 100%;
     display: block;
     position: absolute;
-    background: url(../images/background/flower-721559_1280.jpg);
+    background: url(../images/flower-721559_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover!important;
     background-position: center;
@@ -114,9 +114,9 @@ input,
 .s_submit,
 .send {
     outline: none;
-    font-family: "Roboto", sans-serif;
     -webkit-appearance: none;
     border-radius: 0;
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 .social-container {
@@ -342,6 +342,7 @@ nav {
     height: 179px !important;
     border-width: 1px;
     background: none;
+    overflow: hidden;
 }
 
 .subscribe-form p {
@@ -480,23 +481,25 @@ figure p {
     border-bottom-width: 1px;
     width: 100%;
     box-sizing: border-box;
-    padding: 8px;
-    margin: 0 auto 18px;
+    padding: 0 8px;
+    margin: 0 auto 16px;
     font-size: 15px;
     display: block;
     background: none;
     outline: none;
+    height: 34px;
 }
 
 .contactform .send {
     width: auto;
     cursor: pointer;
     background-color: gray;
-    padding: 8px 60px;
+    padding: 0 60px;
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 50px;
     border-width: 1px;
+    height: 38px;
 }
 
 article .title {
@@ -525,7 +528,7 @@ and (max-width : 1024px) {
     }
 
     .shape {
-        stroke-dasharray: 50px 380 100 500 100 380 100 500;
+        stroke-dasharray: 50px 380 100 500 100 380 100 500 50;
     }
 
     .main .gallery img {
@@ -759,7 +762,7 @@ and (max-width : 750px) {
 and (max-width : 450px) {
 
     nav>div {
-        margin: 25px 15px 0 15px;
+        margin: 25px 10px 0 10px;
     }
 
     .cycle-slideshow article {
@@ -827,3 +830,4 @@ and (max-width : 450px) {
         width: 19%;
     }
 }
+
