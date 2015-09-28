@@ -21,7 +21,7 @@ body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url(../images/ingredients-498199_1280.jpg);
+    background: url(../images/still-life-598317_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position: center;
@@ -41,7 +41,7 @@ body {
     height: 100%;
     display: block;
     position: absolute;
-    background: url(../images/ingredients-498199_1280.jpg);
+    background: url(../images/still-life-598317_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover!important;
     background-position: center;
@@ -50,7 +50,7 @@ body {
 
 *,
 :after {
-    color: #ffffff;
+    color: #000;
     border-style: solid;
     border-color: #ffffff;
     border-width: 0;
