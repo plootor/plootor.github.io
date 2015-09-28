@@ -80,6 +80,7 @@ html, body {
 
 article {
     width: 100%;
+    box-sizing: border-box;
 }
 
 .flex-container{
