@@ -156,6 +156,8 @@ article {
 
 .home .social i:hover {
     color: #ee6557;
+    transform: scale(1.5, 1.5);
+    transition: 1s all;
 }
 
 .subscribe-form {
@@ -187,6 +189,7 @@ article {
 .subscribe-form .s_submit:hover {
     background-color: #000000;
     color: #ffffff;
+    transition: .5s all;
 }
 
 .timer-container {
@@ -409,13 +412,14 @@ article {
     width: auto;
     padding: 8px 50px 8px 50px;
     margin-top: 20px;
-    border: 2px solid #ee6557;
+    border: 2px solid #000000;
     border-radius: 5px;
     line-height: inherit;
     text-transform: uppercase;
 }
 
 .contactform .send:hover {
-    background-color: #ee6557;
+    background-color: #000000;
     color: #ffffff;
+    transition: .5s all;
 }
