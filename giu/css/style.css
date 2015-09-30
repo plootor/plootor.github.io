@@ -217,37 +217,31 @@ article {
 }
 
 .about h1 {
-    text-align: center;
-    font-weight: 300;
-    font-size: 24px;
-    padding: 15px 0 15px 0;
-    text-transform: uppercase;
-}
-
-.about h2 {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 22px;
     line-height: 22px;
-    padding: 25px 0 10px 0;
+    padding: 30px 0 30px 0;
     display: inline-block;
-    border-bottom: 2px solid #000000;
-    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .about .text {
     text-align: justify;
     font-weight: 300;
-    font-size: 15px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 28px;
+    text-indent: 50px;
 }
 
 .about .motto {
     font-weight: 400;
     font-size: 36px;
     font-style: italic;
-    margin: 20px 50px 20px 50px;
+    margin: 40px 50px 40px 50px;
     color: darkgrey;
     font-family: 'Abril Fatface', sans-serif;
+    border-left: 3px solid lightgray;
+    padding-left: 20px;
 }
 
 .fa {
@@ -256,7 +250,7 @@ article {
 
 .about figure {
     display: inline-block;
-    padding: 100px 4px 110px 4px;
+    padding: 100px 4px 80px 4px;
     width: 25%;
     box-sizing: border-box;
     font-size: 45px;
