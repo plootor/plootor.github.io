@@ -235,7 +235,7 @@ article {
 
 .about .motto {
     font-weight: 400;
-    font-size: 36px;
+    font-size: 34px;
     font-style: italic;
     margin: 40px 50px 40px 50px;
     color: darkgrey;
@@ -250,7 +250,7 @@ article {
 
 .about figure {
     display: inline-block;
-    padding: 100px 4px 80px 4px;
+    padding: 85px 4px 90px 4px;
     width: 25%;
     box-sizing: border-box;
     font-size: 45px;
