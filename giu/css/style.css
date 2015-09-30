@@ -236,20 +236,40 @@ article {
     font-size: 14px;
 }
 
-.about h1 {
-    font-weight: 400;
+.about h1, .contacts h1 {
+    text-align: center;
+    font-weight: 300;
     font-size: 24px;
-    line-height: 24px;
-    padding: 30px 0 30px 0;
+    padding: 15px 0 15px 0;
+    text-transform: uppercase;
+}
+
+.about h2 {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 22px;
+    padding: 25px 0 10px 0;
     display: inline-block;
+    border-bottom: 2px solid #000000;
+    margin-bottom: 10px;
+}
+
+.about h1 {
+    font-size: 33px;
+    line-height: 50px;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #464646;
+    text-align: center;
 }
 
 .about .text {
     text-align: justify;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 28px;
-    text-indent: 50px;
+    font-size: 15px;
+    line-height: 26px;
 }
 
 .about .motto {
@@ -269,7 +289,7 @@ article {
 
 .about figure {
     display: inline-block;
-    padding: 85px 4px 90px 4px;
+    padding: 70px 15px 20px 15px;
     width: 25%;
     box-sizing: border-box;
     font-size: 45px;
@@ -285,6 +305,29 @@ article {
     margin: 0 !important;
     font-weight: 300;
     text-transform: uppercase;
+}
+
+section h4 {
+    font-size: 17px;
+    line-height: 29px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+    text-align: center;
+    color: #464646;
+}
+
+.separator {
+    width: 20%;
+    border-bottom: 2px solid #dadada;
+    margin: 15px auto 20px auto;
+}
+
+.bottom-text {
+    color: #818181;
+    padding: 0 10px !important;
+    font-size: 14px !important;
 }
 
 .portfolio .row {
