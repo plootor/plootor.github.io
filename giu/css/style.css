@@ -15,6 +15,22 @@ html, body {
 
 /* START CUSTOMIZATION ZONE */
 
+#wrapper {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: url(../images/portfolio/business-257911_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
 *, :after {
     color: black;
     border-style: solid;
@@ -218,11 +234,10 @@ article {
 
 .about h1 {
     font-weight: 400;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 24px;
+    line-height: 24px;
     padding: 30px 0 30px 0;
     display: inline-block;
-    text-transform: uppercase;
 }
 
 .about .text {
