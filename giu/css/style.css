@@ -64,6 +64,7 @@ html, body {
 
 .header .navigation nav div:hover {
     color: #ee6557;
+    transition: .5s all;
 }
 
 .cycle-pager-active {
@@ -215,7 +216,7 @@ article {
     font-size: 14px;
 }
 
-.about h1, .contacts h1 {
+.about h1 {
     text-align: center;
     font-weight: 300;
     font-size: 24px;
@@ -238,6 +239,15 @@ article {
     font-weight: 300;
     font-size: 15px;
     line-height: 26px;
+}
+
+.about .motto {
+    font-weight: 400;
+    font-size: 36px;
+    font-style: italic;
+    margin: 20px 50px 20px 50px;
+    color: darkgrey;
+    font-family: 'Abril Fatface', sans-serif;
 }
 
 .fa {
