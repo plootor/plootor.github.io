@@ -19,7 +19,7 @@ html, body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url(../images/portfolio/business-257911_640.jpg);
+    background: url(../images/portfolio/business-257911_640);
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position: center;
@@ -236,12 +236,26 @@ article {
     font-size: 14px;
 }
 
-.about h1, .contacts h1 {
-    text-align: center;
-    font-weight: 300;
-    font-size: 24px;
-    padding: 15px 0 15px 0;
+.about h1 {
+    font-size: 33px;
+    line-height: 50px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0px;
     text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+}
+
+section h4 {
+    font-size: 17px;
+    line-height: 29px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: none;
+    text-align: center;
+    color: #000000;
 }
 
 .about h2 {
@@ -254,17 +268,6 @@ article {
     margin-bottom: 10px;
 }
 
-.about h1 {
-    font-size: 33px;
-    line-height: 50px;
-    font-style: normal;
-    font-weight: 800;
-    letter-spacing: 0px;
-    text-transform: uppercase;
-    color: #464646;
-    text-align: center;
-}
-
 .about .text {
     text-align: justify;
     font-weight: 300;
@@ -272,7 +275,7 @@ article {
     line-height: 26px;
 }
 
-.about .motto {
+/*.about .motto {
     font-weight: 400;
     font-size: 34px;
     font-style: italic;
@@ -281,7 +284,7 @@ article {
     font-family: 'Abril Fatface', sans-serif;
     border-left: 3px solid lightgray;
     padding-left: 20px;
-}
+}*/
 
 .fa {
     color: #000000;
@@ -305,17 +308,6 @@ article {
     margin: 0 !important;
     font-weight: 300;
     text-transform: uppercase;
-}
-
-section h4 {
-    font-size: 17px;
-    line-height: 29px;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0px;
-    text-transform: none;
-    text-align: center;
-    color: #464646;
 }
 
 .separator {
