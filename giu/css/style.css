@@ -19,11 +19,7 @@ html, body {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url(../images/portfolio/business-257911_640);
-    background: url(../../images/mask.png) center center repeat;
-    background-repeat: no-repeat;
-    background-size: cover !important;
-    background-position: center;
+    background: url(../images/mask.png) center center repeat;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
