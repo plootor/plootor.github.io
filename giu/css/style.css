@@ -31,7 +31,10 @@ html, body {
 }
 
 .filter {
-    background: url(../images/mask.png) center center repeat;
+    /*background: url(../images/mask.png) center center repeat;*/
+    background-color: rgba(255,255,255, .6);
+    width: 100%;
+    height: 100%;
 }
 
 *, :after {
@@ -165,7 +168,7 @@ article {
 }
 
 .home .social {
-    width: 20%;
+    width: 21%;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 130px;
@@ -176,10 +179,14 @@ article {
     padding: 10px;
     box-sizing: border-box;
     font-size: 18px;
+    width: 45px;
+    height: 45px;
+
 }
 
-.home .social i:hover {
-    color: #ee6557;
+.home .social a:hover {
+   /* border: 1px solid black;*/
+    background-color: #ffffff;
     transform: scale(1.5, 1.5);
     transition: 1s all;
 }
