@@ -293,17 +293,21 @@ article {
     text-transform: uppercase;
     color: #000000;
     text-align: center;
+    font-family: 'Lora', serif;
 }
 
 section h4 {
     font-size: 17px;
     line-height: 29px;
-    font-style: normal;
+/*    font-style: normal;*/
     font-weight: 400;
     letter-spacing: 0px;
     text-transform: none;
     text-align: center;
-    color: #000000;
+/*    color: #000000;*/
+    font-family: 'Lora', serif;
+    font-style: italic;
+    color: #818181;
 }
 
 .about h2 {
@@ -314,6 +318,7 @@ section h4 {
     display: inline-block;
     border-bottom: 2px solid #000000;
     margin-bottom: 10px;
+    font-family: 'Lora', serif;
 }
 
 .about .text {
@@ -419,6 +424,7 @@ section h4 {
     font-size: 20px;
     padding: 5px 0 5px 0;
     display: inline-block;
+    font-family: 'Lora', serif;
 }
 
 .portfolio .text p {
