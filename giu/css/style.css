@@ -373,14 +373,14 @@ article {
     text-transform: uppercase;
 }
 
-.separator {
+.about figure .separator {
     width: 20%;
     border-bottom: 2px solid #dadada;
     margin: 15px auto 20px auto;
 }
 
-.bottom-text {
-    color: #818181;
+.about figure .bottom-text {
+    color: #6F6D6D;
     padding: 0 10px !important;
     font-size: 14px !important;
 }
