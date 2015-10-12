@@ -321,12 +321,9 @@ article {
 .about h3 {
     font-size: 17px;
     line-height: 29px;
-/*    font-style: normal;*/
     font-weight: 400;
-    letter-spacing: 0px;
     text-transform: none;
     text-align: center;
-/*    color: #000000;*/
     font-family: 'Lora', serif;
     font-style: italic;
     color: #818181;
@@ -351,17 +348,6 @@ article {
     line-height: 28px;
     text-indent: 50px;
 }
-
-/*.about .motto {
-    font-weight: 400;
-    font-size: 34px;
-    font-style: italic;
-    margin: 40px 50px 40px 50px;
-    color: darkgrey;
-    font-family: 'Abril Fatface', sans-serif;
-    border-left: 3px solid lightgray;
-    padding-left: 20px;
-}*/
 
 .fa {
     color: #000000;
