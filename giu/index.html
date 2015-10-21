@@ -52,37 +52,34 @@
                         >
                     <article title="Home" class="home">
                         <div class="hourglass">
+
+                            <div class="timer-container">
+                  <div id="example-clock-container"></div>
+                  <div id="example-clock-container2"></div>
+                  <div id="example-clock-container3"></div>
+                  <div id="example-clock-container4"></div>
+              </div>
                             <a href="#">
                                 <i class="fa fa-hourglass-half"></i>
                             </a>
                         </div>
                         <div class="flex-container">
-                            <div>
-                                <!--<div class="timer-container">
-                                    <div id="example-clock-container"></div>
-                                    <div id="example-clock-container2"></div>
-                                    <div id="example-clock-container3"></div>
-                                    <div id="example-clock-container4"></div>
-                                </div>-->
-                                <div class="btn-bar">
-                                    <div id="buttons">
-                                        <a id="prev" href="#">&lt;</a>
-                                        <a id="next" href="#">&gt;</a>
-                                    </div>
-                                </div>
-                                <div id="slides">
-                                    <ul>
-                                        <li class="slide">
+                            <div style="width: 100%;">
+                                <ul id="slides"
+                                     class="cycle-slideshow" data-cycle-slides="li"
+                                     data-cycle-speed="800"
+                                     data-cycle-timeout="3000"
+                                     >
+                                        <li class="slide" data-cycle-fx=flipVert >
                                             <h1 class="headline">We are Etcetera</h1>
                                         </li>
-                                        <li class="slide">
-                                            <h1 class="headline">Making life more beautiful</h1>
+                                        <li class="slide" data-cycle-fx=flipVert >
+                                            <h1 class="headline">Making life more Beautiful</h1>
                                         </li>
-                                        <li class="slide">
-                                            <h1 class="headline">What is your superpower?</h1>
+                                        <li class="slide" data-cycle-fx=flipVert >
+                                            <h1 class="headline">What is your?</h1>
                                         </li>
-                                    </ul>
-                                </div>
+                                </ul>
                                 <h2 class="headline_small">Launching on September 30th, 2015. Feel free to subscribe for
                                     updates and newsletters. </h2>
                                 <div class="social">
@@ -248,6 +245,10 @@
 
     </script>
         <script src="js/jquery.cycle2.min.js"></script>
+        <script src="http://malsup.github.io/jquery.cycle2.flip.js"></script>
+        <script src="js/jquery.plugins.js"></script>
+        <script src="js/jquery.countdown.js"></script>
+
         <script src="js/main.js"></script>
     </body>
 </html>
