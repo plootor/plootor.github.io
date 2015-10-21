@@ -284,11 +284,10 @@ article {
 }
 
 .timer-container {
-    clear: both;
     text-align: center;
     width: 37%;
     margin: 0 auto;
-    padding-bottom: 100px;
+    float: right;
 }
 
 .timer-container div{
