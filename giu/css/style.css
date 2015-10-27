@@ -155,6 +155,22 @@ article {
     top: 15px;
 }
 
+.time-show{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 17px;
+}
+
+.timer-block{
+    display: none;
+    height: 75px;
+    position: absolute;
+    right: 65px;
+}
+
+
+
 .home .hourglass a {
     display: inline-block;
     padding: 10px;
@@ -284,10 +300,8 @@ article {
 }
 
 .timer-container {
-    text-align: center;
-    width: 37%;
-    margin: 0 auto;
-    float: right;
+    width: 370px;
+    display: inline-block;
 }
 
 .timer-container div{

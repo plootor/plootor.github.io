@@ -11,6 +11,13 @@
         }
     };
 
+    $( ".time-show" ).click(function() {
+            $( ".timer-block" ).toggle('slow', 'swing');
+        $( ".hourglass").mouseleave(function(){
+            $( ".timer-block" ).hide('slow', 'swing');
+        });
+    });
+
 })(jQuery);
 
 // bind to C2's bootstrap event in order to get a reference to the API object
