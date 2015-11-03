@@ -159,25 +159,23 @@ article {
     display: inline-block;
     position: absolute;
     right: 0;
-    top: 17px;
+    top: 0;
 }
 
 .timer-block{
-    display: none;
+    /*display: none;*/
     height: 75px;
     position: absolute;
     right: 65px;
 }
 
-
-
 .home .hourglass a {
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
     box-sizing: border-box;
     font-size: 18px;
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
     margin: 0 5px;
     background-color: rgba(255,255,255, 1);
     border-radius: 50%;
@@ -185,12 +183,33 @@ article {
 
 .home .hourglass a:hover {
     background-color: #000000;
-    transform: scale(1.3, 1.3);
+    transform: rotate(360deg);
     transition: 1s all;
 }
 
 .home .hourglass a:hover .fa {
     color: #ffffff;
+}
+
+.timer-container {
+    width: 275px;
+    display: inline-block;
+}
+
+.timer-container div{
+    width: 20%;
+    display: inline-block;
+    margin-right: 3%;
+}
+
+.timer-container div:last-child{
+    margin-right: 0;
+}
+
+.timer-container p {
+    text-align: center !important;
+    font-size: 11px;
+    font-family: 'Lora', serif;
 }
 
 #slides {
@@ -299,26 +318,6 @@ article {
     text-align: center;
 }
 
-.timer-container {
-    width: 370px;
-    display: inline-block;
-}
-
-.timer-container div{
-    width: 20%;
-    display: inline-block;
-    margin-right: 3%;
-}
-
-.timer-container div:last-child{
-    margin-right: 0;
-}
-
-.timer-container p {
-    text-align: center !important;
-    font-size: 14px;
-}
-
 .about h1 {
     font-size: 33px;
     line-height: 50px;
@@ -380,7 +379,6 @@ article {
     text-align: center !important;
     font-size: 16px;
     padding-top: 25px;
-    word-break: break-all;
     margin: 0 !important;
     font-weight: 300;
     text-transform: uppercase;

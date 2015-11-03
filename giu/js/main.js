@@ -13,9 +13,9 @@
 
     $( ".time-show" ).click(function() {
             $( ".timer-block" ).toggle('slow', 'swing');
-        $( ".hourglass").mouseleave(function(){
+       /* $( ".hourglass").mouseleave(function(){
             $( ".timer-block" ).hide('slow', 'swing');
-        });
+        }); */
     });
 
 })(jQuery);
@@ -35,7 +35,7 @@ var seconds = new ProgressBar.Circle(element, {
     duration: 200,
     /*color: "#FCB03C",*/
     color: "#000000",
-    strokeWidth: 4,
+    strokeWidth: 1,
     trailColor: "#ddd"
 });
 
@@ -47,13 +47,13 @@ setInterval(function() {
         day = daysUntil(2015, 12, 25),
         currentType = type,
         contextType;
-if (currentType == 'seconds'){
+if (currentType == 'S'){
     contextType = second;
-} else if (currentType == 'minutes'){
+} else if (currentType == 'M'){
     contextType = minute;
-} else if (currentType == 'hours') {
+} else if (currentType == 'H') {
     contextType = hour;
-} else if (currentType == 'days') {
+} else if (currentType == 'D') {
     contextType = (365 - day);
 }
     seconds.animate((fromTotal-contextType) / fromTotal, function() {
@@ -74,7 +74,7 @@ function daysUntil(year, month, day) {
 
     return Math.round(days);
 }
-startSecond('example-clock-container', 'days', 365);
-startSecond('example-clock-container2', 'hours', 24);
-startSecond('example-clock-container3', 'minutes', 60);
-startSecond('example-clock-container4', 'seconds', 60);
+startSecond('example-clock-container', 'D', 365);
+startSecond('example-clock-container2', 'H', 24);
+startSecond('example-clock-container3', 'M', 60);
+startSecond('example-clock-container4', 'S', 60);
