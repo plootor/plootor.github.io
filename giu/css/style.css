@@ -110,16 +110,53 @@ input {
 }
 
 .header .navigation nav div {
-    margin: 0 15px 0 15px;
+    margin: 0 10px 0 10px;
     line-height: 40px;
     display: inline-block;
     cursor: pointer;
 }
 
-.header .navigation nav div:hover {
+*:after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons div::before, .buttons div::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.buttons div::before {
+    margin-right: 10px;
+    content: '|';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.buttons div::after {
+    margin-left: 10px;
+    content: '|';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.buttons div:hover::before, .buttons div:hover::after, .buttons div:focus::before, .buttons div:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+/*.header .navigation nav div:hover {
     color: #ee6557;
     transition: .5s all;
-}
+}*/
 
 .cycle-pager-active {
     color: #ee6557;
@@ -155,20 +192,6 @@ article {
     top: 15px;
 }
 
-.time-show{
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.timer-block{
-    /*display: none;*/
-    height: 75px;
-    position: absolute;
-    right: 65px;
-}
-
 .home .hourglass a {
     display: inline-block;
     padding: 15px;
@@ -189,6 +212,20 @@ article {
 
 .home .hourglass a:hover .fa {
     color: #ffffff;
+}
+
+.time-show{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.timer-block{
+    display: none;
+    height: 75px;
+    position: absolute;
+    right: 65px;
 }
 
 .timer-container {
