@@ -200,18 +200,22 @@ article {
     width: 55px;
     height: 55px;
     margin: 0 5px;
-    background-color: rgba(255,255,255, 1);
-    border-radius: 50%;
+    background-color: #000000;
+    border-radius: 0%;
+}
+
+.home .hourglass a .fa {
+    color: #ffffff;
 }
 
 .home .hourglass a:hover {
-    background-color: #000000;
+    /*background-color: #000000;*/
     transform: rotate(360deg);
     transition: 1s all;
 }
 
 .home .hourglass a:hover .fa {
-    color: #ffffff;
+    /*color: #ffffff;*/
 }
 
 .time-show{
