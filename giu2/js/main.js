@@ -12,13 +12,10 @@
     };
 
     $( ".time-show" ).click(function() {
-
-            $( "#slides" ).fadeToggle('slow', 'linear');
-            $( ".headline_small" ).fadeToggle('slow', 'linear');
-            $( ".timer-block" ).fadeToggle('slow', 'linear');
-        /* $( ".hourglass").mouseleave(function(){
-             $( ".timer-block" ).hide('slow', 'swing');
-         }); */
+            $( ".timer-block" ).toggle('slow', 'swing');
+       /* $( ".hourglass").mouseleave(function(){
+            $( ".timer-block" ).hide('slow', 'swing');
+        }); */
     });
 
 })(jQuery);
@@ -38,8 +35,8 @@ var seconds = new ProgressBar.Circle(element, {
     duration: 200,
     /*color: "#FCB03C",*/
     color: "#000000",
-    strokeWidth: 2,
-    trailColor: "#ffffff"
+    strokeWidth: 1,
+    trailColor: "#ddd"
 });
 
 setInterval(function() {
@@ -50,13 +47,13 @@ setInterval(function() {
         day = daysUntil(2015, 12, 25),
         currentType = type,
         contextType;
-if (currentType == 'Seconds'){
+if (currentType == 'S'){
     contextType = second;
-} else if (currentType == 'Minutes'){
+} else if (currentType == 'M'){
     contextType = minute;
-} else if (currentType == 'Hours') {
+} else if (currentType == 'H') {
     contextType = hour;
-} else if (currentType == 'Days') {
+} else if (currentType == 'D') {
     contextType = (365 - day);
 }
     seconds.animate((fromTotal-contextType) / fromTotal, function() {
@@ -77,7 +74,7 @@ function daysUntil(year, month, day) {
 
     return Math.round(days);
 }
-startSecond('example-clock-container', 'Days', 365);
-startSecond('example-clock-container2', 'Hours', 24);
-startSecond('example-clock-container3', 'Minutes', 60);
-startSecond('example-clock-container4', 'Seconds', 60);
+startSecond('example-clock-container', 'D', 365);
+startSecond('example-clock-container2', 'H', 24);
+startSecond('example-clock-container3', 'M', 60);
+startSecond('example-clock-container4', 'S', 60);
