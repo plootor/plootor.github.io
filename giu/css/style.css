@@ -199,6 +199,7 @@ article {
     margin: 0 5px;
     background-color: #ffffff;
     border: 1px solid #000000;
+    border-radius: 5px;
 }
 
 .home .hourglass a .fa {
@@ -235,7 +236,7 @@ article {
     display: inline-block;
     margin-right: 6%;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, .7);
 }
 
 .timer-container div:last-child{
@@ -244,10 +245,28 @@ article {
 
 .timer-container p {
     text-align: center !important;
-    font-size: 11px;
-    font-family: 'Lora', serif;
     line-height: 35px;
-    font-size: 22px;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.timer-name {
+    width: 1000px;
+    margin: 30px 100px 50px 100px;
+}
+
+.timer-name p {
+    display: inline-block;
+    width: 20%;
+    margin-right: 6%;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.timer-name p:last-child{
+    margin-right: 0;
 }
 
 #slides {
@@ -278,7 +297,7 @@ article {
 .home .headline {
     font-size: 75px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
     font-family: 'Lora', serif;
 }
@@ -305,7 +324,7 @@ article {
     height: 45px;
     margin: 0 5px;
     background-color: rgba(255,255,255, 1);
-    border-radius: 50%;
+    border-radius: 15px;
 }
 
 .home .social a:hover {

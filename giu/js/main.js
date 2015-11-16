@@ -38,7 +38,7 @@ var seconds = new ProgressBar.Circle(element, {
     duration: 200,
     /*color: "#FCB03C",*/
     color: "#000000",
-    strokeWidth: 2,
+    strokeWidth: 1,
     trailColor: "#ffffff"
 });
 
@@ -50,13 +50,13 @@ setInterval(function() {
         day = daysUntil(2015, 12, 25),
         currentType = type,
         contextType;
-if (currentType == 'Seconds'){
+if (currentType == ''){
     contextType = second;
-} else if (currentType == 'Minutes'){
+} else if (currentType == ''){
     contextType = minute;
-} else if (currentType == 'Hours') {
+} else if (currentType == '') {
     contextType = hour;
-} else if (currentType == 'Days') {
+} else if (currentType == '') {
     contextType = (365 - day);
 }
     seconds.animate((fromTotal-contextType) / fromTotal, function() {
@@ -77,7 +77,7 @@ function daysUntil(year, month, day) {
 
     return Math.round(days);
 }
-startSecond('example-clock-container', 'Days', 365);
-startSecond('example-clock-container2', 'Hours', 24);
-startSecond('example-clock-container3', 'Minutes', 60);
-startSecond('example-clock-container4', 'Seconds', 60);
+startSecond('example-clock-container', '', 365);
+startSecond('example-clock-container2', '', 24);
+startSecond('example-clock-container3', '', 60);
+startSecond('example-clock-container4', '', 60);
