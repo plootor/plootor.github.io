@@ -50,13 +50,13 @@ setInterval(function() {
         day = daysUntil(2015, 12, 25),
         currentType = type,
         contextType;
-if (currentType == ''){
+if (currentType == '4'){
     contextType = second;
-} else if (currentType == ''){
+} else if (currentType == '3'){
     contextType = minute;
-} else if (currentType == '') {
+} else if (currentType == '2') {
     contextType = hour;
-} else if (currentType == '') {
+} else if (currentType == '1') {
     contextType = (365 - day);
 }
     seconds.animate((fromTotal-contextType) / fromTotal, function() {
@@ -77,7 +77,7 @@ function daysUntil(year, month, day) {
 
     return Math.round(days);
 }
-startSecond('example-clock-container', '', 365);
-startSecond('example-clock-container2', '', 24);
-startSecond('example-clock-container3', '', 60);
-startSecond('example-clock-container4', '', 60);
+startSecond('example-clock-container', '1', 365);
+startSecond('example-clock-container2', '2', 24);
+startSecond('example-clock-container3', '3', 60);
+startSecond('example-clock-container4', '4', 60);

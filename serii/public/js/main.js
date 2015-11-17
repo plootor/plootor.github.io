@@ -13,37 +13,26 @@ function init() {
     stage.mouseMoveOutside = true;
     createjs.Touch.enable(stage);
 
-    var imgList = ["http://jsrun.it/assets/N/b/D/X/NbDXj.jpg",
-        "http://jsrun.it/assets/f/K/7/y/fK7yE.jpg",
-        "http://jsrun.it/assets/j/U/q/d/jUqdG.jpg",
-        "http://jsrun.it/assets/q/o/4/j/qo4jP.jpg",
-        "http://jsrun.it/assets/i/Q/e/1/iQe1f.jpg",
-        "http://jsrun.it/assets/5/k/y/R/5kyRi.jpg",
-        "http://jsrun.it/assets/x/T/I/h/xTIhA.jpg",
-        "http://jsrun.it/assets/4/X/G/F/4XGFt.jpg",
-        "http://jsrun.it/assets/6/7/n/r/67nrO.jpg",
-        "http://jsrun.it/assets/k/i/r/8/kir8T.jpg",
-        "http://jsrun.it/assets/2/3/F/q/23Fqt.jpg",
-        "http://jsrun.it/assets/c/l/d/5/cld59.jpg",
-        "http://jsrun.it/assets/e/J/O/f/eJOf1.jpg",
-        "http://jsrun.it/assets/o/j/Z/x/ojZx4.jpg",
-        "http://jsrun.it/assets/w/K/2/m/wK2m3.jpg",
-        "http://jsrun.it/assets/w/K/2/m/wK2m3.jpg",
-        "http://jsrun.it/assets/4/b/g/V/4bgVf.jpg",
-        "http://jsrun.it/assets/4/m/1/8/4m18z.jpg",
-        "http://jsrun.it/assets/4/w/b/F/4wbFX.jpg",
-        "http://jsrun.it/assets/4/k/T/G/4kTGQ.jpg",
-        "http://jsrun.it/assets/s/n/C/r/snCrr.jpg",
-        "http://jsrun.it/assets/7/f/H/u/7fHuI.jpg",
-        "http://jsrun.it/assets/v/S/d/F/vSdFm.jpg",
-        "http://jsrun.it/assets/m/g/c/S/mgcSp.jpg",
-        "http://jsrun.it/assets/t/L/t/P/tLtPF.jpg",
-        "http://jsrun.it/assets/j/7/e/H/j7eHx.jpg",
-        "http://jsrun.it/assets/m/o/8/I/mo8Ij.jpg",
-        "http://jsrun.it/assets/n/P/7/h/nP7ht.jpg",
-        "http://jsrun.it/assets/z/f/K/S/zfKSP.jpg",
-        "http://jsrun.it/assets/2/3/4/U/234U6.jpg",
-        "http://jsrun.it/assets/d/Z/y/m/dZymk.jpg"];
+    var imgList = [
+        "../serii/public/img/threesixty_1.jpg",
+        "../serii/public/img/threesixty_2.jpg",
+        "../serii/public/img/threesixty_3.jpg",
+        "../serii/public/img/threesixty_4.jpg",
+        "../serii/public/img/threesixty_5.jpg",
+        "../serii/public/img/threesixty_6.jpg",
+        "../serii/public/img/threesixty_7.jpg",
+        "../serii/public/img/threesixty_8.jpg",
+        "../serii/public/img/threesixty_9.jpg",
+        "../serii/public/img/threesixty_10.jpg",
+        "../serii/public/img/threesixty_11.jpg",
+        "../serii/public/img/threesixty_12.jpg",
+        "../serii/public/img/threesixty_13.jpg",
+        "../serii/public/img/threesixty_14.jpg",
+        "../serii/public/img/threesixty_15.jpg",
+        "../serii/public/img/threesixty_16.jpg",
+        "../serii/public/img/threesixty_17.jpg",
+        "../serii/public/img/threesixty_18.jpg",
+        "../serii/public/img/threesixty_19.jpg"];
     var images = [], loaded = 0, currentFrame = 0, totalFrames = imgList.length;
     var rotate360Interval, start_x;
 
@@ -82,7 +71,7 @@ function init() {
 
         // 360 icon
         var iconImage = new Image();
-        iconImage.src = "http://jsrun.it/assets/y/n/D/c/ynDcT.png";
+        iconImage.src = "../serii/public/img/threesixty_1.jpg";
         iconImage.onload = iconLoaded;
 
         // update-draw
