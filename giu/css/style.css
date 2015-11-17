@@ -269,6 +269,16 @@ article {
     margin-right: 0;
 }
 
+.home .timer-text {
+    font-size: 20px;
+    margin: 65px 250px 70px 250px;
+    font-weight: 300;
+    text-align: center;
+    border-top: 3px solid black;
+    padding-top: 15px;
+    line-height: 35px;
+}
+
 #slides {
     overflow: hidden;
     position: relative;
@@ -302,7 +312,7 @@ article {
     font-family: 'Lora', serif;
 }
 
-.home .headline_small, .headline_small2 {
+.home .headline_small {
     font-size: 23px;
     padding: 25px 0 70px 0;
     font-weight: 300;

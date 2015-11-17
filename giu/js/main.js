@@ -15,7 +15,7 @@
 
         $( "#slides" ).fadeToggle('slow', 'linear');
         $( ".headline_small" ).fadeToggle('slow', 'linear');
-        $( ".social" ).hide('slow', 'swing');
+        $( ".social" ).fadeToggle('slow', 'linear');
         $( ".timer-block" ).fadeToggle('slow', 'linear');
         /* $( ".hourglass").mouseleave(function(){
          $( ".timer-block" ).hide('slow', 'swing');
