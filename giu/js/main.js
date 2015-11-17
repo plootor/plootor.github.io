@@ -13,11 +13,12 @@
 
     $( ".time-show" ).click(function() {
 
-            $( "#slides" ).fadeToggle('slow', 'linear');
-            $( ".headline_small" ).fadeToggle('slow', 'linear');
-            $( ".timer-block" ).fadeToggle('slow', 'linear');
+        $( "#slides" ).fadeToggle('slow', 'linear');
+        $( ".headline_small" ).fadeToggle('slow', 'linear');
+        $( ".social" ).hide('slow', 'swing');
+        $( ".timer-block" ).fadeToggle('slow', 'linear');
         /* $( ".hourglass").mouseleave(function(){
-             $( ".timer-block" ).hide('slow', 'swing');
+         $( ".timer-block" ).hide('slow', 'swing');
          }); */
     });
 
