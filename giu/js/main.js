@@ -13,10 +13,23 @@
 
     $( ".time-show" ).click(function() {
 
-        $( "#slides" ).fadeToggle('slow', 'linear');
-        $( ".headline_small" ).fadeToggle('slow', 'linear');
-        $( ".social" ).fadeToggle('slow', 'linear');
-        $( ".timer-block" ).fadeToggle('slow', 'linear');
+        if($( ".timer-block" ).is(':visible')) {
+            setTimeout(function (){
+                $( "#slides" ).fadeToggle('slow', 'swing');
+                $( ".headline_small" ).fadeToggle('slow', 'swing');
+                $( ".social" ).fadeToggle('slow', 'swing');
+            }, 500);
+            $( ".timer-block" ).fadeToggle('slow', 'swing');
+        } else {
+            setTimeout(function (){
+                $( ".timer-block" ).fadeToggle('slow', 'swing');
+            }, 500);
+            $( "#slides" ).fadeToggle('slow', 'swing');
+            $( ".headline_small" ).fadeToggle('slow', 'swing');
+            $( ".social" ).fadeToggle('slow', 'swing');
+        }
+
+
         /* $( ".hourglass").mouseleave(function(){
          $( ".timer-block" ).hide('slow', 'swing');
          }); */
