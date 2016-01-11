@@ -51,7 +51,7 @@ var element = document.getElementById(selector);
 var seconds = new ProgressBar.Circle(element, {
     duration: 200,
     /*color: "#FCB03C",*/
-    color: "#000000",
+    color: "#c74a6c",
     strokeWidth: 1,
     trailColor: "#ffffff"
 });
