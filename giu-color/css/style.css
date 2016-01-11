@@ -680,7 +680,7 @@ article {
 }
 
 .contactform .send:hover {
-    background-color: RED;
+    background-color: #00664E;
     color: #ffffff;
     transition: .5s all;
 }
