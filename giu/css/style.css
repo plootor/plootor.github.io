@@ -47,6 +47,7 @@ input {
     height: 100%;
     width: 100%;
     position: fixed;
+    /*
     background: url(../images/portfolio/tablet-791051_640.jpg);
     background-repeat: no-repeat;
     background-size: cover !important;
@@ -55,7 +56,26 @@ input {
     display: flex;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: center; */
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+ }
+
+.slide1 {
+    background: url(../images/portfolio/tablet-791051_640.jpg);
+}
+
+.slide2 {
+    background: url(../images/portfolio/pencils-762555_1280.jpg);
+}
+
+.slide3 {
+    background: url(../images/portfolio/globe-791596_1280.jpg);
 }
 
 .filter {
@@ -63,6 +83,8 @@ input {
     background-color: rgba(255,255,255, .6);
     width: 100%;
     height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover !important;
 }
 
 *, :after {
@@ -116,8 +138,13 @@ input {
     cursor: pointer;
 }
 
-.header .navigation nav div:hover, .cycle-pager-active {
-    text-shadow:0 0 1px black;
+.header .navigation nav div:hover {
+    /*text-shadow:0 0 1px black;*/
+    color: green;
+}
+
+.cycle-pager-active {
+    color: red;
 }
 
 *:after, *::before {
@@ -127,6 +154,7 @@ input {
 }
 
 .buttons div::before, .buttons div::after {
+    color: inherit;
     display: inline-block;
     opacity: 0;
     -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
@@ -221,6 +249,25 @@ article {
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.time-show::before {
+    content: attr(data-tip);
+    font-size: 14px;
+    position:absolute;
+    z-index: 999;
+    left: -25%;
+    color:#000000;
+    padding:0px;
+    line-height: 15px;
+    opacity: 0;
+    transition:opacity 0.4s ease-out;
+    width: 90px;
+}
+
+.time-show:hover::before {
+    opacity: 1;
+    bottom:-35px;
 }
 
 .timer-block{
@@ -489,6 +536,10 @@ article {
     height: 100%;
     box-sizing: border-box;
     border: 5px solid rgba(255, 255, 255, .7);
+}
+
+.portfolio>.row>div:hover {
+    background-size: 120% !important;
 }
 
 .portfolio .row.half>div {
