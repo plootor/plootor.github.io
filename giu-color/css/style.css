@@ -127,7 +127,7 @@ input {
 .header .navigation .buttons {
     text-align: center;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
 }
 
@@ -136,6 +136,7 @@ input {
     line-height: 40px;
     display: inline-block;
     cursor: pointer;
+    color: #818181;
 }
 
 .header .navigation nav div:hover {
@@ -144,7 +145,7 @@ input {
 }
 
 .cycle-pager-active {
-    color: #c74a6c;
+    color: #c74a6c !important;
 }
 
 *:after, *::before {
@@ -226,12 +227,12 @@ article {
     height: 50px;
     margin: 0 5px;
     background-color: #ffffff;
-    border: 1px solid #000000;
+    /*border: 1px solid #000000;*/
     border-radius: 5px;
 }
 
 .home .hourglass a .fa {
-    color: #000000;
+    color: #c74a6c;
 }
 
 .home .hourglass a:hover {

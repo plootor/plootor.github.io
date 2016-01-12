@@ -127,7 +127,7 @@ input {
 .header .navigation .buttons {
     text-align: center;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
 }
 
@@ -136,15 +136,16 @@ input {
     line-height: 40px;
     display: inline-block;
     cursor: pointer;
+    color: #818181;
 }
 
 .header .navigation nav div:hover {
     /*text-shadow:0 0 1px black;*/
-    color: green;
+    color: #000000;
 }
 
 .cycle-pager-active {
-    color: red;
+    color: #000000 !important;
 }
 
 *:after, *::before {
