@@ -254,7 +254,8 @@ article {
 
 .time-show::before {
     content: attr(data-tip);
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 600;
     position:absolute;
     z-index: 999;
     left: -25%;
@@ -268,7 +269,7 @@ article {
 
 .time-show:hover::before {
     opacity: 1;
-    bottom:-35px;
+    bottom:-25px;
 }
 
 .timer-block{
