@@ -48,16 +48,45 @@ and (orientation : portrait) {
         width: 40%;
     }
 
+    .home .hourglass {
+        margin: 3%;
+    }
+
+    #slides {
+        height: 145px;
+    }
+
     .subscribe-form {
-        width: 70%;
+        width: 100%;
+    }
+
+    .subscribe {
+        width: 100%;
+    }
+
+    .home .headline {
+        font-size: 65px;
     }
 
     .home .headline_small{
         padding: 25px 30px 70px 30px;
     }
 
+    .home .timer-text {
+        margin: 65px 0 70px 0;
+    }
+
+    .timer-block {
+        margin: 0 3%;
+    }
+
     .timer-container{
-        width: 75%;
+        width: 100%;
+    }
+
+    .timer-name {
+        margin: 30px 0 50px 0px;
+        width: 100%;
     }
 
     .home .social{
@@ -66,6 +95,14 @@ and (orientation : portrait) {
 
     .about, .portfolio {
         padding: 0 20px;
+    }
+
+    .about figure {
+        padding: 40px 15px 5px 15px;
+    }
+
+    .about figure .bottom-text {
+        padding: 0 5px !important;
     }
 }
 
