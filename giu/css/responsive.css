@@ -217,10 +217,9 @@ and (max-width : 500px) {
     }
 
     .portfolio .row.third>div, .portfolio .row.half>div {
-        width: 100%;
-        margin: 0;
-        margin-bottom: 2%;
-        height: 300px;
+        width: 48%;
+        margin: 0 2% 2%;
+        height: 200px;
     }
 
     .portfolio .row {
