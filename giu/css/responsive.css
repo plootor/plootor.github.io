@@ -238,7 +238,7 @@ and (max-width : 500px) {
     }
 
     .timer {
-        height: auto;
+        height: 60%;
     }
 
     #map {
