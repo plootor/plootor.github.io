@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 481px) and (max-width: 1200px) {
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
     #slides {
         height: 150px;
     }
@@ -13,9 +13,17 @@
     .home .headline_small{
         padding: 25px 30px 70px 30px;
     }
+
+    .about, .portfolio {
+        padding: 0 20px;
+    }
+
+    .about figure {
+        padding: 30px 15px 0;
+    }
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+@media only screen and (min-width: 481px) and (max-width: 1024px) /*and (orientation:landscape)*/ {
 
     .content {
         width: 100%;
@@ -128,5 +136,68 @@ and (max-width : 1024px)
     .about figure .bottom-text {
         padding: 0 5px !important;
     }
+}
+
+@media only screen
+and (max-width : 500px) {
+    .home .headline {
+        font-size: 45px;
+    }
+
+    .home .headline_small {
+        padding: 30px 10px 50px 10px;
+    }
+
+    .subscribe {
+        width: 80%;
+    }
+
+    .subscribe-form {
+        width: 100%;
+    }
+
+    .timer-container {
+        width: 100%;
+    }
+
+    .timer-container p {
+        font-size: 30px;
+    }
+
+    .home .timer-text {
+        margin: 65px 10px 70px 10px;
+    }
+
+    .contacts .section1 {
+        width: 58%;
+    }
+
+    .contacts .section2 {
+        width: 40%;
+    }
+
+    .contacts figure p {
+        padding-right: 10px;
+        font-size: 14px;
+    }
+
+    .contactform input {
+        width: 90%;
+    }
+
+    .contacts .row {
+        margin-top: 10%;
+    }
+/*
+    .portfolio .row.third>div, .portfolio .row.half>div {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 2%;
+        height: 300px;
+    }
+
+    .portfolio .row {
+        height: auto;
+    }*/
 }
 
