@@ -193,9 +193,14 @@ and (max-width : 500px) {
         width: 40%;
     }
 
+    .contacts figure .fa {
+        width: 20px;
+        font-size: 16px;
+    }
+
     .contacts figure p {
         padding-right: 10px;
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .contactform input {
@@ -230,6 +235,10 @@ and (max-width : 500px) {
 
     .timer {
         height: auto;
+    }
+
+    #map {
+        height: 30%;
     }
 }
 
