@@ -195,7 +195,7 @@ and (max-width : 500px) {
 
     .contacts figure .fa {
         width: 20px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .contactform .send {
@@ -204,7 +204,7 @@ and (max-width : 500px) {
     }
 
     .contacts figure p {
-        padding-right: 10px;
+        padding-right: 0;
         font-size: 13px;
     }
 
