@@ -238,11 +238,15 @@ and (max-width : 500px) {
     }
 
     .timer {
-        height: 60%;
+        height: 70%;
     }
 
     #map {
         height: 30%;
+    }
+
+    .timer-name p {
+        font-size: 15px;
     }
 }
 
