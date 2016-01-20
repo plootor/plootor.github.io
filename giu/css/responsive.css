@@ -141,6 +141,10 @@ and (max-width : 1024px)
 @media only screen
 and (max-width : 500px) {
 
+    .logo {
+        width: 100px;
+    }
+
     .logo>a {
         padding: 0;
     }
@@ -155,6 +159,10 @@ and (max-width : 500px) {
 
     .home .headline_small {
         padding: 10px 10px 30px 10px;
+    }
+
+    .home .hourglass {
+        overflow: hidden;
     }
 
     .subscribe {
@@ -197,7 +205,7 @@ and (max-width : 500px) {
     .contacts .row {
         margin-top: 10%;
     }
-/*
+
     .portfolio .row.third>div, .portfolio .row.half>div {
         width: 100%;
         margin: 0;
@@ -207,7 +215,7 @@ and (max-width : 500px) {
 
     .portfolio .row {
         height: auto;
-    }*/
+    }
 
     .buttons div::after, .buttons div::before {
         display: none;
