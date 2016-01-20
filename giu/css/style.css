@@ -97,9 +97,9 @@ input {
 
 .content {
     height: 100%;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .logo {
@@ -196,9 +196,14 @@ input {
     height: 100%;
 }
 
+#globalSlider, article {
+    min-height: 670px;
+}
+
 article {
     width: 100%;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .flex-container{
@@ -284,14 +289,16 @@ article {
 }
 
 .timer-container {
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
+    font-size: 0;
 }
 
 .timer-container div{
     width: 20%;
     display: inline-block;
-    margin-right: 6%;
+    margin: 0 2.5%;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, .7);
 }
@@ -308,14 +315,16 @@ article {
 }
 
 .timer-name {
-    width: 1000px;
-    margin: 30px 100px 50px 100px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 30px auto 50px auto;
+    font-size: 0;
 }
 
 .timer-name p {
     display: inline-block;
     width: 20%;
-    margin-right: 6%;
+    margin: 0 2.5%;
     text-align: center;
     font-size: 18px;
     text-transform: uppercase;
@@ -499,7 +508,7 @@ article {
 
 .about figure {
     display: inline-block;
-    padding: 70px 15px 60px 15px;
+    padding: 70px 15px 0;
     width: 25%;
     box-sizing: border-box;
     font-size: 45px;

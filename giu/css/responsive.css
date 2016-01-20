@@ -1,4 +1,20 @@
 
+@media only screen and (min-width: 481px) and (max-width: 1200px) {
+    #slides {
+        height: 150px;
+    }
+
+    .home .headline {
+        font-size: 79px;
+        padding: 0 50px;
+        line-height: 80px;
+    }
+
+    .home .headline_small{
+        padding: 25px 30px 70px 30px;
+    }
+}
+
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
 
     .content {
@@ -37,15 +53,21 @@
 }
 
 @media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
+and (min-width : 768px)
+and (max-width : 1024px)
+/*and (orientation : portrait) */
+
+{
     .content {
         width: 100%;
     }
 
     .home .social{
         width: 40%;
+    }
+
+    .home .headline_small {
+        padding: 30px 100px 70px 100px;
     }
 
     .home .hourglass {
@@ -65,7 +87,9 @@ and (orientation : portrait) {
     }
 
     .home .headline {
-        font-size: 65px;
+        font-size: 70px;
+        padding: 0 50px;
+        line-height: 80px;
     }
 
     .home .headline_small{
