@@ -141,11 +141,11 @@ and (max-width : 1024px)
 @media only screen
 and (max-width : 500px) {
     .home .headline {
-        font-size: 45px;
+        font-size: 35px;
     }
 
     .home .headline_small {
-        padding: 30px 10px 50px 10px;
+        padding: 10px 10px 30px 10px;
     }
 
     .subscribe {
@@ -199,5 +199,20 @@ and (max-width : 500px) {
     .portfolio .row {
         height: auto;
     }*/
+
+    .buttons div::after, .buttons div::before {
+        display: none;
+    }
+
+    .home .hourglass a {
+        padding: 7px;
+        width: 35px;
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .timer {
+        height: auto;
+    }
 }
 
