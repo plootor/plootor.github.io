@@ -61,6 +61,7 @@ input {
 
 #wrapper>.slide {
     position: fixed !important;
+    background-attachment: fixed !important;
 }
 
 .slide {
