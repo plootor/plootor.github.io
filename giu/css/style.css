@@ -59,6 +59,10 @@ input {
     align-items: center; */
 }
 
+#wrapper>.slide {
+    position: fixed !important;
+}
+
 .slide {
     height: 100%;
     width: 100%;
