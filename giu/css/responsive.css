@@ -211,9 +211,9 @@ and (max-width : 500px) {
     }
 
     .contactform .send {
-        width: 70%;
+        width: 40%;
         padding: 8px;
-        margin: 5% 15%;
+        margin: 5% 30%;
     }
 
     .contacts figure p {
