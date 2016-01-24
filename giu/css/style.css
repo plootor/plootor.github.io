@@ -62,6 +62,7 @@ input {
 #wrapper>.slide {
     position: fixed !important;
     background-attachment: fixed !important;
+    background-position: center center;
 }
 
 .slide {
