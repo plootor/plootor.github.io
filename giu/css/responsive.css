@@ -219,13 +219,17 @@ and (max-width : 500px) {
     }
 
     .portfolio .row.third>div, .portfolio .row.half>div {
-        width: 46%;
-        margin: 0 2% 2% 2%;
+        width: 48%;
+        margin: 0 1% 1% 1%;
         height: 200px;
     }
 
     .portfolio .row {
         height: auto;
+    }
+
+    .portfolio .text h1 {
+        font-size: 16px;
     }
 
     .buttons div::after, .buttons div::before {
@@ -249,6 +253,55 @@ and (max-width : 500px) {
 
     .timer-name p {
         font-size: 15px;
+    }
+
+    .about>.flex-container {
+        display: block;
+        padding: 0 10px;
+    }
+
+    .about h1 {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .about h3 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .about h2 {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 10px 0 5px 0;
+        margin-bottom: 0;
+        margin-left: 30px;
+    }
+
+    .about .text {
+        font-size: 12px;
+        line-height: 22px;
+        text-indent: 30px;
+    }
+
+    .about figure {
+        padding: 5px 0px 0;
+        font-size: 30px;
+    }
+
+    .about .figure-title {
+        margin: 0 !important;
+        font-size: 12px;
+        padding: 0 5px;
+    }
+
+    .about figure .separator {
+        margin: 5px auto;
+    }
+
+    .about figure .bottom-text {
+        font-size: 10px !important;
+        padding: 0 !important;
     }
 }
 
