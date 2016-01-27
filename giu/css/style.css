@@ -59,7 +59,7 @@ input {
     align-items: center; */
 }
 
-#wrapper>.slide {
+#wrapper > .slide {
     position: fixed !important;
     background-attachment: fixed !important;
     background-position: center center;
@@ -86,7 +86,7 @@ input {
 
 .filter {
     /*background: url(../images/mask.png) center center repeat;*/
-    background-color: rgba(255,255,255, .6);
+    background-color: rgba(255, 255, 255, .6);
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -113,7 +113,7 @@ input {
     margin: 0 auto;
 }
 
-.logo>a {
+.logo > a {
     display: block;
     font-size: 0;
     padding: 10px 0 10px 0;
@@ -196,7 +196,7 @@ input {
     height: calc(100% - 185px); /* Or whatever */
 }
 
-.cycle-slideshow, .cycle-slideshow>article {
+.cycle-slideshow, .cycle-slideshow > article {
     height: 100%;
 }
 
@@ -210,7 +210,7 @@ article {
     overflow: hidden;
 }
 
-.flex-container{
+.flex-container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -268,24 +268,24 @@ article {
     /*color: #ffffff;*/
 }
 
-.time-show{
+.time-show {
 }
 
 .time-show::before {
     content: attr(data-tip);
     font-size: 12px;
     font-weight: 600;
-    position:absolute;
+    position: absolute;
     z-index: 999;
     left: -25%;
-    color:#000000;
-    padding:0px;
+    color: #000000;
+    padding: 0px;
     line-height: 15px;
     opacity: 0;
-    -webkit-transition:opacity 0.4s ease-out;
-    transition:opacity 0.4s ease-out;
+    -webkit-transition: opacity 0.4s ease-out;
+    transition: opacity 0.4s ease-out;
     width: 90px;
-    bottom:-25px;
+    bottom: -25px;
 }
 
 .timer {
@@ -298,7 +298,7 @@ article {
     opacity: 1;
 }
 
-.timer-block{
+.timer-block {
     position: absolute;
     -webkit-transition: opacity 2s ease-in-out;
     transition: opacity 2s ease-in-out;
@@ -311,7 +311,7 @@ article {
     font-size: 0;
 }
 
-.timer-container div{
+.timer-container div {
     width: 20%;
     display: inline-block;
     margin: 0 2.5%;
@@ -319,7 +319,7 @@ article {
     background-color: rgba(255, 255, 255, .7);
 }
 
-.timer-container div:last-child{
+.timer-container div:last-child {
     margin-right: 0;
 }
 
@@ -347,7 +347,7 @@ article {
     font-weight: 300;
 }
 
-.timer-name p:last-child{
+.timer-name p:last-child {
     margin-right: 0;
 }
 
@@ -386,13 +386,13 @@ article {
     visibility: hidden;
     display: none;
     /*font-family: lato, sans-serif;*/
-    -webkit-transition:opacity 1s ease-in-out;
-    transition:opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 #slides li.cycle-slide-active {
-    -webkit-transition:opacity 1.5s ease-in-out;
-    transition:opacity 1.5s ease-in-out;
+    -webkit-transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out;
 }
 
 .home .headline {
@@ -425,7 +425,7 @@ article {
     width: 45px;
     height: 45px;
     margin: 0 5px;
-    background-color: rgba(255,255,255, 1);
+    background-color: rgba(255, 255, 255, 1);
     border-radius: 50%;
 }
 
@@ -457,7 +457,7 @@ article {
     border-radius: 5px;
     box-sizing: border-box;
     padding: 5px;
-    background-color: rgba(255,255,255, .6);
+    background-color: rgba(255, 255, 255, .6);
 }
 
 .subscribe .s_submit {
@@ -467,7 +467,7 @@ article {
     border-width: 2px;
     border-color: #000000;
     text-transform: uppercase;
-    background-color: rgba(255,255,255, .6);
+    background-color: rgba(255, 255, 255, .6);
 }
 
 .subscribe .s_submit:hover {
@@ -565,11 +565,11 @@ article {
     overflow: hidden;
 }
 
-.portfolio .row:last-child{
+.portfolio .row:last-child {
     margin: 0;
 }
 
-.portfolio>.row>div {
+.portfolio > .row > div {
     position: relative;
     float: left;
     height: 100%;
@@ -580,21 +580,21 @@ article {
     transition: 1s all;
 }
 
-.portfolio>.row>div:hover .text {
+.portfolio > .row > div:hover .text {
     bottom: 50px;
 }
 
-.portfolio .row.half>div {
+.portfolio .row.half > div {
     width: 49%;
     margin-right: 2%;
 }
 
-.portfolio .row.third>div {
+.portfolio .row.third > div {
     width: 32%;
     margin-right: 2%;
 }
 
-.portfolio>.row>div:last-child {
+.portfolio > .row > div:last-child {
     margin-right: 0;
 }
 
