@@ -95,6 +95,8 @@ input {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    position: relative;
+    z-index: 100;
 }
 
 .logo {
@@ -257,15 +259,14 @@ article {
     font-weight: 600;
     position: absolute;
     z-index: 999;
-    left: -25%;
-    color: #000000;
-    padding: 0px;
+    color:#000000;
+    padding:0px;
     line-height: 15px;
     opacity: 0;
-    -webkit-transition: opacity 0.4s ease-out;
-    transition: opacity 0.4s ease-out;
-    width: 90px;
-    bottom: -25px;
+    transition:opacity 0.4s ease-out;
+    width: 80px;
+    bottom:-25px;
+    left: 0;
 }
 
 .timer {
