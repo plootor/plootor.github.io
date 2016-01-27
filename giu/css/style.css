@@ -70,7 +70,7 @@ input {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover !important;
- }
+}
 
 .slide1 {
     background: url(../images/portfolio/tablet-791051_640.jpg);
@@ -127,7 +127,7 @@ input {
     height: 40px;
     box-sizing: border-box;
     box-shadow: inset 0 4px 6px -6px #222,
-                inset 0 -4px 6px -6px #222;
+    inset 0 -4px 6px -6px #222;
 }
 
 .header .navigation .buttons {
@@ -155,8 +155,6 @@ input {
 }
 
 *:after, *::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -165,7 +163,6 @@ input {
     display: inline-block;
     opacity: 0;
     -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
     transition: transform 0.3s, opacity 0.2s;
     line-height: 40px;
     font-size: 18px;
@@ -175,7 +172,7 @@ input {
     margin-right: 10px;
     content: '|';
     -webkit-transform: translateX(20px);
-    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
     transform: translateX(20px);
 }
 
@@ -183,18 +180,19 @@ input {
     margin-left: 10px;
     content: '|';
     -webkit-transform: translateX(-20px);
-    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
     transform: translateX(-20px);
 }
 
 .buttons div:hover::before, .buttons div:hover::after, .buttons .cycle-pager-active::before, .buttons .cycle-pager-active::after {
     opacity: 1;
     -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
     transform: translateX(0px);
 }
 
 .container {
+    height: -webkit-calc(100% - 185px);
     height: calc(100% - 185px); /* Or whatever */
 }
 
@@ -213,11 +211,22 @@ article {
 }
 
 .flex-container{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     -webkit-align-items: center;
     height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
@@ -248,7 +257,10 @@ article {
 
 .home .hourglass a:hover {
     /*background-color: #000000;*/
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
     transform: rotate(360deg);
+    -webkit-transition: 1s all;
     transition: 1s all;
 }
 
@@ -270,6 +282,7 @@ article {
     padding:0px;
     line-height: 15px;
     opacity: 0;
+    -webkit-transition:opacity 0.4s ease-out;
     transition:opacity 0.4s ease-out;
     width: 90px;
     bottom:-25px;
@@ -287,6 +300,7 @@ article {
 
 .timer-block{
     position: absolute;
+    -webkit-transition: opacity 2s ease-in-out;
     transition: opacity 2s ease-in-out;
 }
 
@@ -372,10 +386,12 @@ article {
     visibility: hidden;
     display: none;
     /*font-family: lato, sans-serif;*/
+    -webkit-transition:opacity 1s ease-in-out;
     transition:opacity 1s ease-in-out;
 }
 
 #slides li.cycle-slide-active {
+    -webkit-transition:opacity 1.5s ease-in-out;
     transition:opacity 1.5s ease-in-out;
 }
 
@@ -415,7 +431,10 @@ article {
 
 .home .social a:hover {
     background-color: #000000;
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
     transform: scale(1.3, 1.3);
+    -webkit-transition: 1s all;
     transition: 1s all;
 }
 
@@ -454,6 +473,7 @@ article {
 .subscribe .s_submit:hover {
     background-color: #000000;
     color: #ffffff;
+    -webkit-transition: .5s all;
     transition: .5s all;
 }
 
@@ -556,6 +576,7 @@ article {
     box-sizing: border-box;
     border: 5px solid rgba(255, 255, 255, .7);
     overflow: hidden;
+    -webkit-transition: 1s all;
     transition: 1s all;
 }
 
@@ -584,6 +605,7 @@ article {
     padding-bottom: 5px;
     text-align: center;
     background-color: rgba(255, 255, 255, .7);
+    -webkit-transition: 0.7s all;
     transition: 0.7s all;
 }
 
@@ -704,5 +726,6 @@ article {
 .contactform .send:hover {
     background-color: #000000;
     color: #ffffff;
+    -webkit-transition: .5s all;
     transition: .5s all;
 }
