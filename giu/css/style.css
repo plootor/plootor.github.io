@@ -267,13 +267,12 @@ article {
     font-weight: 600;
     position:absolute;
     z-index: 999;
-    left: -25%;
     color:#000000;
     padding:0px;
     line-height: 15px;
     opacity: 0;
     transition:opacity 0.4s ease-out;
-    width: 90px;
+    width: 80px;
     bottom:-25px;
 }
 
