@@ -47,16 +47,6 @@ input {
     height: 100%;
     width: 100%;
     position: fixed;
-    /*
-    background: url(../images/portfolio/tablet-791051_640.jpg);
-    background-repeat: no-repeat;
-    background-size: cover !important;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; */
 }
 
 #wrapper > .slide {
@@ -85,7 +75,6 @@ input {
 }
 
 .filter {
-    /*background: url(../images/mask.png) center center repeat;*/
     background-color: rgba(255, 255, 255, .6);
     width: 100%;
     height: 100%;
@@ -146,7 +135,6 @@ input {
 }
 
 .header .navigation nav div:hover {
-    /*text-shadow:0 0 1px black;*/
     color: #000000;
 }
 
@@ -193,7 +181,7 @@ input {
 
 .container {
     height: -webkit-calc(100% - 185px);
-    height: calc(100% - 185px); /* Or whatever */
+    height: calc(100% - 185px);
 }
 
 .cycle-slideshow, .cycle-slideshow > article {
@@ -256,19 +244,11 @@ article {
 }
 
 .home .hourglass a:hover {
-    /*background-color: #000000;*/
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
     -webkit-transition: 1s all;
     transition: 1s all;
-}
-
-.home .hourglass a:hover .fa {
-    /*color: #ffffff;*/
-}
-
-.time-show {
 }
 
 .time-show::before {
@@ -371,7 +351,6 @@ article {
 #slides ul {
     list-style: none;
     width: 100%;
-    /*height: 250px;*/
     margin: 0;
     padding: 0;
     position: relative;
@@ -379,13 +358,11 @@ article {
 
 #slides li {
     width: 100%;
-    /*height: 250px;*/
     float: left;
     text-align: center;
     position: relative;
     visibility: hidden;
     display: none;
-    /*font-family: lato, sans-serif;*/
     -webkit-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
 }
