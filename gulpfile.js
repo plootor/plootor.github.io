@@ -5,18 +5,18 @@ var uncss = require('gulp-uncss');
 
 gulp.task('css', function () {
     var processors = [
-        autoprefixer({browsers: ['last 3 version']})
+        autoprefixer({browsers: ['last 4 version']})
     ];
-    return gulp.src('./main/piccolo/css/style-processed.css')
+    return gulp.src('./giu/css/style.css')
         .pipe(postcss(processors))
         .pipe(gulp.dest('./dest'));
 });
 
 
 gulp.task('clean', function () {
-    return gulp.src('./main/piccolo/css/style-processed.css')
+    return gulp.src('./giu/css/style.css')
         .pipe(uncss({
-            html: ['./main/piccolo/index.html']
+            html: ['./giu/index.html']
         }))
         .pipe(gulp.dest('./dest'));
 });
