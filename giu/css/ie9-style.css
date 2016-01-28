@@ -6,8 +6,6 @@ html, body, .content {
     padding-top: 15%;
 }
 
-
-
 @media only screen and (min-width: 1025px) {
     .timer-container div {
         height: 200px;
