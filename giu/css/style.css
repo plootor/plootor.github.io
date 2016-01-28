@@ -220,6 +220,10 @@ article {
     justify-content: space-around;
 }
 
+.flex-container {
+    widht: 100%;
+}
+
 .home .hourglass {
     padding: 10px;
     text-align: center;
