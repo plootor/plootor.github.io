@@ -220,7 +220,7 @@ article {
     justify-content: space-around;
 }
 
-.flex-container {
+.flex-container>div {
     widht: 100%;
 }
 
