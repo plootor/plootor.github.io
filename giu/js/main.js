@@ -1,7 +1,7 @@
 (function($) {
     "use strict";
     
-    if ($.browser.msie) {
+    if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)){
         $("html").addClass("ie");
     }
 
