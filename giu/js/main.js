@@ -1,5 +1,9 @@
 (function($) {
     "use strict";
+    
+    if ($.browser.msie) {
+        $("html").addClass("ie");
+    }
 
     $('.cycle-slideshow').on('cycle-bootstrap', function(e, opts, API) {
         API.customGetImageSrc = function( slideOpts, opts, slideEl ) {
