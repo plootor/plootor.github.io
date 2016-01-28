@@ -11,6 +11,10 @@ html, body, .content {
     padding-top: 15%;
 }
 
+.about .flex-container {
+    padding-top:40px;
+}
+
 @media only screen and (min-width: 1025px) {
     .timer-container div {
         height: 200px;
