@@ -683,6 +683,7 @@ article {
     display: block;
     background: none;
     outline: none;
+    height: 61px;
 }
 
 .contactform .send {
@@ -694,6 +695,7 @@ article {
     border-radius: 5px;
     line-height: inherit;
     text-transform: uppercase;
+    height: 40px;
 }
 
 .contactform .send:hover {
