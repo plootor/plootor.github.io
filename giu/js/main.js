@@ -1,10 +1,6 @@
 (function($) {
     "use strict";
     
-    if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)){
-        $("html").addClass("ie");
-    }
-
     $('.cycle-slideshow').on('cycle-bootstrap', function(e, opts, API) {
         API.customGetImageSrc = function( slideOpts, opts, slideEl ) {
             return $( slideEl ).attr('name');
