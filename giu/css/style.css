@@ -714,8 +714,4 @@ article {
     .timer-container div {
         height: 200px !important;
     }
-    
-    .timer-container p {
-        color: red !important;
-    }
 }
