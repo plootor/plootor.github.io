@@ -1,0 +1,325 @@
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    #slides {
+        height: 150px;
+    }
+
+    .home .headline {
+        font-size: 79px;
+        padding: 0 50px;
+        line-height: 80px;
+    }
+
+    .home .headline_small{
+        padding: 25px 30px 70px 30px;
+    }
+
+    .about, .portfolio {
+        padding: 0 20px;
+    }
+
+    .about figure {
+        padding: 30px 15px 0;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) /*and (orientation:landscape)*/ {
+
+    .content {
+        width: 100%;
+    }
+
+    .contacts .row{
+        margin: 2% 0;
+    }
+
+    .subscribe-form {
+        width: 53%;
+    }
+
+    .timer-container{
+        padding-bottom: 25px;
+    }
+
+    .home .social {
+        padding-bottom: 50px;
+    }
+
+    .timer-container{
+        width: 50%;
+    }
+
+    .about, .portfolio {
+        padding: 0 20px;
+    }
+
+    .about figure {
+        width: 25%;
+        padding: 50px 0 0 0 ;
+        float: left;
+    }
+}
+
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+/*and (orientation : portrait) */
+
+{
+    .content {
+        width: 100%;
+    }
+
+    .home .social{
+        width: 40%;
+    }
+
+    .home .headline_small {
+        padding: 30px 100px 70px 100px;
+    }
+
+    .home .hourglass {
+        margin: 3%;
+    }
+
+    #slides {
+        height: 145px;
+    }
+
+    .subscribe-form {
+        width: 100%;
+    }
+
+    .subscribe {
+        width: 100%;
+    }
+
+    .home .headline {
+        font-size: 70px;
+        padding: 0 50px;
+        line-height: 80px;
+    }
+
+    .home .headline_small{
+        padding: 25px 30px 70px 30px;
+    }
+
+    .home .timer-text {
+        margin: 65px 0 70px 0;
+    }
+
+    .timer-block {
+        margin: 0 3%;
+    }
+
+    .timer-container{
+        width: 100%;
+    }
+
+    .timer-name {
+        margin: 30px 0 50px 0px;
+        width: 100%;
+    }
+
+    .home .social{
+        padding-bottom: 50px;
+    }
+
+    .about, .portfolio {
+        padding: 0 20px;
+    }
+
+    .about figure {
+        padding: 40px 15px 5px 15px;
+    }
+
+    .about figure .bottom-text {
+        padding: 0 5px !important;
+    }
+}
+
+@media only screen
+and (max-width : 500px) {
+
+    .logo {
+        width: 100px;
+    }
+
+    .logo>a {
+        padding: 0;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .home .headline {
+        font-size: 35px;
+    }
+
+    .home .headline_small {
+        padding: 10px 10px 30px 10px;
+    }
+
+    .home .hourglass {
+        overflow: hidden;
+    }
+
+    .subscribe {
+        width: 80%;
+    }
+
+    .subscribe-form {
+        width: 100%;
+    }
+
+    .timer-container {
+        width: 100%;
+    }
+
+    .timer-container p {
+        font-size: 30px;
+    }
+
+    .home .timer-text {
+        margin: 65px 10px 70px 10px;
+    }
+
+    .contacts .section1 {
+        width: 100%;
+        padding: 0 1% 0 0;
+        margin-right: 1%;
+    }
+
+    .contacts .section2 {
+        width: 100%;
+        border-top: 2px solid black;
+        margin-top: 30px;
+    }
+
+    .contacts figure {
+        line-height: 35px;
+        padding-left: 20px;
+    }
+
+    .contacts figure .fa {
+        width: 25px;
+        font-size: 18px;
+        line-height: 35px;
+        height: 35px;
+        float: left;
+    }
+
+    .contactform .send {
+        width: 40%;
+        padding: 8px;
+        margin: 5% 30%;
+    }
+
+    .contacts figure p {
+        padding-right: 0;
+        font-size: 18px;
+        float: left;
+        margin-left: 15px;
+    }
+
+    .contactform input {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .contacts .row {
+        margin-top: 10%;
+    }
+
+    .portfolio .row.third>div, .portfolio .row.half>div {
+        width: 48%;
+        margin: 0 1% 1% 1%;
+        height: 200px;
+    }
+
+    .portfolio .row {
+        height: auto;
+    }
+
+    .portfolio .text h1 {
+        font-size: 16px;
+    }
+
+    .buttons div::after, .buttons div::before {
+        display: none;
+    }
+
+    .home .hourglass a {
+        padding: 7px;
+        width: 35px;
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .timer {
+        height: 70%;
+    }
+
+    #map {
+        height: 30%;
+    }
+
+    .timer-name p {
+        font-size: 15px;
+    }
+
+    .about>.flex-container {
+        display: block;
+        padding: 0 10px;
+    }
+
+    .about h1 {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .about h3 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .about h2 {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 10px 0 5px 0;
+        margin-bottom: 0;
+        margin-left: 30px;
+    }
+
+    .about .text {
+        font-size: 12px;
+        line-height: 22px;
+        text-indent: 30px;
+    }
+
+    .about figure {
+        padding: 5px 0px 0;
+        font-size: 30px;
+    }
+
+    .about .figure-title {
+        margin: 0 !important;
+        font-size: 12px;
+        padding: 0 5px;
+    }
+
+    .about figure .separator {
+        margin: 5px auto;
+    }
+
+    .about figure .bottom-text {
+        font-size: 10px !important;
+        padding: 0 !important;
+    }
+
+    .subscribe input {
+        width: auto;
+    }
+}
+

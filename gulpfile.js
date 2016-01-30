@@ -7,16 +7,16 @@ gulp.task('css', function () {
     var processors = [
         autoprefixer({browsers: ['last 4 version']})
     ];
-    return gulp.src('./giu/css/style.css')
+    return gulp.src('./etc/css/style.css')
         .pipe(postcss(processors))
         .pipe(gulp.dest('./dest'));
 });
 
 
 gulp.task('clean', function () {
-    return gulp.src('./giu/css/style.css')
+    return gulp.src('./etc/css/style.css')
         .pipe(uncss({
-            html: ['./giu/index.html']
+            html: ['./etc/index.html']
         }))
         .pipe(gulp.dest('./dest'));
 });

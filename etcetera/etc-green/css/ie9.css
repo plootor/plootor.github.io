@@ -1,0 +1,22 @@
+html, body, .content {
+    min-width: 900px;
+}
+
+.header .navigation {
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+}
+
+.timer {
+    padding-top: 15%;
+}
+
+.about .flex-container {
+    padding-top:40px;
+}
+
+@media only screen and (min-width: 1025px) {
+    .timer-container div {
+        height: 200px;
+    }
+}
