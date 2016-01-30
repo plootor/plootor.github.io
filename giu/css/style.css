@@ -708,3 +708,10 @@ article {
     -webkit-transition: .5s all;
     transition: .5s all;
 }
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .timer-container div {
+        height: 200px !important;
+    }
+}
