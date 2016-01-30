@@ -260,7 +260,6 @@ article {
 .time-show::before {
     content: attr(data-tip);
     font-size: 12px;
-    font-weight: 600;
     position: absolute;
     z-index: 999;
     color:#000000;
@@ -271,6 +270,8 @@ article {
     width: 80px;
     bottom:-25px;
     left: 0;
+    font-family: 'Lora', serif;
+    font-weight: 400;
 }
 
 .timer {
@@ -489,7 +490,7 @@ article {
 }
 
 .about h2 {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 22px;
     line-height: 22px;
     padding: 25px 0 10px 0;
