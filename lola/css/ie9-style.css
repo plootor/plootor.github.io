@@ -1,0 +1,83 @@
+html, body, .content {
+    min-width: 1050px;
+}
+
+.container {
+    display: table;
+    margin: 0 15%;
+    width: 70%;
+}
+
+.timer, .main {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.g_container {
+    display: block;
+}
+
+.gallery .g_container>.row>div {
+    display: inline-block;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.social-container, .subscribe-container {
+    display: table;
+    height: 100%;
+    margin-top: -105px;
+}
+
+.social, .subscribe {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.subscribe {
+    position: absolute;
+    top: 50%;
+    margin-top: -70px;/* half of #content height*/
+    right: 0;
+}
+
+.timer {
+    float: left;
+    margin-right: 20%;
+}
+
+
+.subscribe-form>form, .subscribe-form>p {
+    filter: none;
+    z-index: 3;
+    position: relative;
+}
+
+.subscribe-form:before {
+    z-index: 1;
+    background: rgba(23,23,24,.85);
+}
+
+@media only screen
+and (max-width : 1550px) {
+    .timer {
+        margin-right: 12%;
+    }
+
+    .container {
+        margin: 0 10%;
+        width: 80%;
+    }
+}
+
+@media only screen
+and (max-width : 1200px) {
+    .timer {
+        margin-right: 5%;
+    }
+
+    .container {
+        margin: 0 5%;
+        width: 90%;
+    }
+}
