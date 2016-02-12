@@ -1,0 +1,89 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.background, .bg-home {
+    /*check this*/
+    background-size: cover;
+
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background div, .bg-home div{
+    background-size: cover !important;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+}
+
+.bg-home div{
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
+
+.wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.text {
+    width: 50%;
+    margin-top: 200px;
+}
+
+.text .headline1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+.text .headline2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.text p{
+    text-align: justify;
+    margin-bottom: 50px;
+    line-height: 24px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.contactform input{
+    border-width: 1px;
+    /*width: 300px;*/
+    padding: 8px;
+    margin: 0 auto 10px;
+    font-size: 15px;
+    display: block;
+    background: none;
+    outline: none;
+}
+
+.contact .contactform .send{
+    width: auto;
+    cursor:pointer;
+    background-color: gray;
+    padding: 8px 60px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
