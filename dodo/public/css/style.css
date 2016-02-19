@@ -39,11 +39,6 @@ html, body{
     z-index: 10;
 }
 
-.text {
-    width: 50%;
-    margin-top: 200px;
-}
-
 .text .headline1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -173,3 +168,30 @@ html, body{
     margin-top: 20px;
     font-size: 16px;
 }
+
+
+.text {
+    width: 100%;
+    transform: skew(-20deg);
+    animation-direction: alternate;
+}
+
+.text-layer {
+    width: 70%;
+    position: relative;
+    left: -20%;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    opacity: .7;
+    background-color: rgba(23,23,24, .6);
+}
+/*
+@keyframes skew {
+    0% {
+        transform: skewX(20deg);
+    }
+    100% {
+        transform: skewX(-20deg);
+    }
+}
+*/

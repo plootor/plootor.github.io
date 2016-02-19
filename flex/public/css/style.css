@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.element {
+    display: inline-block;
+    height: 100%;
+    width: 25%;
+    color: white;
+    animation: skew 3s infinite;
+    transform: skew(-15deg);
+    animation-direction: alternate;
+    opacity: .7;
+    transition: width 1s;
+}
+
+.element:hover, .second {
+    width: 40%;
+}
+
+.first, .third {
+    background-color: rgba(23,23,24, .6);
+    overflow: hidden;
+}
+
+.second {
+    /*background-color: blue;*/
+}
+
+.contact {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    transform: skew(15deg);
+}
+
+.contact .title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.contact .contactform input {
+    border: none;
+    border-bottom: 1px solid #000000;
+    width: 600px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0 auto 10px;
+    display: block;
+    background: none;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.contact .contactform .send {
+    width: auto;
+    cursor: pointer;
+    background: none;
+    padding: 8px 60px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.text{
+    transform: skew(15deg);
+}
+
+.timer {
+    text-align: center;
+}
+
+.timer .circle {
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    width: 140px;
+    height: 140px;
+    margin: 20px;
+}
+
+.timer .circle .time {
+    margin: 42px 0 10px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 38px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+}
+
+.timer .circle h1 {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.text .headline1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.text .headline2 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.text .social {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0 20px 0;
+    border-bottom: 2px solid #000000;
+}
+
+.text .social a {
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 30px;
+    height: 40px;
+    margin: 0 5px;
+}
