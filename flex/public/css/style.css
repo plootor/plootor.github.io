@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    color: #ffffff;
+    border-color: #ffffff !important;
 }
 
 html, body {
@@ -71,7 +73,7 @@ html, body {
     width: 60%;
 }
 
-.first, .third {
+.first, .third, .second {
     background-color: rgba(23,23,24, .6);
     overflow: hidden;
 }
@@ -142,7 +144,7 @@ html, body {
 }
 
 .fa {
-    color: #000000;
+    color: #ffffff;
 }
 
 .text .social {
@@ -241,7 +243,7 @@ html, body {
 
 .contactform input {
     border: none;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
     width: 600px;
     box-sizing: border-box;
     padding: 10px;
@@ -262,4 +264,25 @@ html, body {
     padding: 8px 60px;
     margin-top: 20px;
     font-size: 16px;
+    border-bottom: 4px solid #ffffff;
+}
+
+.contact figure {
+    display: inline;
+    padding: 0 4px;
+    width: 250px;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contact figure p {
+    text-align: center !important;
+    font-size: 14px;
+    padding-top: 25px;
+    word-break: break-all;
+    margin: 0 !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
