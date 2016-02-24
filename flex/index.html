@@ -10,13 +10,24 @@
     <link rel="stylesheet" type="text/css" href="public/css/font-awesome-4.4.0/css/font-awesome.min.css" media="screen"/>
 </head>
 <body>
+    <div id="wrapper" class="cycle-slideshow" data-cycle-slides="> div">
+        <div class="slide slide1">
+            <div class="filter"></div>
+        </div>
+        <div class="slide slide2">
+            <div class="filter"></div>
+        </div>
+        <div class="slide slide3">
+            <div class="filter"></div>
+        </div>
+    </div>
     <div class="container">
         <div class="element first">
             <div class="subscribe">Subscribe</div>
         </div>
         <div class="element second">
-            <div class="logo"></div>
-
+            <div class="center">
+            <div class="logo"><a href="."><img src="images/meraki_logo1.png"></a></div>
             <div class="text">
                 <h1 class="headline1">Coming soon</h1>
 
@@ -64,6 +75,7 @@
                     </div>
                 </div>
             </div>
+            </div>
         </div>
         <div class="element third">
             <div class="contact">
@@ -78,5 +90,8 @@
             </div>
         </div>
     </div>
+    <script src="public/js/jquery-1.11.3.min.js"></script>
+    <script src="public/js/jquery.cycle2.min.js"></script>
+    <script src="public/js/main.js"></script>
 </body>
 </html>
