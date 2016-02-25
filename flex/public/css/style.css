@@ -70,7 +70,7 @@ html, body {
 }
 
 .element:hover, .second {
-    width: 60%;
+    width: 80%;
 }
 
 .first, .third, .second {
@@ -214,6 +214,13 @@ html, body {
     /*transform: skew(10deg);*/
 }
 
+.third .side .fa {
+    font-size: 50px;
+    line-height: 80px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+}
+
 .contact .title {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -224,12 +231,12 @@ html, body {
     padding-bottom: 30px;
 }
 
-.contactform {
+.contact {
     display: none;
     opacity: 0;
 }
 
-.third:hover .contactform{
+.third:hover .contact{
     display: block;
     animation: fadein 2s;
     opacity: 1;
@@ -268,7 +275,7 @@ html, body {
 }
 
 .contact figure {
-    display: inline;
+    display: inline-block;
     padding: 0 4px;
     width: 250px;
     box-sizing: border-box;
@@ -285,4 +292,5 @@ html, body {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
+    display: inline-block;
 }
