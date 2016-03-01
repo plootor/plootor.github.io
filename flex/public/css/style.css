@@ -62,7 +62,7 @@ html, body {
 .element {
     display: inline-block;
     height: 100%;
-    width: 25%;
+    width: 10%;
     animation: skew 3s infinite;
     /*transform: skew(-10deg);*/
     animation-direction: alternate;
@@ -82,6 +82,17 @@ html, body {
     /*background-color: blue;*/
 }
 
+.about {
+    display: none;
+    opacity: 0;
+}
+
+.first:hover .about{
+    display: block;
+    animation: fadein 2s;
+    opacity: 1;
+}
+
 .about .title {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -92,16 +103,17 @@ html, body {
     padding-bottom: 30px;
 }
 
-/*.about {
-    display: none;
-    opacity: 0;
+.about figure {
+
+
 }
 
-.first:hover .about{
-    display: block;
-    animation: fadein 2s;
-    opacity: 1;
-}*/
+.about .fa {
+    font-size: 50px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    padding: 10px;
+}
 
 .logo {
     width: 150px;
@@ -214,21 +226,10 @@ html, body {
     /*transform: skew(10deg);*/
 }
 
-.third .side .fa {
+.third .side .fa, .first .side .fa {
     font-size: 50px;
-    line-height: 80px;
     border-radius: 50%;
     border: 1px solid #ffffff;
-}
-
-.contact .title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    font-size: 35px;
-    letter-spacing: 1px;
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 30px;
 }
 
 .contact {
@@ -246,6 +247,16 @@ html, body {
     0% { opacity: 0; }
     50% { opacity: 0; }
     100%   { opacity: 1; }
+}
+
+.contact .title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
 }
 
 .contactform input {
