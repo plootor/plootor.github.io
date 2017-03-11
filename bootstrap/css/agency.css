@@ -338,7 +338,9 @@ header{height: 83%}
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
-    font-size: 1.5em;
+    -moz-transform: scale(.8);
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
   }
 }
 /*header {*/
@@ -411,6 +413,7 @@ section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
+
 }
 section h3.section-subheading {
   font-size: 16px;
@@ -567,6 +570,10 @@ section h3.section-subheading {
     padding: 0 15px;
     margin-bottom: 15px;
   }
+}
+.container-full {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 #portfolio .portfolio-item {
   margin: 0 0 15px;
@@ -945,7 +952,7 @@ section h3.section-subheading {
   box-shadow: none;
   border-color: #ccc;
 }
-#contact ::-webkit-input-placeholder, section#subscribe ::-webkit-input-placeholder {
+#contact ::-webkit-input-placeholder, #subscribe ::-webkit-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
