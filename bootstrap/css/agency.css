@@ -49,6 +49,9 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
+.pos-r{
+    position: relative;
+}
 .img-centered {
   margin: 0 auto;
 }
@@ -127,9 +130,8 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-xl {
   color: white;
-  background-color: #1d2f3b;
-  /*border-color: #78a428;*/
-  /*border: 2px solid #78a428;*/
+  background-color:  rgba(255, 255, 255, 0.2);
+  border: 2px solid #1d2f3b;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -228,8 +230,46 @@ fieldset[disabled] .btn-xl.active {
   background-color: #fec503;
 }
 
-.carousel-inner .carusel1 {
-  background: url("../img/pink-hair-1450045_1920.jpg") no-repeat center center;
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto;
+}
+
+
+
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+
+html,body{height:100%;}
+header{height: 83%}
+.carousel,.item,.active{height:100%;}
+.carousel-inner{height:100%;}
+
+.carousel-inner .carusel4 {
+  background: url("../img/body-1869901_1920.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -245,14 +285,14 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .carousel-inner .carusel3 {
-  background: url("../img/beauty-1851189_1920.jpg") no-repeat center center;
+  background: url("../img/portrait-of-a-girl-1344647_1920.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.carousel-inner .carusel4 {
+.carousel-inner .carusel1 {
   background: url("../img/adult-1845814_1920.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -397,6 +437,21 @@ section h3.section-subheading {
 }
 .about-text {
   margin-bottom: 70px;
+}
+.about-text-cell>div:last-child>p{
+  margin-bottom: 0;
+}
+
+.about-image-cell {
+    position: absolute;
+    height: 100%;
+    right: 0;
+}
+.about-image {
+    background: url("../img/about/analog-1695552_1280.jpg") no-repeat center center;
+  background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 .numero-symbol {
   color: #e9eef4;
@@ -860,7 +915,7 @@ section h3.section-subheading {
   overflow: hidden;
 }
 #contact .contact-bg {
-  background-image: url('../img/bloom-1866982_1280.jpg');
+  background-image: url('../img/neighborhood-802074_1920.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   filter: blur(3px);

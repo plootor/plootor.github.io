@@ -30,48 +30,6 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <style>
-        .carousel-inner > .item > img,
-        .carousel-inner > .item > a > img {
-            height: 1000px;
-            width: 100%;
-            margin: auto;
-        }
-
-
-
-        .carousel-fade .carousel-inner .item {
-            transition-property: opacity;
-        }
-        .carousel-fade .carousel-inner .item,
-        .carousel-fade .carousel-inner .active.left,
-        .carousel-fade .carousel-inner .active.right {
-            opacity: 0;
-        }
-        .carousel-fade .carousel-inner .active,
-        .carousel-fade .carousel-inner .next.left,
-        .carousel-fade .carousel-inner .prev.right {
-            opacity: 1;
-        }
-        .carousel-fade .carousel-inner .next,
-        .carousel-fade .carousel-inner .prev,
-        .carousel-fade .carousel-inner .active.left,
-        .carousel-fade .carousel-inner .active.right {
-            left: 0;
-            transform: translate3d(0, 0, 0);
-        }
-        .carousel-fade .carousel-control {
-            z-index: 2;
-        }
-
-
-        html,body,header{height:100%;}
-        .carousel,.item,.active{height:100%;}
-        .carousel-inner{height:100%;}
-
-    </style>
-
 </head>
 
 <body id="page-top" class="index">
@@ -175,8 +133,8 @@
                 <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
+        <div class="row pos-r">
+            <div class="col-md-6 about-text-cell">
                 <div>
                     <h3 class="numero-symbol">&#8470 01</h3>
                     <h4 class="about-heading">We launched 3 years ago</h4>
@@ -202,8 +160,8 @@
                         most unusual people, places and conditions provide the best results.</p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <img class="img-responsive img-centered" src="img/about/still-life-601528_12802.jpg" alt="">
+            <div class="col-md-6 about-image-cell">
+                <div class="about-image"></div>
             </div>
         </div>
     </div>
