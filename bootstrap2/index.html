@@ -47,33 +47,37 @@
                     <span class="sr-only">Toggle navigation</span>
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <img class="img-responsive img-centered" src="img/logo-1.png" alt="">
-                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
+                <div>
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <img class="img-responsive img-centered" src="img/logo-1.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#about">Our story</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#team">Team</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -81,14 +85,14 @@
     </nav>
 
 
-    <div class="container">
-        <div class="intro-text">
-            <div class="intro-heading">Thomas Bennett</div>
-            <div class="intro-separator"></div>
-            <div class="intro-lead-in">passion for photography </div>
-            <a href="#about" class="page-scroll btn btn-xl">Explore</a>
-        </div>
-    </div>
+    <!--<div class="container">-->
+    <!--<div class="intro-text">-->
+    <!--<div class="intro-heading">Thomas Bennett</div>-->
+    <!--<div class="intro-separator"></div>-->
+    <!--<div class="intro-lead-in">passion for photography </div>-->
+    <!--<a href="#about" class="page-scroll btn btn-xl">Explore</a>-->
+    <!--</div>-->
+    <!--</div>-->
 
     <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
         <!-- Indicators -->
@@ -130,23 +134,23 @@
 <!-- About Section -->
 <section id="about">
     <div class="container">
-        <!--<div class="row">-->
-        <!--<div class="col-lg-12 text-center">-->
-        <!--<h2 class="section-heading">3 facts about us</h2>-->
-        <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
-        <!--</div>-->
-        <!--</div>-->
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h5 class="section-heading">our story<i class="fa fa-minus" aria-hidden="true"></i></h5>
+            </div>
+        </div>
         <div class="row pos-r">
             <div class="col-md-6">
                 <div>
                     <h1 class="about-heading">eat <br> beautiful</h1>
-                    <h4 class="about-title"><i class="fa fa-minus" aria-hidden="true"></i> the start</h4>
+                    <h4 class="about-title">the start</h4>
                     <!--<div class="about-separator"></div>-->
                     <p class="about-text">We launched three years ago and loved it every second. At the time
                         I was just a man with an ideea but 2 weeks later I was a man with a plan. We jumped on this
                         adventure and learned a lot along the way. Two days after launching we had our first client. In
                         what we do, being creative is crucial. And we love the moments when we have to make our brain
                         work and produce new, crazy, beautiful ideas.</p>
+                    <a href="#about" class="page-scroll btn btn-xl">Find more</a>
                 </div>
             </div>
             <div class="col-md-6 about-image-cell">
@@ -216,8 +220,11 @@
         <div class="row">
             <div class="col-md-4">
                 <h1 class="team-heading">morning rose tea</h1>
-                <p class="team-text">I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick
-                    10,000 times I fear not the man who has practiced 10,000 kicks once.</p>
+                <p class="team-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem
+                    culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt
+                    minus dignissimos.</p>
+                <p class="team-text">Officia expedita beatae cupiditate, maiores nostrum, repudiandae, reiciendis facere nemo!</p>
             </div>
             <div class="col-md-8">
                 <div>
@@ -532,7 +539,8 @@
         <!--</div>-->
         <!--</div>-->
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+            <div class="col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+                <h1 class="subscribe-heading">newsletter</h1>
                 <!-- MailChimp Signup Form -->
                 <div id="mc_embed_signup">
                     <!-- Replace the form action in the line below with your MailChimp embed action! Visit the documentation for additional instructions! -->
@@ -542,7 +550,8 @@
                             <input type="email" name="EMAIL"  class="form-control" id="mce-EMAIL" placeholder="Email address..." required data-validation-required-message="Please enter your email address.">
                             <p class="help-block text-danger"></p>
                             <span class="input-group-btn">
-                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-xl">Subscribe!</button>
+                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-xl"><i class="fa fa-angle-right" aria-hidden="true"></i>
+</button>
                                 </span>
                         </div>
                         <div id="mce-responses">
@@ -619,11 +628,11 @@
                 <form name="sentMessage" id="contactForm" novalidate>
                     <div class="row">
                         <div class="form-group col-md-12">
-                            <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                            <input type="text" class="form-control" placeholder="Name *" id="name" required data-validation-required-message="Please enter your name.">
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="form-group col-md-12">
-                            <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                            <input type="email" class="form-control" placeholder="Email *" id="email" required data-validation-required-message="Please enter your email address.">
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="form-group col-md-12">
@@ -632,7 +641,7 @@
                         </div>
                         <div class="clearfix"></div>
                         <div class="form-group col-md-12">
-                            <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                            <textarea class="form-control" placeholder="Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="col-lg-12 text-center">
