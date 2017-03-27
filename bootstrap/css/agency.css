@@ -3,10 +3,16 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-body {
-  overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*body {*/
+  /*overflow-x: hidden;*/
+  /*font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+/*}*/
+
+html,body {
+  height:100%;
 }
+header{height: 83%}
+
 .text-muted {
   color: #777777;
 }
@@ -194,16 +200,16 @@ fieldset[disabled] .btn-xl.active {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
-  background-color: #1d2f3b;
+  background-color: #fff;
   border-color: #1d2f3b;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  color: white;
+  color: #1d2f3b;
   font-size: 12px;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #1d2f3b;
+  background-color: #fff;
 }
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -263,43 +269,26 @@ fieldset[disabled] .btn-xl.active {
 .carousel-fade .carousel-control {
   z-index: 2;
 }
-
-
-html,body{height:100%;}
-header{height: 83%}
 .carousel,.item,.active{height:100%;}
 .carousel-inner{height:100%;}
+.carousel-inner .item {
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
 
 .carousel-inner .carusel4 {
-  background: url("../img/body-1869901_1920.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.carousel-inner .carusel2 {
   background: url("../img/action-1867533_1920.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
-
 .carousel-inner .carusel3 {
-  background: url("../img/portrait-of-a-girl-1344647_1920.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url("../img/action-1838330_1920.jpg") no-repeat center center;
 }
-
+.carousel-inner .carusel2 {
+  background: url("../img/portrait-of-a-girl-1344647_1920.jpg") no-repeat center center;
+}
 .carousel-inner .carusel1 {
   background: url("../img/adult-1845814_1920.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 @media (min-width: 768px) {
@@ -312,7 +301,7 @@ header{height: 83%}
     border: none;
   }
   .navbar-custom .navbar-brand {
-    font-size: 2em;
+    font-size: 28px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -336,7 +325,7 @@ header{height: 83%}
     margin-bottom: 4px;
   }
 }
-@media (min-width: 768px) {
+
   .navbar-custom.affix {
     background: rgba(58, 70, 96, 0.9);
     padding: 10px 0;
@@ -346,7 +335,7 @@ header{height: 83%}
     -webkit-transform: scale(.8);
     transform: scale(.8);
   }
-}
+
 /*header {*/
   /*background-image: url('../img/portrait-of-a-girl-1344647_1920.jpg');*/
   /*background-repeat: no-repeat;*/
@@ -413,24 +402,19 @@ header .intro-text .intro-separator {
 section {
   padding: 100px 0;
 }
-section h2.section-heading {
+.section-heading {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
 
 }
-section h3.section-subheading {
+.section-subheading {
   font-size: 16px;
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: none;
   font-style: italic;
   font-weight: 400;
   margin-bottom: 75px;
-}
-@media (min-width: 768px) {
-  section {
-    padding: 100px 0;
-  }
 }
 .about-heading {
   margin-top: 20px;
@@ -904,7 +888,7 @@ section h3.section-subheading {
 }
 .address-info {
   text-align: center;
-  margin: 15px 0 35px 0 !important;
+  margin: 15px 0 35px 0;
   padding: 0;
   text-transform: none;
   font-weight: 400;
@@ -933,6 +917,9 @@ section h3.section-subheading {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+.contact-section {
+   padding: 150px 0;
 }
 #contact .section-heading {
   color: white;
@@ -1065,7 +1052,7 @@ ul.social-buttons li a:active {
 }
 .portfolio-modal .modal-content h2 {
   margin-bottom: 25px;
-  font-size: 3em;
+  font-size: 42px;
 }
 .portfolio-modal .modal-content p {
   margin: 25px 200px 30px 200px;
@@ -1167,16 +1154,80 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
-body {
-  webkit-tap-highlight-color: #fed136;
-}
 
 @media (max-width: 767px) {
+
+  .navbar-custom .nav li a {
+    margin-bottom: 0;
+  }
+  .navbar-custom.affix {
+    padding: 0;
+  }
+  .navbar-custom .navbar-nav>.active>a {
+    background-color: rgba(58, 70, 96, 0.9);
+  }
+  header .intro-text .intro-heading {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  header .intro-text {
+    padding-top: 170px;
+  }
+  header .intro-text .intro-lead-in {
+    color: white;
+    font-size: 18px;
+  }
+  .navbar-custom .nav {
+    background-color: white;
+    margin-top: 0;
+  }
+  .navbar-custom .nav>li {
+    border-bottom: 1px solid #1d2f3b;
+  }
+  .navbar-custom .nav li a {
+    color: #1d2f3b;
+    text-align: right;
+  }
+  .intro-text .btn-xl{
+    display: none;
+  }
+  section, .contact-section {
+    padding: 50px 0;
+  }
+  .about-text {
+    margin-bottom: 45px;
+  }
+  .section-heading, .portfolio-modal .modal-content h2 {
+    font-size: 30px;
+  }
+  .section-subheading {
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
   .service-heading {
     margin: 15px 0;
   }
   .service-text {
     margin-bottom: 35px;
+  }
+  .address .container {
+    padding: 25px 15px;
+  }
+  .address .fa {
+    margin-top: 0;
+    line-height: 40px;
+  }
+  .address span {
+    float: left;
+    width: 30px;
+    font-size: 20px;
+  }
+  .address-info {
+    text-align: left;
+    margin: 0 !important;
+    line-height: 40px;
+    margin-left: 40px !important;
   }
 }
 @media (max-width: 991px) {
