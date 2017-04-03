@@ -37,13 +37,13 @@ a.active {
   outline: none;
 }
 a {
-  color: #fed136;
+  color: #dadada;
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #fec503;
+  color: #dadada;
 }
 h1,
 h2,
@@ -220,7 +220,9 @@ fieldset[disabled] .btn-xl.active {
   padding: 15px 15px 10px;
   margin-bottom: 5px;
 }
-.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:hover {
+  color: #000000;
+}
 .navbar-custom .nav li a:focus {
   color: #ffffff;
 }
@@ -243,9 +245,6 @@ fieldset[disabled] .btn-xl.active {
   width: 100%;
   margin: auto;
 }
-
-
-
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
 }
@@ -277,18 +276,23 @@ fieldset[disabled] .btn-xl.active {
   -o-background-size: cover !important;
   background-size: cover !important;
 }
-
 .carousel-inner .carusel4 {
-  background: url("../img/action-1867533_1920.jpg") no-repeat center center;
+  background: url("../img/carousel/action-1867533_1920.jpg") no-repeat center center;
 }
 .carousel-inner .carusel3 {
-  background: url("../img/action-1838330_1920.jpg") no-repeat center center;
+  background: url("../img/carousel/action-1838330_1920.jpg") no-repeat center center;
 }
 .carousel-inner .carusel2 {
-  background: url("../img/portrait-of-a-girl-1344647_1920.jpg") no-repeat center center;
+  background: url("../img/carousel/portrait-of-a-girl-1344647_1920.jpg") no-repeat center center;
 }
 .carousel-inner .carusel1 {
-  background: url("../img/adult-1845814_1920.jpg") no-repeat center center;
+  background: url("../img/carousel/adult-1845814_1920.jpg") no-repeat center center;
+}
+
+.navbar-custom .navbar-brand {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media (min-width: 768px) {
@@ -299,12 +303,6 @@ fieldset[disabled] .btn-xl.active {
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
     border: none;
-  }
-  .navbar-custom .navbar-brand {
-    font-size: 28px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
   }
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 0;
@@ -645,28 +643,28 @@ section {
   height:400px;
 }
 .cell1 {
-  background-image: url('../img/girl-1733352_1920.jpg');
+  background-image: url('../img/portfolio/girl-1733352_1920.jpg');
 }
 .cell2 {
-  background-image: url('../img/affection-1867098_1280.jpg');
+  background-image: url('../img/portfolio/affection-1867098_1280.jpg');
 }
 .cell3 {
-  background-image: url('../img/adult-1868292_1920.jpg');
+  background-image: url('../img/portfolio/adult-1868292_1920.jpg');
 }
 .cell4 {
-  background-image: url('../img/beard-1867175_1920.jpg');
+  background-image: url('../img/portfolio/beard-1867175_1920.jpg');
 }
 .cell5 {
-  background-image: url('../img/girl-with-flowers-1374221_1920.jpg');
+  background-image: url('../img/portfolio/guess-attic-837156_1920.jpg');
 }
 .cell6 {
-  background-image: url('../img/action-1838330_1920.jpg');
+  background-image: url('../img/portfolio/action-1838330_1920.jpg');
 }
 .cell7 {
-  background-image: url('../img/pink-hair-1450045_1920.jpg');
+  background-image: url('../img/portfolio/pink-hair-1450045_1920.jpg');
 }
 .cell8 {
-  background-image: url('../img/portrait-of-a-girl-1344647_1920.jpg');
+  background-image: url('../img/portfolio/portrait-of-a-girl-1344647_1920.jpg');
 }
 .timeline {
   list-style: none;
@@ -910,7 +908,7 @@ section {
   overflow: hidden;
 }
 #contact .contact-bg {
-  background-image: url('../img/neighborhood-802074_1920.jpg');
+  background-image: url('../img/contact/neighborhood-802074_1920.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   filter: blur(3px);
@@ -1136,6 +1134,10 @@ ul.social-buttons li a:active {
   padding: 3px
 }
 
+.modal .back-to-top{
+  right: 20px;
+}
+
 .back-to-top:hover {
   color: #dadada;
 }
@@ -1157,6 +1159,12 @@ img::-moz-selection {
 
 @media (max-width: 767px) {
 
+  .navbar-custom .navbar-brand {
+    transform: scale(.8);
+  }
+  .navbar-custom.affix .navbar-brand {
+    transform: scale(.7);
+  }
   .navbar-custom .nav li a {
     margin-bottom: 0;
   }
