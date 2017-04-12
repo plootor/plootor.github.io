@@ -290,8 +290,6 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-custom .navbar-brand {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -637,7 +635,6 @@ section {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   height:400px;

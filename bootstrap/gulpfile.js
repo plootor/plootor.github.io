@@ -29,14 +29,26 @@ gulp.task('less', function() {
 });
 
 // Minify compiled CSS
-gulp.task('minify-css', ['less'], function() {
+gulp.task('minify-css', function() {
     return gulp.src('css/agency.css')
-        .pipe(cleanCSS({ compatibility: 'ie8' }))
+        .pipe(cleanCSS({ compatibility: 'ie11' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({
             stream: true
+        })
+   )
+});
+
+gulp.task('uncss', function() {
+    return gulp.src('css/agency.css')
+        .pipe(uncss({
+            html: [
+                'index.html'
+            ]
         }))
+        .pipe(gulp.dest('css/agency2.css'));
+
 });
 
 // Minify JS
