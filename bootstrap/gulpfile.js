@@ -6,6 +6,7 @@ var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
+var uncss = require('gulp-uncss');
 var pkg = require('./package.json');
 
 // Set the banner content
@@ -47,7 +48,7 @@ gulp.task('uncss', function() {
                 'index.html'
             ]
         }))
-        .pipe(gulp.dest('css/agency2.css'));
+        .pipe(gulp.dest('css'));
 
 });
 
