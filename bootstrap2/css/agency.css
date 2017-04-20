@@ -119,7 +119,7 @@ fieldset[disabled] .btn-primary.active {
   /*background-image: url(../img/floral-1814372_1920.jpg);*/
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: #efe3e5;
+  /*background-color: #b28d94;*/
 }
 .subscribe-heading {
   font-family: 'Playfair Display', serif;
@@ -133,7 +133,7 @@ fieldset[disabled] .btn-primary.active {
 .input-group .form-control {
   border-radius: 0;
   background-color: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid #ebaca5;
   box-shadow: none;
 }
 .input-group .form-control:focus {
@@ -144,7 +144,7 @@ fieldset[disabled] .btn-primary.active {
 }
 .input-group .input-group-btn .btn {
   border-radius: 0;
-  border-color: white;
+  border-color: #ebaca5;
   padding: 0 25px;
   font-size: 28px;
 }
@@ -505,6 +505,10 @@ section h3.section-subheading {
 
 /*Blog section*/
 
+/*#blog {*/
+  /*border-style: double none;*/
+  /*border-color: #ebaca5;*/
+/*}*/
 .blog-heading {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
@@ -513,6 +517,7 @@ section h3.section-subheading {
   text-transform: none;
   letter-spacing: 1px;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 .blog-title {
   font-family: 'Raleway', sans-serif;
@@ -677,6 +682,7 @@ blockquote {
   line-height: 50px;
   padding-left: 75px;
   border-left: 5px solid #f7ceae;
+  margin: 0;
 }
 blockquote::before{
   content: "\201C"; /*Unicode for Left Double Quote*/
@@ -1065,22 +1071,55 @@ blockquote::before{
 }
 /*Address Section*/
 
-#address h1 {
-  font-family: 'Playfair Display', serif;
-  text-align: center;
+#address {
+  padding: 0;
+  background-image: url(../img/cactus-1842260_1920.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-#address .address-separator {
-  width: 100%;
-  border-bottom: 1px solid #f7ceae;
-  margin: 90px 0 40px 0;
+.address-info {
+  margin: 300px 100px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 50px;
 }
-#address p {
+.address-info p {
   font-family: 'Raleway', sans-serif;
   text-transform: lowercase;
   text-align: center;
 }
 #address .fa {
   margin-right: 5px;
+}
+#address .address-text-cell {
+  position: absolute;
+  height: 100%;
+  right: 0;
+}
+#address .address-text {
+  /*padding: 306px 50px;*/
+  font-family: 'Raleway', sans-serif;
+  background-color: #ffffff;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+#address .address-text h6 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+#address .address-text h3 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  text-transform: none;
+}
+#address .address-separator {
+  width: 10%;
+  border-bottom: 2px solid #000000;
+  margin: 30px 0 20px 0;
+}
+#address .address-text p:last-child {
+  color: #e5c07c;
 }
 
 
@@ -1107,15 +1146,31 @@ blockquote::before{
 /*Contact section*/
 
 #contact {
-  background-image: url(../img/cactus-1842260_1920.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
+  background: linear-gradient(#d7f0f7, transparent, transparent);
+}
+/*#contact {*/
+  /*background-image: url(../img/cactus-1842260_1920.jpg);*/
+  /*background-position: center center;*/
+  /*background-repeat: no-repeat;*/
+/*}*/
+.street {
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  margin-top: 50px;
+  /* margin-bottom: -15px; */
+  text-align: left;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  overflow: hidden;
+  position: relative;
+  z-index: 10000;
+  border: 2px solid #000000;
 }
 .contact-heading {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 80px;
-  color: #f7ceae;
+  color: #ffffff;
   text-transform: none;
   letter-spacing: 1px;
   text-align: center;
@@ -1137,7 +1192,7 @@ blockquote::before{
   position: absolute;
 }
 #contact .section-heading {
-  color: white;
+  /*color: white;*/
 }
 #contact .form-group {
   margin-bottom: 25px;
@@ -1150,7 +1205,7 @@ blockquote::before{
   height: 50px;
   border-radius: 0;
   border: 0;
-  border-bottom: 3px solid #ffffff;
+  border-bottom: 1px solid #000000;
   box-shadow: none;
   background-color: transparent;
 }
@@ -1159,7 +1214,7 @@ blockquote::before{
   /*padding: 0;*/
   border-radius: 0;
   border: 0;
-  border-bottom: 3px solid #ffffff;
+  border-bottom: 1px solid #000000;
   box-shadow: none;
   background-color: transparent;
 }
@@ -1170,8 +1225,8 @@ blockquote::before{
 #contact ::-webkit-input-placeholder, #subscribe ::-webkit-input-placeholder {
   font-family: 'Raleway', sans-serif;
   text-transform: lowercase;
-  font-weight: 600;
-  color: #dbe0e6;
+  font-weight: 400;
+  color: #bec2cd;
   font-size: 14px;
   letter-spacing: 1px;
 }
@@ -1211,7 +1266,7 @@ blockquote::before{
 footer {
   padding: 25px 0;
   text-align: center;
-  background-color: pink;
+  /*background-color: pink;*/
 }
 footer span.copyright {
   line-height: 40px;
