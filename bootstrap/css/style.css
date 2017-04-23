@@ -108,7 +108,7 @@ fieldset[disabled] .btn-primary.active {
 
 /*Subscribe Section*/
 .input-group .form-control {
-  border-radius: 0px;
+  border-radius: 0;
   height: 60px;
   border-color: #1d2f3b;
 }
@@ -121,7 +121,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .input-group .input-group-btn .btn {
-  border-radius: 0px;
+  border-radius: 0;
   height: 60px;
   background-color: #1d2f3b;
   border-color: #1d2f3b;
@@ -135,7 +135,7 @@ fieldset[disabled] .btn-primary.active {
   font-family: "Montserrat", Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  border-radius: 0px;
+  border-radius: 0;
   font-size: 18px;
   padding: 16px 40px;
 }
@@ -592,11 +592,11 @@ section {
 }
 #contact .form-group input.form-control {
   height: 60px;
-  border-radius: 0px;
+  border-radius: 0;
 }
 #contact .form-group textarea.form-control {
   height: 120px;
-  border-radius: 0px;
+  border-radius: 0;
 }
 #contact .form-control:focus {
   box-shadow: none;
@@ -642,7 +642,6 @@ footer {
 footer span.copyright {
   line-height: 40px;
   font-family: "Montserrat", Arial, sans-serif;
-  text-transform: uppercase;
   text-transform: none;
 }
 ul.social-buttons {
@@ -665,7 +664,7 @@ ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
   background-color: #e9eef4;
-  border-radius: 0px;
+  border-radius: 0;
 }
 .btn:focus,
 .btn:active,
@@ -753,7 +752,7 @@ ul.social-buttons li a:active {
 }
 .back-to-top {
   background: none;
-  margin: 0px;
+  margin: 0;
   position: fixed;
   bottom: 10px;
   right: 10px;
