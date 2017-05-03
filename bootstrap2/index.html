@@ -336,7 +336,7 @@
                         <div class="portfolio-hover-content">
                             <h4>Serendipity</h4>
                             <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            <!--<i class="fa fa-paper-plane" aria-hidden="true"></i>-->
                             <!--<div class="portfolio-separator"></div>-->
                         </div>
                     </div>
@@ -568,6 +568,42 @@
                     <div class="address-separator"></div>
                     <p>Working hours - from 10 AM to 5 PM </p>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Portfolio nr2-->
+<section>
+    <div class="container">
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="grid-item item1">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+            </div>
+            <div class="grid-item item2">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
+            </div>
+            <div class="grid-item item3">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
+            </div>
+            <div class="grid-item item4">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+            </div>
+            <div class="grid-item item5">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+            </div>
+            <div class="grid-item">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+            </div>
+            <div class="grid-item">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+            </div>
+            <div class="grid-item item6">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+            </div>
+            <div class="grid-item">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
             </div>
         </div>
     </div>
@@ -1040,6 +1076,9 @@
 <!-- Theme JavaScript -->
 <script src="js/agency.min.js"></script>
 
+<script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
 <script>
     jQuery(document).ready(function() {
         var offset = 250;
@@ -1058,7 +1097,52 @@
             jQuery('html, body').animate({scrollTop: 0}, duration);
             return false;
         })
+
+
+      var $grid = $('.grid').masonry({
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        columnWidth: '.grid-sizer'
+      });
+// layout Isotope after each image loads
+      $grid.imagesLoaded().progress( function() {
+        $grid.masonry();
+      });
     });
+
+    function giu1() {
+      $('.item1').hide();
+      $('.grid').masonry();
+    }
+
+    function giu2() {
+      $('.item2').hide();
+      $('.item5').hide();
+      $('.grid').masonry();
+    }
+
+    function giu3() {
+      $('.item4').hide();
+      $('.grid').masonry();
+    }
+
+    function giu4() {
+      $('.item1').hide();
+      $('.item3').hide();
+      $('.item6').hide();
+      $('.grid').masonry();
+    }
+
+    function giuRestore() {
+      $('.item1').show();
+      $('.item2').show();
+      $('.item3').show();
+      $('.item4').show();
+      $('.item5').show();
+      $('.item6').show();
+      $('.grid').masonry();
+    }
+
 </script>
 
 </body>

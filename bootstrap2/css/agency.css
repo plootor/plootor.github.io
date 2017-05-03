@@ -802,7 +802,7 @@ blockquote::before{
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
   margin-top: -12px;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3 {
 /*#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {*/
   margin: 0;
 }
@@ -1516,4 +1516,35 @@ body {
 }
 .portfolio-item:nth-child(4), .portfolio-item:nth-child(8) {
   height: 350px;
+}
+
+
+
+
+
+.grid {
+  /*background: #DDD;*/
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
 }
