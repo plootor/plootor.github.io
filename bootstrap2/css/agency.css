@@ -111,7 +111,27 @@ fieldset[disabled] .btn-primary.active {
   display: table;
   margin: 0 auto;
   float: none;
-  margin-top: 40px;
+  /*margin-top: 40px;*/
+}
+
+.logo{
+  float: left;
+  width: 100%;
+  transition: all 0.3s;
+  visibility: visible;
+  height: 50px;
+}
+
+.logo img{
+  transition: all 0.2s;
+}
+
+.affix .logo {
+  height: 0;
+}
+
+.affix img {
+  height: 0;
 }
 /*Subscribe Section*/
 
@@ -363,7 +383,7 @@ header{height: 83%}
 @media (min-width: 768px) {
   .navbar-custom.affix {
     background: #f1e2e5;
-    padding: 10px 0;
+    /*padding: 10px 0;*/
   }
   .navbar-custom.affix .navbar-brand {
     -moz-transform: scale(.8);
@@ -505,10 +525,11 @@ section h3.section-subheading {
 
 /*Blog section*/
 
-/*#blog {*/
+#blog {
+  background-color: #f5eef0;
   /*border-style: double none;*/
   /*border-color: #ebaca5;*/
-/*}*/
+}
 .blog-heading {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
@@ -760,6 +781,7 @@ blockquote::before{
   /*max-width: 400px;*/
   margin: 0 auto;
   height: 100%;
+  text-decoration: none;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   background: rgba(255, 255, 255, 0.8);
@@ -829,7 +851,7 @@ blockquote::before{
 }
 @media (min-width: 768px) {
   #portfolio .portfolio-item {
-    margin: 0 0 10px;
+    margin: 0;
     /*padding-left: 5px;*/
     /*padding-right: 5px;*/
   }
@@ -844,23 +866,32 @@ blockquote::before{
   height: 100%;
   color: #000;
 }
+.portfolio-cell .portfolio-info {
+  padding: 35px 40px;
+  height: 100%;
+  background-color: pink;
+}
 .portfolio-cell h6 {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
 .portfolio-cell h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
   text-transform: none;
+  margin-bottom: 25px;
 }
 .portfolio-cell p {
   font-family: 'Raleway', sans-serif;
 }
 .portfolio-cell .address-separator {
-  width: 10%;
+  width: 15%;
   border-bottom: 2px solid #000000;
-  margin: 30px 0 20px 0;
+  margin: 20px 0;
+}
+.portfolio-cell p:last-child {
+  text-align: right;
 }
 .cell1 {
   background-image: url('../img/plant-1985874_1920.jpg');
@@ -1554,17 +1585,17 @@ body {
   height: 400px;
 }
 
-.portfolio-item:nth-child(2), .portfolio-item:nth-child(11) {
-  height: 200px;
+
+.portfolio-item, .portfolio-item:nth-child(3) {
+  height: 400px;
 }
-.portfolio-item:nth-child(6), .portfolio-item:nth-child(7) {
-  height: 150px;
+
+.portfolio-item:nth-child(4), .portfolio-item:nth-child(10), .portfolio-item:nth-child(8), .portfolio-item:nth-child(7) {
+  height: 250px;
 }
-.portfolio-item:nth-child(3), .portfolio-item:nth-child(12) {
+
+.portfolio-item:nth-child(8), .portfolio-item:nth-child(9) {
   height: 300px;
-}
-.portfolio-item:nth-child(4), .portfolio-item:nth-child(8) {
-  height: 350px;
 }
 
 
@@ -1591,6 +1622,7 @@ body {
 
 .grid-item {
   float: left;
+  padding: 10px;
 }
 
 .grid-item img {
