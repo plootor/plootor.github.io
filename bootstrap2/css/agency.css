@@ -770,6 +770,7 @@ blockquote::before{
   transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
+  border: 2px solid #fed136;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
@@ -841,6 +842,25 @@ blockquote::before{
   background-position: center center;
   background-repeat: no-repeat;
   height: 100%;
+  color: #000;
+}
+.portfolio-cell h6 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.portfolio-cell h3 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  text-transform: none;
+}
+.portfolio-cell p {
+  font-family: 'Raleway', sans-serif;
+}
+.portfolio-cell .address-separator {
+  width: 10%;
+  border-bottom: 2px solid #000000;
+  margin: 30px 0 20px 0;
 }
 .cell1 {
   background-image: url('../img/plant-1985874_1920.jpg');
@@ -1335,7 +1355,7 @@ ul.social-buttons li a:active {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  text-align: center;
+  /*text-align: center;*/
   color: #000000;
 
   border-radius: 0;
@@ -1347,17 +1367,46 @@ ul.social-buttons li a:active {
   padding: 100px 0;
 }
 .portfolio-modal .modal-content h2 {
-  margin-bottom: 25px;
+  font-family: 'Playfair Display', serif;
+  margin: 60px 100px 25px;
   font-size: 3em;
+  letter-spacing: 1px;
 }
 .portfolio-modal .modal-content p {
-  margin: 25px 200px 30px 200px;
+  margin: 25px 100px 60px 100px;
   line-height: 26px;
+  text-indent: 40px;
+  text-align: justify;
 }
 .portfolio-modal .modal-content .modal-separator {
-  width: 10%;
-  border-bottom: 2px solid #dadada;
-  margin: 15px auto;
+  width: 7%;
+  border-bottom: 3px solid #ebaca5;
+  margin: 15px 0 15px 100px;
+}
+.portfolio-modal .modal-content .modal-text-col {
+  margin-top: 10%;
+}
+.portfolio-modal .modal-content .modal-text-col h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  /*text-decoration: underline;*/
+  font-style: italic;
+  color: #ebaca5;
+  margin: 0 auto;
+}
+.portfolio-modal .modal-content .modal-text-col h5 {
+  /*font-family: 'Playfair Display', serif;*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  /* text-decoration: underline; */
+  color: #ebaca5;
+  margin: 25px 0 10px;
+  /* text-transform: none; */
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.portfolio-modal .modal-content .modal-text-col p {
+  margin: 30px 100px;
 }
 .portfolio-modal .modal-content p.item-intro {
   margin: 20px 0 30px;
