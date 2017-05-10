@@ -1,7 +1,7 @@
+"use strict";
 // Contact Form Scripts
-
 $(function () {
-  $('a.page-scroll').bind('click', function (event) {
+  $('a.page-scroll').on('click', function (event) {
     var $anchor = $(this);
     $('html, body').stop().animate({
       scrollTop: ($($anchor.attr('href')).offset().top - 50)
@@ -16,8 +16,8 @@ $(function () {
   });
 
   // Closes the Responsive Menu on Menu Item Click
-  $('.navbar-collapse ul li a').click(function () {
-    $('.navbar-toggle:visible').click();
+  $('.navbar-collapse ul li a').on('click', function () {
+    $('.navbar-toggle:visible').trigger( "click" );
   });
 
   // Offset for Main Navigation
@@ -25,7 +25,7 @@ $(function () {
     offset: {
       top: 100
     }
-  })
+  });
 
   $("#mc-embedded-subscribe-form input").jqBootstrapValidation({
     preventSubmit: true,
@@ -39,7 +39,7 @@ $(function () {
     },
     filter: function () {
       return $(this).is(":visible");
-    },
+    }
   });
 
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
@@ -89,15 +89,15 @@ $(function () {
           $('#success > .alert-danger').append('</div>');
           //clear all fields
           $('#contactForm').trigger("reset");
-        },
+        }
       });
     },
     filter: function () {
       return $(this).is(":visible");
-    },
+    }
   });
 
-  $("a[data-toggle=\"tab\"]").click(function (e) {
+  $("a[data-toggle=\"tab\"]").on('click', function (e) {
     e.preventDefault();
     $(this).tab("show");
   });
@@ -112,7 +112,7 @@ $(function () {
     }
   });
 
-  jQuery('.back-to-top').click(function (event) {
+  jQuery('.back-to-top').on('click', function (event) {
     event.preventDefault();
     jQuery('html, body, .portfolio-modal').animate({scrollTop: 0}, 300);
     return false;
