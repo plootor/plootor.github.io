@@ -2,7 +2,10 @@
     height:100%;
     font-family: "Droid Serif", sans-serif;
   }
-  header{height: 83%}
+  header {
+    height: 83%;
+    min-height: 550px;
+  }
 
   .text-muted {
     color: #777777;
@@ -52,51 +55,11 @@
   .bg-darkest-gray {
     background-color: #222222;
   }
-  .btn-primary {
-    color: white;
-    background-color: #fed136;
-    border-color: #fed136;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-  .btn-primary:hover,
-  .btn-primary:focus,
-  .btn-primary:active,
-  .btn-primary.active,
-  .open .dropdown-toggle.btn-primary {
-    color: white;
-    background-color: #fec503;
-    border-color: #f6bf01;
-  }
   .btn-primary:active,
   .btn-primary.active,
   .open .dropdown-toggle.btn-primary {
     background-image: none;
   }
-  .btn-primary.disabled,
-  .btn-primary[disabled],
-  fieldset[disabled] .btn-primary,
-  .btn-primary.disabled:hover,
-  .btn-primary[disabled]:hover,
-  fieldset[disabled] .btn-primary:hover,
-  .btn-primary.disabled:focus,
-  .btn-primary[disabled]:focus,
-  fieldset[disabled] .btn-primary:focus,
-  .btn-primary.disabled:active,
-  .btn-primary[disabled]:active,
-  fieldset[disabled] .btn-primary:active,
-  .btn-primary.disabled.active,
-  .btn-primary[disabled].active,
-  fieldset[disabled] .btn-primary.active {
-    background-color: #fed136;
-    border-color: #fed136;
-  }
-  .btn-primary .badge {
-    color: #fed136;
-    background-color: white;
-  }
-
   /*Subscribe Section*/
   .input-group .form-control {
     border-radius: 0;
@@ -123,7 +86,7 @@
     color: white;
     background-color:  rgba(255, 255, 255, 0.2);
     border: 2px solid #1d2f3b;
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 0;
@@ -140,41 +103,9 @@
   .btn-xl:active {
     background-image: none;
   }
-  .btn-xl.disabled,
-  .btn-xl[disabled],
-  fieldset[disabled] .btn-xl,
-  .btn-xl.disabled:hover,
-  .btn-xl[disabled]:hover,
-  fieldset[disabled] .btn-xl:hover,
-  .btn-xl.disabled:focus,
-  .btn-xl[disabled]:focus,
-  fieldset[disabled] .btn-xl:focus,
-  .btn-xl.disabled:active,
-  .btn-xl[disabled]:active,
-  fieldset[disabled] .btn-xl:active,
-  .btn-xl.disabled.active,
-  .btn-xl[disabled].active,
-  fieldset[disabled] .btn-xl.active {
-    background-color: #fed136;
-    border-color: #fed136;
-  }
-  .btn-xl .badge {
-    color: #fed136;
-    background-color: white;
-  }
   .navbar-custom {
     background: none;
     border-color: transparent;
-  }
-  .navbar-custom .navbar-brand {
-    color: #bd8c7d;
-    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
-    padding: 0;
-  }
-  .navbar-custom .navbar-brand:hover,
-  .navbar-custom .navbar-brand:focus,
-  .navbar-custom .navbar-brand:active {
-    color: #fec503;
   }
   .navbar-custom .navbar-collapse {
     border-color: rgba(255, 255, 255, 0.02);
@@ -182,7 +113,7 @@
   .navbar-custom .navbar-toggle {
     background-color: #fff;
     border-color: #1d2f3b;
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     color: #1d2f3b;
     font-size: 12px;
@@ -192,7 +123,7 @@
     background-color: #fff;
   }
   .navbar-custom .nav li a {
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
@@ -266,6 +197,7 @@
 
   .navbar-custom .navbar-brand {
     transition: all 0.3s;
+    padding: 0;
   }
   .navbar-custom.affix {
     background: rgba(58, 70, 96, 0.9);
@@ -290,8 +222,7 @@
     margin-bottom: 25px;
   }
   header .intro-text .intro-heading {
-    font-family: "Montserrat", Arial, sans-serif;
-    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 50px;
     line-height: 50px;
@@ -349,7 +280,10 @@
     width: 100%;
   }
   .numero-symbol {
-    color: #e9eef4;
+    color: #bec2cd;
+  }
+  #team p {
+    font-size: 12px;
   }
   #team .team-item {
     margin: 0 0 10px;
@@ -382,7 +316,6 @@
     display: inline-block;
   }
   #team .team-item .team-hover .team-hover-content .team-subheading {
-    font-size: 12px;
     text-transform: none;
     font-style: italic;
     font-weight: 400;
@@ -390,7 +323,6 @@
     padding-left: 10px;
   }
   #team .team-item .team-hover .team-hover-content .team-info {
-    font-size: 12px;
     line-height: 18px;
   }
   #team .team-item .team-hover .team-hover-content .team-separator {
@@ -427,7 +359,6 @@
     padding-top: 30%;
   }
   .team-cell-content p {
-    font-size: 12px;
     text-transform: none;
     font-style: italic;
     font-weight: 400;
@@ -591,29 +522,29 @@
     border-color: #ccc;
   }
   #contact ::-webkit-input-placeholder, #subscribe ::-webkit-input-placeholder {
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    color: #eeeeee;
+    color: #dadbe0;
     font-size: 14px;
   }
   #contact :-moz-placeholder {
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    color: #eeeeee;
+    color: #dadbe0;
   }
   #contact ::-moz-placeholder {
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    color: #eeeeee;
+    color: #dadbe0;
   }
   #contact :-ms-input-placeholder {
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    color: #eeeeee;
+    color: #dadbe0;
   }
   .text-danger {
     color: #e74c3c;
@@ -629,7 +560,7 @@
   }
   footer span.copyright {
     line-height: 40px;
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: none;
   }
   ul.social-buttons {
@@ -685,7 +616,7 @@
   }
   .portfolio-modal .modal-content h2 {
     margin-bottom: 25px;
-    font-size: 42px;
+    font-size: 40px;
   }
   .portfolio-modal .modal-content p {
     margin: 25px 200px 30px 200px;
@@ -734,10 +665,6 @@
     -webkit-transform: rotate(90deg);
     z-index: 1052;
   }
-  ::-moz-selection {
-    text-shadow: none;
-    background: #fed136;
-  }
   .back-to-top {
     background: none;
     margin: 0;
@@ -775,8 +702,7 @@
       padding-right: 5px;
     }
     header .intro-text {
-      padding-top: 300px;
-      padding-bottom: 200px;
+      padding-top: 50%;
     }
     header .intro-text .intro-lead-in {
       font-style: italic;
@@ -786,8 +712,6 @@
       letter-spacing: 2px;
     }
     header .intro-text .intro-heading {
-      font-family: "Montserrat", Arial, sans-serif;
-      text-transform: none;
       font-weight: 400;
       font-size: 60px;
       line-height: 65px;
@@ -813,9 +737,27 @@
     }
   }
   @media (min-width: 768px) and (max-width: 991px) {
+    section {
+      padding: 70px 0;
+    }
+    .section-heading, .portfolio-modal .modal-content h2 {
+      font-size: 35px;
+    }
+    .section-subheading, .about-text {
+      margin-bottom: 45px;
+    }
+    p {
+      font-size: 16px;
+    }
+    #team p {
+      font-size: 13px;
+    }
     .service-text {
       padding: 0 15px;
       margin-bottom: 15px;
+    }
+    #subscribe-form {
+      padding: 30px 0;
     }
   }
   @media (max-width: 767px) {
@@ -867,7 +809,7 @@
       margin-bottom: 45px;
     }
     .section-heading, .portfolio-modal .modal-content h2 {
-      font-size: 30px;
+      font-size: 25px;
     }
     .section-subheading {
       margin-bottom: 40px;
@@ -911,5 +853,10 @@
     }
     .portfolio-separator {
       border-bottom: 2px solid #ffffff
+    }
+  }
+  @media (min-width: 992px) {
+    header .intro-text {
+      padding-top: 19%;
     }
   }

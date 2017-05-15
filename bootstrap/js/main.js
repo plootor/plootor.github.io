@@ -1,12 +1,14 @@
 "use strict";
-// Contact Form Scripts
 $(function () {
-  $('a.page-scroll').on('click', function (event) {
-    var $anchor = $(this);
+  var toolbar = document.querySelector("header");
+  toolbar.addEventListener("click", function(e) {
+    var $anchor = $(e.target).attr('href');
+    if(!$anchor) return false;
     $('html, body').stop().animate({
-      scrollTop: ($($anchor.attr('href')).offset().top - 50)
+      scrollTop: ($($anchor).offset().top - 50)
     }, 1250, 'easeInOutExpo');
     event.preventDefault();
+    event.stopPropagation();
   });
 
   // Highlight the top nav as scrolling occurs
