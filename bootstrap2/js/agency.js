@@ -52,14 +52,28 @@ function runFunc(type) {
       $('.item6').show();
       break;
     case 'first':
-      $('.item4').hide();
-      $('.item5').hide();
+      $('.item1').hide();
+      $('.item2').hide();
+      $('.item3').hide();
+      $('.item6').hide();
+      $('.item4').show();
+      $('.item5').show();
       break;
     case 'second':
-      $('.item1').hide();
+      $('.item4').hide();
+      $('.item5').hide();
+      $('.item6').hide();
+      $('.item1').show();
+      $('.item2').show();
+      $('.item3').show();
       break;
     case 'third':
+      $('.item1').show();
+      $('.item2').hide();
       $('.item3').hide();
+      $('.item4').show();
+      $('.item5').show();
+      $('.item6').show();
       break;
   }
   $('.grid').masonry();
