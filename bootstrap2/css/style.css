@@ -519,7 +519,7 @@ blockquote {
   background-size: cover;
   position: absolute;
   top:0;
-  left: 0;
+  left: 15px;
   opacity: .8;
   z-index: -1;
   animation-duration: 10s;

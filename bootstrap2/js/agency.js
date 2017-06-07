@@ -1,34 +1,40 @@
 // Agency Theme JavaScript
 
 (function($) {
-   // "use strict"; // Start of use strict
+  // "use strict"; // Start of use strict
 
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
-        event.preventDefault();
-    });
+  // Highlight the top nav as scrolling occurs
+  $('body').scrollspy({
+      target: '.navbar-fixed-top',
+      offset: 51
+  });
 
-    // Highlight the top nav as scrolling occurs
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
-    });
+  $('section').viewportChecker({
+    classToAdd: 'visible',
+    offset: 500,
+    repeat: false
+  });
 
-    // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function(){ 
-            $('.navbar-toggle:visible').click();
-    });
+  // Closes the Responsive Menu on Menu Item Click
+  $('.navbar-collapse ul li a').click(function(){
+    $('.navbar-toggle:visible').click();
+  });
 
-    // Offset for Main Navigation
-    $('#mainNav').affix({
-        offset: {
-            top: 100
-        }
-    })
+  // Offset for Main Navigation
+  $('#mainNav').affix({
+      offset: {
+          top: 100
+      }
+  });
+
+  var $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    columnWidth: '.grid-sizer'
+  });
+  $grid.imagesLoaded().progress(function () {
+    $grid.masonry();
+  });
 
   var toolbar = document.querySelector(".portfolio-nav");
   toolbar.addEventListener("click", function(e) {
