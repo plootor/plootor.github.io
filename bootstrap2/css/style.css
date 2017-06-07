@@ -128,8 +128,9 @@ h6 {
 .btn-xl:hover,
 .btn-xl:focus,
 .btn-xl:active {
-  color: #000000 !important;
-  background-color: #ffffff !important;
+  color: #ffffff !important;
+  background-color: #ebaca5 !important;
+  border: 2px solid #ebaca5 !important;
   -webkit-transition: all ease 0.5s;
 }
 .btn-xl:active {
@@ -306,18 +307,16 @@ header{
 section {
   padding: 100px 0;
 }
-section h4.section-name {
+section .section-name {
   margin-top: 0;
   text-align: right;
   letter-spacing: 1px;
   overflow: hidden;
   position: relative;
   padding-bottom: 15px;
-
   transition: all 1s ease;
   transform: translateY(-60%);
   opacity: 0;
-
 }
 .team-f {
   transition: all 1s ease;
@@ -870,6 +869,9 @@ figure.effect-layla:hover .portfolio-cell {
   background-attachment: fixed;
   position: relative;
 }
+#contact .section-name {
+  color: #ffffff;
+}
 .contact-heading {
   text-align: center;
   margin-bottom: 60px;
@@ -918,7 +920,7 @@ figure.effect-layla:hover .portfolio-cell {
 }
 
 footer {
-  padding: 20px 0;
+  padding: 30px 0;
 }
 footer p {
   font-size: 12px;
@@ -927,29 +929,33 @@ footer p {
 .address {
   border-left: 1px solid #ebaca5;
 }
+.address .fa {
+  padding-right: 5px;
+}
 ul.social-buttons {
   margin-bottom: 0;
   text-align: center;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 ul.social-buttons li a {
   display: block;
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
   border-radius: 100%;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 35px;
   color: #000000;
   outline: none;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #e9eef4;
-  border-radius: 0px;
+  background-color: #ebaca5;
+  border-radius: 100px;
+  color: #ffffff;
 }
 .btn:focus,
 .btn:active,
