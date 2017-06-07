@@ -15,7 +15,9 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
 
@@ -29,6 +31,15 @@
 </head>
 
 <body id="page-top" class="index">
+
+
+<!--<div class="bg">-->
+    <!--<video autoplay="true" controls="false" id="bgvid" poster="//www.invisionapp.com/subsystems/design_disruptors_new/assets/img/mobile-hero.gif" loop="" class="on">-->
+        <!--<source src="//s3.amazonaws.com/www-assets.invisionapp.com/DesignDisruptors/homepage-loop60s.webm" type="video/webm">-->
+        <!--<source src="//s3.amazonaws.com/www-assets.invisionapp.com/DesignDisruptors/homepage-loop60s.mp4" type="video/mp4">-->
+    <!--</video>-->
+<!--</div>-->
+
 
 <!-- Header -->
 <header>
@@ -105,19 +116,22 @@
 
 
 <!-- Blog Section -->
-<section id="blog">
+<section id="blog" class="visible-over">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12">
-                <h4 class="section-heading">Latest project<i class="fa fa-minus" aria-hidden="true"></i></h4>
+                <h4 class="section-name">Latest project<i class="fa fa-minus" aria-hidden="true"></i></h4>
                 <!--<div class="service-separator"></div>-->
             </div>
         </div>
         <div class="row pos-r">
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-6 blog-image-cell">
+                <div class="blog-image"></div>
+            </div>
+            <div class="col-sm-12 col-md-6 team-f">
                 <div>
-                    <h1 class="blog-heading">eat <br> beautiful</h1>
-                    <h4 class="blog-title">april 2017</h4>
+                    <h1 class="blog-heading section-heading">the charming blue</h1>
+                    <h4 class="blog-title">may 2017</h4>
                     <!--<div class="blog-separator"></div>-->
                     <p class="blog-text">We launched three years ago and loved it every second. At the time
                         I was just a man with an ideea but 2 weeks later I was a man with a plan. We jumped on this
@@ -126,9 +140,6 @@
                         work and produce new, crazy, beautiful ideas.</p>
                     <a href="#blog" class="page-scroll btn btn-xl">Find more</a>
                 </div>
-            </div>
-            <div class="col-sm-12 col-md-6 blog-image-cell">
-                <div class="blog-image"></div>
             </div>
         </div>
     </div>
@@ -139,12 +150,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h4 class="section-heading">Our story<i class="fa fa-minus" aria-hidden="true"></i></h4>
+                <h4 class="section-name">Our story<i class="fa fa-minus" aria-hidden="true"></i></h4>
             </div>
         </div>
         <div class="row pos-r">
             <div class="col-md-10 col-md-offset-1">
-                <h1 class="about-heading">pears and champagne</h1>
+                <h1 class="about-heading section-heading">once upon a time</h1>
                 <div class="about-text">
                     <p>We launched three years ago and loved it every second. At the time
                         I was just a man with an ideea but 2 weeks later I was a man with a plan. We jumped on this
@@ -181,21 +192,20 @@
 </section>
 
 <!-- Team Section -->
-<section id="team">
+<section id="team" class="visible-over">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h4 class="section-heading">Team<i class="fa fa-minus" aria-hidden="true"></i></h4>
+                <h4 class="section-name">Our team<i class="fa fa-minus" aria-hidden="true"></i></h4>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 col-md-4">
-                <h1 class="team-heading">morning rose tea</h1>
+            <div class="col-sm-12 col-md-4 team-f">
+                <h1 class="team-heading section-heading">meet the magicians</h1>
                 <p class="team-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem
                     culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt
-                    minus dignissimos. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam
-                    quasi sunt officia expedita beatae.</p>
+                    minus dignissimos. Est blanditiis dolorem culpa incidunt minus dignissimos.</p>
                 <p class="team-text">Officia expedita beatae cupiditate, maiores nostrum, repudiandae, reiciendis facere nemo!
                     Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
             </div>
@@ -246,65 +256,51 @@
 </section>
 
 <!-- Services Section -->
-<section id="services">
+<section id="services" class="visible-over">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h4 class="section-heading">Services<i class="fa fa-minus" aria-hidden="true"></i></h4>
+                <h4 class="section-name">Services<i class="fa fa-minus" aria-hidden="true"></i></h4>
             </div>
         </div>
         <div class="row pos-r">
-            <div class="col-sm-12 col-md-6">
-                <div class="circle">
-                    <div class="circle-base">
-                        <div class="circle-part">
-                            <div class="services-image1"></div>
-                        </div>
-                        <div class="circle-part">
-                            <div class="services-image2"></div>
-                        </div>
-                        <div class="circle-part">
-                            <div class="services-image3"></div>
-                        </div>
-                        <div class="circle-part">
-                            <div class="services-image4"></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="service-image-container col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0">
+                <div class="service-image1"></div>
+                <div class="service-image2"></div>
             </div>
             <div class="col-sm-12 col-md-6 right">
                 <div>
-                    <div class="col-sm-6 col-md-12">
+                    <div class="col-sm-6 col-md-12 service-info">
                         <i class="fa fa-key fa-3x pull-left" aria-hidden="true"></i>
                         <div class="service-cell">
-                            <h4 class="service-heading">Secret card</h4>
+                            <h4 class="service-heading">Exploring the unknown</h4>
                             <div class="service-separator"></div>
                             <p class="service-text">I fear not the man who has practiced 10,000 kicks once, but I fear the man who
                                 has practiced one kick 10,000 times I fear not the man who has practiced 10,000 kicks once.</p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-12">
+                    <div class="col-sm-6 col-md-12 service-info">
                         <i class="fa fa-balance-scale fa-3x pull-left" aria-hidden="true"></i>
                         <div class="service-cell">
-                            <h4 class="service-heading">Balance is key</h4>
+                            <h4 class="service-heading">Trainings with professionals</h4>
                             <div class="service-separator"></div>
                             <p class="service-text">I fear not the man who has practiced 10,000 kicks once, but I fear the man who
                                 has practiced one kick 10,000 times I fear not the man who has practiced 10,000 kicks once.</p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-12">
-                        <i class="fa fa-leaf fa-3x pull-left" aria-hidden="true"></i>
+                    <div class="col-sm-6 col-md-12 service-info">
+                        <i class="fa fa-address-book fa-3x pull-left" aria-hidden="true"></i>
                         <div class="service-cell">
-                            <h4 class="service-heading">Eco-friendly is the new black</h4>
+                            <h4 class="service-heading">Destination trips</h4>
                             <div class="service-separator"></div>
                             <p class="service-text">I fear not the man who has practiced 10,000 kicks once, but I fear the man who
                                 has practiced one kick 10,000 times I fear not the man who has practiced 10,000 kicks once.</p>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-12">
+                    <div class="col-sm-6 col-md-12 service-info">
                         <i class="fa fa-heart-o fa-3x pull-left" aria-hidden="true"></i>
                         <div class="service-cell">
-                            <h4 class="service-heading">Evoked emotions</h4>
+                            <h4 class="service-heading">Unforgettable moments</h4>
                             <div class="service-separator"></div>
                             <p class="service-text">I fear not the man who has practiced 10,000 kicks once, but I fear the man who
                                 has practiced one kick 10,000 times I fear not the man who has practiced 10,000 kicks once.</p>
@@ -320,8 +316,8 @@
 <section id="subscribe" class="cta-form">
     <div class="container text-center">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h1 class="subscribe-heading">newsletter</h1>
+            <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <h1 class="subscribe-heading section-heading">newsletter</h1>
                 <!-- MailChimp Signup Form -->
                 <div id="mc_embed_signup">
                     <!-- Replace the form action in the line below with your MailChimp embed action! Visit the documentation for additional instructions! -->
@@ -349,20 +345,20 @@
 </section>
 
 <!--Portfolio Section-->
-<section  id="portfolio">
+<section id="portfolio" class="visible-over">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h4 class="section-heading">Portfolio<i class="fa fa-minus" aria-hidden="true"></i></h4>
+                <h4 class="section-name">Portfolio<i class="fa fa-minus" aria-hidden="true"></i></h4>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="portfolio-nav">
-                    <a href="#" class="all">all</a>
-                    <a href="#" class="first">first</a>
-                    <a href="#" class="second">second</a>
-                    <a href="#" class="third">third</a>
+                    <a href="#" name="all" class="active">all</a>
+                    <a href="#" name="first">first</a>
+                    <a href="#" name="second">second</a>
+                    <a href="#" name="third">third</a>
                 </div>
             </div>
         </div>
@@ -384,21 +380,13 @@
             </div>
             <div class="grid-item item2">
                 <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <h4>Serendipity</h4>
-                            <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                            <!--<i class="fa fa-paper-plane" aria-hidden="true"></i>-->
-                            <!--<div class="portfolio-separator"></div>-->
-                        </div>
-                    </div>
                     <div class="portfolio-cell portfolio-cell2">
                         <div class="portfolio-info">
                             <h6>Projects</h6>
                             <h3>Trends of the year of 2017</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem
                                 culpa incidunt minus.</p>
-                            <div class="address-separator"></div>
+                            <div class="portfolio-separator"></div>
                             <p>Some text</p>
                         </div>
                     </div>
@@ -504,7 +492,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h4 class="section-heading">Partners<i class="fa fa-minus" aria-hidden="true"></i></h4>
+                <h4 class="section-name">Partners<i class="fa fa-minus" aria-hidden="true"></i></h4>
             </div>
         </div>
         <div class="row">
@@ -531,63 +519,63 @@
 </section>
 
 <!--Testimonials Section-->
-<section id="testimonials">
+<section id="testimonials" class="visible-over">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h4 class="section-heading">Testimonials<i class="fa fa-minus" aria-hidden="true"></i></h4>
+                <h4 class="section-name">Testimonials<i class="fa fa-minus" aria-hidden="true"></i></h4>
             </div>
         </div>
         <div class="row">
             <div id="carousel-reviews" class="carousel slide" data-ride="carousel" data-interval="15000">
                 <div class="carousel-inner">
                     <div class="item active">
-                        <div class="col-md-5 col-md-offset-1 testimonial-cell">
+                        <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1 testimonial-cell">
                             <h5 class="text-center">Genevive Russo</h5>
                             <h6 class="text-center">ceo at bloom</h6>
-                            <p class="text-justify">"We launched three years ago and loved it every second. At the time
-                                I was just a man with an ideea but 2 weeks later I was a man with a plan. We jumped on this
-                                adventure and learned a lot along the way."</p>
+                            <p class="text-justify">"If you want crazy adventures, laughts and fun, this is the way
+                                to go. You will get all that and great friends as well. And the memories will last you a
+                                lifetime. I loved each and every trip we had, and will definitely go again."</p>
                         </div>
-                        <div class="col-md-5 text-justify testimonial-cell">
+                        <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 text-justify testimonial-cell">
                             <h5 class="text-center">Lara Brie</h5>
                             <h6 class="text-center">founder of Incognito</h6>
-                            <p>"We launched three years ago and loved it every second. At the time
-                                I was just a man with an ideea but 2 weeks later I was a man with a plan. We jumped on this
-                                adventure and learned a lot along the way."</p>
+                            <p class="text-justify">"The best teachers and instructors ever. Whether you are a beginer or
+                                had already tried any water sport, you will enjoy it either way. I loved the team from
+                                the very first lesson. And got to learn something new in a fun way and feeling safe."</p>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="col-md-5 col-md-offset-1 testimonial-cell">
+                        <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1 testimonial-cell">
                             <h5 class="text-center">Alice Russo</h5>
                             <h6 class="text-center">ceo at bloom</h6>
-                            <p class="text-justify">"We launched three years ago and loved it every second. At the time
-                                I was just a man with an ideea but 2 weeks later I was a man with a plan. We jumped on this
-                                adventure and learned a lot along the way."</p>
+                            <p class="text-justify">"If you want crazy adventures, laughts and fun, this is the way
+                                to go. You will get all that and great friends as well. And the memories will last you a
+                                lifetime. I loved each and every trip we had, and will definitely go again."</p>
                         </div>
-                        <div class="col-md-5  text-justify testimonial-cell">
+                        <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 text-justify testimonial-cell">
                             <h5 class="text-center">Lara Brie</h5>
                             <h6 class="text-center">founder of Incognito</h6>
-                            <p>"We launched three years ago and loved it every second. At the time
-                                I was just a man with an ideea but 2 weeks later I was a man with a plan. We jumped on this
-                                adventure and learned a lot along the way."</p>
+                            <p class="text-justify">"The best teachers and instructors ever. Whether you are a beginer or
+                                had already tried any water sport, you will enjoy it either way. I loved the team from
+                                the very first lesson. And got to learn something new in a fun way and feeling safe."</p>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="col-md-5 col-md-offset-1 testimonial-cell">
+                        <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1 testimonial-cell">
 
                             <h5 class="text-center">Alice Russo</h5>
                             <h6 class="text-center">ceo at bloom</h6>
-                            <p class="text-justify">"We launched three years ago and loved it every second. At the time
-                                I was just a man with an ideea but 2 weeks later I was a man with a plan. We jumped on this
-                                adventure and learned a lot along the way."</p>
+                            <p class="text-justify">"If you want crazy adventures, laughts and fun, this is the way
+                                to go. You will get all that and great friends as well. And the memories will last you a
+                                lifetime. I loved each and every trip we had, and will definitely go again."</p>
                         </div>
-                        <div class="col-md-5 text-justify testimonial-cell">
+                        <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 text-justify testimonial-cell">
                             <h5 class="text-center">Lara Brie</h5>
                             <h6 class="text-center">founder of Incognito</h6>
-                            <p>"We launched three years ago and loved it every second. At the time
-                                I was just a man with an ideea but 2 weeks later I was a man with a plan. We jumped on this
-                                adventure and learned a lot along the way."</p>
+                            <p class="text-justify">"The best teachers and instructors ever. Whether you are a beginer or
+                                had already tried any water sport, you will enjoy it either way. I loved the team from
+                                the very first lesson. And got to learn something new in a fun way and feeling safe."</p>
                         </div>
                     </div>
                 </div>
@@ -603,47 +591,18 @@
     </div>
 </section>
 
-<!--Address Section-->
-<!--<section id="address">-->
-    <!--<div class="container">-->
-        <!--<div class="row pos-r">-->
-            <!--<div class="col-sm-6 col-md-6">-->
-                <!--&lt;!&ndash;<h1>Name</h1>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="address-separator"></div>&ndash;&gt;-->
-                <!--<div class="address-info">-->
-                    <!--<p><i class="fa fa-globe fa-1x" aria-hidden="true"></i>-->
-                        <!--121 Flower Blvd, Melbourne, Australia</p>-->
-                    <!--<p><i class="fa fa-phone" aria-hidden="true"></i>-->
-                        <!--+687 234 789 123</p>-->
-                    <!--<p><i class="fa fa-envelope" aria-hidden="true"></i>-->
-                        <!--greenhouse@gmail.com</p>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-sm-6 col-md-6 address-text-cell">-->
-                <!--<div class="address-text">-->
-                    <!--<h6>Location</h6>-->
-                    <!--<h3>The magic happens here.</h3>-->
-                    <!--<p>Monday to Friday</p>-->
-                    <!--<div class="address-separator"></div>-->
-                    <!--<p>Working hours - from 10 AM to 5 PM </p>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</section>-->
-
 <!-- Contact Section -->
-<section id="contact"   data-type="background" data-speed="8">
+<section id="contact"   data-type="background" data-speed="10">
     <div class="bg-filter"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h4 class="section-heading">Contact<i class="fa fa-minus" aria-hidden="true"></i></h4>
+                <h4 class="section-name">Contact<i class="fa fa-minus" aria-hidden="true"></i></h4>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h1 class="contact-heading">say hello</h1>
+            <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+                <h1 class="contact-heading section-heading">say hello</h1>
                 <form name="sentMessage" id="contactForm" novalidate>
                     <div class="row">
                         <div class="form-group col-md-12">
@@ -675,18 +634,20 @@
     </div>
 </section>
 
-<footer>
+<footer class="visible-over">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <!--<span class="copyright">Copyright &copy; Your Website 2017</span>-->
                 <img class="img-responsive img-centered" src="img/logo-5.png" alt="">
             </div>
-            <div class="col-md-2 col-md-offset-1">
+            <!--<div class="col-md-3">-->
+                <!--<p><i class="fa fa-globe fa-1x" aria-hidden="true"></i>-->
+                    <!--121 Flower Blvd, 32901, Melbourne, Australia</p>-->
+            <!--</div>-->
+            <div class="col-md-3 col-md-offset-1 address">
                 <p><i class="fa fa-globe fa-1x" aria-hidden="true"></i>
-                    121 Flower Blvd, 32901, <br> Melbourne, Australia</p>
-            </div>
-            <div class="col-md-2">
+                    121 Flower Blvd, 32901, Melbourne, Australia</p>
                 <p><i class="fa fa-phone" aria-hidden="true"></i>
                     +687 234 789 123</p>
                 <p><i class="fa fa-envelope" aria-hidden="true"></i>
@@ -728,7 +689,9 @@
                     <div class="col-md-12">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <img class="img-responsive img-centered" src="img/plant-1985874_1920.jpg" alt="">
+                            <div class="col-md-12">
+                                <img class="img-responsive img-centered" src="img/adventure-1868519_1920.jpg" alt="">
+                            </div>
                             <h2>Serendipity</h2>
                             <div class="modal-separator"></div>
                             <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -736,9 +699,11 @@
                                 quasi sunt officia expedita beatae. Lorem ipsum dolor sit amet, consectetur adipisicing
                                 elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam
                                 quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                            <img class="img-responsive img-centered" src="img/greenhouse-1246536_1920.jpg" alt="">
+                            <div class="col-md-12">
+                                <img class="img-responsive img-centered" src="img/surf-2203696_1920.jpg" alt="">
+                            </div>
                             <div class="col-md-6">
-                                <img class="img-responsive img-centered" src="img/botanical-1868747_1920.jpg" alt="">
+                                <img class="img-responsive img-centered" src="img/beach-1867524_1920.jpg" alt="">
                             </div>
                             <div class="col-md-6 modal-text-col">
                                 <h2>1</h2>
@@ -763,10 +728,10 @@
                                     with a plan.</p>
                             </div>
                             <div class="col-md-6">
-                                <img class="img-responsive img-centered" src="img/greenhouse-690448_1920.jpg" alt="">
+                                <img class="img-responsive img-centered" src="img/palm-1614993_1920.jpg" alt="">
                             </div>
                             <div class="col-md-6">
-                                <img class="img-responsive img-centered" src="img/plant-690998_1920.jpg" alt="">
+                                <img class="img-responsive img-centered" src="img/beach-1850144_1920.jpg" alt="">
                             </div>
                             <div class="col-md-6 modal-text-col">
                                 <h2>3</h2>
@@ -779,7 +744,9 @@
                                 <p>At the time I was just a man with an ideea but 2 weeks later I was a man
                                     with a plan.</p>
                             </div>
-                            <img class="img-responsive img-centered" src="img/bloom-1840303_1920.jpg" alt="">
+                            <div class="col-md-12">
+                                <img class="img-responsive img-centered" src="img/surfing-2192675_1920.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1117,9 +1084,9 @@
     </div>
 </div>
 
-<a href="#" class="back-to-top">
-    <i class="fa fa-arrow-circle-up"></i>
-</a>
+<!--<a href="#" class="back-to-top">-->
+    <!--<i class="fa fa-arrow-circle-up"></i>-->
+<!--</a>-->
 
 <!-- jQuery -->
 <script src="vendor/jquery/jquery.min.js"></script>
@@ -1228,10 +1195,10 @@
 
       $('section').viewportChecker({
         classToAdd: 'visible',
-        offset: 100,
+        offset: 500,
 
 // Add the possibility to remove the class if the elements are not visible
-        repeat: true,
+        repeat: false,
 
         // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
         callbackFunction: function(elem, action){}

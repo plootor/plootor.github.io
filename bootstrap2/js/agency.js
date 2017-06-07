@@ -32,7 +32,9 @@
 
   var toolbar = document.querySelector(".portfolio-nav");
   toolbar.addEventListener("click", function(e) {
-    var anchor = $(e.target).attr('class');
+    $('.portfolio-nav a.active').removeClass('active');
+    $(e.target).addClass('active');
+    var anchor = $(e.target).attr('name');
     if(!anchor) return false;
     runFunc(anchor);
     event.preventDefault();
