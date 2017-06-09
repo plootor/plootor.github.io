@@ -14,8 +14,8 @@
   //   offset: 500,
   //   repeat: false
   // });
-  $('.fade-animate').addClass("hide2").viewportChecker({
-    classToAdd: 'vis animated fadeInUp',
+  $('.fade-animate').addClass("hide-el").viewportChecker({
+    classToAdd: 'show-el animated fadeInUp',
     offset: 250
   });
 

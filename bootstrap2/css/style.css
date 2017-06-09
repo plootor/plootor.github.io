@@ -59,13 +59,12 @@ h6 {
   margin: 0 auto;
 }
 
-/*navigation Section*/
+/*Navigation section*/
 .navbar-nav {
   display: table;
   margin: 0 auto;
   float: none;
 }
-
 .logo{
   float: left;
   width: 100%;
@@ -73,20 +72,17 @@ h6 {
   visibility: visible;
   height: 135px;
 }
-
 .logo img{
   transition: all 0.2s;
 }
-
 .affix .logo {
   height: 0;
 }
-
 .affix img {
   height: 0;
 }
-/*Subscribe Section*/
 
+/*Subscribe Section*/
 #subscribe {
   background-position: center center;
   background-repeat: no-repeat;
@@ -141,8 +137,7 @@ h6 {
   border-color: transparent;
 }
 .navbar-custom.affix {
-  background: #ffffff;
-  border-bottom: 1px solid #ebaca5 !important;
+  background: #f5eef0;
 }
 .navbar-custom .navbar-brand {
   float: none;
@@ -192,20 +187,16 @@ h6 {
 .navbar-custom .nav li a:hover:after {
   width: 100%;
 }
-
 .navbar-custom .nav li.active a:hover:after {
   width: 0;
 }
-
 .navbar-custom .nav li.active a:hover {
   font-weight: 500;
   color: white;
 }
-
 .navbar-nav>.active>a {
   background-color: #ebaca5 !important;
 }
-
 .navbar-custom .nav .active a {
   color: #ffffff;
 }
@@ -287,7 +278,6 @@ header{
 .carousel {
   height: 100%;
 }
-
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
@@ -315,16 +305,10 @@ section .section-name {
   position: relative;
   padding-bottom: 15px;
 }
-
 section h4.section-name .fa {
   font-size: initial;
   margin-left: 5px;
   color: #f7ceae;
-}
-@media (min-width: 768px) {
-  section {
-    padding: 100px 0;
-  }
 }
 
 /*Blog section*/
@@ -336,7 +320,6 @@ section h4.section-name .fa {
 .blog-text {
   text-indent: 30px;
 }
-
 #blog .btn-xl {
   float: right;
   margin: 20px 45px 15px 0;
@@ -355,7 +338,6 @@ section h4.section-name .fa {
 }
 
 /*About section*/
-
 #about {
   background-color: #f5eef0;
 }
@@ -944,12 +926,31 @@ ul.social-buttons li a:active {
   box-shadow: none;
   border: none;
   min-height: 100%;
-  padding: 100px 0;
+  padding: 50px 0;
+}
+.modal-name {
+  position: absolute;
+  margin-top: 24%;
+  padding: 10px;
+  border: 1px solid #f5eef0;
+  background-color: rgba(245, 238, 240, 0.3);
+}
+.modal-name h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  font-style: italic;
+  color: #1d2f3b;
+  margin: 0;
+  background-color: rgba(245, 238, 240, 0.8);
+  padding: 70px 0;
+  text-align: center;
 }
 .portfolio-modal .modal-content h2 {
   font-family: 'Playfair Display', serif;
   margin: 60px 100px 25px;
-  font-size: 3em;
+  font-size: 40px;
   letter-spacing: 1px;
 }
 .portfolio-modal .modal-content p {
@@ -991,10 +992,10 @@ ul.social-buttons li a:active {
 }
 .portfolio-modal .close-modal {
   position: absolute;
-  width: 75px;
-  height: 75px;
+  width: 55px;
+  height: 55px;
   background-color: transparent;
-  top: 25px;
+  top: 15px;
   right: 25px;
   cursor: pointer;
 }
@@ -1002,7 +1003,7 @@ ul.social-buttons li a:active {
   opacity: 0.3;
 }
 .portfolio-modal .close-modal .lr {
-  height: 75px;
+  height: 55px;
   width: 1px;
   margin-left: 35px;
   background-color: #222222;
@@ -1014,7 +1015,7 @@ ul.social-buttons li a:active {
   z-index: 5;
 }
 .portfolio-modal .close-modal .lr .rl {
-  height: 75px;
+  height: 55px;
   width: 1px;
   background-color: #222222;
   transform: rotate(90deg);
@@ -1061,25 +1062,135 @@ img::-moz-selection {
 }
 
 @media (max-width: 767px) {
-  .service-heading {
-    margin: 15px 0;
+  section {
+    padding: 50px 0;
   }
-  .service-text {
-    margin-bottom: 35px;
+  .section-name {
+    font-size: 14px;
   }
-}
-@media (max-width: 991px) {
+  .section-heading {
+    font-size: 40px;
+    text-align: center;
+  }
+  .btn-xl {
+    font-size: 14px;
+  }
+  .blog-image-cell {
+    position: relative;
+    height: 300px;
+  }
+  .blog-title {
+    padding: 0;
+    font-size: 16px;
+  }
+  .blog-text {
+    padding: 0;
+    text-align: justify;
+  }
+  #blog .btn-xl {
+    margin: 20px 0 0 0;
+    width: inherit;
+  }
+  .about-text {
+    column-count: 1;
+  }
+  .team-heading {
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  .team-text {
+    text-align: justify;
+  }
+  .team-cell {
+    height: 130px;
+    width: 130px;
+  }
+  #team h5 {
+    font-size: 12px;
+  }
+  #team h6 {
+    font-size: 10px;
+  }
+  blockquote {
+    font-size: 18px;
+    line-height: 35px;
+    padding: 0;
+  }
   .service-image-container {
     position: relative;
     height: 450px;
+  }
+  .service-cell {
+    margin-left: 45px;
+  }
+  .service-heading {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+  }
+  #services .fa {
+    font-size: 2em;
+  }
+  .service-text {
+    margin-bottom: 25px;
+  }
+  .subscribe-heading {
+    margin-bottom: 35px;
+    margin-top: 0;
+  }
+  .portfolio-modal .close-modal {
+    height: 25px;
+    width: 25px;
+  }
+  .portfolio-modal .close-modal .lr {
+    height: 25px;
+  }
+  .portfolio-modal .close-modal .lr .rl {
+    height: 25px;
+  }
+  .portfolio-modal .modal-content h2 {
+    margin: 60px 0 25px;
+    font-size: 27px;
+    text-align: center;
+  }
+  .portfolio-modal .modal-content .modal-separator {
+    margin: 15px 0 15px 40px;
+  }
+  .portfolio-modal .modal-content p {
+    margin: 0 0 10px;
+  }
+  .portfolio-modal .modal-content .modal-text-col p {
+    margin: 0 0 10px;
+  }
+  #testimonials h5 {
+    padding-top: 10px;
+  }
+  #testimonials h6 {
+    margin-bottom: 15px;
+  }
+  .address {
+    text-align: center;
+    border: none;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  section {
+    padding: 70px;
+  }
+  .section-heading {
+    font-size: 65px;
+    text-align: center;
   }
   .blog-image-cell {
     position: relative;
     height: 353px;
   }
-  .section-heading {
-    font-size: 65px;
-    text-align: center;
+  .blog-title {
+    padding: 0 40px;
+  }
+  .blog-text {
+    text-align: justify;
+    padding: 0 40px;
   }
   .team-image-cell {
     border-left: none;
@@ -1095,8 +1206,16 @@ img::-moz-selection {
   .team-text:last-child {
     margin-bottom: 30px;
   }
+  .service-image-container {
+    position: relative;
+    height: 450px;
+  }
   .service-info {
     padding-top: 30px;
+  }
+  .subscribe-heading {
+    margin-bottom: 35px;
+    margin-top: 0;
   }
   #testimonials h6 {
     margin-bottom: 20px;
@@ -1117,6 +1236,7 @@ img::-moz-selection {
   .address {
     text-align: center;
     border: none;
+    padding-bottom: 15px;
   }
 }
 
@@ -1246,10 +1366,10 @@ body>.bg video {
 /*transition-delay: 1.2s;*/
 /*}*/
 
-.hide2{
+.hide-el{
   opacity:0;
 }
-.vis{
+.show-el{
   opacity:1;
 }
 
