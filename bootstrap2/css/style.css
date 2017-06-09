@@ -148,15 +148,15 @@ h6 {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
-  background-color: #000000;
-  border-color: #000000;
+  background-color: #ffffff;
+  border-color: #ffffff;
   text-transform: uppercase;
-  color: white;
+  color: #000000;
   font-size: 12px;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
@@ -367,15 +367,18 @@ section h4.section-name .fa {
   margin-top: 25px;
 }
 #team h5 {
+  font-family: 'Playfair Display', serif;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 #team h6 {
   text-align: center;
-  color: #dbe0e6;
   text-transform: lowercase;
   letter-spacing: 1px;
   margin-bottom: 20px;
+  color: #ebaca5;
+  font-weight: 500;
+  font-size: 10px;
 }
 .team-image-cell {
   border-left: 2px solid #f5eef0;
@@ -389,7 +392,7 @@ section h4.section-name .fa {
   background-repeat: no-repeat;
   height: 200px;
   margin: 20px auto;
-  border: 5px solid #f7ceae;
+  border: 3px solid #f7ceae;
   border-radius: 50%;
   width: 200px;
 }
