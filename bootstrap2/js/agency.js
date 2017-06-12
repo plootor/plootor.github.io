@@ -16,7 +16,7 @@
   // });
   $('.fade-animate').addClass("hide-el").viewportChecker({
     classToAdd: 'show-el animated fadeInUp',
-    offset: 250
+    offset: 80
   });
 
   // Closes the Responsive Menu on Menu Item Click

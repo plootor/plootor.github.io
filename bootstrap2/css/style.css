@@ -230,16 +230,16 @@ header{
   background-size: cover !important;
 }
 .carousel-inner .carusel4 {
-  background: url("../img/beach-1867524_1920.jpg") no-repeat center top;
+  background: url("../img/cassia-1550940_1920 - Copy.jpg") no-repeat center top;
 }
 .carousel-inner .carusel3 {
-  background: url("../img/surfing-2192675_1920.jpg") no-repeat center center;
+  background: url("../img/peonies-2317596_1920.jpg") no-repeat center center;
 }
 .carousel-inner .carusel2 {
-  background: url("../img/adventure-1868519_1920.jpg") no-repeat center center;
+  background: url("../img/basket-1846135_1920.jpg") no-repeat center top;
 }
 .carousel-inner .carusel1 {
-  background: url("../img/kite-surfing-1960536_1920.jpg") no-repeat center center;
+  background: url("../img/bouquet-of-flowers-1149099_1920.jpg") no-repeat center top;
 }
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
@@ -1332,6 +1332,7 @@ body>.bg video {
 .hideme {
   opacity: 0;
   transition: all 1s ease;
+  transition-delay: .5s;
   transform: translateY(30px);
 }
 
@@ -1376,13 +1377,17 @@ body>.bg video {
   opacity:1;
 }
 
-.delay1{
+.delay-1{
   animation-delay:0.1s;
 }
-.delay2{
+
+.fade-animate {
   animation-delay:0.2s;
 }
-.delay3{
+/*.delay2{*/
+  /*animation-delay:0.2s;*/
+/*}*/
+.delay-3{
   animation-delay:0.3s;
 }
 .delay4{
