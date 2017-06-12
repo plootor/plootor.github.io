@@ -464,14 +464,12 @@ blockquote {
   background: url("../img/beautiful-1835116_1920.jpg") no-repeat center center;
   background-size: cover;
   position: absolute;
-  top:0;
+  top:3%;
   left: 15px;
-  opacity: .8;
+  opacity: 1;
   z-index: -1;
-  animation-duration: 10s;
-  animation-name: changewidth;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  border: 3px solid #faf3eb;
+
 }
 .service-image2 {
   height: 53%;
@@ -479,10 +477,10 @@ blockquote {
   background: url("../img/flowers-2044789_1920.jpg") no-repeat center center;
   background-size: cover;
   position: absolute;
-  top: 32%;
+  top: 40%;
   left: 18%;
-  z-index: -2;
-  /*opacity: .95;*/
+  z-index: 0;
+  border: 3px solid #faf3eb;
 }
 
 @keyframes changewidth {
@@ -631,7 +629,8 @@ blockquote {
 .portfolio-cell .portfolio-info {
   padding: 35px 40px;
   height: 100%;
-  background-color: #e9eef4;
+  background-color: #ebaca5;
+  color: #faf3eb;
 }
 .portfolio-cell h6 {
   letter-spacing: 1px;
@@ -644,13 +643,18 @@ blockquote {
   text-transform: none;
   margin-bottom: 25px;
 }
+.portfolio-cell p {
+  letter-spacing: 1px;
+}
 .portfolio-cell .portfolio-separator {
   width: 15%;
-  border-bottom: 2px solid #ebaca5;
+  border-bottom: 2px solid #faf3eb;
   margin: 20px 0;
 }
 .portfolio-cell p:last-child {
   text-align: right;
+  font-weight: 600;
+  font-size: 15px;
 }
 .portfolio-item{
   position: relative;
