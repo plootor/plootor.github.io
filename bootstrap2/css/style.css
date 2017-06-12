@@ -230,7 +230,7 @@ header{
   background-size: cover !important;
 }
 .carousel-inner .carusel4 {
-  background: url("../img/cassia-1550940_1920 - Copy.jpg") no-repeat center top;
+  background: url("../img/flowers-2044789_1920.jpg") no-repeat center top;
 }
 .carousel-inner .carusel3 {
   background: url("../img/peonies-2317596_1920.jpg") no-repeat center center;
@@ -331,7 +331,7 @@ section h4.section-name .fa {
     right: 0;
 }
 .blog-image {
-  background: url("../img/diving-455765_1920.jpg") no-repeat center center;
+  background: url("../img/bouquet-of-flowers-1149099_1920.jpg") no-repeat center center;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -412,7 +412,7 @@ section h4.section-name .fa {
 /*Quote section*/
 
 #quote {
-  background-image: url(../img/ocean-984524_1920.jpg);
+  background-image: url(../img/basket-1846135_1920.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -461,7 +461,7 @@ blockquote {
 .service-image1 {
   height: 53%;
   width: 77%;
-  background: url("../img/ocean-984524_1920.jpg") no-repeat center center;
+  background: url("../img/beautiful-1835116_1920.jpg") no-repeat center center;
   background-size: cover;
   position: absolute;
   top:0;
@@ -476,7 +476,7 @@ blockquote {
 .service-image2 {
   height: 53%;
   width: 77%;
-  background: url("../img/diving-455765_1920.jpg") no-repeat center center;
+  background: url("../img/flowers-2044789_1920.jpg") no-repeat center center;
   background-size: cover;
   position: absolute;
   top: 32%;
@@ -788,20 +788,20 @@ figure.effect-layla:hover .portfolio-cell {
 }
 
 .portfolio-cell1 {
-  background-image: url('../img/beach-1867524_1920.jpg');
+  background-image: url('../img/basket-1846135_1920.jpg');
   background-position: center center;
 }
 .portfolio-cell3 {
-  background-image: url('../img/diving-455765_1920.jpg');
+  background-image: url('../img/bouquet-of-flowers-1149099_1920.jpg');
 }
 .portfolio-cell4 {
-  background-image: url('../img/beach-1850144_1920.jpg');
+  background-image: url('../img/flowers-2044789_1920.jpg');
 }
 .portfolio-cell5 {
-  background-image: url('../img/surfing-2192675_1920.jpg');
+  background-image: url('../img/flower-731830_1920.jpg');
 }
 .portfolio-cell6 {
-  background-image: url('../img/beach-1851014_1920.jpg');
+  background-image: url('../img/bouquet-1915255_1920.jpg');
 }
 .form-control:focus {
   border-color: inherit;
@@ -809,7 +809,7 @@ figure.effect-layla:hover .portfolio-cell {
 
 /*Contact section*/
 #contact {
-  background-image: url(../img/diving-455765_1920.jpg);
+  background-image: url(../img/bouquet-of-flowers-1149099_1920.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
