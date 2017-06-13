@@ -350,13 +350,17 @@ section h4.section-name .fa {
   column-gap: 50px;
   text-align: justify;
 }
+#about p:first-child {
+  font-weight: 600;
+}
 .about-separator {
   width: 100%;
   border-bottom: 1px solid #f7ceae;
   margin: 20px auto;
 }
-#about p:first-child {
-  font-weight: 600;
+#about ul {
+  font-weight: 500;
+  line-height: 1.6;
 }
 
 /*Team section*/
@@ -512,7 +516,7 @@ blockquote {
   font-weight: 300;
   text-align: justify;
 }
-#services .fa {
+.service-icon {
   color: #f7ceae;
 }
 
@@ -1134,7 +1138,7 @@ img::-moz-selection {
     margin: 0 0 10px 0;
     font-size: 16px;
   }
-  #services .fa {
+  .service-icon {
     font-size: 2em;
   }
   .service-text {
@@ -1396,4 +1400,13 @@ body>.bg video {
 }
 .delay4{
   animation-delay:0.4s;
+}
+
+.portfolio-modal .modal-name {
+  opacity: 0;
+}
+
+.portfolio-modal.in .modal-name {
+  animation: fadeInDown 2s;
+  opacity: 1;
 }
