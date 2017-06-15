@@ -432,16 +432,16 @@ section h4.section-name .fa {
   width: 200px;
 }
 .team-cell1 {
-  background-image: url('../img/team/secretary-1379839_1280.jpg');
+  background-image: url('../img/team/girl-657753_1280.jpg');
 }
 .team-cell2 {
-  background-image: url('../img/team/man-1209494_1280.jpg');
+  background-image: url('../img/team/model-2373537_1280.jpg');
 }
 .team-cell3 {
-  background-image: url('../img/team/business-woman-2071334_1280.jpg');
+  background-image: url('../img/team/secretary-1379839_1280.jpg');
 }
 .team-cell4 {
-  background-image: url('../img/team/man-1934968_1280.jpg');
+  background-image: url('../img/team/portrait-2226001_1280.jpg');
 }
 
 /*Quote section*/
@@ -1211,7 +1211,7 @@ img::-moz-selection {
   .address {
     text-align: center;
     border: none;
-    padding-bottom: 15px;
+    padding: 15px 0;
   }
   .grid-sizer, .grid-item {
     width: 100% !important;
@@ -1305,7 +1305,7 @@ img::-moz-selection {
   .address {
     text-align: center;
     border: none;
-    padding-bottom: 15px;
+    padding: 15px 0;
   }
 }
 
