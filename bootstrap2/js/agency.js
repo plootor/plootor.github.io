@@ -32,9 +32,9 @@
     percentPosition: true,
     columnWidth: '.grid-sizer'
   });
-  $grid.imagesLoaded().progress(function () {
+ $grid.imagesLoaded().progress(function () {
     $grid.masonry();
-  });
+ });
 
   var toolbar = document.querySelector(".portfolio-nav");
   toolbar.addEventListener("click", function(e) {
