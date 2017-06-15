@@ -76,9 +76,9 @@ function runFunc(type) {
       $('.item3').show();
       break;
     case 'third':
-      $('.item1').show();
       $('.item2').hide();
       $('.item3').hide();
+      $('.item1').show();
       $('.item4').show();
       $('.item5').show();
       $('.item6').show();
