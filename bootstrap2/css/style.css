@@ -1174,16 +1174,16 @@ img::-moz-selection {
     padding: 5px !important;
   }
   .navbar-custom .nav {
-    background-color: #fff;
+    background-color: #f5eef0;
     margin-top: 0;
   }
   .navbar-custom .nav li a {
     margin-bottom: 0;
     color: #1d2f3b;
-    text-align: right;
+    text-align: center;
   }
   .navbar-custom .nav > li {
-    border-bottom: 1px solid #1d2f3b;
+    border-bottom: 1px solid #ebaca5;
   }
   .navbar-custom .navbar-nav > .active > a {
     margin:0;
