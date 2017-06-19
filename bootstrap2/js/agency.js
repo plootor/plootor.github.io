@@ -16,8 +16,8 @@
     });
   }
   // Closes the Responsive Menu on Menu Item Click
-  $('.navbar-collapse ul li a').click(function(){
-    $('.navbar-toggle:visible').click();
+  $('.navbar-collapse ul li a').on('click', function () {
+    $('.navbar-toggle:visible').trigger( "click" );
   });
 
   // Offset for Main Navigation
@@ -36,17 +36,29 @@
     $grid.masonry();
  });
 
-  var toolbar = document.querySelector(".portfolio-nav");
+  var toolbar = document.querySelector("header");
   toolbar.addEventListener("click", function(e) {
-    $('.portfolio-nav a.active').removeClass('active');
-    $(e.target).addClass('active');
-    var anchor = $(e.target).attr('name');
-    if(!anchor) return false;
-    runFunc(anchor);
+    var $anchor = $(e.target).attr('href');
+    if(!$anchor) return false;
+    $('html, body').stop().animate({
+      scrollTop: ($($anchor).offset().top - 50)
+    }, 1250, 'easeInOutExpo');
     event.preventDefault();
     event.stopPropagation();
   });
+
+
   $('.carousel').bcSwipe({ threshold: 50 });
+
+  jQuery(window).scroll(function () {
+    var offset = 250;
+    var duration = 300;
+    if (jQuery(this).scrollTop() > offset) {
+      jQuery('.back-to-top').fadeIn(duration);
+    } else {
+      jQuery('.back-to-top').fadeOut(duration);
+    }
+  });
 
 })(jQuery); // End of use strict
 

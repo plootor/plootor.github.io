@@ -1013,7 +1013,7 @@ ul.social-buttons li a:active {
   color: #1d2f3b;
   margin: 0;
   background-color: rgba(245, 238, 240, 0.8);
-  padding: 70px 0;
+  padding: 16% 0;
   text-align: center;
 }
 .portfolio-modal .modal-content h2 {
@@ -1290,6 +1290,9 @@ img::-moz-selection {
   .portfolio-modal .modal-content .modal-text-col p {
     margin: 0 0 10px;
   }
+  .modal-name h3 {
+    font-size: 24px;
+  }
   #testimonials h5 {
     padding-top: 10px;
   }
@@ -1321,8 +1324,38 @@ img::-moz-selection {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .navbar.affix-top {
+    background: rgba(253, 253, 253, .5);
+    padding-top: 20px;
+    margin-top: 0;
+  }
+  .navbar-brand>img {
+    max-width: 220px;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .affix-top .navbar-brand{
+    padding: 0;
+    height: auto;
+  }
+  .affix .navbar-brand {
+    display: none !important;
+  }
+  .navbar-nav .logo {
+    display: none;
+  }
+  .navbar-brand2 {
+    display: block !important;
+  }
+  .navbar-custom .nav li a {
+    padding: 15px 10px;
+  }
+  #blog>.container, #about>.container, #team>.container {
+    padding: 0 30px;
+  }
   section {
-    padding: 70px;
+    padding: 70px 0;
   }
   .section-heading {
     font-size: 65px;
@@ -1333,11 +1366,12 @@ img::-moz-selection {
     height: 353px;
   }
   .blog-title {
-    padding: 0 40px;
   }
   .blog-text {
     text-align: justify;
-    padding: 0 40px;
+  }
+  .about-text {
+    column-gap: 45px;
   }
   .team-image-cell {
     border-left: none;
@@ -1348,7 +1382,6 @@ img::-moz-selection {
   }
   .team-text {
     text-align: justify;
-    padding: 0 40px;
   }
   .team-text:last-child {
     margin-bottom: 30px;
