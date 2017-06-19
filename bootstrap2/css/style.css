@@ -1139,6 +1139,7 @@ img::-moz-selection {
   }
   .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
     max-height: 410px;
+    overflow-y: hidden;
   }
   .navbar-nav {
     display: block;
@@ -1177,10 +1178,12 @@ img::-moz-selection {
     background-color: #f5eef0;
     margin-top: 0;
   }
-  .navbar-custom .nav li a {
+  .navbar-custom .nav li a, .navbar-custom.affix .nav li a {
     margin-bottom: 0;
+    padding: 15px 10px;
     color: #1d2f3b;
     text-align: center;
+    line-height: 20px;
   }
   .navbar-custom .nav > li {
     border-bottom: 1px solid #ebaca5;

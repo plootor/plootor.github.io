@@ -46,6 +46,7 @@
     event.preventDefault();
     event.stopPropagation();
   });
+  $('.carousel').bcSwipe({ threshold: 50 });
 
 })(jQuery); // End of use strict
 
