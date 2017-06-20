@@ -170,8 +170,9 @@ select:-webkit-autofill:focus {
   background-color: #ffffff;
   border-color: #ffffff;
   text-transform: uppercase;
-  color: #000000;
+  color: #ebaca5;
   font-size: 12px;
+  border-radius: 0;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
@@ -1175,7 +1176,7 @@ img::-moz-selection {
     padding: 5px !important;
   }
   .navbar-custom .nav {
-    background-color: #f5eef0;
+    background-color: #ffffff;
     margin-top: 0;
   }
   .navbar-custom .nav li a, .navbar-custom.affix .nav li a {
@@ -1291,7 +1292,7 @@ img::-moz-selection {
     margin: 0 0 10px;
   }
   .modal-name h3 {
-    font-size: 24px;
+    font-size: 12px;
   }
   #testimonials h5 {
     padding-top: 10px;
@@ -1324,6 +1325,9 @@ img::-moz-selection {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .affix {
+    height: auto;
+  }
   .navbar.affix-top {
     background: rgba(253, 253, 253, .5);
     padding-top: 20px;
@@ -1334,6 +1338,10 @@ img::-moz-selection {
   }
   .navbar-header {
     float: none;
+    transition: all 1s;
+  }
+  .affix .navbar-header {
+    height: 0;
   }
   .affix-top .navbar-brand{
     padding: 0;
@@ -1349,7 +1357,8 @@ img::-moz-selection {
     display: block !important;
   }
   .navbar-custom .nav li a {
-    padding: 15px 10px;
+    padding: 20px 10px !important;
+    line-height: 20px !important;
   }
   #blog>.container, #about>.container, #team>.container {
     padding: 0 30px;
