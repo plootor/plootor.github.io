@@ -40,7 +40,7 @@
   toolbar.addEventListener("click", function(e) {
     $('.portfolio-nav a.active').removeClass('active');
     $(e.target).addClass('active');
-    var anchor = $(e.target).attr('name');
+    var anchor = $(e.target).attr('data-name');
     if(!anchor) return false;
     runFunc(anchor);
     event.preventDefault();
