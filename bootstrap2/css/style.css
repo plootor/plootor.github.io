@@ -6,7 +6,6 @@
 body {
   overflow-x: hidden;
   font-family: 'Raleway', sans-serif;
-  webkit-tap-highlight-color: #fed136;
 }
 p {
   font-size: 14px;
@@ -16,7 +15,7 @@ p {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 80px;
-  color: #f7ceae;
+  color: #ebaca5;
   text-transform: none;
   letter-spacing: 1px;
 }
@@ -50,30 +49,10 @@ h6 {
 .right{
   float: right;
 }
-/*.visible-over {*/
-  /*position: relative;*/
-  /*z-index: 1;*/
-  /*background-color: white;*/
-/*}*/
+
 .img-centered {
   margin: 0 auto;
 }
-/*.logo */
-  /*float: left;*/
-  /*width: 100%;*/
-  /*transition: all 0.3s;*/
-  /*visibility: visible;*/
-  /*height: 135px;*/
-/*}*/
-/*.logo img{*/
-  /*transition: all 0.2s;*/
-/*!*}*!*/
-/*.affix .logo {*/
-  /*height: 0;*/
-/*}*/
-/*.affix img {*/
-  /*height: 0;*/
-/*}*/
 
 /*Subscribe Section*/
 #subscribe {
@@ -126,6 +105,15 @@ select:-webkit-autofill:focus {
   padding: 0 25px;
   font-size: 28px;
   z-index: 0;
+}
+.alert-success {
+  color: #faf3eb;
+  background-color: #ebaca5;
+  border-color: #ebaca5;
+  border-radius: 0;
+}
+.alert-danger {
+  border-radius: 0;
 }
 .btn-xl {
   color: #000000;
@@ -368,7 +356,7 @@ section .section-name {
 section h4.section-name .fa {
   font-size: initial;
   margin-left: 5px;
-  color: #f7ceae;
+  color: #ebaca5;
 }
 
 /*Blog section*/
@@ -415,7 +403,7 @@ section h4.section-name .fa {
 }
 .about-separator {
   width: 100%;
-  border-bottom: 1px solid #f7ceae;
+  border-bottom: 1px solid #ebaca5;
   margin: 20px auto;
 }
 #about ul {
@@ -456,7 +444,7 @@ section h4.section-name .fa {
   background-repeat: no-repeat;
   height: 200px;
   margin: 20px auto;
-  border: 3px solid #f7ceae;
+  border: 3px solid #ebaca5;
   border-radius: 50%;
   width: 200px;
 }
@@ -496,7 +484,7 @@ section h4.section-name .fa {
 }
 .quote-separator {
   width: 4%;
-  border-bottom: 2px solid #f7ceae;
+  border-bottom: 2px solid #ebaca5;
   margin: 25px auto;
 }
 blockquote {
@@ -513,7 +501,7 @@ blockquote {
 .quote-footer {
   font-size: 16px;
   font-style: normal;
-  color: #f7ceae;
+  color: #ebaca5;
   padding: 40px 0 0;
 }
 
@@ -577,7 +565,7 @@ blockquote {
   text-align: justify;
 }
 .service-icon {
-  color: #f7ceae;
+  color: #ebaca5;
 }
 
 .carousel-control {
@@ -646,7 +634,9 @@ blockquote {
   transition: all ease-in-out .4s;
 }
 .portfolio-nav a:hover, .portfolio-nav .active{
-  border-color: #333;
+  font-weight: 600;
+  color: #b28d94;
+  border-color: #b28d94;
   text-decoration: none;
 }
 #portfolio .grid-item .portfolio-link .portfolio-hover {
@@ -769,8 +759,8 @@ figure.effect-layla figcaption::before {
   right: 30px;
   bottom: 50px;
   left: 30px;
-  border-top: 2px solid #e5c07c;
-  border-bottom: 2px solid #e5c07c;
+  border-top: 2px solid #ebaca5;
+  border-bottom: 2px solid #ebaca5;
   -webkit-transform: scale(0,1);
   transform: scale(0,1);
   -webkit-transform-origin: 0 0;
@@ -782,8 +772,8 @@ figure.effect-layla figcaption::after {
   right: 50px;
   bottom: 30px;
   left: 50px;
-  border-right: 2px solid #e5c07c;
-  border-left: 2px solid #e5c07c;
+  border-right: 2px solid #ebaca5;
+  border-left: 2px solid #ebaca5;
   -webkit-transform: scale(1,0);
   transform: scale(1,0);
   -webkit-transform-origin: 100% 0;
@@ -924,7 +914,7 @@ figure.effect-layla:hover .portfolio-cell {
   border-color: #ffffff;
 }
 .text-danger {
-  color: #e74c3c;
+  color: #ebaca5;
 }
 .help-block {
   position: absolute;
@@ -1094,6 +1084,12 @@ ul.social-buttons li a:active {
   -webkit-transform: rotate(90deg);
   /* Safari and Chrome */
   z-index: 5;
+}
+
+.portfolio-modal .close-button {
+  width: 150px;
+  display: block;
+  margin: 50px auto 0;
 }
 
 ::-moz-selection {
@@ -1322,6 +1318,17 @@ img::-moz-selection {
     opacity: 0.6;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .navbar .container {
+    width: auto;
+  }
+  .navbar-nav>.logo img {
+    padding: 0;
+  }
+  .navbar-custom .nav li a {
+    margin: 0 5px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {

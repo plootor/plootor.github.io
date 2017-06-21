@@ -328,23 +328,37 @@
         <!-- MailChimp Signup Form -->
         <div id="mc_embed_signup">
           <!-- Replace the form action in the line below with your MailChimp embed action! Visit the documentation for additional instructions! -->
-          <form role="form" action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+          <!--<form role="form" action="#" method="post" id="subscribe-form" target="_blank" novalidate>-->
+          <!--<div class="input-group input-group-lg form-group">-->
+
+            <!--<input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address..."-->
+                   <!--required data-validation-required-message="Please enter your email address.">-->
+            <!--<p class="help-block text-danger"></p>-->
+            <!--<span class="input-group-btn">-->
+                <!--<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-xl"><i-->
+                    <!--class="fa fa-angle-right" aria-hidden="true"></i></button>-->
+              <!--</span>-->
+          <!--</div>-->
+          <!--<div id="mce-responses">-->
+            <!--<div id="subscribe-success"></div>-->
+            <!--<div class="response" id="mce-error-response" style="display:none"></div>-->
+            <!--<div class="response" id="mce-success-response" style="display:none"></div>-->
+          <!--</div>-->
+          <!--</form>-->
+
+
+
+          <form action="#" method="post" id="subscribe-form" name="mc-embedded-subscribe-form"
                 target="_blank" novalidate>
             <div class="input-group input-group-lg form-group">
-
-              <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address..."
-                     required data-validation-required-message="Please enter your email address.">
+              <input type="email" name="email" class="form-control" placeholder="Email address..." required data-validation-required-message="Please enter your email address.">
               <p class="help-block text-danger"></p>
               <span class="input-group-btn">
-                <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-xl"><i
-                    class="fa fa-angle-right" aria-hidden="true"></i></button>
-              </span>
+              <button type="submit" name="subscribe" class="btn btn-xl"><i
+                  class="fa fa-angle-right" aria-hidden="true"></i></button>
+            </span>
             </div>
-            <div id="mce-responses">
-              <div id="subscribe-success"></div>
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>
+            <div id="subscribe2-success"></div>
           </form>
         </div>
         <!-- End MailChimp Signup Form -->
@@ -354,7 +368,7 @@
 </section>
 
 <!--Portfolio Section-->
-<section id="portfolio" class="visible-over">
+<section id="portfolio" class="visible-over fade-animate">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -373,7 +387,7 @@
     </div>
     <div class="grid">
       <div class="grid-sizer"></div>
-      <div class="grid-item item1 fade-animate delay4">
+      <div class="grid-item item1">
         <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
           <div class="portfolio-item pos-r">
             <figure class="effect-layla">
@@ -385,7 +399,7 @@
           </div>
         </a>
       </div>
-      <div class="grid-item item2 fade-animate">
+      <div class="grid-item item2">
         <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
           <div class="portfolio-cell portfolio-cell2">
             <div class="portfolio-info">
@@ -398,7 +412,7 @@
           </div>
         </a>
       </div>
-      <div class="grid-item item3 fade-animate delay4">
+      <div class="grid-item item3">
         <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
           <div class="portfolio-item pos-r">
             <figure class="effect-layla">
@@ -410,7 +424,7 @@
           </div>
         </a>
       </div>
-      <div class="grid-item item4 fade-animate">
+      <div class="grid-item item4">
         <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
           <div class="portfolio-item pos-r">
             <figure class="effect-layla">
@@ -422,7 +436,7 @@
           </div>
         </a>
       </div>
-      <div class="grid-item item5 fade-animate delay4">
+      <div class="grid-item item5">
         <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
           <div class="portfolio-item pos-r">
             <figure class="effect-layla">
@@ -434,7 +448,7 @@
           </div>
         </a>
       </div>
-      <div class="grid-item item6 fade-animate delay4">
+      <div class="grid-item item6">
         <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
           <div class="portfolio-item pos-r">
             <figure class="effect-layla">
@@ -712,6 +726,7 @@
               </div>
               <div class="col-md-12">
                 <img class="img-responsive img-centered" src="img/flower-731830_1920.jpg" alt="">
+                <div class="btn btn-xl close-button" data-dismiss="modal">Close</div>
               </div>
             </div>
           </div>
@@ -796,6 +811,7 @@
               </div>
               <div class="col-md-12">
                 <img class="img-responsive img-centered" src="img/flower-731830_1920.jpg" alt="">
+                <div class="btn btn-xl close-button" data-dismiss="modal">Close</div>
               </div>
             </div>
           </div>
@@ -879,6 +895,7 @@
               </div>
               <div class="col-md-12">
                 <img class="img-responsive img-centered" src="img/flower-731830_1920.jpg" alt="">
+                <div class="btn btn-xl close-button" data-dismiss="modal">Close</div>
               </div>
             </div>
           </div>
@@ -962,6 +979,7 @@
               </div>
               <div class="col-md-12">
                 <img class="img-responsive img-centered" src="img/flower-731830_1920.jpg" alt="">
+                <div class="btn btn-xl close-button" data-dismiss="modal">Close</div>
               </div>
             </div>
           </div>
@@ -1045,6 +1063,7 @@
               </div>
               <div class="col-md-12">
                 <img class="img-responsive img-centered" src="img/flower-731830_1920.jpg" alt="">
+                <div class="btn btn-xl close-button" data-dismiss="modal">Close</div>
               </div>
             </div>
           </div>
@@ -1128,6 +1147,7 @@
               </div>
               <div class="col-md-12">
                 <img class="img-responsive img-centered" src="img/flower-731830_1920.jpg" alt="">
+                <div class="btn btn-xl close-button" data-dismiss="modal">Close</div>
               </div>
             </div>
           </div>
@@ -1149,7 +1169,6 @@
 <script src="js/jquery.bcSwipe.min.js"></script>
 <!-- Contact Form JavaScript -->
 <script src="js/jqBootstrapValidation.js"></script>
-<script src="js/contact_me.js"></script>
 
 <!-- Theme JavaScript -->
 <script src="js/agency.js"></script>
