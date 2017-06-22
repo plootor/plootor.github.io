@@ -11,13 +11,14 @@ body {
 p {
   font-size: 14px;
   line-height: 1.9;
+  color: #beb9c0;
 }
 
 .section-heading {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 80px;
-  color: #ebaca5;
+  color: #9d8475;
   text-transform: none;
   letter-spacing: 1px;
 }
@@ -62,7 +63,7 @@ h6 {
 #subscribe {
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: #f5eef0;
+  background-color: #1c1b19;
 }
 
 .subscribe-heading {
@@ -78,7 +79,7 @@ h6 {
 .input-group .form-control {
   border-radius: 0;
   background-color: transparent;
-  border: 2px solid #ebaca5;
+  border: 2px solid #9d8475;
   box-shadow: none;
   z-index: 0;
 }
@@ -103,7 +104,7 @@ select:-webkit-autofill:focus {
 }
 
 .input-group .form-control:focus {
-  border-color: #ebaca5;
+  border-color: #9d8475;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -111,7 +112,7 @@ select:-webkit-autofill:focus {
 
 .input-group .input-group-btn .btn {
   border-radius: 0;
-  border-color: #ebaca5;
+  border-color: #9d8475;
   padding: 0 25px;
   font-size: 28px;
   z-index: 0;
@@ -119,8 +120,8 @@ select:-webkit-autofill:focus {
 
 .alert-success {
   color: #faf3eb;
-  background-color: #ebaca5;
-  border-color: #ebaca5;
+  background-color: #9d8475;
+  border-color: #9d8475;
   border-radius: 0;
 }
 
@@ -129,9 +130,9 @@ select:-webkit-autofill:focus {
 }
 
 .btn-xl {
-  color: #000000;
+  color: #beb9c0;
   background-color: transparent;
-  border: 2px solid #000000;
+  border: 2px solid #beb9c0;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -143,8 +144,8 @@ select:-webkit-autofill:focus {
 .btn-xl:focus,
 .btn-xl:active {
   color: #ffffff !important;
-  background-color: #ebaca5 !important;
-  border: 2px solid #ebaca5 !important;
+  background-color: #9d8475 !important;
+  border: 2px solid #9d8475 !important;
   -webkit-transition: all ease 0.5s;
 }
 
@@ -179,7 +180,7 @@ select:-webkit-autofill:focus {
   background-color: #ffffff;
   border-color: #ffffff;
   text-transform: uppercase;
-  color: #ebaca5;
+  color: #9d8475;
   font-size: 12px;
   border-radius: 0;
 }
@@ -199,6 +200,7 @@ select:-webkit-autofill:focus {
   font-size: 12px;
   position: relative;
   transition: all .3s;
+  color: #ffffff;
 }
 
 .navbar-custom .nav li a:after {
@@ -234,7 +236,7 @@ select:-webkit-autofill:focus {
 }
 
 .navbar-nav > .active > a {
-  background-color: #ebaca5 !important;
+  background-color: #9d8475 !important;
 }
 
 .navbar-custom .nav .active a {
@@ -319,19 +321,19 @@ header {
 }
 
 .carousel-inner .carusel4 {
-  background: url("../img/flowers-2044789_1920.jpg") no-repeat center top;
+  background: url("../img/cookies-1372607_1920.jpg") no-repeat center center;
 }
 
 .carousel-inner .carusel3 {
-  background: url("../img/peonies-2317596_1920.jpg") no-repeat center center;
+  background: url("../img/basil-2367509_1920.jpg") no-repeat center center;
 }
 
 .carousel-inner .carusel2 {
-  background: url("../img/basket-1846135_1920.jpg") no-repeat center top;
+  background: url("../img/food-2185353_1920.jpg") no-repeat center center;
 }
 
 .carousel-inner .carusel1 {
-  background: url("../img/bouquet-of-flowers-1149099_1920.jpg") no-repeat center top;
+  background: url("../img/delicious-1866631_1920.jpg") no-repeat center center;
 }
 
 .carousel-fade .carousel-inner .item {
@@ -405,6 +407,7 @@ header {
 
 section {
   padding: 100px 0;
+  background-color: #282623;
 }
 
 section .section-name {
@@ -419,7 +422,7 @@ section .section-name {
 section h4.section-name .fa {
   font-size: initial;
   margin-left: 5px;
-  color: #ebaca5;
+  color: #9d8475;
 }
 
 /*Blog section*/
@@ -446,7 +449,7 @@ section h4.section-name .fa {
 }
 
 .blog-image {
-  background: url("../img/bouquet-of-flowers-1149099_1920.jpg") no-repeat center center;
+  background: url("../img/delicious-1866631_1920.jpg") no-repeat center center;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -454,7 +457,7 @@ section h4.section-name .fa {
 
 /*About section*/
 #about {
-  background-color: #f5eef0;
+  background-color: #1c1b19;
 }
 
 .about-heading {
@@ -474,7 +477,7 @@ section h4.section-name .fa {
 
 .about-separator {
   width: 100%;
-  border-bottom: 1px solid #ebaca5;
+  border-bottom: 1px solid #9d8475;
   margin: 20px auto;
 }
 
@@ -521,7 +524,7 @@ section h4.section-name .fa {
   background-repeat: no-repeat;
   height: 200px;
   margin: 20px auto;
-  border: 3px solid #ebaca5;
+  border: 3px solid #9d8475;
   border-radius: 50%;
   width: 200px;
 }
@@ -545,7 +548,7 @@ section h4.section-name .fa {
 /*Quote section*/
 
 #quote {
-  background-image: url(../img/basket-1846135_1920.jpg);
+  background-image: url(../img/delicious-1866631_1920.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -568,7 +571,7 @@ section h4.section-name .fa {
 
 .quote-separator {
   width: 4%;
-  border-bottom: 2px solid #ebaca5;
+  border-bottom: 2px solid #9d8475;
   margin: 25px auto;
 }
 
@@ -587,7 +590,7 @@ blockquote {
 .quote-footer {
   font-size: 16px;
   font-style: normal;
-  color: #ebaca5;
+  color: #9d8475;
   padding: 40px 0 0;
 }
 
@@ -599,7 +602,7 @@ blockquote {
 .service-image1 {
   height: 53%;
   width: 77%;
-  background: url("../img/beautiful-1835116_1920.jpg") no-repeat center center;
+  background: url("../img/delicious-1866631_1920.jpg") no-repeat center center;
   background-size: cover;
   position: absolute;
   top: 3%;
@@ -612,7 +615,7 @@ blockquote {
 .service-image2 {
   height: 53%;
   width: 77%;
-  background: url("../img/flowers-2044789_1920.jpg") no-repeat center center;
+  background: url("../img/delicious-1866631_1920.jpg") no-repeat center center;
   background-size: cover;
   position: absolute;
   top: 40%;
@@ -646,7 +649,7 @@ blockquote {
 
 .service-separator {
   width: 8%;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #beb9c0;
   margin: 12px 0;
 }
 
@@ -656,25 +659,25 @@ blockquote {
 }
 
 .service-icon {
-  color: #ebaca5;
+  color: #9d8475;
 }
 
 .carousel-control {
   background: none !important;
   opacity: 1;
-  color: #ebaca5;
+  color: #9d8475;
   width: 6%;
 }
 
 .carousel-control:hover,
 .carousel-control:active,
 .carousel-control:focus {
-  color: #ebaca5;
+  color: #9d8475;
 }
 
 /*Partners section*/
 #partners {
-  background-color: #f5eef0;
+  background-color: #1c1b19;
   padding: 30px 0;
 }
 
@@ -700,7 +703,7 @@ blockquote {
 }
 
 #testimonials h6 {
-  color: #ebaca5;
+  color: #9d8475;
   text-transform: lowercase;
   letter-spacing: 1px;
   font-weight: 500;
@@ -778,7 +781,7 @@ blockquote {
 .portfolio-cell .portfolio-info {
   padding: 35px 40px;
   height: 100%;
-  background-color: #ebaca5;
+  background-color: #9d8475;
   color: #faf3eb;
 }
 
@@ -797,6 +800,7 @@ blockquote {
 
 .portfolio-cell p {
   letter-spacing: 1px;
+  color: #faf3eb;
 }
 
 .portfolio-cell .portfolio-separator {
@@ -860,8 +864,8 @@ figure.effect-layla figcaption::before {
   right: 30px;
   bottom: 50px;
   left: 30px;
-  border-top: 2px solid #ebaca5;
-  border-bottom: 2px solid #ebaca5;
+  border-top: 2px solid #9d8475;
+  border-bottom: 2px solid #9d8475;
   -webkit-transform: scale(0, 1);
   transform: scale(0, 1);
   -webkit-transform-origin: 0 0;
@@ -873,8 +877,8 @@ figure.effect-layla figcaption::after {
   right: 50px;
   bottom: 30px;
   left: 50px;
-  border-right: 2px solid #ebaca5;
-  border-left: 2px solid #ebaca5;
+  border-right: 2px solid #9d8475;
+  border-left: 2px solid #9d8475;
   -webkit-transform: scale(1, 0);
   transform: scale(1, 0);
   -webkit-transform-origin: 100% 0;
@@ -946,24 +950,24 @@ figure.effect-layla:hover .portfolio-cell {
 }
 
 .portfolio-cell1 {
-  background-image: url('../img/basket-1846135_1920.jpg');
+  background-image: url('../img/delicious-1866631_1920.jpg');
   background-position: center center;
 }
 
 .portfolio-cell3 {
-  background-image: url('../img/bouquet-of-flowers-1149099_1920.jpg');
+  background-image: url('../img/food-2203671_1920.jpg');
 }
 
 .portfolio-cell4 {
-  background-image: url('../img/flowers-2044789_1920.jpg');
+  background-image: url('../img/dish-1851255_1920.jpg');
 }
 
 .portfolio-cell5 {
-  background-image: url('../img/flower-731830_1920.jpg');
+  background-image: url('../img/cookies-1372607_1920.jpg');
 }
 
 .portfolio-cell6 {
-  background-image: url('../img/bouquet-1915255_1920.jpg');
+  background-image: url('../img/bread-1750987_1920.jpg');
 }
 
 .form-control:focus {
@@ -972,7 +976,7 @@ figure.effect-layla:hover .portfolio-cell {
 
 /*Contact section*/
 #contact {
-  background-image: url(../img/bouquet-of-flowers-1149099_1920.jpg);
+  background-image: url(../img/delicious-1866631_1920.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1028,7 +1032,7 @@ figure.effect-layla:hover .portfolio-cell {
 }
 
 .text-danger {
-  color: #ebaca5;
+  color: #9d8475;
 }
 
 .help-block {
@@ -1047,7 +1051,7 @@ footer p {
 }
 
 .address {
-  border-left: 1px solid #ebaca5;
+  border-left: 1px solid #9d8475;
 }
 
 .address .fa {
@@ -1077,7 +1081,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #ebaca5;
+  background-color: #9d8475;
   border-radius: 100px;
   color: #ffffff;
 }
@@ -1103,7 +1107,6 @@ ul.social-buttons li a:active {
   background-size: cover;
   -o-background-size: cover;
   color: #000000;
-
   border-radius: 0;
   background-clip: border-box;
   -webkit-box-shadow: none;
@@ -1111,6 +1114,7 @@ ul.social-buttons li a:active {
   border: none;
   min-height: 100%;
   padding: 50px 0;
+  background-color: #282623;
 }
 
 .modal-name {
@@ -1150,7 +1154,7 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content .modal-separator {
   width: 7%;
-  border-bottom: 3px solid #ebaca5;
+  border-bottom: 3px solid #9d8475;
   margin: 15px 0 15px 100px;
 }
 
@@ -1161,13 +1165,13 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-content .modal-text-col h2 {
   text-align: center;
   font-style: italic;
-  color: #ebaca5;
+  color: #9d8475;
   margin: 0 auto;
 }
 
 .portfolio-modal .modal-content .modal-text-col h5 {
   text-align: center;
-  color: #ebaca5;
+  color: #9d8475;
   margin: 25px 0 10px;
   letter-spacing: 1px;
   font-weight: 600;
@@ -1204,7 +1208,7 @@ ul.social-buttons li a:active {
   height: 55px;
   width: 1px;
   margin-left: 35px;
-  background-color: #222222;
+  background-color: #beb9c0;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -1214,7 +1218,7 @@ ul.social-buttons li a:active {
 .portfolio-modal .close-modal .lr .rl {
   height: 55px;
   width: 1px;
-  background-color: #222222;
+  background-color: #beb9c0;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
@@ -1332,7 +1336,7 @@ img::-moz-selection {
   }
 
   .navbar-custom .nav > li {
-    border-bottom: 1px solid #ebaca5;
+    border-bottom: 1px solid #9d8475;
   }
 
   .navbar-custom .navbar-nav > .active > a {
