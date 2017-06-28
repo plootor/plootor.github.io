@@ -5,7 +5,6 @@ var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var uncss = require('gulp-uncss');
 var less = require('gulp-less');
-var pkg = require('./package.json');
 
 // Minify compiled CSS
 gulp.task('minify-css', function() {
@@ -32,7 +31,7 @@ gulp.task('uncss', function() {
 
 // Compile LESS files from /less into /css
 gulp.task('less', function() {
-  return gulp.src('less/style.less')
+  return gulp.src('less/style-dark.less')
     .pipe(less())
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({

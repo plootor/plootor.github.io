@@ -1,7 +1,30 @@
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
 body {
   overflow-x: hidden;
   font-family: 'Raleway', sans-serif;
   height: 100%;
+  color: #beb9c0;
+  background-color: #282623;
 }
 p {
   font-size: 14px;
@@ -11,7 +34,7 @@ p {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 80px;
-  color: #ebaca5;
+  color: #9d8475;
   text-transform: none;
   letter-spacing: 1px;
 }
@@ -76,38 +99,34 @@ h6 {
 #subscribe {
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: #f5eef0;
+  background-color: #1c1b19;
 }
 #subscribe .form-control {
-  color: #beb9c0;
+  border: 2px solid #9d8475;
   font-size: 12px;
   letter-spacing: 1px;
 }
+#subscribe .input-group .input-group-btn .btn {
+  border-color: #9d8475;
+}
 #contact {
-  background-image: url(../img/bouquet-of-flowers-1149099_1920.jpg);
+  background-image: url(../img/delicious-1866631_1920.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
 }
-#contact .form-control {
-  color: #ffffff !important;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 12px;
-  letter-spacing: 1px;
-}
 #contact ::-webkit-input-placeholder {
-  color: #ffffff !important;
+  color: #beb9c0 !important;
 }
 #contact ::-moz-placeholder {
-  color: #ffffff !important;
+  color: #beb9c0 !important;
 }
 #contact :-ms-input-placeholder {
-  color: #ffffff !important;
+  color: #beb9c0 !important;
 }
 #contact .section-name {
-  color: #ffffff;
+  color: #beb9c0;
 }
 #contact .form-group {
   margin-bottom: 25px;
@@ -116,15 +135,19 @@ h6 {
   height: 50px;
   border-radius: 0;
   border: 0;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #fff;
   box-shadow: none;
   background-color: transparent;
+  color: #beb9c0 !important;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 12px;
 }
 #contact .btn-xl {
   margin-top: 70px;
   width: 50%;
-  color: #ffffff;
-  border-color: #ffffff;
+  color: #beb9c0;
+  border-color: #fff;
 }
 .subscribe-heading {
   margin-bottom: 70px;
@@ -132,19 +155,18 @@ h6 {
 .input-group .form-control {
   border-radius: 0;
   background-color: transparent;
-  border: 2px solid #ebaca5;
+  border: 2px solid #beb9c0;
   box-shadow: none;
   z-index: 0;
 }
 .input-group .form-control:focus {
-  border-color: #ebaca5;
+  border-color: #beb9c0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 .input-group .input-group-btn .btn {
   border-radius: 0;
-  border-color: #ebaca5;
   padding: 0 25px;
   font-size: 28px;
   z-index: 0;
@@ -182,17 +204,17 @@ textarea:-webkit-autofill:focus {
 }
 .alert-success {
   color: #faf3eb;
-  background-color: #ebaca5;
-  border-color: #ebaca5;
+  background-color: #9d8475;
+  border-color: #beb9c0;
   border-radius: 0;
 }
 .alert-danger {
   border-radius: 0;
 }
 .btn-xl {
-  color: #000000;
+  color: #beb9c0;
   background-color: transparent;
-  border: 2px solid #000000;
+  border: 2px solid #beb9c0;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -201,20 +223,20 @@ textarea:-webkit-autofill:focus {
 }
 .btn-xl:hover {
   color: #ffffff !important;
-  background-color: #ebaca5 !important;
-  border: 2px solid #ebaca5 !important;
+  background-color: #9d8475 !important;
+  border: 2px solid #9d8475 !important;
   -webkit-transition: all ease 0.5s;
 }
 .btn-xl:focus {
   color: #ffffff !important;
-  background-color: #ebaca5 !important;
-  border: 2px solid #ebaca5 !important;
+  background-color: #9d8475 !important;
+  border: 2px solid #9d8475 !important;
   -webkit-transition: all ease 0.5s;
 }
 .btn-xl:active {
   color: #ffffff !important;
-  background-color: #ebaca5 !important;
-  border: 2px solid #ebaca5 !important;
+  background-color: #9d8475 !important;
+  border: 2px solid #9d8475 !important;
   -webkit-transition: all ease 0.5s;
   background-image: none;
 }
@@ -235,9 +257,9 @@ textarea:-webkit-autofill:focus {
 }
 .navbar-custom .navbar-toggle {
   background-color: #ffffff;
-  border-color: #ffffff;
+  border-color: #beb9c0;
   text-transform: uppercase;
-  color: #ebaca5;
+  color: #9d8475;
   font-size: 12px;
   border-radius: 0;
 }
@@ -251,7 +273,7 @@ textarea:-webkit-autofill:focus {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
-  color: #000000;
+  color: #beb9c0;
   padding: 30px 10px 15px;
   margin: 0 10px;
   font-size: 12px;
@@ -280,13 +302,13 @@ textarea:-webkit-autofill:focus {
 }
 .navbar-custom .nav li.active a:hover {
   font-weight: 500;
-  color: #ffffff;
+  color: #beb9c0;
 }
 .navbar-custom .nav li.active a:hover:after {
   width: 0;
 }
 .navbar-custom .nav .active a {
-  color: #ffffff;
+  color: #beb9c0;
 }
 .navbar-custom.affix {
   background: #fdfafb;
@@ -302,7 +324,7 @@ textarea:-webkit-autofill:focus {
   float: none;
 }
 .navbar-nav > .active > a {
-  background-color: #ebaca5 !important;
+  background-color: #9d8475 !important;
 }
 .navbar-nav > .logo > a {
   padding: 0 !important;
@@ -332,7 +354,7 @@ html {
 header {
   height: 83%;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   background-color: white;
 }
 .item {
@@ -356,16 +378,16 @@ header {
   background-size: cover !important;
 }
 .carousel-inner .carusel4 {
-  background: url("../img/flowers-2044789_1920.jpg") no-repeat center top;
+  background: url("../img/delicious-1866631_1920.jpg") no-repeat center top;
 }
 .carousel-inner .carusel3 {
-  background: url("../img/peonies-2317596_1920.jpg") no-repeat center center;
+  background: url("../img/cookies-1372607_1920.jpg") no-repeat center center;
 }
 .carousel-inner .carusel2 {
-  background: url("../img/basket-1846135_1920.jpg") no-repeat center top;
+  background: url("../img/food-2185353_1920.jpg") no-repeat center top;
 }
 .carousel-inner .carusel1 {
-  background: url("../img/bouquet-of-flowers-1149099_1920.jpg") no-repeat center top;
+  background: url("../img/basil-2367509_1920.jpg") no-repeat center top;
 }
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
@@ -421,7 +443,7 @@ section .section-name {
 section h4.section-name .fa {
   font-size: initial;
   margin-left: 5px;
-  color: #ebaca5;
+  color: #9d8475;
 }
 .blog-title {
   text-indent: 30px;
@@ -442,13 +464,13 @@ section h4.section-name .fa {
   right: 0;
 }
 .blog-image {
-  background: url("../img/bouquet-of-flowers-1149099_1920.jpg") no-repeat center center;
+  background: url("../img/food-2185353_1920.jpg") no-repeat center center;
   background-size: cover;
   height: 100%;
   width: 100%;
 }
 #about {
-  background-color: #f5eef0;
+  background-color: #1c1b19;
 }
 #about p:first-child {
   font-weight: 600;
@@ -468,7 +490,7 @@ section h4.section-name .fa {
 }
 .about-separator {
   width: 100%;
-  border-bottom: 1px solid #ebaca5;
+  border-bottom: 1px solid #9d8475;
   margin: 20px auto;
 }
 .team-heading {
@@ -492,7 +514,7 @@ section h4.section-name .fa {
   font-size: 10px;
 }
 .team-image-cell {
-  border-left: 2px solid #f5eef0;
+  border-left: 2px solid #beb9c0;
 }
 .team-cell {
   -webkit-background-size: cover;
@@ -503,7 +525,7 @@ section h4.section-name .fa {
   background-repeat: no-repeat;
   height: 200px;
   margin: 20px auto;
-  border: 3px solid #ebaca5;
+  border: 3px solid #9d8475;
   border-radius: 50%;
   width: 200px;
 }
@@ -520,14 +542,14 @@ section h4.section-name .fa {
   background-image: url('../img/team/portrait-2226001_1280.jpg');
 }
 #quote {
-  background-image: url(../img/basket-1846135_1920.jpg);
+  background-image: url(../img/delicious-1866631_1920.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
 #quote h5 {
-  color: #ffffff;
+  color: #beb9c0;
   text-align: center;
   letter-spacing: 1px;
 }
@@ -540,7 +562,7 @@ section h4.section-name .fa {
 }
 .quote-separator {
   width: 4%;
-  border-bottom: 2px solid #ebaca5;
+  border-bottom: 2px solid #9d8475;
   margin: 25px auto;
 }
 blockquote {
@@ -557,7 +579,7 @@ blockquote {
 .quote-footer {
   font-size: 16px;
   font-style: normal;
-  color: #ebaca5;
+  color: #9d8475;
   padding: 40px 0 0;
 }
 .service-image-container {
@@ -567,19 +589,19 @@ blockquote {
 .service-image1 {
   height: 53%;
   width: 77%;
-  background: url("../img/beautiful-1835116_1920.jpg") no-repeat center center;
+  background: url("../img/delicious-1866631_1920.jpg") no-repeat center center;
   background-size: cover;
   position: absolute;
   top: 3%;
   left: 15px;
-  opacity: 2;
-  z-index: -1;
+  opacity: 1;
+  z-index: 2;
   border: 3px solid #faf3eb;
 }
 .service-image2 {
   height: 53%;
   width: 77%;
-  background: url("../img/flowers-2044789_1920.jpg") no-repeat center center;
+  background: url("../img/food-2185353_1920.jpg") no-repeat center center;
   background-size: cover;
   position: absolute;
   top: 40%;
@@ -599,7 +621,7 @@ blockquote {
 }
 .service-separator {
   width: 8%;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #beb9c0;
   margin: 12px 0;
 }
 .service-text {
@@ -607,25 +629,25 @@ blockquote {
   text-align: justify;
 }
 .service-icon {
-  color: #ebaca5;
+  color: #9d8475;
 }
 .carousel-control {
   background: none !important;
   opacity: 1;
-  color: #ebaca5;
+  color: #9d8475;
   width: 6%;
 }
 .carousel-control:hover {
-  color: #ebaca5;
+  color: #9d8475;
 }
 .carousel-control:active {
-  color: #ebaca5;
+  color: #9d8475;
 }
 .carousel-control:focus {
-  color: #ebaca5;
+  color: #9d8475;
 }
 #partners {
-  background-color: #f5eef0;
+  background-color: #1c1b19;
   padding: 30px 0;
 }
 #carousel-reviews .glyphicon {
@@ -645,7 +667,7 @@ blockquote {
   letter-spacing: 2px;
 }
 #testimonials h6 {
-  color: #ebaca5;
+  color: #9d8475;
   text-transform: lowercase;
   letter-spacing: 1px;
   font-weight: 500;
@@ -665,7 +687,7 @@ blockquote {
 .portfolio-nav a {
   margin: 0 15px;
   padding-bottom: 5px;
-  color: #000000;
+  color: #beb9c0;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
@@ -693,12 +715,12 @@ blockquote {
   background-position: center center;
   background-repeat: no-repeat;
   height: 100%;
-  color: #000000;
+  color: #beb9c0;
 }
 .portfolio-cell .portfolio-info {
   padding: 35px 40px;
   height: 100%;
-  background-color: #ebaca5;
+  background-color: #9d8475;
   color: #faf3eb;
 }
 .portfolio-cell h6 {
@@ -768,7 +790,7 @@ figcaption {
   height: 100%;
 }
 figure.effect-layla {
-  background-color: #000000;
+  background-color: #beb9c0;
   color: #ffffff;
 }
 figure.effect-layla .portfolio-cell {
@@ -787,8 +809,8 @@ figure.effect-layla figcaption::before {
   right: 30px;
   bottom: 50px;
   left: 30px;
-  border-top: 2px solid #ebaca5;
-  border-bottom: 2px solid #ebaca5;
+  border-top: 2px solid #9d8475;
+  border-bottom: 2px solid #9d8475;
   -webkit-transform: scale(0, 1);
   transform: scale(0, 1);
   -webkit-transform-origin: 0 0;
@@ -804,8 +826,8 @@ figure.effect-layla figcaption::after {
   right: 50px;
   bottom: 30px;
   left: 50px;
-  border-right: 2px solid #ebaca5;
-  border-left: 2px solid #ebaca5;
+  border-right: 2px solid #9d8475;
+  border-left: 2px solid #9d8475;
   -webkit-transform: scale(1, 0);
   transform: scale(1, 0);
   -webkit-transform-origin: 100% 0;
@@ -856,20 +878,20 @@ figure.effect-layla:hover h2 {
   transition-delay: 0.15s;
 }
 .portfolio-cell1 {
-  background-image: url('../img/basket-1846135_1920.jpg');
+  background-image: url('../img/delicious-1866631_1920.jpg');
   background-position: center center;
 }
 .portfolio-cell3 {
-  background-image: url('../img/bouquet-of-flowers-1149099_1920.jpg');
+  background-image: url('../img/food-2185353_1920.jpg');
 }
 .portfolio-cell4 {
-  background-image: url('../img/flowers-2044789_1920.jpg');
+  background-image: url('../img/basil-2367509_1920.jpg');
 }
 .portfolio-cell5 {
-  background-image: url('../img/flower-731830_1920.jpg');
+  background-image: url('../img/cookies-1372607_1920.jpg');
 }
 .portfolio-cell6 {
-  background-image: url('../img/bouquet-1915255_1920.jpg');
+  background-image: url('../img/bread-1750987_1920.jpg');
 }
 .form-control:focus {
   border-color: inherit;
@@ -879,22 +901,23 @@ figure.effect-layla:hover h2 {
   margin-bottom: 60px;
 }
 .text-danger {
-  color: #ebaca5;
+  color: #9d8475;
 }
 .help-block {
   position: absolute;
   top: 100%;
   margin-top: 0;
 }
-footer {
+.footer-block {
   padding: 30px 0;
+  background-color: #282623;
 }
-footer p {
+.footer-block p {
   font-size: 12px;
   margin-bottom: 0;
 }
 .address {
-  border-left: 1px solid #ebaca5;
+  border-left: 1px solid #9d8475;
 }
 .address .fa {
   padding-right: 5px;
@@ -911,26 +934,26 @@ ul.social-buttons li a {
   border-radius: 100%;
   font-size: 15px;
   line-height: 35px;
-  color: #000000;
+  color: #beb9c0;
   outline: none;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.5s;
 }
 ul.social-buttons li a:hover {
-  background-color: #ebaca5;
+  background-color: #9d8475;
   border-radius: 100px;
-  color: #ffffff;
+  color: #beb9c0;
 }
 ul.social-buttons li a:focus {
-  background-color: #ebaca5;
+  background-color: #9d8475;
   border-radius: 100px;
-  color: #ffffff;
+  color: #beb9c0;
 }
 ul.social-buttons li a:active {
-  background-color: #ebaca5;
+  background-color: #9d8475;
   border-radius: 100px;
-  color: #ffffff;
+  color: #beb9c0;
 }
 .btn:focus {
   outline: none;
@@ -947,6 +970,7 @@ ul.social-buttons li a:active {
   width: auto;
 }
 .portfolio-modal .modal-content {
+  background-color: #282623;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -954,7 +978,7 @@ ul.social-buttons li a:active {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  color: #000000;
+  color: #beb9c0;
   border-radius: 0;
   background-clip: border-box;
   -webkit-box-shadow: none;
@@ -977,7 +1001,7 @@ ul.social-buttons li a:active {
 }
 .portfolio-modal .modal-content .modal-separator {
   width: 7%;
-  border-bottom: 3px solid #ebaca5;
+  border-bottom: 3px solid #9d8475;
   margin: 15px 0 15px 100px;
 }
 .portfolio-modal .modal-content .modal-text-col {
@@ -986,12 +1010,12 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-content .modal-text-col h2 {
   text-align: center;
   font-style: italic;
-  color: #ebaca5;
+  color: #9d8475;
   margin: 0 auto;
 }
 .portfolio-modal .modal-content .modal-text-col h5 {
   text-align: center;
-  color: #ebaca5;
+  color: #9d8475;
   margin: 25px 0 10px;
   letter-spacing: 1px;
   font-weight: 600;
@@ -1018,7 +1042,7 @@ ul.social-buttons li a:active {
   height: 55px;
   width: 1px;
   margin-left: 35px;
-  background-color: #222222;
+  background-color: #beb9c0;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -1027,7 +1051,7 @@ ul.social-buttons li a:active {
 .portfolio-modal .close-modal .lr .rl {
   height: 55px;
   width: 1px;
-  background-color: #222222;
+  background-color: #beb9c0;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
@@ -1151,7 +1175,7 @@ img::-moz-selection {
   .navbar-custom.affix .nav li a {
     margin-bottom: 0;
     padding: 15px 10px;
-    color: #1d2f3b;
+    color: #9d8475;
     text-align: center;
     line-height: 20px;
   }
@@ -1169,12 +1193,12 @@ img::-moz-selection {
   .navbar-custom .nav li a {
     margin-bottom: 0;
     padding: 15px 10px;
-    color: #1d2f3b;
+    color: #9d8475;
     text-align: center;
     line-height: 20px;
   }
   .navbar-custom .nav > li {
-    border-bottom: 1px solid #ebaca5;
+    border-bottom: 1px solid #9d8475;
   }
   .navbar-custom .navbar-nav > .active > a {
     margin: 0;

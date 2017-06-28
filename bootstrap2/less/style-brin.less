@@ -1,9 +1,10 @@
-@import "variables";
+@import "variables-brin";
 
 body {
   overflow-x: hidden;
   font-family: @font_family_1;
   height: 100%;
+  color: @body_color;
 }
 p {
   font-size: 14px;
@@ -13,7 +14,7 @@ p {
   font-family: @font_family_2;
   font-weight: 700;
   font-size: 80px;
-  color: @color_1;
+  color: @section_heading_color;
   text-transform: none;
   letter-spacing: 1px;
 }
@@ -78,7 +79,7 @@ h6 {
 #subscribe {
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: @background_color_1;
+  background-color: @about_bg_color;
   .form-control {
     color: @color_3;
     font-size: 12px;
@@ -204,7 +205,7 @@ textarea {
 .btn-xl {
   color: @color_5;
   background-color: @background_color_2;
-  border: 2px solid #000000;
+  border: 2px solid @color_5;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -248,7 +249,7 @@ textarea {
     background-color: @background_color_4;
     border-color: @border_color_4;
     text-transform: uppercase;
-    color: @color_1;
+    color: @section_heading_color;
     font-size: 12px;
     border-radius: 0;
     &:hover {
@@ -448,6 +449,7 @@ header {
   display: none !important;
 }
 section {
+  background-color: @section_color;
   padding: 100px 0;
   .section-name {
     margin-top: 0;
@@ -461,7 +463,7 @@ section {
     .fa {
       font-size: initial;
       margin-left: 5px;
-      color: @color_1;
+      color: @section_heading_color;
     }
   }
 }
@@ -492,7 +494,7 @@ section {
   width: 100%;
 }
 #about {
-  background-color: @background_color_1;
+  background-color: @about_bg_color;
   p {
     &:first-child {
       font-weight: 600;
@@ -605,7 +607,7 @@ blockquote {
 .quote-footer {
   font-size: 16px;
   font-style: normal;
-  color: @color_1;
+  color: @section_heading_color;
   padding: 40px 0 0;
 }
 .service-image-container {
@@ -655,25 +657,25 @@ blockquote {
   text-align: justify;
 }
 .service-icon {
-  color: @color_1;
+  color: @section_heading_color;
 }
 .carousel-control {
   background: none !important;
   opacity: 1;
-  color: @color_1;
+  color: @section_heading_color;
   width: 6%;
   &:hover {
-    color: @color_1;
+    color: @section_heading_color;
   }
   &:active {
-    color: @color_1;
+    color: @section_heading_color;
   }
   &:focus {
-    color: @color_1;
+    color: @section_heading_color;
   }
 }
 #partners {
-  background-color: @background_color_1;
+  background-color: @about_bg_color;
   padding: 30px 0;
 }
 #carousel-reviews {
@@ -696,7 +698,7 @@ blockquote {
     letter-spacing: 2px;
   }
   h6 {
-    color: @color_1;
+    color: @section_heading_color;
     text-transform: lowercase;
     letter-spacing: 1px;
     font-weight: 500;
@@ -941,7 +943,7 @@ figure.effect-layla {
   margin-bottom: 60px;
 }
 .text-danger {
-  color: @color_1;
+  color: @section_heading_color;
 }
 .help-block {
   position: absolute;
@@ -1051,12 +1053,12 @@ ul.social-buttons {
       h2 {
         text-align: center;
         font-style: italic;
-        color: @color_1;
+        color: @section_heading_color;
         margin: 0 auto;
       }
       h5 {
         text-align: center;
-        color: @color_1;
+        color: @section_heading_color;
         margin: 25px 0 10px;
         letter-spacing: 1px;
         font-weight: 600;
@@ -1121,9 +1123,9 @@ ul.social-buttons {
     letter-spacing: 2px;
     text-transform: capitalize;
     font-style: italic;
-    color: @color_11;
+    color: @section_heading_color;
     margin: 0;
-    background-color: @background_color_10;
+    background-color: @about_bg_color;
     padding: 16% 0;
     text-align: center;
   }
@@ -1230,7 +1232,7 @@ img {
         a {
           margin-bottom: 0;
           padding: 15px 10px;
-          color: @color_11;
+          color: @section_heading_color;
           text-align: center;
           line-height: 20px;
         }
@@ -1254,7 +1256,7 @@ img {
         a {
           margin-bottom: 0;
           padding: 15px 10px;
-          color: @color_11;
+          color: @section_heading_color;
           text-align: center;
           line-height: 20px;
         }

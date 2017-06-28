@@ -1,30 +1,28 @@
-// Agency Theme JavaScript
-
-(function($) {
-  // "use strict"; // Start of use strict
-
-  // Highlight the top nav as scrolling occurs
+"use strict";
+(function ($) {
   $('body').scrollspy({
-      target: '.navbar-fixed-top',
-      offset: 51
+    target: '.navbar-fixed-top',
+    offset: 51
   });
-  if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+  if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     // You are in mobile browser
     $('.fade-animate').addClass("hide-el").viewportChecker({
       classToAdd: 'show-el animated fadeInUp',
       offset: 80
     });
   }
+
   // Closes the Responsive Menu on Menu Item Click
   $('.navbar-collapse ul li a').on('click', function () {
-    $('.navbar-toggle:visible').trigger( "click" );
+    $('.navbar-toggle:visible').trigger("click");
   });
 
   // Offset for Main Navigation
   $('#mainNav').affix({
-      offset: {
-          top: 100
-      }
+    offset: {
+      top: 100
+    }
   });
 
   var $grid = $('.grid').masonry({
@@ -32,24 +30,28 @@
     percentPosition: true,
     columnWidth: '.grid-sizer'
   });
- $grid.imagesLoaded().progress(function () {
+  $grid.imagesLoaded().progress(function () {
     $grid.masonry();
- });
+  });
 
   var toolbar = document.querySelector(".portfolio-nav");
-  toolbar.addEventListener("click", function(e) {
+  toolbar.addEventListener("click", function (e) {
     $('.portfolio-nav a.active').removeClass('active');
     $(e.target).addClass('active');
     var anchor = $(e.target).attr('data-name');
-    if(!anchor) return false;
+    if (!anchor) {
+      return false;
+    }
     runFunc(anchor);
     event.preventDefault();
     event.stopPropagation();
   });
   var toolbar = document.querySelector("header");
-  toolbar.addEventListener("click", function(e) {
+  toolbar.addEventListener("click", function (e) {
     var $anchor = $(e.target).attr('href');
-    if(!$anchor) return false;
+    if (!$anchor) {
+      return false;
+    }
     $('html, body').stop().animate({
       scrollTop: ($($anchor).offset().top - 50)
     }, 1250, 'easeInOutExpo');
@@ -57,9 +59,7 @@
     event.stopPropagation();
   });
 
-
-  $('.carousel').bcSwipe({ threshold: 50 });
-
+  $('.carousel').bcSwipe({threshold: 50});
   jQuery(window).scroll(function () {
     var offset = 250;
     var duration = 300;
@@ -69,7 +69,6 @@
       jQuery('.back-to-top').fadeOut(duration);
     }
   });
-
 
   $("#subscribe-form input").jqBootstrapValidation({
     preventSubmit: true,

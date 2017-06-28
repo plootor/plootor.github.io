@@ -1,9 +1,36 @@
-@import "variables";
+@import "variables-dark";
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
 
 body {
   overflow-x: hidden;
   font-family: @font_family_1;
   height: 100%;
+  color: @text_color;
+  background-color: @base_bg_color;
 }
 p {
   font-size: 14px;
@@ -13,7 +40,7 @@ p {
   font-family: @font_family_2;
   font-weight: 700;
   font-size: 80px;
-  color: @color_1;
+  color: @accent_color;
   text-transform: none;
   letter-spacing: 1px;
 }
@@ -78,31 +105,29 @@ h6 {
 #subscribe {
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: @background_color_1;
+  background-color: @base_darker_bg_color;
   .form-control {
-    color: @color_3;
+    border: 2px solid @accent_color;
     font-size: 12px;
     letter-spacing: 1px;
+  }
+  .input-group {
+    .input-group-btn {
+      .btn {
+        border-color: @accent_color;
+      }
+    }
   }
 }
 #contact {
-  .form-control {
-    color: @color_2 !important;
-    font-size: 12px;
-    letter-spacing: 1px;
-    font-weight: 400;
-    color: @color_2;
-    font-size: 12px;
-    letter-spacing: 1px;
-  }
   & ::-webkit-input-placeholder {
-    color: @color_2 !important;
+    color: @text_color !important;
   }
   & ::-moz-placeholder {
-    color: @color_2 !important;
+    color: @text_color !important;
   }
   & :-ms-input-placeholder {
-    color: @color_2 !important;
+    color: @text_color !important;
   }
   background-image: @contact_img;
   background-position: center center;
@@ -110,7 +135,7 @@ h6 {
   background-attachment: fixed;
   position: relative;
   .section-name {
-    color: @color_2;
+    color: @text_color;
   }
   .form-group {
     margin-bottom: 25px;
@@ -118,16 +143,20 @@ h6 {
       height: 50px;
       border-radius: 0;
       border: 0;
-      border-bottom: 2px solid #ffffff;
+      border-bottom: 2px solid @border_button_contact_color;
       box-shadow: none;
-      background-color: @background_color_2;
+      background-color: @color_transparent;
+      color: @text_color !important;
+      letter-spacing: 1px;
+      font-weight: 400;
+      font-size: 12px;
     }
   }
   .btn-xl {
     margin-top: 70px;
     width: 50%;
-    color: @color_2;
-    border-color: @border_color_4;
+    color: @text_color;
+    border-color: @border_button_contact_color;
   }
 }
 .subscribe-heading {
@@ -136,12 +165,12 @@ h6 {
 .input-group {
   .form-control {
     border-radius: 0;
-    background-color: @background_color_2;
-    border: 2px solid #ebaca5;
+    background-color: @color_transparent;
+    border: 2px solid @text_color;
     box-shadow: none;
     z-index: 0;
     &:focus {
-      border-color: @border_color_1;
+      border-color: @text_color;
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none;
@@ -150,7 +179,6 @@ h6 {
   .input-group-btn {
     .btn {
       border-radius: 0;
-      border-color: @border_color_1;
       padding: 0 25px;
       font-size: 28px;
       z-index: 0;
@@ -193,39 +221,39 @@ textarea {
   }
 }
 .alert-success {
-  color: @color_4;
-  background-color: @background_color_3;
-  border-color: @border_color_1;
+  color: @color_portfolio;
+  background-color: @accent_color;
+  border-color: @text_color;
   border-radius: 0;
 }
 .alert-danger {
   border-radius: 0;
 }
 .btn-xl {
-  color: @color_5;
-  background-color: @background_color_2;
-  border: 2px solid #000000;
+  color: @text_color;
+  background-color: @color_transparent;
+  border: 2px solid @text_color;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
   border-radius: 0;
   font-size: 17px;
   &:hover {
-    color: @color_2 !important;
-    background-color: @background_color_3 !important;
-    border: 2px solid #ebaca5 !important;
+    color: @white_color !important;
+    background-color: @accent_color !important;
+    border: 2px solid @accent_color !important;
     -webkit-transition: all ease 0.5s;
   }
   &:focus {
-    color: @color_2 !important;
-    background-color: @background_color_3 !important;
-    border: 2px solid #ebaca5 !important;
+    color: @white_color !important;
+    background-color: @accent_color !important;
+    border: 2px solid @accent_color !important;
     -webkit-transition: all ease 0.5s;
   }
   &:active {
-    color: @color_2 !important;
-    background-color: @background_color_3 !important;
-    border: 2px solid #ebaca5 !important;
+    color: @white_color !important;
+    background-color: @accent_color !important;
+    border: 2px solid @accent_color !important;
     -webkit-transition: all ease 0.5s;
     background-image: none;
   }
@@ -235,27 +263,27 @@ textarea {
 }
 .navbar-custom {
   background: none;
-  border-color: @border_color_2;
+  border-color: @color_transparent;
   .navbar-brand {
     float: none;
     display: table;
     margin: 0 auto !important;
   }
   .navbar-collapse {
-    border-color: @border_color_3;
+    border-color: @navbar-collapse_border_color;
   }
   .navbar-toggle {
-    background-color: @background_color_4;
-    border-color: @border_color_4;
+    background-color: @white_color;
+    border-color: @text_color;
     text-transform: uppercase;
-    color: @color_1;
+    color: @accent_color;
     font-size: 12px;
     border-radius: 0;
     &:hover {
-      background-color: @background_color_4;
+      background-color: @white_color;
     }
     &:focus {
-      background-color: @background_color_4;
+      background-color: @white_color;
     }
   }
   .nav {
@@ -264,7 +292,7 @@ textarea {
         text-transform: uppercase;
         font-weight: 500;
         letter-spacing: 1px;
-        color: @color_5;
+        color: @text_color;
         padding: 30px 10px 15px;
         margin: 0 10px;
         font-size: 12px;
@@ -279,13 +307,13 @@ textarea {
           margin: auto;
           width: 0;
           content: '.';
-          color: @color_6;
-          background-color: @background_color_5;
+          color: @color_transparent;
+          background-color: @nav_hover_color;
           height: 1px;
         }
         &:hover {
           font-weight: 600;
-          color: @color_7;
+          color: @nav_hover_color;
           &:after {
             width: 100%;
           }
@@ -296,7 +324,7 @@ textarea {
       a {
         &:hover {
           font-weight: 500;
-          color: @color_2;
+          color: @text_color;
           &:after {
             width: 0;
           }
@@ -305,7 +333,7 @@ textarea {
     }
     .active {
       a {
-        color: @color_2;
+        color: @text_color;
       }
     }
   }
@@ -328,13 +356,13 @@ textarea {
   float: none;
   >.active {
     >a {
-      background-color: @background_color_3 !important;
+      background-color: @accent_color !important;
     }
   }
   >.logo {
     >a {
       padding: 0 !important;
-      background-color: @background_color_2 !important;
+      background-color: @color_transparent !important;
       transition: all .3s;
       &:after {
         display: none;
@@ -364,8 +392,8 @@ html {
 header {
   height: 83%;
   position: relative;
-  z-index: 1;
-  background-color: @background_color_6;
+  z-index: 10;
+  background-color: @header_bg_color;
 }
 .item {
   height: 100%;
@@ -461,7 +489,7 @@ section {
     .fa {
       font-size: initial;
       margin-left: 5px;
-      color: @color_1;
+      color: @accent_color;
     }
   }
 }
@@ -492,7 +520,7 @@ section {
   width: 100%;
 }
 #about {
-  background-color: @background_color_1;
+  background-color: @base_darker_bg_color;
   p {
     &:first-child {
       font-weight: 600;
@@ -514,7 +542,7 @@ section {
 }
 .about-separator {
   width: 100%;
-  border-bottom: 1px solid #ebaca5;
+  border-bottom: 1px solid @accent_color;
   margin: 20px auto;
 }
 .team-heading {
@@ -534,13 +562,13 @@ section {
     text-transform: lowercase;
     letter-spacing: 1px;
     margin-bottom: 20px;
-    color: @color_9;
+    color: #bec2cd;
     font-weight: 500;
     font-size: 10px;
   }
 }
 .team-image-cell {
-  border-left: 2px solid #f5eef0;
+  border-left: 2px solid @text_color;
 }
 .team-cell {
   -webkit-background-size: cover;
@@ -551,7 +579,7 @@ section {
   background-repeat: no-repeat;
   height: 200px;
   margin: 20px auto;
-  border: 3px solid #ebaca5;
+  border: 3px solid @accent_color;
   border-radius: 50%;
   width: 200px;
 }
@@ -574,7 +602,7 @@ section {
   background-repeat: no-repeat;
   position: relative;
   h5 {
-    color: @color_2;
+    color: @text_color;
     text-align: center;
     letter-spacing: 1px;
   }
@@ -583,17 +611,17 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: @background_color_7;
+  background-color: @bg_black_filter;
   top: 0;
 }
 .quote-separator {
   width: 4%;
-  border-bottom: 2px solid #ebaca5;
+  border-bottom: 2px solid @accent_color;
   margin: 25px auto;
 }
 blockquote {
   font-family: @font_family_2;
-  color: @color_2;
+  color: @white_color;
   font-weight: 400;
   font-size: 26px;
   line-height: 50px;
@@ -605,7 +633,7 @@ blockquote {
 .quote-footer {
   font-size: 16px;
   font-style: normal;
-  color: @color_1;
+  color: @accent_color;
   padding: 40px 0 0;
 }
 .service-image-container {
@@ -620,8 +648,8 @@ blockquote {
   position: absolute;
   top: 3%;
   left: 15px;
-  opacity: 2;
-  z-index: -1;
+  opacity: 1;
+  z-index: 2;
   border: 3px solid #faf3eb;
 }
 .service-image2 {
@@ -647,7 +675,7 @@ blockquote {
 }
 .service-separator {
   width: 8%;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid @text_color;
   margin: 12px 0;
 }
 .service-text {
@@ -655,25 +683,25 @@ blockquote {
   text-align: justify;
 }
 .service-icon {
-  color: @color_1;
+  color: @accent_color;
 }
 .carousel-control {
   background: none !important;
   opacity: 1;
-  color: @color_1;
+  color: @accent_color;
   width: 6%;
   &:hover {
-    color: @color_1;
+    color: @accent_color;
   }
   &:active {
-    color: @color_1;
+    color: @accent_color;
   }
   &:focus {
-    color: @color_1;
+    color: @accent_color;
   }
 }
 #partners {
-  background-color: @background_color_1;
+  background-color: @base_darker_bg_color;
   padding: 30px 0;
 }
 #carousel-reviews {
@@ -696,7 +724,7 @@ blockquote {
     letter-spacing: 2px;
   }
   h6 {
-    color: @color_1;
+    color: @accent_color;
     text-transform: lowercase;
     letter-spacing: 1px;
     font-weight: 500;
@@ -720,7 +748,7 @@ blockquote {
   a {
     margin: 0 15px;
     padding-bottom: 5px;
-    color: @color_5;
+    color: @text_color;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
@@ -729,15 +757,15 @@ blockquote {
     transition: all ease-in-out 0.4s;
     &:hover {
       font-weight: 600;
-      color: @color_7;
-      border-color: @border_color_5;
+      color: @nav_hover_color;
+      border-color: @nav_hover_color;
       text-decoration: none;
     }
   }
   .active {
     font-weight: 600;
-    color: @color_7;
-    border-color: @border_color_5;
+    color: @nav_hover_color;
+    border-color: @nav_hover_color;
     text-decoration: none;
   }
 }
@@ -749,12 +777,12 @@ blockquote {
   background-position: center center;
   background-repeat: no-repeat;
   height: 100%;
-  color: @color_5;
+  color: @text_color;
   .portfolio-info {
     padding: 35px 40px;
     height: 100%;
-    background-color: @background_color_3;
-    color: @color_4;
+    background-color: @accent_color;
+    color: @color_portfolio;
   }
   h6 {
     letter-spacing: 1px;
@@ -824,8 +852,8 @@ figcaption {
   height: 100%;
 }
 figure.effect-layla {
-  background-color: @color_5;
-  color: @background_color_4;
+  background-color: @text_color;
+  color: @white_color;
   .portfolio-cell {
     height: 100%;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -841,8 +869,8 @@ figure.effect-layla {
       right: 30px;
       bottom: 50px;
       left: 30px;
-      border-top: 2px solid #ebaca5;
-      border-bottom: 2px solid #ebaca5;
+      border-top: 2px solid @accent_color;
+      border-bottom: 2px solid @accent_color;
       -webkit-transform: scale(0, 1);
       transform: scale(0, 1);
       -webkit-transform-origin: 0 0;
@@ -858,8 +886,8 @@ figure.effect-layla {
       right: 50px;
       bottom: 30px;
       left: 50px;
-      border-right: 2px solid #ebaca5;
-      border-left: 2px solid #ebaca5;
+      border-right: 2px solid @accent_color;
+      border-left: 2px solid @accent_color;
       -webkit-transform: scale(1, 0);
       transform: scale(1, 0);
       -webkit-transform-origin: 100% 0;
@@ -933,7 +961,7 @@ figure.effect-layla {
 }
 .form-control {
   &:focus {
-    border-color: @border_color_6;
+    border-color: inherit;
   }
 }
 .contact-heading {
@@ -941,22 +969,23 @@ figure.effect-layla {
   margin-bottom: 60px;
 }
 .text-danger {
-  color: @color_1;
+  color: @accent_color;
 }
 .help-block {
   position: absolute;
   top: 100%;
   margin-top: 0;
 }
-footer {
+.footer-block {
   padding: 30px 0;
+  background-color: @base_bg_color;
   p {
     font-size: 12px;
     margin-bottom: 0;
   }
 }
 .address {
-  border-left: 1px solid #ebaca5;
+  border-left: 1px solid @accent_color;
   .fa {
     padding-right: 5px;
   }
@@ -973,25 +1002,25 @@ ul.social-buttons {
       border-radius: 100%;
       font-size: 15px;
       line-height: 35px;
-      color: @color_5;
+      color: @text_color;
       outline: none;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.5s;
       &:hover {
-        background-color: @background_color_3;
+        background-color: @accent_color;
         border-radius: 100px;
-        color: @color_2;
+        color: @text_color;
       }
       &:focus {
-        background-color: @background_color_3;
+        background-color: @accent_color;
         border-radius: 100px;
-        color: @color_2;
+        color: @text_color;
       }
       &:active {
-        background-color: @background_color_3;
+        background-color: @accent_color;
         border-radius: 100px;
-        color: @color_2;
+        color: @text_color;
       }
     }
   }
@@ -1014,6 +1043,7 @@ ul.social-buttons {
     width: auto;
   }
   .modal-content {
+    background-color: @base_bg_color;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -1021,7 +1051,7 @@ ul.social-buttons {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    color: @color_5;
+    color: @text_color;
     border-radius: 0;
     background-clip: border-box;
     -webkit-box-shadow: none;
@@ -1043,7 +1073,7 @@ ul.social-buttons {
     }
     .modal-separator {
       width: 7%;
-      border-bottom: 3px solid #ebaca5;
+      border-bottom: 3px solid @accent_color;
       margin: 15px 0 15px 100px;
     }
     .modal-text-col {
@@ -1051,12 +1081,12 @@ ul.social-buttons {
       h2 {
         text-align: center;
         font-style: italic;
-        color: @color_1;
+        color: @accent_color;
         margin: 0 auto;
       }
       h5 {
         text-align: center;
-        color: @color_1;
+        color: @accent_color;
         margin: 25px 0 10px;
         letter-spacing: 1px;
         font-weight: 600;
@@ -1073,7 +1103,7 @@ ul.social-buttons {
     position: absolute;
     width: 55px;
     height: 55px;
-    background-color: @background_color_2;
+    background-color: @color_transparent;
     top: 15px;
     right: 25px;
     cursor: pointer;
@@ -1084,7 +1114,7 @@ ul.social-buttons {
       height: 55px;
       width: 1px;
       margin-left: 35px;
-      background-color: @background_color_8;
+      background-color: @text_color;
       transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       -webkit-transform: rotate(45deg);
@@ -1092,7 +1122,7 @@ ul.social-buttons {
       .rl {
         height: 55px;
         width: 1px;
-        background-color: @background_color_8;
+        background-color: @text_color;
         transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         -webkit-transform: rotate(90deg);
@@ -1114,16 +1144,16 @@ ul.social-buttons {
   margin-top: 24%;
   padding: 10px;
   border: 1px solid #f5eef0;
-  background-color: @background_color_9;
+  background-color: @modal_fade_in_box_bg_color;
   h3 {
     font-family: @font_family_2;
     font-size: 32px;
     letter-spacing: 2px;
     text-transform: capitalize;
     font-style: italic;
-    color: @color_11;
+    color: @modal_name_blue__unused;
     margin: 0;
-    background-color: @background_color_10;
+    background-color: rgba(245, 238, 240, 0.8);
     padding: 16% 0;
     text-align: center;
   }
@@ -1169,7 +1199,7 @@ img {
 }
 @media (min-width: 768px) {
   .navbar-custom {
-    background-color: @background_color_2;
+    background-color: @color_transparent;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -1230,7 +1260,7 @@ img {
         a {
           margin-bottom: 0;
           padding: 15px 10px;
-          color: @color_11;
+          color: @accent_color;
           text-align: center;
           line-height: 20px;
         }
@@ -1248,19 +1278,19 @@ img {
   }
   .navbar-custom {
     .nav {
-      background-color: @background_color_4;
+      background-color: @white_color;
       margin-top: 0;
       li {
         a {
           margin-bottom: 0;
           padding: 15px 10px;
-          color: @color_11;
+          color: @accent_color;
           text-align: center;
           line-height: 20px;
         }
       }
       >li {
-        border-bottom: 1px solid #ebaca5;
+        border-bottom: 1px solid @accent_color;
       }
     }
     .navbar-nav {
