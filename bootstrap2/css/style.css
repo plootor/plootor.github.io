@@ -1,7 +1,30 @@
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
 body {
   overflow-x: hidden;
   font-family: 'Raleway', sans-serif;
   height: 100%;
+  color: #333;
+  background-color: #fff;
 }
 p {
   font-size: 14px;
@@ -79,9 +102,12 @@ h6 {
   background-color: #f5eef0;
 }
 #subscribe .form-control {
-  color: #beb9c0;
+  border: 2px solid #ebaca5;
   font-size: 12px;
   letter-spacing: 1px;
+}
+#subscribe .input-group .input-group-btn .btn {
+  border-color: #ebaca5;
 }
 #contact {
   background-image: url(../img/bouquet-of-flowers-1149099_1920.jpg);
@@ -89,13 +115,6 @@ h6 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
-}
-#contact .form-control {
-  color: #ffffff !important;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 12px;
-  letter-spacing: 1px;
 }
 #contact ::-webkit-input-placeholder {
   color: #ffffff !important;
@@ -116,15 +135,19 @@ h6 {
   height: 50px;
   border-radius: 0;
   border: 0;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #fff;
   box-shadow: none;
   background-color: transparent;
+  color: #333 !important;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 12px;
 }
 #contact .btn-xl {
   margin-top: 70px;
   width: 50%;
   color: #ffffff;
-  border-color: #ffffff;
+  border-color: #fff;
 }
 .subscribe-heading {
   margin-bottom: 70px;
@@ -132,19 +155,18 @@ h6 {
 .input-group .form-control {
   border-radius: 0;
   background-color: transparent;
-  border: 2px solid #ebaca5;
+  border: 2px solid #333;
   box-shadow: none;
   z-index: 0;
 }
 .input-group .form-control:focus {
-  border-color: #ebaca5;
+  border-color: #333;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 .input-group .input-group-btn .btn {
   border-radius: 0;
-  border-color: #ebaca5;
   padding: 0 25px;
   font-size: 28px;
   z-index: 0;
@@ -183,16 +205,16 @@ textarea:-webkit-autofill:focus {
 .alert-success {
   color: #faf3eb;
   background-color: #ebaca5;
-  border-color: #ebaca5;
+  border-color: #333;
   border-radius: 0;
 }
 .alert-danger {
   border-radius: 0;
 }
 .btn-xl {
-  color: #000000;
+  color: #000;
   background-color: transparent;
-  border: 2px solid #000000;
+  border: 2px solid #333;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -219,7 +241,9 @@ textarea:-webkit-autofill:focus {
   background-image: none;
 }
 .navbar.affix-top {
-  margin-top: 40px;
+  margin-top: 25px;
+  background-color: transparent;
+  padding: 15px 0;
 }
 .navbar-custom {
   background: none;
@@ -235,7 +259,7 @@ textarea:-webkit-autofill:focus {
 }
 .navbar-custom .navbar-toggle {
   background-color: #ffffff;
-  border-color: #ffffff;
+  border-color: #333;
   text-transform: uppercase;
   color: #ebaca5;
   font-size: 12px;
@@ -251,7 +275,7 @@ textarea:-webkit-autofill:focus {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
-  color: #000000;
+  color: #000;
   padding: 30px 10px 15px;
   margin: 0 10px;
   font-size: 12px;
@@ -280,7 +304,7 @@ textarea:-webkit-autofill:focus {
 }
 .navbar-custom .nav li.active a:hover {
   font-weight: 500;
-  color: #ffffff;
+  color: #333;
 }
 .navbar-custom .nav li.active a:hover:after {
   width: 0;
@@ -301,9 +325,6 @@ textarea:-webkit-autofill:focus {
   margin: 0 auto;
   float: none;
 }
-.navbar-nav > .active > a {
-  background-color: #ebaca5 !important;
-}
 .navbar-nav > .logo > a {
   padding: 0 !important;
   background-color: transparent !important;
@@ -314,6 +335,12 @@ textarea:-webkit-autofill:focus {
 }
 .navbar-nav > .logo img {
   padding: 0 35px;
+}
+.affix .active.logo .navbar-brand {
+  background-color: transparent !important;
+}
+.affix .active > a {
+  background-color: #ebaca5 !important;
 }
 .affix {
   height: 66px;
@@ -332,7 +359,7 @@ html {
 header {
   height: 83%;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   background-color: white;
 }
 .item {
@@ -572,8 +599,8 @@ blockquote {
   position: absolute;
   top: 3%;
   left: 15px;
-  opacity: 2;
-  z-index: -1;
+  opacity: 1;
+  z-index: 2;
   border: 3px solid #faf3eb;
 }
 .service-image2 {
@@ -599,7 +626,7 @@ blockquote {
 }
 .service-separator {
   width: 8%;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #333;
   margin: 12px 0;
 }
 .service-text {
@@ -665,7 +692,7 @@ blockquote {
 .portfolio-nav a {
   margin: 0 15px;
   padding-bottom: 5px;
-  color: #000000;
+  color: #333;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
@@ -693,7 +720,7 @@ blockquote {
   background-position: center center;
   background-repeat: no-repeat;
   height: 100%;
-  color: #000000;
+  color: #333;
 }
 .portfolio-cell .portfolio-info {
   padding: 35px 40px;
@@ -768,7 +795,7 @@ figcaption {
   height: 100%;
 }
 figure.effect-layla {
-  background-color: #000000;
+  background-color: #333;
   color: #ffffff;
 }
 figure.effect-layla .portfolio-cell {
@@ -886,10 +913,11 @@ figure.effect-layla:hover h2 {
   top: 100%;
   margin-top: 0;
 }
-footer {
+.footer-block {
   padding: 30px 0;
+  background-color: #fff;
 }
-footer p {
+.footer-block p {
   font-size: 12px;
   margin-bottom: 0;
 }
@@ -911,7 +939,7 @@ ul.social-buttons li a {
   border-radius: 100%;
   font-size: 15px;
   line-height: 35px;
-  color: #000000;
+  color: #333;
   outline: none;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -920,17 +948,17 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover {
   background-color: #ebaca5;
   border-radius: 100px;
-  color: #ffffff;
+  color: #333;
 }
 ul.social-buttons li a:focus {
   background-color: #ebaca5;
   border-radius: 100px;
-  color: #ffffff;
+  color: #333;
 }
 ul.social-buttons li a:active {
   background-color: #ebaca5;
   border-radius: 100px;
-  color: #ffffff;
+  color: #333;
 }
 .btn:focus {
   outline: none;
@@ -947,6 +975,7 @@ ul.social-buttons li a:active {
   width: auto;
 }
 .portfolio-modal .modal-content {
+  background-color: #fff;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -954,7 +983,7 @@ ul.social-buttons li a:active {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  color: #000000;
+  color: #333;
   border-radius: 0;
   background-clip: border-box;
   -webkit-box-shadow: none;
@@ -1018,7 +1047,7 @@ ul.social-buttons li a:active {
   height: 55px;
   width: 1px;
   margin-left: 35px;
-  background-color: #222222;
+  background-color: #333;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -1027,7 +1056,7 @@ ul.social-buttons li a:active {
 .portfolio-modal .close-modal .lr .rl {
   height: 55px;
   width: 1px;
-  background-color: #222222;
+  background-color: #333;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
@@ -1151,7 +1180,7 @@ img::-moz-selection {
   .navbar-custom.affix .nav li a {
     margin-bottom: 0;
     padding: 15px 10px;
-    color: #1d2f3b;
+    color: #ebaca5;
     text-align: center;
     line-height: 20px;
   }
@@ -1169,7 +1198,7 @@ img::-moz-selection {
   .navbar-custom .nav li a {
     margin-bottom: 0;
     padding: 15px 10px;
-    color: #1d2f3b;
+    color: #ebaca5;
     text-align: center;
     line-height: 20px;
   }

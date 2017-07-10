@@ -259,7 +259,9 @@ textarea {
   }
 }
 .navbar.affix-top {
-  margin-top: 40px;
+  margin-top: 25px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px 0;
 }
 .navbar-custom {
   background: none;
@@ -292,7 +294,7 @@ textarea {
         text-transform: uppercase;
         font-weight: 500;
         letter-spacing: 1px;
-        color: @text_color;
+        color: @white_color;
         padding: 30px 10px 15px;
         margin: 0 10px;
         font-size: 12px;
@@ -339,7 +341,7 @@ textarea {
   }
 }
 .navbar-custom.affix {
-  background: #fdfafb;
+  background: @accent_color;
   .nav {
     li {
       a {
@@ -354,11 +356,7 @@ textarea {
   display: table;
   margin: 0 auto;
   float: none;
-  >.active {
-    >a {
-      background-color: @accent_color !important;
-    }
-  }
+
   >.logo {
     >a {
       padding: 0 !important;
@@ -370,6 +368,21 @@ textarea {
     }
     img {
       padding: 0 35px;
+    }
+  }
+}
+.affix {
+  a:hover {
+    color: @base_darker_bg_color !important;
+  }
+  .active.logo {
+    .navbar-brand {
+      background-color: transparent !important;
+    }
+  }
+  .active {
+    >a {
+      background-color: @base_darker_bg_color !important;
     }
   }
 }

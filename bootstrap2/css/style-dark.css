@@ -241,7 +241,9 @@ textarea:-webkit-autofill:focus {
   background-image: none;
 }
 .navbar.affix-top {
-  margin-top: 40px;
+  margin-top: 25px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px 0;
 }
 .navbar-custom {
   background: none;
@@ -273,7 +275,7 @@ textarea:-webkit-autofill:focus {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
-  color: #beb9c0;
+  color: #ffffff;
   padding: 30px 10px 15px;
   margin: 0 10px;
   font-size: 12px;
@@ -311,7 +313,7 @@ textarea:-webkit-autofill:focus {
   color: #beb9c0;
 }
 .navbar-custom.affix {
-  background: #fdfafb;
+  background: #9d8475;
 }
 .navbar-custom.affix .nav li a {
   line-height: 66px;
@@ -323,9 +325,6 @@ textarea:-webkit-autofill:focus {
   margin: 0 auto;
   float: none;
 }
-.navbar-nav > .active > a {
-  background-color: #9d8475 !important;
-}
 .navbar-nav > .logo > a {
   padding: 0 !important;
   background-color: transparent !important;
@@ -336,6 +335,15 @@ textarea:-webkit-autofill:focus {
 }
 .navbar-nav > .logo img {
   padding: 0 35px;
+}
+.affix a:hover {
+  color: #1c1b19 !important;
+}
+.affix .active.logo .navbar-brand {
+  background-color: transparent !important;
+}
+.affix .active > a {
+  background-color: #1c1b19 !important;
 }
 .affix {
   height: 66px;
