@@ -259,7 +259,7 @@ textarea:-webkit-autofill:focus {
 }
 .navbar-custom .navbar-toggle {
   background-color: #ffffff;
-  border-color: #333;
+  border-color: transparent;
   text-transform: uppercase;
   color: #99b3cc;
   font-size: 12px;
@@ -1179,7 +1179,6 @@ img::-moz-selection {
   .navbar-custom.affix .nav li a {
     margin-bottom: 0;
     padding: 15px 10px;
-    color: #99b3cc;
     text-align: center;
     line-height: 20px;
   }

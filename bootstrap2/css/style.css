@@ -138,7 +138,7 @@ h6 {
   border-bottom: 2px solid #fff;
   box-shadow: none;
   background-color: transparent;
-  color: #333 !important;
+  color: #ffffff !important;
   letter-spacing: 1px;
   font-weight: 400;
   font-size: 12px;
@@ -259,7 +259,7 @@ textarea:-webkit-autofill:focus {
 }
 .navbar-custom .navbar-toggle {
   background-color: #ffffff;
-  border-color: #333;
+  border-color: transparent;
   text-transform: uppercase;
   color: #ebaca5;
   font-size: 12px;
@@ -361,7 +361,6 @@ header {
   position: relative;
   z-index: 10;
   background-color: white;
-  overflow: hidden;
 }
 .item {
   height: 100%;
@@ -1181,7 +1180,6 @@ img::-moz-selection {
   .navbar-custom.affix .nav li a {
     margin-bottom: 0;
     padding: 15px 10px;
-    color: #ebaca5;
     text-align: center;
     line-height: 20px;
   }
@@ -1471,17 +1469,4 @@ img::-moz-selection {
     border: none;
     padding: 15px 0;
   }
-}
-
-
-
-video {
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
-  background-size: cover;
-  transition: 1s opacity;
 }

@@ -31,7 +31,7 @@ gulp.task('uncss', function() {
 
 // Compile LESS files from /less into /css
 gulp.task('less', function() {
-  return gulp.src('less/style-brin.less')
+  return gulp.src('less/style.less')
     .pipe(less())
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({

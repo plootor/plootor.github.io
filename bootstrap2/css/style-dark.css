@@ -259,7 +259,7 @@ textarea:-webkit-autofill:focus {
 }
 .navbar-custom .navbar-toggle {
   background-color: #ffffff;
-  border-color: #beb9c0;
+  border-color: transparent;
   text-transform: uppercase;
   color: #ee9c3a;
   font-size: 12px;
@@ -1141,7 +1141,7 @@ img::-moz-selection {
     display: block !important;
   }
   .navbar.affix-top {
-    background: rgba(241, 245, 249, 0.6);
+    background: rgba(0, 0, 0, 0.4);
     margin-top: 0;
   }
   .navbar-fixed-bottom .navbar-collapse {
