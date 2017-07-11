@@ -31,7 +31,27 @@ gulp.task('uncss', function() {
 
 // Compile LESS files from /less into /css
 gulp.task('less', function() {
+  return gulp.src('less/style-brin.less')
+    .pipe(less())
+    .pipe(gulp.dest('css'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+});
+
+// Compile LESS files from /less into /css
+gulp.task('less-dark', function() {
   return gulp.src('less/style-dark.less')
+    .pipe(less())
+    .pipe(gulp.dest('css'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+});
+
+// Compile LESS files from /less into /css
+gulp.task('less-video', function() {
+  return gulp.src('less/style-video.less')
     .pipe(less())
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({

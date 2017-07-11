@@ -361,6 +361,7 @@ header {
   position: relative;
   z-index: 10;
   background-color: white;
+  overflow: hidden;
 }
 .item {
   height: 100%;
@@ -1470,4 +1471,17 @@ img::-moz-selection {
     border: none;
     padding: 15px 0;
   }
+}
+
+
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
 }

@@ -138,7 +138,7 @@ h6 {
   border-bottom: 2px solid #fff;
   box-shadow: none;
   background-color: transparent;
-  color: #333 !important;
+  color: #ffffff !important;
   letter-spacing: 1px;
   font-weight: 400;
   font-size: 12px;
@@ -292,12 +292,11 @@ textarea:-webkit-autofill:focus {
   width: 0;
   content: '.';
   color: transparent;
-  background-color: #b28d94;
+  background-color: #99b3cc;
   height: 1px;
 }
 .navbar-custom .nav li a:hover {
-  font-weight: 600;
-  color: #b28d94;
+  color: #99b3cc;
 }
 .navbar-custom .nav li a:hover:after {
   width: 100%;
@@ -702,14 +701,14 @@ blockquote {
 }
 .portfolio-nav a:hover {
   font-weight: 600;
-  color: #b28d94;
-  border-color: #b28d94;
+  color: #99b3cc;
+  border-color: #99b3cc;
   text-decoration: none;
 }
 .portfolio-nav .active {
   font-weight: 600;
-  color: #b28d94;
-  border-color: #b28d94;
+  color: #99b3cc;
+  border-color: #99b3cc;
   text-decoration: none;
 }
 .portfolio-cell {
