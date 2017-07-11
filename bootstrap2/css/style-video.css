@@ -1190,10 +1190,10 @@ img::-moz-selection {
   }
 }
 @media (max-width: 767px) {
-  header .intro-text .intro-lead-in {
+  header .container .intro-text .intro-lead-in {
     font-size: 10px;
   }
-  header .intro-text .intro-heading {
+  header .container .intro-text .intro-heading {
     font-size: 27px;
     line-height: 65px;
   }
