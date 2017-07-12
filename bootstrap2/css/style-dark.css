@@ -391,7 +391,7 @@ header {
   background: url("../img/food-2185353_1920.jpg") no-repeat center top;
 }
 .carousel-inner .carusel1 {
-  background: url("../img/bread-1750987_1920.jpg") no-repeat center top;
+  background: url("../img/bread-1750987_1920.jpg") no-repeat center center;
 }
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;

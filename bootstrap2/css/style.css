@@ -296,7 +296,6 @@ textarea:-webkit-autofill:focus {
   height: 1px;
 }
 .navbar-custom .nav li a:hover {
-  font-weight: 600;
   color: #b28d94;
 }
 .navbar-custom .nav li a:hover:after {
