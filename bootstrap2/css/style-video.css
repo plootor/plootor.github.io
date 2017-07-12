@@ -1189,6 +1189,16 @@ img::-moz-selection {
   }
 }
 @media (max-width: 767px) {
+  .bg {
+    background: url(../img/bouquet-of-flowers-1149099_1920.jpg) no-repeat center top;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+  }
+  .bg video {
+    display: none;
+  }
   header .container .intro-text .intro-lead-in {
     font-size: 10px;
   }
@@ -1418,6 +1428,16 @@ img::-moz-selection {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .bg {
+    background: url(../img/bouquet-of-flowers-1149099_1920.jpg) no-repeat center top;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+  }
+  .bg video {
+    display: none;
+  }
   .affix {
     height: auto;
   }
