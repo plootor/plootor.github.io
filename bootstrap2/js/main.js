@@ -43,8 +43,8 @@
       return false;
     }
     runFunc(anchor);
-    event.preventDefault();
-    event.stopPropagation();
+    e.preventDefault();
+    e.stopPropagation();
   });
   var toolbar = document.querySelector("header");
   toolbar.addEventListener("click", function (e) {

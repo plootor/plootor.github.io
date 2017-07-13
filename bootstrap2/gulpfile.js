@@ -50,6 +50,16 @@ gulp.task('less-dark', function() {
 });
 
 // Compile LESS files from /less into /css
+gulp.task('less-blue', function() {
+  return gulp.src('less/style-blue.less')
+    .pipe(less())
+    .pipe(gulp.dest('css'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+});
+
+// Compile LESS files from /less into /css
 gulp.task('less-video', function() {
   return gulp.src('less/style-video.less')
     .pipe(less())
