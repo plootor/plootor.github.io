@@ -27,14 +27,15 @@ h2 {
     height: 100%;
     width: 100%;
     position: fixed;
-    background: url("../images/bouquet-of-flowers-1149099_1920.jpg");
+    /*background: url("../images/bouquet-of-flowers-1149099_1920.jpg");*/
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position: center;
+    background-color: #ddb2b9;
 }
 
 .filter{
-    background-color: rgba(0, 0, 0, 0.3);
+    /*background-color: rgba(0, 0, 0, 0.5);*/
     height: 100%;
     width: 100%;
 }
@@ -53,20 +54,38 @@ section {
     text-align: center;
 }
 
+section .intro {
+    padding-top: 115px;
+}
+
+section .intro p {
+    letter-spacing: 1px;
+    width: 700px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+section .intro .separator {
+    width: 3%;
+    border-bottom: 2px solid #ffffff;
+    margin: 35px auto 20px;
+}
+
 section article {
     width: 100%;
     height: auto;
     position: absolute;
-    top: 15%;
+    top: 43%;
     color: rgba(236,240,241,0.9);
+;
 }
 
 ul li {
     list-style: none;
     display: inline-block;
-
-    margin-bottom: 70px;
-    width: 47%;
+    margin: 20px;
+    /*width: 47%;*/
 }
 
 .hover{
@@ -88,13 +107,13 @@ ul li {
 }
 
 ul {
-width: 1200px;
+    /*width: 1200px;*/
     margin:  0 auto;
 }
 
 ul li a img {
-    width: 420px;
-    margin-bottom: 20px;
+    width: 380px;
+    margin-bottom: 40px;
     border: 2px solid #ffffff;
 }
 
