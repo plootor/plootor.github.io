@@ -84,7 +84,7 @@ section article {
 ul li {
     list-style: none;
     display: inline-block;
-    margin: 20px;
+    margin: 30px;
     /*width: 47%;*/
 }
 
@@ -112,7 +112,7 @@ ul {
 }
 
 ul li a img {
-    width: 380px;
+    width: 340px;
     margin-bottom: 40px;
     border: 2px solid #ffffff;
 }
