@@ -91,11 +91,11 @@
           // Success message
           $('#subscribe2-success').html("<div class='alert alert-success'>");
           $('#subscribe2-success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-            .append("</button>");
+          .append("</button>");
           $('#subscribe2-success > .alert-success')
-            .append("<strong>Your message has been sent. </strong>");
+          .append("<strong>Your message has been sent. </strong>");
           $('#subscribe2-success > .alert-success')
-            .append('</div>');
+          .append('</div>');
 
           //clear all fields
           $('#subscribe-form').trigger("reset");
@@ -104,7 +104,7 @@
           // Fail message
           $('#subscribe2-success').html("<div class='alert alert-danger'>");
           $('#subscribe2-success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-            .append("</button>");
+          .append("</button>");
           $('#subscribe2-success > .alert-danger').append("<strong>Sorry, it seems that my mail server is not responding. Please try again later!");
           $('#subscribe2-success > .alert-danger').append('</div>');
           //clear all fields
@@ -146,11 +146,11 @@
           // Success message
           $('#success').html("<div class='alert alert-success'>");
           $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-            .append("</button>");
+          .append("</button>");
           $('#success > .alert-success')
-            .append("<strong>Your message has been sent. </strong>");
+          .append("<strong>Your message has been sent. </strong>");
           $('#success > .alert-success')
-            .append('</div>');
+          .append('</div>');
 
           //clear all fields
           $('#contactForm').trigger("reset");
@@ -159,7 +159,7 @@
           // Fail message
           $('#success').html("<div class='alert alert-danger'>");
           $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-            .append("</button>");
+          .append("</button>");
           $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
           $('#success > .alert-danger').append('</div>');
           //clear all fields
@@ -177,37 +177,37 @@
 function runFunc(type) {
   switch (type) {
     case 'all':
-      $('.item1').show();
-      $('.item2').show();
-      $('.item3').show();
-      $('.item4').show();
-      $('.item5').show();
-      $('.item6').show();
-      break;
+    $('.item1').show();
+    $('.item2').show();
+    $('.item3').show();
+    $('.item4').show();
+    $('.item5').show();
+    $('.item6').show();
+    break;
     case 'first':
-      $('.item1').hide();
-      $('.item2').hide();
-      $('.item3').hide();
-      $('.item6').hide();
-      $('.item4').show();
-      $('.item5').show();
-      break;
+    $('.item1').hide();
+    $('.item2').hide();
+    $('.item3').hide();
+    $('.item6').hide();
+    $('.item4').show();
+    $('.item5').show();
+    break;
     case 'second':
-      $('.item4').hide();
-      $('.item5').hide();
-      $('.item6').hide();
-      $('.item1').show();
-      $('.item2').show();
-      $('.item3').show();
-      break;
+    $('.item4').hide();
+    $('.item5').hide();
+    $('.item6').hide();
+    $('.item1').show();
+    $('.item2').show();
+    $('.item3').show();
+    break;
     case 'third':
-      $('.item2').hide();
-      $('.item3').hide();
-      $('.item1').show();
-      $('.item4').show();
-      $('.item5').show();
-      $('.item6').show();
-      break;
+    $('.item2').hide();
+    $('.item3').hide();
+    $('.item1').show();
+    $('.item4').show();
+    $('.item5').show();
+    $('.item6').show();
+    break;
   }
   $('.grid').masonry();
 }
