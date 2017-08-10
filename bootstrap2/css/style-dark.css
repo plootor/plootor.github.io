@@ -1,23 +1,27 @@
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-.fadeInUp {
-  animation-name: fadeInUp;
-}
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Common styles
+2. FADE ANIMATION
+3. NAVBAR / .navbar
+4. MAIN SLIDER / .carousel
+5. LATEST PROJECT / #blog
+6. OUR STORY / #about
+7. TEAM / #team
+8. QUOTE / #quote
+9. SERVICES / #services
+10. SUBSCRIPTION / #subscribe
+11. PORTFOLIO / #portfolio
+12. PORTFOLIO MODAL / .portfolio-modal
+13. PARTNERS / #partners
+14. TESTIMONIALS / #testimonials
+15. CONTACT / #contact
+16. FOOTER / #footer-block
+17. Responsive(media queries with fixes for different screen sizes)
+-------------------------------------------------------------------*/
+/*--------1. start common styles---------*/
+html {
+  height: 100%;
 }
 body {
   overflow-x: hidden;
@@ -25,18 +29,6 @@ body {
   height: 100%;
   color: #beb9c0;
   background-color: #282623;
-}
-p {
-  font-size: 14px;
-  line-height: 1.9;
-}
-.section-heading {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  font-size: 80px;
-  color: #ee9c3a;
-  text-transform: none;
-  letter-spacing: 1px;
 }
 * {
   box-sizing: border-box;
@@ -96,61 +88,9 @@ h6 {
 .img-centered {
   margin: 0 auto;
 }
-#subscribe {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: #1c1b19;
-}
-#subscribe .form-control {
-  border: 2px solid #ee9c3a;
-  font-size: 12px;
-  letter-spacing: 1px;
-}
-#subscribe .input-group .input-group-btn .btn {
-  border-color: #ee9c3a;
-}
-#contact {
-  background-image: url(../img/delicious-1866631_1920.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
-}
-#contact ::-webkit-input-placeholder {
-  color: #beb9c0 !important;
-}
-#contact ::-moz-placeholder {
-  color: #beb9c0 !important;
-}
-#contact :-ms-input-placeholder {
-  color: #beb9c0 !important;
-}
-#contact .section-name {
-  color: #beb9c0;
-}
-#contact .form-group {
-  margin-bottom: 25px;
-}
-#contact .form-group .form-control {
-  height: 50px;
-  border-radius: 0;
-  border: 0;
-  border-bottom: 2px solid #fff;
-  box-shadow: none;
-  background-color: transparent;
-  color: #beb9c0 !important;
-  letter-spacing: 1px;
-  font-weight: 400;
-  font-size: 12px;
-}
-#contact .btn-xl {
-  margin-top: 70px;
-  width: 50%;
-  color: #beb9c0;
-  border-color: #fff;
-}
-.subscribe-heading {
-  margin-bottom: 70px;
+p {
+  font-size: 14px;
+  line-height: 1.9;
 }
 .input-group .form-control {
   border-radius: 0;
@@ -170,6 +110,12 @@ h6 {
   padding: 0 25px;
   font-size: 28px;
   z-index: 0;
+}
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
 }
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px #f5eef0 inset;
@@ -211,6 +157,15 @@ textarea:-webkit-autofill:focus {
 .alert-danger {
   border-radius: 0;
 }
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  outline: none;
+}
+.btn:active:focus {
+  outline: none;
+}
 .btn-xl {
   color: #beb9c0;
   background-color: transparent;
@@ -240,10 +195,140 @@ textarea:-webkit-autofill:focus {
   -webkit-transition: all ease 0.5s;
   background-image: none;
 }
+section {
+  padding: 100px 0;
+}
+section .section-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 80px;
+  color: #ee9c3a;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+section .section-name {
+  margin-top: 0;
+  text-align: right;
+  letter-spacing: 1px;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 15px;
+}
+section h4.section-name .fa {
+  font-size: initial;
+  margin-left: 5px;
+  color: #ee9c3a;
+}
+.form-control:focus {
+  border-color: inherit;
+}
+.text-danger {
+  color: #ee9c3a;
+}
+.bg-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  top: 0;
+}
+header {
+  height: 83%;
+  position: relative;
+  z-index: 10;
+  background-color: white;
+}
+header .text-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+header .text-container .container {
+  position: relative;
+  height: 100%;
+}
+header .text-container .container .intro-text {
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 65px;
+  color: white;
+  position: absolute;
+  top: 42%;
+  width: 92%;
+}
+header .text-container .container .intro-text .intro-heading {
+  line-height: 105px;
+}
+header .text-container .container .intro-text .intro-lead-in {
+  font-size: 12px;
+  font-weight: 400;
+}
+header .text-container .container .intro-text .intro-separator {
+  width: 20%;
+  border-bottom: 2px solid #fff;
+  margin: 12px auto;
+}
+/*-------end common styles-------------*/
+/*-------2. START FADE ANIMATION--------*/
+/*Descriotions: here we initialize styles which are responsable for animation*/
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.fade-animate {
+  animation-delay: 0.2s;
+}
+.delay-3 {
+  animation-delay: 0.3s;
+}
+.delay4 {
+  animation-delay: 0.4s;
+}
+.portfolio-modal.in .modal-name {
+  animation: fadeInDown 2s;
+  opacity: 1;
+}
+.hide-el {
+  opacity: 0;
+}
+.show-el {
+  opacity: 1;
+}
+/*-------END FADE ANIMATION--------*/
+/* ------3. START NAVBAR----------- */
 .navbar.affix-top {
   margin-top: 25px;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 15px 0;
+}
+.navbar-custom.affix {
+  background: #ee9c3a;
+}
+.navbar-custom.affix .nav li a {
+  line-height: 66px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .navbar-custom {
   background: none;
@@ -311,14 +396,6 @@ textarea:-webkit-autofill:focus {
 .navbar-custom .nav .active a {
   color: #beb9c0;
 }
-.navbar-custom.affix {
-  background: #ee9c3a;
-}
-.navbar-custom.affix .nav li a {
-  line-height: 66px;
-  padding-top: 0;
-  padding-bottom: 0;
-}
 .navbar-nav {
   display: table;
   margin: 0 auto;
@@ -335,12 +412,6 @@ textarea:-webkit-autofill:focus {
 .navbar-nav > .logo img {
   padding: 0 35px;
 }
-.affix .active.logo .navbar-brand {
-  background-color: transparent !important;
-}
-.affix .active > a {
-  background-color: #1c1b19 !important;
-}
 .affix {
   height: 66px;
   overflow: hidden;
@@ -352,53 +423,21 @@ textarea:-webkit-autofill:focus {
 .affix .logo > a > img {
   margin-top: -6px;
 }
-html {
-  height: 100%;
+.affix .active.logo .navbar-brand {
+  background-color: transparent !important;
 }
-header {
-  height: 83%;
-  position: relative;
-  z-index: 10;
-  background-color: white;
+.affix .active > a {
+  background-color: #1c1b19 !important;
 }
-header .text-container {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+.navbar-brand2 {
+  display: none !important;
 }
-header .text-container .container {
-  position: relative;
-  height: 100%;
-}
-header .text-container .container .intro-text {
-  text-align: center;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 65px;
-  color: white;
-  position: absolute;
-  top: 42%;
-  width: 92%;
-}
-header .text-container .container .intro-text .intro-heading {
-  line-height: 105px;
-}
-header .text-container .container .intro-text .intro-lead-in {
-  font-size: 12px;
-  font-weight: 400;
-}
-header .text-container .container .intro-text .intro-separator {
-  width: 20%;
-  border-bottom: 2px solid #fff;
-  margin: 12px auto;
-}
-.item {
-  height: 100%;
-}
+/* ------END NAVBAR----------- */
+/* ------4. START MAIN SLIDER----------- */
 .carousel-inner {
+  height: 100%;
+}
+.carousel-inner > .item {
   height: 100%;
 }
 .carousel-inner > .item > img {
@@ -464,31 +503,14 @@ header .text-container .container .intro-text .intro-separator {
 .carousel {
   height: 100%;
 }
-.navbar-brand2 {
-  display: none !important;
-}
-section {
-  padding: 100px 0;
-}
-section .section-name {
-  margin-top: 0;
-  text-align: right;
-  letter-spacing: 1px;
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 15px;
-}
-section h4.section-name .fa {
-  font-size: initial;
-  margin-left: 5px;
-  color: #ee9c3a;
-}
-.blog-title {
+/* ------END MAIN SLIDER----------- */
+/* ------5. START LATEST PROJECT section----------- */
+#blog .blog-title {
   text-indent: 30px;
   margin: 30px 0 15px 0;
   text-transform: none;
 }
-.blog-text {
+#blog .blog-text {
   text-indent: 30px;
 }
 #blog .btn-xl {
@@ -496,53 +518,59 @@ section h4.section-name .fa {
   margin: 20px 45px 15px 0;
   width: 30%;
 }
-.blog-image-cell {
+#blog .blog-image-cell {
   position: absolute;
   height: 100%;
   right: 0;
 }
-.blog-image {
+#blog .blog-image-cell .blog-image {
   background: url("../img/bread-1750987_1920.jpg") no-repeat center center;
   background-size: cover;
   height: 100%;
   width: 100%;
 }
+/* ------END LATEST PROJECT----------- */
+/* ------6. START OUR STORY----------- */
 #about {
   background-color: #1c1b19;
 }
-#about p:first-child {
-  font-weight: 600;
-}
-#about ul {
-  font-weight: 500;
-  line-height: 1.6;
-}
-.about-heading {
+#about .about-heading {
   margin-bottom: 30px;
   margin-top: 0;
 }
-.about-text {
+#about .about-text {
   column-count: 2;
   column-gap: 50px;
-  text-align: justify;
 }
-.about-separator {
+#about .about-text p:first-child {
+  font-weight: 600;
+}
+#about .about-text .about-separator {
   width: 100%;
   border-bottom: 1px solid #ee9c3a;
   margin: 20px auto;
 }
-.team-heading {
+#about .about-text ul {
+  font-weight: 500;
+  line-height: 1.6;
+}
+/* ------END OUR STORY----------- */
+/* ------7. START TEAM----------- */
+#team .team-heading {
   margin-bottom: 60px;
 }
-.team-text {
+#team .team-text {
   margin-top: 25px;
 }
-#team h5 {
+#team .team-image-cell {
+  border-left: 2px solid #beb9c0;
+}
+#team .team-image-cell h5 {
   font-family: 'Playfair Display', serif;
   text-align: center;
   letter-spacing: 2px;
 }
-#team h6 {
+#team .team-image-cell h6 {
   text-align: center;
   text-transform: lowercase;
   letter-spacing: 1px;
@@ -551,10 +579,7 @@ section h4.section-name .fa {
   font-weight: 500;
   font-size: 10px;
 }
-.team-image-cell {
-  border-left: 2px solid #beb9c0;
-}
-.team-cell {
+#team .team-image-cell .team-cell {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -567,18 +592,20 @@ section h4.section-name .fa {
   border-radius: 50%;
   width: 200px;
 }
-.team-cell1 {
+#team .team-image-cell .team-cell1 {
   background-image: url('../img/team/girl-657753_1280.jpg');
 }
-.team-cell2 {
+#team .team-image-cell .team-cell2 {
   background-image: url('../img/team/model-2373537_1280.jpg');
 }
-.team-cell3 {
+#team .team-image-cell .team-cell3 {
   background-image: url('../img/team/secretary-1379839_1280.jpg');
 }
-.team-cell4 {
+#team .team-image-cell .team-cell4 {
   background-image: url('../img/team/portrait-2226001_1280.jpg');
 }
+/* ------END TEAM----------- */
+/* ------8. START QUOTE----------- */
 #quote {
   background-image: url(../img/delicious-1866631_1920.jpg);
   background-attachment: fixed;
@@ -591,19 +618,12 @@ section h4.section-name .fa {
   text-align: center;
   letter-spacing: 1px;
 }
-.bg-filter {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.45);
-  top: 0;
-}
-.quote-separator {
+#quote .quote-separator {
   width: 4%;
   border-bottom: 2px solid #ee9c3a;
   margin: 25px auto;
 }
-blockquote {
+#quote blockquote {
   font-family: 'Playfair Display', serif;
   color: #ffffff;
   font-weight: 400;
@@ -614,17 +634,19 @@ blockquote {
   text-align: center;
   border: none;
 }
-.quote-footer {
+#quote blockquote .quote-footer {
   font-size: 16px;
   font-style: normal;
   color: #ee9c3a;
   padding: 40px 0 0;
 }
-.service-image-container {
+/* ------END QUOTE----------- */
+/* ------9. START SERVICES----------- */
+#services .service-image-container {
   position: absolute;
   height: 100%;
 }
-.service-image1 {
+#services .service-image-container .service-image1 {
   height: 53%;
   width: 77%;
   background: url("../img/delicious-1866631_1920.jpg") no-repeat center center;
@@ -636,7 +658,7 @@ blockquote {
   z-index: 2;
   border: 3px solid #faf3eb;
 }
-.service-image2 {
+#services .service-image-container .service-image2 {
   height: 53%;
   width: 77%;
   background: url("../img/food-2185353_1920.jpg") no-repeat center center;
@@ -647,70 +669,136 @@ blockquote {
   z-index: 3;
   border: 3px solid #faf3eb;
 }
-.service-cell {
+#services .service-cell {
   margin: 0 0 40px 85px;
 }
-.service-cell:last-child {
+#services .service-cell:last-child {
   margin-bottom: 0;
 }
-.service-heading {
+#services .service-cell .service-heading {
   text-transform: none;
   font-weight: 600;
 }
-.service-separator {
+#services .service-cell .service-separator {
   width: 8%;
   border-bottom: 1px solid #ee9c3a;
   margin: 12px 0;
 }
-.service-text {
+#services .service-cell .service-text {
   font-weight: 300;
-  text-align: justify;
 }
-.service-icon {
+#services .service-icon {
   color: #ee9c3a;
 }
-.carousel-control {
-  background: none !important;
-  opacity: 1;
-  color: #ee9c3a;
-  width: 6%;
-}
-.carousel-control:hover {
-  color: #ee9c3a;
-}
-.carousel-control:active {
-  color: #ee9c3a;
-}
-.carousel-control:focus {
-  color: #ee9c3a;
-}
-#partners {
+/* ------END SERVICES----------- */
+/* ------10. START SUBSCRIPTION----------- */
+#subscribe {
+  background-position: center center;
+  background-repeat: no-repeat;
   background-color: #1c1b19;
-  padding: 30px 0;
 }
-#carousel-reviews .glyphicon {
-  top: 50%;
+#subscribe .subscribe-heading {
+  margin-bottom: 70px;
 }
-.testimonial-cell {
-  padding: 0 30px;
+#subscribe .input-group .form-control {
+  border: 2px solid #ee9c3a;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
-#testimonials p {
-  line-height: 2;
-  text-indent: 30px;
-  font-style: italic;
+#subscribe .input-group .input-group-btn .btn {
+  border-color: #ee9c3a;
 }
-#testimonials h5 {
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  letter-spacing: 2px;
+/* ------END SUBSCRIPTION----------- */
+/* ------11. START PORTFOLIO----------- */
+#portfolio .portfolio-nav {
+  padding-bottom: 10px;
 }
-#testimonials h6 {
-  color: #ee9c3a;
-  text-transform: lowercase;
+#portfolio .portfolio-nav a {
+  margin: 0 15px;
+  padding-bottom: 5px;
+  color: #333;
+  text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
-  font-size: 10px;
-  margin-bottom: 30px;
+  font-size: 12px;
+  border-bottom: 1px solid transparent;
+  transition: all ease-in-out 0.4s;
+}
+#portfolio .portfolio-nav a :hover {
+  font-weight: 600;
+  color: #b28d94;
+  border-color: #b28d94;
+  text-decoration: none;
+}
+#portfolio .portfolio-nav .active {
+  font-weight: 600;
+  color: #b28d94;
+  border-color: #b28d94;
+  text-decoration: none;
+}
+#portfolio .grid-sizer {
+  width: 33.333%;
+}
+#portfolio .grid-item {
+  height: 450px;
+  width: 33.333%;
+  float: left;
+  padding: 10px;
+}
+#portfolio .grid-item:nth-child(5) {
+  height: 450px;
+}
+#portfolio .grid-item:nth-child(3) {
+  height: 350px;
+}
+#portfolio .grid-item:nth-child(7) {
+  height: 350px;
+}
+#portfolio .grid-item:nth-child(4) {
+  height: 400px;
+}
+#portfolio .grid-item:nth-child(6) {
+  height: 400px;
+}
+#portfolio .grid-item .portfolio-cell {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  color: #333;
+}
+#portfolio .grid-item .portfolio-cell .portfolio-info {
+  padding: 35px 40px;
+  height: 100%;
+  background-color: #ebaca5;
+  color: #faf3eb;
+}
+#portfolio .grid-item .portfolio-cell h6 {
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+#portfolio .grid-item .portfolio-cell h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: none;
+  margin-bottom: 25px;
+}
+#portfolio .grid-item .portfolio-cell p {
+  letter-spacing: 1px;
+}
+#portfolio .grid-item .portfolio-cell p:last-child {
+  text-align: right;
+  font-weight: 600;
+  font-size: 15px;
+}
+#portfolio .grid-item .portfolio-cell .portfolio-separator {
+  width: 15%;
+  border-bottom: 2px solid #faf3eb;
+  margin: 20px 0;
 }
 #portfolio .grid-item .portfolio-link {
   display: block;
@@ -719,84 +807,12 @@ blockquote {
   height: 100%;
   text-decoration: none;
 }
-.portfolio-nav {
-  padding-bottom: 10px;
-}
-.portfolio-nav a {
-  margin: 0 15px;
-  padding-bottom: 5px;
-  color: #beb9c0;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 500;
-  font-size: 12px;
-  border-bottom: 1px solid transparent;
-  transition: all ease-in-out 0.4s;
-}
-.portfolio-nav a:hover {
-  font-weight: 600;
-  color: #b28d94;
-  border-color: #b28d94;
-  text-decoration: none;
-}
-.portfolio-nav .active {
-  font-weight: 600;
-  color: #b28d94;
-  border-color: #b28d94;
-  text-decoration: none;
-}
-.portfolio-cell {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100%;
-  color: #beb9c0;
-}
-.portfolio-cell .portfolio-info {
-  padding: 35px 40px;
-  height: 100%;
-  background-color: #ee9c3a;
-  color: #faf3eb;
-}
-.portfolio-cell h6 {
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-}
-.portfolio-cell h3 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: none;
-  margin-bottom: 25px;
-}
-.portfolio-cell p {
-  letter-spacing: 1px;
-}
-.portfolio-cell p:last-child {
-  text-align: right;
-  font-weight: 600;
-  font-size: 15px;
-}
-.portfolio-cell .portfolio-separator {
-  width: 15%;
-  border-bottom: 2px solid #faf3eb;
-  margin: 20px 0;
-}
-.portfolio-item {
+#portfolio .grid-item .portfolio-link .portfolio-item {
   position: relative;
   height: 100%;
   width: 100%;
 }
-.grid-item {
-  height: 450px;
-  width: 33.333%;
-  float: left;
-  padding: 10px;
-}
-.grid-item figure {
+#portfolio .grid-item .portfolio-link .portfolio-item .effect-layla {
   position: relative;
   float: left;
   overflow: hidden;
@@ -804,40 +820,37 @@ blockquote {
   cursor: pointer;
   height: 100%;
   width: 100%;
+  background-color: #333;
+  color: #ffffff;
 }
-.grid-item:nth-child(5) {
-  height: 450px;
-}
-.grid-item:nth-child(3) {
-  height: 350px;
-}
-.grid-item:nth-child(7) {
-  height: 350px;
-}
-.grid-item:nth-child(4) {
-  height: 400px;
-}
-.grid-item:nth-child(6) {
-  height: 400px;
-}
-figcaption {
+#portfolio .grid-item .portfolio-link .portfolio-item .effect-layla figcaption {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 3em;
 }
-figure.effect-layla {
-  background-color: #beb9c0;
-  color: #ffffff;
+#portfolio .grid-item .portfolio-link .portfolio-item .effect-layla .portfolio-cell1 {
+  background-image: url('../img/basket-1846135_1920.jpg');
+  background-position: center center;
+}
+#portfolio .grid-item .portfolio-link .portfolio-item .effect-layla .portfolio-cell3 {
+  background-image: url('../img/bouquet-of-flowers-1149099_1920.jpg');
+}
+#portfolio .grid-item .portfolio-link .portfolio-item .effect-layla .portfolio-cell4 {
+  background-image: url('../img/flowers-2044789_1920.jpg');
+}
+#portfolio .grid-item .portfolio-link .portfolio-item .effect-layla .portfolio-cell5 {
+  background-image: url('../img/flower-731830_1920.jpg');
+}
+#portfolio .grid-item .portfolio-link .portfolio-item .effect-layla .portfolio-cell6 {
+  background-image: url('../img/bouquet-1915255_1920.jpg');
 }
 figure.effect-layla .portfolio-cell {
   height: 100%;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-}
-figure.effect-layla figcaption {
-  padding: 3em;
 }
 figure.effect-layla figcaption::before {
   position: absolute;
@@ -847,8 +860,8 @@ figure.effect-layla figcaption::before {
   right: 30px;
   bottom: 50px;
   left: 30px;
-  border-top: 2px solid #ee9c3a;
-  border-bottom: 2px solid #ee9c3a;
+  border-top: 2px solid #ebaca5;
+  border-bottom: 2px solid #ebaca5;
   -webkit-transform: scale(0, 1);
   transform: scale(0, 1);
   -webkit-transform-origin: 0 0;
@@ -864,8 +877,8 @@ figure.effect-layla figcaption::after {
   right: 50px;
   bottom: 30px;
   left: 50px;
-  border-right: 2px solid #ee9c3a;
-  border-left: 2px solid #ee9c3a;
+  border-right: 2px solid #ebaca5;
+  border-left: 2px solid #ebaca5;
   -webkit-transform: scale(1, 0);
   transform: scale(1, 0);
   -webkit-transform-origin: 100% 0;
@@ -915,93 +928,8 @@ figure.effect-layla:hover h2 {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
-.portfolio-cell1 {
-  background-image: url('../img/delicious-1866631_1920.jpg');
-  background-position: center center;
-}
-.portfolio-cell3 {
-  background-image: url('../img/food-2185353_1920.jpg');
-}
-.portfolio-cell4 {
-  background-image: url('../img/basil-2367509_1920.jpg');
-}
-.portfolio-cell5 {
-  background-image: url('../img/cookies-1372607_1920.jpg');
-}
-.portfolio-cell6 {
-  background-image: url('../img/bread-1750987_1920.jpg');
-}
-.form-control:focus {
-  border-color: inherit;
-}
-.contact-heading {
-  text-align: center;
-  margin-bottom: 60px;
-}
-.text-danger {
-  color: #ee9c3a;
-}
-.help-block {
-  position: absolute;
-  top: 100%;
-  margin-top: 0;
-}
-.footer-block {
-  padding: 30px 0;
-  background-color: #282623;
-}
-.footer-block p {
-  font-size: 12px;
-  margin-bottom: 0;
-}
-.address {
-  border-left: 1px solid #ee9c3a;
-}
-.address .fa {
-  padding-right: 5px;
-}
-ul.social-buttons {
-  margin-bottom: 0;
-  text-align: center;
-  padding: 15px 0;
-}
-ul.social-buttons li a {
-  display: block;
-  height: 35px;
-  width: 35px;
-  border-radius: 100%;
-  font-size: 15px;
-  line-height: 35px;
-  color: #beb9c0;
-  outline: none;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.5s;
-}
-ul.social-buttons li a:hover {
-  background-color: #ee9c3a;
-  border-radius: 100px;
-  color: #beb9c0;
-}
-ul.social-buttons li a:focus {
-  background-color: #ee9c3a;
-  border-radius: 100px;
-  color: #beb9c0;
-}
-ul.social-buttons li a:active {
-  background-color: #ee9c3a;
-  border-radius: 100px;
-  color: #beb9c0;
-}
-.btn:focus {
-  outline: none;
-}
-.btn:active {
-  outline: none;
-}
-.btn:active:focus {
-  outline: none;
-}
+/* ------END PORTFOLIO----------- */
+/* ------12. START PORTFOLIO MODAL----------- */
 .portfolio-modal .modal-dialog {
   margin: 0;
   height: 100%;
@@ -1034,8 +962,6 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-content p {
   margin: 25px 100px 60px 100px;
   line-height: 26px;
-  text-indent: 40px;
-  text-align: justify;
 }
 .portfolio-modal .modal-content .modal-separator {
   width: 7%;
@@ -1044,6 +970,7 @@ ul.social-buttons li a:active {
 }
 .portfolio-modal .modal-content .modal-text-col {
   margin-top: 10%;
+  text-align: center;
 }
 .portfolio-modal .modal-content .modal-text-col h2 {
   text-align: center;
@@ -1122,39 +1049,155 @@ ul.social-buttons li a:active {
   padding: 16% 0;
   text-align: center;
 }
-img::selection {
-  background: transparent;
+/* ------END PORTFOLIO MODAL----------- */
+/* ------13. START PARTNERS----------- */
+#partners {
+  background-color: #1c1b19;
+  padding: 30px 0;
 }
-img::-moz-selection {
-  background: transparent;
+/* ------END PARTNERS----------- */
+/* ------14. START TESTIMONIALS----------- */
+#testimonials #carousel-reviews .testimonial-cell {
+  padding: 0 30px;
 }
-.grid:after {
-  content: '';
+#testimonials #carousel-reviews .testimonial-cell p {
+  line-height: 2;
+  text-indent: 30px;
+  font-style: italic;
+}
+#testimonials #carousel-reviews .testimonial-cell h5 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+#testimonials #carousel-reviews .testimonial-cell h6 {
+  color: #ee9c3a;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 10px;
+  margin-bottom: 30px;
+}
+#testimonials #carousel-reviews .carousel-control {
+  background: none !important;
+  opacity: 1;
+  color: #ee9c3a;
+  width: 6%;
+}
+#testimonials #carousel-reviews .carousel-control:hover {
+  color: #ee9c3a;
+}
+#testimonials #carousel-reviews .carousel-control:active {
+  color: #ee9c3a;
+}
+#testimonials #carousel-reviews .carousel-control:focus {
+  color: #ee9c3a;
+}
+#testimonials #carousel-reviews .carousel-control .glyphicon {
+  top: 50%;
+}
+/* ------END TESTIMONIALS----------- */
+/* ------15. START CONTACT----------- */
+#contact {
+  background-image: url(../img/delicious-1866631_1920.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+#contact .contact-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+#contact .help-block {
+  position: absolute;
+  top: 100%;
+  margin-top: 0;
+}
+#contact ::-webkit-input-placeholder {
+  color: #beb9c0 !important;
+}
+#contact ::-moz-placeholder {
+  color: #beb9c0 !important;
+}
+#contact :-ms-input-placeholder {
+  color: #beb9c0 !important;
+}
+#contact .section-name {
+  color: #beb9c0;
+}
+#contact .form-group {
+  margin-bottom: 25px;
+}
+#contact .form-group .form-control {
+  height: 50px;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  box-shadow: none;
+  background-color: transparent;
+  color: #beb9c0 !important;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 12px;
+}
+#contact .btn-xl {
+  margin-top: 70px;
+  width: 50%;
+  color: #beb9c0;
+  border-color: #fff;
+}
+/* ------END CONTACT----------- */
+/* ------16. START FOOTER----------- */
+.footer-block {
+  padding: 30px 0;
+  background-color: #282623;
+}
+.footer-block .address {
+  border-left: 1px solid #ee9c3a;
+}
+.footer-block .address .fa {
+  padding-right: 5px;
+}
+.footer-block .address p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.footer-block .social-buttons {
+  margin-bottom: 0;
+  text-align: center;
+  padding: 15px 0;
+}
+.footer-block .social-buttons li a {
   display: block;
-  clear: both;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  font-size: 15px;
+  line-height: 35px;
+  color: #beb9c0;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.5s;
 }
-.grid-sizer {
-  width: 33.333%;
+.footer-block .social-buttons li a:hover {
+  background-color: #ee9c3a;
+  border-radius: 100px;
+  color: #beb9c0;
 }
-.fade-animate {
-  animation-delay: 0.2s;
+.footer-block .social-buttons li a:focus {
+  background-color: #ee9c3a;
+  border-radius: 100px;
+  color: #beb9c0;
 }
-.delay-3 {
-  animation-delay: 0.3s;
+.footer-block .social-buttons li a:active {
+  background-color: #ee9c3a;
+  border-radius: 100px;
+  color: #beb9c0;
 }
-.delay4 {
-  animation-delay: 0.4s;
-}
-.portfolio-modal.in .modal-name {
-  animation: fadeInDown 2s;
-  opacity: 1;
-}
-.hide-el {
-  opacity: 0;
-}
-.show-el {
-  opacity: 1;
-}
+/* ------END FOOTER----------- */
+/* ------17. START Responsive----------- */
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: transparent;
