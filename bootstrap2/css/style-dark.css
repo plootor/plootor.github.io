@@ -1214,16 +1214,18 @@ figure.effect-layla:hover h2 {
   }
 }
 @media (max-width: 767px) {
+  .container {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .navbar-brand2 {
     display: block !important;
   }
   .navbar.affix-top {
     background: rgba(0, 0, 0, 0.4);
     margin-top: 0;
-  }
-  .navbar-fixed-bottom .navbar-collapse {
-    max-height: 410px;
-    overflow-y: hidden;
   }
   .navbar-fixed-top .navbar-collapse {
     max-height: 410px;
@@ -1239,6 +1241,7 @@ figure.effect-layla:hover h2 {
   }
   .navbar-toggle {
     margin-top: 15px;
+    margin-right: 15px;
   }
   .affix {
     height: auto !important;
@@ -1290,42 +1293,38 @@ figure.effect-layla:hover h2 {
   .section-name {
     font-size: 14px;
   }
-  .section-heading {
+  section .section-heading {
     font-size: 40px;
     text-align: center;
   }
   .btn-xl {
     font-size: 14px;
   }
-  .blog-image-cell {
+  #blog .blog-image-cell {
     position: relative;
     height: 300px;
   }
-  .blog-title {
+  #blog .blog-title {
     padding: 0;
     font-size: 16px;
   }
-  .blog-text {
+  #blog .blog-text {
     padding: 0;
-    text-align: justify;
   }
   #blog .btn-xl {
     margin: 20px 0 0 0;
     width: inherit;
   }
-  .about-text {
+  #about .about-text {
     column-count: 1;
   }
-  .team-heading {
+  #team .team-heading {
     margin-bottom: 30px;
     margin-top: 0;
   }
-  .team-text {
-    text-align: justify;
-  }
-  .team-cell {
-    height: 130px;
-    width: 130px;
+  #team .team-cell {
+    height: 130px !important;
+    width: 130px !important;
   }
   #team h5 {
     font-size: 12px;
@@ -1333,29 +1332,29 @@ figure.effect-layla:hover h2 {
   #team h6 {
     font-size: 10px;
   }
-  blockquote {
+  #quote blockquote {
     font-size: 18px;
     line-height: 35px;
     padding: 0;
   }
-  .service-image-container {
+  #services .service-image-container {
     position: relative;
     height: 450px;
   }
-  .service-cell {
+  #services .service-cell {
     margin-left: 45px;
   }
-  .service-heading {
+  #services .service-heading {
     margin: 0 0 10px 0;
     font-size: 16px;
   }
-  .service-icon {
+  #services .service-icon {
     font-size: 2em;
   }
-  .service-text {
+  #services .service-text {
     margin-bottom: 25px;
   }
-  .subscribe-heading {
+  #subscribe .subscribe-heading {
     margin-bottom: 35px;
     margin-top: 0;
   }
@@ -1380,6 +1379,9 @@ figure.effect-layla:hover h2 {
   .portfolio-modal .modal-content p {
     margin: 0 0 10px;
   }
+  .portfolio-modal .modal-content .modal-text-col {
+    text-align: left;
+  }
   .portfolio-modal .modal-content .modal-text-col p {
     margin: 0 0 10px;
   }
@@ -1394,7 +1396,7 @@ figure.effect-layla:hover h2 {
   }
   .address {
     text-align: center;
-    border: none;
+    border: none !important;
     padding: 15px 0;
   }
   .grid-sizer {
@@ -1472,6 +1474,10 @@ figure.effect-layla:hover h2 {
     padding: 20px 10px !important;
     line-height: 20px !important;
   }
+  #blog .blog-image-cell {
+    position: relative;
+    height: 353px;
+  }
   #blog > .container {
     padding: 0 30px;
   }
@@ -1484,41 +1490,31 @@ figure.effect-layla:hover h2 {
   section {
     padding: 70px 0;
   }
-  .section-heading {
+  section .section-heading {
     font-size: 65px;
     text-align: center;
   }
-  .blog-image-cell {
-    position: relative;
-    height: 353px;
-  }
-  .blog-text {
-    text-align: justify;
-  }
-  .about-text {
+  #about .about-text {
     column-gap: 45px;
   }
-  .team-image-cell {
+  #team .team-image-cell {
     border-left: none;
   }
-  .team-heading {
+  #team .team-heading {
     margin-bottom: 30px;
     margin-top: 0;
   }
-  .team-text {
-    text-align: justify;
-  }
-  .team-text:last-child {
+  #team .team-text:last-child {
     margin-bottom: 30px;
   }
-  .service-image-container {
+  #services .service-image-container {
     position: relative;
     height: 450px;
   }
-  .service-info {
+  #services .service-info {
     padding-top: 30px;
   }
-  .subscribe-heading {
+  #subscribe .subscribe-heading {
     margin-bottom: 35px;
     margin-top: 0;
   }
@@ -1536,14 +1532,14 @@ figure.effect-layla:hover h2 {
   }
   .portfolio-cell h3 {
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
   }
   .portfolio-modal .modal-content p {
     margin: 25px 0 30px 0;
   }
   .address {
     text-align: center;
-    border: none;
+    border: none !important;
     padding: 15px 0;
   }
 }
