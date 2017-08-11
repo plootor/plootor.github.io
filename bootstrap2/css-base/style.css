@@ -84,7 +84,7 @@ section article {
 ul li {
     list-style: none;
     display: inline-block;
-    margin: 30px;
+    margin: 30px 0;
     /*width: 47%;*/
 }
 
@@ -172,4 +172,20 @@ and (max-width : 750px)
     ul li a img {
         width: 320px !important;
     }
+    section .intro p {
+      width: auto;
+      padding: 0 20px;
+    }
+
+    ul li {
+      margin: 30px 0;
+    }
+
+    section .intro {
+      padding-top: 30px;
+    }
 }
+
+/*@@media only screen and (max-width : ) {
+
+}*/
