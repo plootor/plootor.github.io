@@ -1345,18 +1345,18 @@ figure.effect-layla:hover h2 {
       }
     }
   }
+  .container {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .navbar-brand2 {
     display: block !important;
   }
   .navbar.affix-top {
     background: rgba(235, 172, 165, .8);
     margin-top: 0;
-  }
-  .navbar-fixed-bottom {
-    .navbar-collapse {
-      max-height: 410px;
-      overflow-y: hidden;
-    }
   }
   .navbar-fixed-top {
     .navbar-collapse {
@@ -1374,6 +1374,7 @@ figure.effect-layla:hover h2 {
   }
   .navbar-toggle {
     margin-top: 15px;
+    margin-right: 15px;
   }
   .affix {
     height: auto !important;
@@ -1438,46 +1439,46 @@ figure.effect-layla:hover h2 {
   .section-name {
     font-size: 14px;
   }
-  .section-heading {
-    font-size: 40px;
-    text-align: center;
+  section {
+    .section-heading {
+      font-size: 40px;
+      text-align: center;
+    }
   }
   .btn-xl {
     font-size: 14px;
   }
-  .blog-image-cell {
-    position: relative;
-    height: 300px;
-  }
-  .blog-title {
-    padding: 0;
-    font-size: 16px;
-  }
-  .blog-text {
-    padding: 0;
-    text-align: justify;
-  }
   #blog {
+    .blog-image-cell {
+      position: relative;
+      height: 300px;
+    }
+    .blog-title {
+      padding: 0;
+      font-size: 16px;
+    }
+    .blog-text {
+      padding: 0;
+    }
     .btn-xl {
       margin: 20px 0 0 0;
       width: inherit;
     }
   }
-  .about-text {
-    column-count: 1;
-  }
-  .team-heading {
-    margin-bottom: 30px;
-    margin-top: 0;
-  }
-  .team-text {
-    text-align: justify;
-  }
-  .team-cell {
-    height: 130px;
-    width: 130px;
+  #about {
+    .about-text {
+      column-count: 1;
+    }
   }
   #team {
+    .team-heading {
+      margin-bottom: 30px;
+      margin-top: 0;
+    }
+    .team-cell {
+      height: 130px !important;
+      width: 130px !important;
+    }
     h5 {
       font-size: 12px;
     }
@@ -1485,31 +1486,37 @@ figure.effect-layla:hover h2 {
       font-size: 10px;
     }
   }
-  blockquote {
-    font-size: 18px;
-    line-height: 35px;
-    padding: 0;
+  #quote {
+    blockquote {
+      font-size: 18px;
+      line-height: 35px;
+      padding: 0;
+    }
   }
-  .service-image-container {
-    position: relative;
-    height: 450px;
+  #services {
+    .service-image-container {
+      position: relative;
+      height: 450px;
+    }
+    .service-cell {
+      margin-left: 45px;
+    }
+    .service-heading {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+    }
+    .service-icon {
+      font-size: 2em;
+    }
+    .service-text {
+      margin-bottom: 25px;
+    }
   }
-  .service-cell {
-    margin-left: 45px;
-  }
-  .service-heading {
-    margin: 0 0 10px 0;
-    font-size: 16px;
-  }
-  .service-icon {
-    font-size: 2em;
-  }
-  .service-text {
-    margin-bottom: 25px;
-  }
-  .subscribe-heading {
-    margin-bottom: 35px;
-    margin-top: 0;
+  #subscribe {
+    .subscribe-heading {
+      margin-bottom: 35px;
+      margin-top: 0;
+    }
   }
   .portfolio-modal {
     .close-modal {
@@ -1535,6 +1542,7 @@ figure.effect-layla:hover h2 {
         margin: 0 0 10px;
       }
       .modal-text-col {
+        text-align: left;
         p {
           margin: 0 0 10px;
         }
@@ -1556,7 +1564,7 @@ figure.effect-layla:hover h2 {
   }
   .address {
     text-align: center;
-    border: none;
+    border: none !important;
     padding: 15px 0;
   }
   .grid-sizer {
@@ -1673,6 +1681,10 @@ figure.effect-layla:hover h2 {
     }
   }
   #blog {
+    .blog-image-cell {
+      position: relative;
+      height: 353px;
+    }
     >.container {
       padding: 0 30px;
     }
@@ -1689,44 +1701,44 @@ figure.effect-layla:hover h2 {
   }
   section {
     padding: 70px 0;
-  }
-  .section-heading {
-    font-size: 65px;
-    text-align: center;
-  }
-  .blog-image-cell {
-    position: relative;
-    height: 353px;
-  }
-  .blog-text {
-    text-align: justify;
-  }
-  .about-text {
-    column-gap: 45px;
-  }
-  .team-image-cell {
-    border-left: none;
-  }
-  .team-heading {
-    margin-bottom: 30px;
-    margin-top: 0;
-  }
-  .team-text {
-    text-align: justify;
-    &:last-child {
-      margin-bottom: 30px;
+    .section-heading {
+      font-size: 65px;
+      text-align: center;
     }
   }
-  .service-image-container {
-    position: relative;
-    height: 450px;
+  #about {
+    .about-text {
+      column-gap: 45px;
+    }
   }
-  .service-info {
-    padding-top: 30px;
+  #team {
+    .team-image-cell {
+      border-left: none;
+    }
+    .team-heading {
+      margin-bottom: 30px;
+      margin-top: 0;
+    }
+    .team-text {
+      &:last-child {
+        margin-bottom: 30px;
+      }
+    }
   }
-  .subscribe-heading {
-    margin-bottom: 35px;
-    margin-top: 0;
+  #services {
+    .service-image-container {
+      position: relative;
+      height: 450px;
+    }
+    .service-info {
+      padding-top: 30px;
+    }
+  }
+  #subscribe {
+    .subscribe-heading {
+      margin-bottom: 35px;
+      margin-top: 0;
+    }
   }
   #testimonials {
     h6 {
@@ -1745,7 +1757,7 @@ figure.effect-layla:hover h2 {
     }
     h3 {
       font-size: 18px;
-      margin-bottom: 15px;
+      margin-bottom: 15px !important;
     }
   }
   .portfolio-modal {
@@ -1757,7 +1769,7 @@ figure.effect-layla:hover h2 {
   }
   .address {
     text-align: center;
-    border: none;
+    border: none !important;
     padding: 15px 0;
   }
 }
