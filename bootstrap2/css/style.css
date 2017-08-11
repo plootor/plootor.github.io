@@ -1262,15 +1262,15 @@ figure.effect-layla:hover h2 {
   .btn-xl {
     font-size: 14px;
   }
-  .blog-image-cell {
+  #blog .blog-image-cell {
     position: relative;
     height: 300px;
   }
-  .blog-title {
+  #blog .blog-title {
     padding: 0;
     font-size: 16px;
   }
-  .blog-text {
+  #blog .blog-text {
     padding: 0;
     text-align: justify;
   }
@@ -1437,6 +1437,13 @@ figure.effect-layla:hover h2 {
     padding: 20px 10px !important;
     line-height: 20px !important;
   }
+  #blog .blog-image-cell {
+    position: relative;
+    height: 353px;
+  }
+  #blog .blog-text {
+    text-align: justify;
+  }
   #blog > .container {
     padding: 0 30px;
   }
@@ -1452,13 +1459,6 @@ figure.effect-layla:hover h2 {
   .section-heading {
     font-size: 65px;
     text-align: center;
-  }
-  .blog-image-cell {
-    position: relative;
-    height: 353px;
-  }
-  .blog-text {
-    text-align: justify;
   }
   .about-text {
     column-gap: 45px;
@@ -1476,11 +1476,11 @@ figure.effect-layla:hover h2 {
   .team-text:last-child {
     margin-bottom: 30px;
   }
-  .service-image-container {
+  #services .service-image-container {
     position: relative;
     height: 450px;
   }
-  .service-info {
+  #services .service-info {
     padding-top: 30px;
   }
   .subscribe-heading {
