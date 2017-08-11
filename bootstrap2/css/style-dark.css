@@ -716,7 +716,7 @@ header .text-container .container .intro-text .intro-separator {
 #portfolio .portfolio-nav a {
   margin: 0 15px;
   padding-bottom: 5px;
-  color: #333;
+  color: #beb9c0;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
@@ -832,20 +832,20 @@ header .text-container .container .intro-text .intro-separator {
   padding: 3em;
 }
 #portfolio .grid-item .portfolio-link .portfolio-item .effect-layla .portfolio-cell1 {
-  background-image: url('../img/basket-1846135_1920.jpg');
+  background-image: url('../img/delicious-1866631_1920.jpg');
   background-position: center center;
 }
 #portfolio .grid-item .portfolio-link .portfolio-item .effect-layla .portfolio-cell3 {
-  background-image: url('../img/bouquet-of-flowers-1149099_1920.jpg');
+  background-image: url('../img/food-2185353_1920.jpg');
 }
 #portfolio .grid-item .portfolio-link .portfolio-item .effect-layla .portfolio-cell4 {
-  background-image: url('../img/flowers-2044789_1920.jpg');
+  background-image: url('../img/basil-2367509_1920.jpg');
 }
 #portfolio .grid-item .portfolio-link .portfolio-item .effect-layla .portfolio-cell5 {
-  background-image: url('../img/flower-731830_1920.jpg');
+  background-image: url('../img/cookies-1372607_1920.jpg');
 }
 #portfolio .grid-item .portfolio-link .portfolio-item .effect-layla .portfolio-cell6 {
-  background-image: url('../img/bouquet-1915255_1920.jpg');
+  background-image: url('../img/bread-1750987_1920.jpg');
 }
 figure.effect-layla .portfolio-cell {
   height: 100%;
