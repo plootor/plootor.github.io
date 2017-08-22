@@ -545,6 +545,57 @@ section h4.section-name .fa {
 .team-cell4 {
   background-image: url('../img/team/portrait-2226001_1280.jpg');
 }
+
+
+
+/*Team section nr.2*/
+.team-info {
+  font-size: 13px;
+  padding: 0 8px;
+}
+.team-separator {
+  width: 20%;
+  border-bottom: 1px solid #ebaca5;
+  margin: 15px auto 0;
+}
+ul.team-social li a {
+  font-size: 12px !important;
+  line-height: 30px !important;
+  height: 30px !important;
+  width: 30px !important;
+}
+.team-cell {
+  margin: 20px auto 30px;
+}
+/*Service section nr.2*/
+.service-info {
+  margin-bottom: 20px;
+}
+/*About section nr.2*/
+.about-text {
+  column-count: 1;
+}
+/*Contact section nr.2*/
+#contact .btn-xl {
+  width: 35%;
+}
+
+/*Team section nr.3*/
+.team-section {
+  background-color: #f5eef0;
+  border-right: 10px solid #ffffff;
+  border-left: 10px solid #ffffff;
+  padding: 20px 15px;
+}
+.team-section .team-cell {
+  height: 125px;
+  width: 125px;
+}
+.team-section h5 {
+  font-size: 17px;
+}
+
+
 #quote {
   background-image: url(../img/basket-1846135_1920.jpg);
   background-attachment: fixed;
@@ -639,7 +690,7 @@ blockquote {
   margin: 20px 0 10px;
 }
 #blog-post .social-buttons {
-  text-align: left;
+  /*text-align: center;*/
 }
 .author {
   margin: 55px 0;
@@ -656,22 +707,69 @@ blockquote {
 .related-posts {
   margin: 30px 0;
   background-color: #f5eef0;
-  padding: 50px 0;
-}
-.related-date {
-  text-align: center;
-  font-weight: 500;
-  font-size: 11px;
-  color: #bec2cd;
-  margin: 20px 0 15px 0;
+  padding: 30px 0 40px 0;
 }
 .related-title {
-  text-align: center;
   font-family: 'Playfair Display', serif;
-  margin: 15px 0 30px 0;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+}
+.related-name {
+  font-weight: 500;
+  color: #848484;
+  margin: 20px 0 15px 0;
+  letter-spacing: 1px;
+  text-transform: none;
+}
+.sidebar-section {
+  /*border-left: 2px solid #ebaca5;*/
+  /*border-right: 2px solid #ebaca5;*/
+  margin: 0 0 50px 0;
+  padding: 15px 0;
+  /*background-color: #f5eef0;*/
+  border-top: 1px solid #ebaca5;
+}
+.author-img {
+  border-radius: 50%;
+  margin-bottom: 25px;
+  height: 150px;
+  border: 2px solid #ebaca5;
+}
+.sidebar-section .author-text {
+  margin: 0 20px;
+}
+.sidebar-title {
+  font-family: 'Playfair Display', serif;
   text-transform: capitalize;
   letter-spacing: 1px;
 }
+.sidebar-list {
+  line-height: 27px;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+.sidebar-list .fa {
+  color: #ebaca5;
+  padding: 0 10px 0 20px;
+}
+.recent-img {
+  height: 140px;
+}
+.recent-title {
+  font-weight: 500;
+  color: #848484;
+  margin: 15px 0 20px 0;
+  letter-spacing: 1px;
+  text-transform: none;
+}
+
+
+
+
+
+
+
 
 
 
