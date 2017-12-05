@@ -51,7 +51,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
    */
   function understrap_widgets_init() {
     register_sidebar( array(
-      'name'          => __( 'Right Sidebar', 'understrap' ),
+      'name'          => __( 'Right Sidebar', 'mille-fiori' ),
       'id'            => 'right-sidebar',
       'description'   => 'Right sidebar widget area',
       'before_widget' => '<div class="sidebar-section">',
@@ -61,7 +61,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
     ) );
 
     register_sidebar( array(
-      'name'          => __( 'Horizontal Sidebar', 'understrap' ),
+      'name'          => __( 'Horizontal Sidebar', 'mille-fiori' ),
       'id'            => 'horizontal-sidebar',
       'description'   => 'Horizontal post sidebar widget area',
       'before_widget' => '<div class="sidebar-section">',
@@ -71,7 +71,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
     ) );
 
     register_sidebar( array(
-      'name'          => __( 'Left Sidebar', 'understrap' ),
+      'name'          => __( 'Left Sidebar', 'mille-fiori' ),
       'id'            => 'left-sidebar',
       'description'   => 'Left sidebar widget area',
       'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -81,7 +81,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
     ) );
 
     register_sidebar( array(
-      'name'          => __( 'Hero Slider', 'understrap' ),
+      'name'          => __( 'Hero Slider', 'mille-fiori' ),
       'id'            => 'hero',
       'description'   => 'Hero slider area. Place two or more widgets here and they will slide!',
       'before_widget' => '<div class="carousel-item">',
@@ -91,7 +91,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
     ) );
 
     register_sidebar( array(
-      'name'          => __( 'Hero Static', 'understrap' ),
+      'name'          => __( 'Hero Static', 'mille-fiori' ),
       'id'            => 'statichero',
       'description'   => 'Static Hero widget. no slider functionallity',
       'before_widget' => '<div id="%1$s" class="static-hero-widget %2$s ' . slbd_count_widgets( 'statichero' ) . '">',
@@ -101,7 +101,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
     ) );
 
     register_sidebar( array(
-      'name'          => __( 'Footer Full', 'understrap' ),
+      'name'          => __( 'Footer Full', 'mille-fiori' ),
       'id'            => 'footerfull',
       'description'   => 'Widget area below main content and above footer',
       'before_widget' => '<div id="%1$s" class="footer-widget %2$s ' . slbd_count_widgets( 'footerfull' ) . '">',

@@ -19,7 +19,7 @@ function create_onepage_gallery() {
     $string = '<div class="row">';
     foreach ( $ids as $id ) {
       $string .= '<div class="col-md-6">'
-                 . '<img class="img-responsive img-centered" src="' . wp_get_attachment_image_src( $id, 'big-featured-image' )[0] . '" alt="">'
+                 . '<img class="img-responsive img-centered" src="' . wp_get_attachment_image_src( $id, 'big-featured-image' )[0] . '" alt="image">'
                  . '<figcaption class="text-center">Bouquet of flowers</figcaption>'
                  . '</div>';
     }
@@ -44,11 +44,11 @@ function create_grid_block() {
                  . '<p>' . $arg_list[0]['text_content'] . '</p>'
                  . '</div>'
                  . '<div class="col-md-6">'
-                 . '<img class="img-responsive img-centered" src="' . wp_get_attachment_image_src( $arg_list[0]['image_id'], 'full' )[0] . '" alt="">'
+                 . '<img class="img-responsive img-centered" src="' . wp_get_attachment_image_src( $arg_list[0]['image_id'], 'full' )[0] . '" alt="image">'
                  . '</div>';
     } else {
       $string .= '<div class="col-md-6">'
-                 . '<img class="img-responsive img-centered" src="' . wp_get_attachment_image_src( $arg_list[0]['image_id'], 'full' )[0] . '" alt="">'
+                 . '<img class="img-responsive img-centered" src="' . wp_get_attachment_image_src( $arg_list[0]['image_id'], 'full' )[0] . '" alt="image">'
                  . '</div>'
                  . '<div class="col-md-6 modal-text-col">'
                  . '<h2>' . $arg_list[0]['text_big_title'] . '</h2>'

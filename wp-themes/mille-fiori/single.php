@@ -42,7 +42,7 @@ get_header();
               the_post_thumbnail( 'big-featured-image' );
             }
             wp_link_pages( array(
-              'before' => '<div class="clear"></div><div class="page-link"><span>' . __( 'Pages:', 'one-page' ) . '</span>',
+              'before' => '<div class="clear"></div><div class="page-link"><span>' . __( 'Pages:', 'mille-fiori' ) . '</span>',
               'after'  => '</div>'
             ) );
             ?>
@@ -68,7 +68,7 @@ get_header();
             ?>
             <div class="blogs_page_container">
               <p>
-                <?php _e( 'Sorry, no posts matched your criteria.', 'one-page' ); ?>
+                <?php _e( 'Sorry, no posts matched your criteria.', 'mille-fiori' ); ?>
               </p>
             </div>
           <?php endif; ?>

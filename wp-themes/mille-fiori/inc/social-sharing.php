@@ -15,7 +15,7 @@ $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'f
 // Construct sharing URL without using any script
 $twitterURL = 'https://twitter.com/intent/tweet?text='.$title.'&amp;url='.$url.'&amp;via=Crunchify';
 $facebookURL = 'https://www.facebook.com/sharer/sharer.php?u='.$url;
-$whatsappURL = 'whatsapp://send?text='.$title . ' ' . $url;
+$whatsappURL = 'whatsapp://send?text='.$title;
 $linkedInURL = 'https://www.linkedin.com/shareArticle?mini=true&url='.$url.'&amp;title='.$title;
 
 // Based on popular demand added Pinterest too

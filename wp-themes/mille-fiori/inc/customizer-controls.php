@@ -96,67 +96,67 @@ function sections() {
   $sections                       = array();
   $sections['latestpost_section'] = array(
     'id'       => 'latestpost_section',
-    'label'    => __( 'Latest Post', 'one-page' ),
+    'label'    => __( 'Latest Post', 'mille-fiori' ),
     'callback' => [ 'include_template', 'latestpost' ],
   );
 
   $sections['story_section'] = array(
     'id'       => 'story_section',
-    'label'    => __( 'Our Story', 'one-page' ),
+    'label'    => __( 'Our Story', 'mille-fiori' ),
     'callback' => [ 'include_template', 'story' ],
   );
 
   $sections['blog_section'] = array(
     'id'       => 'blog_section',
-    'label'    => __( 'Blog', 'one-page' ),
+    'label'    => __( 'Blog', 'mille-fiori' ),
     'callback' => [ 'include_template', 'blog' ],
   );
 
   $sections['team_section'] = array(
     'id'       => 'team_section',
-    'label'    => __( 'Our Team', 'one-page' ),
+    'label'    => __( 'Our Team', 'mille-fiori' ),
     'callback' => [ 'include_template', 'team' ],
   );
 
   $sections['quote_section'] = array(
     'id'       => 'quote_section',
-    'label'    => __( 'Qoute', 'one-page' ),
+    'label'    => __( 'Qoute', 'mille-fiori' ),
     'callback' => [ 'include_template', 'quote' ],
   );
 
   $sections['services_section'] = array(
     'id'       => 'services_section',
-    'label'    => __( 'Services', 'one-page' ),
+    'label'    => __( 'Services', 'mille-fiori' ),
     'callback' => [ 'include_template', 'services' ],
   );
 
   $sections['newsletter_section'] = array(
     'id'       => 'newsletter_section',
-    'label'    => __( 'Newsletter', 'one-page' ),
+    'label'    => __( 'Newsletter', 'mille-fiori' ),
     'callback' => [ 'include_template', 'newsletter' ],
   );
 
   $sections['portfolio_section'] = array(
     'id'       => 'portfolio_section',
-    'label'    => __( 'Portfolio', 'one-page' ),
+    'label'    => __( 'Portfolio', 'mille-fiori' ),
     'callback' => [ 'include_template', 'portfolio' ],
   );
 
   $sections['partners_section'] = array(
     'id'       => 'partners_section',
-    'label'    => __( 'Partners', 'one-page' ),
+    'label'    => __( 'Partners', 'mille-fiori' ),
     'callback' => [ 'include_template', 'partners' ],
   );
 
   $sections['testimonials_section'] = array(
     'id'       => 'testimonials_section',
-    'label'    => __( 'Testimonials', 'one-page' ),
+    'label'    => __( 'Testimonials', 'mille-fiori' ),
     'callback' => [ 'include_template', 'testimonials' ],
   );
 
   $sections['contact_section'] = array(
     'id'       => 'contact_section',
-    'label'    => __( 'Contact Us Section', 'one-page' ),
+    'label'    => __( 'Contact Us Section', 'mille-fiori' ),
     'callback' => [ 'include_template', 'contact' ],
   );
 

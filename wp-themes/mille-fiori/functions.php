@@ -131,8 +131,8 @@ function sendSubscribeMail() {
   $email   = sanitize_email( $_POST["email"] );
   $headers = "From: <$email>" . "\r\n";
   $to      = get_option( 'admin_email' );
-  $message = sprintf( __( 'You have a new subscription on your website from user:.' ), $email );
-  $subject = __( 'Newsletter Submition' );
+  $message = sprintf( __( 'You have a new subscription on your website from user:.', 'mille-fiori'), $email );
+  $subject = __( 'Newsletter Submition', 'mille-fiori');
   $isSend  = wp_mail( $to, $subject, $message, $headers );
   if ( $isSend ) {
     return true;

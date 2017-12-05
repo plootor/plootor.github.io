@@ -28,7 +28,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
             <h1 class="page-title"><?php printf(
               /* translators:*/
-                esc_html__( 'Search Results for: %s', 'understrap' ),
+                esc_html__( 'Search Results for: %s', 'mille-fiori' ),
                 '<span>' . get_search_query() . '</span>' ); ?></h1>
 
           </header><!-- .page-header -->

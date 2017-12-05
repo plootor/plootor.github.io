@@ -90,7 +90,7 @@
                   <div class="col-xs-5 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 modal-name">
                     <h3>Serendipity</h3>
                   </div>
-                  <img class="img-responsive img-centered" src="<?php echo $images[ $i ]; ?>" alt="">
+                  <img class="img-responsive img-centered" src="<?php echo $images[ $i ]; ?>" alt="<?php echo $titles[ $i ]; ?>">
                 </div>
                 <h2><?php echo $titles[ $i ]; ?></h2>
                 <div class="modal-separator"></div>
