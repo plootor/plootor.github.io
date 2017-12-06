@@ -10467,7 +10467,7 @@ ul.children {
   color: #ebaca5;
   padding: 15px 0 0; }
 
-#blog-post figcaption {
+#blog-post .small-gallery-title {
   position: relative;
   font-style: italic;
   margin: 5px 0 30px;
