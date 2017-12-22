@@ -7,7 +7,7 @@
  * @package understrap
  */
 
-get_header('small');
+get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 

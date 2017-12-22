@@ -70,6 +70,11 @@ require get_template_directory() . '/inc/woocommerce.php';
  */
 require get_template_directory() . '/inc/editor.php';
 
+/**
+ * Load TGMPA
+ */
+require_once get_template_directory() . '/admin/tgm/tgm-init.php';
+
 
 if ( function_exists( 'add_theme_support' ) ) {
   add_theme_support( 'sidebar-thumb' );

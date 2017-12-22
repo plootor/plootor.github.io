@@ -7,59 +7,18 @@
  * @package void
  */
 global $count,$col_no,$col_width,$post_count;
+$image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'single-post-thumbnail' );
 ?>
-
-<div class="col-md-<?php echo esc_attr( $col_width );?>">
-  <header class="entry-header item">
-    <?php
-    if( has_post_thumbnail()) : ?>
-      <div class="post-img">
-        <a href="<?php echo esc_url( get_permalink() ); ?>">
-          <?php
-          the_post_thumbnail('big-featured-image',array(
-              'class' => 'img-responsive',
-              'alt'	=> get_the_title( get_post_thumbnail_id() )
-            )
-          );
-          ?>
-        </a>
-      </div><!--.post-img-->
-    <?php endif; ?>
-
-    <div class="post-info">
-      <?php
-      if ( 'post' === get_post_type() ) : ?>
-        <div class="entry-meta">
-          <?php
-          void_entry_header();
-          ?>
-        </div><!-- .entry-meta -->
-      <?php endif; ?>
-      <?php
-      the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-      ?>
-
-      <?php
-      if ( 'post' === get_post_type() ) : ?>
-        <div class="blog-excerpt">
-          <?php the_excerpt(); ?>
-        </div><!--.blog-excerpt-->
-      <?php endif; ?>
-    </div><!--.post-info-->
-
-  </header><!-- .entry-header -->
-</div><!--.col-md-?-->
-<?php
-$last_post = false;
-if( !empty($post_count) ){
-  if(  $post_count == $count ){
-    $last_post = true;
-  }
-}
-
-?>
-<?php	if( $count%$col_no == 0 || $last_post ) : ?>
-</div><div class="row">
-
-
-  <?php endif; ?>
+<div class="blog-cell">
+  <h6 class="blog-date"><?php echo get_the_date() ?></h6>
+  <h2 class="blog-title"><?php echo get_the_title(); ?></h2>
+  <div class="col blog-image-cell">
+    <div class="blog-image" style="background-image: url('<?php echo $image[0]; ?>')"></div>
+  </div>
+  <div>
+    <h4 class="blog-by"><?php echo get_the_author() ?></h4>
+    <p class="blog-text"><?php echo substr( get_the_content(), 0, 526 ); ?></p>
+    <div class="blog-separator"></div>
+    <div class="text-center"><a href="<?php echo esc_url( get_permalink() ); ?>" class="page-scroll btn btn-xl">Read more</a></div>
+  </div>
+</div>

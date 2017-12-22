@@ -8,19 +8,14 @@
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header">
+	<?php echo get_the_post_thumbnail( $post->ID, 'big-featured-image'); ?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+  <header class="entry-header">
+    <h6 class="blog-post-date"><?php echo get_the_date() ?> - <?php the_category( ', ' ); ?></h6>
+    <?php the_title( '<h2 class="blog-post-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
 
-			<?php understrap_posted_on(); ?>
-
-		</div><!-- .entry-meta -->
-
-	</header><!-- .entry-header -->
-
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+  </header><!-- .entry-header -->
 
 	<div class="entry-content">
 
