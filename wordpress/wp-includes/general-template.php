@@ -3357,7 +3357,7 @@ function paginate_links( $args = '' ) {
 		 *
 		 * @param string $link The paginated link URL.
 		 */
-		$page_links[] = '<a class="prev page-numbers" href="' . esc_url( apply_filters( 'paginate_links', $link ) ) . '">' . $args['prev_text'] . '</a>';
+		$page_links[] = '<a class="prev page-numbers" href="' . esc_url( apply_filters( 'paginate_links', $link ) ) . '"><i class="fa fa-long-arrow-left"></i></a>';
 	endif;
 	for ( $n = 1; $n <= $total; $n++ ) :
 		if ( $n == $current ) :
@@ -3388,7 +3388,7 @@ function paginate_links( $args = '' ) {
 		$link .= $args['add_fragment'];
 
 		/** This filter is documented in wp-includes/general-template.php */
-		$page_links[] = '<a class="next page-numbers" href="' . esc_url( apply_filters( 'paginate_links', $link ) ) . '">' . $args['next_text'] . '</a>';
+		$page_links[] = '<a class="next page-numbers" href="' . esc_url( apply_filters( 'paginate_links', $link ) ) . '"><i class="fa fa-long-arrow-right"></i></a>';
 	endif;
 	switch ( $args['type'] ) {
 		case 'array' :
