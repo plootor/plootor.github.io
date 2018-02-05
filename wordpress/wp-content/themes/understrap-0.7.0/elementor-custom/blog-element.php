@@ -87,7 +87,7 @@ class Widget_Alexander_Blog_Element extends Widget_Base {
     $count      = 0;
     ?>
 
-    <div id="blog" class="content-area void-grid list-container">
+    <div id="blog" class="content-area list-container">
       <div class="container site-main">
         <div class="row">
           <?php

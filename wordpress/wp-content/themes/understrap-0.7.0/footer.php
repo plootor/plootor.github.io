@@ -14,11 +14,10 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4 my-auto">
           <img class="d-block img-fluid mx-auto" src="<?php echo theme_get_option( 'theme_footer_logo' ); ?>"
                alt="logo">
         </div>
-        <div class="col-md-1"></div>
         <div class="col-md-3">
           <h5 class="footer-title special-title">Contact us</h5>
           <div class="footer-separator"></div>

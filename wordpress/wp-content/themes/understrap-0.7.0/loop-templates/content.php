@@ -4,6 +4,7 @@
  *
  * @package understrap
  */
+
 $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'single-post-thumbnail' );
 ?>
 <div class="blog-cell"  <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -13,7 +14,9 @@ $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'si
     <div class="blog-image" style="background-image: url('<?php echo $image[0]; ?>')"></div>
   </div>
   <div>
-    <h4 class="blog-by"><?php echo get_the_author(); ?></h4>
+    <h4 class="blog-by">
+        <?php echo 'by ' . get_the_author_meta( 'first_name' ) . ' ' . get_the_author_meta( 'last_name' ) ?>
+    </h4>
     <div class="blog-text"><?php the_excerpt(); ?></div>
   </div>
 </div>

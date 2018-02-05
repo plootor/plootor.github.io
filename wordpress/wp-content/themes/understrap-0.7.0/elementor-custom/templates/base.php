@@ -10,7 +10,7 @@ global $count;
 $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'single-post-thumbnail' );
 
   if ( $count % 2 == 0 ) { ?>
-  <div class="container">
+  <div class="container grid-blog">
     <div class="row pos-r">
       <div class="col-md-12 col-lg-6 blog-image-cell">
         <div class="blog-image" style="background-image: url('<?php echo $image[0]; ?>')"></div>
@@ -27,7 +27,7 @@ $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'si
     </div>
   </div>
 <?php } else { ?>
-  <div class="container">
+  <div class="container grid-blog">
     <div class="row pos-r">
       <div class="col-md-12 col-lg-6 blog-info-cell">
         <div>

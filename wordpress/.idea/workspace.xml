@@ -11,31 +11,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="blog-element.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/blog-element.php">
+      <file leaf-file-name="base.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/templates/base.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3243">
-              <caret line="141" column="29" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="155" selection-end-column="2" />
+            <state relative-caret-position="644">
+              <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="elementor-widgets.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/inc/elementor-widgets.php">
+      <file leaf-file-name="list.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/templates/list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="31" column="80" lean-forward="false" selection-start-line="31" selection-start-column="80" selection-end-line="31" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flat-templates.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/flat-templates.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1403">
-              <caret line="61" column="1" lean-forward="false" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+            <state relative-caret-position="420">
+              <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -44,32 +34,18 @@
       <file leaf-file-name="_theme.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/sass/theme/_theme.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="974" column="15" lean-forward="true" selection-start-line="974" selection-start-column="15" selection-end-line="974" selection-end-column="15" />
-              <folding>
-                <element signature="e#13305#13432#0" expanded="false" />
-                <element signature="e#13466#13552#0" expanded="false" />
-                <element signature="e#13645#13663#0" expanded="false" />
-                <element signature="e#13758#13778#0" expanded="false" />
-                <element signature="e#13794#13818#0" expanded="false" />
-                <element signature="e#13858#13951#0" expanded="false" />
-                <element signature="e#13985#14301#0" expanded="false" />
-                <element signature="e#14330#14630#0" expanded="false" />
-                <element signature="e#14665#14736#0" expanded="false" />
-                <element signature="e#14778#14914#0" expanded="false" />
-                <element signature="e#14951#15124#0" expanded="false" />
-                <element signature="e#15320#15359#0" expanded="false" />
-                <element signature="e#15411#15437#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="28">
+              <caret line="832" column="0" lean-forward="false" selection-start-line="832" selection-start-column="2" selection-end-line="838" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/functions.php">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2369">
-              <caret line="107" column="49" lean-forward="false" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
+            <state relative-caret-position="3248">
+              <caret line="122" column="17" lean-forward="false" selection-start-line="122" selection-start-column="17" selection-end-line="122" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -79,19 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>wp_reset_postdata</find>
-      <find>.void-grid-nav</find>
-      <find>void-template-loader</find>
-      <find>globa</find>
-      <find>post_type</find>
-      <find>$instance</find>
-      <find>#mainNav .navbar-nav&gt;li.nav-item&gt;a</find>
-      <find>#mainNav{</find>
-      <find>mainNav</find>
-      <find>Playfair Display</find>
-      <find>widget</find>
-      <find>widget-title</find>
-      <find>.sidebar-title</find>
       <find>sidebar-title</find>
       <find>footer-title</find>
       <find>intro-heading</find>
@@ -109,6 +72,19 @@
       <find>#main-menu .dropdown-menu</find>
       <find>.navbar.affix</find>
       <find>transition</find>
+      <find>#main-menu .nav-item&gt;a</find>
+      <find>#main-menu .dropdown-toggle::after</find>
+      <find>header .text-container .container .intro-text .intro-lead-in</find>
+      <find>void-</find>
+      <find>PlayFair</find>
+      <find>blog-date</find>
+      <find>lora</find>
+      <find>header .text-container .container .intro-text .intro-heading</find>
+      <find>special-title</find>
+      <find>42</find>
+      <find>#blog .blog-text</find>
+      <find>btn smaller common-button</find>
+      <find>.elementor-social-icon i</find>
     </findStrings>
     <replaceStrings>
       <replace>#right-sidebar aside</replace>
@@ -135,14 +111,13 @@
       <dir>$PROJECT_DIR$/wp-content/plugins</dir>
       <dir>$PROJECT_DIR$/wp-content/themes/understrap-0.6.12</dir>
       <dir>$PROJECT_DIR$/wp-content/themes/understrap-0.7.0</dir>
+      <dir>C:\wamp64\www\plootor.github.io\wordpress\wp-content\themes\understrap-0.7.0</dir>
+      <dir>C:\wamp64\www\plootor.github.io\wordpress\wp-content\themes</dir>
     </dirStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.6.12/comments.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.6.12/inc/extras.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.6.12/sass/theme/_theme_variables.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.6.12/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.6.12/single.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.6.12/inc/widgets.php" />
@@ -164,7 +139,6 @@
         <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/loop-templates/content-page.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/sidebar.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/archive.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/search.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/partial-templates/testimonials.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/void-elementor-post-grid-addon-for-elementor-page-builder/void-shortcode.php" />
@@ -176,20 +150,24 @@
         <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/my-widget.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/masonry-gallery-element.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/temlate-loader.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/blog-element.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/inc/widgets.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/searchform.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/header.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/footer.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/templates/base.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/templates/list.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/loop-templates/content-single.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/loop-templates/content.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/loop-templates/content-search.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/inc/widgets-implementations.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/inc/elementor-widgets.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/flat-templates.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/js/custom.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/archive.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/loop-templates/content.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/blog-element.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/admin/tgm/tgm-init.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/templates/list.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/templates/base.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/loop-templates/content-search.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/404.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/searchform.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/sass/theme/_theme.scss" />
       </list>
     </option>
@@ -208,14 +186,15 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
     <handled-path value="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1871" />
-    <option name="y" value="796" />
-    <option name="width" value="1922" />
-    <option name="height" value="1081" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -232,6 +211,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,18 +244,24 @@
               <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="understrap-0.7.0" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="wordpress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wordpress" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="understrap-0.7.0" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="loop-templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../wordpress" />
-    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="node.js.path.for.package.jscs" value="project" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.selected.package.jscs" value="" />
@@ -282,17 +269,18 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../../wordpress/wp-content/themes/mille-fiori/footer.php" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0" />
       <recent name="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/js" />
       <recent name="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/page-templates" />
       <recent name="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/inc" />
       <recent name="$PROJECT_DIR$/wp-content/themes/understrap-0.6.12" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -471,34 +459,40 @@
       <workItem from="1517345566404" duration="1353000" />
       <workItem from="1517394808881" duration="1791000" />
       <workItem from="1517396626474" duration="690000" />
+      <workItem from="1517659705099" duration="521000" />
+      <workItem from="1517670855657" duration="8114000" />
+      <workItem from="1517747867471" duration="237000" />
+      <workItem from="1517748128632" duration="6366000" />
+      <workItem from="1517769164552" duration="7635000" />
+      <workItem from="1517816323569" duration="850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209076000" />
+    <option name="totallyTimeSpent" value="232799000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1871" y="796" width="1922" height="1081" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20811099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21052632" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3828877" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38165346" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,64 +508,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="51" column="6" lean-forward="false" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/sass/theme/_contact-form7.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/sass/theme/_theme_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="76" lean-forward="false" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/partial-templates/testimonials.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/global-templates/pagination.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1472">
-          <caret line="68" column="39" lean-forward="false" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/void-elementor-post-grid-addon-for-elementor-page-builder/readme.txt" />
-    <entry file="file://$PROJECT_DIR$/wp-includes/general-template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77142">
-          <caret line="3359" column="148" lean-forward="false" selection-start-line="3359" selection-start-column="148" selection-end-line="3359" selection-end-column="148" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/elementor-hello-world-master/plugin.php" />
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/elementor/includes/controls/media.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="25" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/elementor/includes/controls/gallery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="133" column="45" lean-forward="true" selection-start-line="133" selection-start-column="45" selection-end-line="133" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/elementor/includes/widgets/image.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-613">
@@ -694,59 +630,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/searchform.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="91" column="47" lean-forward="true" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="27" column="67" lean-forward="false" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/loop-templates/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/loop-templates/content-search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/templates/base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/loop-templates/content-single.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="14" column="57" lean-forward="false" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/templates/list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -758,57 +645,161 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/blog-element.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3243">
-          <caret line="141" column="29" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="155" selection-end-column="2" />
-          <folding />
+        <state relative-caret-position="2884">
+          <caret line="107" column="49" lean-forward="false" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/js/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/inc/enqueue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/js/theme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/flat-templates.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1403">
+        <state relative-caret-position="598">
           <caret line="61" column="1" lean-forward="false" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/archive.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/admin/tgm/tgm-init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/inc/elementor-widgets.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
+        <state relative-caret-position="868">
           <caret line="31" column="80" lean-forward="false" selection-start-line="31" selection-start-column="80" selection-end-line="31" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/blog-element.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="113" column="56" lean-forward="false" selection-start-line="113" selection-start-column="56" selection-end-line="113" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/templates/base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/functions.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/elementor-custom/templates/list.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2369">
-          <caret line="107" column="49" lean-forward="false" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
+        <state relative-caret-position="420">
+          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3248">
+          <caret line="122" column="17" lean-forward="false" selection-start-line="122" selection-start-column="17" selection-end-line="122" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/loop-templates/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/loop-templates/content-search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/loop-templates/content-empty.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/general-template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="191" column="9" lean-forward="false" selection-start-line="191" selection-start-column="9" selection-end-line="191" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/loop-templates/content-none.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/404.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="710">
+          <caret line="52" column="26" lean-forward="false" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/searchform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="15" column="49" lean-forward="false" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/understrap-0.7.0/sass/theme/_theme.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="974" column="15" lean-forward="true" selection-start-line="974" selection-start-column="15" selection-end-line="974" selection-end-column="15" />
-          <folding>
-            <element signature="e#13305#13432#0" expanded="false" />
-            <element signature="e#13466#13552#0" expanded="false" />
-            <element signature="e#13645#13663#0" expanded="false" />
-            <element signature="e#13758#13778#0" expanded="false" />
-            <element signature="e#13794#13818#0" expanded="false" />
-            <element signature="e#13858#13951#0" expanded="false" />
-            <element signature="e#13985#14301#0" expanded="false" />
-            <element signature="e#14330#14630#0" expanded="false" />
-            <element signature="e#14665#14736#0" expanded="false" />
-            <element signature="e#14778#14914#0" expanded="false" />
-            <element signature="e#14951#15124#0" expanded="false" />
-            <element signature="e#15320#15359#0" expanded="false" />
-            <element signature="e#15411#15437#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="28">
+          <caret line="832" column="0" lean-forward="false" selection-start-line="832" selection-start-column="2" selection-end-line="838" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>

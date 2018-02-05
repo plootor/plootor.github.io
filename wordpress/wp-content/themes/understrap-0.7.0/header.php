@@ -21,6 +21,8 @@ $container = get_theme_mod( 'understrap_container_type' );
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700%7CPlayfair+Display:400,400i,700,700i" rel="stylesheet">
+
     <style>
     /* base background color */
     .footer, .footer a, footer .form-control, footer .form-control:focus {
@@ -79,7 +81,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 $template = get_page_template();
 if (strpos($template, 'withoutheader') !== false) {
 } elseif (strpos($template, 'withslider') !== false) { ?>
-<header class="masthead" style="height: <?php echo theme_get_option( 'page_header_slider_height', '73' ) ?>%;">
+<header class="masthead" style="height: <?php echo theme_get_option( 'page_header_slider_height', '83' ) ?>%;">
   <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -124,7 +126,7 @@ if (strpos($template, 'withoutheader') !== false) {
     <div class="text-container">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-heading"><?php echo $title; ?></div>
+          <div class="intro-heading special-title"><?php echo $title; ?></div>
         </div>
       </div>
     </div>

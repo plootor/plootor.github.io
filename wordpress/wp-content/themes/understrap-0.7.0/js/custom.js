@@ -15,4 +15,11 @@ jQuery(function() {
       offset: 100
     });
   }
+
+  jQuery('.scroll-to .elementor-button-link').click(function() {
+      jQuery('html, body').animate({
+          scrollTop: jQuery('#reservationForm').offset().top - 200
+      }, 1000);
+      return false;
+  });
 });

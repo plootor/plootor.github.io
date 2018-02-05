@@ -13,7 +13,7 @@
 		<input class="field form-control" id="s" name="s" type="text"
 			placeholder="<?php esc_attr_e( 'Search &hellip;', 'understrap' ); ?>" value="<?php the_search_query(); ?>">
     <span class="input-group-btn">
-      <button type="submit" name="submit" class="btn smaller common-button" id="searchsubmit">
+      <button type="submit" name="submit" class=" smaller common-button" id="searchsubmit">
         <i class="fa fa-search" aria-hidden="true"></i>
       </button>
     </span>
