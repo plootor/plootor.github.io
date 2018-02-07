@@ -61,8 +61,8 @@ class Widget_Masonry_Gallery_Element extends Widget_Base {
 
     $content = '<div style="column-count: ' . $columnd_count . '" class="card-columns masonry-gallery" id="5a119f2aa">';
     foreach ( $images as $image ) {
-      $content .= '<a class="card" href="' . $image["url"] . '" data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="5a119f2aa">'
-       .'<div class="card-image" style="background-image: url(&quot;' . $image["url"] . '&quot;);"></div>'
+      $content .= '<a class="card fade-animate" href="' . $image["url"] . '" data-elementor-open-lightbox="default" data-elementor-lightbox-slideshow="5a119f2aa">'
+       .'<div class="card-image" style="background-image: url(&quot;' . $image["url"] . '&quot;);"><div class="gallery-bg"></div></div>'
        .'</a>';
     }
     $content .= '</div>';

@@ -9557,6 +9557,12 @@ html, body {
 .special-title {
   font-family: 'Playfair Display', serif; }
 
+.margin-auto {
+  margin: auto; }
+
+.relative {
+  position: relative; }
+
 body {
   font-size: 0.87rem;
   line-height: 1.9;
@@ -9667,8 +9673,7 @@ header .text-container .container .intro-text .intro-separator {
   height: 100%;
   width: 100%; }
 
-/*Blog 2 section*/
-#blog2 .blog-cell, .list-container .blog-cell {
+.list-container .blog-cell {
   margin-bottom: 50px;
   background-color: #f7f7f7; }
 
@@ -10320,13 +10325,15 @@ ul.social-buttons li {
   border: none;
   border-radius: 0;
   margin-bottom: 0;
-  overflow: hidden;
-  background-color: #000; }
+  overflow: hidden; }
 
 .card-columns .card .card-image {
   height: 300px;
   background-size: cover;
   transition: opacity 1s, transform 1s; }
+
+.card-columns .card:hover .gallery-bg {
+  opacity: .6; }
 
 .card-columns .card:nth-child(1) .card-image, .card-columns .card:nth-child(7) .card-image {
   height: 250px; }
@@ -10338,7 +10345,6 @@ ul.social-buttons li {
   column-gap: .5rem; }
 
 .card-columns .card:hover .card-image {
-  opacity: 0.5;
   -webkit-transform: scale3d(1.1, 1.1, 1);
   transform: scale3d(1.1, 1.1, 1); }
 
@@ -10372,12 +10378,22 @@ ul.social-buttons li {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: scale(0);
-  transform: scale(0); }
+  transform: scale(0);
+  z-index: 1; }
 
 .card-columns .card:hover:before {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1); }
+
+.gallery-bg {
+  transition: opacity .3s;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  z-index: -1;
+  opacity: 0; }
 
 /* Navigation */
 #main-menu .nav-item > a {
@@ -10473,16 +10489,14 @@ ul.social-buttons li {
   transform: none; }
 
 .navbar.affix {
-  padding: 0; }
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.75); }
 
 .navbar.affix .navbar-brand > img {
   width: 70%; }
 
 .navbar-brand {
   padding: 0; }
-
-.navbar.affix {
-  background-color: rgba(0, 0, 0, 0.65); }
 
 #main-menu > li > a:before {
   content: "";
@@ -10519,6 +10533,73 @@ h1, h2, h3, h4, h5, h6 {
 .error-404 h1, .error-404 p, .search-title, .no-results h1, .no-results p {
   text-transform: none;
   text-align: center; }
+
+/* animation */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+.fade-animate {
+  animation-delay: .2s; }
+
+.hide-el {
+  opacity: 0; }
+
+.show-el {
+  opacity: 1; }
+
+.navbar-light .navbar-toggler {
+  font-size: 1.5rem;
+  color: #fff;
+  border: none;
+  outline: none; }
+
+@media (max-width: 1024px) {
+  .order1 {
+    order: 1; }
+  .order2 {
+    order: 2; }
+  .order3 {
+    order: 3; }
+  .order4 {
+    order: 4; }
+  .blog-date {
+    padding-top: 40px; }
+  .list-container .btn, .list-container .wpcf7 input[type=submit], .wpcf7 .list-container input[type=submit], .list-container .wpcf7 input[type=submit], .wpcf7 .list-container input[type=submit] {
+    margin-bottom: 0; }
+  .list-container .btn::before, .list-container .wpcf7 input[type=submit]::before, .wpcf7 .list-container input[type=submit]::before,
+  .list-container .wpcf7 input[type=submit]::before,
+  .wpcf7 .list-container input[type=submit]::before {
+    margin: 15px auto; }
+  #blog2 .blog-text, .list-container .blog-text {
+    margin: 0 25px 10px; }
+  #blog .blog-title {
+    font-size: 1.8rem;
+    padding: 0 10px; }
+  #blog2 .blog-image-cell {
+    height: 330px; }
+  .list-container .blog-navigation {
+    margin-top: -10px !important; }
+  .hide-mobile {
+    display: none; }
+  .dropdown-menu {
+    display: none; }
+  .dropdown-menu.show {
+    display: block; }
+  #main-menu {
+    min-width: 250px;
+    background-color: rgba(0, 0, 0, 0.8); }
+  .navbar.affix {
+    height: 65px; }
+  #main-menu .nav-item > a {
+    padding: .5rem 2rem;
+    font-size: 18px; }
+  .card-columns {
+    column-count: 3 !important; }
+  #navbarResponsive {
+    position: absolute;
+    top: 70px;
+    right: 0; } }
 
 /*
 * Use existing Bootstrap 4 classes and

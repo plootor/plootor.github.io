@@ -1,5 +1,5 @@
 <div class="row justify-content-center">
-  <div class="col-md-8 contact-form-cell">
+  <div class="col-md-10 col-lg-8 contact-form-cell">
     <form name="sentMessage" id="reservationForm" novalidate="">
       <div class="row">
         <div class="form-group col-md-6">

@@ -13,12 +13,12 @@
 <?php else : ?>
   <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 my-auto">
+      <div class="row justify-content-center">
+        <div class="col-lg-3 my-auto hide-mobile">
           <img class="d-block img-fluid mx-auto" src="<?php echo theme_get_option( 'theme_footer_logo' ); ?>"
                alt="logo">
         </div>
-        <div class="col-md-3">
+        <div class="col-md-5 col-lg-3">
           <h5 class="footer-title special-title">Contact us</h5>
           <div class="footer-separator"></div>
           <ul class="list-unstyled address">
@@ -39,7 +39,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3 col-lg-2">
           <h5 class="footer-title special-title">Follow us</h5>
           <div class="footer-separator"></div>
           <ul class="social-buttons">
@@ -57,7 +57,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4 col-lg-3">
           <h5 class="footer-title special-title">Subscribe</h5>
           <div class="footer-separator"></div>
           <div id="mc_embed_signup">
