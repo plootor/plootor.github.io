@@ -793,7 +793,8 @@ ul.social-buttons li {
 }
 
 .recent_post_cell {
-  padding: 0 10px 15px 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
 }
 
 .related-image-cell {
@@ -1185,5 +1186,29 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 70px;
     right: 0;
+  }
+
+  .related-name {
+    margin: 0;
+    margin-top: -70px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 10px 5px;
+  }
+
+  .relatedthumb {
+    position: relative;
+  }
+
+  .related-name{
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 15px 10px;
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 100%;
+  }
+
+  .recent-title {
+    padding-right: 15px;
   }
 }

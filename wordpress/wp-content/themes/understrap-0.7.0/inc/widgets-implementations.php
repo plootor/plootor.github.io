@@ -101,7 +101,7 @@ class RecentPostWithImages extends WP_Widget {
           break;
         }
         if ( has_post_thumbnail( $recent["ID"] ) ) {
-          echo '<div class="recent_post_cell">'
+          echo '<div class="recent_post_cell container">'
                . '<div class="row recent-cell">'
                . '<div class="col related-image-cell">'
                . get_the_post_thumbnail( $recent["ID"], 'thumbnail' ) .
