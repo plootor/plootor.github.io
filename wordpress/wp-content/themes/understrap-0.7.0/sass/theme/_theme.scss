@@ -48,7 +48,7 @@ header .text-container {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 header .text-container .container {
@@ -1227,12 +1227,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 576px) {
-  header .text-container .container .intro-text .intro-heading,
-  .ordinary .text-container .container .intro-text .intro-heading {
-    letter-spacing: 5px;
-    font-size: 2rem;
-  }
-
   .navbar-brand img {
     max-width: 170px;
   }
@@ -1313,5 +1307,19 @@ h1, h2, h3, h4, h5, h6 {
   #main-menu .nav-item>a {
     padding: .1rem 2rem;
     font-size: 13px;
+  }
+
+  .intro-text .intro-lead-in {
+    font-size: 28px !important;
+  }
+
+  .intro-text .intro-heading {
+    letter-spacing: 5px !important;
+    font-size: 2.7rem !important;
+    line-height: 75px !important;
+  }
+
+  .intro-text .intro-subheading {
+    font-size: 16px !important;
   }
 }
