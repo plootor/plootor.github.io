@@ -9652,7 +9652,8 @@ header .text-container .container .intro-text .intro-separator {
 
 .carousel-item {
   height: 100%;
-  background-position: center center; }
+  background-position: center center;
+  background-size: cover; }
 
 /*Blog 1 section*/
 #blog .blog-info-cell {
@@ -10659,7 +10660,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 50px;
     padding-bottom: 50px; }
   header {
-    height: 35% !important; }
+    height: 100% !important; }
   .order2-mobile {
     order: 2; }
   .order1-mobile {
