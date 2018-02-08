@@ -18,8 +18,8 @@
           <img class="d-block img-fluid mx-auto" src="<?php echo theme_get_option( 'theme_footer_logo' ); ?>"
                alt="logo">
         </div>
-        <div class="col-md-5 col-lg-3">
-          <h5 class="footer-title special-title">Contact us</h5>
+        <div class="col-md-5 col-lg-3 contact-us">
+          <h5 class="footer-title special-title no-margin">Contact us</h5>
           <div class="footer-separator"></div>
           <ul class="list-unstyled address">
             <li>

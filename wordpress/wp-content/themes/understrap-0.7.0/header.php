@@ -100,11 +100,13 @@ if (strpos($template, 'withoutheader') !== false) {
   </div>
   <div class="text-container">
     <div class="container">
+    <div class="intro-text-container">
       <div class="intro-text">
         <div class="intro-lead-in special-title"><?php echo theme_get_option( 'theme_slider_text1', 'Welcome to' )?></div>
         <div class="intro-heading special-title"><?php echo theme_get_option( 'theme_slider_text2', 'Alexander' )?></div>
         <div class="intro-subheading"><?php echo theme_get_option( 'theme_slider_text3', 'Madrid' )?></div>
       </div>
+    </div>
     </div>
   </div>
 </header>
@@ -121,11 +123,12 @@ if (strpos($template, 'withoutheader') !== false) {
   <header class="ordinary"
           style="background-image: url('<?php echo theme_get_option( 'small_header_bg_image', '' ); ?>');
             height: <?php echo theme_get_option( 'page_header_height', '40' ) ?>%;">
-    <div class="bg-filter"></div>
     <div class="text-container">
       <div class="container">
+        <div class="intro-text-container">
         <div class="intro-text">
           <div class="intro-heading special-title"><?php echo $title; ?></div>
+        </div>
         </div>
       </div>
     </div>

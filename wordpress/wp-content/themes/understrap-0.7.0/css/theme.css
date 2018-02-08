@@ -9560,6 +9560,9 @@ html, body {
 .margin-auto {
   margin: auto; }
 
+.no-margin {
+  margin: 0 !important; }
+
 .relative {
   position: relative; }
 
@@ -9593,12 +9596,16 @@ header .text-container .container {
   position: relative;
   height: 100%; }
 
+.intro-text-container {
+  position: relative;
+  height: 100%; }
+
 header .text-container .container .intro-text {
   text-align: center;
   letter-spacing: 4px;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 90px;
+  font-size: 5.625rem;
   color: white;
   position: absolute;
   top: 38%;
@@ -10038,7 +10045,8 @@ button {
   color: #bec2cd; }
 
 .wrapper > .post, .wrapper > .blog-page, .wrapper > .archive-template {
-  padding: 100px 0; }
+  padding-top: 100px;
+  padding-bottom: 100px; }
 
 .btn.focus, .wpcf7 input.focus[type=submit], .btn:focus, .wpcf7 input[type=submit]:focus, .btn.active, .wpcf7 input.active[type=submit], .btn:active, .wpcf7 input[type=submit]:active {
   box-shadow: none !important; }
@@ -10551,7 +10559,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-light .navbar-toggler {
   font-size: 1.5rem;
-  color: #fff;
+  color: #f7f7f7;
   border: none;
   outline: none; }
 
@@ -10617,6 +10625,56 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%; }
   .recent-title {
     padding-right: 15px; } }
+
+@media (max-width: 576px) {
+  header .text-container .container .intro-text .intro-heading,
+  .ordinary .text-container .container .intro-text .intro-heading {
+    letter-spacing: 5px;
+    font-size: 2rem; }
+  .navbar-brand img {
+    max-width: 170px; }
+  .relatedthumb img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px; }
+  .footer .social-buttons li {
+    padding: 0 15px 5px 0; }
+  .footer {
+    text-align: center;
+    padding: 30px; }
+  .footer-title {
+    margin-top: 30px; }
+  .footer .social-buttons {
+    text-align: center; }
+  .footer .social-buttons li {
+    padding: 0 0px 5px 0; }
+  .footer-separator {
+    margin: 15px auto; }
+  .contact-us p {
+    margin-bottom: 0; }
+  .navbar.affix {
+    padding: 0 1rem !important; }
+  .wrapper > .archive-template, .wrapper > .blog-page, .wrapper > .post {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  header {
+    height: 35% !important; }
+  .order2-mobile {
+    order: 2; }
+  .order1-mobile {
+    order: 1; }
+  .elementor-section-wrap > section {
+    padding: 50px 0; }
+  #blog .blog-image-cell {
+    height: 200px; }
+  .grid-blog, .list-container .blog-cell {
+    margin-bottom: 30px; }
+  #blog .blog-title, .blog-title {
+    font-size: 1.4rem; }
+  #main-menu .nav-item > a {
+    padding: .1rem 2rem;
+    font-size: 13px; } }
 
 /*
 * Use existing Bootstrap 4 classes and
