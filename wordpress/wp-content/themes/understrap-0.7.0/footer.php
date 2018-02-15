@@ -62,17 +62,19 @@
           <div class="footer-separator"></div>
           <div id="mc_embed_signup">
             <p>Subscribe for a weekly newsletter</p>
-            <form action="#" method="post" id="subscribe-form" target="_blank" novalidate="">
-              <div class="input-group input-group-lg form-group">
-                <input type="email" name="email" class="form-control" placeholder="Email address..." required="" data-validation-required-message="Please enter your email address.">
-                <p class="help-block text-danger"></p>
+            <form id="subscribe-form" class="needs-validation" novalidate>
+              <div class="input-group form-group">
+                <input type="email" name="email" class="form-control" placeholder="Email address..." required>
+              <div class="invalid-feedback">
+                  Please provide a valid email.
+              </div>
                 <span class="input-group-btn white-hover">
                   <button type="submit" name="subscribe" class="btn btn-xl smaller common-button">
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                   </button>
                 </span>
+                <div id="subscribe-success"></div>
               </div>
-              <div id="subscribe2-success"></div>
             </form>
           </div>
         </div>

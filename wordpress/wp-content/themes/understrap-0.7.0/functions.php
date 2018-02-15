@@ -133,13 +133,30 @@ add_action( "wp_ajax_nopriv_book_send", "sendBookMail" );
 
 function sendBookMail() {
     $name    = sanitize_text_field( $_POST["name"] );
-    $email   = sanitize_email( $_POST["phone"] );
-    $subject = sanitize_text_field( $_POST["amount"] );
-    $message = esc_textarea( $_POST["datetime"] );
-    $headers = "From: $name <$email>" . "\r\n";
+    $phone   = sanitize_email( $_POST["phone"] );
+    $amount = sanitize_text_field( $_POST["amount"] );
+    $datetime = esc_textarea( $_POST["datetime"] );
+    $message = 'You have new book rezervation from ' . $name . ' with phone number: ' . $phone . '.';
+    $message .= 'Rezervation is for: ' . $amount . ' places for date and time: ' . $datetime;
+    $headers = "From: $name" . "\r\n";
     $to      = get_option( 'admin_email' );
 
-    $isSend = wp_mail( $to, $subject, $message, $headers );
+    $isSend = wp_mail( $to, 'Rezervation Request', $message, $headers );
+    if ( $isSend ) {
+        return true;
+    }
+    header( 'HTTP/1.0 404 Not Found' );
+    exit;
+}
+
+add_action( "wp_ajax_subscribe_send", "sendSubscribeMail" );
+add_action( "wp_ajax_nopriv_subscribe_send", "sendSubscribeMail" );
+
+function sendSubscribeMail() {
+    $email   = sanitize_email( $_POST["phone"] );
+    $message = 'You have new subscription request placed for email: ' . $email;
+    $to      = get_option( 'admin_email' );
+    $isSend = wp_mail( $to, 'Subscription Request', $message );
     if ( $isSend ) {
         return true;
     }

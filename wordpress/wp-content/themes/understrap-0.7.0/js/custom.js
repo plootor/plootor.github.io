@@ -19,7 +19,7 @@
 
   jQuery('.scroll-to .elementor-button-link').click(function() {
       jQuery('html, body').animate({
-          scrollTop: jQuery('#reservationForm').offset().top - 200
+          scrollTop: jQuery('#book-form').offset().top - 200
       }, 1000);
       return false;
   });
@@ -109,9 +109,6 @@
                     .append("<strong>Your message has been sent. </strong>");
                 jQuery('#success > .alert-success')
                     .append('</div>');
-
-                //clear all fields
-                // form.trigger("reset");
             },
             error: function () {
                 // Fail message
@@ -120,8 +117,33 @@
                     .append("</button>");
                 jQuery('#success > .alert-danger').append("<strong>Sorry, it seems that my mail server is not responding. Please try again later!");
                 jQuery('#success > .alert-danger').append('</div>');
-                //clear all fields
-                //  form.trigger("reset");
+            }
+        });
+
+        event.preventDefault();
+        event.stopPropagation();
+    });
+
+    jQuery('#subscribe-form').submit(function(event) {
+
+        if (this.checkValidity() === false) {
+            return false;
+        }
+        jQuery.ajax({
+            url: '/wp-admin/admin-ajax.php',
+            type: "POST",
+            data: {
+                action: 'subscribe_send',
+                name: this.email.value,
+            },
+            cache: false,
+            success: function () {
+                // Success message
+                 jQuery('.common-button>.fa').removeClass('fa-angle-right').addClass('fa-check');
+            },
+            error: function () {
+                // Fail message
+                jQuery('.common-button>.fa').removeClass('fa-angle-right').addClass('fa-times');
             }
         });
 
