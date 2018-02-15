@@ -9566,11 +9566,23 @@ html, body {
 .relative {
   position: relative; }
 
+.read-more-button {
+  text-align: center;
+  padding-bottom: 1rem; }
+
+.navbar-toggler-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important; }
+
 body {
   font-size: 0.87rem;
   line-height: 1.9;
   font-family: 'Lora', serif;
   color: #333; }
+
+button {
+  outline-color: transparent !important; }
 
 a:hover {
   text-decoration: none;
@@ -9581,6 +9593,14 @@ a:hover {
 .btn-secondary:not([disabled]):not(.disabled):active,
 .show > .btn-secondary.dropdown-toggle {
   background-color: transparent; }
+
+form .form-group, form .wpcf7 .wpcf7-form p, .wpcf7 .wpcf7-form form p {
+  position: relative;
+  padding-bottom: 20px; }
+
+form .form-group .invalid-feedback, form .wpcf7 .wpcf7-form p .invalid-feedback, .wpcf7 .wpcf7-form form p .invalid-feedback {
+  position: absolute;
+  bottom: 0; }
 
 header {
   position: relative; }
@@ -9699,7 +9719,7 @@ header .text-container .container .intro-text .intro-separator {
   text-transform: none; }
 
 #blog2 .blog-text, .list-container .blog-text {
-  margin: 0 40px 10px; }
+  margin: 0 40px 0; }
 
 #blog2 .blog-separator {
   width: 10%;
@@ -10004,7 +10024,299 @@ h1 {
 .wpcf7 select,
 .wpcf7 .form-group select, .wpcf7 .wpcf7-form p select, .form-group
 .wpcf7 textarea,
-.wpcf7 .form-group textarea, .wpcf7 .wpcf7-form p textarea, .form-group .wpcf7 .wpcf7-validation-errors, .wpcf7 .form-group .wpcf7-validation-errors, .wpcf7 .wpcf7-form p .wpcf7-validation-errors {
+.wpcf7 .form-group textarea, .wpcf7 .wpcf7-form p textarea, .form-group .wpcf7 .wpcf7-validation-errors, .wpcf7 .form-group .wpcf7-validation-errors, .wpcf7 .wpcf7-form p .wpcf7-validation-errors,
+.was-validated .form-control:invalid,
+.was-validated .wpcf7 input[type=text]:invalid, .wpcf7
+.was-validated input[type=text]:invalid,
+.was-validated
+.wpcf7 input[type=search]:invalid,
+.wpcf7
+.was-validated input[type=search]:invalid,
+.was-validated
+.wpcf7 input[type=url]:invalid,
+.wpcf7
+.was-validated input[type=url]:invalid,
+.was-validated
+.wpcf7 input[type=tel]:invalid,
+.wpcf7
+.was-validated input[type=tel]:invalid,
+.was-validated
+.wpcf7 input[type=number]:invalid,
+.wpcf7
+.was-validated input[type=number]:invalid,
+.was-validated
+.wpcf7 input[type=range]:invalid,
+.wpcf7
+.was-validated input[type=range]:invalid,
+.was-validated
+.wpcf7 input[type=date]:invalid,
+.wpcf7
+.was-validated input[type=date]:invalid,
+.was-validated
+.wpcf7 input[type=month]:invalid,
+.wpcf7
+.was-validated input[type=month]:invalid,
+.was-validated
+.wpcf7 input[type=week]:invalid,
+.wpcf7
+.was-validated input[type=week]:invalid,
+.was-validated
+.wpcf7 input[type=time]:invalid,
+.wpcf7
+.was-validated input[type=time]:invalid,
+.was-validated
+.wpcf7 input[type=datetime]:invalid,
+.wpcf7
+.was-validated input[type=datetime]:invalid,
+.was-validated
+.wpcf7 input[type=datetime-local]:invalid,
+.wpcf7
+.was-validated input[type=datetime-local]:invalid,
+.was-validated
+.wpcf7 input[type=color]:invalid,
+.wpcf7
+.was-validated input[type=color]:invalid,
+.was-validated
+.wpcf7 input[type=email]:invalid,
+.wpcf7
+.was-validated input[type=email]:invalid,
+.was-validated
+.wpcf7 input[type=file]:invalid,
+.wpcf7
+.was-validated input[type=file]:invalid,
+.was-validated
+.wpcf7 input[type=submit]:invalid,
+.wpcf7
+.was-validated input[type=submit]:invalid,
+.was-validated
+.wpcf7 select:invalid,
+.wpcf7
+.was-validated select:invalid,
+.was-validated
+.wpcf7 textarea:invalid,
+.wpcf7
+.was-validated textarea:invalid,
+.was-validated .wpcf7 .wpcf7-validation-errors:invalid, .wpcf7
+.was-validated .wpcf7-validation-errors:invalid,
+.was-validated .form-control:invalid:focus,
+.was-validated .wpcf7 input[type=text]:invalid:focus, .wpcf7
+.was-validated input[type=text]:invalid:focus,
+.was-validated
+.wpcf7 input[type=search]:invalid:focus,
+.wpcf7
+.was-validated input[type=search]:invalid:focus,
+.was-validated
+.wpcf7 input[type=url]:invalid:focus,
+.wpcf7
+.was-validated input[type=url]:invalid:focus,
+.was-validated
+.wpcf7 input[type=tel]:invalid:focus,
+.wpcf7
+.was-validated input[type=tel]:invalid:focus,
+.was-validated
+.wpcf7 input[type=number]:invalid:focus,
+.wpcf7
+.was-validated input[type=number]:invalid:focus,
+.was-validated
+.wpcf7 input[type=range]:invalid:focus,
+.wpcf7
+.was-validated input[type=range]:invalid:focus,
+.was-validated
+.wpcf7 input[type=date]:invalid:focus,
+.wpcf7
+.was-validated input[type=date]:invalid:focus,
+.was-validated
+.wpcf7 input[type=month]:invalid:focus,
+.wpcf7
+.was-validated input[type=month]:invalid:focus,
+.was-validated
+.wpcf7 input[type=week]:invalid:focus,
+.wpcf7
+.was-validated input[type=week]:invalid:focus,
+.was-validated
+.wpcf7 input[type=time]:invalid:focus,
+.wpcf7
+.was-validated input[type=time]:invalid:focus,
+.was-validated
+.wpcf7 input[type=datetime]:invalid:focus,
+.wpcf7
+.was-validated input[type=datetime]:invalid:focus,
+.was-validated
+.wpcf7 input[type=datetime-local]:invalid:focus,
+.wpcf7
+.was-validated input[type=datetime-local]:invalid:focus,
+.was-validated
+.wpcf7 input[type=color]:invalid:focus,
+.wpcf7
+.was-validated input[type=color]:invalid:focus,
+.was-validated
+.wpcf7 input[type=email]:invalid:focus,
+.wpcf7
+.was-validated input[type=email]:invalid:focus,
+.was-validated
+.wpcf7 input[type=file]:invalid:focus,
+.wpcf7
+.was-validated input[type=file]:invalid:focus,
+.was-validated
+.wpcf7 input[type=submit]:invalid:focus,
+.wpcf7
+.was-validated input[type=submit]:invalid:focus,
+.was-validated
+.wpcf7 select:invalid:focus,
+.wpcf7
+.was-validated select:invalid:focus,
+.was-validated
+.wpcf7 textarea:invalid:focus,
+.wpcf7
+.was-validated textarea:invalid:focus,
+.was-validated .wpcf7 .wpcf7-validation-errors:invalid:focus, .wpcf7
+.was-validated .wpcf7-validation-errors:invalid:focus,
+.was-validated .form-control:valid:focus,
+.was-validated .wpcf7 input[type=text]:valid:focus, .wpcf7
+.was-validated input[type=text]:valid:focus,
+.was-validated
+.wpcf7 input[type=search]:valid:focus,
+.wpcf7
+.was-validated input[type=search]:valid:focus,
+.was-validated
+.wpcf7 input[type=url]:valid:focus,
+.wpcf7
+.was-validated input[type=url]:valid:focus,
+.was-validated
+.wpcf7 input[type=tel]:valid:focus,
+.wpcf7
+.was-validated input[type=tel]:valid:focus,
+.was-validated
+.wpcf7 input[type=number]:valid:focus,
+.wpcf7
+.was-validated input[type=number]:valid:focus,
+.was-validated
+.wpcf7 input[type=range]:valid:focus,
+.wpcf7
+.was-validated input[type=range]:valid:focus,
+.was-validated
+.wpcf7 input[type=date]:valid:focus,
+.wpcf7
+.was-validated input[type=date]:valid:focus,
+.was-validated
+.wpcf7 input[type=month]:valid:focus,
+.wpcf7
+.was-validated input[type=month]:valid:focus,
+.was-validated
+.wpcf7 input[type=week]:valid:focus,
+.wpcf7
+.was-validated input[type=week]:valid:focus,
+.was-validated
+.wpcf7 input[type=time]:valid:focus,
+.wpcf7
+.was-validated input[type=time]:valid:focus,
+.was-validated
+.wpcf7 input[type=datetime]:valid:focus,
+.wpcf7
+.was-validated input[type=datetime]:valid:focus,
+.was-validated
+.wpcf7 input[type=datetime-local]:valid:focus,
+.wpcf7
+.was-validated input[type=datetime-local]:valid:focus,
+.was-validated
+.wpcf7 input[type=color]:valid:focus,
+.wpcf7
+.was-validated input[type=color]:valid:focus,
+.was-validated
+.wpcf7 input[type=email]:valid:focus,
+.wpcf7
+.was-validated input[type=email]:valid:focus,
+.was-validated
+.wpcf7 input[type=file]:valid:focus,
+.wpcf7
+.was-validated input[type=file]:valid:focus,
+.was-validated
+.wpcf7 input[type=submit]:valid:focus,
+.wpcf7
+.was-validated input[type=submit]:valid:focus,
+.was-validated
+.wpcf7 select:valid:focus,
+.wpcf7
+.was-validated select:valid:focus,
+.was-validated
+.wpcf7 textarea:valid:focus,
+.wpcf7
+.was-validated textarea:valid:focus,
+.was-validated .wpcf7 .wpcf7-validation-errors:valid:focus, .wpcf7
+.was-validated .wpcf7-validation-errors:valid:focus,
+.was-validated .form-control:valid,
+.was-validated .wpcf7 input[type=text]:valid, .wpcf7
+.was-validated input[type=text]:valid,
+.was-validated
+.wpcf7 input[type=search]:valid,
+.wpcf7
+.was-validated input[type=search]:valid,
+.was-validated
+.wpcf7 input[type=url]:valid,
+.wpcf7
+.was-validated input[type=url]:valid,
+.was-validated
+.wpcf7 input[type=tel]:valid,
+.wpcf7
+.was-validated input[type=tel]:valid,
+.was-validated
+.wpcf7 input[type=number]:valid,
+.wpcf7
+.was-validated input[type=number]:valid,
+.was-validated
+.wpcf7 input[type=range]:valid,
+.wpcf7
+.was-validated input[type=range]:valid,
+.was-validated
+.wpcf7 input[type=date]:valid,
+.wpcf7
+.was-validated input[type=date]:valid,
+.was-validated
+.wpcf7 input[type=month]:valid,
+.wpcf7
+.was-validated input[type=month]:valid,
+.was-validated
+.wpcf7 input[type=week]:valid,
+.wpcf7
+.was-validated input[type=week]:valid,
+.was-validated
+.wpcf7 input[type=time]:valid,
+.wpcf7
+.was-validated input[type=time]:valid,
+.was-validated
+.wpcf7 input[type=datetime]:valid,
+.wpcf7
+.was-validated input[type=datetime]:valid,
+.was-validated
+.wpcf7 input[type=datetime-local]:valid,
+.wpcf7
+.was-validated input[type=datetime-local]:valid,
+.was-validated
+.wpcf7 input[type=color]:valid,
+.wpcf7
+.was-validated input[type=color]:valid,
+.was-validated
+.wpcf7 input[type=email]:valid,
+.wpcf7
+.was-validated input[type=email]:valid,
+.was-validated
+.wpcf7 input[type=file]:valid,
+.wpcf7
+.was-validated input[type=file]:valid,
+.was-validated
+.wpcf7 input[type=submit]:valid,
+.wpcf7
+.was-validated input[type=submit]:valid,
+.was-validated
+.wpcf7 select:valid,
+.wpcf7
+.was-validated select:valid,
+.was-validated
+.wpcf7 textarea:valid,
+.wpcf7
+.was-validated textarea:valid,
+.was-validated .wpcf7 .wpcf7-validation-errors:valid, .wpcf7
+.was-validated .wpcf7-validation-errors:valid {
   height: 50px;
   border-radius: 0;
   border: 1px solid #e5c07c;
@@ -10012,6 +10324,12 @@ h1 {
   background-color: transparent;
   letter-spacing: 1px;
   font-size: 0.75rem; }
+
+.alert {
+  border-radius: 0; }
+
+input:-webkit-autofill, textarea:-webkit-autofill {
+  background-color: transparent; }
 
 .smaller.common-button {
   padding: 10px 25px !important; }
@@ -10406,6 +10724,9 @@ ul.social-buttons li {
   opacity: 0; }
 
 /* Navigation */
+#main-menu .nav-item:focus {
+  border: none; }
+
 #main-menu .nav-item > a {
   font-weight: 400;
   font-size: 15px;
@@ -10565,6 +10886,8 @@ h1, h2, h3, h4, h5, h6 {
   outline: none; }
 
 @media (max-width: 1024px) {
+  header {
+    height: 100% !important; }
   .order1 {
     order: 1; }
   .order2 {
@@ -10582,7 +10905,7 @@ h1, h2, h3, h4, h5, h6 {
   .wpcf7 .list-container input[type=submit]::before {
     margin: 15px auto; }
   #blog2 .blog-text, .list-container .blog-text {
-    margin: 0 25px 10px; }
+    margin: 0 25px 0; }
   #blog .blog-title {
     font-size: 1.8rem;
     padding: 0 10px; }
@@ -10651,16 +10974,23 @@ h1, h2, h3, h4, h5, h6 {
   .contact-us p {
     margin-bottom: 0; }
   .navbar.affix {
-    padding: 0 1rem !important; }
+    padding: 0 1rem !important;
+    background-color: rgba(0, 0, 0, 0.9); }
   .wrapper > .archive-template, .wrapper > .blog-page, .wrapper > .post {
     padding-top: 50px;
     padding-bottom: 50px; }
   header {
     height: 100% !important; }
+  header.ordinary {
+    height: 35% !important; }
   .order2-mobile {
     order: 2; }
   .order1-mobile {
     order: 1; }
+  .ordinary .intro-text .intro-heading {
+    font-size: 2rem !important;
+    text-transform: none;
+    font-variant: small-caps; }
   .elementor-section-wrap > section {
     padding: 50px 0; }
   #blog .blog-image-cell {
@@ -10670,7 +11000,7 @@ h1, h2, h3, h4, h5, h6 {
   #blog .blog-title, .blog-title {
     font-size: 1.4rem; }
   #main-menu .nav-item > a {
-    padding: .1rem 2rem;
+    padding: .2rem 1rem;
     font-size: 13px; }
   .intro-text {
     top: 33% !important; }
@@ -10681,7 +11011,47 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2.7rem !important;
     line-height: 75px !important; }
   .intro-text .intro-subheading {
-    font-size: 16px !important; } }
+    font-size: 16px !important; }
+  #main-menu {
+    background-color: rgba(0, 0, 0, 0.85);
+    border: none;
+    border-radius: 0;
+    padding: 0 2rem;
+    line-height: 30px;
+    margin-top: .4rem;
+    min-width: 230px; }
+  #main-menu .nav-item {
+    border-bottom: 1px solid #f7f7f7; }
+  #main-menu .nav-item:last-child {
+    border-bottom: none; }
+  #navbarResponsive {
+    top: 50px; }
+  #main-menu .nav-item .dropdown-menu, #main-menu .nav-item .dropdown-menu a {
+    padding: 0 !important;
+    margin: 0 !important; }
+  #main-menu .nav-item {
+    overflow: hidden; }
+  #main-menu .dropdown-menu .menu-item .nav-link {
+    font-size: 12px !important; }
+  #main-menu .dropdown-menu .menu-item .nav-link:before {
+    content: '\f105';
+    font-family: FontAwesome;
+    display: inline-block;
+    border: none;
+    height: 100%;
+    vertical-align: middle;
+    width: inherit;
+    line-height: 26px;
+    margin-right: 5px;
+    margin-left: 2rem; }
+  #main-menu .dropdown-menu {
+    background-color: inherit !important; }
+  #main-menu .dropdown-menu .menu-item {
+    border-bottom: none; }
+  #main-menu > li > a:before {
+    display: none; }
+  .card-columns {
+    column-count: 2 !important; } }
 
 /*
 * Use existing Bootstrap 4 classes and

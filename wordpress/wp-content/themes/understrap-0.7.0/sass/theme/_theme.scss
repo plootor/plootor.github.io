@@ -20,11 +20,26 @@ html, body {
   position: relative;
 }
 
+.read-more-button {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.navbar-toggler-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
 body {
   font-size: 0.87rem;
   line-height: 1.9;
   font-family: 'Lora', serif;
   color: #333;
+}
+
+button {
+  outline-color: transparent !important;
 }
 
 a:hover {
@@ -37,6 +52,17 @@ a:hover {
 .btn-secondary:not([disabled]):not(.disabled):active,
 .show>.btn-secondary.dropdown-toggle {
   background-color: transparent;
+}
+
+
+form .form-group {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+form .form-group .invalid-feedback {
+  position: absolute;
+  bottom: 0;
 }
 
 header {
@@ -180,7 +206,7 @@ header .text-container .container .intro-text .intro-separator {
 }
 
 #blog2 .blog-text, .list-container .blog-text {
-  margin: 0 40px 10px;
+  margin: 0 40px 0;
 }
 
 #blog2 .blog-separator {
@@ -446,7 +472,11 @@ h1 {
   color: #fff !important;
 }
 
-.form-group .form-control {
+.form-group .form-control,
+.was-validated .form-control:invalid,
+.was-validated .form-control:invalid:focus,
+.was-validated .form-control:valid:focus,
+.was-validated .form-control:valid {
   height: 50px;
   border-radius: 0;
   border: 1px solid #e5c07c;
@@ -454,6 +484,14 @@ h1 {
   background-color: transparent;
   letter-spacing: 1px;
   font-size: 0.75rem;
+}
+
+.alert {
+  border-radius: 0;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill {
+  background-color: transparent;
 }
 
 .smaller.common-button {
@@ -928,6 +966,10 @@ height: 250px;
 }
 
 /* Navigation */
+#main-menu .nav-item:focus {
+  border: none;
+}
+
 #main-menu .nav-item>a {
   font-weight: 400;
   font-size: 15px;
@@ -1119,6 +1161,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1024px) {
+  header {
+    height: 100%!important;
+  }
+
   .order1 {
     order: 1;
   }
@@ -1150,7 +1196,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   #blog2 .blog-text, .list-container .blog-text {
-    margin: 0 25px 10px;
+    margin: 0 25px 0;
   }
 
   #blog .blog-title {
@@ -1269,6 +1315,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .navbar.affix {
     padding: 0 1rem !important;
+    background-color: rgba(0,0,0,.9);
   }
 
   .wrapper>.archive-template, .wrapper>.blog-page, .wrapper>.post {
@@ -1280,12 +1327,22 @@ h1, h2, h3, h4, h5, h6 {
     height: 100% !important;
   }
 
+  header.ordinary {
+    height: 35% !important;
+  }
+
   .order2-mobile {
     order: 2;
   }
 
   .order1-mobile {
     order: 1;
+  }
+
+  .ordinary .intro-text .intro-heading {
+    font-size: 2rem !important;
+    text-transform: none;
+    font-variant: small-caps;
   }
 
   .elementor-section-wrap>section {
@@ -1305,7 +1362,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   #main-menu .nav-item>a {
-    padding: .1rem 2rem;
+    padding: .2rem 1rem;
     font-size: 13px;
   }
 
@@ -1325,5 +1382,69 @@ h1, h2, h3, h4, h5, h6 {
 
   .intro-text .intro-subheading {
     font-size: 16px !important;
+  }
+
+  #main-menu {
+    background-color: rgba(0,0,0,.85);
+    border: none;
+    border-radius: 0;
+    padding: 0 2rem;
+    line-height: 30px;
+    margin-top: .4rem;
+    min-width: 230px;
+  }
+
+  #main-menu .nav-item {
+    border-bottom: 1px solid #f7f7f7;
+  }
+
+  #main-menu .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  #navbarResponsive {
+    top: 50px;
+  }
+
+  #main-menu .nav-item .dropdown-menu, #main-menu .nav-item .dropdown-menu a {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #main-menu .nav-item {
+    overflow: hidden;
+  }
+
+  #main-menu .dropdown-menu .menu-item .nav-link {
+    font-size: 12px !important;
+  }
+
+  #main-menu .dropdown-menu .menu-item .nav-link:before {
+    content: '\f105';
+    font-family: FontAwesome;
+    display: inline-block;
+    border: none;
+    height: 100%;
+    vertical-align: middle;
+    width: inherit;
+    line-height: 26px;
+    margin-right: 5px;
+    margin-left: 2rem;
+  }
+
+  #main-menu .dropdown-menu {
+    background-color: inherit !important;
+  }
+
+  #main-menu .dropdown-menu .menu-item {
+    border-bottom: none;
+  }
+
+  #main-menu>li>a:before {
+    display: none;
+  }
+
+  .card-columns {
+    column-count: 2 !important;
   }
 }

@@ -106,3 +106,43 @@ add_filter( 'wp_page_menu', 'my_menu_notitle' );
 add_filter( 'wp_list_categories', 'my_menu_notitle' );
 
 add_filter( 'wp_list_pages', 'my_menu_notitle' );
+
+
+
+add_action( "wp_ajax_contact_send", "sendContactMail" );
+add_action( "wp_ajax_nopriv_contact_send", "sendContactMail" );
+
+function sendContactMail() {
+    $name    = sanitize_text_field( $_POST["name"] );
+    $email   = sanitize_email( $_POST["email"] );
+    $subject = sanitize_text_field( $_POST["subject"] );
+    $message = esc_textarea( $_POST["message"] );
+    $headers = "From: $name <$email>" . "\r\n";
+    $to      = get_option( 'admin_email' );
+
+    $isSend = wp_mail( $to, $subject, $message, $headers );
+    if ( $isSend ) {
+        return true;
+    }
+    header( 'HTTP/1.0 404 Not Found' );
+    exit;
+}
+
+add_action( "wp_ajax_book_send", "sendBookMail" );
+add_action( "wp_ajax_nopriv_book_send", "sendBookMail" );
+
+function sendBookMail() {
+    $name    = sanitize_text_field( $_POST["name"] );
+    $email   = sanitize_email( $_POST["phone"] );
+    $subject = sanitize_text_field( $_POST["amount"] );
+    $message = esc_textarea( $_POST["datetime"] );
+    $headers = "From: $name <$email>" . "\r\n";
+    $to      = get_option( 'admin_email' );
+
+    $isSend = wp_mail( $to, $subject, $message, $headers );
+    if ( $isSend ) {
+        return true;
+    }
+    header( 'HTTP/1.0 404 Not Found' );
+    exit;
+}
