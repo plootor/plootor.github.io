@@ -46,6 +46,7 @@ a:hover {
   text-decoration: none;
   color: #e5c07c !important;
   transition: color .5s;
+  -webkit-transition: color .5s;
 }
 
 .btn-secondary:not([disabled]):not(.disabled).active,
@@ -175,7 +176,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 .elementor-button:hover, .common-button:hover {
   background-color: transparent !important;
-  transition: all 0.5s;
+  transition: all .5s;
+  -webkit-transition: all .5s;
   cursor: pointer;
 }
 
@@ -188,6 +190,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 .elementor-social-icon {
   border: 1px solid transparent;
   transition: border-color 1s ease !important;
+  -webkit-transition: border-color 1s ease !important;
   overflow: hidden;
 }
 
@@ -423,6 +426,10 @@ header {
   .navbar-brand {
     padding: 0;
     >img {
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      -ms-transition: all .3s;
+      -o-transition: all .3s;
       transition: all .3s;
     }
   }
@@ -529,6 +536,10 @@ header {
     text-transform: uppercase;
     &:hover {
       color: #e5c07c;
+      -webkit-transition: color 0.5s;
+      -moz-transition: color 0.5s;
+      -ms-transition: color 0.5s;
+      -o-transition: color 0.5s;
       transition: color 0.5s;
     }
     &:before {
@@ -623,7 +634,7 @@ header {
         outline: none;
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
-        transition: all 0.5s;
+        transition: all 0.3s;
       }
     }
   }
@@ -934,6 +945,10 @@ header {
 
 /* Gallery */
 .gallery-bg {
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  -ms-transition: opacity .3s;
+  -o-transition: opacity .3s;
   transition: opacity .3s;
   position: absolute;
   height: 100%;
@@ -954,7 +969,11 @@ header {
     .card-image {
       height: 300px;
       background-size: cover;
-      transition: opacity 1s, transform 1s;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s;
     }
     .gallery-bg {
       opacity: .6;
@@ -1028,9 +1047,11 @@ header {
     }
     section {
       transition: .3s transform !important;
+      -webkit-transition: .3s transform !important;
     }
     img {
       transition: 1s transform;
+      -webkit-transition: 1s transform;
     }
   }
 }
@@ -1198,8 +1219,7 @@ header {
     bottom: 0;
     margin: 0;
     padding: 15px 10px;
-    background-color: rgba(255, 255, 255, 0.85);
-    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85) !important;
   }
 
   .recent-title {
