@@ -10842,6 +10842,8 @@ header {
     background-color: inherit !important; }
   #main-menu .dropdown-menu .menu-item {
     border-bottom: none; }
+  #main-menu > li > a:before {
+    display: none; }
   #main-menu .dropdown-menu .menu-item .nav-link:before {
     content: '\f105';
     font-family: FontAwesome;

@@ -16,18 +16,22 @@
  * @version 3.1.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit;
 }
 
 ?>
-<form role="search" method="get" class="woocommerce-product-search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+<form role="search" method="get" class="woocommerce-product-search" action="<?php echo esc_url(home_url('/')); ?>">
 	<div class="input-group">
 
-		<input type="search" id="woocommerce-product-search-field-<?php echo isset( $index ) ? absint( $index ) : 0; ?>" class="search-field field form-control" placeholder="<?php echo esc_attr__( 'Search products&hellip;', 'understrap' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
-		<input type="hidden" name="post_type" value="product" />
+		<input type="search" id="woocommerce-product-search-field-<?php echo isset($index) ? absint($index) : 0; ?>"
+					 class="search-field field form-control"
+					 placeholder="<?php echo esc_attr__('Search products&hellip;', 'understrap'); ?>"
+					 value="<?php echo get_search_query(); ?>" name="s"/>
+		<input type="hidden" name="post_type" value="product"/>
 		<span class="input-group-btn">
-			<input class="submit btn btn-primary" type="submit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'understrap' ); ?>" />
+			<input class="submit btn btn-primary" type="submit"
+						 value="<?php echo esc_attr_x('Search', 'submit button', 'understrap'); ?>"/>
 			</span>
 	</div>
 </form>

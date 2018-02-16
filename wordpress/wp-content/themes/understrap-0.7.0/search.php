@@ -7,52 +7,52 @@
 
 get_header();
 
-$container   = get_theme_mod( 'understrap_container_type' );
+$container = get_theme_mod('understrap_container_type');
 
 ?>
 
 <div class="wrapper" id="search-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+	<div class="<?php echo esc_attr($container); ?>" id="content" tabindex="-1">
 
 		<div class="row  justify-content-center">
 
 			<!-- Do the left sidebar check and opens the primary div -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+			<?php get_template_part('global-templates/left-sidebar-check'); ?>
 
 			<main class="site-main" id="main">
-        <div class="list-container">
-				<?php if ( have_posts() ) : ?>
+				<div class="list-container">
+					<?php if (have_posts()) : ?>
 
-					<header class="page-header">
+						<header class="page-header">
 
 							<h1 class="search-title"><?php printf(
-							/* translators:*/
-							 esc_html__( 'Search Results for: %s', 'understrap' ),
-								'<span>' . get_search_query() . '</span>' ); ?></h1>
+								/* translators:*/
+									esc_html__('Search Results for: %s', 'understrap'),
+									'<span>' . get_search_query() . '</span>'); ?></h1>
 
-					</header><!-- .page-header -->
+						</header><!-- .page-header -->
 
-					<?php /* Start the Loop */ ?>
-					<?php while ( have_posts() ) : the_post(); ?>
+						<?php /* Start the Loop */ ?>
+						<?php while (have_posts()) : the_post(); ?>
 
-						<?php
-						/**
-						 * Run the loop for the search to output the results.
-						 * If you want to overload this in a child theme then include a file
-						 * called content-search.php and that will be used instead.
-						 */
-						get_template_part( 'loop-templates/content', 'search' );
-						?>
+							<?php
+							/**
+							 * Run the loop for the search to output the results.
+							 * If you want to overload this in a child theme then include a file
+							 * called content-search.php and that will be used instead.
+							 */
+							get_template_part('loop-templates/content', 'search');
+							?>
 
-					<?php endwhile; ?>
+						<?php endwhile; ?>
 
-				<?php else : ?>
+					<?php else : ?>
 
-					<?php get_template_part( 'loop-templates/content', 'none' ); ?>
+						<?php get_template_part('loop-templates/content', 'none'); ?>
 
-				<?php endif; ?>
-        </div>
+					<?php endif; ?>
+				</div>
 			</main><!-- #main -->
 
 			<!-- The pagination component -->
@@ -61,7 +61,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 		</div><!-- #primary -->
 
 		<!-- Do the right sidebar check -->
-		<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
+		<?php get_template_part('global-templates/right-sidebar-check'); ?>
 
 	</div><!-- .row -->
 

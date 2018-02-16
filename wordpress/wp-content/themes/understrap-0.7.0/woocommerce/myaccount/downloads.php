@@ -12,36 +12,37 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see 	https://docs.woocommerce.com/document/template-structure/
+ * @see  https://docs.woocommerce.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
  * @version 3.2.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit;
 }
 
-$downloads     = WC()->customer->get_downloadable_products();
-$has_downloads = (bool) $downloads;
+$downloads = WC()->customer->get_downloadable_products();
+$has_downloads = (bool)$downloads;
 
-do_action( 'woocommerce_before_account_downloads', $has_downloads ); ?>
+do_action('woocommerce_before_account_downloads', $has_downloads); ?>
 
-<?php if ( $has_downloads ) : ?>
+<?php if ($has_downloads) : ?>
 
-	<?php do_action( 'woocommerce_before_available_downloads' ); ?>
+	<?php do_action('woocommerce_before_available_downloads'); ?>
 
-	<?php do_action( 'woocommerce_available_downloads', $downloads ); ?>
+	<?php do_action('woocommerce_available_downloads', $downloads); ?>
 
-	<?php do_action( 'woocommerce_after_available_downloads' ); ?>
+	<?php do_action('woocommerce_after_available_downloads'); ?>
 
 <?php else : ?>
 	<div class="woocommerce-Message woocommerce-Message--info woocommerce-info">
-		<a class="btn btn-outline-primary" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
-			<?php esc_html_e( 'Go Shop', 'understrap' ) ?>
+		<a class="btn btn-outline-primary"
+			 href="<?php echo esc_url(apply_filters('woocommerce_return_to_shop_redirect', wc_get_page_permalink('shop'))); ?>">
+			<?php esc_html_e('Go Shop', 'understrap') ?>
 		</a>
-		<?php esc_html_e( 'No downloads available yet.', 'understrap' ); ?>
+		<?php esc_html_e('No downloads available yet.', 'understrap'); ?>
 	</div>
 <?php endif; ?>
 
-<?php do_action( 'woocommerce_after_account_downloads', $has_downloads ); ?>
+<?php do_action('woocommerce_after_account_downloads', $has_downloads); ?>

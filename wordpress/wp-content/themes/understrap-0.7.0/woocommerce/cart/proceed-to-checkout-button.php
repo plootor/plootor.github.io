@@ -18,11 +18,11 @@
  * @version 3.1.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly
 }
 ?>
 
-<a href="<?php echo esc_url( wc_get_checkout_url() ) ;?>" class="btn btn-primary btn-lg btn-block">
-	<?php echo __( 'Proceed to Checkout', 'understrap' ); ?>
+<a href="<?php echo esc_url(wc_get_checkout_url()); ?>" class="btn btn-primary btn-lg btn-block">
+	<?php echo __('Proceed to Checkout', 'understrap'); ?>
 </a>
