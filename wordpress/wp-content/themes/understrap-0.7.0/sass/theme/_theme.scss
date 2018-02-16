@@ -1313,6 +1313,10 @@ header {
     margin-bottom: 30px;
   }
 
+  .grid-blog:last-child {
+    margin-bottom: 0;
+  }
+
   #blog .blog-title, .blog-title {
     font-size: 1.4rem;
   }
