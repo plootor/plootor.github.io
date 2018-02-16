@@ -85,6 +85,7 @@ class Widget_Alexander_Blog_Element extends Widget_Base {
     );
     $grid_query = new \WP_Query( $args );
     $count      = 0;
+    $pagination_output = '';
     ?>
 
     <div id="blog" class="content-area list-container">
@@ -117,19 +118,14 @@ class Widget_Alexander_Blog_Element extends Widget_Base {
               'add_args'  => false,
             );
 
-            $pagination = paginate_links( $paginate_args ); ?>
-            <div class="col-md-12">
-              <nav class='pagination wp-caption blog-navigation'>
-                <?php echo $pagination; ?>
-              </nav>
-            </div>
-          <?php else :   //if no posts found
-
+            $pagination = paginate_links( $paginate_args );
+            $pagination_output = '<div><nav class="pagination wp-caption blog-navigation">'
+                . $pagination . '</nav></div>';
+          else :   //if no posts found
             // $templates->get_template_part( 'content', 'none' );
-
           endif; //end of post loop ?>
-
         </div><!-- #main -->
+        <?php if ($pagination_output) echo $pagination_output; ?>
       </div><!-- #primary -->
     </div>
     <?php
