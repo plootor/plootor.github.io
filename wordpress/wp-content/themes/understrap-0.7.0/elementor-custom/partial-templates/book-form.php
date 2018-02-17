@@ -15,13 +15,13 @@
 					</div>
 				</div>
 				<div class="form-group col-md-6">
-					<input type="input" name="amount" class="form-control" placeholder="Number of guests *" required>
+					<input type="text" name="amount" class="form-control" placeholder="Number of guests *" required>
 					<div class="invalid-feedback">
 						Please provide number of guests.
 					</div>
 				</div>
 				<div class="form-group col-md-6">
-					<input type="input" name="datetime" class="form-control" placeholder="Date and Time of arrival *" required>
+					<input type="text" name="datetime" class="form-control" placeholder="Date and Time of arrival *" required>
 					<div class="invalid-feedback">
 						Please provide date and time of arrival.
 					</div>
