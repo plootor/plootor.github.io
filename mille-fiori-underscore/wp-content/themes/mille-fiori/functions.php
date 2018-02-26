@@ -148,6 +148,17 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/customizer-controls.php';
+
+/**
+ * Enqueue scripts and styles.
+ */
+require get_template_directory() . '/inc/enqueue.php';
+
+/**
+ * Load custom WordPress nav walker.
+ */
+require get_template_directory() . '/inc/bootstrap-wp-navwalker.php';
 
 /**
  * Load Jetpack compatibility file.
@@ -156,3 +167,23 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Load Elementor custom widgets.
+ */
+require get_template_directory() . '/inc/elementor-widgets.php';
+
+function theme_get_option( $option_name, $default_value = '' ) {
+	$option_data = get_option( 'theme_options' );
+	if ( isset( $option_data[ $option_name ] ) && $option_data[ $option_name ] != '' ) {
+		return $option_data[ $option_name ];
+	} elseif ( $default_value ) {
+		return $default_value;
+	} else {
+		return false;
+	}
+}
+
+register_nav_menus( array(
+	'nav_right' => 'Right part of nav menu',
+	'nav_left' => 'Left part of nav menu',
+) );
