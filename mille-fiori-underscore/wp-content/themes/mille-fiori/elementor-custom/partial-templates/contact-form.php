@@ -21,7 +21,7 @@
 		</div>
 		<div class="col-12 text-center form-group submit fade-animate">
 			<div id="success"></div>
-			<button type="submit" class="contact-btn">Send message</button>
+			<button type="submit" class="contact-btn btn-xl">Send message</button>
 		</div>
 	</div>
 </form>

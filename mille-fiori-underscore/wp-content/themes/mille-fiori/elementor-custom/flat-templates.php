@@ -48,7 +48,7 @@ class Widget_Alexander_Templates_Element extends Widget_Base
 					'subscribe-form' => 'Subscribe Form Template',
 					'testimonials' => 'Testimonials Template',
 					'portfolio' => 'Portfolio Section',
-
+					'blog' => 'Blog Carousel',
 					'carousel' => 'Image Carousel'
 				],
 			]
