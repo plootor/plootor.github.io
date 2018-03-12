@@ -60,6 +60,10 @@
 </footer>
 
 <?php wp_footer(); ?>
+
+
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js'></script>
+
 <script type='text/javascript' src='http://mille-fiori.underscore/wp-content/themes/mille-fiori/js/vendor/imagesloaded.pkgd.min.js?ver=1.0.0'></script>
 <script type='text/javascript' src='http://mille-fiori.underscore/wp-content/themes/mille-fiori/js/vendor/masonry.pkgd.min.js?ver=1.0.0'></script>
 <script type='text/javascript' src='http://mille-fiori.underscore/wp-content/themes/mille-fiori/js/custom.js?ver=1.0.0'></script>

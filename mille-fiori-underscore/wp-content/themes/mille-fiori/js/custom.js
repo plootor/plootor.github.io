@@ -1,6 +1,55 @@
 "use strict";
 (function () {
 
+
+	// Get the modal
+	var modal = document.getElementById('myModal');
+
+	// Get the button that opens the modal
+	var btn = document.getElementsByClassName("portfolio-link");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks the button, open the modal
+	// btn.onclick = function() {
+	// 	console.log('open modal');
+	// 	modal.style.display = "block";
+	// }
+var element = '';
+
+	jQuery('.portfolio-link').on('click', function (event) {
+		element = jQuery(this).attr('href');
+		console.log(element);
+		jQuery('body').addClass('body-modal');
+		jQuery(element).addClass('modal-show');
+	});
+
+
+
+	// When the user clicks on <span> (x), close the modal
+	jQuery('.close-modal, .close-button').on('click', function() {
+		jQuery('body').removeClass('body-modal');
+		jQuery('.modal').removeClass('modal-show');
+	});
+
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+
+	jQuery('.elementor-section-wrap section').waypoint(function() {
+		var element = '';
+		element = jQuery('.nav-container a[href="#' + this.element.id + '"]');
+		if (element.length) {
+			jQuery(".nav-container ul li").children().removeClass("active");
+			element.addClass("active");
+		}
+	}, { offset: 66 });
+
 	if (!jQuery('.navbar').hasClass('block-affix')) {
 		jQuery(window).on('scroll', function (event) {
 			var scrollValue = jQuery(window).scrollTop();
@@ -11,11 +60,13 @@
 			}
 		});
 		jQuery(window).trigger("scroll");
-		jQuery('body').scrollspy({
-			target: '#mainNav',
-			offset: 100
-		});
+		// jQuery('body').scrollspy({
+		// 	target: '#mainNav',
+		// 	offset: 100
+		// });
 	}
+
+
 
 
 

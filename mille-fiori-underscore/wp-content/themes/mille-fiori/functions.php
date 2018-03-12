@@ -160,6 +160,35 @@ require get_template_directory() . '/inc/enqueue.php';
  */
 require get_template_directory() . '/inc/bootstrap-wp-navwalker.php';
 
+
+
+/**
+ * Register widget area.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/register_sidebar
+ */
+require get_template_directory() . '/inc/widgets.php';
+
+/**
+ * Load custom widgets.
+ */
+require get_template_directory() . '/inc/widgets-implementations.php';
+
+/**
+ * Load navigation.
+ */
+require get_template_directory() . '/inc/pagination.php';
+
+/**
+ * Load social sharing.
+ */
+require get_template_directory() . '/inc/social-sharing.php';
+
+/**
+ * Custom functions that act independently of the theme templates.
+ */
+require get_template_directory() . '/inc/extras.php';
+
 /**
  * Load Jetpack compatibility file.
  */
@@ -187,3 +216,12 @@ register_nav_menus( array(
 	'nav_right' => 'Right part of nav menu',
 	'nav_left' => 'Left part of nav menu',
 ) );
+
+
+//if ( function_exists( 'add_theme_support' ) ) {
+//	add_theme_support( 'sidebar-thumb' );
+//	set_post_thumbnail_size( 360, 220, true ); // default Post Thumbnail dimensions
+//}
+
+set_post_thumbnail_size( 360, 220, true );
+add_image_size( 'big-featured-image', 1050, 700, array( 'center', 'center' ) );
