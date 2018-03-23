@@ -25,7 +25,7 @@ if ( ! function_exists( 'mille_fiori_posted_on' ) ) :
 		);
 
 		$posted_on = sprintf(
-			/* translators: %s: post date. */
+		/* translators: %s: post date. */
 			esc_html_x( 'Posted on %s', 'post date', 'mille-fiori' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
@@ -41,7 +41,7 @@ if ( ! function_exists( 'mille_fiori_posted_by' ) ) :
 	 */
 	function mille_fiori_posted_by() {
 		$byline = sprintf(
-			/* translators: %s: post author. */
+		/* translators: %s: post author. */
 			esc_html_x( 'by %s', 'post author', 'mille-fiori' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
@@ -78,7 +78,7 @@ if ( ! function_exists( 'mille_fiori_entry_footer' ) ) :
 			comments_popup_link(
 				sprintf(
 					wp_kses(
-						/* translators: %s: post title */
+					/* translators: %s: post title */
 						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'mille-fiori' ),
 						array(
 							'span' => array(
@@ -95,7 +95,7 @@ if ( ! function_exists( 'mille_fiori_entry_footer' ) ) :
 		edit_post_link(
 			sprintf(
 				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
+				/* translators: %s: Name of current post. Only visible to screen readers */
 					__( 'Edit <span class="screen-reader-text">%s</span>', 'mille-fiori' ),
 					array(
 						'span' => array(
@@ -112,36 +112,36 @@ if ( ! function_exists( 'mille_fiori_entry_footer' ) ) :
 endif;
 
 if ( ! function_exists( 'mille_fiori_post_thumbnail' ) ) :
-/**
- * Displays an optional post thumbnail.
- *
- * Wraps the post thumbnail in an anchor element on index views, or a div
- * element when on single views.
- */
-function mille_fiori_post_thumbnail() {
-	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
-		return;
+	/**
+	 * Displays an optional post thumbnail.
+	 *
+	 * Wraps the post thumbnail in an anchor element on index views, or a div
+	 * element when on single views.
+	 */
+	function mille_fiori_post_thumbnail() {
+		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
+			return;
+		}
+
+		if ( is_singular() ) :
+			?>
+
+			<div class="post-thumbnail">
+				<?php the_post_thumbnail(); ?>
+			</div><!-- .post-thumbnail -->
+
+		<?php else : ?>
+
+			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
+				<?php
+				the_post_thumbnail( 'post-thumbnail', array(
+					'alt' => the_title_attribute( array(
+						'echo' => false,
+					) ),
+				) );
+				?>
+			</a>
+
+		<?php endif; // End is_singular().
 	}
-
-	if ( is_singular() ) :
-	?>
-
-	<div class="post-thumbnail">
-		<?php the_post_thumbnail(); ?>
-	</div><!-- .post-thumbnail -->
-
-	<?php else : ?>
-
-	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
-		<?php
-			the_post_thumbnail( 'post-thumbnail', array(
-				'alt' => the_title_attribute( array(
-					'echo' => false,
-				) ),
-			) );
-		?>
-	</a>
-
-	<?php endif; // End is_singular().
-}
 endif;

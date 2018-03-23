@@ -16,7 +16,8 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700%7CPlayfair+Display:400i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700%7CPlayfair+Display:400i,700,700i"
+				rel="stylesheet">
 
 	<?php wp_head(); ?>
 </head>
@@ -34,9 +35,9 @@
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="nav-container">
-						<?php  wp_nav_menu(
+						<?php wp_nav_menu(
 							array(
-								'theme_location' => 'nav_left',
+								'theme_location'  => 'nav_left',
 								'container_class' => 'collapse navbar-collapse',
 								'menu_class'      => 'navbar-nav',
 								'walker'          => new WP_Bootstrap_Navwalker(),
@@ -51,7 +52,7 @@
 						</div>
 						<?php wp_nav_menu(
 							array(
-								'theme_location' => 'nav_right',
+								'theme_location'  => 'nav_right',
 								'container_class' => 'collapse navbar-collapse',
 								'menu_class'      => 'navbar-nav',
 								'walker'          => new WP_Bootstrap_Navwalker(),

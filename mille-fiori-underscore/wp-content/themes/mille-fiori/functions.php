@@ -93,6 +93,7 @@ add_action( 'after_setup_theme', 'mille_fiori_setup' );
 function mille_fiori_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'mille_fiori_content_width', 640 );
 }
+
 add_action( 'after_setup_theme', 'mille_fiori_content_width', 0 );
 
 /**
@@ -111,6 +112,7 @@ function mille_fiori_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
+
 add_action( 'widgets_init', 'mille_fiori_widgets_init' );
 
 /**
@@ -127,6 +129,7 @@ function mille_fiori_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'mille_fiori_scripts' );
 
 /**
@@ -159,7 +162,6 @@ require get_template_directory() . '/inc/enqueue.php';
  * Load custom WordPress nav walker.
  */
 require get_template_directory() . '/inc/bootstrap-wp-navwalker.php';
-
 
 
 /**
@@ -201,6 +203,16 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 require get_template_directory() . '/inc/elementor-widgets.php';
 
+
+/**
+ * Filter the except length to 20 words.
+ */
+
+add_filter( 'excerpt_length', function () {
+	return 23;
+}, 999 );
+
+
 function theme_get_option( $option_name, $default_value = '' ) {
 	$option_data = get_option( 'theme_options' );
 	if ( isset( $option_data[ $option_name ] ) && $option_data[ $option_name ] != '' ) {
@@ -214,14 +226,17 @@ function theme_get_option( $option_name, $default_value = '' ) {
 
 register_nav_menus( array(
 	'nav_right' => 'Right part of nav menu',
-	'nav_left' => 'Left part of nav menu',
+	'nav_left'  => 'Left part of nav menu',
 ) );
 
 
-//if ( function_exists( 'add_theme_support' ) ) {
-//	add_theme_support( 'sidebar-thumb' );
-//	set_post_thumbnail_size( 360, 220, true ); // default Post Thumbnail dimensions
-//}
-
 set_post_thumbnail_size( 360, 220, true );
 add_image_size( 'big-featured-image', 1050, 700, array( 'center', 'center' ) );
+
+function include_font_awesome() {
+	function include_fa() {
+		wp_enqueue_style( 'font-awesome', get_template_directory() . '/assets/font-awesome/css/font-awesome.min.css' );
+	}
+
+	add_action( 'wp_enqueue_scripts', 'include_fa' );
+}

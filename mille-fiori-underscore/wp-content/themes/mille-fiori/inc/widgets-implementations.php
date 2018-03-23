@@ -20,8 +20,8 @@ class RelatedPosts extends WP_Widget {
 
 	public function widget( $args, $instance ) {
 
-		$orig_post = $post;
 		global $post;
+		$orig_post = $post;
 		$categories = get_the_category( $post->ID );
 		if ( $categories ) {
 			$category_ids = array();
@@ -39,7 +39,7 @@ class RelatedPosts extends WP_Widget {
 				echo '<div class="related-posts"><h4 class="related-title text-center">Related posts</h4><div class="container"><div class="row">';
 				while ( $my_query->have_posts() ) {
 					$my_query->the_post(); ?>
-					<div class="col">
+					<div class="col-md-4">
 						<div class="relatedthumb">
 							<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
 								<?php the_post_thumbnail(); ?>
@@ -100,16 +100,16 @@ class RecentPostWithImages extends WP_Widget {
 					break;
 				}
 				if ( has_post_thumbnail( $recent["ID"] ) ) {
-					echo '<div class="recent_post_cell">
-                    <a href="' . get_permalink( $recent["ID"] ) . '" title="Look ' . esc_attr( $recent["post_title"] ) . '" >'
-						. get_the_post_thumbnail( $recent["ID"] )
-						. '<h6 class="recent-title text-center">' . $recent["post_title"] . '</h6>'
-						. '</a>'
-						. '</div>';
+					echo '<div class="recent_post_cell">'
+								.'<a href="' . get_permalink( $recent["ID"] ) . '" title="Look ' . esc_attr( $recent["post_title"] ) . '" >'
+								. get_the_post_thumbnail( $recent["ID"] )
+					 			. '<h6 class="recent-title text-center">' . $recent["post_title"] . '</h6>'
+					 			. '</a>'
+					 			. '</div>';
 				} else {
-					echo '<div>
-                    <a href="' . get_permalink( $recent["ID"] ) . '" title="Look ' . esc_attr( $recent["post_title"] ) . '" >'
-						. '<h6 class="recent-title text-center">' . $recent["post_title"] . '</h6></a></div> ';
+					echo '<div>'
+									.'<a href="' . get_permalink( $recent["ID"] ) . '" title="Look ' . esc_attr( $recent["post_title"] ) . '" >'
+					 				.'<h6 class="recent-title text-center">' . $recent["post_title"] . '</h6></a></div> ';
 				}
 			}
 			echo '</div>';

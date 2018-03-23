@@ -2,41 +2,41 @@
 
 namespace Elementor;
 
-if (!defined('ABSPATH')) exit; // Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+} // Exit if accessed directly
 
-class Widget_Overlapping_Image_Element extends Widget_Base
-{
+class Widget_Overlapping_Image_Element extends Widget_Base {
 
-	public function get_name()
-	{
+	public function get_name() {
 		return 'overlapping-image';
 	}
 
-	public function get_title()
-	{
-		return __('MF Overlapping Image', 'elementor-overlapping-image');
+	public function get_title() {
+		return __( 'MF Overlapping Image', 'elementor-overlapping-image' );
 	}
 
-	public function get_icon()
-	{
+	public function get_icon() {
 		return 'eicon-gallery-grid';
 	}
 
-	protected function _register_controls()
-	{
+	public function render_plain_content( $instance = [] ) {
+	}
+
+	protected function _register_controls() {
 		$this->add_control(
 			'section_overlapping-image',
 			[
-				'label' => __('MF Overlapping Image', 'elementor-overlapping-image'),
-				'type' => Controls_Manager::SECTION,
+				'label' => __( 'MF Overlapping Image', 'elementor-overlapping-image' ),
+				'type'  => Controls_Manager::SECTION,
 			]
 		);
 
 		$this->add_control(
 			'section_image1',
 			[
-				'label' => __('Image 1', 'image-1'),
-				'type' => Controls_Manager::MEDIA,
+				'label'   => __( 'Image 1', 'image-1' ),
+				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_overlapping-image'
 			]
 		);
@@ -44,38 +44,29 @@ class Widget_Overlapping_Image_Element extends Widget_Base
 		$this->add_control(
 			'section_image2',
 			[
-				'label' => __('Image 2', 'image2'),
-				'type' => Controls_Manager::MEDIA,
+				'label'   => __( 'Image 2', 'image2' ),
+				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_overlapping-image'
 			]
 		);
 	}
 
-	protected function render($instance = [])
-	{
+	protected function render( $instance = [] ) {
 
-		$image1 = $this->get_settings('section_image1');
-		$image2 = $this->get_settings('section_image2');
+		$image1 = $this->get_settings( 'section_image1' );
+		$image2 = $this->get_settings( 'section_image2' );
 
-	//	$content = '<div style="column-count: ' . $columnd_count . '" class="card-columns masonry-gallery" id="5a119f2aa">';
-
-		$content = '<div class="service-image-container">
-        <div class="service-image1" style="background-image: url(' . $image1['url'] . ')"></div>
-        <div class="service-image2" style="background-image: url(' . $image2['url'] . ')"></div>
-      </div>';
+		$content = '<div class="service-image-container">'
+									.'<div class="service-image1" style="background-image: url(' . $image1['url'] . ')"></div>'
+									.'<div class="service-image2" style="background-image: url(' . $image2['url'] . ')"></div>'
+								.'</div>';
 
 		echo $content;
 	}
 
-	protected function content_template()
-	{
-	}
-
-	public function render_plain_content($instance = [])
-	{
+	protected function content_template() {
 	}
 
 }
 
-Plugin::instance()->widgets_manager->register_widget_type(new Widget_Overlapping_Image_Element);
-?>
+Plugin::instance()->widgets_manager->register_widget_type( new Widget_Overlapping_Image_Element );

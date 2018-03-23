@@ -1,6 +1,6 @@
 <?php
 
-get_header('small');
+get_header( 'small' );
 ?>
 
 <!-- Blog Post Section -->
@@ -57,7 +57,7 @@ get_header('small');
 				</div>
 			</div>
 			<!-- Do the right sidebar check -->
-				<?php get_sidebar( 'right' ); ?>
+			<?php get_sidebar( 'right' ); ?>
 		</div>
 	</div>
 </section>

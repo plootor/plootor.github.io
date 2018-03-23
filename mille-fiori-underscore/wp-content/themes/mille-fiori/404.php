@@ -1,60 +1,52 @@
 <?php
 /**
- * The template for displaying 404 pages (not found)
+ * The template for displaying 404 pages (not found).
  *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
- *
- * @package mille-fiori
+ * @package understrap
  */
+include_font_awesome();
+get_header( 'small' );
 
-get_header(); ?>
+?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div class="wrapper" id="error-404-wrapper">
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'mille-fiori' ); ?></h1>
-				</header><!-- .page-header -->
+	<div class="container" id="content" tabindex="-1">
 
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'mille-fiori' ); ?></p>
+		<div class="row justify-content-center">
 
-					<?php
-						get_search_form();
+			<div class="col-md-8 content-area" id="primary">
 
-						the_widget( 'WP_Widget_Recent_Posts' );
-					?>
+				<main class="site-main" id="main">
 
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'mille-fiori' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
+					<section class="error-404 not-found">
 
-					<?php
+						<header class="page-header">
 
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'mille-fiori' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
+							<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.',
+									'mille-fiori' ); ?></h1>
 
-						the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
+						</header><!-- .page-header -->
 
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
+						<div class="page-content">
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+							<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?',
+									'mille-fiori' ); ?></p>
 
-<?php
-get_footer();
+							<?php get_search_form(); ?>
+
+						</div><!-- .page-content -->
+
+					</section><!-- .error-404 -->
+
+				</main><!-- #main -->
+
+			</div><!-- #primary -->
+
+		</div><!-- .row -->
+
+	</div><!-- Container end -->
+
+</div><!-- Wrapper end -->
+
+<?php get_footer(); ?>

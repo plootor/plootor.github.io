@@ -1,4 +1,5 @@
 <?php
+
 namespace Elementor;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -71,13 +72,12 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		return [ 'jquery', 'jquery-slick' ];
 	}
 
-	protected function _register_controls()
-	{
+	protected function _register_controls() {
 		$this->add_control(
 			'section_mf_testimonials',
 			[
-				'label' => __('MF Overlapping Image', 'elementor-overlapping-image'),
-				'type' => Controls_Manager::SECTION,
+				'label' => __( 'MF Overlapping Image', 'elementor-overlapping-image' ),
+				'type'  => Controls_Manager::SECTION,
 			]
 		);
 
@@ -85,8 +85,8 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_name1',
 			[
-				'label' => __('Testimonial Name 1', 'testimonial_name1'),
-				'type' => Controls_Manager::TEXT,
+				'label'   => __( 'Testimonial Name 1', 'testimonial_name1' ),
+				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
 		);
@@ -94,8 +94,8 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_job1',
 			[
-				'label' => __('Testimonial Job 1', 'testimonial_job1'),
-				'type' => Controls_Manager::TEXT,
+				'label'   => __( 'Testimonial Job 1', 'testimonial_job1' ),
+				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
 		);
@@ -103,8 +103,8 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_content1',
 			[
-				'label' => __('Testimonial Content 1', 'testimonial_content1'),
-				'type' => Controls_Manager::TEXT,
+				'label'   => __( 'Testimonial Content 1', 'testimonial_content1' ),
+				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
 		);
@@ -113,8 +113,8 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_name2',
 			[
-				'label' => __('Testimonial Name 2', 'testimonial_name2'),
-				'type' => Controls_Manager::TEXT,
+				'label'   => __( 'Testimonial Name 2', 'testimonial_name2' ),
+				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
 		);
@@ -122,8 +122,8 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_job2',
 			[
-				'label' => __('Testimonial Job 2', 'testimonial_job2'),
-				'type' => Controls_Manager::TEXT,
+				'label'   => __( 'Testimonial Job 2', 'testimonial_job2' ),
+				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
 		);
@@ -131,8 +131,8 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_content2',
 			[
-				'label' => __('Testimonial Content 2', 'testimonial_content2'),
-				'type' => Controls_Manager::TEXT,
+				'label'   => __( 'Testimonial Content 2', 'testimonial_content2' ),
+				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
 		);
@@ -141,8 +141,8 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_name3',
 			[
-				'label' => __('Testimonial Name 3', 'testimonial_name3'),
-				'type' => Controls_Manager::TEXT,
+				'label'   => __( 'Testimonial Name 3', 'testimonial_name3' ),
+				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
 		);
@@ -150,8 +150,8 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_job3',
 			[
-				'label' => __('Testimonial Job 3', 'testimonial_job3'),
-				'type' => Controls_Manager::TEXT,
+				'label'   => __( 'Testimonial Job 3', 'testimonial_job3' ),
+				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
 		);
@@ -159,8 +159,8 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_content3',
 			[
-				'label' => __('Testimonial Content 3', 'testimonial_content3'),
-				'type' => Controls_Manager::TEXT,
+				'label'   => __( 'Testimonial Content 3', 'testimonial_content3' ),
+				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
 		);
@@ -169,8 +169,8 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_name4',
 			[
-				'label' => __('Testimonial Name 4', 'testimonial_name4'),
-				'type' => Controls_Manager::TEXT,
+				'label'   => __( 'Testimonial Name 4', 'testimonial_name4' ),
+				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
 		);
@@ -178,8 +178,8 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_job4',
 			[
-				'label' => __('Testimonial Job 4', 'testimonial_job4'),
-				'type' => Controls_Manager::TEXT,
+				'label'   => __( 'Testimonial Job 4', 'testimonial_job4' ),
+				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
 		);
@@ -187,28 +187,28 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_content4',
 			[
-				'label' => __('Testimonial Content 4', 'testimonial_content4'),
-				'type' => Controls_Manager::TEXT,
+				'label'   => __( 'Testimonial Content 4', 'testimonial_content4' ),
+				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
 		);
 	}
 
-	protected function render($instance = [])
-	{
-		$content = '<div class="testimonial-carousel slick-carousel"  data-slick=\'{"slidesToShow": 2}\'>';
-		for ($i = 1; $i <= 4; $i++) {
+	protected function render( $instance = [] ) {
+		$content = '<div class="testimonial-carousel slick-carousel" '
+		.'data-slick=\'{"slidesToShow": 2, "responsive": [{"breakpoint": 800, "settings": {"slidesToShow": 1, "slidesToScroll": 1}}]}\'>';
+		for ( $i = 1; $i <= 4; $i ++ ) {
 			$content .= '<div class="item">' . PHP_EOL
-				.'<div class="testimonial-cell">' . PHP_EOL
-					.'<h5 class="text-center">' . $this->get_settings('testimonial_name' . $i) . '</h5>' . PHP_EOL
-					.'<h6 class="text-center">' . $this->get_settings('testimonial_job' . $i) . '</h6>' . PHP_EOL
-					.'<p class="text-center">' . $this->get_settings('testimonial_content' . $i) . '</p>' . PHP_EOL
-				.'</div>' . PHP_EOL
-			.'</div>';
-	}
-	$content .= '</div>';
+									.'<div class="testimonial-cell">' . PHP_EOL
+									.'<h5 class="text-center">' . $this->get_settings( 'testimonial_name' . $i ) . '</h5>' . PHP_EOL
+									.'<h6 class="text-center">' . $this->get_settings( 'testimonial_job' . $i ) . '</h6>' . PHP_EOL
+									.'<p class="text-center">' . $this->get_settings( 'testimonial_content' . $i ) . '</p>' . PHP_EOL
+									.'</div>' . PHP_EOL
+									.'</div>';
+		}
+		$content .= '</div>';
 		echo $content;
 	}
 }
 
-Plugin::instance()->widgets_manager->register_widget_type(new MilleFiori_Testimonial_Carousel);
+Plugin::instance()->widgets_manager->register_widget_type( new MilleFiori_Testimonial_Carousel );
