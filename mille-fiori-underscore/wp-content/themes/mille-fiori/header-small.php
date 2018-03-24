@@ -29,9 +29,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<button class="navbar-toggler navbar-toggler-right" type="button"
-									data-toggle="collapse" data-target="#navbarNavDropdown"
-									aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<button class="navbar-toggler navbar-toggler-right" type="button">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="nav-container">
@@ -61,6 +59,7 @@
 					</div>
 				</div>
 			</div>
+		</div>
 	</nav>
 
 	<div class="small-header-image"
@@ -77,7 +76,6 @@
 				<div class="intro-text">
 					<div class="intro-heading"><?php echo $title; ?></div>
 					<div class="intro-separator"></div>
-					<!--<a href="#about" class="page-scroll btn btn-xl">Explore</a>-->
 				</div>
 			</div>
 		</div>

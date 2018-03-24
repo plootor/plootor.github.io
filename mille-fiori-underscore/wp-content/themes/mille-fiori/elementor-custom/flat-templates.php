@@ -13,7 +13,7 @@ class Widget_MilleFiori_Templates_Element extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'MF Templates', 'elementor-millefiori-templates-element' );
+		return __( 'MF Templates', 'mille-fiori' );
 	}
 
 	public function get_icon() {
@@ -25,7 +25,7 @@ class Widget_MilleFiori_Templates_Element extends Widget_Base {
 		$this->add_control(
 			'section_blog_posts',
 			[
-				'label' => __( 'Mille Fiori Templates Shortcodes', 'elementor-millefiori-templates-element' ),
+				'label' => __( 'Mille Fiori Templates Shortcodes', 'mille-fiori' ),
 				'type'  => Controls_Manager::SECTION,
 			]
 		);
@@ -33,12 +33,13 @@ class Widget_MilleFiori_Templates_Element extends Widget_Base {
 		$this->add_control(
 			'page_template',
 			[
-				'label'   => __( 'Page Template', 'elementor-millefiori-templates-element' ),
+				'label'   => __( 'Page Template', 'mille-fiori' ),
 				'type'    => Controls_Manager::SELECT,
 				'default' => 'base',
 				'section' => 'section_blog_posts',
 				'options' => [
 					'contact-form'   => 'Contact Template',
+					'subscribe-form' => 'Subscribe Form Template',
 					'blog'           => 'Blog Carousel',
 				],
 			]

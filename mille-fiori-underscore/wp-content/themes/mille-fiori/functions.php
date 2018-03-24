@@ -203,6 +203,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 require get_template_directory() . '/inc/elementor-widgets.php';
 
+/**
+ * Load TGMPA
+ */
+require_once get_template_directory() . '/admin/tgm/tgm-init.php';
+
 
 /**
  * Filter the except length to 20 words.

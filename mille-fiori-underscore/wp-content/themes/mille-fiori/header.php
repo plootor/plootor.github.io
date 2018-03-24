@@ -16,6 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700%7CPlayfair+Display:400i,700,700i"
 				rel="stylesheet">
 
@@ -29,9 +30,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<button class="navbar-toggler navbar-toggler-right" type="button"
-									data-toggle="collapse" data-target="#navbarNavDropdown"
-									aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<button class="navbar-toggler navbar-toggler-right" type="button">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="nav-container">
@@ -61,27 +60,7 @@
 					</div>
 				</div>
 			</div>
-	</nav>
-	<?php /*
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<!-- Indicators -->
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
-			<li data-target="#myCarousel" data-slide-to="2"></li>
-			<li data-target="#myCarousel" data-slide-to="3"></li>
-		</ol>
-		<!-- Wrapper for slides -->
-		<div class="carousel-inner">
-			<div class="carousel-item item carusel1 active" <?php echo theme_get_option( 'millefiori_slide1_image' ) ?
-				'style="background-image: url(' . theme_get_option( 'millefiori_slide1_image', '' ) . ')"' : ''; ?>></div>
-			<div class="carousel-item item carusel2" <?php echo theme_get_option( 'millefiori_slide2_image' ) ?
-				'style="background-image: url(' . theme_get_option( 'millefiori_slide2_image', '' ) . ')"' : ''; ?>></div>
-			<div class="carousel-item item carusel3" <?php echo theme_get_option( 'millefiori_slide3_image' ) ?
-				'style="background-image: url(' . theme_get_option( 'millefiori_slide3_image', '' ) . ')"' : ''; ?>></div>
-			<div class="carousel-item item carusel4" <?php echo theme_get_option( 'millefiori_slide4_image' ) ?
-				'style="background-image: url(' . theme_get_option( 'millefiori_slide4_image', '' ) . ')"' : ''; ?>></div>
 		</div>
-	</div> */ ?>
+	</nav>
 </header>
 

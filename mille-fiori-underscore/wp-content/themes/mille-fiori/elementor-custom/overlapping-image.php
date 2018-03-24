@@ -13,7 +13,7 @@ class Widget_Overlapping_Image_Element extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'MF Overlapping Image', 'elementor-overlapping-image' );
+		return __( 'MF Overlapping Image', 'mille-fiori' );
 	}
 
 	public function get_icon() {
@@ -27,7 +27,7 @@ class Widget_Overlapping_Image_Element extends Widget_Base {
 		$this->add_control(
 			'section_overlapping-image',
 			[
-				'label' => __( 'MF Overlapping Image', 'elementor-overlapping-image' ),
+				'label' => __( 'MF Overlapping Image', 'mille-fiori' ),
 				'type'  => Controls_Manager::SECTION,
 			]
 		);
@@ -35,7 +35,7 @@ class Widget_Overlapping_Image_Element extends Widget_Base {
 		$this->add_control(
 			'section_image1',
 			[
-				'label'   => __( 'Image 1', 'image-1' ),
+				'label'   => __( 'Image 1', 'mille-fiori' ),
 				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_overlapping-image'
 			]
@@ -44,7 +44,7 @@ class Widget_Overlapping_Image_Element extends Widget_Base {
 		$this->add_control(
 			'section_image2',
 			[
-				'label'   => __( 'Image 2', 'image2' ),
+				'label'   => __( 'Image 2', 'mille-fiori' ),
 				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_overlapping-image'
 			]

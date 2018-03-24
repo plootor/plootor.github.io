@@ -38,7 +38,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'MF Portfolio', 'elementor' );
+		return __( 'MF Portfolio', 'mille-fiori' );
 	}
 
 	/**
@@ -63,15 +63,12 @@ class MilleFiori_Portfolio extends Widget_Base {
 	 * @since 1.3.0
 	 * @access public
 	 */
-//    public function get_script_depends() {
-//        return [ 'jquery', 'jquery-slick' ];
-//    }
 
 	protected function _register_controls() {
 		$this->add_control(
 			'section_mf_portfolio',
 			[
-				'label' => __( 'MF Portfolio', 'elementor-overlapping-image' ),
+				'label' => __( 'MF Portfolio', 'mille-fiori' ),
 				'type'  => Controls_Manager::SECTION,
 			]
 		);
@@ -80,7 +77,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_image1',
 			[
-				'label'   => __( 'Portfolio 1 Image', 'portfolio_image1' ),
+				'label'   => __( 'Portfolio 1 Image', 'mille-fiori' ),
 				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_mf_portfolio'
 			]
@@ -89,7 +86,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_hover1',
 			[
-				'label'   => __( 'Portfolio 1 hover text', 'portfolio_hover1' ),
+				'label'   => __( 'Portfolio 1 hover text', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -98,7 +95,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_page1',
 			[
-				'label'   => __( 'Portfolio 1 link page', 'portfolio_page1' ),
+				'label'   => __( 'Portfolio 1 link page', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -107,7 +104,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_type1',
 			[
-				'label'   => __( 'Portfolio 1 link page', 'portfolio_type1' ),
+				'label'   => __( 'Portfolio 1 link page', 'mille-fiori' ),
 				'type'    => Controls_Manager::SELECT,
 				'default' => 'image',
 				'options' => [
@@ -123,7 +120,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_image2',
 			[
-				'label'   => __( 'Portfolio 2 Image', 'portfolio_image2' ),
+				'label'   => __( 'Portfolio 2 Image', 'mille-fiori' ),
 				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_mf_portfolio'
 			]
@@ -132,7 +129,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_hover2',
 			[
-				'label'   => __( 'Portfolio 2 hover text', 'portfolio_hover2' ),
+				'label'   => __( 'Portfolio 2 hover text', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -141,7 +138,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_page2',
 			[
-				'label'   => __( 'Portfolio 2 link page', 'portfolio_page2' ),
+				'label'   => __( 'Portfolio 2 link page', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -150,7 +147,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_type2',
 			[
-				'label'   => __( 'Portfolio 2 link page', 'portfolio_type2' ),
+				'label'   => __( 'Portfolio 2 link page', 'mille-fiori' ),
 				'type'    => Controls_Manager::SELECT,
 				'default' => 'image',
 				'options' => [
@@ -166,7 +163,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_image3',
 			[
-				'label'   => __( 'Portfolio 3 Image', 'portfolio_image3' ),
+				'label'   => __( 'Portfolio 3 Image', 'mille-fiori' ),
 				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_mf_portfolio'
 			]
@@ -175,7 +172,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_hover3',
 			[
-				'label'   => __( 'Portfolio 3 hover text', 'portfolio_hover3' ),
+				'label'   => __( 'Portfolio 3 hover text', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -184,7 +181,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_page3',
 			[
-				'label'   => __( 'Portfolio 3 link page', 'portfolio_page3' ),
+				'label'   => __( 'Portfolio 3 link page', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -193,7 +190,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_type3',
 			[
-				'label'   => __( 'Portfolio 3 link page', 'portfolio_type3' ),
+				'label'   => __( 'Portfolio 3 link page', 'mille-fiori' ),
 				'type'    => Controls_Manager::SELECT,
 				'default' => 'image',
 				'options' => [
@@ -209,7 +206,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_image4',
 			[
-				'label'   => __( 'Portfolio 4 Image', 'portfolio_image4' ),
+				'label'   => __( 'Portfolio 4 Image', 'mille-fiori' ),
 				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_mf_portfolio'
 			]
@@ -218,7 +215,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_hover4',
 			[
-				'label'   => __( 'Portfolio 4 hover text', 'portfolio_hover4' ),
+				'label'   => __( 'Portfolio 4 hover text', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -227,7 +224,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_page4',
 			[
-				'label'   => __( 'Portfolio 4 link page', 'portfolio_page4' ),
+				'label'   => __( 'Portfolio 4 link page', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -236,7 +233,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_type4',
 			[
-				'label'   => __( 'Portfolio 4 link page', 'portfolio_type4' ),
+				'label'   => __( 'Portfolio 4 link page', 'mille-fiori' ),
 				'type'    => Controls_Manager::SELECT,
 				'default' => 'image',
 				'options' => [
@@ -252,7 +249,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_image5',
 			[
-				'label'   => __( 'Portfolio 5 Image', 'portfolio_image5' ),
+				'label'   => __( 'Portfolio 5 Image', 'mille-fiori' ),
 				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_mf_portfolio'
 			]
@@ -261,7 +258,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_hover5',
 			[
-				'label'   => __( 'Portfolio 5 hover text', 'portfolio_hover5' ),
+				'label'   => __( 'Portfolio 5 hover text', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -270,7 +267,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_page5',
 			[
-				'label'   => __( 'Portfolio 5 link page', 'portfolio_page5' ),
+				'label'   => __( 'Portfolio 5 link page', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -279,7 +276,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_type5',
 			[
-				'label'   => __( 'Portfolio 5 link page', 'portfolio_type5' ),
+				'label'   => __( 'Portfolio 5 link page', 'mille-fiori' ),
 				'type'    => Controls_Manager::SELECT,
 				'default' => 'image',
 				'options' => [
@@ -295,7 +292,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_image6',
 			[
-				'label'   => __( 'Portfolio 6 Image', 'portfolio_image6' ),
+				'label'   => __( 'Portfolio 6 Image', 'mille-fiori' ),
 				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_mf_portfolio'
 			]
@@ -304,7 +301,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_hover6',
 			[
-				'label'   => __( 'Portfolio 6 hover text', 'portfolio_hover6' ),
+				'label'   => __( 'Portfolio 6 hover text', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -313,7 +310,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_page6',
 			[
-				'label'   => __( 'Portfolio 6 link page', 'portfolio_page6' ),
+				'label'   => __( 'Portfolio 6 link page', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -322,7 +319,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_type6',
 			[
-				'label'   => __( 'Portfolio 6 link page', 'portfolio_type6' ),
+				'label'   => __( 'Portfolio 6 link page', 'mille-fiori' ),
 				'type'    => Controls_Manager::SELECT,
 				'default' => 'image',
 				'options' => [
@@ -369,10 +366,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 					<?php } else {
 						$page   = get_page_by_path( $this->get_settings( 'portfolio_page' . $i ) );
 						$titles = apply_filters( 'the_title', $page->post_title );
-						$date   = strtotime( $page->post_date );
-
-						//var_dump($page); die;
-						?>
+						$date   = strtotime( $page->post_date ); ?>
 						<div class="grid-item item<?php echo $i; ?>">
 							<a href="#portfolioModal<?php echo $i; ?>" class="portfolio-link" data-toggle="modal">
 								<div class="portfolio-cell portfolio-cell<?php echo $i; ?>">
@@ -380,7 +374,6 @@ class MilleFiori_Portfolio extends Widget_Base {
 										<h6>Celebrations</h6>
 										<h3><?php echo $titles; ?></h3>
 										<?php the_excerpt(); ?>
-
 										<div class="portfolio-separator"></div>
 										<p><?php echo date( "M Y", $date ); ?></p>
 									</div>
@@ -396,9 +389,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		<?php for ( $i = 1; $i <= 6; $i ++ ) {
 			$page   = get_page_by_path( $this->get_settings( 'portfolio_page' . $i ) );
 			$titles = apply_filters( 'the_title', $page->post_title );
-			$images = get_the_post_thumbnail_url( $page, 'big-featured-image' );
-
-			?>
+			$images = get_the_post_thumbnail_url( $page, 'big-featured-image' ); ?>
 			<div id="portfolioModal<?php echo $i; ?>" class="modal">
 				<div class="modal-content">
 					<div class="close-modal" data-dismiss="modal">
@@ -409,14 +400,12 @@ class MilleFiori_Portfolio extends Widget_Base {
 					</div>
 					<div class="container">
 						<div class="modal-body">
-							<!-- Project Details Go Here -->
 							<div class="col-md-12">
 								<img class="img-responsive img-centered" src="<?php echo $images; ?>" alt="<?php echo $titles; ?>">
 							</div>
 							<h2><?php echo $titles; ?></h2>
 							<div class="modal-separator"></div>
 							<?php echo \Elementor\Plugin::$instance->frontend->get_builder_content( $page->ID ); ?>
-
 							<div class="text-center">
 								<a href="#" class="btn btn-xl close-button">Close</a>
 							</div>

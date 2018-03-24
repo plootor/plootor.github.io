@@ -41,7 +41,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'MF Testimonial Carousel', 'elementor' );
+		return __( 'MF Testimonial Carousel', 'mille-fiori' );
 	}
 
 	/**
@@ -76,7 +76,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'section_mf_testimonials',
 			[
-				'label' => __( 'MF Overlapping Image', 'elementor-overlapping-image' ),
+				'label' => __( 'MF Overlapping Image', 'mille-fiori' ),
 				'type'  => Controls_Manager::SECTION,
 			]
 		);
@@ -85,7 +85,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_name1',
 			[
-				'label'   => __( 'Testimonial Name 1', 'testimonial_name1' ),
+				'label'   => __( 'Testimonial Name 1', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
@@ -94,7 +94,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_job1',
 			[
-				'label'   => __( 'Testimonial Job 1', 'testimonial_job1' ),
+				'label'   => __( 'Testimonial Job 1', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
@@ -103,7 +103,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_content1',
 			[
-				'label'   => __( 'Testimonial Content 1', 'testimonial_content1' ),
+				'label'   => __( 'Testimonial Content 1', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
@@ -113,7 +113,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_name2',
 			[
-				'label'   => __( 'Testimonial Name 2', 'testimonial_name2' ),
+				'label'   => __( 'Testimonial Name 2', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
@@ -122,7 +122,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_job2',
 			[
-				'label'   => __( 'Testimonial Job 2', 'testimonial_job2' ),
+				'label'   => __( 'Testimonial Job 2', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
@@ -131,7 +131,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_content2',
 			[
-				'label'   => __( 'Testimonial Content 2', 'testimonial_content2' ),
+				'label'   => __( 'Testimonial Content 2', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
@@ -141,7 +141,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_name3',
 			[
-				'label'   => __( 'Testimonial Name 3', 'testimonial_name3' ),
+				'label'   => __( 'Testimonial Name 3', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
@@ -150,7 +150,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_job3',
 			[
-				'label'   => __( 'Testimonial Job 3', 'testimonial_job3' ),
+				'label'   => __( 'Testimonial Job 3', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
@@ -159,7 +159,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_content3',
 			[
-				'label'   => __( 'Testimonial Content 3', 'testimonial_content3' ),
+				'label'   => __( 'Testimonial Content 3', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
@@ -169,7 +169,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_name4',
 			[
-				'label'   => __( 'Testimonial Name 4', 'testimonial_name4' ),
+				'label'   => __( 'Testimonial Name 4', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
@@ -178,7 +178,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_job4',
 			[
-				'label'   => __( 'Testimonial Job 4', 'testimonial_job4' ),
+				'label'   => __( 'Testimonial Job 4', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
@@ -187,7 +187,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_content4',
 			[
-				'label'   => __( 'Testimonial Content 4', 'testimonial_content4' ),
+				'label'   => __( 'Testimonial Content 4', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]

@@ -39,7 +39,7 @@
 					<div class="blog-content">
 						<h5
 							class="blog-by"><?php echo 'by ' . get_the_author_meta( 'first_name' ) . ' ' . get_the_author_meta( 'last_name' ) ?></h5>
-						<p class="blog-text"><?php the_excerpt() ?></p>
+						<?php the_excerpt() ?>
 						<div class="blog-separator"></div>
 						<div class="text-center">
 							<a href="<?php the_permalink() ?>" class="page-scroll btn btn-xl">Read more</a>
