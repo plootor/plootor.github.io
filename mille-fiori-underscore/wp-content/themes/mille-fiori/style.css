@@ -260,6 +260,10 @@ th {
 	display: block;
 }
 
+.mobile-no-border>div {
+	border-style: none !important;
+}
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -927,7 +931,7 @@ header .text-container .container .intro-text .intro-separator {
 .navbar .navbar-nav li a:after {
 	transition: all .5s;
 	position: absolute;
-	bottom: 0;
+	bottom: 25px;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -1042,7 +1046,7 @@ header .text-container .container .intro-text .intro-separator {
 	-o-background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	height: 200px;
+	height: auto;
 	margin: 0 auto;
 	border: 3px solid #ebaca5;
 	border-radius: 50%;
@@ -2815,5 +2819,9 @@ ul.social-buttons li {
 
 	.mobile-order-first {
 		order: 1;
+	}
+
+	.mobile-no-border>div {
+		border-style: solid !important;
 	}
 }
