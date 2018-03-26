@@ -208,6 +208,10 @@ require get_template_directory() . '/inc/elementor-widgets.php';
  */
 require_once get_template_directory() . '/admin/tgm/tgm-init.php';
 
+/**
+ * Load Email handling
+ */
+require_once get_template_directory() . '/inc/email_handling.php';
 
 /**
  * Filter the except length to 20 words.

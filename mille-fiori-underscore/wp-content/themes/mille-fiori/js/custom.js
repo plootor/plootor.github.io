@@ -127,8 +127,6 @@ function runFunc(type) {
 		item5 = jQuery('.item5'),
 		item6 = jQuery('.item6');
 
-
-
 	switch (type) {
 		case 'all':
 			item1.show();
