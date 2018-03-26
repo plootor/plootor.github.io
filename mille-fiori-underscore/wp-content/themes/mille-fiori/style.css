@@ -942,6 +942,10 @@ header .text-container .container .intro-text .intro-separator {
 	height: 1px;
 }
 
+.navbar.affix .navbar-nav li a:after {
+	bottom: 0;
+}
+
 .navbar .navbar-nav li a:hover {
 	color: #b28d94;
 }
@@ -961,6 +965,10 @@ header .text-container .container .intro-text .intro-separator {
 
 .navbar .navbar-nav a.active {
 	color: #ffffff;
+}
+
+body.elementor-editor-active header {
+	z-index: 0;
 }
 
 .navbar-nav {

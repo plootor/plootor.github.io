@@ -79,10 +79,10 @@ class MileFiori_Customizer {
 			]
 		);
 		/**
-		 * Header Slider Section
+		 * Header Image Section
 		 */
 		$wp_customize->add_section( 'millefiori_main_carousel_setting_section', [
-				'title'       => __( 'Header Slider Settings', 'mille-fiori' ),
+				'title'       => __( 'Header Image Settings', 'mille-fiori' ),
 				'description' => __( 'Allows you to set up slider images', 'mille-fiori' ), //Descriptive tooltip
 				'panel'       => 'page_header_setting_panel',
 				'priority'    => '2',
@@ -114,18 +114,6 @@ class MileFiori_Customizer {
 		$wp_customize->add_section( 'page_animation_setting', [
 				'title'       => __( 'Animation Settings', 'mille-fiori' ),
 				'description' => __( 'Allows you to set on/off animation of millefiori Theme.', 'mille-fiori' ),
-				//Descriptive tooltip
-				'panel'       => 'page_setting_panel',
-				'priority'    => '10',
-				'capability'  => 'edit_theme_options'
-			]
-		);
-		/**
-		 *  Pages color section
-		 */
-		$wp_customize->add_section( 'page_color_setting', [
-				'title'       => __( 'Color Settings', 'mille-fiori' ),
-				'description' => __( 'Allows you to set up pages color for millefiori Theme.', 'mille-fiori' ),
 				//Descriptive tooltip
 				'panel'       => 'page_setting_panel',
 				'priority'    => '10',
@@ -290,17 +278,6 @@ class MileFiori_Customizer {
 			'page_animation_setting'                   => [
 				'millefiori_animation_status',
 			],
-			/**
-			 * Page color settings
-			 */
-			'page_color_setting'                       => [
-				'pages_color_scheme',
-				'pages_heading_color_scheme',
-				'pages_text_color_scheme',
-				'pages_base_background_color',
-				'pages_darker_background_color',
-				'pages_nav_color'
-			]
 		];
 
 		return $section_content;
@@ -468,54 +445,6 @@ class MileFiori_Customizer {
 					'off' => 'Off'
 				]
 			],
-			'pages_color_scheme'             => [
-				'id'           => 'theme_options[pages_color_scheme]',
-				'label'        => __( 'Pages Accent Color', 'mille-fiori' ),
-				'description'  => __( 'This option allows you to set accent color scheme for all internal pages.', 'mille-fiori' ),
-				'type'         => 'option',
-				'setting_type' => 'color',
-				'default'      => '#ebaca5'
-			],
-			'pages_heading_color_scheme'     => [
-				'id'           => 'theme_options[pages_heading_color_scheme]',
-				'label'        => __( 'Headings Color', 'mille-fiori' ),
-				'description'  => __( 'This option allows you to set color scheme for all headings on internal pages.', 'mille-fiori' ),
-				'type'         => 'option',
-				'setting_type' => 'color',
-				'default'      => '#ebaca5'
-			],
-			'pages_text_color_scheme'        => [
-				'id'           => 'theme_options[pages_text_color_scheme]',
-				'label'        => __( 'Text Color', 'mille-fiori' ),
-				'description'  => __( 'This option allows you to set color scheme for all text on internal pages.', 'mille-fiori' ),
-				'type'         => 'option',
-				'setting_type' => 'color',
-				'default'      => '#333333'
-			],
-			'pages_base_background_color'    => [
-				'id'           => 'theme_options[pages_base_background_color]',
-				'label'        => __( 'Base Background Color', 'mille-fiori' ),
-				'description'  => __( 'This option allows you to set background base color.', 'mille-fiori' ),
-				'type'         => 'option',
-				'setting_type' => 'color',
-				'default'      => '#fff'
-			],
-			'pages_darker_background_color'  => [
-				'id'           => 'theme_options[pages_darker_background_color]',
-				'label'        => __( 'Darker Background Color', 'mille-fiori' ),
-				'description'  => __( 'This option allows you to set darker background color which is applied to (our story, newsletter, partners).', 'mille-fiori' ),
-				'type'         => 'option',
-				'setting_type' => 'color',
-				'default'      => '#f5eef0'
-			],
-			'pages_nav_color'                => [
-				'id'           => 'theme_options[pages_nav_color]',
-				'label'        => __( 'Top menu color', 'mille-fiori' ),
-				'description'  => __( 'This option allows you to set main navigation color.', 'mille-fiori' ),
-				'type'         => 'option',
-				'setting_type' => 'color',
-				'default'      => '#000'
-			]
 		];
 
 		return $customizer_settings;

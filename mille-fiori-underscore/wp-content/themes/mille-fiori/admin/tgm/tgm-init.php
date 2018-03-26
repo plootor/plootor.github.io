@@ -14,11 +14,6 @@ function alexander_register_required_plugins() {
 			'slug'     => 'elementor',
 			'required' => true,
 		),
-		array(
-			'name'     => 'Customizer Export/Import',
-			'slug'     => 'customizer-export-import',
-			'required' => true,
-		),
 	);
 
 	$config = array(

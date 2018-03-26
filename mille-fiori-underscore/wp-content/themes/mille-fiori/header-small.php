@@ -18,7 +18,6 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700%7CPlayfair+Display:400i,700,700i"
 				rel="stylesheet">
-
 	<?php wp_head(); ?>
 </head>
 
