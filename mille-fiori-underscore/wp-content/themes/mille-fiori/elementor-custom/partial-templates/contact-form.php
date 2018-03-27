@@ -24,8 +24,11 @@
 											data-validation-required-message="Please enter a message."></textarea>
 						<p class="help-block text-danger"></p>
 					</div>
+					<div class="col-12">
+						<div id="success" class="form-alert"></div>
+					</div>
+
 					<div class="col-12 text-center form-group submit fade-animate">
-						<div id="success"></div>
 						<button type="submit" class="contact-btn btn-xl">Send message</button>
 					</div>
 				</div>

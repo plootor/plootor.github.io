@@ -1201,6 +1201,53 @@ body.elementor-editor-active header {
 	margin-bottom: 0;
 }
 
+#contact .help-block, #newsletter .help-block {
+	color:#fd716c;
+	font-size: 13px;
+	position: absolute;
+	top: 75%;
+	left: 0;
+	margin-top: 0;
+}
+
+#newsletter .help-block {
+	left: unset;
+}
+
+.alert {
+	position: relative;
+	padding: .75rem 1.25rem;
+	margin-bottom: 1rem;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+}
+
+.alert-success, .alert-danger {
+	color: #faf3eb;
+	background-color: #ebaca5;
+	border-color: #333;
+	border-radius: 0;
+}
+
+.alert .close {
+	float: right;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1;
+	color: #000;
+	opacity: .5;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+}
+
+#subscribe2-success {
+	max-width: 450px;
+	margin: 0 auto;
+}
+
+
+
 /* Portfolio section */
 .modal-show {
 	display: block !important;
