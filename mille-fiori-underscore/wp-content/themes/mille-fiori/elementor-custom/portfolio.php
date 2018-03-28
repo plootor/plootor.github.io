@@ -373,7 +373,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 									<div class="portfolio-info">
 										<h6>Celebrations</h6>
 										<h3><?php echo $titles; ?></h3>
-										<?php the_excerpt(); ?>
+										<p><?php echo implode(' ',array_slice(str_word_count($page->post_content,1),1,25)); ?></p>
 										<div class="portfolio-separator"></div>
 										<p><?php echo date( "M Y", $date ); ?></p>
 									</div>

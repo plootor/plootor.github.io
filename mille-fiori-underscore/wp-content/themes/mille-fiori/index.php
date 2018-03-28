@@ -1,56 +1,58 @@
 <?php
 /**
- * The main template file
+ * The template for displaying archive pages.
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package mille-fiori
+ * @package understrap
  */
 
-get_header(); ?>
+add_filter( 'excerpt_length', function () {
+	return 60;
+}, 999 );
+include_font_awesome();
+get_header( 'small' );
+?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div class="wrapper" id="archive-wrapper">
 
-			<?php
-			if ( have_posts() ) :
+	<div class="container" id="content" tabindex="-1">
 
-				if ( is_home() && ! is_front_page() ) : ?>
-					<header>
-						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					</header>
+		<div class="row">
 
-				<?php
-				endif;
+			<!-- Do the left sidebar check -->
+			<?php get_template_part( 'global-templates/left-sidebar-check', 'none' ); ?>
 
-				/* Start the Loop */
-				while ( have_posts() ) : the_post();
+			<main class="site-main" id="main">
 
-					/*
-					 * Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'template-parts/content', get_post_format() );
+				<?php if ( have_posts() ) : ?>
+					<?php /* Start the Loop */ ?>
+					<?php while ( have_posts() ) : the_post(); ?>
 
-				endwhile;
+						<?php get_template_part( 'loop-templates/content', get_post_format() ); ?>
 
-				the_posts_navigation();
+					<?php endwhile; ?>
 
-			else :
+				<?php else : ?>
 
-				get_template_part( 'template-parts/content', 'none' );
+					<?php get_template_part( 'loop-templates/content', 'none' ); ?>
 
-			endif; ?>
+				<?php endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+			</main><!-- #main -->
 
-<?php
-get_sidebar();
-get_footer();
+			<!-- The pagination component -->
+			<?php understrap_pagination(); ?>
+
+		</div><!-- #primary -->
+
+		<!-- Do the right sidebar check -->
+		<?php get_sidebar( 'right' ); ?>
+
+	</div> <!-- .row -->
+
+</div><!-- Container end -->
+
+</div><!-- Wrapper end -->
+
+<?php get_footer(); ?>

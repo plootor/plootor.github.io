@@ -38,7 +38,7 @@ jQuery(document).ready(function () {
 		aArray.push(ahref);
 	}
 
-	if (jQuery('body.home').length) {
+	if (jQuery('body.home').length && jQuery(aArray[0]).length) {
 		jQuery(window).scroll(function () {
 			var windowPos = jQuery(window).scrollTop();
 			for (var i = 0; i < aArray.length; i++) {
@@ -76,9 +76,11 @@ jQuery(document).ready(function () {
 
 
 	// When the user clicks on <span> (x), close the modal
-	jQuery('.close-modal, .close-button').on('click', function () {
+	jQuery('.close-modal, .close-button').on('click', function (event) {
 		jQuery('body').removeClass('body-modal');
 		jQuery('.modal').removeClass('modal-show');
+		event.preventDefault();
+		event.stopPropagation();
 	});
 
 

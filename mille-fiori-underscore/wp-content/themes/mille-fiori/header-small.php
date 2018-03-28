@@ -62,7 +62,7 @@
 	</nav>
 
 	<div class="small-header-image"
-			 style="background-image: url('<?php echo theme_get_option( 'small_header_bg_image', 'http://mille-fiori.third-generation-web.com/wp-content/uploads/2017/12/bouquet-of-flowers-1149099_1920.jpg' ); ?>');"></div>
+			 style="background-image: url('<?php echo theme_get_option( 'small_header_bg_image', 'http://third-generation-web.com/mille-fiori/img/bouquet-of-flowers-1149099_1920.jpg' ); ?>');"></div>
 	<?php $data = get_the_archive_title();
 	if ( $data && strpos( $data, ":" ) ) {
 		$title = substr( $data, strpos( $data, ":" ) + 2 );

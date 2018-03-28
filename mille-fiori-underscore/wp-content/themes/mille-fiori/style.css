@@ -561,9 +561,9 @@ section .section-heading, section .section-heading h1 {
 	height: auto;
 }
 
-section#blog {
-	overflow: hidden;
-}
+/*section#blog {*/
+	/*overflow: hidden;*/
+/*}*/
 
 section.darker {
 	background-color: #f5eef0;
@@ -968,7 +968,7 @@ header .text-container .container .intro-text .intro-separator {
 }
 
 body.elementor-editor-active header {
-	z-index: 0;
+	z-index: 1;
 }
 
 .navbar-nav {
@@ -2876,7 +2876,7 @@ ul.social-buttons li {
 		order: 1;
 	}
 
-	.mobile-no-border>div {
+	.mobile-no-border>.elementor-column-wrap {
 		border-style: solid !important;
 	}
 }

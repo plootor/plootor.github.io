@@ -14,6 +14,11 @@ function alexander_register_required_plugins() {
 			'slug'     => 'elementor',
 			'required' => true,
 		),
+		array(
+			'name'     => 'WordPress Importer',
+			'slug'     => 'wordpress-importer',
+			'required' => true,
+		),
 	);
 
 	$config = array(
