@@ -22,7 +22,7 @@
 </head>
 
 <body id="page-top" <?php body_class(); ?>>
-
+<div class="se-pre-con"></div>
 <header>
 	<nav id="mainNav" class="navbar navbar-expand-md navbar-light fixed-top affix-top">
 		<div class="container">

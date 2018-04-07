@@ -1,5 +1,12 @@
+
+
 jQuery(document).ready(function () {
 	"use strict";
+
+	jQuery(window).load(function() {
+		// Animate loader off screen
+		jQuery(".se-pre-con").fadeOut("slow");;
+	});
 
 	jQuery('.header-slider').on('init', function (e, slick) {
 		console.log('init');

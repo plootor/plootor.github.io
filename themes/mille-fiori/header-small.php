@@ -22,17 +22,14 @@
 </head>
 
 <body id="page-top" <?php body_class(); ?>>
+<div class="se-pre-con"></div>
 
-
-<?php
-
-if (is_single()) {
+<?php if (is_single()) {
 	$header_image_url = get_the_post_thumbnail_url(null, 'big-featured-image');
 } else {
 	$header_image_url = theme_get_option( 'small_header_bg_image', 'http://third-generation-web.com/mille-fiori/img/bouquet-of-flowers-1149099_1920.jpg' );
 }
 ?>
-
 <header class="small-header single-header">
 	<nav id="mainNav" class="navbar navbar-expand-md navbar-light fixed-top affix-top">
 		<div class="container">
@@ -62,7 +59,6 @@ if (is_single()) {
 			</div>
 		</div>
 	</nav>
-
 	<div class="<?php echo is_single() ? 'container' : ''; ?> small-header-image"
 			 style="background-image: url('<?php echo $header_image_url; ?>');"></div>
 	<?php $data = get_the_archive_title();

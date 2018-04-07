@@ -29,15 +29,24 @@ jQuery: https://jquery.org | (Code licensed under MIT)
 # Forms
 # Alignments
 # Clearings
-
-
-
-
-
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('assets/ajax-loader.gif') center no-repeat #fff;
+}
+
+
+
 html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -476,7 +485,7 @@ body {
 	box-sizing: border-box;
 }
 
-#page-top, #page-top a, #page-top a:focus, #page-top a:active {
+#page-top, a, a:focus, a:active {
 	color: #333333;
 }
 
@@ -513,11 +522,15 @@ section .section-name h4:after {
 	font-size: 16px;
 }
 
-.btn-xl:hover, .elementor-button:hover {
+.btn-xl:hover, .elementor-button:hover, #commentform input.submit:hover {
 	color: #ffffff !important;
 	background-color: #ebaca5 !important;
 	border: 2px solid #ebaca5 !important;
 	-webkit-transition: all ease 0.5s;
+}
+
+#commentform input.submit:hover {
+	border-width: 1px !important;
 }
 
 .clean-button .elementor-button:hover {
@@ -2121,7 +2134,7 @@ ul.children {
 }
 
 .related-posts {
-	margin: 30px 0;
+	margin: 30px 0 50px;
 	background-color: #f5eef0;
 	padding: 30px 0 40px 0;
 }

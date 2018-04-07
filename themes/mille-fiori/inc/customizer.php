@@ -97,29 +97,6 @@ class MileFiori_Customizer {
 				'capability'  => 'edit_theme_options'
 			]
 		);
-
-		/**
-		 * Page setup
-		 */
-		$wp_customize->add_panel( 'page_setting_panel', [
-				'title'       => __( 'Page Settings', 'mille-fiori' ),
-				'description' => __( 'Allows you to set up pages for millefiori Theme.', 'mille-fiori' ), //Descriptive tooltip
-				'priority'    => '14',
-				'capability'  => 'edit_theme_options'
-			]
-		);
-		/**
-		 *  Pages animation section
-		 */
-		$wp_customize->add_section( 'page_animation_setting', [
-				'title'       => __( 'Animation Settings', 'mille-fiori' ),
-				'description' => __( 'Allows you to set on/off animation of millefiori Theme.', 'mille-fiori' ),
-				//Descriptive tooltip
-				'panel'       => 'page_setting_panel',
-				'priority'    => '10',
-				'capability'  => 'edit_theme_options'
-			]
-		);
 	}
 
 	public static function Controls( $wp_customize ) {
@@ -250,7 +227,7 @@ class MileFiori_Customizer {
 			'pagefooter_setting_section'               => [
 				'millefiori_footer_logo',
 				'millefiori_footer_address',
-				'onapage_footer_phone',
+				'millefiori_footer_phone',
 				'millefiori_footer_email'
 			],
 			'pagefooter_social_setting_section'        => [
@@ -270,13 +247,6 @@ class MileFiori_Customizer {
 			],
 			'millefiori_main_carousel_setting_section' => [
 				'small_header_bg_image',
-			],
-
-			/**
-			 * Page animation settings
-			 */
-			'page_animation_setting'                   => [
-				'millefiori_animation_status',
 			],
 		];
 
@@ -332,7 +302,7 @@ class MileFiori_Customizer {
 				'setting_type' => 'text',
 				'default'      => ''
 			],
-			'onapage_footer_phone'      => [
+			'millefiori_footer_phone'      => [
 				'id'           => 'theme_options[onapage_footer_phone]',
 				'label'        => __( 'Footer Phone', 'mille-fiori' ),
 				'description'  => __( '', 'mille-fiori' ),
@@ -428,22 +398,6 @@ class MileFiori_Customizer {
 				'type'         => 'option',
 				'setting_type' => 'text',
 				'default'      => ''
-			],
-
-			/**
-			 * Page animation settings
-			 */
-			'millefiori_animation_status'    => [
-				'id'           => 'theme_options[millefiori_animation_status]',
-				'label'        => __( 'Theme Animation On/Off Settings', 'mille-fiori' ),
-				'description'  => __( 'On/Off animation of the theme', 'mille-fiori' ),
-				'type'         => 'option',
-				'setting_type' => 'radio',
-				'default'      => 'on',
-				'choices'      => [
-					'on'  => 'On (Default)',
-					'off' => 'Off'
-				]
 			],
 		];
 
