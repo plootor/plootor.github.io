@@ -5,11 +5,10 @@ jQuery(document).ready(function () {
 
 	jQuery(window).load(function() {
 		// Animate loader off screen
-		jQuery(".se-pre-con").fadeOut("slow");;
+		jQuery(".se-pre-con").fadeOut("slow");
 	});
 
-	jQuery('.header-slider').on('init', function (e, slick) {
-		console.log('init');
+	jQuery('.header-slider').on('init', function () {
 		var $firstAnimatingElements = jQuery('div.hero:first-child').find('[data-animation]');
 		doAnimations($firstAnimatingElements);
 	});
@@ -101,7 +100,7 @@ jQuery(document).ready(function () {
 	var modal = document.getElementById('myModal');
 	var element = '';
 
-	jQuery('.portfolio-link').on('click', function (event) {
+	jQuery('.portfolio-link').on('click', function () {
 		element = jQuery(this).attr('href');
 		jQuery('body').addClass('body-modal');
 		jQuery(element).addClass('modal-show');
@@ -127,7 +126,7 @@ jQuery(document).ready(function () {
 		if (event.target === modal) {
 			modal.style.display = "none";
 		}
-	}
+	};
 
 	var navbar = jQuery('.navbar');
 	if (!navbar.hasClass('block-affix')) {
