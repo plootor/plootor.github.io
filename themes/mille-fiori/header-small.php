@@ -22,10 +22,6 @@
 </head>
 
 <body id="page-top" <?php body_class(); ?>>
-<?php if (is_admin()): ?>
-	<div class="se-pre-con"></div>
-<?php endif;?>
-
 <?php if (is_single()) {
 	$header_image_url = get_the_post_thumbnail_url(null, 'big-featured-image');
 } else {

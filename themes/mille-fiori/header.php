@@ -22,9 +22,6 @@
 </head>
 
 <body id="page-top" <?php body_class(); ?>>
-<?php if (is_admin()): ?>
-<div class="se-pre-con"></div>
-<?php endif;?>
 <header>
 	<nav id="mainNav" class="navbar navbar-expand-md navbar-light fixed-top affix-top">
 		<div class="container">
