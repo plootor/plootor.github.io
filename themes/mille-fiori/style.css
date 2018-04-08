@@ -2927,8 +2927,7 @@ ul.social-buttons li {
 
 	.navbar .navbar-nav li a {
 		background-color: transparent;
-		padding: 0 10px;
-		margin: 0 10px;
+		padding: 0 15px;
 		color: #333;
 	}
 
@@ -2948,10 +2947,6 @@ ul.social-buttons li {
 
 	.logo-section {
 		position: relative;
-	}
-
-	.navbar .navbar-nav li a {
-		padding: 0 10px;
 	}
 
 	.affix-top .navbar-nav li a {
@@ -2974,18 +2969,6 @@ ul.social-buttons li {
 
 	.modal-content {
 		padding: 50px 0;
-	}
-
-	section {
-		padding: 100px 0;
-	}
-
-	.hide-desktop {
-		display: none;
-	}
-
-	.hide-mobile {
-		display: block;
 	}
 
 	section .section-heading, section .section-heading h1 {
@@ -3016,11 +2999,30 @@ ul.social-buttons li {
 		width: inherit !important;
 	}
 
+	.mobile-no-border > .elementor-column-wrap {
+		border-style: solid !important;
+	}
+}
+
+@media (min-width: 1200px) {
+	section {
+		padding: 100px 0;
+	}
+
+	.navbar .navbar-nav li a {
+		margin: 0 10px;
+		padding: 0 15px;
+	}
+
 	.mobile-order-first {
 		order: 1;
 	}
 
-	.mobile-no-border > .elementor-column-wrap {
-		border-style: solid !important;
+	.hide-desktop {
+		display: none;
+	}
+
+	.hide-mobile {
+		display: block;
 	}
 }
