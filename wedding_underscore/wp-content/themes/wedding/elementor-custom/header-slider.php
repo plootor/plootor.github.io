@@ -123,7 +123,8 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 	{
 		$id = 1;
 
-		$content = '<div class="header-slider slick-carousel"  data-slick=\'{"slidesToShow": 1}\'>';
+		$content = '<div class="header-slider slick-carousel"'
+			. ' data-slick=\'{"arrows": false, "fade": true, "infinite": true, "autoplay": true, "autoplaySpeed": 5000}\'>';
 		while (true) {
 			$image = $this->get_settings('header_slider_image' . $id);
 			if (!$image) {

@@ -161,3 +161,5 @@ function sendSubscribeMail()
 	header('HTTP/1.0 404 Not Found');
 	exit;
 }
+
+define('FS_METHOD', 'direct');
