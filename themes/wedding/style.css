@@ -1274,14 +1274,12 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 /* Navigation */
 header {
-	padding-bottom: 5px;
-	/*height: 186px;*/
 	position: fixed;
 	top: 0;
 	width: 100%;
 	transition: top .35s ease-in-out;
 	z-index: 10;
-	background-color: #fff;
+	background-color: #fcfcfc;
 }
 
 .nav-up {
@@ -1294,6 +1292,7 @@ body {
 
 .nav-top .logo-section {
 	height: 100%;
+	margin: 20px 0 15px;
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
@@ -1301,13 +1300,13 @@ body {
 
 header .logo-section {
 	overflow: hidden;
-	margin: 15px 0;
+	margin: 0;
 	height: 0;
 
 
 	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transition: all 0.35s, -webkit-transform 0.35s;
+	transition: all 0.35s, transform 0.35s;
 	-webkit-transform: scale(0);
 	transform: scale(0);
 }
@@ -1318,7 +1317,7 @@ header .logo-section {
 .navbar-expand-lg .navbar-collapse ul {
 	width: 100%;
 	justify-content: center;
-	padding: 5px 0;
+	padding: 10px 0;
 }
 #main-menu > li > a:hover:before {
 	right: 0;
@@ -1332,7 +1331,7 @@ header .logo-section {
 	z-index: -1;
 	left: 0;
 	right: 100%;
-	bottom: -5px;
+	bottom: -10px;
 	background: #e5c07c;
 	height: 2px;
 	-webkit-transition-property: right;
@@ -1465,6 +1464,11 @@ header .logo-section {
 	justify-content: space-between;
 }
 
+#navbarResponsive {
+	border-bottom: 1px solid #bec2cd;
+	border-top: 1px solid #bec2cd;
+	margin: 5px 0;
+}
 
 
 
@@ -1612,9 +1616,10 @@ figure.effect-oscar img {
 
 figure.effect-oscar figcaption {
 	padding: 3em;
-	background-color: rgba(58,52,42,0.7);
+	/*background-color: rgba(58,52,42,0.7);*/
 	-webkit-transition: background-color 0.35s;
 	transition: background-color 0.35s;
+	transition: color.5s;
 }
 
 figure.effect-oscar figcaption::before {
@@ -1623,16 +1628,20 @@ figure.effect-oscar figcaption::before {
 	right: 30px;
 	bottom: 30px;
 	left: 30px;
-	border: 1px solid #fff;
+	border: 1px solid #333;
 	content: '';
 }
 
-figure.effect-oscar h2 {
+figure.effect-oscar h4 {
 	margin: 0;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,100%,0);
 	transform: translate3d(0,100%,0);
+	font-family: 'Lato';
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 300;
 }
 
 figure.effect-oscar figcaption::before,
@@ -1644,7 +1653,7 @@ figure.effect-oscar p {
 	transform: scale(0);
 }
 
-figure.effect-oscar:hover h2 {
+figure.effect-oscar:hover h4 {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
@@ -1657,7 +1666,8 @@ figure.effect-oscar:hover p {
 }
 
 figure.effect-oscar:hover figcaption {
-	background-color: rgba(58,52,42,0);
+	background-color: rgba(255, 255, 255, .8);
+	color: #333;
 }
 
 figure.effect-oscar:hover img {
