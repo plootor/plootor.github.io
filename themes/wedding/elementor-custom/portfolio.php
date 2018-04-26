@@ -217,8 +217,8 @@ class MilleFiori_Portfolio extends Widget_Base {
 									class="portfolio-cell portfolio-cell1"></div>
 								<figcaption>
 									<div style="position: relative; height: 100%; display: flex; justify-content: center; align-content: center; flex-direction: column;">
-									<h2>Niunicei Mumucei</h2>
-									<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+									<h4>Sandra & Will</h4>
+									<p>14/04/2017</p>
 									</div>
 								</figcaption>
 							</figure>

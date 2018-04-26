@@ -1801,6 +1801,17 @@ figure.effect-oscar:hover img {
 }
 
 
+
+#gallery-section .gallery-icon img {
+	width: 100%;
+	margin: 5px !important;
+}
+
+#gallery-1 {
+	column-count: 4;
+}
+
+
 @media (min-width: 992px) {
 
 	.navbar-expand-lg .navbar-nav {

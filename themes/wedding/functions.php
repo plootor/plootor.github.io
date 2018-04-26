@@ -187,7 +187,7 @@ register_nav_menus( array(
 
 
 
-function twentyseventeen_header_footer_elementor_support() {
+function wedding_header_footer_elementor_support() {
 	add_theme_support( 'header-footer-elementor' );
 }
 
