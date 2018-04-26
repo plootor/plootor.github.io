@@ -43,9 +43,8 @@ class Widget_Alexander_Templates_Element extends Widget_Base
 				'default' => 'base',
 				'section' => 'section_blog_posts',
 				'options' => [
-					'book-form' => 'Book Form Template',
 					'contact-form' => 'Contact Template',
-					'testimonials' => 'Testimonials Template'
+					'subscribe-form' => 'Subscribe Form Template'
 				],
 			]
 		);

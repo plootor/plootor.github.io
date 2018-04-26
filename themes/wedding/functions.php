@@ -186,3 +186,10 @@ register_nav_menus( array(
 
 
 
+
+function twentyseventeen_header_footer_elementor_support() {
+	add_theme_support( 'header-footer-elementor' );
+}
+
+add_action( 'after_setup_theme', 'wedding_header_footer_elementor_support' );
+
