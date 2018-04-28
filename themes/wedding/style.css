@@ -961,6 +961,7 @@ object {
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
 	display: inline-block;
+	font-size: 0;
 }
 
 /*--------------------------------------------------------------
@@ -1040,10 +1041,6 @@ object {
 /* ----------- Start our custom style ------------- */
 
 /*header*/
-.header-slider {
-	height: 800px;
-}
-
 .header-slider .slick-list, .header-slider .slick-list .slick-track {
 	height: 100%;
 }
@@ -1273,6 +1270,21 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 /* Navigation */
+#head_slider .elementor-row,
+#head_slider .elementor-row .elementor-widget-wrap,
+#head_slider .elementor-widget,
+#head_slider .elementor-widget-container {
+	height: 100%;
+}
+
+.header-slider {
+	height: 100%;
+}
+
+/*body {*/
+	/*padding-top: 150px;*/
+/*}*/
+
 header {
 	position: fixed;
 	top: 0;
@@ -1286,13 +1298,9 @@ header {
 	top: -186px;
 }
 
-body {
-	padding-top: 186px;
-}
-
 .nav-top .logo-section {
 	height: 100%;
-	margin: 20px 0 15px;
+	margin: 20px 0 10px;
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
