@@ -184,6 +184,10 @@ register_nav_menus( array(
 	'primary' => __( 'Main Menu', 'Wedding' ),
 ) );
 
+/**
+ * Load custom widgets.
+ */
+require get_template_directory() . '/inc/widgets-implementations.php';
 
 
 
@@ -191,5 +195,31 @@ function wedding_header_footer_elementor_support() {
 	add_theme_support( 'header-footer-elementor' );
 }
 
+set_post_thumbnail_size( 360, 220, true );
+add_image_size( 'big-featured-image', 1110, 470, array( 'center', 'center' ) );
+
 add_action( 'after_setup_theme', 'wedding_header_footer_elementor_support' );
 
+register_sidebar(
+	array(
+		'name'          => __( 'Right Sidebar', 'weding' ),
+		'id'            => 'right-sidebar',
+		'description'   => 'Right sidebar widget area',
+		'before_widget' => '<div class="sidebar-section">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="sidebar-title">',
+		'after_title'   => '</h4>',
+	)
+);
+
+register_sidebar(
+	array(
+		'name'          => __( 'Horizontal Sidebar', 'wedding' ),
+		'id'            => 'horizontal-sidebar',
+		'description'   => 'Horizontal post sidebar widget area',
+		'before_widget' => '<div class="sidebar-section">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="sidebar-title">',
+		'after_title'   => '</h4>',
+	)
+);

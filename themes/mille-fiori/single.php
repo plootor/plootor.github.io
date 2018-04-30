@@ -55,6 +55,5 @@ get_header( 'small' );
 </section>
 
 <div class="clear"></div>
-<?php get_footer(); ?>
 
 <?php get_footer(); ?>

@@ -38,7 +38,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'MF Portfolio', 'mille-fiori' );
+		return __( 'MF Portfolio', 'wedding' );
 	}
 
 	/**
@@ -68,7 +68,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'section_mf_portfolio',
 			[
-				'label' => __( 'MF Portfolio', 'mille-fiori' ),
+				'label' => __( 'MF Portfolio', 'wedding' ),
 				'type'  => Controls_Manager::SECTION,
 			]
 		);
@@ -77,16 +77,34 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_image1',
 			[
-				'label'   => __( 'Portfolio 1 Image', 'mille-fiori' ),
+				'label'   => __( 'Portfolio 1 Image', 'wedding' ),
 				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_mf_portfolio'
 			]
 		);
 
 		$this->add_control(
-			'portfolio_hover1',
+			'portfolio_title1',
 			[
-				'label'   => __( 'Portfolio 1 width settings', 'mille-fiori' ),
+				'label'   => __( 'Portfolio 1 Title', 'wedding' ),
+				'type'    => Controls_Manager::TEXT,
+				'section' => 'section_mf_portfolio'
+			]
+		);
+
+		$this->add_control(
+			'portfolio_subtitle1',
+			[
+				'label'   => __( 'Portfolio 1 SubTitle', 'wedding' ),
+				'type'    => Controls_Manager::TEXT,
+				'section' => 'section_mf_portfolio'
+			]
+		);
+
+		$this->add_control(
+			'portfolio_width1',
+			[
+				'label'   => __( 'Portfolio 1 width settings', 'wedding' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -95,7 +113,16 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_height1',
 			[
-				'label'   => __( 'Portfolio 1 height settings', 'mille-fiori' ),
+				'label'   => __( 'Portfolio 1 height settings', 'wedding' ),
+				'type'    => Controls_Manager::TEXT,
+				'section' => 'section_mf_portfolio'
+			]
+		);
+
+		$this->add_control(
+			'portfolio_link1',
+			[
+				'label'   => __( 'Portfolio 1 Link', 'wedding' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -105,16 +132,34 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_image2',
 			[
-				'label'   => __( 'Portfolio 2 Image', 'mille-fiori' ),
+				'label'   => __( 'Portfolio 2 Image', 'wedding' ),
 				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_mf_portfolio'
 			]
 		);
 
 		$this->add_control(
-			'portfolio_hover2',
+			'portfolio_title2',
 			[
-				'label'   => __( 'Portfolio 2 width settings', 'mille-fiori' ),
+				'label'   => __( 'Portfolio 2 Title', 'wedding' ),
+				'type'    => Controls_Manager::TEXT,
+				'section' => 'section_mf_portfolio'
+			]
+		);
+
+		$this->add_control(
+			'portfolio_subtitle2',
+			[
+				'label'   => __( 'Portfolio 2 SubTitle', 'wedding' ),
+				'type'    => Controls_Manager::TEXT,
+				'section' => 'section_mf_portfolio'
+			]
+		);
+
+		$this->add_control(
+			'portfolio_width2',
+			[
+				'label'   => __( 'Portfolio 2 width settings', 'wedding' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -123,7 +168,16 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_height2',
 			[
-				'label'   => __( 'Portfolio 2 height settings', 'mille-fiori' ),
+				'label'   => __( 'Portfolio 2 height settings', 'wedding' ),
+				'type'    => Controls_Manager::TEXT,
+				'section' => 'section_mf_portfolio'
+			]
+		);
+
+		$this->add_control(
+			'portfolio_link2',
+			[
+				'label'   => __( 'Portfolio 2 Link', 'wedding' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -133,16 +187,34 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_image3',
 			[
-				'label'   => __( 'Portfolio 3 Image', 'mille-fiori' ),
+				'label'   => __( 'Portfolio 3 Image', 'wedding' ),
 				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_mf_portfolio'
 			]
 		);
 
 		$this->add_control(
-			'portfolio_hover3',
+			'portfolio_title3',
 			[
-				'label'   => __( 'Portfolio 3 width settings', 'mille-fiori' ),
+				'label'   => __( 'Portfolio 3 Title', 'wedding' ),
+				'type'    => Controls_Manager::TEXT,
+				'section' => 'section_mf_portfolio'
+			]
+		);
+
+		$this->add_control(
+			'portfolio_subtitle3',
+			[
+				'label'   => __( 'Portfolio 3 SubTitle', 'wedding' ),
+				'type'    => Controls_Manager::TEXT,
+				'section' => 'section_mf_portfolio'
+			]
+		);
+
+		$this->add_control(
+			'portfolio_width3',
+			[
+				'label'   => __( 'Portfolio 3 width settings', 'wedding' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -151,7 +223,16 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_height3',
 			[
-				'label'   => __( 'Portfolio 3 height settings', 'mille-fiori' ),
+				'label'   => __( 'Portfolio 3 height settings', 'wedding' ),
+				'type'    => Controls_Manager::TEXT,
+				'section' => 'section_mf_portfolio'
+			]
+		);
+
+		$this->add_control(
+			'portfolio_link3',
+			[
+				'label'   => __( 'Portfolio 3 Link', 'wedding' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -161,16 +242,34 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_image4',
 			[
-				'label'   => __( 'Portfolio 4 Image', 'mille-fiori' ),
+				'label'   => __( 'Portfolio 4 Image', 'wedding' ),
 				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_mf_portfolio'
 			]
 		);
 
 		$this->add_control(
-			'portfolio_hover4',
+			'portfolio_title4',
 			[
-				'label'   => __( 'Portfolio 4 width settings', 'mille-fiori' ),
+				'label'   => __( 'Portfolio 4 Title', 'wedding' ),
+				'type'    => Controls_Manager::TEXT,
+				'section' => 'section_mf_portfolio'
+			]
+		);
+
+		$this->add_control(
+			'portfolio_subtitle4',
+			[
+				'label'   => __( 'Portfolio 4 SubTitle', 'wedding' ),
+				'type'    => Controls_Manager::TEXT,
+				'section' => 'section_mf_portfolio'
+			]
+		);
+
+		$this->add_control(
+			'portfolio_width4',
+			[
+				'label'   => __( 'Portfolio 4 width settings', 'wedding' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -179,7 +278,16 @@ class MilleFiori_Portfolio extends Widget_Base {
 		$this->add_control(
 			'portfolio_height4',
 			[
-				'label'   => __( 'Portfolio 4 height settings', 'mille-fiori' ),
+				'label'   => __( 'Portfolio 4 height settings', 'wedding' ),
+				'type'    => Controls_Manager::TEXT,
+				'section' => 'section_mf_portfolio'
+			]
+		);
+
+		$this->add_control(
+			'portfolio_link4',
+			[
+				'label'   => __( 'Portfolio 4 Link', 'wedding' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_portfolio'
 			]
@@ -201,15 +309,14 @@ class MilleFiori_Portfolio extends Widget_Base {
 			</div>
 			<div class="grid">
 				<div class="grid-sizer"></div>
-				<?php for ( $i = 1; $i <= 4; $i ++ ) { /* ?>
-						<div style="height: <?php echo $this->get_settings( 'portfolio_height' . $i );?>px"
-							class="grid-item item<?php echo $i?> <?php echo $this->get_settings( 'portfolio_hover' . $i ); ?>">
-							<div class="item-image" style="background-image: url(<?php echo $this->get_settings( 'portfolio_image' . $i )["url"]; ?>)"></div>
-						</div> */ ?>
+				<?php for ( $i = 1; $i <= 4; $i ++ ) {
+					$title = $this->get_settings( 'portfolio_title' . $i );
+					$sub_title = $this->get_settings( 'portfolio_subtitle' . $i );
+					?>
 
 				<div style="height: <?php echo $this->get_settings( 'portfolio_height' . $i );?>px"
-						 class="grid-item item<?php echo $i?> <?php echo $this->get_settings( 'portfolio_hover' . $i ); ?>">
-					<a href="#portfolioModal<?php echo $i; ?>" class="portfolio-link" data-toggle="modal">
+						 class="grid-item item<?php echo $i?> <?php echo $this->get_settings( 'portfolio_width' . $i ); ?>">
+					<a href="<?php echo $this->get_settings( 'portfolio_link' . $i ); ?>" class="portfolio-link" data-toggle="modal">
 						<div class="portfolio-item pos-r">
 							<figure class="effect-oscar">
 								<div
@@ -217,8 +324,8 @@ class MilleFiori_Portfolio extends Widget_Base {
 									class="portfolio-cell portfolio-cell1"></div>
 								<figcaption>
 									<div style="position: relative; height: 100%; display: flex; justify-content: center; align-content: center; flex-direction: column;">
-									<h4>Sandra & Will</h4>
-									<p>14/04/2017</p>
+										<h4><span><?php echo $title; ?></span></h4>
+									<p><?php echo $sub_title; ?></p>
 									</div>
 								</figcaption>
 							</figure>
