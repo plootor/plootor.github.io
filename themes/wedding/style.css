@@ -1704,25 +1704,36 @@ figure.effect-oscar:hover img {
 
 
 /* Sidebar section */
+.widget-area {
+	padding-left: 40px !important;
+}
+
 .sidebar-section {
 	margin: 0 0 20px 0;
-	padding: 15px 0;
-	background-color: #f7f7f7;
+	padding: 30px 0 15px;
+	background-color: rgba(252, 252, 252, 0.9);
+}
+
+.widget-area .sidebar-section:first-child {
+	padding-top: 0 !important;
 }
 
 .sidebar-section .sidebar-separator {
-	width: 20%;
+	width: 13%;
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
 	margin: 15px auto;
+	color: #bec2cd;
 }
 
 .sidebar-section .sidebar-title {
 	margin-top: 0;
-	text-transform: none;
-	font-variant: small-caps;
+	text-transform: uppercase;
 	letter-spacing: 2px;
 	text-align: center;
+	font-family: 'Lato';
+	font-weight: 200;
+	font-size: .9rem;
 }
 
 .sidebar-section ul {
@@ -1737,7 +1748,7 @@ figure.effect-oscar:hover img {
 	content: "\f178";
 	font-family: FontAwesome;
 	color: #e5c07c;
-	padding: 0 10px 0 20px;
+	padding: 0 10px 0 30px;
 }
 
 .sidebar-section ul {
@@ -1750,7 +1761,11 @@ figure.effect-oscar:hover img {
 }
 
 .sidebar-section #searchform {
-	margin: 0 20px;
+	margin: 0 30px;
+}
+
+#searchform .form-group {
+	padding-bottom: 0;
 }
 
 .sidebar-section #searchform button {
@@ -1771,17 +1786,16 @@ figure.effect-oscar:hover img {
 
 .sidebar-section .author-text {
 	font-size: .8rem;
-	margin: 0 20px;
+	margin: 0 30px;
 	text-align: center;
 	text-indent: 0;
 }
 
 .sidebar-section .author-img-container img {
-	height: 125px;
-	border-radius: 80px;
-	border: 1px solid #d4d4d4;
-	margin: 15px auto 25px;
+	height: auto;
+	margin: 0px auto 25px;
 	display: block;
+	width: 100%;
 }
 
 .big-post-image {
@@ -1797,7 +1811,8 @@ figure.effect-oscar:hover img {
 
 .list-container .blog-cell {
 	margin-bottom: 50px;
-	background-color: #f7f7f7; }
+	/*border-top: 1px solid #bec2cd;*/
+}
 
 .list-container .blog-by {
 	font-weight: 500;
@@ -1827,9 +1842,6 @@ figure.effect-oscar:hover img {
 
 .list-container .grid-blog .blog-text {
 	text-align: center; }
-
-.list-container .blog-text {
-	margin: 0 40px 0; }
 
 .list-container .btn, .list-container .wpcf7 input[type=submit], .wpcf7 .list-container input[type=submit] {
 	color: #000;
@@ -1863,17 +1875,19 @@ figure.effect-oscar:hover img {
 	font-weight: 500;
 	font-size: .85rem;
 	color: #bec2cd;
-	padding: 70px 0 15px;
+	padding: 0 0 20px;
 	text-transform: none;
 	margin: 0;
 }
 
 .blog-title {
-	margin-bottom: 25px;
+	margin-bottom: 10px;
 	text-align: center;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	color: #1d2f3b;
-	text-transform: uppercase;
+	font-family: 'Lato';
+	font-weight: 300;
+
 }
 
 
@@ -2038,6 +2052,41 @@ padding: .375rem .75rem;
 	padding: 10px 45px!important;
 	background-color: #e5c07c;
 }
+
+/*recent post*/
+.recent_post_cell {
+	height: 150px;
+	background-size: cover;
+	background-position: center center;
+	margin-bottom: 20px;
+}
+
+.recent_post_cell:last-of-type {
+	margin-bottom: 0;
+}
+
+.recent_post_cell a {
+	display: block;
+	height: 100%;
+	widows: 100%;
+}
+
+
+.recent_post_cell .recent-title {
+	font-family: 'Lato';
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+	line-height: 150px;
+	font-size: .8rem;
+	letter-spacing: 2px;
+}
+
+.recent-title span {
+	padding: 15px;
+	background-color: rgba(255, 255, 255, .7);
+}
+
 
 @media (min-width: 992px) {
 

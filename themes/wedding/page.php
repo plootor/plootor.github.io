@@ -7,7 +7,7 @@ get_header();
 <section id="blog" class="visible-over">
 	<div class="container">
 		<div class="row pos-r">
-			<div class="col-12 col-md-8 col-lg-9">
+			<div class="col-12 col-md-8 col-lg-8">
 				<!-- Start the Loop. -->
 				<?php if ( have_posts() ) : while ( have_posts() ) :
 				the_post(); ?>

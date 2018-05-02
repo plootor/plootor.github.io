@@ -91,19 +91,19 @@ class RecentPostWithImages extends WP_Widget {
 		$recent_posts = wp_get_recent_posts();
 		if ( count( $recent_posts ) >= 3 ) {
 			echo '<div class="sidebar-section">';
-			echo '<h5 class="sidebar-title">' . __( 'Recent Posts', 'mille-fiori' ) . '</h5>';
+			echo '<h5 class="sidebar-title">' . __( 'Recent Posts', 'mille-fiori' ) . '</h5><div class="sidebar-separator"></div>';
 			foreach ( $recent_posts as $nr => $recent ) {
 				if ( $recent['post_status'] != "publish" || $recent['ID'] == $current_id ) {
 					continue;
 				}
-				if ( $nr > 3 ) {
+				if ( $nr > 2 ) {
 					break;
 				}
 				if ( has_post_thumbnail( $recent["ID"] ) ) {
-					echo '<div class="recent_post_cell">'
-					     . '<a href="' . get_permalink( $recent["ID"] ) . '" title="Look ' . esc_attr( $recent["post_title"] ) . '" >'
-					     . get_the_post_thumbnail( $recent["ID"] )
-					     . '<h6 class="recent-title text-center">' . $recent["post_title"] . '</h6>'
+					echo '<div class="recent_post_cell" style="background-image: url(' . get_the_post_thumbnail_url($recent["ID"]) . ')">'
+					     . '<a  href="' . get_permalink( $recent["ID"] ) . '" title="Look ' . esc_attr( $recent["post_title"] ) . '" >'
+					     //. get_the_post_thumbnail( $recent["ID"] )
+					     . '<h6 class="recent-title text-center"><span>' . $recent["post_title"] . '</span></h6>'
 					     . '</a>'
 					     . '</div>';
 				} else {
