@@ -15,7 +15,7 @@ $header_image_url = get_the_post_thumbnail_url(null, 'big-featured-image');
 			</div>
 		</div>
 		<div class="row pos-r">
-			<div class="col-12 col-md-8 col-lg-9">
+			<div class="col-12 col-md-8 col-lg-8">
 				<!-- Start the Loop. -->
 				<?php if ( have_posts() ) : while ( have_posts() ) :
 				the_post(); ?>

@@ -119,7 +119,7 @@ class Widget_Alexander_Blog_Element extends Widget_Base
 							'mid_size' => $post_per_page,
 							'prev_next' => true,
 							'prev_text' => esc_html__('« Previous'),
-							'next_text' => esc_html__('Next »'),
+							'next_text' => esc_html__('»'),
 							'type' => 'plain',
 							'add_args' => false,
 						);

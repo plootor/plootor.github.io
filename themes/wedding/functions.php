@@ -236,7 +236,7 @@ if (!function_exists('understrap_all_excerpts_get_more_link')) {
 	function wedding_excerpts_get_more_link($post_excerpt)
 	{
 
-		return $post_excerpt . ' [...]<div class="read-more-button"><a class="btn" href="' . esc_url(get_permalink(get_the_ID())) . '">' . __('Read More',
+		return $post_excerpt . ' [...]<div class="read-more-button"><a class="btn" href="' . esc_url(get_permalink(get_the_ID())) . '">' . __('Read more',
 				'wedding') . '</a></div>';
 	}
 }
