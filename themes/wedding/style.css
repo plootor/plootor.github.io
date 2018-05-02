@@ -86,7 +86,9 @@ h1, h2, h3, h4, h5, h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.2;
-  color: inherit; }
+  color: inherit;
+	margin-top: 0;
+}
 
 h1, .h1 {
   font-size: 2.5rem; }
@@ -1175,6 +1177,10 @@ body {
 	padding-bottom: 1rem;
 }
 
+.read-more-button .btn {
+	display: inline-block;
+}
+
 button {
 	outline-color: transparent !important;
 }
@@ -1698,119 +1704,177 @@ figure.effect-oscar:hover img {
 
 
 /* Sidebar section */
-.big-post-image {
-	height: 470px;
-	background-size: cover;
-	background-position: center center;
-}
-
 .sidebar-section {
-	padding: 30px 0;
-	border-top: 1px solid #ebaca5;
+	margin: 0 0 20px 0;
+	padding: 15px 0;
+	background-color: #f7f7f7;
 }
 
-.recent_post_cell {
-	padding: 0 20px;
+.sidebar-section .sidebar-separator {
+	width: 20%;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	margin: 15px auto;
 }
 
-.recent_post img {
-	margin: 0 auto;
-	display: block;
-}
-
-.author-img-container > img {
-	border-radius: 50%;
-	height: 150px;
-	border: 2px solid #ebaca5;
-	display: block;
-	margin: 0 auto 25px;
-}
-
-#searchform .input-group .form-control {
-	border: 2px solid #ebaca5;
-	font-size: 12px;
-	letter-spacing: 1px;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	position: relative;
-	z-index: 2;
-	flex: 1 1 auto;
-	width: 1%;
-	margin-bottom: 0;
-	padding: .5rem 1rem;
-	line-height: 1.5;
-}
-
-#searchform .input-group-btn .btn {
-	padding: 0 15px;
-	color: #fff;
-	background-color: #ebaca5;
-	border: 2px solid #ebaca5;
-	font-size: 12px;
-	cursor: pointer;
-	border-radius: 0;
-	height: 100%;
-}
-
-.sidebar-section .author-box > .sidebar-title {
-	font-size: 18px;
-	margin: 10px 0;
-	line-height: 1.1;
+.sidebar-section .sidebar-title {
+	margin-top: 0;
+	text-transform: none;
+	font-variant: small-caps;
+	letter-spacing: 2px;
 	text-align: center;
-}
-
-.sidebar-section .author-box > p {
-	margin: 0 20px;
-	font-size: 13px;
-	line-height: 1.9;
-	text-align: center;
-}
-
-.sidebar-title {
-	text-align: center;
-	font-family: 'Playfair Display', serif;
-	text-transform: capitalize;
-	letter-spacing: 1px;
-	font-size: 18px;
 }
 
 .sidebar-section ul {
+	list-style: none;
+	padding: 0;
 	line-height: 27px;
 	letter-spacing: 1px;
-	font-size: 13px;
-	list-style: none;
-	padding-left: 0;
+	font-size: .85rem;
 }
 
 .sidebar-section ul a:before {
 	content: "\f178";
 	font-family: FontAwesome;
-	color: #ebaca5;
+	color: #e5c07c;
 	padding: 0 10px 0 20px;
 }
 
-.sidebar-section .social-buttons a:before {
-	content: "";
-}
-
-.sidebar-list .fa {
-	color: #ebaca5;
-	padding: 0 10px 0 20px;
-}
-
-.recent-img {
-	height: 140px;
-}
-
-.recent-title {
-	font-weight: 500;
-	margin: 15px 0 20px 0;
+.sidebar-section ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	line-height: 27px;
 	letter-spacing: 1px;
-	text-transform: none;
+	font-size: .85rem;
+}
+
+.sidebar-section #searchform {
+	margin: 0 20px;
+}
+
+.sidebar-section #searchform button {
+	height: 100%;
+	padding: 10px 15px!important;
+	border-radius: 0;
+}
+
+.sidebar-section #searchform input {
+	padding: 6px 12px;
+	border-radius: 0;
+	position: relative;
+	flex: 1 1 auto;
+	width: 1%;
+	letter-spacing: 1px;
+	font-size: .75rem;
+}
+
+.sidebar-section .author-text {
+	font-size: .8rem;
+	margin: 0 20px;
+	text-align: center;
+	text-indent: 0;
+}
+
+.sidebar-section .author-img-container img {
+	height: 125px;
+	border-radius: 80px;
+	border: 1px solid #d4d4d4;
+	margin: 15px auto 25px;
+	display: block;
+}
+
+.big-post-image {
+	height: 470px;
+	background-position: center center;
+	background-size: cover;
 }
 
 
+/* Blog(list container) */
+.list-container .blog-cell:last-child {
+	margin-bottom: 0; }
+
+.list-container .blog-cell {
+	margin-bottom: 50px;
+	background-color: #f7f7f7; }
+
+.list-container .blog-by {
+	font-weight: 500;
+	font-size: 0.8rem;
+	color: #bec2cd;
+	padding: 30px 40px 10px;
+	text-transform: none; }
+
+.list-container .blog-info-cell {
+	padding: 0;
+	background-color: #f7f7f7; }
+
+.list-container .blog-separator {
+	width: 10%;
+	border-bottom: 1px solid #e5c07c;
+	margin: 35px auto 10px; }
+
+.list-container .blog-image-cell {
+	position: relative;
+	height: 440px;
+	padding: 0; }
+
+.list-container .blog-image {
+	background-size: cover;
+	height: 100%;
+	width: 100%; }
+
+.list-container .grid-blog .blog-text {
+	text-align: center; }
+
+.list-container .blog-text {
+	margin: 0 40px 0; }
+
+.list-container .btn, .list-container .wpcf7 input[type=submit], .wpcf7 .list-container input[type=submit] {
+	color: #000;
+	background-color: transparent;
+	border: none;
+	font-size: 0.9rem;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	border-radius: 0;
+	text-transform: uppercase; }
+.list-container .btn:hover, .list-container .wpcf7 input[type=submit]:hover, .wpcf7 .list-container input[type=submit]:hover {
+	color: #e5c07c;
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	-ms-transition: color 0.5s;
+	-o-transition: color 0.5s;
+	transition: color 0.5s; }
+.list-container .btn:before, .list-container .wpcf7 input[type=submit]:before, .wpcf7 .list-container input[type=submit]:before {
+	display: block;
+	width: 60%;
+	border-bottom: 1px solid #e5c07c;
+	margin: 25px auto 15px;
+	content: ""; }
+
+.list-container p:not(:first-child) {
+	text-align: center; }
+
+.blog-date {
+	text-align: center;
+	font-weight: 500;
+	font-size: .85rem;
+	color: #bec2cd;
+	padding: 70px 0 15px;
+	text-transform: none;
+	margin: 0;
+}
+
+.blog-title {
+	margin-bottom: 25px;
+	text-align: center;
+	letter-spacing: 3px;
+	color: #1d2f3b;
+	text-transform: uppercase;
+}
 
 
 @media (min-width: 768px) {
@@ -1939,10 +2003,41 @@ figure.effect-oscar:hover img {
 	margin: 5px !important;
 }
 
-#gallery-1 {
+#gallery-section #gallery-1 {
 	column-count: 4;
 }
 
+/* Contact Forms, forms */
+#contact-form input, #contact-form textarea {
+color: #666;
+border: 1px solid #ccc;
+border-radius: 3px;
+padding: 3px;
+display: block;
+height: 50px;
+border-radius: 0;
+display: block;
+width: 100%;
+padding: .375rem .75rem;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+.invalid-feedback {
+	display: none;
+	width: 100%;
+	margin-top: 0.25rem;
+	font-size: 80%;
+	color: #dc3545;
+}
+
+.common-button, .elementor-button {
+	border: 1px solid #e5c07c;
+	border-radius: 0!important;
+	color: #000!important;
+	padding: 10px 45px!important;
+	background-color: #e5c07c;
+}
 
 @media (min-width: 992px) {
 

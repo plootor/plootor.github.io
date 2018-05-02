@@ -91,7 +91,7 @@ class RecentPostWithImages extends WP_Widget {
 		$recent_posts = wp_get_recent_posts();
 		if ( count( $recent_posts ) >= 3 ) {
 			echo '<div class="sidebar-section">';
-			echo '<h4 class="sidebar-title">' . __( 'Recent Posts', 'mille-fiori' ) . '</h4>';
+			echo '<h5 class="sidebar-title">' . __( 'Recent Posts', 'mille-fiori' ) . '</h5>';
 			foreach ( $recent_posts as $nr => $recent ) {
 				if ( $recent['post_status'] != "publish" || $recent['ID'] == $current_id ) {
 					continue;

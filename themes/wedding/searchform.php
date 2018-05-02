@@ -6,7 +6,8 @@
  */
 
 ?>
-<h4 class="sidebar-title"><?php esc_attr_e( 'Search', 'mille-fiori' ); ?></h4>
+<h5 class="sidebar-title"><?php esc_attr_e( 'Search', 'mille-fiori' ); ?></h5>
+<div class="sidebar-separator"></div>
 <form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
 	<div class="input-group input-group-lg form-group">
 		<input type="text" name="s" class="form-control field" id="s"

@@ -54,7 +54,5 @@ $header_image_url = get_the_post_thumbnail_url(null, 'big-featured-image');
 		</div>
 	</div>
 </section>
-
 <div class="clear"></div>
-
 <?php get_footer(); ?>

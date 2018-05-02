@@ -207,8 +207,8 @@ register_sidebar(
 		'description'   => 'Right sidebar widget area',
 		'before_widget' => '<div class="sidebar-section">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class="sidebar-title">',
-		'after_title'   => '</h4>',
+		'before_title'  => '<h5 class="sidebar-title">',
+		'after_title'   => '</h5><div class="sidebar-separator"></div>',
 	)
 );
 
@@ -223,3 +223,21 @@ register_sidebar(
 		'after_title'   => '</h4>',
 	)
 );
+
+
+if (!function_exists('understrap_all_excerpts_get_more_link')) {
+	/**
+	 * Adds a custom read more link to all excerpts, manually or automatically generated
+	 *
+	 * @param string $post_excerpt Posts's excerpt.
+	 *
+	 * @return string
+	 */
+	function wedding_excerpts_get_more_link($post_excerpt)
+	{
+
+		return $post_excerpt . ' [...]<div class="read-more-button"><a class="btn" href="' . esc_url(get_permalink(get_the_ID())) . '">' . __('Read More',
+				'wedding') . '</a></div>';
+	}
+}
+add_filter('wp_trim_excerpt', 'wedding_excerpts_get_more_link');
