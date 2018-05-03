@@ -2020,6 +2020,7 @@ figure.effect-oscar:hover img {
 	margin: 0;
 }
 
+/* Gallery section */
 #gallery-section .gallery-icon img {
 	width: 100%;
 	margin: 5px 0 !important;
@@ -2036,8 +2037,7 @@ figure.effect-oscar:hover img {
 
 #gallery-section .gallery-item a:after {
 	opacity: 0;
-	-webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
-	transition: opacity 0.6s, transform 0.6s;
+
 	-webkit-transform: scale(0);
 	transform: scale(0);
 	position: absolute;
@@ -2050,13 +2050,15 @@ figure.effect-oscar:hover img {
 }
 
 #gallery-section .gallery-item:hover a:after {
+	-webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+	transition: opacity 0.6s, transform 0.6s;
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
 
 
-#gallery-section .gallery-item:hover a:before {
+#gallery-section .gallery-item:hover:before {
 	left: 0;
 	top: 0;
 	height: 100%;
@@ -2066,10 +2068,11 @@ figure.effect-oscar:hover img {
 	content: '';
 }
 
-#gallery-section .gallery-icon:after {
+
+#gallery-section .gallery-icon a:before {
+	cursor: pointer;
 	opacity: 0;
--webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
-transition: opacity 0.6s, transform 0.6s;
+
 -webkit-transform: scale(0);
 transform: scale(0);
 	position: absolute;
@@ -2082,10 +2085,13 @@ transform: scale(0);
 	width: 30px;
 	margin-left: -15px;
 	margin-top: -15px;
+	font-size: 1.5rem;
 }
 
 
-#gallery-section .gallery-item:hover .gallery-icon:after {
+#gallery-section .gallery-item:hover a:before {
+	-webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+	transition: opacity 0.6s, transform 0.6s;
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
