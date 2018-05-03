@@ -236,8 +236,17 @@ if (!function_exists('understrap_all_excerpts_get_more_link')) {
 	function wedding_excerpts_get_more_link($post_excerpt)
 	{
 
-		return $post_excerpt . ' [...]<div class="read-more-button"><a class="btn" href="' . esc_url(get_permalink(get_the_ID())) . '">' . __('Read more',
+		return $post_excerpt . '<div class="read-more-button"><a class="btn" href="' . esc_url(get_permalink(get_the_ID())) . '">' . __('Read more',
 				'wedding') . '</a></div>';
 	}
 }
 add_filter('wp_trim_excerpt', 'wedding_excerpts_get_more_link');
+
+
+
+
+
+function wpdocs_custom_excerpt_length( $length ) {
+	return 60;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );

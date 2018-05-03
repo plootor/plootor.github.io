@@ -902,10 +902,6 @@ a:hover, a:active {
 	display: block;
 }
 
-.hentry {
-	margin: 0 0 1.5em;
-}
-
 .updated:not(.published) {
 	display: none;
 }
@@ -1303,7 +1299,7 @@ body.home {
 	padding-top: 0;
 }
 
-header {
+.top-header{
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -1324,7 +1320,7 @@ header {
 	transform: scale(1);
 }
 
-header .logo-section {
+.top-header.logo-section {
 	overflow: hidden;
 	margin: 0;
 	height: 0;
@@ -1768,7 +1764,7 @@ figure.effect-oscar:hover img {
 	font-size: .85rem;
 }
 
-.sidebar-section #searchform {
+ #searchform {
 	margin: 0 30px;
 }
 
@@ -1776,13 +1772,13 @@ figure.effect-oscar:hover img {
 	padding-bottom: 0;
 }
 
-.sidebar-section #searchform button {
+ #searchform button {
 	height: 100%;
 	padding: 10px 15px!important;
 	border-radius: 0;
 }
 
-.sidebar-section #searchform input {
+ #searchform input {
 	padding: 6px 12px;
 	border-radius: 0;
 	position: relative;
@@ -1812,6 +1808,13 @@ figure.effect-oscar:hover img {
 	background-size: cover;
 }
 
+.no-results .sidebar-title {
+	display: none;
+}
+
+.no-results #searchform .form-group {
+	padding: 10px 150px;
+}
 
 /* Blog(list container) */
 .list-container .blog-cell:last-child {
@@ -1828,6 +1831,28 @@ figure.effect-oscar:hover img {
 	color: #bec2cd;
 	padding: 30px 40px 10px;
 	text-transform: none; }
+
+.search-results .list-container .blog-by {
+	padding-top: 0;
+}
+
+.search-results .page-title, #archives .page-title, .no-results .page-title, .not-found .page-title {
+	text-align: center;
+	font-size: 2rem;
+	font-family: "Playfair Display", sans-serif;
+	font-weight: 300;
+	border-bottom: 1px solid #e5e6e8;
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+}
+
+.not-found .page-title {
+	border-bottom: none;
+}
+
+.search-results .page-title>span, #archives .page-title {
+	font-weight: 400;
+}
 
 .list-container .blog-info-cell {
 	padding: 0;
@@ -2191,5 +2216,9 @@ padding: .375rem .75rem;
 @media (min-width: 1200px) {
 	section {
 		padding: 50px 0;
+	}
+
+	section.no-results {
+		padding: 0;
 	}
 }
