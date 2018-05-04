@@ -1168,10 +1168,10 @@ a:hover {
 
 /* Accent Color */
 a:hover, #main-menu .nav-item.active .nav-link, .sidebar-section ul a:before {
-	color: #e5c07c !important;
+	color: #839690 !important;
 }
 #main-menu > li > a:before {
-	background: #e5c07c;
+	background: #839690;
 }
 /* End of Accent Color */
 
