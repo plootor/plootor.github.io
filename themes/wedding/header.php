@@ -46,9 +46,3 @@
 			</div>
 		</nav>
 	</header>
-
-<?php
-//	if ( function_exists( 'hfe_render_header' ) ) {
-//		hfe_render_header();
-//	}
-?>

@@ -493,7 +493,7 @@ html {
 *:before,
 *:after {
 	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
 
 body {
@@ -1135,15 +1135,15 @@ body {
 	color: #839690;
 	border: 1px solid #edcfc4;
 	padding: 5px 15px;
-	letter-spacing: 2px;
-	background-color: #fff;
+	letter-spacing: 1px;
+	background-color: transparent;
 	line-height: 1.9;
 	transition: all .5s;
 	border-radius: 0;
 }
 
 .btn:hover, .common-button:hover, .elementor-widget-button .elementor-button:hover {
-	color: #edcfc4 !important;
+	color: #fff !important;
 	background-color: #839690;
 	border-color: #839690;
 }
@@ -1284,25 +1284,23 @@ body.home {
 	top: -186px;
 }
 
+.top-header .logo-section {
+	overflow: hidden;
+	margin: 0;
+	height: 0;
+	opacity: 0;
+	-webkit-transition: all 0.35s, -webkit-transform 0.35s;
+	transition: all 0.35s, transform 0.35s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
 .nav-top .logo-section {
 	height: 100%;
 	margin: 20px 0 10px;
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
-}
-
-.top-header.logo-section {
-	overflow: hidden;
-	margin: 0;
-	height: 0;
-
-
-	opacity: 0;
-	-webkit-transition: all 0.35s, -webkit-transform 0.35s;
-	transition: all 0.35s, transform 0.35s;
-	-webkit-transform: scale(0);
-	transform: scale(0);
 }
 
 .navbar-expand-lg .navbar-collapse {
