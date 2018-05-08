@@ -52,9 +52,11 @@ class Author_Box_Widget extends WP_Widget {
       $html .= $args['after_widget'];
     } else {
       $html = $args['before_widget'];
-      $html .= '<div class="author-img-container"><img class="img-responsive" src="' . $image[0] . '" alt /></div>';
+
       $html .= '<div class="author-box">';
       $html .= $title;
+
+	    $html .= '<div class="author-img-container"><img class="img-responsive" src="' . $image[0] . '" alt /></div>';
       $html .= '<p class="author-text">' . $text . '</p>';
       $html .= '</div>';
       $html .= $args['after_widget'];
