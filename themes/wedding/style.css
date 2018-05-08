@@ -70,10 +70,6 @@ body {
 	margin: 0;
 }
 
-:focus {
-	outline: 0;
-}
-
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -640,7 +636,7 @@ a:hover, a:focus, a:active {
 }
 
 a:focus {
-	outline: thin dotted;
+	outline: 0;
 }
 
 a:hover, a:active {
@@ -1188,7 +1184,7 @@ a:hover, #main-menu .nav-item.active .nav-link, .sidebar-section ul a:before {
 
 form .form-group {
 	position: relative;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
 
 form .form-group .invalid-feedback {
@@ -1485,15 +1481,15 @@ body.home {
 
 #portfolio .portfolio-nav a :hover {
 	font-weight: 600;
-	color: #b28d94;
-	border-color: #b28d94;
+	color: #839690;
+	border-color: #839690;
 	text-decoration: none;
 }
 
 #portfolio .portfolio-nav .active {
 	font-weight: 600;
-	color: #b28d94;
-	border-color: #b28d94;
+	color: #839690;
+	border-color: #839690;
 	text-decoration: none;
 }
 
@@ -1593,11 +1589,6 @@ body.home {
 /*---------------*/
 /***** Oscar *****/
 /*---------------*/
-
-figure.effect-oscar {
-	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
-	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
-}
 
 figure.effect-oscar img {
 	opacity: 0.9;
@@ -1699,7 +1690,8 @@ figure.effect-oscar:hover img {
 	color: #bec2cd;
 }
 
-.sidebar-section .sidebar-title {
+.sidebar-section .sidebar-title,
+.sidebar-section .sidebar-title h5 {
 	margin-top: 0;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -1758,6 +1750,10 @@ figure.effect-oscar:hover img {
 	border: 1px solid #bec2cd;
 	 border-right: none;
 }
+
+ #right-sidebar .elementor-widget:not(:last-child) {
+	 margin-bottom: 0;
+ }
 
 .sidebar-section .author-text {
 	font-size: .8rem;
@@ -1871,6 +1867,16 @@ figure.effect-oscar:hover img {
 	font-family: 'Lato';
 	font-weight: 300;
 	text-transform: capitalize;
+}
+
+.video-container {
+	padding: 0;
+	overflow: hidden;
+	height: 700px;
+}
+
+.video-container>div {
+	margin-top: -170px;
 }
 
 
@@ -2080,7 +2086,8 @@ figure.effect-oscar:hover img {
 /* Contact Forms, forms */
 #contact-form input, #contact-form textarea {
 color: #666;
-border: 1px solid #ccc;
+	border: none;
+border-bottom: 1px solid #ccc;
 border-radius: 3px;
 padding: 3px;
 display: block;
@@ -2091,6 +2098,7 @@ width: 100%;
 padding: .375rem .75rem;
 	font-size: 12px;
 	letter-spacing: 1px;
+	outline: 0;
 }
 
 .invalid-feedback {
