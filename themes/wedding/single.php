@@ -21,8 +21,8 @@ $header_image_url = get_the_post_thumbnail_url(null, 'big-featured-image');
 				the_post(); ?>
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 					<div class="post_content single_post_content">
-						<h1 class="blog-post-title"><?php the_title(); ?></h1>
-						<h5 class="blog-post-details"><?php echo get_the_time( 'F j, Y' ) ?> -
+						<h1 class="blog-title"><?php the_title(); ?></h1>
+						<h5 class="blog-date"><?php echo get_the_time( 'F j, Y' ) ?> -
 							<?php the_category( ', ' ); ?><!--Travel, Lifestyle--></h5>
 						<?php the_content(); ?>
 						<?php // understrap_post_nav(); ?>

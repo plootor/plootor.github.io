@@ -78,7 +78,7 @@ class RecentPostWithImages extends WP_Widget {
 	public function __construct() {
 		$widget_details = array(
 			'classname'   => 'recent_post_with_images',
-			'description' => 'Display Recent posts with mages'
+			'description' => 'Display Recent posts with images'
 		);
 
 		parent::__construct( 'recent_post_with_images', 'Recent Posts With Images', $widget_details );
@@ -86,7 +86,6 @@ class RecentPostWithImages extends WP_Widget {
 	}
 
 	public function widget( $args, $instance ) {
-
 		$current_id   = get_the_ID();
 		$recent_posts = wp_get_recent_posts();
 		if ( count( $recent_posts ) >= 3 ) {
