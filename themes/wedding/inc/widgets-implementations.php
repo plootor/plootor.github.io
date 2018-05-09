@@ -43,7 +43,7 @@ class RelatedPosts extends WP_Widget {
 
 
 						<div class="recent_post_cell" style="background-image: url(<?php echo get_the_post_thumbnail_url();?>)">
-							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+							<a href="<?php the_permalink(); ?>">
 								<h6 class="recent-title text-center"><span><?php the_title(); ?></span></h6>
 							</a>
 						</div>
@@ -102,14 +102,14 @@ class RecentPostWithImages extends WP_Widget {
 				}
 				if ( has_post_thumbnail( $recent["ID"] ) ) {
 					echo '<div class="recent_post_cell" style="background-image: url(' . get_the_post_thumbnail_url($recent["ID"]) . ')">'
-					     . '<a  href="' . get_permalink( $recent["ID"] ) . '" title="Look ' . esc_attr( $recent["post_title"] ) . '" >'
+					     . '<a  href="' . get_permalink( $recent["ID"] ) . '" >'
 					     //. get_the_post_thumbnail( $recent["ID"] )
 					     . '<h6 class="recent-title text-center"><span>' . $recent["post_title"] . '</span></h6>'
 					     . '</a>'
 					     . '</div>';
 				} else {
 					echo '<div>'
-					     . '<a href="' . get_permalink( $recent["ID"] ) . '" title="Look ' . esc_attr( $recent["post_title"] ) . '" >'
+					     . '<a href="' . get_permalink( $recent["ID"] ) . '" >'
 					     . '<h6 class="recent-title text-center">' . $recent["post_title"] . '</h6></a></div> ';
 				}
 			}

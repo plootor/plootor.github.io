@@ -607,6 +607,7 @@ input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
 	color: #111;
+	outline: none;
 }
 
 select {
@@ -1876,7 +1877,8 @@ figure.effect-oscar:hover img {
 
 .search-results .page-title, #archives .page-title, .no-results .page-title, .not-found .page-title {
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.7rem;
+	letter-spacing: 2px;
 	font-family: "Playfair Display", sans-serif;
 	font-weight: 300;
 	border-bottom: 1px solid #e5e6e8;
@@ -2159,8 +2161,6 @@ figure.effect-oscar:hover img {
 	clear: both;
 }
 .comments-area .comments-title {
-	text-transform: none;
-	font-variant: small-caps;
 	letter-spacing: 2px;
 	margin-bottom: 25px;
 }
@@ -2243,10 +2243,11 @@ figure.effect-oscar:hover img {
 .comments-area .comment-reply-title,
 .comments-area .comments-title {
 	margin-bottom: 1.5rem;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Lato', serif;
+	font-weight: 300;
 	letter-spacing: 1px;
-	text-transform: capitalize;
-	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-size: 1.1rem;
 }
 .comments-area label {
 	font-size: 13px;
@@ -2364,11 +2365,13 @@ padding: .375rem .75rem;
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width :768px) {
 	section {
 		padding: 50px 0;
 	}
+}
 
+@media (min-width: 1200px) {
 	section.no-results {
 		padding: 0;
 	}

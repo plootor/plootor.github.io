@@ -242,8 +242,18 @@ if (!function_exists('understrap_all_excerpts_get_more_link')) {
 }
 add_filter('wp_trim_excerpt', 'wedding_excerpts_get_more_link');
 
+function my_menu_notitle($menu)
+{
+	return $menu = preg_replace('/ title="(.*?)"/', '', $menu);
+}
 
+add_filter('wp_nav_menu', 'my_menu_notitle');
 
+add_filter('wp_page_menu', 'my_menu_notitle');
+
+add_filter('wp_list_categories', 'my_menu_notitle');
+
+add_filter('wp_list_pages', 'my_menu_notitle');
 
 
 function wpdocs_custom_excerpt_length( $length ) {
