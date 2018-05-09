@@ -31,21 +31,23 @@ class RelatedPosts extends WP_Widget {
 			$args     = array(
 				'category__in'     => $category_ids,
 				'post__not_in'     => array( $post->ID ),
-				'posts_per_page'   => 3, // Number of related posts that will be shown.
+				'posts_per_page'   => 2, // Number of related posts that will be shown.
 				'caller_get_posts' => 1
 			);
 			$my_query = new wp_query( $args );
 			if ( $my_query->have_posts() ) {
-				echo '<div class="related-posts"><h4 class="related-title text-center">Related posts</h4><div class="container"><div class="row">';
+				echo '<div class="related-posts"><h4 class="related-title subsection-title">Related posts</h4><div class="container"><div class="row">';
 				while ( $my_query->have_posts() ) {
 					$my_query->the_post(); ?>
-					<div class="col-md-4">
-						<div class="relatedthumb">
-							<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
-								<?php the_post_thumbnail(); ?>
-								<h6 class="related-name text-center"><?php the_title() ?></h6>
+					<div class="col-md-6">
+
+
+						<div class="recent_post_cell" style="background-image: url(<?php echo get_the_post_thumbnail_url();?>)">
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+								<h6 class="recent-title text-center"><span><?php the_title(); ?></span></h6>
 							</a>
 						</div>
+
 					</div>
 					<?php
 				}
