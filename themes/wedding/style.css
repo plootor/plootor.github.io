@@ -1435,7 +1435,7 @@ body.home {
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
-	max-width: 160px;
+	min-width: 190px;
 	list-style: none;
 	color: #fff;
 	margin-left: 0;
@@ -1487,6 +1487,7 @@ body.home {
 
 .navbar-light .dropdown-menu a.dropdown-item {
 	color: #fff !important;
+	padding: 0 !important;
 }
 
 .navbar-nav .menu-item-has-children {
