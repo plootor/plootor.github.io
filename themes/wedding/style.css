@@ -1293,7 +1293,6 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 .post .social-buttons li a:hover {
 	color: #edcfc4 !important;
-	font-size: .9rem;
 }
 
 .related-posts .related-title {
@@ -1412,7 +1411,7 @@ body.home {
 	letter-spacing: 2px;
 	text-transform: none;
 	font-variant: small-caps;
-	padding: 0 2rem;
+	padding: 0 1rem;
 	position: relative;
 }
 #main-menu .dropdown-menu {
@@ -1425,7 +1424,7 @@ body.home {
 	border-radius: 0;
 	padding: 0 1rem;
 	line-height: 30px;
-	margin-top: 0.4rem;
+	margin-top: 0.66rem;
 	-moz-transform: translateY(8px);
 	-o-transform: translateY(8px);
 	-ms-transform: translateY(-10px);
@@ -1436,6 +1435,10 @@ body.home {
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+	max-width: 160px;
+	list-style: none;
+	color: #fff;
+	margin-left: 0;
 }
 #main-menu .dropdown-menu.show {
 	opacity: 1;
@@ -1480,6 +1483,34 @@ body.home {
 
 .navbar-light .navbar-nav .nav-link {
 	color: #333 !important;
+}
+
+.navbar-light .dropdown-menu a.dropdown-item {
+	color: #fff !important;
+}
+
+.navbar-nav .menu-item-has-children {
+	position: relative;
+}
+
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 10rem;
+	padding: .5rem 0;
+	margin: .125rem 0 0;
+	font-size: 1rem;
+	color: #212529;
+	text-align: left;
+	list-style: none;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: .25rem;
 }
 
 .navbar .navbar-brand {
@@ -1936,7 +1967,6 @@ figure.effect-oscar:hover img {
 	margin-bottom: 10px;
 	text-align: center;
 	letter-spacing: 2px;
-	color: #1d2f3b;
 	font-family: 'Lato';
 	font-weight: 300;
 	text-transform: capitalize;
@@ -2354,20 +2384,36 @@ padding: .375rem .75rem;
 	padding: 5px 10px;
 }
 
+section {
+	padding: 50px 0;
+}
+
 @media (min-width: 992px) {
-
-	.navbar-expand-lg .navbar-nav {
-		flex-direction: row;
-	}
-
 	.navbar-expand-lg .navbar-toggler {
 		display: none;
+	}
+
+	.navbar>.container {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	#main-menu .nav-item > a {
+		padding: 0 2rem;
+	}
+
+	.navbar-nav .dropdown-menu {
+		position: absolute;
 	}
 }
 
 @media (min-width :768px) {
-	section {
-		padding: 50px 0;
+	.navbar-expand-lg .navbar-nav {
+		flex-direction: row;
+	}
+
+	.navbar>.container {
+		padding: 0;
 	}
 }
 

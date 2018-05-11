@@ -2,7 +2,7 @@
 /**
  * Content empty partial template.
  *
- * @package alexander
+ * @package wedding
  */
 
 the_content();

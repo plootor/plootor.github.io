@@ -66,7 +66,7 @@ $header_image_url = get_the_post_thumbnail_url(null, 'big-featured-image');
 						?>
 						<div class="blogs_page_container">
 							<p>
-								<?php _e( 'Sorry, no posts matched your criteria.', 'mille-fiori' ); ?>
+								<?php _e( 'Sorry, no posts matched your criteria.', 'wedding' ); ?>
 							</p>
 						</div>
 					<?php endif; ?>

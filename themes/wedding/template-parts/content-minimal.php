@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package mille-fiori
+ * @package wedding
  */
 
 ?>
@@ -23,7 +23,7 @@
 				sprintf(
 					wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'mille-fiori' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'wedding' ),
 						array(
 							'span' => array(
 								'class' => array(),

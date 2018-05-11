@@ -41,7 +41,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'MF Testimonial Carousel', 'mille-fiori' );
+		return __( 'MF Testimonial Carousel', 'wedding' );
 	}
 
 	/**
@@ -76,7 +76,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'section_mf_testimonials',
 			[
-				'label' => __( 'MF Overlapping Image', 'mille-fiori' ),
+				'label' => __( 'MF Overlapping Image', 'wedding' ),
 				'type'  => Controls_Manager::SECTION,
 			]
 		);
@@ -85,7 +85,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_image1',
 			[
-				'label'   => __( 'Testimonial Image 1', 'mille-fiori' ),
+				'label'   => __( 'Testimonial Image 1', 'wedding' ),
 				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_mf_testimonials'
 			]
@@ -94,7 +94,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_job1',
 			[
-				'label'   => __( 'Testimonial Job 1', 'mille-fiori' ),
+				'label'   => __( 'Testimonial Job 1', 'wedding' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
@@ -103,7 +103,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_content1',
 			[
-				'label'   => __( 'Testimonial Content 1', 'mille-fiori' ),
+				'label'   => __( 'Testimonial Content 1', 'wedding' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
@@ -113,7 +113,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_image2',
 			[
-				'label'   => __( 'Testimonial Image 2', 'mille-fiori' ),
+				'label'   => __( 'Testimonial Image 2', 'wedding' ),
 				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_mf_testimonials'
 			]
@@ -122,7 +122,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_job2',
 			[
-				'label'   => __( 'Testimonial Job 2', 'mille-fiori' ),
+				'label'   => __( 'Testimonial Job 2', 'wedding' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
@@ -131,7 +131,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_content2',
 			[
-				'label'   => __( 'Testimonial Content 2', 'mille-fiori' ),
+				'label'   => __( 'Testimonial Content 2', 'wedding' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
@@ -141,7 +141,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_image3',
 			[
-				'label'   => __( 'Testimonial Image 3', 'mille-fiori' ),
+				'label'   => __( 'Testimonial Image 3', 'wedding' ),
 				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_mf_testimonials'
 			]
@@ -150,7 +150,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_job3',
 			[
-				'label'   => __( 'Testimonial Job 3', 'mille-fiori' ),
+				'label'   => __( 'Testimonial Job 3', 'wedding' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
@@ -159,7 +159,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_content3',
 			[
-				'label'   => __( 'Testimonial Content 3', 'mille-fiori' ),
+				'label'   => __( 'Testimonial Content 3', 'wedding' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]

@@ -22,7 +22,7 @@ get_header();
 						?>
 						<div class="blog_content">
 							<p>
-								<?php _e( 'Sorry, no posts matched your criteria.', 'mille-fiori' ); ?>
+								<?php _e( 'Sorry, no posts matched your criteria.', 'wedding' ); ?>
 							</p>
 						</div>
 					<?php endif; ?>

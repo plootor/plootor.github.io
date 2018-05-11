@@ -6,17 +6,17 @@ if (!defined('ABSPATH')) {
 	exit;
 } // Exit if accessed directly
 
-class Widget_Alexander_Blog_Element extends Widget_Base
+class Widget_Wedding_Blog_Element extends Widget_Base
 {
 
 	public function get_name()
 	{
-		return 'alexander-blog';
+		return 'wedding-blog';
 	}
 
 	public function get_title()
 	{
-		return __('Alexander Blog', 'elementor-alexander-blog-element');
+		return __('Wedding Blog', 'elementor-wedding-blog-element');
 	}
 
 	public function get_icon()
@@ -30,7 +30,7 @@ class Widget_Alexander_Blog_Element extends Widget_Base
 		$this->add_control(
 			'section_blog_posts',
 			[
-				'label' => __('Alexander Blog Posts', 'elementor-alexander-blog-element'),
+				'label' => __('Wedding Blog Posts', 'elementor-wedding-blog-element'),
 				'type' => Controls_Manager::SECTION,
 			]
 		);
@@ -38,7 +38,7 @@ class Widget_Alexander_Blog_Element extends Widget_Base
 		$this->add_control(
 			'posts_per_page',
 			[
-				'label' => __('Posts per page', 'elementor-alexander-blog-element'),
+				'label' => __('Posts per page', 'elementor-wedding-blog-element'),
 				'type' => Controls_Manager::SELECT,
 				'default' => 3,
 				'section' => 'section_blog_posts',
@@ -58,7 +58,7 @@ class Widget_Alexander_Blog_Element extends Widget_Base
 		$this->add_control(
 			'page_template',
 			[
-				'label' => __('Page Template', 'elementor-alexander-blog-element'),
+				'label' => __('Page Template', 'elementor-wedding-blog-element'),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'base',
 				'section' => 'section_blog_posts',
@@ -156,5 +156,5 @@ class Widget_Alexander_Blog_Element extends Widget_Base
 
 }
 
-Plugin::instance()->widgets_manager->register_widget_type(new Widget_Alexander_Blog_Element);
+Plugin::instance()->widgets_manager->register_widget_type(new Widget_Wedding_Blog_Element);
 ?>

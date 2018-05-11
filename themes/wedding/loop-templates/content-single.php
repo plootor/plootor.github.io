@@ -2,7 +2,7 @@
 /**
  * Single post partial template.
  *
- * @package alexander
+ * @package wedding
  */
 
 ?>

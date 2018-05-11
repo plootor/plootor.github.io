@@ -6,7 +6,7 @@
 
 include_once get_template_directory() . '/admin/tgm/class-tgm-plugin-activation.php';
 
-function alexander_register_required_plugins() {
+function wedding_register_required_plugins() {
 
 	$plugins = array(
 		array(
@@ -22,7 +22,7 @@ function alexander_register_required_plugins() {
 	);
 
 	$config = array(
-		'id'           => 'alexander',
+		'id'           => 'wedding',
 		// Unique ID for hashing notices for multiple instances of TGMPA.
 		'default_path' => '',
 		// Default absolute path to bundled plugins.
@@ -48,4 +48,4 @@ function alexander_register_required_plugins() {
 
 }
 
-add_action( 'tgmpa_register', 'alexander_register_required_plugins' );
+add_action( 'tgmpa_register', 'wedding_register_required_plugins' );

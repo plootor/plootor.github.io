@@ -18,6 +18,13 @@ jQuery(document).ready(function () {
 		}
 	}, 150);
 
+	jQuery('.navbar-nav > .menu-item-has-children').click(function(e) {
+
+		jQuery(this).find('.dropdown-menu').toggleClass('show');
+		e.preventDefault();
+		e.stopPropagation();
+	});
+
 	function hasScrolled() {
 		var st = jQuery(window).scrollTop();
 
@@ -82,6 +89,14 @@ jQuery(document).ready(function () {
 			e.stopPropagation();
 		});
 	}
+
+	jQuery(document).click(function(){
+		jQuery('.dropdown-menu.show').removeClass('show');
+	});
+
+	jQuery('.dropdown-menu').click(function(e){
+		e.stopPropagation();
+	});
 
 });
 

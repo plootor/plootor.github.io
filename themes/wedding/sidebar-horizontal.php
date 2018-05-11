@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area.
  *
- * @package alexander
+ * @package wedding
  */
 if (!is_active_sidebar('horizontal-sidebar')) {
 	return;
