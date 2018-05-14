@@ -1,6 +1,7 @@
 jQuery(document).ready(function () {
 	"use strict";
 
+
 	// Hide Header on on scroll down
 	var didScroll;
 	var lastScrollTop = 0;
@@ -49,10 +50,6 @@ jQuery(document).ready(function () {
 
 		lastScrollTop = st;
 	}
-
-
-
-
 
 	var $slick = jQuery('.slick-carousel');
 	if ($slick.length && $slick.hasClass('header-slider')) {

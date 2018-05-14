@@ -21,6 +21,15 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php if (get_theme_mod('wedding_container_type') == 'enable'): ?>
+<div id="loader">
+</div>
+<script>
+	jQuery(window).load(function(){
+		jQuery("#loader").fadeOut("slow");
+	});
+</script>
+<?php endif; ?>
 	<header class="top-header nav-down nav-top">
 		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 			<div class="container relative" style="flex-direction: column;">

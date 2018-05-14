@@ -14,6 +14,42 @@ function wedding_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+	
+	
+	
+	$wp_customize->add_section(
+		'wedding_animation_options',
+		array(
+			'title' => __( 'Page Animation', '_s' ),
+			'priority' => 30,
+			'description' => __( 'This setting will allow you to enable/disable loading page animation(Disable when edit page with Elementor).', 'wedding' )
+		)
+	);
+
+	$wp_customize->add_setting('wedding_container_type', array(
+		'default' => 'disable',
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+	));
+
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'wedding_container_type', array(
+				'label' => __('Container Width', 'wedding'),
+				'description' => __("Choose between Bootstrap's container and container-fluid", 'wedding'),
+				'section' => 'wedding_animation_options',
+				'settings' => 'wedding_container_type',
+				'type' => 'select',
+				'choices' => array(
+					'enable' => __('Enable', 'wedding'),
+					'disable' => __('Disable', 'wedding'),
+				),
+				'priority' => '10',
+			)
+		));
+
+
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial( 'blogname', array(
