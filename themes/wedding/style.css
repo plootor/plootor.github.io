@@ -1556,7 +1556,32 @@ body.home {
 
 
 
+/* subscribe section */
+.help-block {
+	position: absolute;
+	top: 70%;
+}
+#right-sidebar .help-block {
+	top: 100%;
+}
 
+#right-sidebar .help-block ul {
+	font-size: .75rem;
+}
+
+.help-block>ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.form-alert {
+	text-align: center;
+}
+
+.help-block.text-danger {
+	color: #e05858;
+}
 
 /* Portfolio section */
 #portfolio .portfolio-nav {
@@ -1821,11 +1846,20 @@ figure.effect-oscar:hover img {
 	font-size: .85rem;
 }
 
- #searchform, #right-sidebar #subscribe-form {
+.subscribe-success {
+	text-align: center;
+}
+
+ #searchform, #right-sidebar .subscribe-form {
 	margin: 0 30px;
 }
 
-#right-sidebar #subscribe-form input {
+#right-sidebar .subscribe-form {
+	margin-bottom: 20px;
+}
+
+
+#right-sidebar .subscribe-form input {
 	width: 1%;
 	flex: 1 1 auto;
 	position: relative;
@@ -2079,7 +2113,7 @@ figure.effect-oscar:hover img {
 }
 
 
-#subscribe-form input {
+.subscribe-form input {
 	border: 1px solid #bec2cd;
 	font-size: 12px;
 	letter-spacing: 1px;
@@ -2092,7 +2126,7 @@ figure.effect-oscar:hover img {
 	border-right: none;
 }
 
-#subscribe-form .btn {
+.subscribe-form .btn {
 	border-radius: 0;
 	padding: 0 25px;
 	font-size: 28px;

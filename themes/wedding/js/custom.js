@@ -56,7 +56,7 @@ jQuery(document).ready(function () {
 
 	var $slick = jQuery('.slick-carousel');
 	if ($slick.length && $slick.hasClass('header-slider')) {
-		$slick.on('init', function(event, slick) { console.log('initiate sl');
+		$slick.on('init', function(event, slick) {
 			$slick.find('.slick-current').removeClass('slick-active').addClass('reset-animation');
 			setTimeout( function() {
 				$slick.find('.slick-current').removeClass('reset-animation').addClass('slick-active');

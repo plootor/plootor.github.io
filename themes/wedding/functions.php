@@ -138,6 +138,11 @@ add_action( 'wp_enqueue_scripts', 'wedding_scripts' );
 require get_template_directory() . '/inc/custom-header.php';
 
 /**
+ * Implement the form handling.
+ */
+require get_template_directory() . '/inc/email-handling.php';
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';

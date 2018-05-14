@@ -1,4 +1,4 @@
-<form action="#" method="post" id="subscribe-form" target="_blank" novalidate="">
+<form action="#" method="post" class="subscribe-form" target="_blank" novalidate="">
 	<div class="input-group input-group-lg form-group">
 		<input type="email" name="email" class="newsletter-email form-control" placeholder="Email address..." required=""
 		       data-validation-required-message="Please enter your email address.">
@@ -9,19 +9,17 @@
 			</button>
 		</span>
 	</div>
-	<div id="subscribe2-success" class="form-alert"></div>
+	<div class="subscribe-success" class="form-alert"></div>
 </form>
-<?php /*
+
 <script type="text/javascript">
 	jQuery(document).ready(function ($) {
-		$("#subscribe-form input").jqBootstrapValidation({
+		$(".subscribe-form input").jqBootstrapValidation({
 			preventSubmit: true,
 			submitError: function ($form, event, errors) {
-				console.log('inside error');
 				// additional error messages or events
 			},
 			submitSuccess: function ($form, event) {
-				console.log('inside success');
 				event.preventDefault(); // prevent default submit behaviour
 				var email = $("input.newsletter-email").val();
 				$.ajax({
@@ -34,26 +32,29 @@
 					cache: false,
 					success: function () {
 						// Success message
-						$('#subscribe2-success').html("<div class='alert alert-success'>");
-						$('#subscribe2-success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-							.append("</button>");
-						$('#subscribe2-success > .alert-success')
+						$($form).find('.subscribe-success').html("<div class='alert alert-success'>");
+						$($form).find('.subscribe-success > .alert-success')
 							.append("<strong>Your message has been sent. </strong>");
-						$('#subscribe2-success > .alert-success')
+						$($form).find('.subscribe-success > .alert-success')
 							.append('</div>');
 
 						//clear all fields
-						$('#subscribe-form').trigger("reset");
+						$('.subscribe-form').trigger("reset");
+						setTimeout(function() {
+							$(".subscribe-success").empty();
+						}, 5000);
 					},
 					error: function () {
 						// Fail message
-						$('#subscribe2-success').html("<div class='alert alert-danger'>");
-						$('#subscribe2-success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-							.append("</button>");
-						$('#subscribe2-success > .alert-danger').append("<strong>Sorry, Please try again later!");
-						$('#subscribe2-success > .alert-danger').append('</div>');
+						$($form).find('.subscribe-success').html("<div class='alert alert-danger'>");
+						$($form).find('.subscribe-success > .alert-danger').append("<strong>Sorry, Please try again later!");
+						$($form).find('.subscribe-success > .alert-danger').append('</div>');
 						//clear all fields
-						$('#subscribe-form').trigger("reset");
+						$($form).find('.subscribe-form').trigger("reset");
+						$($form).find('.subscribe-form').trigger("reset");
+						setTimeout(function() {
+							$($form).find(".subscribe-success").empty();
+						}, 5000);
 					}
 				});
 			},
@@ -63,4 +64,3 @@
 		});
 	});
 </script>
- */ ?>

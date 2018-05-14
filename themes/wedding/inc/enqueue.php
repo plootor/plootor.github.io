@@ -12,7 +12,7 @@ if ( ! function_exists( 'underscore_scripts' ) ) {
 
 		wp_enqueue_script( 'wedding-imageloaded', get_template_directory_uri() . '/js/vendor/imagesloaded.pkgd.min.js', array( 'jquery' ), $the_theme->get( 'Version' ), true );
 		wp_enqueue_script( 'wedding-masonry', get_template_directory_uri() . '/js/vendor/masonry.pkgd.min.js', array( 'jquery' ), $the_theme->get( 'Version' ), true );
-
+		wp_enqueue_script( 'wedding-bootstrap-validation', get_template_directory_uri() . '/js/vendor/jqBootstrapValidation.js', array( 'jquery' ), $the_theme->get( 'Version' ), true );
 		wp_enqueue_script( 'wedding-custom', get_template_directory_uri() . '/js/custom.js', array( 'jquery' ), $the_theme->get( 'Version' ), true );
 	}
 }
