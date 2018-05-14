@@ -2,6 +2,14 @@ jQuery(document).ready(function () {
 	"use strict";
 
 
+	if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		// You are in mobile browser
+		jQuery('.fade-animate').addClass("hide-el").viewportChecker({
+			classToAdd: 'show-el animated fadeInUp',
+			offset: 80
+		});
+	}
+
 	// Hide Header on on scroll down
 	var didScroll;
 	var lastScrollTop = 0;

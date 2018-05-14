@@ -651,6 +651,10 @@ a:hover, a:active {
 	outline: 0;
 }
 
+:focus {
+	outline: none;
+}
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -2437,6 +2441,50 @@ padding: .375rem .75rem;
 section {
 	padding: 50px 0;
 }
+
+
+/*-------2. START FADE ANIMATION--------*/
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+.fadeInUp {
+	animation-name: fadeInUp;
+}
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+.fade-animate {
+	animation-delay: 0.2s;
+}
+.delay-3 {
+	animation-delay: 0.3s;
+}
+.delay4 {
+	animation-delay: 0.4s;
+}
+.portfolio-modal.in .modal-name {
+	animation: fadeInDown 2s;
+	opacity: 1;
+}
+.hide-el {
+	opacity: 0;
+}
+.show-el {
+	opacity: 1;
+}
+/*-------END FADE ANIMATION--------*/
 
 @media (min-width: 992px) {
 	.navbar-expand-lg .navbar-toggler {
