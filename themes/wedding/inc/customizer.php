@@ -20,13 +20,31 @@ function wedding_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'wedding_animation_options',
 		array(
-			'title' => __( 'Page Animation', '_s' ),
+			'title' => __( 'Page Loading and Animation Settings', '_s' ),
 			'priority' => 30,
-			'description' => __( 'This setting will allow you to enable/disable loading page animation(Disable when edit page with Elementor).', 'wedding' )
+			'description' => __( 'This setting will allow you to enable/disable loading page animation(Disable when edit page with Elementor) and fade animation.', 'wedding' )
 		)
 	);
 
-	$wp_customize->add_setting('wedding_container_type', array(
+	$wp_customize->add_setting('wedding_loading', array(
+		'default' => 'disable',
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+	));
+
+	$wp_customize->add_setting('wedding_fade', array(
+		'default' => 'disable',
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+	));
+
+	$wp_customize->add_setting('wedding_fade_left', array(
+		'default' => 'disable',
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+	));
+
+	$wp_customize->add_setting('wedding_fade_right', array(
 		'default' => 'disable',
 		'type' => 'theme_mod',
 		'capability' => 'edit_theme_options',
@@ -35,17 +53,64 @@ function wedding_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'wedding_container_type', array(
-				'label' => __('Container Width', 'wedding'),
-				'description' => __("Choose between Bootstrap's container and container-fluid", 'wedding'),
+			'wedding_loading', array(
+				'label' => __('Loading Page Animation setup', 'wedding'),
 				'section' => 'wedding_animation_options',
-				'settings' => 'wedding_container_type',
+				'settings' => 'wedding_loading',
 				'type' => 'select',
 				'choices' => array(
 					'enable' => __('Enable', 'wedding'),
 					'disable' => __('Disable', 'wedding'),
 				),
 				'priority' => '10',
+			)
+		));
+
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'wedding_fade', array(
+				'label' => __('FadeIn Animation Setup', 'wedding'),
+				'section' => 'wedding_animation_options',
+				'settings' => 'wedding_fade',
+				'type' => 'select',
+				'choices' => array(
+					'enable' => __('Enable', 'wedding'),
+					'disable' => __('Disable', 'wedding'),
+				),
+				'priority' => '11',
+			)
+		));
+
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'wedding_fade_left', array(
+				'label' => __('FadeIn Left Animation Setup', 'wedding'),
+				'section' => 'wedding_animation_options',
+				'settings' => 'wedding_fade_left',
+				'type' => 'select',
+				'choices' => array(
+					'enable' => __('Enable', 'wedding'),
+					'disable' => __('Disable', 'wedding'),
+				),
+				'priority' => '11',
+			)
+		));
+
+	$wp_customize->add_control(
+		new WP_Customize_Control(
+			$wp_customize,
+			'wedding_fade_right', array(
+				'label' => __('FadeIn Right Animation Setup', 'wedding'),
+				'section' => 'wedding_animation_options',
+				'settings' => 'wedding_fade_right',
+				'type' => 'select',
+				'choices' => array(
+					'enable' => __('Enable', 'wedding'),
+					'disable' => __('Disable', 'wedding'),
+				),
+				'priority' => '11',
 			)
 		));
 

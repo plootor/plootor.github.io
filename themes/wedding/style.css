@@ -2458,12 +2458,29 @@ section {
 		transform: none;
 	}
 }
+@keyframes fadeInLeft {
+	from {
+		opacity: 0;
+		transform: translate3d(-100%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+@keyframes fadeInRight {
+	from {
+		opacity: 0;
+		transform: translate3d(100%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
 .fadeInUp {
 	animation-name: fadeInUp;
-}
-.animated {
-	animation-duration: 1s;
-	animation-fill-mode: both;
 }
 .fade-animate {
 	animation-delay: 0.2s;
@@ -2471,9 +2488,10 @@ section {
 .delay-3 {
 	animation-delay: 0.3s;
 }
-.delay4 {
+.delay-4 {
 	animation-delay: 0.4s;
 }
+
 .portfolio-modal.in .modal-name {
 	animation: fadeInDown 2s;
 	opacity: 1;

@@ -21,7 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php if (get_theme_mod('wedding_container_type') == 'enable'): ?>
+<?php if (get_theme_mod('wedding_loading') == 'enable'): ?>
 <div id="loader">
 </div>
 <script>
@@ -30,6 +30,36 @@
 	});
 </script>
 <?php endif; ?>
+
+<script>
+	jQuery(document).ready(function () {
+		"use strict";
+		if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+			<?php if (get_theme_mod('wedding_fade') == 'enable'): ?>
+			jQuery('.fade-animate').addClass("hide-el").viewportChecker({
+				classToAdd: 'show-el animated fadeInUp',
+				offset: 80
+			});
+			<?php endif; ?>
+
+			<?php if (get_theme_mod('wedding_fade_right') == 'enable'): ?>
+			jQuery('.fade-animate-right').addClass("hide-el").viewportChecker({
+				classToAdd: 'show-el animated fadeInRight',
+				offset: 80
+			});
+			<?php endif; ?>
+
+			<?php if (get_theme_mod('wedding_fade_left') == 'enable'): ?>
+			jQuery('.fade-animate-left').addClass("hide-el").viewportChecker({
+				classToAdd: 'show-el animated fadeInLeft',
+				offset: 80
+			});
+			<?php endif; ?>
+		}
+	});
+</script>
+
+
 	<header class="top-header nav-down nav-top">
 		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 			<div class="container relative" style="flex-direction: column;">
