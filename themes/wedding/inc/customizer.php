@@ -15,7 +15,7 @@ function wedding_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
-	function understrap_theme_slug_sanitize_select($input, $setting)
+	function theme_slug_sanitize_select($input, $setting)
 	{
 
 		//input must be a slug: lowercase alphanumeric characters, dashes and underscores are allowed only
@@ -41,28 +41,28 @@ function wedding_customize_register( $wp_customize ) {
 	$wp_customize->add_setting('wedding_loading', array(
 		'default' => 'disable',
 		'type' => 'theme_mod',
-		'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
+		'sanitize_callback' => 'theme_slug_sanitize_select',
 		'capability' => 'edit_theme_options',
 	));
 
 	$wp_customize->add_setting('wedding_fade', array(
 		'default' => 'disable',
 		'type' => 'theme_mod',
-		'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
+		'sanitize_callback' => 'theme_slug_sanitize_select',
 		'capability' => 'edit_theme_options',
 	));
 
 	$wp_customize->add_setting('wedding_fade_left', array(
 		'default' => 'disable',
 		'type' => 'theme_mod',
-		'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
+		'sanitize_callback' => 'theme_slug_sanitize_select',
 		'capability' => 'edit_theme_options',
 	));
 
 	$wp_customize->add_setting('wedding_fade_right', array(
 		'default' => 'disable',
 		'type' => 'theme_mod',
-		'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
+		'sanitize_callback' => 'theme_slug_sanitize_select',
 		'capability' => 'edit_theme_options',
 	));
 
@@ -74,7 +74,7 @@ function wedding_customize_register( $wp_customize ) {
 				'section' => 'wedding_animation_options',
 				'settings' => 'wedding_loading',
 				'type' => 'select',
-				'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
+				'sanitize_callback' => 'theme_slug_sanitize_select',
 				'choices' => array(
 					'enable' => __('Enable', 'wedding'),
 					'disable' => __('Disable', 'wedding'),
@@ -91,7 +91,7 @@ function wedding_customize_register( $wp_customize ) {
 				'section' => 'wedding_animation_options',
 				'settings' => 'wedding_fade',
 				'type' => 'select',
-				'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
+				'sanitize_callback' => 'theme_slug_sanitize_select',
 				'choices' => array(
 					'enable' => __('Enable', 'wedding'),
 					'disable' => __('Disable', 'wedding'),
@@ -108,7 +108,7 @@ function wedding_customize_register( $wp_customize ) {
 				'section' => 'wedding_animation_options',
 				'settings' => 'wedding_fade_left',
 				'type' => 'select',
-				'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
+				'sanitize_callback' => 'theme_slug_sanitize_select',
 				'choices' => array(
 					'enable' => __('Enable', 'wedding'),
 					'disable' => __('Disable', 'wedding'),
@@ -125,7 +125,7 @@ function wedding_customize_register( $wp_customize ) {
 				'section' => 'wedding_animation_options',
 				'settings' => 'wedding_fade_right',
 				'type' => 'select',
-				'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
+				'sanitize_callback' => 'theme_slug_sanitize_select',
 				'choices' => array(
 					'enable' => __('Enable', 'wedding'),
 					'disable' => __('Disable', 'wedding'),

@@ -207,7 +207,7 @@ add_action( 'after_setup_theme', 'wedding_header_footer_elementor_support' );
 
 register_sidebar(
 	array(
-		'name'          => __( 'Right Sidebar', 'weding' ),
+		'name'          => __( 'Right Sidebar', 'wedding' ),
 		'id'            => 'right-sidebar',
 		'description'   => 'Right sidebar widget area',
 		'before_widget' => '<div class="sidebar-section">',

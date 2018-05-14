@@ -118,8 +118,8 @@ class Widget_Wedding_Blog_Element extends Widget_Base
 							'end_size' => 1,
 							'mid_size' => $post_per_page,
 							'prev_next' => true,
-							'prev_text' => '«',
-							'next_text' => '»',
+							'prev_text' => '>',
+							'next_text' => '>',
 							'type' => 'plain',
 							'add_args' => false,
 						);
