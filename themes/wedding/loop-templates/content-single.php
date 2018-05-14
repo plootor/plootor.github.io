@@ -23,7 +23,7 @@
 
 		<?php
 		wp_link_pages(array(
-			'before' => '<div class="page-links">' . __('Pages:', 'understrap'),
+			'before' => '<div class="page-links">' . __('Pages:', 'wedding'),
 			'after' => '</div>',
 		));
 		?>

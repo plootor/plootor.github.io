@@ -40,7 +40,7 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'MF Header Slider', 'elementor' );
+		return __( 'MF Header Slider', 'wedding' );
 	}
 
 	/**
@@ -76,7 +76,7 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 		$this->add_control(
 			'section_mf_header_slider',
 			[
-				'label' => __('MF Header Slider', 'elementor-overlapping-image'),
+				'label' => __('MF Header Slider', 'wedding'),
 				'type' => Controls_Manager::SECTION,
 			]
 		);
@@ -85,7 +85,7 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 		$this->add_control(
 			'header_slider_image1',
 			[
-				'label' => __('Header Slider Image 1', 'header_slider_image1'),
+				'label' => __('Header Slider Image 1', 'wedding'),
 				'type' => Controls_Manager::MEDIA,
 				'section' => 'section_mf_header_slider'
 			]
@@ -94,7 +94,7 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 		$this->add_control(
 			'header_slider_image2',
 			[
-				'label' => __('Header Slider Image 2', 'header_slider_image2'),
+				'label' => __('Header Slider Image 2', 'wedding'),
 				'type' => Controls_Manager::MEDIA,
 				'section' => 'section_mf_header_slider'
 			]
@@ -103,7 +103,7 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 		$this->add_control(
 			'header_slider_image3',
 			[
-				'label' => __('Header Slider Image 3', 'header_slider_image3'),
+				'label' => __('Header Slider Image 3', 'wedding'),
 				'type' => Controls_Manager::MEDIA,
 				'section' => 'section_mf_header_slider'
 			]
@@ -112,7 +112,7 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 		$this->add_control(
 			'header_slider_image4',
 			[
-				'label' => __('Header Slider Image 4', 'header_slider_image4'),
+				'label' => __('Header Slider Image 4', 'wedding'),
 				'type' => Controls_Manager::MEDIA,
 				'section' => 'section_mf_header_slider'
 			]

@@ -14,7 +14,7 @@ class Widget_Masonry_Gallery_Element extends Widget_Base
 
 	public function get_title()
 	{
-		return __('Masonry Gallery', 'elementor-masonry-gallery');
+		return __('Masonry Gallery', 'wedding');
 	}
 
 	public function get_icon()
@@ -28,7 +28,7 @@ class Widget_Masonry_Gallery_Element extends Widget_Base
 		$this->add_control(
 			'section_blog_posts',
 			[
-				'label' => __('Masonry Gallery', 'elementor-masonry-gallery'),
+				'label' => __('Masonry Gallery', 'wedding'),
 				'type' => Controls_Manager::SECTION,
 			]
 		);
@@ -36,7 +36,7 @@ class Widget_Masonry_Gallery_Element extends Widget_Base
 		$this->add_control(
 			'gallery',
 			[
-				'label' => __('Add Images', 'plugin-domain'),
+				'label' => __('Add Images', 'wedding'),
 				'type' => Controls_Manager::GALLERY,
 				'default' => [],
 				'section' => 'section_blog_posts',
@@ -46,14 +46,14 @@ class Widget_Masonry_Gallery_Element extends Widget_Base
 		$this->add_control(
 			'columns_per_page',
 			[
-				'label' => __('Number of Columns', 'elementor-masonry-gallery'),
+				'label' => __('Number of Columns', 'wedding'),
 				'type' => Controls_Manager::SELECT,
 				'default' => 3,
 				'section' => 'section_blog_posts',
 				'options' => [
-					3 => __('3', 'elementor-masonry-gallery'),
-					4 => __('4', 'elementor-masonry-gallery'),
-					5 => __('5', 'elementor-masonry-gallery'),
+					3 => '3',
+					4 => '4',
+					5 => '5',
 				]
 			]
 		);

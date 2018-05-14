@@ -186,7 +186,7 @@ require get_template_directory() . '/inc/enqueue.php';
 require get_template_directory() . '/inc/bootstrap-wp-navwalker.php';
 
 register_nav_menus( array(
-	'primary' => __( 'Main Menu', 'Wedding' ),
+	'primary' => __( 'Main Menu', 'wedding' ),
 ) );
 
 /**

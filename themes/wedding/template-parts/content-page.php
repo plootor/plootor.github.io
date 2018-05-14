@@ -21,7 +21,7 @@
 		the_content();
 
 		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wedding' ),
+			'before' => '<div class="page-links">' . __( 'Pages:', 'wedding' ),
 			'after'  => '</div>',
 		) );
 		?>

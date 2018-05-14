@@ -14,13 +14,25 @@ function wedding_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-	
-	
+
+	function understrap_theme_slug_sanitize_select($input, $setting)
+	{
+
+		//input must be a slug: lowercase alphanumeric characters, dashes and underscores are allowed only
+		$input = sanitize_key($input);
+
+		//get the list of possible select options
+		$choices = $setting->manager->get_control($setting->id)->choices;
+
+		//return input if valid or return default option
+		return (array_key_exists($input, $choices) ? $input : $setting->default);
+
+	}
 	
 	$wp_customize->add_section(
 		'wedding_animation_options',
 		array(
-			'title' => __( 'Page Loading and Animation Settings', '_s' ),
+			'title' => __( 'Page Loading and Animation Settings', 'wedding' ),
 			'priority' => 30,
 			'description' => __( 'This setting will allow you to enable/disable loading page animation(Disable when edit page with Elementor) and fade animation.', 'wedding' )
 		)
@@ -29,24 +41,28 @@ function wedding_customize_register( $wp_customize ) {
 	$wp_customize->add_setting('wedding_loading', array(
 		'default' => 'disable',
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
 		'capability' => 'edit_theme_options',
 	));
 
 	$wp_customize->add_setting('wedding_fade', array(
 		'default' => 'disable',
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
 		'capability' => 'edit_theme_options',
 	));
 
 	$wp_customize->add_setting('wedding_fade_left', array(
 		'default' => 'disable',
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
 		'capability' => 'edit_theme_options',
 	));
 
 	$wp_customize->add_setting('wedding_fade_right', array(
 		'default' => 'disable',
 		'type' => 'theme_mod',
+		'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
 		'capability' => 'edit_theme_options',
 	));
 
@@ -58,6 +74,7 @@ function wedding_customize_register( $wp_customize ) {
 				'section' => 'wedding_animation_options',
 				'settings' => 'wedding_loading',
 				'type' => 'select',
+				'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
 				'choices' => array(
 					'enable' => __('Enable', 'wedding'),
 					'disable' => __('Disable', 'wedding'),
@@ -74,6 +91,7 @@ function wedding_customize_register( $wp_customize ) {
 				'section' => 'wedding_animation_options',
 				'settings' => 'wedding_fade',
 				'type' => 'select',
+				'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
 				'choices' => array(
 					'enable' => __('Enable', 'wedding'),
 					'disable' => __('Disable', 'wedding'),
@@ -90,6 +108,7 @@ function wedding_customize_register( $wp_customize ) {
 				'section' => 'wedding_animation_options',
 				'settings' => 'wedding_fade_left',
 				'type' => 'select',
+				'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
 				'choices' => array(
 					'enable' => __('Enable', 'wedding'),
 					'disable' => __('Disable', 'wedding'),
@@ -106,6 +125,7 @@ function wedding_customize_register( $wp_customize ) {
 				'section' => 'wedding_animation_options',
 				'settings' => 'wedding_fade_right',
 				'type' => 'select',
+				'sanitize_callback' => 'understrap_theme_slug_sanitize_select',
 				'choices' => array(
 					'enable' => __('Enable', 'wedding'),
 					'disable' => __('Disable', 'wedding'),

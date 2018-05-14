@@ -16,7 +16,7 @@ class Widget_Wedding_Blog_Element extends Widget_Base
 
 	public function get_title()
 	{
-		return __('Wedding Blog', 'elementor-wedding-blog-element');
+		return __('Wedding Blog', 'wedding');
 	}
 
 	public function get_icon()
@@ -30,7 +30,7 @@ class Widget_Wedding_Blog_Element extends Widget_Base
 		$this->add_control(
 			'section_blog_posts',
 			[
-				'label' => __('Wedding Blog Posts', 'elementor-wedding-blog-element'),
+				'label' => __('Wedding Blog Posts', 'wedding'),
 				'type' => Controls_Manager::SECTION,
 			]
 		);
@@ -38,7 +38,7 @@ class Widget_Wedding_Blog_Element extends Widget_Base
 		$this->add_control(
 			'posts_per_page',
 			[
-				'label' => __('Posts per page', 'elementor-wedding-blog-element'),
+				'label' => __('Posts per page', 'wedding'),
 				'type' => Controls_Manager::SELECT,
 				'default' => 3,
 				'section' => 'section_blog_posts',
@@ -58,7 +58,7 @@ class Widget_Wedding_Blog_Element extends Widget_Base
 		$this->add_control(
 			'page_template',
 			[
-				'label' => __('Page Template', 'elementor-wedding-blog-element'),
+				'label' => __('Page Template', 'wedding'),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'base',
 				'section' => 'section_blog_posts',
@@ -118,8 +118,8 @@ class Widget_Wedding_Blog_Element extends Widget_Base
 							'end_size' => 1,
 							'mid_size' => $post_per_page,
 							'prev_next' => true,
-							'prev_text' => esc_html__('«'),
-							'next_text' => esc_html__('»'),
+							'prev_text' => '«',
+							'next_text' => '»',
 							'type' => 'plain',
 							'add_args' => false,
 						);
@@ -127,8 +127,6 @@ class Widget_Wedding_Blog_Element extends Widget_Base
 						$pagination = paginate_links($paginate_args);
 						$pagination_output = '<div><nav class="pagination wp-caption blog-navigation">'
 							. $pagination . '</nav></div>';
-					else :   //if no posts found
-						// $templates->get_template_part( 'content', 'none' );
 					endif; //end of post loop ?>
 				</div><!-- #main -->
 				<?php if ($pagination_output) echo $pagination_output; ?>
