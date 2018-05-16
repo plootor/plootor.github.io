@@ -11,8 +11,8 @@
 <form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
 	<div class="input-group input-group-lg form-group">
 		<input type="text" name="s" class="form-control field" id="s"
-		       placeholder="<?php esc_attr_e( 'Search &hellip;', 'wedding' ); ?>" required=""
-		       data-validation-required-message="Please enter your email address.">
+					 placeholder="<?php esc_attr_e( 'Search &hellip;', 'wedding' ); ?>" required=""
+					 data-validation-required-message="Please enter your email address.">
 		<p class="help-block text-danger"></p>
 		<span class="input-group-btn">
       <button type="submit" name="submit" class="btn" id="searchsubmit">

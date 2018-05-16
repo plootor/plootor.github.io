@@ -1,4 +1,5 @@
 <?php
+
 namespace Elementor;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -71,13 +72,12 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 		return [ 'jquery', 'jquery-slick' ];
 	}
 
-	protected function _register_controls()
-	{
+	protected function _register_controls() {
 		$this->add_control(
 			'section_mf_header_slider',
 			[
-				'label' => __('MF Header Slider', 'wedding'),
-				'type' => Controls_Manager::SECTION,
+				'label' => __( 'MF Header Slider', 'wedding' ),
+				'type'  => Controls_Manager::SECTION,
 			]
 		);
 
@@ -85,8 +85,8 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 		$this->add_control(
 			'header_slider_image1',
 			[
-				'label' => __('Header Slider Image 1', 'wedding'),
-				'type' => Controls_Manager::MEDIA,
+				'label'   => __( 'Header Slider Image 1', 'wedding' ),
+				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_mf_header_slider'
 			]
 		);
@@ -94,8 +94,8 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 		$this->add_control(
 			'header_slider_image2',
 			[
-				'label' => __('Header Slider Image 2', 'wedding'),
-				'type' => Controls_Manager::MEDIA,
+				'label'   => __( 'Header Slider Image 2', 'wedding' ),
+				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_mf_header_slider'
 			]
 		);
@@ -103,8 +103,8 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 		$this->add_control(
 			'header_slider_image3',
 			[
-				'label' => __('Header Slider Image 3', 'wedding'),
-				'type' => Controls_Manager::MEDIA,
+				'label'   => __( 'Header Slider Image 3', 'wedding' ),
+				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_mf_header_slider'
 			]
 		);
@@ -112,28 +112,27 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 		$this->add_control(
 			'header_slider_image4',
 			[
-				'label' => __('Header Slider Image 4', 'wedding'),
-				'type' => Controls_Manager::MEDIA,
+				'label'   => __( 'Header Slider Image 4', 'wedding' ),
+				'type'    => Controls_Manager::MEDIA,
 				'section' => 'section_mf_header_slider'
 			]
 		);
 	}
 
-	protected function render($instance = [])
-	{
+	protected function render( $instance = [] ) {
 		$id = 1;
 
 		$content = '<div class="header-slider slick-carousel"'
-			. ' data-slick=\'{"arrows": false, "fade": true, "infinite": true, "autoplay": true, "pauseOnHover": false, "pauseOnFocus": false, "autoplaySpeed": 5000}\'>';
-		while (true) {
-			$image = $this->get_settings('header_slider_image' . $id);
-			if (!$image) {
+		           . ' data-slick=\'{"arrows": false, "fade": true, "infinite": true, "autoplay": true, "pauseOnHover": false, "pauseOnFocus": false, "autoplaySpeed": 5000}\'>';
+		while ( true ) {
+			$image = $this->get_settings( 'header_slider_image' . $id );
+			if ( ! $image ) {
 				break;
 			}
 			$content .= '<div class="item"'
-				.' style="background-image: url(' . $image['url'] . ')">' . PHP_EOL
-				.'</div>';
-			$id++;
+			            . ' style="background-image: url(' . $image['url'] . ')">' . PHP_EOL
+			            . '</div>';
+			$id ++;
 		}
 		$content .= '</div>';
 
@@ -141,4 +140,4 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 	}
 }
 
-Plugin::instance()->widgets_manager->register_widget_type(new MilleFiori_Header_Slider_Carousel);
+Plugin::instance()->widgets_manager->register_widget_type( new MilleFiori_Header_Slider_Carousel );

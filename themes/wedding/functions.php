@@ -96,6 +96,7 @@ function wedding_content_width() {
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
 	$GLOBALS['content_width'] = apply_filters( 'wedding_content_width', 640 );
 }
+
 add_action( 'after_setup_theme', 'wedding_content_width', 0 );
 
 /**
@@ -114,6 +115,7 @@ function wedding_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
+
 add_action( 'widgets_init', 'wedding_widgets_init' );
 
 /**
@@ -130,6 +132,7 @@ function wedding_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'wedding_scripts' );
 
 /**
@@ -195,7 +198,6 @@ register_nav_menus( array(
 require get_template_directory() . '/inc/widgets-implementations.php';
 
 
-
 function wedding_header_footer_elementor_support() {
 	add_theme_support( 'header-footer-elementor' );
 }
@@ -230,7 +232,7 @@ register_sidebar(
 );
 
 
-if (!function_exists('understrap_all_excerpts_get_more_link')) {
+if ( ! function_exists( 'understrap_all_excerpts_get_more_link' ) ) {
 	/**
 	 * Adds a custom read more link to all excerpts, manually or automatically generated
 	 *
@@ -238,30 +240,29 @@ if (!function_exists('understrap_all_excerpts_get_more_link')) {
 	 *
 	 * @return string
 	 */
-	function wedding_excerpts_get_more_link($post_excerpt)
-	{
+	function wedding_excerpts_get_more_link( $post_excerpt ) {
 
-		return $post_excerpt . '<div class="read-more-button"><a class="btn" href="' . esc_url(get_permalink(get_the_ID())) . '">' . __('Read more',
-				'wedding') . '</a></div>';
+		return $post_excerpt . '<div class="read-more-button"><a class="btn" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __( 'Read more',
+				'wedding' ) . '</a></div>';
 	}
 }
-add_filter('wp_trim_excerpt', 'wedding_excerpts_get_more_link');
+add_filter( 'wp_trim_excerpt', 'wedding_excerpts_get_more_link' );
 
-function my_menu_notitle($menu)
-{
-	return $menu = preg_replace('/ title="(.*?)"/', '', $menu);
+function my_menu_notitle( $menu ) {
+	return $menu = preg_replace( '/ title="(.*?)"/', '', $menu );
 }
 
-add_filter('wp_nav_menu', 'my_menu_notitle');
+add_filter( 'wp_nav_menu', 'my_menu_notitle' );
 
-add_filter('wp_page_menu', 'my_menu_notitle');
+add_filter( 'wp_page_menu', 'my_menu_notitle' );
 
-add_filter('wp_list_categories', 'my_menu_notitle');
+add_filter( 'wp_list_categories', 'my_menu_notitle' );
 
-add_filter('wp_list_pages', 'my_menu_notitle');
+add_filter( 'wp_list_pages', 'my_menu_notitle' );
 
 
 function wpdocs_custom_excerpt_length( $length ) {
 	return 60;
 }
+
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );

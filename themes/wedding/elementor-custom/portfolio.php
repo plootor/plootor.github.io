@@ -310,28 +310,30 @@ class MilleFiori_Portfolio extends Widget_Base {
 			<div class="grid">
 				<div class="grid-sizer"></div>
 				<?php for ( $i = 1; $i <= 4; $i ++ ) {
-					$title = $this->get_settings( 'portfolio_title' . $i );
+					$title     = $this->get_settings( 'portfolio_title' . $i );
 					$sub_title = $this->get_settings( 'portfolio_subtitle' . $i );
 					?>
 
-				<div style="height: <?php echo $this->get_settings( 'portfolio_height' . $i );?>px"
-						 class="grid-item item<?php echo $i?> <?php echo $this->get_settings( 'portfolio_width' . $i ); ?>">
-					<a href="<?php echo $this->get_settings( 'portfolio_link' . $i ); ?>" class="portfolio-link" data-toggle="modal">
-						<div class="portfolio-item pos-r">
-							<figure class="effect-oscar">
-								<div
-									style="background-image: url(<?php echo $this->get_settings( 'portfolio_image' . $i )["url"]; ?>)"
-									class="portfolio-cell portfolio-cell1"></div>
-								<figcaption>
-									<div style="position: relative; height: 100%; display: flex; justify-content: center; align-content: center; flex-direction: column;">
-										<h4><span><?php echo $title; ?></span></h4>
-									<p><?php echo $sub_title; ?></p>
-									</div>
-								</figcaption>
-							</figure>
-						</div>
-					</a>
-				</div>
+					<div style="height: <?php echo $this->get_settings( 'portfolio_height' . $i ); ?>px"
+							 class="grid-item item<?php echo $i ?> <?php echo $this->get_settings( 'portfolio_width' . $i ); ?>">
+						<a href="<?php echo $this->get_settings( 'portfolio_link' . $i ); ?>" class="portfolio-link"
+							 data-toggle="modal">
+							<div class="portfolio-item pos-r">
+								<figure class="effect-oscar">
+									<div
+										style="background-image: url(<?php echo $this->get_settings( 'portfolio_image' . $i )["url"]; ?>)"
+										class="portfolio-cell portfolio-cell1"></div>
+									<figcaption>
+										<div
+											style="position: relative; height: 100%; display: flex; justify-content: center; align-content: center; flex-direction: column;">
+											<h4><span><?php echo $title; ?></span></h4>
+											<p><?php echo $sub_title; ?></p>
+										</div>
+									</figcaption>
+								</figure>
+							</div>
+						</a>
+					</div>
 				<?php } ?>
 			</div>
 		</div>

@@ -9,6 +9,7 @@
  * Adds custom classes to the array of body classes.
  *
  * @param array $classes Classes for the body element.
+ *
  * @return array
  */
 function wedding_body_classes( $classes ) {
@@ -19,6 +20,7 @@ function wedding_body_classes( $classes ) {
 
 	return $classes;
 }
+
 add_filter( 'body_class', 'wedding_body_classes' );
 
 /**
@@ -29,4 +31,5 @@ function wedding_pingback_header() {
 		echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
 	}
 }
+
 add_action( 'wp_head', 'wedding_pingback_header' );

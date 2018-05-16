@@ -1,7 +1,7 @@
 <form action="#" method="post" class="subscribe-form" target="_blank" novalidate="">
 	<div class="input-group input-group-lg form-group">
 		<input type="email" name="email" class="newsletter-email form-control" placeholder="Email address..." required=""
-		       data-validation-required-message="Please enter your email address.">
+					 data-validation-required-message="Please enter your email address.">
 		<p class="help-block text-danger"></p>
 		<span class="input-group-btn">
 			<button type="submit" name="subscribe" class="btn btn-xl">
@@ -9,9 +9,8 @@
 			</button>
 		</span>
 	</div>
-	<div class="subscribe-success" class="form-alert"></div>
+	<div class="subscribe-success form-alert"></div>
 </form>
-
 <script type="text/javascript">
 	jQuery(document).ready(function ($) {
 		$(".subscribe-form input").jqBootstrapValidation({
@@ -40,7 +39,7 @@
 
 						//clear all fields
 						$('.subscribe-form').trigger("reset");
-						setTimeout(function() {
+						setTimeout(function () {
 							$(".subscribe-success").empty();
 						}, 5000);
 					},
@@ -52,7 +51,7 @@
 						//clear all fields
 						$($form).find('.subscribe-form').trigger("reset");
 						$($form).find('.subscribe-form').trigger("reset");
-						setTimeout(function() {
+						setTimeout(function () {
 							$($form).find(".subscribe-success").empty();
 						}, 5000);
 					}

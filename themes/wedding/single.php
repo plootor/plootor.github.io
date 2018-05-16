@@ -1,7 +1,7 @@
 <?php
 
 get_header();
-$header_image_url = get_the_post_thumbnail_url(null, 'big-featured-image');
+$header_image_url = get_the_post_thumbnail_url( null, 'big-featured-image' );
 
 ?>
 
@@ -10,7 +10,7 @@ $header_image_url = get_the_post_thumbnail_url(null, 'big-featured-image');
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<div class="big-post-image" style="background-image: url('<?php echo $header_image_url; ?>');" >
+				<div class="big-post-image" style="background-image: url('<?php echo $header_image_url; ?>');">
 				</div>
 			</div>
 		</div>
@@ -27,14 +27,14 @@ $header_image_url = get_the_post_thumbnail_url(null, 'big-featured-image');
 						<?php the_content(); ?>
 						<footer class="entry-footer">
 							<?php
-							$url = urlencode(get_permalink());
-							$title = str_replace(' ', '%20', get_the_title());
-							$thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
+							$url       = urlencode( get_permalink() );
+							$title     = str_replace( ' ', '%20', get_the_title() );
+							$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
 
-							$twitterURL = 'https://twitter.com/intent/tweet?text=' . $title . '&amp;url=' . $url . '&amp;via=Crunchify';
-							$facebookURL = 'https://www.facebook.com/sharer/sharer.php?u=' . $url;
-							$whatsappURL = 'whatsapp://send?text=' . $title;
-							$linkedInURL = 'https://www.linkedin.com/shareArticle?mini=true&url=' . $url . '&amp;title=' . $title;
+							$twitterURL   = 'https://twitter.com/intent/tweet?text=' . $title . '&amp;url=' . $url . '&amp;via=Crunchify';
+							$facebookURL  = 'https://www.facebook.com/sharer/sharer.php?u=' . $url;
+							$whatsappURL  = 'whatsapp://send?text=' . $title;
+							$linkedInURL  = 'https://www.linkedin.com/shareArticle?mini=true&url=' . $url . '&amp;title=' . $title;
 							$pinterestURL = 'https://pinterest.com/pin/create/button/?url=' . $url . '&amp;media=' . $thumbnail[0] . '&amp;description=' . $title;
 							?>
 							<div class="social-container">
@@ -47,9 +47,10 @@ $header_image_url = get_the_post_thumbnail_url(null, 'big-featured-image');
 								</ul>
 							</div>
 						</footer>
-						<?php // understrap_post_nav(); ?>
+						<?php // understrap_post_nav();
+						?>
 						<div class="horisontal-sidebar">
-							<?php get_sidebar('horizontal'); ?>
+							<?php get_sidebar( 'horizontal' ); ?>
 						</div>
 
 						<?php

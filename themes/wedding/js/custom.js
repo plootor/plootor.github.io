@@ -7,18 +7,18 @@ jQuery(document).ready(function () {
 	var delta = 50;
 	var navbarHeight = jQuery('header').outerHeight();
 
-	jQuery(window).scroll(function(event){
+	jQuery(window).scroll(function (event) {
 		didScroll = true;
 	});
 
-	setInterval(function() {
+	setInterval(function () {
 		if (didScroll) {
 			hasScrolled();
 			didScroll = false;
 		}
 	}, 150);
 
-	jQuery('.navbar-nav > .menu-item-has-children').click(function(e) {
+	jQuery('.navbar-nav > .menu-item-has-children').click(function (e) {
 
 		jQuery(this).find('.dropdown-menu').toggleClass('show');
 		e.preventDefault();
@@ -29,11 +29,11 @@ jQuery(document).ready(function () {
 		var st = jQuery(window).scrollTop();
 
 		// Make sure they scroll more than delta
-		if(Math.abs(lastScrollTop - st) <= delta)
+		if (Math.abs(lastScrollTop - st) <= delta)
 			return;
 		// If they scrolled down and are past the navbar, add class .nav-up.
 		// This is necessary so you never see what is "behind" the navbar.
-		if (st > lastScrollTop && st > navbarHeight){
+		if (st > lastScrollTop && st > navbarHeight) {
 			// Scroll Down
 			jQuery('header').removeClass('nav-down').removeClass('nav-top').addClass('nav-up');
 		} else {
@@ -42,7 +42,7 @@ jQuery(document).ready(function () {
 				jQuery('header').addClass('nav-top');
 			}
 
-			if(st + jQuery(window).height() < jQuery(document).height()) {
+			if (st + jQuery(window).height() < jQuery(document).height()) {
 				jQuery('header').removeClass('nav-up').addClass('nav-down');
 			}
 		}
@@ -52,9 +52,9 @@ jQuery(document).ready(function () {
 
 	var $slick = jQuery('.slick-carousel');
 	if ($slick.length && $slick.hasClass('header-slider')) {
-		$slick.on('init', function(event, slick) {
+		$slick.on('init', function (event, slick) {
 			$slick.find('.slick-current').removeClass('slick-active').addClass('reset-animation');
-			setTimeout( function() {
+			setTimeout(function () {
 				$slick.find('.slick-current').removeClass('reset-animation').addClass('slick-active');
 			}, 1);
 		});
@@ -86,16 +86,15 @@ jQuery(document).ready(function () {
 		});
 	}
 
-	jQuery(document).click(function(){
+	jQuery(document).click(function () {
 		jQuery('.dropdown-menu.show').removeClass('show');
 	});
 
-	jQuery('.dropdown-menu').click(function(e){
+	jQuery('.dropdown-menu').click(function (e) {
 		e.stopPropagation();
 	});
 
 });
-
 
 
 function runFunc(type) {

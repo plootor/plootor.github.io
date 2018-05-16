@@ -3,19 +3,23 @@
 		<form id="contact-form" class="needs-validation" novalidate>
 			<div class="row">
 				<div class="form-group col-md-6">
-					<input type="text" name="name" class="form-control" data-validation-required-message="Please enter your Name." placeholder="Name *" required="">
+					<input type="text" name="name" class="form-control" data-validation-required-message="Please enter your Name."
+								 placeholder="Name *" required="">
 					<p class="help-block text-danger"></p>
 				</div>
 				<div class="form-group col-md-6">
-					<input type="email" name="email" class="form-control" data-validation-required-message="Please enter your email address." placeholder="Email *" required="">
+					<input type="email" name="email" class="form-control"
+								 data-validation-required-message="Please enter your email address." placeholder="Email *" required="">
 					<p class="help-block text-danger"></p>
 				</div>
 				<div class="form-group col-md-12">
-					<input type="text" name="subject" class="form-control" data-validation-required-message="Please enter a subject." placeholder="Subject *" required="">
+					<input type="text" name="subject" class="form-control"
+								 data-validation-required-message="Please enter a subject." placeholder="Subject *" required="">
 					<p class="help-block text-danger"></p>
 				</div>
 				<div class="form-group col-md-12">
-					<textarea class="form-control" name="message" data-validation-required-message="Please enter a message." placeholder="Message *" required=""></textarea>
+					<textarea class="form-control" name="message" data-validation-required-message="Please enter a message."
+										placeholder="Message *" required=""></textarea>
 					<p class="help-block text-danger"></p>
 				</div>
 				<div class="col-md-12 text-center">
@@ -34,7 +38,8 @@
 			submitError: function ($form, event, errors) {
 // additional error messages or events
 			},
-			submitSuccess: function ($form, event) { console.log("start contact success");
+			submitSuccess: function ($form, event) {
+				console.log("start contact success");
 				event.preventDefault(); // prevent default submit behaviour
 // get values from FORM
 				var name = $("input#name").val();
@@ -59,7 +64,7 @@
 						$('#success > .alert-success')
 							.append('</div>');
 						$('#contact-form').trigger("reset");
-						setTimeout(function() {
+						setTimeout(function () {
 							$($form).find("#success").empty();
 						}, 5000);
 					},
@@ -68,7 +73,7 @@
 						$('#success > .alert-danger').append("<strong>Sorry, Please try again later!");
 						$('#success > .alert-danger').append('</div>');
 						$('#contact-form').trigger("reset");
-						setTimeout(function() {
+						setTimeout(function () {
 							$($form).find("#success").empty();
 						}, 5000);
 					}

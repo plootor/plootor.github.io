@@ -7,9 +7,9 @@
  * @package void
  */
 global $count;
-$image = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'single-post-thumbnail');
+$image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'single-post-thumbnail' );
 
-if ($count % 2 == 0) { ?>
+if ( $count % 2 == 0 ) { ?>
 	<div class="container grid-blog">
 		<div class="row pos-r">
 			<div class="col-md-6 col-lg-6 blog-image-cell">

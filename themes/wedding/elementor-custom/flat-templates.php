@@ -2,69 +2,62 @@
 
 namespace Elementor;
 
-if (!defined('ABSPATH')) {
+if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 } // Exit if accessed directly
 
-class Widget_Wedding_Templates_Element extends Widget_Base
-{
+class Widget_Wedding_Templates_Element extends Widget_Base {
 
-	public function get_name()
-	{
+	public function get_name() {
 		return 'wedding-templates';
 	}
 
-	public function get_title()
-	{
-		return __('Wedding Templates', 'wedding');
+	public function get_title() {
+		return __( 'Wedding Templates', 'wedding' );
 	}
 
-	public function get_icon()
-	{
+	public function get_icon() {
 		return 'eicon-shortcode';
 	}
 
-	protected function _register_controls()
-	{
+	protected function _register_controls() {
 
 		$this->add_control(
 			'section_blog_posts',
 			[
-				'label' => __('Wedding Blog Templates Shortcodes', 'wedding'),
-				'type' => Controls_Manager::SECTION,
+				'label' => __( 'Wedding Blog Templates Shortcodes', 'wedding' ),
+				'type'  => Controls_Manager::SECTION,
 			]
 		);
 
 		$this->add_control(
 			'page_template',
 			[
-				'label' => __('Page Template', 'wedding'),
-				'type' => Controls_Manager::SELECT,
+				'label'   => __( 'Page Template', 'wedding' ),
+				'type'    => Controls_Manager::SELECT,
 				'default' => 'base',
 				'section' => 'section_blog_posts',
 				'options' => [
-					'contact-form' => 'Contact Template',
+					'contact-form'   => 'Contact Template',
 					'subscribe-form' => 'Subscribe Form Template'
 				],
 			]
 		);
 	}
 
-	protected function render($instance = [])
-	{
-		$page_template = $this->get_settings('page_template');
+	protected function render( $instance = [] ) {
+		$page_template = $this->get_settings( 'page_template' );
 
-		$this->load_template($page_template);
+		$this->load_template( $page_template );
 	}
 
-	private function load_template($template_name)
-	{
-		$file = dirname(__FILE__) . "/partial-templates/" . $template_name . ".php";
-		if (file_exists($file)) {
+	private function load_template( $template_name ) {
+		$file = dirname( __FILE__ ) . "/partial-templates/" . $template_name . ".php";
+		if ( file_exists( $file ) ) {
 			require $file;
 		}
 	}
 }
 
-Plugin::instance()->widgets_manager->register_widget_type(new Widget_Wedding_Templates_Element);
+Plugin::instance()->widgets_manager->register_widget_type( new Widget_Wedding_Templates_Element );
 ?>

@@ -170,10 +170,10 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 		$content = '<div class="testimonial-carousel slick-carousel" '
 		           . 'data-slick=\'{"slidesToShow": 1, "dots": false, "responsive": [{"breakpoint": 800, "settings": {"slidesToShow": 1, "slidesToScroll": 1}}]}\'>';
 		for ( $i = 1; $i <= 3; $i ++ ) {
-			$image = $this->get_settings( 'testimonial_image' . $i );
+			$image   = $this->get_settings( 'testimonial_image' . $i );
 			$content .= '<div class="item">' . PHP_EOL
 			            . '<div class="testimonial-cell">' . PHP_EOL
-			            . '<img src="' . $image['url'] . '" >' . PHP_EOL
+			            . '<img alt="' . $this->get_settings( 'testimonial_job' . $i ) . '" src="' . $image['url'] . '" >' . PHP_EOL
 			            . '<p class="testimonial-commment">' . $this->get_settings( 'testimonial_content' . $i ) . '</p>' . PHP_EOL
 			            . '<p class="testimonial-name"> - ' . $this->get_settings( 'testimonial_job' . $i ) . ' - </p>' . PHP_EOL
 			            . '</div>' . PHP_EOL

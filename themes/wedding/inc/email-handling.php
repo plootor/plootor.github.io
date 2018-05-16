@@ -3,7 +3,8 @@
 add_action( "wp_ajax_contact_send", "sendContactMail" );
 add_action( "wp_ajax_nopriv_contact_send", "sendContactMail" );
 
-function sendContactMail() { return true;
+function sendContactMail() {
+	return true;
 	$name    = sanitize_text_field( $_POST["name"] );
 	$email   = sanitize_email( $_POST["email"] );
 	$subject = sanitize_text_field( $_POST["subject"] );

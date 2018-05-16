@@ -66,15 +66,15 @@ get_header();
 				<?php if ( have_posts() ) : while ( have_posts() ) :
 					the_post();
 					get_template_part( 'loop-templates/content', get_post_format() );
-					endwhile;
-					else:
-						?>
-						<div class="blog_content">
-							<p>
-								<?php _e( 'Sorry, no posts matched your criteria.', 'wedding' ); ?>
-							</p>
-						</div>
-					<?php endif; ?>
+				endwhile;
+				else:
+					?>
+					<div class="blog_content">
+						<p>
+							<?php _e( 'Sorry, no posts matched your criteria.', 'wedding' ); ?>
+						</p>
+					</div>
+				<?php endif; ?>
 			</div>
 			<?php get_sidebar( 'right' ); ?>
 		</div>
