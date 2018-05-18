@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.0.0
  */
-class MilleFiori_Testimonial_Carousel extends Widget_Base {
+class Wedding_Testimonial_Carousel extends Widget_Base {
 
 	/**
 	 * Get widget name.
@@ -27,7 +27,7 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'millefiori-testimonial-carousel';
+		return 'wedding-testimonial-carousel';
 	}
 
 	/**
@@ -184,4 +184,4 @@ class MilleFiori_Testimonial_Carousel extends Widget_Base {
 	}
 }
 
-Plugin::instance()->widgets_manager->register_widget_type( new MilleFiori_Testimonial_Carousel );
+Plugin::instance()->widgets_manager->register_widget_type( new Wedding_Testimonial_Carousel );

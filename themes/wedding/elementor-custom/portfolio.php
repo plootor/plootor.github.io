@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.0.0
  */
-class MilleFiori_Portfolio extends Widget_Base {
+class Wedding_Portfolio extends Widget_Base {
 
 	/**
 	 * Get widget name.
@@ -24,7 +24,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'millefiori-portfolio';
+		return 'wedding-portfolio';
 	}
 
 	/**
@@ -341,4 +341,4 @@ class MilleFiori_Portfolio extends Widget_Base {
 	}
 }
 
-Plugin::instance()->widgets_manager->register_widget_type( new MilleFiori_Portfolio );
+Plugin::instance()->widgets_manager->register_widget_type( new Wedding_Portfolio );
