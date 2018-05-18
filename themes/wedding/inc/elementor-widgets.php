@@ -18,12 +18,6 @@ class ElementorWeddingThemeCustomElements {
 
 	public function widgets_registered() {
 		if ( defined( 'ELEMENTOR_PATH' ) && class_exists( 'Elementor\Widget_Base' ) ) {
-			//Include custom masonry gallery element
-			$widget_file = get_template_directory() . '/elementor-custom/masonry-gallery-element.php';
-			if ( $widget_file && is_readable( $widget_file ) ) {
-				require_once $widget_file;
-			}
-
 			//Include custom blog element
 			$widget_file = get_template_directory() . '/elementor-custom/blog-element.php';
 			if ( $widget_file && is_readable( $widget_file ) ) {

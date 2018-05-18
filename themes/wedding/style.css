@@ -2479,20 +2479,6 @@ figure.effect-oscar:hover img {
 	width: auto;
 }
 
-.video-container {
-	padding: 0;
-	overflow: hidden;
-	height: 700px;
-}
-
-.video-container .elementor-row {
-	overflow: hidden;
-}
-
-.video-container iframe {
-	margin-top: -170px;
-}
-
 /*--------------------------------------------------------------
 ## Fade Animation
 --------------------------------------------------------------*/
@@ -2589,6 +2575,20 @@ figure.effect-oscar:hover img {
 
 	.navbar-nav .dropdown-menu {
 		position: absolute;
+	}
+
+	.video-container {
+		padding: 0;
+		overflow: hidden;
+		height: 700px;
+	}
+
+	.video-container .elementor-row {
+		overflow: hidden;
+	}
+
+	.video-container iframe {
+		margin-top: -170px;
 	}
 }
 
