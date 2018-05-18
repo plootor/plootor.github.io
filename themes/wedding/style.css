@@ -2478,6 +2478,16 @@ figure.effect-oscar:hover img {
 	width: auto;
 }
 
+.video-container {
+	padding: 0;
+	overflow: hidden;
+	height: 700px;
+}
+
+.video-container>div {
+	margin-top: -170px;
+}
+
 /*--------------------------------------------------------------
 ## Fade Animation
 --------------------------------------------------------------*/
