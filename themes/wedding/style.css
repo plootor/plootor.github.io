@@ -1535,7 +1535,7 @@ a:hover, #main-menu .nav-item.active .nav-link, .sidebar-section ul a:before {
 
 .list-container .blog-image-cell {
 	position: relative;
-	height: 440px;
+	height: 300px;
 	padding: 0;
 }
 
@@ -2027,10 +2027,6 @@ figure.effect-oscar:hover img {
 /*--------------------------------------------------------------
 ## Sidebar
 --------------------------------------------------------------*/
-.widget-area {
-	padding-left: 40px !important;
-}
-
 .sidebar-section {
 	margin: 0 0 20px 0;
 	padding: 30px 0 15px;
@@ -2067,7 +2063,7 @@ figure.effect-oscar:hover img {
 .sidebar-section ul a:before {
 	content: "\f178";
 	font-family: FontAwesome;
-	padding: 0 10px 0 30px;
+	padding: 0 10px 0 15px;
 }
 
 .sidebar-section ul {
@@ -2084,7 +2080,7 @@ figure.effect-oscar:hover img {
 }
 
 #searchform, #right-sidebar .subscribe-form {
-	margin: 0 30px;
+	margin: 0 15px;
 }
 
 #right-sidebar .subscribe-form {
@@ -2131,7 +2127,7 @@ figure.effect-oscar:hover img {
 
 .sidebar-section .author-text {
 	font-size: .8rem;
-	margin: 0 30px;
+	margin: 0 15px;
 	text-align: center;
 	text-indent: 0;
 }
@@ -2165,7 +2161,7 @@ figure.effect-oscar:hover img {
 
 .subscribe-form .btn {
 	border-radius: 0;
-	padding: 0 25px;
+	padding: 0 15px;
 	font-size: 28px;
 	z-index: 0;
 	border: 1px solid #bec2cd;
@@ -2324,7 +2320,6 @@ figure.effect-oscar:hover img {
 #gallery-section #gallery-1 {
 	column-count: 4;
 }
-
 
 /*--------------------------------------------------------------
 ## Comment
@@ -2589,6 +2584,30 @@ figure.effect-oscar:hover img {
 
 	.video-container iframe {
 		margin-top: -170px;
+	}
+
+	.widget-area {
+		padding-left: 40px !important;
+	}
+
+	.sidebar-section .author-text {
+		margin: 0 30px;
+	}
+
+	#searchform, #right-sidebar .subscribe-form {
+		margin: 0 30px;
+	}
+
+	.sidebar-section ul a:before {
+		padding-left: 30px;
+	}
+
+	.subscribe-form .btn {
+		padding: 0 25px;
+	}
+
+	.lis	t-container .blog-image-cell {
+		height: 440px;
 	}
 }
 
