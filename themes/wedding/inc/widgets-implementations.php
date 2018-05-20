@@ -104,7 +104,7 @@ class RecentPostWithImages extends WP_Widget {
 					echo '<div class="recent_post_cell" style="background-image: url(' . get_the_post_thumbnail_url( $recent["ID"] ) . ')">'
 					     . '<a  href="' . get_permalink( $recent["ID"] ) . '" >'
 					     //. get_the_post_thumbnail( $recent["ID"] )
-					     . '<h6 class="recent-title text-center"><span>' . $recent["post_title"] . '</span></h6>'
+					     . '<h6 class="recent-title text-center"><div>' . $recent["post_title"] . '</div></h6>'
 					     . '</a>'
 					     . '</div>';
 				} else {
