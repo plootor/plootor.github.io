@@ -1275,14 +1275,15 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 	border: none;
 	outline: none;
 	background: transparent;
+	z-index: 5;
 }
 
 .slick-next {
-	right: -35px;
+	right: 0;
 }
 
 .slick-prev {
-	left: -35px;
+	left: 0;
 }
 
 .slick-prev:before, .slick-next:before {
@@ -1588,6 +1589,10 @@ a:hover, #main-menu .nav-item.active .nav-link, .sidebar-section ul a:before {
 
 .blog-navigation .page-numbers {
 	padding: 5px 10px;
+}
+
+.blog-navigation .current {
+	color: #bec2cd;
 }
 
 /*--------------------------------------------------------------
@@ -2213,7 +2218,7 @@ figure.effect-oscar:hover img {
 --------------------------------------------------------------*/
 #testimonials .testimonial-cell .testimonial-commment {
 	font-family: "Lato", Sans-serif;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	text-transform: uppercase;
 	line-height: 1.9em;
 	letter-spacing: 1px;
@@ -2228,7 +2233,7 @@ figure.effect-oscar:hover img {
 }
 
 .testimonial-cell {
-	padding: 50px 80px;
+	padding: 10px 20px;
 }
 
 .elementor .testimonial-cell img {
@@ -2322,7 +2327,7 @@ figure.effect-oscar:hover img {
 }
 
 #gallery-section #gallery-1 {
-	column-count: 4;
+	column-count: 3;
 }
 
 /*--------------------------------------------------------------
@@ -2556,6 +2561,29 @@ figure.effect-oscar:hover img {
 	#portfolio .grid-item, #portfolio .grid-sizer {
 		width: 50%;
 	}
+	.navbar-expand-lg .navbar-nav {
+		flex-direction: row;
+	}
+
+	.navbar > .container {
+		padding: 0;
+	}
+
+	#testimonials .testimonial-cell .testimonial-commment {
+		font-size: 1.2rem;
+	}
+
+	.testimonial-cell {
+		padding: 50px 80px;
+	}
+
+	.slick-next {
+		right: -35px;
+	}
+
+	.slick-prev {
+		left: -35px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -2574,20 +2602,6 @@ figure.effect-oscar:hover img {
 
 	.navbar-nav .dropdown-menu {
 		position: absolute;
-	}
-
-	.video-container {
-		padding: 0;
-		overflow: hidden;
-		height: 700px;
-	}
-
-	.video-container .elementor-row {
-		overflow: hidden;
-	}
-
-	.video-container iframe {
-		margin-top: -170px;
 	}
 
 	.widget-area {
@@ -2626,20 +2640,28 @@ figure.effect-oscar:hover img {
 	figure.effect-oscar figcaption {
 		padding: 3em;
 	}
-}
 
-@media (min-width: 768px) {
-	.navbar-expand-lg .navbar-nav {
-		flex-direction: row;
-	}
-
-	.navbar > .container {
-		padding: 0;
+	#gallery-section #gallery-1 {
+		column-count: 4;
 	}
 }
 
 @media (min-width: 1200px) {
 	section.no-results {
 		padding: 0;
+	}
+
+	.video-container {
+		padding: 0;
+		overflow: hidden;
+		height: 700px;
+	}
+
+	.video-container .elementor-row {
+		overflow: hidden;
+	}
+
+	.video-container iframe {
+		margin-top: -170px;
 	}
 }
