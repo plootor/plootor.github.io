@@ -954,7 +954,7 @@ body {
 	line-height: 1.9;
 	font-family: 'Lora', serif;
 	color: #333;
-	padding-top: 30px;
+	padding-top: 75px;
 }
 
 body.home {
@@ -1618,6 +1618,10 @@ section {
 	top: -186px;
 }
 
+.logo-section {
+	margin: 10px 0;
+}
+
 .top-header.nav-top .logo-section {
 	height: 100%;
 	margin: 10px 0;
@@ -1767,21 +1771,14 @@ section {
 
 /*optimize*/
 .navbar .navbar-toggler {
-	font-size: 1.5rem;
-	color: #f7f7f7;
 	border: none;
 	outline: none;
-}
-
-.navbar .navbar-toggler {
 	text-transform: uppercase;
 	color: rgb(131, 150, 144) !important;
 	font-size: 12px;
 	border-radius: 0;
-	outline: none;
-	margin-top: 25px;
-	margin-right: 10px;
-	position: relative;
+	margin-top: 15px;
+	padding: 15px;
 	z-index: 10;
 	position: absolute;
 	right: 0;
@@ -1838,7 +1835,7 @@ section {
 }
 
 #portfolio .portfolio-nav a {
-	margin: 0 15px;
+	margin: 0 10px;
 	padding-bottom: 5px;
 	color: #333;
 	text-transform: uppercase;
@@ -1923,18 +1920,6 @@ section {
 
 #portfolio .grid-item, #portfolio .grid-sizer {
 	width: 100%;
-}
-
-#portfolio .grid-item:nth-child(2) {
-	height: 730px;
-}
-
-#portfolio .grid-item:nth-child(3) {
-	height: 365px;
-}
-
-#portfolio .grid-item:nth-child(4) {
-	height: 365px;
 }
 
 .width-100 {
@@ -2262,65 +2247,6 @@ figure.effect-oscar:hover img {
 
 #gallery-section .gallery-item {
 	position: relative;
-}
-
-#gallery-section .gallery-item a:after {
-	opacity: 0;
-
-	-webkit-transform: scale(0);
-	transform: scale(0);
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	bottom: 30px;
-	left: 30px;
-	border: 1px solid #333;
-	content: '';
-}
-
-#gallery-section .gallery-item:hover a:after {
-	-webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
-	transition: opacity 0.6s, transform 0.6s;
-	opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-}
-
-#gallery-section .gallery-item:hover:before {
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	background-color: rgba(255, 255, 255, .8);
-	content: '';
-}
-
-#gallery-section .gallery-icon a:before {
-	color: #333;
-	cursor: pointer;
-	opacity: 0;
-	-webkit-transform: scale(0);
-	transform: scale(0);
-	position: absolute;
-	left: 50px;
-	font-family: FontAwesome;
-	content: "\f002";
-	top: 50%;
-	left: 50%;
-	height: 30px;
-	width: 30px;
-	margin-left: -15px;
-	margin-top: -15px;
-	font-size: 1.5rem;
-}
-
-#gallery-section .gallery-item:hover a:before {
-	-webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
-	transition: opacity 0.6s, transform 0.6s;
-	opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
 }
 
 #gallery-section #gallery-1 {
@@ -2690,6 +2616,22 @@ figure.effect-oscar:hover img {
 	.phone-order-first {
 		order: 1;
 	}
+
+	#portfolio .portfolio-nav a {
+		margin: 0 15px;
+	}
+
+	#portfolio .grid-item:nth-child(2) {
+		height: 730px;
+	}
+
+	#portfolio .grid-item:nth-child(3) {
+		height: 365px;
+	}
+
+	#portfolio .grid-item:nth-child(4) {
+		height: 365px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -2753,6 +2695,65 @@ figure.effect-oscar:hover img {
 }
 
 @media (min-width: 1200px) {
+	#gallery-section .gallery-item a:after {
+		opacity: 0;
+
+		-webkit-transform: scale(0);
+		transform: scale(0);
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		bottom: 30px;
+		left: 30px;
+		border: 1px solid #333;
+		content: '';
+	}
+
+	#gallery-section .gallery-item:hover a:after {
+		-webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+		transition: opacity 0.6s, transform 0.6s;
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+
+	#gallery-section .gallery-item:hover:before {
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		background-color: rgba(255, 255, 255, .8);
+		content: '';
+	}
+
+	#gallery-section .gallery-icon a:before {
+		color: #333;
+		cursor: pointer;
+		opacity: 0;
+		-webkit-transform: scale(0);
+		transform: scale(0);
+		position: absolute;
+		left: 50px;
+		font-family: FontAwesome;
+		content: "\f002";
+		top: 50%;
+		left: 50%;
+		height: 30px;
+		width: 30px;
+		margin-left: -15px;
+		margin-top: -15px;
+		font-size: 1.5rem;
+	}
+
+	#gallery-section .gallery-item:hover a:before {
+		-webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+		transition: opacity 0.6s, transform 0.6s;
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+
 	section.no-results {
 		padding: 0;
 	}
