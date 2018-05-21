@@ -1258,11 +1258,11 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 	color: #dc3545;
 }
 
-body:not(.elementor-editor-active) section.elementor-section-full_width {
+body:not(.elementor-editor-active) section.elementor-section-height-full {
 	height: 100vh;
 }
 
-body:not(.elementor-editor-active) section.elementor-section-full_width>div {
+body:not(.elementor-editor-active) section.elementor-section-height-full>div {
 	height: 100%;
 }
 
