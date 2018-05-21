@@ -1379,15 +1379,16 @@ body:not(.elementor-editor-active) section.elementor-section-height-full>div {
 	color: #fff;
 }
 
-
-
-
 a:hover, #main-menu .nav-item.active .nav-link, .sidebar-section ul a:before {
 	color: #839690 !important;
 }
 
 section {
 	padding: 50px 0;
+}
+
+.phone-order-first {
+	order: -1;
 }
 
 #loader {
@@ -2684,6 +2685,10 @@ figure.effect-oscar:hover img {
 
 	#main-menu .dropdown-menu .menu-item:first-child {
 		border-top: none;
+	}
+
+	.phone-order-first {
+		order: 1;
 	}
 }
 
