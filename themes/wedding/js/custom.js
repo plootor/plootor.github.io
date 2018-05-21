@@ -1,6 +1,11 @@
 jQuery(document).ready(function () {
 	"use strict";
 
+	jQuery(".navbar-toggler").click(function () {
+		jQuery(".navbar-collapse").toggle("slow", function () {
+		});
+	});
+
 	// Hide Header on on scroll down
 	var didScroll;
 	var lastScrollTop = 0;
