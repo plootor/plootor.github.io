@@ -40,14 +40,11 @@ class RelatedPosts extends WP_Widget {
 				while ( $my_query->have_posts() ) {
 					$my_query->the_post(); ?>
 					<div class="col-md-6">
-
-
 						<div class="recent_post_cell" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>)">
 							<a href="<?php the_permalink(); ?>">
-								<h6 class="recent-title text-center"><span><?php the_title(); ?></span></h6>
+								<h6 class="recent-title text-center"><div><?php the_title(); ?></div></h6>
 							</a>
 						</div>
-
 					</div>
 					<?php
 				}

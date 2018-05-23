@@ -1412,7 +1412,12 @@ section {
 
 .header-slider .slick-slide {
 	background-position: center center;
-	transition: transform 5.5s linear, opacity 500ms ease !important;
+	transition: transform 6s linear, opacity 10ms ease !important;
+}
+
+.header-slider .slick-slide {
+	background-position: center center;
+	transition: transform 5.5s linear, opacity 10ms ease !important;
 }
 
 .header-slider .slick-slide {
@@ -2766,5 +2771,9 @@ figure.effect-oscar:hover img {
 
 	.video-container .elementor-row {
 		overflow: hidden;
+	}
+
+	.video-container iframe {
+		margin-top: -170px;
 	}
 }
