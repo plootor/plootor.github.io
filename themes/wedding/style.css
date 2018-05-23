@@ -1203,7 +1203,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 .no-results #searchform .form-group {
-	padding: 10px 150px;
+	padding: 10px 50px;
 }
 
 .search-results .list-container .blog-by {
@@ -2501,6 +2501,12 @@ figure.effect-oscar:hover img {
 /*--------------------------------------------------------------
 ## Responsive
 --------------------------------------------------------------*/
+@media (min-width: 576px) {
+	.navbar-expand-lg .navbar-toggler {
+		display: none;
+	}
+}
+
 @media (min-width: 768px) {
 	body {
 		padding-top: 183px;
@@ -2775,5 +2781,9 @@ figure.effect-oscar:hover img {
 
 	.video-container iframe {
 		margin-top: -170px;
+	}
+
+	.no-results #searchform .form-group {
+		padding: 10px 150px;
 	}
 }
