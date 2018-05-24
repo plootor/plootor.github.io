@@ -2172,10 +2172,6 @@ figure.effect-oscar:hover img {
 	margin-bottom: 20px;
 }
 
-.recent_post_cell:last-of-type {
-	margin-bottom: 0;
-}
-
 .recent_post_cell a {
 	display: block;
 	height: 100%;
@@ -2272,6 +2268,7 @@ figure.effect-oscar:hover img {
 .comments-area .comment-list {
 	padding-left: 0;
 	list-style: none;
+	margin: 0;
 }
 
 .comments-area .comment-list .says {
@@ -2646,6 +2643,11 @@ figure.effect-oscar:hover img {
 }
 
 @media (min-width: 992px) {
+
+	.recent_post_cell:last-of-type {
+		margin-bottom: 0;
+	}
+
 	.navbar-expand-lg .navbar-toggler {
 		display: none;
 	}
