@@ -2656,7 +2656,7 @@ figure.effect-oscar:hover img {
 	}
 
 	#main-menu .nav-item > a {
-		padding: 0 2rem;
+		padding: 0 1.8rem;
 	}
 
 	.navbar-nav .dropdown-menu {
@@ -2763,6 +2763,10 @@ figure.effect-oscar:hover img {
 		opacity: 1;
 		-webkit-transform: scale(1);
 		transform: scale(1);
+	}
+
+	#main-menu .nav-item > a {
+		padding: 0 2rem;
 	}
 
 	section.no-results {
