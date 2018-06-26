@@ -522,7 +522,7 @@ section .section-name h4:after {
 	font-size: 16px;
 }
 
-.btn-xl:hover, .elementor-button:hover, #commentform input.submit:hover {
+.btn-xl a:hover, .elementor-button a:hover, #commentform input.submit a:hover {
 	color: #ffffff !important;
 	background-color: #ebaca5 !important;
 	border: 2px solid #ebaca5 !important;
@@ -1119,10 +1119,6 @@ body.elementor-editor-active header {
 #about .section-heading {
 	margin-bottom: 30px;
 	margin-top: 0;
-}
-
-#about {
-	background-color: #f5eef0;
 }
 
 /* Team section */
@@ -1746,7 +1742,7 @@ figure.effect-layla:hover h2 {
 	text-align: left;
 }
 
-.btn-xl {
+.btn-xl a {
 	font-size: 0.8rem;
 	margin: 15px 0 40px;
 	padding: .375rem .75rem;
