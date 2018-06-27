@@ -1,4 +1,4 @@
-<div class="blog-carousel slick-carousel" data-slick='{"autoplaySpeed": 4000, "slidesToShow": 1, "slidesToScroll": 1, "dots": true}'>
+<div class="blog-carousel slick-carousel" data-slick='{"autoplaySpeed": 40000, "slidesToShow": 1, "slidesToScroll": 1, "dots": true}'>
 	<?php
 	$post_count   = 4;
 	$recent_args  = [
@@ -20,7 +20,6 @@
 									<?php the_post_thumbnail('middle-featured-image'); ?>
 								</div>
 							</div>
-
 							<div class="col" style="display: flex; align-items:center;">
 								<div class="blog-element leftalign">
 									<h1 class="blog-title"><?php the_title() ?></h1>

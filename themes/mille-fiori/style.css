@@ -1766,6 +1766,8 @@ figure.effect-layla:hover h2 {
 
 #blog .leftalign {
 	text-align: left;
+	padding-right: 0;
+	padding-left: 30px;
 }
 
 .blog-carousel .slick-arrow {
