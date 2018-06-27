@@ -558,16 +558,6 @@ p {
 	border-bottom: 1px solid #ebaca5;
 }
 
-section .section-heading, section .section-heading h1 {
-	font-family: 'Playfair Display', serif;
-	font-weight: 700;
-	font-size: 3rem;
-	text-align: center;
-	color: #ebaca5;
-	text-transform: none;
-	letter-spacing: 1px;
-}
-
 #secondary img, article img, figure, img, img.wp-post-image {
 	max-width: 100%;
 	height: auto;
@@ -2989,10 +2979,6 @@ ul.social-buttons li {
 
 	.modal-content {
 		padding: 50px 0;
-	}
-
-	section .section-heading, section .section-heading h1 {
-		text-align: left;
 	}
 
 	#newsletter .section-heading, #newsletter .section-heading h1,
