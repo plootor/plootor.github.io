@@ -28,7 +28,7 @@ jQuery(document).ready(function () {
 
 	var slick = jQuery('.slick-carousel');
 	if (slick.length) {
-		slick.slick({dots: true});
+		slick.slick({dots: true, autoplay: true});
 	}
 
 	if (window.location.pathname != '/' && !jQuery('body').hasClass('home')) {

@@ -218,7 +218,7 @@ require_once get_template_directory() . '/inc/email_handling.php';
  */
 
 add_filter( 'excerpt_length', function () {
-	return 23;
+	return 50;
 }, 999 );
 
 
@@ -240,6 +240,8 @@ register_nav_menus( array(
 
 set_post_thumbnail_size( 360, 220, true );
 add_image_size( 'big-featured-image', 1050, 700, array( 'center', 'center' ) );
+
+add_image_size( 'middle-featured-image', 530, 350, array( 'center', 'center' ) );
 
 function include_font_awesome() {
 	function include_fa() {

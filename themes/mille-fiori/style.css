@@ -473,7 +473,7 @@ a:hover, a:active {
 /*  General Theme  */
 body {
 	overflow-x: hidden;
-	font-family: 'Raleway', sans-serif;
+	font-family: "Merriweather", Sans-serif;
 	height: 100%;
 	color: yellow;
 	background-color: #fff;
@@ -486,7 +486,7 @@ body {
 }
 
 #page-top, a, a:focus, a:active {
-	color: #333333;
+	color: #4e4e4e;
 }
 
 #page-top a:hover {
@@ -610,7 +610,7 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	font-weight: 700;
-	/*font-family: 'Playfair Display', serif;*/
+	font-family: 'Playfair Display', serif;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	line-height: 1.2;
@@ -1049,7 +1049,8 @@ header .text-container .container .intro-text .intro-separator {
 }
 
 .navbar .navbar-nav a.active {
-	color: #ffffff;
+	/*color: #ffffff;*/
+	font-weight: bold;
 }
 
 .affix-top.navbar .navbar-nav a.active {
@@ -1090,9 +1091,9 @@ body.elementor-editor-active header {
 	background-color: transparent !important;
 }
 
-.affix a.active {
-	background-color: #ebaca5 !important;
-}
+/*.affix a.active {*/
+	/*background-color: #ebaca5 !important;*/
+/*}*/
 
 .affix .logo-section > a {
 	-moz-transform: scale(0.95);
@@ -1693,7 +1694,7 @@ figure.effect-layla:hover h2 {
 }
 
 #blog .blog-cell {
-	background-color: #f7f7f7;
+	/*background-color: #f7f7f7;*/
 }
 
 #blog .blog-image {
@@ -1708,28 +1709,21 @@ figure.effect-layla:hover h2 {
 }
 
 #blog .blog-date {
-	text-align: center;
-	font-weight: 500;
-	font-size: 0.8rem;
+	font-weight: 400;
 	color: #bec2cd;
-	padding: 25px 0 10px;
+	letter-spacing: 1px;
 	text-transform: none;
-	margin-bottom: 10px;
-	margin-top: 0;
 }
 
 #blog .blog-title {
-	font-family: 'Playfair Display', serif;
-	text-align: center;
-	color: #1d2f3b;
-	letter-spacing: 3px;
-	margin-bottom: 20px;
-	margin-top: 0;
+	text-transform: none;
+	line-height: 1.2em;
+	letter-spacing: 1px;
+	color: #4e4e4e;
 }
 
 #blog .blog-content {
-	padding: 0 15px;
-	text-align: center;
+	padding-top: 10px;
 }
 
 #blog .blog-by {
@@ -1743,9 +1737,8 @@ figure.effect-layla:hover h2 {
 }
 
 .btn-xl a {
-	font-size: 0.8rem;
-	margin: 15px 0 40px;
-	padding: .375rem .75rem;
+	font-size: 13px;
+	padding: 10px 20px;
 	background-color: transparent;
 	border: 2px solid #333;
 	text-transform: uppercase;
@@ -1753,6 +1746,12 @@ figure.effect-layla:hover h2 {
 	font-weight: 700;
 	border-radius: 0;
 	display: inline-block;
+	line-height: 1;
+}
+
+#blog .btn-xl a {
+	margin-top: 30px;
+	margin-bottom: 0;
 }
 
 #blog .blog-text {
@@ -1760,42 +1759,58 @@ figure.effect-layla:hover h2 {
 	margin: 0 10px 10px;
 }
 
+#blog .blog-element {
+	padding-right: 30px;
+	text-align: right;
+}
+
+#blog .leftalign {
+	text-align: left;
+}
+
 .blog-carousel .slick-arrow {
 	display: none !important;
 }
 
 /* Testimonial section */
-
-#testimonials .testimonial-cell {
-	padding: 0 30px;
+/*--------------------------------------------------------------
+## Testimonials
+--------------------------------------------------------------*/
+#testimonials .testimonial-cell .testimonial-commment {
+	font-family: "Lato", Sans-serif;
+	font-size: 1rem;
+	text-transform: uppercase;
+	line-height: 1.9em;
+	letter-spacing: 1px;
 	text-align: center;
 }
 
-#testimonials .testimonial-cell h5 {
-	font-family: 'Playfair Display', serif;
-	font-size: 16px;
-	letter-spacing: 2px;
+#testimonials .testimonial-cell .testimonial-name {
+	font-size: 1rem;
+	font-weight: 700;
+	margin-top: 20px;
+	text-align: center;
 }
 
-#testimonials .testimonial-cell h6 {
-	color: #ebaca5;
-	text-transform: lowercase;
-	letter-spacing: 1px;
-	font-weight: 500;
-	font-size: 10px;
-	margin-bottom: 30px;
-	margin-top: 10px;
+.testimonial-cell {
+	padding: 10px 20px;
 }
 
-#testimonials .testimonial-cell p {
-	line-height: 2;
-	text-indent: 30px;
-	font-style: italic;
+.elementor .testimonial-cell img {
+	display: block;
+	margin: 0 auto 30px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	width: 80px;
+	height: auto;
 }
 
-.testimonial-carousel {
-	margin: 0 20px;
+.testimonial-cell h6 {
+	margin-top: 0;
 }
+
+
+
 
 .slick-prev, .slick-next {
 	font-size: 0;
@@ -2439,9 +2454,11 @@ ul.social-buttons li {
 		column-gap: 50px;
 	}
 
-	.testimonial-carousel {
-		margin: 0 60px;
-	}
+	/*.testimonial-carousel {*/
+		/*margin: 0 60px;*/
+	/*}*/
+
+
 
 	.responsive-min-height-images {
 		min-height: 500px;
@@ -2449,6 +2466,10 @@ ul.social-buttons li {
 
 	section {
 		padding: 50px 20px;
+	}
+
+	.testimonial-cell {
+		padding: 0 80px;
 	}
 
 	#about .about-space-mobile {
@@ -3009,6 +3030,8 @@ ul.social-buttons li {
 	.navbar .navbar-nav li a {
 		margin: 0 10px;
 		padding: 0 15px;
+		transition: all .3s;
+		position: relative;
 	}
 
 	.mobile-order-first {
