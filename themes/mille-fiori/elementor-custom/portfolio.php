@@ -357,7 +357,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 											style="background-image: url(<?php echo $this->get_settings( 'portfolio_image' . $i )["url"]; ?>)"
 											class="portfolio-cell portfolio-cell1"></div>
 										<figcaption>
-											<h2><?php echo $this->get_settings( 'portfolio_hover' . $i ); ?></h2>
+											<h3><?php echo $this->get_settings( 'portfolio_hover' . $i ); ?></h3>
 										</figcaption>
 									</figure>
 								</div>

@@ -1271,9 +1271,10 @@ body.elementor-editor-active header {
 
 #contact .contact-btn {
 	border: 2px solid #fff;
-	padding: 12px 40px;
+	padding: 10px 30px;
 	color: #fff;
 	margin-top: 70px;
+	font-size: 13px;
 }
 
 #contact .form-group.submit {
@@ -1469,7 +1470,7 @@ body.elementor-editor-active header {
 	height: 450px;
 	width: 33.333%;
 	float: left;
-	padding: 10px;
+	padding: 15px;
 }
 
 #portfolio .grid-item:nth-child(5) {
@@ -1629,7 +1630,7 @@ figure.effect-layla figcaption::after {
 	transition: opacity 0.35s, transform 0.35s;
 }
 
-figure.effect-layla h2 {
+figure.effect-layla h3 {
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	opacity: 0;
@@ -1670,7 +1671,7 @@ figure.effect-layla:hover figcaption::after {
 	transition-delay: 0.15s;
 }
 
-figure.effect-layla:hover h2 {
+figure.effect-layla:hover h3 {
 	opacity: 1;
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
@@ -1782,10 +1783,7 @@ figure.effect-layla:hover h2 {
 ## Testimonials
 --------------------------------------------------------------*/
 #testimonials .testimonial-cell .testimonial-commment {
-	font-family: "Lato", Sans-serif;
 	font-size: 1rem;
-	text-transform: uppercase;
-	line-height: 1.9em;
 	letter-spacing: 1px;
 	text-align: center;
 }
@@ -1795,6 +1793,7 @@ figure.effect-layla:hover h2 {
 	font-weight: 700;
 	margin-top: 20px;
 	text-align: center;
+	font-family: "Playfair Display", sans-serif;
 }
 
 .testimonial-cell {
@@ -1837,7 +1836,6 @@ figure.effect-layla:hover h2 {
 .slick-prev:before, .slick-next:before {
 	font-family: 'slick';
 	font-size: 35px;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 	line-height: 1;
 	opacity: .75;
 	color: #ebaca5;
@@ -2293,7 +2291,8 @@ ul.children {
 }
 
 .footer-block .address p {
-	font-size: 12px;
+	font-size: 11px;
+	line-height: 2;
 	margin: 0;
 }
 
@@ -2555,7 +2554,7 @@ ul.social-buttons li {
 		transform: scale(1);
 	}
 
-	figure.effect-layla h2 {
+	figure.effect-layla h3 {
 		opacity: 1;
 		font-size: 24px;
 		-webkit-transform: translate3d(0, 0, 0);
@@ -2802,7 +2801,7 @@ ul.social-buttons li {
 		height: 25px;
 	}
 
-	.portfolio-modal .modal-content h2 {
+	.portfolio-modal .modal-content h3 {
 		margin: 60px 0 25px;
 		font-size: 27px;
 		text-align: center;
@@ -2862,7 +2861,7 @@ ul.social-buttons li {
 		transform: scale(1);
 	}
 
-	figure.effect-layla h2 {
+	figure.effect-layla h3 {
 		opacity: 1;
 		font-size: 24px;
 		-webkit-transform: translate3d(0, 0, 0);
