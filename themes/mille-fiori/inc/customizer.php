@@ -57,6 +57,30 @@ class MileFiori_Customizer {
 		);
 
 		/**
+		 * Page animation panel
+		 */
+		$wp_customize->add_panel( 'page_animation_setting_panel', [
+				'title'       => __( 'Animation Section', 'mille-fiori' ),
+				'description' => __( 'Allows you to set up animations.', 'mille-fiori' ),
+				'priority'    => '12',
+				'capability'  => 'edit_theme_options'
+			]
+		);
+
+		/**
+		 * Page Animation Section
+		 */
+		$wp_customize->add_section( 'pageanimation_setting_section', [
+				'title'       => __( 'Animation Settings', 'mille-fiori' ),
+				'description' => __( 'Allows you to turn on/off animation.', 'mille-fiori' ),
+				//Descriptive tooltip
+				'panel'       => 'page_animation_setting_panel',
+				'priority'    => '1',
+				'capability'  => 'edit_theme_options'
+			]
+		);
+
+		/**
 		 * Footer Social Section
 		 */
 		$wp_customize->add_section( 'pagefooter_social_setting_section', [
@@ -224,6 +248,9 @@ class MileFiori_Customizer {
 
 	public static function Section_Content() {
 		$section_content = [
+			'pageanimation_setting_section'            => [
+				'millefiori_page_animation'
+			],
 			'pagefooter_setting_section'               => [
 				'millefiori_footer_logo',
 				'millefiori_footer_address',
@@ -281,6 +308,16 @@ class MileFiori_Customizer {
 				'default'      => ''
 			],
 
+
+
+			'millefiori_page_animation' => [
+			'id'           => 'theme_options[millefiori_page_animation]',
+			'label'        => __( 'Page Animation Option(write "on" to enable.)', 'mille-fiori' ),
+			'description'  => __( '', 'mille-fiori' ),
+			'type'         => 'option',
+			'setting_type' => 'text',
+			'default'      => 'off'
+		],
 
 			/**
 			 * mille-fiori Footer

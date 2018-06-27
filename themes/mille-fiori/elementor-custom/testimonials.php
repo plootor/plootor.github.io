@@ -94,7 +94,7 @@ class Wedding_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_job1',
 			[
-				'label'   => __( 'Testimonial Job 1', 'wedding' ),
+				'label'   => __( 'Testimonial Name 1', 'wedding' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
@@ -122,7 +122,7 @@ class Wedding_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_job2',
 			[
-				'label'   => __( 'Testimonial Job 2', 'wedding' ),
+				'label'   => __( 'Testimonial Name 2', 'wedding' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
@@ -150,7 +150,7 @@ class Wedding_Testimonial_Carousel extends Widget_Base {
 		$this->add_control(
 			'testimonial_job3',
 			[
-				'label'   => __( 'Testimonial Job 3', 'wedding' ),
+				'label'   => __( 'Testimonial Name 3', 'wedding' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_testimonials'
 			]
