@@ -746,7 +746,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-slider .slick-track .slick-slide {
-	height: 80vh;
+	height: 90vh;
 }
 
 .header-slider .slider-bg {
@@ -2958,7 +2958,7 @@ ul.social-buttons li {
 	}
 
 	.navbar.affix-top {
-		background-color: #f7f7f7;
+		background-color: rgba(247, 247, 247, 0.6);
 		padding: 5px 0;
 		height: auto;
 	}
