@@ -171,6 +171,15 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 			]
 		);
 
+		$this->add_control(
+			'header_slider2_button',
+			[
+				'label'   => __( 'Header Slider 2 Button', 'mille-fiori' ),
+				'type'    => Controls_Manager::TEXT,
+				'section' => 'section_mf_header_slider'
+			]
+		);
+
 		//Slider 3
 		$this->add_control(
 			'header_slider_image3',
@@ -211,6 +220,15 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 			]
 		);
 
+		$this->add_control(
+			'header_slider3_button',
+			[
+				'label'   => __( 'Header Slider 3 Button', 'mille-fiori' ),
+				'type'    => Controls_Manager::TEXT,
+				'section' => 'section_mf_header_slider'
+			]
+		);
+
 		//Slider 4
 		$this->add_control(
 			'header_slider_image4',
@@ -246,6 +264,15 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 			'header_slider4_subtitle',
 			[
 				'label'   => __( 'Header Slider 4 SubTitle', 'mille-fiori' ),
+				'type'    => Controls_Manager::TEXT,
+				'section' => 'section_mf_header_slider'
+			]
+		);
+
+		$this->add_control(
+			'header_slider4_button',
+			[
+				'label'   => __( 'Header Slider 4 Button', 'mille-fiori' ),
 				'type'    => Controls_Manager::TEXT,
 				'section' => 'section_mf_header_slider'
 			]

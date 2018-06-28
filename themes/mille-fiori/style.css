@@ -1635,7 +1635,6 @@ figure.effect-layla h3 {
 	transition: transform 0.35s;
 	opacity: 0;
 	text-transform: none;
-	letter-spacing: 1px;
 	padding: 0 20px;
 	position: relative;
 	top: 50%;
@@ -2291,7 +2290,7 @@ ul.children {
 }
 
 .footer-block .address p {
-	font-size: 11px;
+	font-size: 12px;
 	line-height: 2;
 	margin: 0;
 }
@@ -3004,7 +3003,7 @@ ul.social-buttons li {
 
 	.footer-block .address {
 		border-left: 1px solid #ebaca5;
-		padding: 0 15px;
+		padding: 0 0 0 15px;
 		text-align: left;
 	}
 

@@ -12,9 +12,7 @@ if ( ! function_exists( 'underscore_scripts' ) ) {
 		wp_enqueue_script( 'mille-fiori-viewport', get_template_directory_uri() . '/js/vendor/jquery.viewportchecker.js', array( 'jquery' ), $the_theme->get( 'Version' ), true );
 		wp_enqueue_script( 'mille-fiori-imageloaded', get_template_directory_uri() . '/js/vendor/imagesloaded.pkgd.min.js', array( 'jquery' ), $the_theme->get( 'Version' ), true );
 		wp_enqueue_script( 'mille-fiori-masonry', get_template_directory_uri() . '/js/vendor/masonry.pkgd.min.js', array( 'jquery' ), $the_theme->get( 'Version' ), true );
-
 		wp_enqueue_script( 'mille-fiori-bootstrap-validation', get_template_directory_uri() . '/js/vendor/jqBootstrapValidation.js', array( 'jquery' ), $the_theme->get( 'Version' ), true );
-
 		wp_enqueue_script( 'mille-fiori-custom', get_template_directory_uri() . '/js/custom.js', array( 'jquery' ), $the_theme->get( 'Version' ), true );
 	}
 }
