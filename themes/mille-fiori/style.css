@@ -757,14 +757,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-slider h1 {
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 65px;
 	line-height: 75px;
 	margin-bottom: 25px;
 	color: #fff;
 	text-transform: unset;
-	font-family: 'Playfair Display', serif;
-	letter-spacing: 2px;
 }
 
 .header-slider h2 {
