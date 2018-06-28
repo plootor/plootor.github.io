@@ -721,7 +721,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-content {
-	margin-top: 30vh;
+	margin-top: 35vh;
 }
 
 .full-height-slider, .elementor-widget-container {
@@ -765,12 +765,9 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: unset;
 }
 
-.header-slider h2 {
-	font-size: 15px;
-	line-height: 30px;
-	letter-spacing: 2px;
-	color: #333;
-	font-weight: 500;
+.header-slider p {
+	font-size: 1rem;
+	color: #fff;
 }
 
 .header-slider .header-button {
