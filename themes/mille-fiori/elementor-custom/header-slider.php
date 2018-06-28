@@ -283,7 +283,7 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 		$id = 1;
 
 		$content = '<div class="header-slider slick-carousel"'
-		           . ' data-slick=\'{"arrows": false, "fade": true, "infinite": true, "autoplay": true, "autoplaySpeed": 60000}\'>' . PHP_EOL;
+		           . ' data-slick=\'{"arrows": false, "fade": true, "infinite": true, "autoplay": true, "autoplaySpeed": 6000}\'>' . PHP_EOL;
 		while ( true ) {
 			$image     = $this->get_settings( 'header_slider_image' . $id );
 			$title     = $this->get_settings( 'header_slider' . $id . '_title' );
@@ -302,7 +302,7 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 			            . '<div class="col">' . PHP_EOL
 			            . ( $title ? '<h1 class="title" data-animation="fadeInRight" data-delay="0.5s">' . $title . '</h1>' . PHP_EOL : '' )
 			            . ( $sub_title ? '<p class="sub-title" data-animation="fadeInLeft" data-delay="0.5s">' . $sub_title . '</p>' . PHP_EOL : '' )
-			            . ( $button ? '<a href="' . $button . '" data-animation="fadeInLeft" data-delay="0.5s" class="header-button btn btn-xl">Explore Portfolio</a>' . PHP_EOL : '' )
+			            . ( $button ? '<span class="btn-xl"><a href="' . $button . '" data-animation="fadeInLeft" data-delay="0.5s" class="btn">Explore Portfolio</a></span>' . PHP_EOL : '' )
 			            . '</div>' . PHP_EOL
 			            . '</div>' . PHP_EOL
 			            . '</div>' . PHP_EOL
