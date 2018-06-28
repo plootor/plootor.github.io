@@ -770,6 +770,12 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 }
 
+.header-slider .btn-xl a {
+	margin-top: 30px;
+	color: #fff;
+	border-color: #fff;
+}
+
 .header-slider .header-button {
 	color: #fff;
 	background-color: rgba(255, 255, 255, .2);

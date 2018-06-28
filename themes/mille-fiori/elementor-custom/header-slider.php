@@ -302,7 +302,7 @@ class MilleFiori_Header_Slider_Carousel extends Widget_Base {
 			            . '<div class="col">' . PHP_EOL
 			            . ( $title ? '<h1 class="title" data-animation="fadeInRight" data-delay="0.5s">' . $title . '</h1>' . PHP_EOL : '' )
 			            . ( $sub_title ? '<p class="sub-title" data-animation="fadeInLeft" data-delay="0.5s">' . $sub_title . '</p>' . PHP_EOL : '' )
-			            . ( $button ? '<span class="btn-xl"><a href="' . $button . '" data-animation="fadeInLeft" data-delay="0.5s" class="btn">Explore Portfolio</a></span>' . PHP_EOL : '' )
+			            . ( $button ? '<span class="btn-xl"><a href="' . $button . '" data-animation="fadeInLeft" data-delay="0.5s" class="btn">Explore</a></span>' . PHP_EOL : '' )
 			            . '</div>' . PHP_EOL
 			            . '</div>' . PHP_EOL
 			            . '</div>' . PHP_EOL
