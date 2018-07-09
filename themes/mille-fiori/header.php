@@ -33,7 +33,7 @@ if ( theme_get_option( 'millefiori_page_animation' ) == 'on' ): ?>
 	</script>
 <?php endif; ?>
 
-<header <?php if(is_shop()) echo 'class="shop-header"';?>>
+<header <?php if(is_woocommerce()) echo 'class="shop-header"';?>>
 	<nav id="mainNav" class="navbar navbar-expand-md navbar-light fixed-top affix-top">
 		<div class="container">
 			<div class="row">
@@ -72,7 +72,7 @@ if ( theme_get_option( 'millefiori_page_animation' ) == 'on' ): ?>
 			</div>
 		</div>
 	</nav>
-	<?php if (is_shop()): ?>
+	<?php if (is_woocommerce()): ?>
 		<div class="text-container">
 			<div class="container">
 				<div class="intro-text">

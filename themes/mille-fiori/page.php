@@ -11,7 +11,7 @@
  *
  * @package mille-fiori
  */
-
+include_font_awesome();
 get_header(); ?>
 
 	<section id="page-container" class="visible-over">
