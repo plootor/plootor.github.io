@@ -110,6 +110,14 @@ function mille_fiori_widgets_init() {
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
+	));
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Woocommerce Sidebar', 'mille-fiori' ),
+		'id'            => 'woocommerce',
+		'description'   => 'Woocommerce sidebar widget area',
+		'before_title'  => '<h4 class="sidebar-title">',
+		'after_title'   => '</h4>',
 	) );
 }
 
