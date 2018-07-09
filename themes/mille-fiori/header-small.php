@@ -46,7 +46,7 @@
 						</div>
 						<?php wp_nav_menu(
 							array(
-								'theme_location'  => 'nav_right',
+								'theme_location'  => 'menu-1',
 								'container_class' => 'collapse navbar-collapse',
 								'menu_class'      => 'navbar-nav',
 								'walker'          => new WP_Bootstrap_Navwalker(),

@@ -16,7 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700%7CPlayfair+Display:400i,700,700i"
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,500,600,700%7CPlayfair+Display:400i,700,700i"
 				rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
@@ -33,7 +33,7 @@ if ( theme_get_option( 'millefiori_page_animation' ) == 'on' ): ?>
 	</script>
 <?php endif; ?>
 
-<header>
+<header <?php if(is_shop()) echo 'class="shop-header"';?>>
 	<nav id="mainNav" class="navbar navbar-expand-md navbar-light fixed-top affix-top">
 		<div class="container">
 			<div class="row">
@@ -51,16 +51,36 @@ if ( theme_get_option( 'millefiori_page_animation' ) == 'on' ): ?>
 						</div>
 						<?php wp_nav_menu(
 							array(
-								'theme_location'  => 'nav_right',
+								'theme_location'  => 'menu-1',
 								'container_class' => 'collapse navbar-collapse',
 								'menu_class'      => 'navbar-nav',
 								'walker'          => new WP_Bootstrap_Navwalker(),
 							)
 						); ?>
+						<?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+							$count = WC()->cart->cart_contents_count;
+							?><a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php
+							if ( $count > 0 ) {
+								?>
+								<span class="cart-contents-count"><?php echo esc_html( $count ); ?> item<?php if ($count > 1) echo 's';?></span>
+								<?php
+							}
+							?></a>
+						<?php } ?>
 					</div>
 				</div>
 			</div>
 		</div>
 	</nav>
+	<?php if (is_shop()): ?>
+		<div class="text-container">
+			<div class="container">
+				<div class="intro-text">
+					<h1 class="intro-heading">Shop</h1>
+					<div class="intro-separator"></div>
+				</div>
+			</div>
+		</div>
+	<?php endif; ?>
 </header>
 
