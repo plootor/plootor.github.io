@@ -214,6 +214,13 @@ require_once get_template_directory() . '/admin/tgm/tgm-init.php';
 require_once get_template_directory() . '/inc/email_handling.php';
 
 /**
+ * Load WooCommerce compatibility file.
+ */
+if ( class_exists( 'WooCommerce' ) ) {
+	require get_template_directory() . '/inc/woocommerce.php';
+}
+
+/**
  * Filter the except length to 20 words.
  */
 
@@ -250,3 +257,10 @@ function include_font_awesome() {
 
 	add_action( 'wp_enqueue_scripts', 'include_fa' );
 }
+
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 4 );
+
+
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 25 );
