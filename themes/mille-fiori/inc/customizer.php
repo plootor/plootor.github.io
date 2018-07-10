@@ -60,7 +60,7 @@ class MileFiori_Customizer {
 		 * Page animation panel
 		 */
 		$wp_customize->add_panel( 'page_animation_setting_panel', [
-				'title'       => __( 'Animation Section', 'mille-fiori' ),
+				'title'       => __( 'Page Settings Section', 'mille-fiori' ),
 				'description' => __( 'Allows you to set up animations.', 'mille-fiori' ),
 				'priority'    => '12',
 				'capability'  => 'edit_theme_options'
@@ -72,6 +72,19 @@ class MileFiori_Customizer {
 		 */
 		$wp_customize->add_section( 'pageanimation_setting_section', [
 				'title'       => __( 'Animation Settings', 'mille-fiori' ),
+				'description' => __( 'Allows you to turn on/off animation.', 'mille-fiori' ),
+				//Descriptive tooltip
+				'panel'       => 'page_animation_setting_panel',
+				'priority'    => '1',
+				'capability'  => 'edit_theme_options'
+			]
+		);
+
+		/**
+		 * Page Onepage Menu Section
+		 */
+		$wp_customize->add_section( 'onepagemenu_setting_section', [
+				'title'       => __( 'Onepage Menu Settings', 'mille-fiori' ),
 				'description' => __( 'Allows you to turn on/off animation.', 'mille-fiori' ),
 				//Descriptive tooltip
 				'panel'       => 'page_animation_setting_panel',
@@ -251,6 +264,9 @@ class MileFiori_Customizer {
 			'pageanimation_setting_section'            => [
 				'millefiori_page_animation'
 			],
+			'onepagemenu_setting_section'              => [
+				'onepage_menu_active'
+			],
 			'pagefooter_setting_section'               => [
 				'millefiori_footer_logo',
 				'millefiori_footer_address',
@@ -308,8 +324,6 @@ class MileFiori_Customizer {
 				'default'      => ''
 			],
 
-
-
 			'millefiori_page_animation' => [
 			'id'           => 'theme_options[millefiori_page_animation]',
 			'label'        => __( 'Page Animation Option(write "on" to enable.)', 'mille-fiori' ),
@@ -318,6 +332,15 @@ class MileFiori_Customizer {
 			'setting_type' => 'text',
 			'default'      => 'off'
 		],
+
+			'onepage_menu_active' => [
+				'id'           => 'theme_options[onepage_menu_active]',
+				'label'        => __( 'Onepage Menu animation.', 'mille-fiori' ),
+				'description'  => __( '', 'mille-fiori' ),
+				'type'         => 'option',
+				'setting_type' => 'text',
+				'default'      => 'off'
+			],
 
 			/**
 			 * mille-fiori Footer
