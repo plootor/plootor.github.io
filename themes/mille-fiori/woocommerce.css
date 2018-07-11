@@ -477,8 +477,12 @@ p.no-comments {
 	content: "";
 	display: table;
 	table-layout: fixed;
-	background-color: #0f834d;
+	background-color: transparent;
 	clear: both;
+}
+
+.woocommerce-message {
+	border: none;
 }
 
 .woocommerce-info,
@@ -881,6 +885,21 @@ text-align: left !important;
 .woocommerce div.product .woocommerce-tabs ul.tabs li, .woocommerce div.product .woocommerce-tabs ul.tabs::before {
 	border-color: #e4e4e4;
 }
+
+.woocommerce-page main {
+	position: relative;
+}
+
+.woocommerce-page main .woocommerce-message {
+	position: absolute;
+	top: -75px;
+	z-index: 1000;
+}
+
+.woocommerce-page main .woocommerce-message .button {
+display: none;
+}
+
 
 @media (min-width: 768px) {
 

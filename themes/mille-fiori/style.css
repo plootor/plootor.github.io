@@ -533,7 +533,7 @@ section .section-name h4:after {
 	font-size: 16px;
 }
 
-.btn-xl a:hover, .elementor-button a:hover, #commentform input.submit a:hover {
+.btn-xl a, .elementor-button a, #commentform input.submit a, #subscribe-form .btn, #contact .contact-btn {
 	color: #ffffff !important;
 	background-color: #ebaca5 !important;
 	border: 2px solid #ebaca5 !important;
@@ -1386,7 +1386,6 @@ body.elementor-editor-active header {
 }
 
 #portfolio .portfolio-nav .active {
-	font-weight: 600;
 	color: #b28d94;
 	border-color: #b28d94;
 	text-decoration: none;
@@ -1654,6 +1653,7 @@ figure.effect-layla:hover h3 {
 	line-height: 1.2em;
 	letter-spacing: 1px;
 	color: #4e4e4e;
+	font-weight: 400;
 }
 
 #blog .blog-content {
@@ -1768,7 +1768,7 @@ figure.effect-layla:hover h3 {
 	font-size: 35px;
 	line-height: 1;
 	opacity: .75;
-	color: #ebaca5;
+	color: #000;
 	font-family: 'FontAwesome';
 }
 

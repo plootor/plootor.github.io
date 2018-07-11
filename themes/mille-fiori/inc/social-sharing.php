@@ -38,4 +38,4 @@ function mille_fiori_social_sharing_buttons( $content ) {
 }
 
 ;
-add_filter( 'the_content', 'mille_fiori_social_sharing_buttons' );
+//add_filter( 'the_content', 'mille_fiori_social_sharing_buttons' );
