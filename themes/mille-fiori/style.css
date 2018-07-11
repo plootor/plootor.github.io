@@ -473,12 +473,13 @@ a:hover, a:active {
 /*  General Theme  */
 body {
 	overflow-x: hidden;
-	font-family: "Lora";
+	font-family: "Merriweather";
 	height: 100%;
 	color: yellow;
 	background-color: #fff;
 	font-size: 14px;
-	line-height: 1.9;
+	line-height: 2;
+	font-weight: 300;
 }
 
 #loader {
@@ -503,7 +504,7 @@ body {
 #page-top a:hover {
 	outline: none;
 	text-decoration: none;
-	color: #b28d94;
+	/*color: #b28d94;*/
 }
 
 a {
@@ -1022,7 +1023,7 @@ header .text-container .container .intro-text .intro-separator {
 .navbar .navbar-nav li a:after {
 	transition: all .5s;
 	position: absolute;
-	bottom: 25px;
+	bottom: -5px;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -1030,7 +1031,7 @@ header .text-container .container .intro-text .intro-separator {
 	content: '.';
 	color: transparent;
 	background-color: #b28d94;
-	height: 1px;
+	height: 3px;
 }
 
 .navbar.affix .navbar-nav li a:after {
@@ -1038,7 +1039,7 @@ header .text-container .container .intro-text .intro-separator {
 }
 
 .navbar .navbar-nav li a:hover {
-	color: #b28d94;
+	color: #333;
 }
 
 .navbar .navbar-nav li a:hover:after {
@@ -1713,8 +1714,7 @@ figure.effect-layla:hover h3 {
 ## Testimonials
 --------------------------------------------------------------*/
 #testimonials .testimonial-cell .testimonial-commment {
-	font-size: 1rem;
-	letter-spacing: 1px;
+	font-size: 16px;
 	text-align: center;
 }
 
