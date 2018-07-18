@@ -57,7 +57,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			'before_widget' => '<div class="sidebar-section">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h4 class="sidebar-title">',
-			'after_title'   => '</h4>',
+			'after_title'   => '</h4><div class="sidebar-separator"></div>',
 		) );
 
 		register_sidebar( array(

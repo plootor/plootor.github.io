@@ -6,15 +6,8 @@ get_header( 'small' );
 <!-- Blog Post Section -->
 <section id="blog-post" class="visible-over">
 	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="section-name">
-					<h4>Blog post</h4>
-				</div>
-			</div>
-		</div>
 		<div class="row pos-r">
-			<div class="col-12 col-md-8 col-lg-9">
+			<div class="col-12 col-md-8 col-lg-8">
 				<!-- Start the Loop. -->
 				<?php if ( have_posts() ) : while ( have_posts() ) :
 				the_post(); ?>
