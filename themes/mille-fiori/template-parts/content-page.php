@@ -9,14 +9,16 @@
 global $page;
 ?>
 
-<article class="modal-content" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="modal-content2" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+
+	<div class="page-header">
+		<div class="intro-text">
+			<?php the_title( '<h1 class="intro-heading">', '</h1>' ); ?>
+			<div class="intro-separator"></div>
+		</div><!-- .entry-header -->
+	</div>
 	<?php the_post_thumbnail( 'big-featured-image' ); ?>
-	<div class="entry-header">
-		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-	</div><!-- .entry-header -->
-	<div class="modal-separator"></div>
-
 
 	<div class="entry-content">
 		<?php

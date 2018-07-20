@@ -94,6 +94,17 @@ class MileFiori_Customizer {
 		);
 
 		/**
+		 * Page Color Section
+		 */
+		$wp_customize->add_section( 'pagecolor_setting_section', [
+				'title'       => __( 'Page Color Settings', 'mille-fiori' ),
+				'description' => __( 'Allows you to customize default colors.', 'mille-fiori' ),
+				'panel'       => 'page_animation_setting_panel',
+				'capability'  => 'edit_theme_options'
+			]
+		);
+
+		/**
 		 * Footer Social Section
 		 */
 		$wp_customize->add_section( 'pagefooter_social_setting_section', [
@@ -267,6 +278,10 @@ class MileFiori_Customizer {
 			'onepagemenu_setting_section'              => [
 				'onepage_menu_active'
 			],
+			'pagecolor_setting_section'                => [
+				'button_color',
+				'button_hover_color'
+			],
 			'pagefooter_setting_section'               => [
 				'millefiori_footer_logo',
 				'millefiori_footer_address',
@@ -340,6 +355,24 @@ class MileFiori_Customizer {
 				'type'         => 'option',
 				'setting_type' => 'text',
 				'default'      => 'off'
+			],
+
+			'button_color' => [
+				'id'           => 'theme_options[button_color]',
+				'label'        => __( 'Button default hover color.', 'mille-fiori' ),
+				'description'  => __( 'Setup button default color.', 'mille-fiori' ),
+				'type'         => 'option',
+				'setting_type' => 'color',
+				'default'      => '#ebaca5'
+			],
+
+			'button_hover_color' => [
+				'id'           => 'theme_options[button_hover_color]',
+				'label'        => __( 'Button default hover color.', 'mille-fiori' ),
+				'description'  => __( 'Setup button hover default color.', 'mille-fiori' ),
+				'type'         => 'option',
+				'setting_type' => 'color',
+				'default'      => '#ffffff'
 			],
 
 			/**

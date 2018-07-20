@@ -32,8 +32,6 @@ get_header();
 	<div class="container">
 	<div class="row">
 	<div class="col-12">
-
-
 <?php
 do_action( 'woocommerce_before_main_content' );
 ?>

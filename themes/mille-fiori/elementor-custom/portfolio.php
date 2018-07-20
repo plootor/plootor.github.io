@@ -394,8 +394,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 				<div class="modal-content">
 					<div class="close-modal" data-dismiss="modal">
 						<div class="lr">
-							<div class="rl">
-							</div>
+							<div class="rl"></div>
 						</div>
 					</div>
 					<div class="container">
