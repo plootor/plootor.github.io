@@ -365,7 +365,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 						</div>
 					<?php } else {
 						$page   = get_page_by_path( $this->get_settings( 'portfolio_page' . $i ) );
-						$titles = apply_filters( 'the_title', $page->post_title );
+						$titles = $page->post_title;
 						$date   = strtotime( $page->post_date ); ?>
 						<div class="grid-item item<?php echo $i; ?>">
 							<a href="#portfolioModal<?php echo $i; ?>" class="portfolio-link" data-toggle="modal">
@@ -388,7 +388,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 
 		<?php for ( $i = 1; $i <= 6; $i ++ ) {
 			$page   = get_page_by_path( $this->get_settings( 'portfolio_page' . $i ) );
-			$titles = apply_filters( 'the_title', $page->post_title );
+			$titles = $page->post_title;
 			$images = get_the_post_thumbnail_url( $page, 'big-featured-image' ); ?>
 			<div id="portfolioModal<?php echo $i; ?>" class="modal">
 				<div class="modal-content">

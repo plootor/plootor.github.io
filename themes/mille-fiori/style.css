@@ -2060,6 +2060,7 @@ ul.children {
 	font-size: 13px;
 	color: #bec2cd;
 	margin: 15px 0;
+	font-weight: 400;
 }
 
 .blog-post-title {
@@ -2069,11 +2070,6 @@ ul.children {
 	text-transform: unset;
 	letter-spacing: 1px;
 	font-weight: 400;
-}
-
-.single_post_content p, .fullwidth-content p {
-	margin: 0 0 30px;
-	line-height: 2.2;
 }
 
 .fullwidth-content h1,
@@ -2280,17 +2276,30 @@ ul.children {
 }
 
 .subscribe-form input {
-	border: 1px solid #bec2cd;
+	border: 2px solid #ebaca5;
 	background-color: transparent;
 	border-right: none;
+	max-width: 400px;
+
 }
 
 .subscribe-form .btn {
-
-	padding: 10px 15px !important;
+	padding: 10px 20px;
 	border-radius: 0;
+	border: 2px solid #ebaca5;
+}
+
+#right-sidebar .subscribe-form input {
 	border: 1px solid #bec2cd;
 	background-color: transparent;
+	color: #4e4e4e;
+}
+
+#right-sidebar .subscribe-form .btn {
+	padding: 10px 15px;
+	border: 1px solid #bec2cd;
+	border-left: 0;
+	background: transparent;
 	color: #4e4e4e;
 }
 
@@ -2379,7 +2388,7 @@ ul.social-buttons li {
 	height: 35px;
 	width: 35px;
 	border-radius: 100%;
-	font-size: 15px;
+	font-size: 13px;
 	line-height: 35px;
 	outline: none;
 	-webkit-transition: all 0.3s;
