@@ -19,6 +19,20 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700%7CPlayfair+Display:400,400i,700,700i"
 				rel="stylesheet">
 	<?php wp_head(); ?>
+	<style>
+		.elementor-widget-button a.elementor-button,
+		.elementor-widget-button .elementor-button,
+		.btn-xl a, .elementor-button a, button.btn-xl,
+		#commentform .submit,
+		#subscribe-form .btn, #contact .contact-btn {
+			background-color: <?php echo theme_get_option( 'button_color' ) ?>;
+			border: 2px solid <?php echo theme_get_option( 'button_color' ) ?>;
+		}
+		.btn-xl a:after, button.btn-xl:after, #commentform .submit:after {
+			background: <?php echo theme_get_option( 'button_hover_color' ) ?>;
+			opacity: .3;
+		}
+	</style>
 </head>
 
 <body id="page-top" <?php body_class(); ?>>

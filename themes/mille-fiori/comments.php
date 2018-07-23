@@ -16,18 +16,6 @@
 if ( post_password_required() ) {
 	return;
 }
-
-//add_filter( 'get_comment_date', 'wpsites_change_comment_date_format' );
-//function wpsites_change_comment_date_format( $d ) {
-//  $d = date("m.d.y");
-//  return $d;
-//}
-
-//function wpb_comment_reply_text( $link ) {
-//  $link = str_replace( 'Leave a Reply', 'Post a comment', $link );
-//  return $link;
-//}
-//add_filter( 'Leave a Reply', 'wpb_comment_reply_text' );
 ?>
 
 <div class="comments-area" id="comments">

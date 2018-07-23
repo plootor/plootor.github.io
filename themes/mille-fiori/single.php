@@ -17,6 +17,7 @@ get_header( 'small' );
 						<h5 class="blog-post-details"><?php echo get_the_time( 'F j, Y' ) ?> -
 							<?php the_category( ', ' ); ?><!--Travel, Lifestyle--></h5>
 						<?php the_content(); ?>
+						<?php echo get_post_social_buttons() ?>
 						<?php understrap_post_nav(); ?>
 						<div class="horisontal-sidebar">
 							<?php get_sidebar( 'horizontal' ); ?>

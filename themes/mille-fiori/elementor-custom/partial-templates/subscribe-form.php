@@ -1,4 +1,4 @@
-<form action="#" method="post" id="subscribe-form" target="_blank" novalidate="">
+<form action="#" method="post" class="subscribe-form" target="_blank" novalidate="">
 	<div class="input-group input-group-lg form-group">
 		<input type="email" name="email" class="newsletter-email form-control" placeholder="Email address..." required=""
 					 data-validation-required-message="Please enter your email address.">

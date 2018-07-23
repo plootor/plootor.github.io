@@ -1,5 +1,5 @@
 <?php
-function mille_fiori_social_sharing_buttons( $content ) {
+function get_post_social_buttons() {
 	global $post;
 	if ( is_singular() || is_home() ) {
 
@@ -22,6 +22,7 @@ function mille_fiori_social_sharing_buttons( $content ) {
 		$pinterestURL = 'https://pinterest.com/pin/create/button/?url=' . $url . '&amp;media=' . $thumbnail[0] . '&amp;description=' . $title;
 
 // Add sharing button at the end of page/page content
+		$content = '';
 		$content .= '<div><ul class="list-inline social-buttons">';
 		$content .= '<li><a target="_blank" href="' . $twitterURL . '"><i class="fa fa-twitter"></i></a>';
 		$content .= '<li><a target="_blank" href="' . $facebookURL . '"><i class="fa fa-facebook"></i></a>';
@@ -36,6 +37,3 @@ function mille_fiori_social_sharing_buttons( $content ) {
 		return $content;
 	}
 }
-
-;
-//add_filter( 'the_content', 'mille_fiori_social_sharing_buttons' );

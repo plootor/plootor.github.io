@@ -225,7 +225,7 @@ require_once get_template_directory() . '/inc/email_handling.php';
  * Load WooCommerce compatibility file.
  */
 if ( class_exists( 'WooCommerce' ) ) {
-	require get_template_directory() . '/inc/woocommerce.php';
+//	require get_template_directory() . '/inc/woocommerce.php';
 }
 
 /**

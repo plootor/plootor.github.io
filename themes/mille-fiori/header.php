@@ -28,7 +28,6 @@
 			background-color: <?php echo theme_get_option( 'button_color' ) ?>;
 			border: 2px solid <?php echo theme_get_option( 'button_color' ) ?>;
 		}
-
 		.btn-xl a:after, button.btn-xl:after {
 			background: <?php echo theme_get_option( 'button_hover_color' ) ?>;
 			opacity: .3;

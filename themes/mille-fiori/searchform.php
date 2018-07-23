@@ -15,7 +15,7 @@
 					 data-validation-required-message="Please enter your email address.">
 		<p class="help-block text-danger"></p>
 		<span class="input-group-btn">
-      <button type="submit" name="submit" class="btn" id="searchsubmit">
+      <button type="submit" name="submit" class="btn-xl" id="searchsubmit">
         <i class="fa fa-search" aria-hidden="true"></i>
       </button>
     </span>

@@ -1161,9 +1161,8 @@ display: none;
 	margin: 0 !important;
 }
 .comment-reply-title {
-	font-weight: 400 !important;
+	font-weight: 400;
 	font-size: 24px !important;
-	color: #263238;
 }
 .comment-form {
 	padding-top: 15px;

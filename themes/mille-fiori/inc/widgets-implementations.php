@@ -36,14 +36,14 @@ class RelatedPosts extends WP_Widget {
 			);
 			$my_query = new wp_query( $args );
 			if ( $my_query->have_posts() ) {
-				echo '<div class="related-posts"><h4 class="related-title text-center">Related posts</h4><div class="container"><div class="row">';
+				echo '<div class="related-posts"><h5 class="related-title">Related posts</h5><div class="related-posts-separator"></div><div class="container"><div class="row">';
 				while ( $my_query->have_posts() ) {
 					$my_query->the_post(); ?>
 					<div class="col-md-4">
 						<div class="relatedthumb">
 							<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
 								<?php the_post_thumbnail(); ?>
-								<h6 class="related-name text-center"><?php the_title() ?></h6>
+								<div class="related-name"><?php the_title() ?></div>
 							</a>
 						</div>
 					</div>
@@ -91,7 +91,7 @@ class RecentPostWithImages extends WP_Widget {
 		$recent_posts = wp_get_recent_posts();
 		if ( count( $recent_posts ) >= 3 ) {
 			echo '<div class="sidebar-section">';
-			echo '<h4 class="sidebar-title">' . __( 'Recent Posts', 'mille-fiori' ) . '</h4>';
+			echo '<h4 class="sidebar-title">' . __( 'Recent Posts', 'mille-fiori' ) . '</h4><div class="sidebar-separator"></div>';
 			foreach ( $recent_posts as $nr => $recent ) {
 				if ( $recent['post_status'] != "publish" || $recent['ID'] == $current_id ) {
 					continue;
@@ -99,18 +99,29 @@ class RecentPostWithImages extends WP_Widget {
 				if ( $nr > 3 ) {
 					break;
 				}
-				if ( has_post_thumbnail( $recent["ID"] ) ) {
-					echo '<div class="recent_post_cell">'
-					     . '<a href="' . get_permalink( $recent["ID"] ) . '" title="Look ' . esc_attr( $recent["post_title"] ) . '" >'
-					     . get_the_post_thumbnail( $recent["ID"] )
-					     . '<h6 class="recent-title text-center">' . $recent["post_title"] . '</h6>'
+				if (has_post_thumbnail($recent["ID"])) {
+					echo '<div class="recent_post_cell container">'
+					     . '<div class="row recent-cell">'
+					     . '<div class="col related-image-cell">'
+					     . get_the_post_thumbnail($recent["ID"], 'thumbnail') .
+					     '</div>'
+					     . '<div class="col recent-info">'
+					     . '<a href="' . get_permalink($recent["ID"]) . '">'
+					     . '<div class="recent-title">' . $recent["post_title"] . '</div>'
 					     . '</a>'
+					     . '<h6 class="blog-post-date">' . get_the_date('d/m/Y', $recent["ID"]) . '</h6>'
+					     . '</div>'
+					     . '</div>'
 					     . '</div>';
 				} else {
 					echo '<div>'
-					     . '<a href="' . get_permalink( $recent["ID"] ) . '" title="Look ' . esc_attr( $recent["post_title"] ) . '" >'
-					     . '<h6 class="recent-title text-center">' . $recent["post_title"] . '</h6></a></div> ';
+					     . '<a href="' . get_permalink($recent["ID"]) . '">'
+					     . '<div class="recent-title">' . $recent["post_title"] . '</div>'
+					     . '</a>'
+					     . '</div> ';
 				}
+
+
 			}
 			echo '</div>';
 		}

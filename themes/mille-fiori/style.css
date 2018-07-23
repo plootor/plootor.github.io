@@ -299,7 +299,6 @@ th {
 	color: #21759b;
 	display: block;
 	font-size: 14px;
-	font-size: 0.875rem;
 	font-weight: bold;
 	height: auto;
 	left: 5px;
@@ -395,19 +394,6 @@ html {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-/*button,*/
-/*input[type="button"],*/
-/*input[type="reset"],*/
-/*input[type="submit"] {*/
-	/*border-color: #ccc #ccc #bbb;*/
-	/*border-radius: 3px;*/
-	/*background: rgba(255, 255, 255, .55);*/
-	/*color: rgba(0, 0, 0, 0.8);*/
-	/*font-size: 12px;*/
-	/*font-size: 0.75rem;*/
-	/*line-height: 1;*/
-	/*padding: .6em 1em .4em;*/
-/*}*/
 
 a:hover, a:active {
 	outline: 0;
@@ -636,7 +622,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-.btn-xl a:hover:after, .btn-xl a:active:after, button.btn-xl:hover:after {
+.btn-xl a:hover:after, .btn-xl a:active:after, button.btn-xl:hover:after, input#submit:hover:after {
 	width: 100%;
 }
 
@@ -652,11 +638,23 @@ h1, h2, h3, h4, h5, h6 {
 	transition: all 0.3s;
 }
 
+.submit:after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
 .elementor-widget-button a.elementor-button,
 .elementor-widget-button .elementor-button,
 .btn-xl a, .elementor-button a, button.btn-xl,
 #commentform input.submit a,
-#subscribe-form .btn, #contact .contact-btn {
+#subscribe-form .btn, #contact .contact-btn, #commentform input.submit {
 	border: 0;
 	color: #fff;
 	position: relative;
@@ -1012,8 +1010,6 @@ header .text-container .container .intro-text .intro-separator {
 	float: none;
 	display: table;
 	margin: 0 auto !important;
-	padding-top: .3125rem;
-	padding-bottom: .3125rem;
 	padding: .3125rem .5rem;
 }
 
@@ -1023,7 +1019,6 @@ header .text-container .container .intro-text .intro-separator {
 
 .navbar .navbar-toggler {
 	background-color: #ffffff;
-	border-color: transparent;
 	text-transform: uppercase;
 	font-size: 12px;
 	border-radius: 0;
@@ -1043,7 +1038,6 @@ header .text-container .container .intro-text .intro-separator {
 
 .navbar .navbar-nav li a {
 	text-transform: uppercase;
-	font-weight: 500;
 	letter-spacing: 1px;
 	padding: 30px 10px 0;
 	margin: 0 10px;
@@ -1080,7 +1074,6 @@ header .text-container .container .intro-text .intro-separator {
 }
 
 .navbar .navbar-nav li.active a:hover {
-	font-weight: 500;
 	color: #333;
 }
 
@@ -1401,7 +1394,6 @@ body.elementor-editor-active header {
 	color: #333;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-weight: 500;
 	font-size: 12px;
 	border-bottom: 1px solid transparent;
 	transition: all ease-in-out 0.4s;
@@ -1690,8 +1682,6 @@ figure.effect-layla:hover h3 {
 }
 
 #blog .blog-by {
-	font-weight: 500;
-	font-size: 0.8rem;
 	color: #bec2cd;
 	padding: 30px 25px 10px;
 	text-transform: none;
@@ -1699,7 +1689,7 @@ figure.effect-layla:hover h3 {
 	text-align: left;
 }
 
-.btn-xl a {
+.btn-xl a, .form-submit .submit {
 	font-size: 13px;
 	padding: 10px 20px;
 	background-color: transparent;
@@ -1750,7 +1740,7 @@ figure.effect-layla:hover h3 {
 }
 
 #testimonials .testimonial-cell .testimonial-name {
-	font-size: 1rem;
+	font-size: 16px;
 	font-weight: 700;
 	margin-top: 20px;
 	text-align: center;
@@ -1913,14 +1903,11 @@ figure.effect-layla:hover h3 {
 	padding: 0;
 }
 
-.comments-area .comment-reply-title {
-	margin-bottom: 1.5rem;
-}
-
 .comments-area .comment-reply-title, .comments-area .comments-title {
-	font-family: 'Playfair Display', serif;
 	letter-spacing: 1px;
-	text-transform: capitalize;
+	font-weight: 400;
+	font-size: 20px;
+	margin-bottom: 15px;
 }
 
 .comments-area label {
@@ -1984,6 +1971,10 @@ figure.effect-layla:hover h3 {
 	margin-bottom: 15px;
 }
 
+#comments .comment-form {
+	padding: 0;
+}
+
 .comment-content p {
 	text-indent: 0 !important;
 	font-size: 13px;
@@ -2002,11 +1993,9 @@ figure.effect-layla:hover h3 {
 	display: block;
 	width: 100%;
 	padding: .375rem .75rem;
-	font-size: 1rem;
-	line-height: 1.5;
+	font-size: 13px;
+	line-height: 2;
 	color: #495057;
-	background-color: #fff;
-	background-image: none;
 	background-clip: padding-box;
 	border: 1px solid #ced4da;
 	border-radius: 0;
@@ -2014,13 +2003,8 @@ figure.effect-layla:hover h3 {
 }
 
 #commentform #submit {
-	font-size: 13px;
-	border-color: #ced4da;
-	color: #000;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 700;
 	width: auto;
+	text-transform: uppercase;
 }
 
 #commentform p {
@@ -2034,6 +2018,20 @@ figure.effect-layla:hover h3 {
 	margin-right: 2% !important;
 }
 
+#commentform .comment-form-cookies-consent {
+	line-height: 1;
+}
+
+#commentform .comment-form-cookies-consent label {
+	font-size: 12px;
+}
+
+#commentform .comment-form-cookies-consent input {
+	width: auto;
+	float: left;
+	margin-right: 10px;
+}
+
 .comment-form-url {
 	margin-right: 0 !important;
 }
@@ -2041,8 +2039,10 @@ figure.effect-layla:hover h3 {
 .form-control {
 	display: block;
 	width: 100%;
-	padding: .375rem .75rem;
+	padding: 6px 12px;
 	line-height: 33px;
+	letter-spacing: 1px;
+	font-size: 12px;
 }
 
 ul.children {
@@ -2057,7 +2057,6 @@ ul.children {
 .blog-post-details {
 	text-transform: none;
 	text-align: center;
-	font-weight: 500;
 	font-size: 13px;
 	color: #bec2cd;
 	margin: 15px 0;
@@ -2130,10 +2129,6 @@ ul.children {
 	font-family: 'Playfair Display', serif;
 }
 
-.author-text {
-	font-size: 13px;
-}
-
 .nav-links a {
 	font-size: 13px;
 	letter-spacing: 1px;
@@ -2146,32 +2141,45 @@ ul.children {
 }
 
 .related-posts {
-	margin: 30px 0 50px;
-	background-color: #f5eef0;
-	padding: 30px 0 40px 0;
+	margin: 30px 0 70px;
+	background-color: #fcfcfc;
+	padding: 30px 0 15px 0;
 }
 
-.related-title {
-	font-family: 'Playfair Display', serif;
-	text-transform: capitalize;
-	letter-spacing: 1px;
-	margin-bottom: 35px;
+.related-posts-separator {
+	width: 8%;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	margin: 15px auto;
+	color: #bec2cd;
 }
 
 .related-name {
-	font-weight: 500;
-	margin: 20px 0 15px 0;
 	letter-spacing: 1px;
 	text-transform: none;
+	padding: 0 15px;
 }
 
 /*--------------------------------------------------------------
 ## Sidebar
 --------------------------------------------------------------*/
+#right-sidebar ::-webkit-input-placeholder {
+	color: #4e4e4e;
+}
+
+#right-sidebar ::-moz-placeholder {
+	color: #4e4e4e;
+}
+
+#right-sidebar :-ms-input-placeholder {
+	color: #4e4e4e;
+}
+
 .sidebar-section {
 	margin: 0 0 20px 0;
 	padding: 30px 0 15px;
 	background-color: #fcfcfc;
+	overflow: hidden;
 }
 
 .sidebar-section .sidebar-separator {
@@ -2183,13 +2191,13 @@ ul.children {
 }
 
 .sidebar-section .sidebar-title,
-.sidebar-section .sidebar-title h5 {
+.sidebar-section .sidebar-title h5, .related-title {
 	margin-top: 0;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-align: center;
 	font-weight: 400;
-	font-size: .9rem;
+	font-size: 14px;
 }
 
 .sidebar-section ul {
@@ -2205,14 +2213,6 @@ ul.children {
 	padding: 0 10px 0 15px;
 }
 
-.sidebar-section ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	line-height: 27px;
-	letter-spacing: 1px;
-}
-
 .subscribe-success {
 	text-align: center;
 }
@@ -2226,7 +2226,6 @@ ul.children {
 }
 
 #right-sidebar .subscribe-form input {
-	width: 1%;
 	flex: 1 1 auto;
 	position: relative;
 }
@@ -2245,30 +2244,15 @@ ul.children {
 	padding: 10px 15px !important;
 	border-radius: 0;
 	border: 1px solid #bec2cd;
+	background-color: transparent;
+	color: #4e4e4e;
 }
 
-/*#searchform input {*/
-/*padding: 6px 12px;*/
-/*border-radius: 0;*/
-/*position: relative;*/
-/*flex: 1 1 auto;*/
-/*width: 1%;*/
-/*letter-spacing: 1px;*/
-/*font-size: .75rem;*/
-/*border: 1px solid #bec2cd;*/
-/*border-right: none;*/
-/*}*/
-
 #searchform input {
-	padding: 6px 12px;
-	border-radius: 0;
-	position: relative;
 	flex: 1 1 auto;
-	width: 1%;
-	letter-spacing: 1px;
-	font-size: .75rem;
 	border: 1px solid #bec2cd;
 	border-right: none;
+	background-color: transparent;
 }
 
 #right-sidebar .elementor-widget:not(:last-child) {
@@ -2276,7 +2260,6 @@ ul.children {
 }
 
 .sidebar-section .author-text {
-	font-size: .8rem;
 	margin: 0 15px;
 	text-align: center;
 	text-indent: 0;
@@ -2298,72 +2281,63 @@ ul.children {
 
 .subscribe-form input {
 	border: 1px solid #bec2cd;
-	font-size: 12px;
-	letter-spacing: 1px;
-	height: 46px;
-	width: 400px;
-	padding: 10px 16px;
-	line-height: 1.3;
-	border-radius: 0;
 	background-color: transparent;
 	border-right: none;
 }
 
 .subscribe-form .btn {
+
+	padding: 10px 15px !important;
 	border-radius: 0;
-	padding: 0 15px;
-	font-size: 28px;
-	z-index: 0;
 	border: 1px solid #bec2cd;
-	height: 46px;
-	line-height: 1.3;
-	color: #839690;
-	margin: 0;
 	background-color: transparent;
+	color: #4e4e4e;
 }
 
-.recent_post_cell {
-	height: 150px;
-	background-size: cover;
-	background-position: center center;
-	margin-bottom: 20px;
+.subscribe-form .btn .fa {
+	font-size: 22px;
+	width: 13px;
+}
+
+.related-name {
+	text-align: center;
+}
+
+.recent-cell .recent-info .recent-title, .related-name {
+	letter-spacing: .05rem;
+	text-transform: none;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+.recent-cell .recent-info .blog-post-date {
+	margin: 0;
+	text-align: left;
+	font-size: 12px;
+	color: #bec2cd;
+}
+
+.recent-cell .related-image-cell {
+	max-width: 110px;
+}
+
+.recent_post_cell.container {
+	padding: 0 30px 10px;
 }
 
 .recent_post_cell:last-of-type {
-	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
-.recent_post_cell a {
-	display: block;
-	height: 100%;
-}
-
-.recent_post_cell .recent-title {
-	font-weight: 400;
-	margin: 0;
-	padding: 0;
-	font-size: .8rem;
-	letter-spacing: 2px;
-	height: 100%;
-}
-
-.recent-title div {
-	padding: 15px;
-	background-color: rgba(255, 255, 255, .7);
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	margin: 0 10px;
+.recent-info.col {
+	padding-left: 0;
 }
 
 
-
-
-
-
-
-
-
+.elementor-social-icon {
+	transition: none !important;
+}
 
 
 
