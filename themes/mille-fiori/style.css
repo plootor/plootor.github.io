@@ -1065,7 +1065,7 @@ header .text-container .container .intro-text .intro-separator {
 	color: #333;
 }
 
-.navbar .navbar-nav li a:hover:after {
+.navbar .navbar-nav li a:hover:after, .affix.navbar .navbar-nav li a.active:after {
 	width: 100%;
 }
 
@@ -1077,14 +1077,9 @@ header .text-container .container .intro-text .intro-separator {
 	width: 0;
 }
 
-.navbar .navbar-nav a.active {
-	/*color: #ffffff;*/
-	font-weight: bold;
-}
-
-.affix-top.navbar .navbar-nav a.active {
-	color: #333;
-}
+/*.affix.navbar .navbar-nav a.active, .navbar .navbar-nav a:hover {*/
+	/*color: #b28d94;*/
+/*}*/
 
 body.elementor-editor-active header {
 	z-index: 1;
@@ -2949,7 +2944,7 @@ ul.social-buttons li {
 	}
 
 	.navbar.affix {
-		background-color: rgba(247, 247, 247, .95);
+		background-color: rgba(247, 247, 247, 1);
 	}
 
 	.navbar-expand-md .navbar-collapse, .logo-section-section {

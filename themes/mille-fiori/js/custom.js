@@ -100,7 +100,7 @@ jQuery(document).ready(function () {
 	if (!navbar.hasClass('block-affix')) {
 		jQuery(window).on('scroll', function () {
 			var scrollValue = jQuery(window).scrollTop();
-			if (scrollValue > 100) {
+			if (scrollValue > 250) {
 				navbar.removeClass('affix-top').addClass('affix');
 			} else {
 				navbar.addClass('affix-top').removeClass('affix');
