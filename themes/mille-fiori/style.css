@@ -566,10 +566,6 @@ p {
 	-webkit-transform: translate3d(0,0,0);
 }
 
-/*section#blog {*/
-/*overflow: hidden;*/
-/*}*/
-
 section.darker {
 	background-color: #f5eef0;
 }
@@ -1385,11 +1381,11 @@ body.elementor-editor-active header {
 	display: inline-block;
 }
 
-#portfolio .portfolio-nav {
+#portfolio-section .portfolio-nav {
 	padding-bottom: 10px;
 }
 
-#portfolio .portfolio-nav a {
+#portfolio-section .portfolio-nav a {
 	margin: 0 15px;
 	padding-bottom: 5px;
 	color: #333;
@@ -1400,52 +1396,52 @@ body.elementor-editor-active header {
 	transition: all ease-in-out 0.4s;
 }
 
-#portfolio .portfolio-nav a :hover {
+#portfolio-section .portfolio-nav a :hover {
 	font-weight: 600;
 	color: #b28d94;
 	border-color: #b28d94;
 	text-decoration: none;
 }
 
-#portfolio .portfolio-nav .active {
+#portfolio-section .portfolio-nav .active {
 	color: #b28d94;
 	border-color: #b28d94;
 	text-decoration: none;
 }
 
-#portfolio .grid {
+#portfolio-section .grid {
 	margin-left: -15px;
 	margin-right: -15px;
 }
 
-#portfolio .grid-item {
+#portfolio-section .grid-item {
 	height: 450px;
 	width: 33.333%;
 	float: left;
 	padding: 15px;
 }
 
-#portfolio .grid-item:nth-child(5) {
+#portfolio-section .grid-item:nth-child(5) {
 	height: 450px;
 }
 
-#portfolio .grid-item:nth-child(3) {
+#portfolio-section .grid-item:nth-child(3) {
 	height: 350px;
 }
 
-#portfolio .grid-item:nth-child(7) {
+#portfolio-section .grid-item:nth-child(7) {
 	height: 350px;
 }
 
-#portfolio .grid-item:nth-child(4) {
+#portfolio-section .grid-item:nth-child(4) {
 	height: 400px;
 }
 
-#portfolio .grid-item:nth-child(6) {
+#portfolio-section .grid-item:nth-child(6) {
 	height: 400px;
 }
 
-#portfolio .grid-item .portfolio-cell {
+#portfolio-section .grid-item .portfolio-cell {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1456,20 +1452,20 @@ body.elementor-editor-active header {
 	color: #333;
 }
 
-#portfolio .grid-item .portfolio-cell .portfolio-info {
+#portfolio-section .grid-item .portfolio-cell .portfolio-info {
 	padding: 35px 35px;
 	height: 100%;
 	background-color: #ebaca5;
 	color: #faf3eb;
 }
 
-#portfolio .grid-item .portfolio-cell h6 {
+#portfolio-section .grid-item .portfolio-cell h6 {
 	letter-spacing: 1px;
 	margin-bottom: 20px;
 	margin-top: 0;
 }
 
-#portfolio .grid-item .portfolio-cell h3 {
+#portfolio-section .grid-item .portfolio-cell h3 {
 	font-family: 'Playfair Display', serif;
 	font-weight: 700;
 	letter-spacing: 1px;
@@ -1479,25 +1475,25 @@ body.elementor-editor-active header {
 	line-height: 1.2;
 }
 
-#portfolio .grid-item .portfolio-cell p {
+#portfolio-section .grid-item .portfolio-cell p {
 	letter-spacing: 1px;
 	margin-top: 0;
 	color: #fff;
 }
 
-#portfolio .grid-item .portfolio-cell p:last-child {
+#portfolio-section .grid-item .portfolio-cell p:last-child {
 	text-align: right;
 	font-weight: 600;
 	font-size: 15px;
 }
 
-#portfolio .grid-item .portfolio-cell .portfolio-separator {
+#portfolio-section .grid-item .portfolio-cell .portfolio-separator {
 	width: 15%;
 	border-bottom: 2px solid #faf3eb;
 	margin: 20px 0 10px;
 }
 
-#portfolio .grid-item .portfolio-link {
+#portfolio-section .grid-item .portfolio-link {
 	display: block;
 	position: relative;
 	margin: 0 auto;
@@ -1505,13 +1501,13 @@ body.elementor-editor-active header {
 	text-decoration: none;
 }
 
-#portfolio .grid-item .portfolio-link .portfolio-item {
+#portfolio-section .grid-item .portfolio-link .portfolio-item {
 	position: relative;
 	height: 100%;
 	width: 100%;
 }
 
-#portfolio .grid-item .portfolio-link .portfolio-item .effect-layla {
+#portfolio-section .grid-item .portfolio-link .portfolio-item .effect-layla {
 	position: relative;
 	float: left;
 	overflow: hidden;
@@ -1523,7 +1519,7 @@ body.elementor-editor-active header {
 	color: #4e4e4e;
 }
 
-#portfolio .grid-item .portfolio-link .portfolio-item .effect-layla figcaption {
+#portfolio-section .grid-item .portfolio-link .portfolio-item .effect-layla figcaption {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1532,11 +1528,11 @@ body.elementor-editor-active header {
 	padding: 3em;
 }
 
-#portfolio .grid-item .portfolio-link .portfolio-item .effect-layla .portfolio-cell {
+#portfolio-section .grid-item .portfolio-link .portfolio-item .effect-layla .portfolio-cell {
 	background-position: center center;
 }
 
-#portfolio .grid-item, #portfolio .grid-sizer {
+#portfolio-section .grid-item, #portfolio-section .grid-sizer {
 	width: 100%;
 }
 
@@ -1631,46 +1627,46 @@ figure.effect-layla:hover h3 {
 }
 
 /* Blog section */
-#blog .blog-carousel {
+#blog-section .blog-carousel {
 	margin-left: -15px;
 	margin-right: -15px;
 }
 
-#blog .slick-dots li.slick-active button:before {
+#blog-section .slick-dots li.slick-active button:before {
 	color: #ebaca5;
 }
 
-#blog .slick-dots li button::before {
+#blog-section .slick-dots li button::before {
 	color: black;
 }
 
-#blog .slick-dots {
+#blog-section .slick-dots {
 	bottom: -50px !important;
 }
 
-#blog .blog-cell {
+#blog-section .blog-cell {
 	/*background-color: #f7f7f7;*/
 }
 
-#blog .blog-image {
+#blog-section .blog-image {
 	background-size: cover;
 	height: 100%;
 	width: 100%;
 }
 
-#blog .blog-image-cell {
+#blog-section .blog-image-cell {
 	position: relative;
 	padding: 0;
 }
 
-#blog .blog-date {
+#blog-section .blog-date {
 	font-weight: 400;
 	color: #bec2cd;
 	letter-spacing: 1px;
 	text-transform: none;
 }
 
-#blog .blog-title {
+#blog-section .blog-title {
 	text-transform: none;
 	line-height: 1.2em;
 	letter-spacing: 1px;
@@ -1678,11 +1674,11 @@ figure.effect-layla:hover h3 {
 	font-weight: 400;
 }
 
-#blog .blog-content {
+#blog-section .blog-content {
 	padding-top: 10px;
 }
 
-#blog .blog-by {
+#blog-section .blog-by {
 	color: #bec2cd;
 	padding: 30px 25px 10px;
 	text-transform: none;
@@ -1706,22 +1702,22 @@ figure.effect-layla:hover h3 {
 	transition: all 0.3s;
 }
 
-#blog .btn-xl a {
+#blog-section .btn-xl a {
 	margin-top: 30px;
 	margin-bottom: 0;
 }
 
-#blog .blog-text {
+#blog-section .blog-text {
 	text-align: center;
 	margin: 0 10px 10px;
 }
 
-#blog .blog-element {
+#blog-section .blog-element {
 	padding-right: 30px;
 	text-align: right;
 }
 
-#blog .leftalign {
+#blog-section .leftalign {
 	text-align: left;
 	padding-right: 0;
 	padding-left: 30px;
@@ -2344,15 +2340,13 @@ ul.children {
 	padding-left: 0;
 }
 
-
-.elementor-social-icon {
+#right-sidebar .elementor-social-icon {
 	transition: none !important;
 }
 
-
-
-
-
+.elementor-social-icon i {
+	transition: all .5s;
+}
 
 
 /* Footer section */
@@ -2519,7 +2513,7 @@ ul.social-buttons li {
 		font-size: inherit;
 	}
 
-	#about .about-text {
+	#about-section .about-text {
 		column-count: 2;
 		column-gap: 50px;
 	}
@@ -2542,7 +2536,7 @@ ul.social-buttons li {
 		padding: 0 80px;
 	}
 
-	#about .about-space-mobile {
+	#about-section .about-space-mobile {
 		padding: 0;
 	}
 
@@ -2559,16 +2553,16 @@ ul.social-buttons li {
 		padding: 15px 0;
 	}
 
-	#blog .item {
+	#blog-section .item {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
 
-	#portfolio .grid-item, #portfolio .grid-sizer {
+	#portfolio-section .grid-item, #portfolio-section .grid-sizer {
 		width: 33.333%;
 	}
 
-	#portfolio .grid {
+	#portfolio-section .grid {
 		margin-left: -25px;
 		margin-right: -25px;
 	}
@@ -2625,7 +2619,7 @@ ul.social-buttons li {
 		transform: translate3d(0, 0, 0);
 	}
 
-	#portfolio .grid-item .portfolio-cell .portfolio-info {
+	#portfolio-section .grid-item .portfolio-cell .portfolio-info {
 		padding: 25px;
 	}
 
@@ -2783,26 +2777,9 @@ ul.social-buttons li {
 		width: inherit;
 	}
 
-	#about .about-text {
+	#about-section .about-text {
 		column-count: 1;
 	}
-
-	/*#team .team-image-cell {*/
-	/*border-left: none;*/
-	/*}*/
-
-	/*#team .team-heading {*/
-	/*margin-bottom: 30px;*/
-	/*margin-top: 0;*/
-	/*}*/
-
-	/*#team h5 {*/
-	/*font-size: 12px;*/
-	/*}*/
-
-	/*#team h6 {*/
-	/*font-size: 10px;*/
-	/*}*/
 
 	#quote blockquote {
 		font-size: 18px;
@@ -2815,7 +2792,7 @@ ul.social-buttons li {
 		margin-top: 0;
 	}
 
-	#portfolio .portfolio-nav a {
+	#portfolio-section .portfolio-nav a {
 		font-size: 10px;
 		margin: 0 5px;
 	}
@@ -2972,7 +2949,7 @@ ul.social-buttons li {
 	}
 
 	.navbar.affix {
-		background-color: #rgba(247, 247, 247, .95);
+		background-color: rgba(247, 247, 247, .95);
 	}
 
 	.navbar-expand-md .navbar-collapse, .logo-section-section {
@@ -3046,7 +3023,7 @@ ul.social-buttons li {
 		text-align: center;
 	}
 
-	#about .about-space {
+	#about-section .about-space {
 		padding: 0 80px;
 	}
 
@@ -3056,7 +3033,7 @@ ul.social-buttons li {
 		text-align: left;
 	}
 
-	#blog .item {
+	#blog-section .item {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
