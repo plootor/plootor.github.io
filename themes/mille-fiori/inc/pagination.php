@@ -42,19 +42,19 @@ if ( ! function_exists( 'understrap_pagination' ) ) :
 			$links[] = $paged + 1;
 		}
 
-		echo '<nav aria-label="Page navigation"><ul class="pagination ">' . "\n";
+		echo '<nav class="blog-navigation" aria-label="Page navigation"><ul class="pagination ">' . "\n";
 
 		/**    Link to first page, plus ellipses if necessary */
 		if ( ! in_array( 1, $links ) ) {
 			$class = 1 == $paged ? ' class="active page-item"' : ' class="page-item"';
 
-			printf( '<li %s><a class="page-link" href="%s"><i class="fa fa-step-backward" aria-hidden="true"></i></a></li>' . "\n",
-				$class, esc_url( get_pagenum_link( 1 ) ), '1' );
+//			printf( '<li %s><a class="page-link" href="%s"><i class="fa fa-step-backward" aria-hidden="true"></i></a></li>' . "\n",
+//				$class, esc_url( get_pagenum_link( 1 ) ), '1' );
 
 			/**    Previous Post Link */
 			if ( get_previous_posts_link() ) {
 				printf( '<li class="page-item page-item-direction page-item-prev"><span class="page-link">%1$s</span></li> ' . "\n",
-					get_previous_posts_link( '<span aria-hidden="true">&laquo;</span><span class="sr-only">Previous page</span>' ) );
+					get_previous_posts_link( '<span aria-hidden="true"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>' ) );
 			}
 
 			if ( ! in_array( 2, $links ) ) {
@@ -73,7 +73,7 @@ if ( ! function_exists( 'understrap_pagination' ) ) :
 		// Next Post Link.
 		if ( get_next_posts_link() ) {
 			printf( '<li class="page-item page-item-direction page-item-next"><span class="page-link">%s</span></li>' . "\n",
-				get_next_posts_link( '<span aria-hidden="true">&raquo;</span><span class="sr-only">Next page</span>' ) );
+				get_next_posts_link( '<span aria-hidden="true"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>' ) );
 		}
 
 		// Link to last page, plus ellipses if necessary.
@@ -82,9 +82,9 @@ if ( ! function_exists( 'understrap_pagination' ) ) :
 				echo '<li class="page-item"></li>' . "\n";
 			}
 
-			$class = $paged == $max ? ' class="active "' : ' class="page-item"';
-			printf( '<li %s><a class="page-link" href="%s" aria-label="Next"><span aria-hidden="true"><i class="fa fa-step-forward" aria-hidden="true"></i></span><span class="sr-only">%s</span></a></li>' . "\n",
-				$class . '', esc_url( get_pagenum_link( esc_html( $max ) ) ), esc_html( $max ) );
+//			$class = $paged == $max ? ' class="active "' : ' class="page-item"';
+//			printf( '<li %s><a class="page-link" href="%s" aria-label="Next"><span aria-hidden="true"><i class="fa fa-step-forward" aria-hidden="true"></i></span><span class="sr-only">%s</span></a></li>' . "\n",
+//				$class . '', esc_url( get_pagenum_link( esc_html( $max ) ) ), esc_html( $max ) );
 		}
 
 		echo '</ul></nav>' . "\n";

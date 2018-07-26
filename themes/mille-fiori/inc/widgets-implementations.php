@@ -41,7 +41,7 @@ class RelatedPosts extends WP_Widget {
 					$my_query->the_post(); ?>
 					<div class="col-md-4">
 						<div class="relatedthumb">
-							<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+							<a href="<?php the_permalink(); ?>" rel="bookmark">
 								<?php the_post_thumbnail(); ?>
 								<div class="related-name"><?php the_title() ?></div>
 							</a>

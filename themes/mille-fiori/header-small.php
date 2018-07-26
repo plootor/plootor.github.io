@@ -16,8 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,600,700%7CPlayfair+Display:400,400i,700,700i"
-				rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,500,600,700%7CPlayfair+Display:400,400i,700,700i" rel="stylesheet">
 	<?php wp_head(); ?>
 	<style>
 		.elementor-widget-button a.elementor-button,
@@ -39,7 +38,7 @@
 <?php if (is_single()) {
 	$header_image_url = get_the_post_thumbnail_url(null, 'big-featured-image');
 } else {
-	$header_image_url = theme_get_option( 'small_header_bg_image', 'http://third-generation-web.com/mille-fiori/img/bouquet-of-flowers-1149099_1920.jpg' );
+	$header_image_url = theme_get_option( 'small_header_bg_image', '' );
 }
 ?>
 <header class="small-header single-header">
@@ -72,18 +71,22 @@
 		</div>
 	</nav>
 	<div class="<?php echo is_single() ? 'container' : ''; ?> small-header-image"
-			 style="background-image: url('<?php echo $header_image_url; ?>');"></div>
+			 <?php if ($header_image_url): ?>style="background-image: url('<?php echo $header_image_url; ?>');"<?php endif; ?>></div>
 	<?php $data = get_the_archive_title();
 	if ( $data && strpos( $data, ":" ) ) {
 		$title = substr( $data, strpos( $data, ":" ) + 2 );
 	} elseif ( is_single() ) {
 		$title = null;
+	} elseif (is_search()) {
+		$title = 'Search';
+	} elseif (is_404()) {
+		$title = '404';
 	}
 	if ( $title ): ?>
 		<div class="text-container">
 			<div class="container">
 				<div class="intro-text">
-					<div class="intro-heading"><?php echo $title; ?></div>
+					<h1 class="intro-heading"><?php echo $title; ?></h1>
 					<div class="intro-separator"></div>
 				</div>
 			</div>

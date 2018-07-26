@@ -228,10 +228,22 @@ require_once get_template_directory() . '/inc/email_handling.php';
 //	require get_template_directory() . '/inc/woocommerce.php';
 //}
 
-/**
- * Filter the except length to 20 words.
- */
 
+function my_menu_notitle( $menu ) {
+	return $menu = preg_replace( '/ title="(.*?)"/', '', $menu );
+}
+
+add_filter( 'wp_nav_menu', 'my_menu_notitle' );
+
+add_filter( 'wp_page_menu', 'my_menu_notitle' );
+
+add_filter( 'wp_list_categories', 'my_menu_notitle' );
+
+add_filter( 'wp_list_pages', 'my_menu_notitle' );
+
+/**
+ * Filter the except length to 50 words.
+ */
 add_filter( 'excerpt_length', function () {
 	return 50;
 }, 999 );
@@ -254,7 +266,7 @@ register_nav_menus( array(
 
 
 set_post_thumbnail_size( 360, 220, true );
-add_image_size( 'big-featured-image', 1050, 700, array( 'center', 'center' ) );
+add_image_size( 'big-featured-image', 730, 400, array( 'center', 'center' ) );
 
 add_image_size( 'middle-featured-image', 530, 350, array( 'center', 'center' ) );
 

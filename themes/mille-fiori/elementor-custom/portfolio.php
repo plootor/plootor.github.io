@@ -389,7 +389,7 @@ class MilleFiori_Portfolio extends Widget_Base {
 		<?php for ( $i = 1; $i <= 6; $i ++ ) {
 			$page   = get_page_by_path( $this->get_settings( 'portfolio_page' . $i ) );
 			$titles = $page->post_title;
-			$images = get_the_post_thumbnail_url( $page, 'big-featured-image' ); ?>
+			//$images = get_the_post_thumbnail_url( $page, 'big-featured-image' ); ?>
 			<div id="portfolioModal<?php echo $i; ?>" class="modal">
 				<div class="modal-content">
 					<div class="close-modal" data-dismiss="modal">
@@ -399,14 +399,10 @@ class MilleFiori_Portfolio extends Widget_Base {
 					</div>
 					<div class="container">
 						<div class="modal-body">
-							<div class="col-md-12">
-								<img class="img-responsive img-centered" src="<?php echo $images; ?>" alt="<?php echo $titles; ?>">
-							</div>
-							<h2><?php echo $titles; ?></h2>
-							<div class="modal-separator"></div>
+							<h1 class="text-center modal-title"><?php echo $titles; ?></h1>
 							<?php echo \Elementor\Plugin::$instance->frontend->get_builder_content( $page->ID ); ?>
-							<div class="text-center">
-								<a href="#" class="btn btn-xl close-button">Close</a>
+							<div class="text-center btn-xl">
+								<a href="#" class="btn close-button">Close</a>
 							</div>
 						</div>
 					</div>

@@ -18,7 +18,7 @@
 		<?php
 		the_excerpt();
 		?>
-		<div>
+		<div class="read-more-button post-list-link btn-xl">
 			<a href="<?php the_permalink() ?>" class="page-scroll btn btn-xl">Read more</a>
 		</div>
 		<?php
