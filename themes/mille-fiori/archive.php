@@ -8,7 +8,7 @@
  */
 
 add_filter( 'excerpt_length', function () {
-	return 60;
+	return 45;
 }, 999 );
 include_font_awesome();
 get_header( 'small' );

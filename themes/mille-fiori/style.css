@@ -544,14 +544,14 @@ p {
 }
 
 #archive-wrapper, #search-wrapper {
-	padding: 30px 0;
+	padding-bottom: 30px;
 }
 
 .search-results .page-header .page-title {
 	text-align: center;
 	margin-bottom: 30px;
 	padding-bottom: 20px;
-	border-bottom: 1px solid #ebaca5;
+	border-bottom: 1px solid #e5e6e8;
 }
 
 #secondary img, article img, figure, img, img.wp-post-image {
@@ -2274,11 +2274,15 @@ ul.children {
 	border-bottom: 1px solid #e5e6e8;
 	margin-bottom: 30px;
 	padding-bottom: 10px;
-	text-transform: capitalize;
+	text-transform: none;
 }
 
 section.no-results {
 	padding: 0;
+}
+
+section.no-results .sidebar-title {
+	display: none;
 }
 
 .page-content #searchform {
@@ -3057,7 +3061,7 @@ ul.social-buttons li {
 		border-style: solid !important;
 	}
 
-	.single-post .widget-area {
+	#right-sidebar {
 		padding-left: 40px !important;
 	}
 }
