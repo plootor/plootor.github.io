@@ -1073,10 +1073,6 @@ header .text-container .container .intro-text .intro-separator {
 	width: 0;
 }
 
-/*.affix.navbar .navbar-nav a.active, .navbar .navbar-nav a:hover {*/
-	/*color: #b28d94;*/
-/*}*/
-
 body.elementor-editor-active header {
 	z-index: 1;
 }
@@ -1362,16 +1358,9 @@ body.elementor-editor-active header {
 	transition: all ease-in-out 0.4s;
 }
 
-#portfolio-section .portfolio-nav a :hover {
-	font-weight: 600;
-	color: #b28d94;
-	border-color: #b28d94;
-	text-decoration: none;
-}
-
-#portfolio-section .portfolio-nav .active {
-	color: #b28d94;
-	border-color: #b28d94;
+#portfolio-section .portfolio-nav .active, #portfolio-section .portfolio-nav a:hover {
+	color: #ebaca5;
+	border-color: #ebaca5;
 	text-decoration: none;
 }
 
@@ -2132,6 +2121,14 @@ ul.children {
 	margin: 20px 0 10px;
 }
 
+.post_content .post-navigation {
+	margin-top: 10px;
+}
+
+.post_content .social-buttons {
+	border-bottom: 1px solid #ebaca5;
+}
+
 .author {
 	margin-top: 30px;
 }
@@ -2151,7 +2148,7 @@ ul.children {
 }
 
 .nav-links a:hover {
-	color: #b28d94;
+	color: #ebaca5;
 }
 
 .related-posts {
@@ -2382,8 +2379,8 @@ section.no-results {
 	padding-left: 0;
 }
 
-#right-sidebar .elementor-social-icon {
-	transition: none !important;
+#right-sidebar .elementor-social-icon, #right-sidebar .elementor-social-icon i {
+	transition: background-color 5s, color 5s;
 }
 
 .elementor-social-icon i {
@@ -2428,8 +2425,8 @@ ul.social-buttons li {
 	font-size: 13px;
 	line-height: 35px;
 	outline: none;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
@@ -2448,10 +2445,6 @@ ul.social-buttons li {
 	background-color: #ebaca5;
 	border-radius: 100px;
 }
-
-
-
-
 
 .navbar .navbar-toggler {
 	background-color: #ffffff;
@@ -2954,15 +2947,6 @@ ul.social-buttons li {
 		position: relative;
 		float: right;
 	}
-
-	/*.modal-content section {*/
-		/*padding: 0;*/
-	/*}*/
-
-	/*.modal-content h2 {*/
-		/*margin: 0 25px 25px;*/
-		/*font-size: 30px;*/
-	/*}*/
 }
 
 @media (min-width: 992px) {

@@ -35,7 +35,18 @@
 </head>
 
 <body id="page-top" <?php body_class(); ?>>
-<?php if (is_single()) {
+<?php
+if ( theme_get_option( 'millefiori_page_animation' ) == 'on' ) { ?>
+	<div id="loader">
+	</div>
+	<script>
+		jQuery(window).load(function () {
+			jQuery("#loader").fadeOut("slow");
+		});
+	</script>
+	<?php
+}
+if (is_single()) {
 	$header_image_url = get_the_post_thumbnail_url(null, 'big-featured-image');
 } else {
 	$header_image_url = theme_get_option( 'small_header_bg_image', '' );
