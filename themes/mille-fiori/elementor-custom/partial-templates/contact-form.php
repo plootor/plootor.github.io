@@ -28,7 +28,7 @@
 						<div id="success" class="form-alert"></div>
 					</div>
 
-					<div class="col-12 text-center form-group submit fade-animate">
+					<div class="col-12 text-center form-group submit">
 						<button type="submit" class="contact-btn btn-xl">Send message</button>
 					</div>
 				</div>

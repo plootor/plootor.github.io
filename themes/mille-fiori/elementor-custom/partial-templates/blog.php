@@ -1,4 +1,4 @@
-<div class="blog-carousel slick-carousel" data-slick='{"autoplaySpeed": 40000, "slidesToShow": 1, "slidesToScroll": 1, "dots": true}'>
+<div class="blog-carousel slick-carousel" data-slick='{"autoplaySpeed": 4000, "slidesToShow": 1, "slidesToScroll": 1, "dots": true}'>
 	<?php
 	$post_count   = 4;
 	$recent_args  = [
@@ -22,7 +22,7 @@
 							</div>
 							<div class="col" style="display: flex; align-items:center;">
 								<div class="blog-element leftalign">
-									<h1 class="blog-title"><?php the_title() ?></h1>
+									<h1 class="blog-title" data-animation="fadeInUp" data-delay="0.5s"><?php the_title() ?></h1>
 									<div class="blog-content">
 										<h5 class="blog-date"><?php echo get_the_date() ?></h5>
 										<?php the_excerpt() ?>
@@ -36,7 +36,7 @@
 						<?php } else { ?>
 							<div class="col" style="display: flex; align-items:center;">
 								<div class="blog-element">
-									<h1 class="blog-title"><?php the_title() ?></h1>
+									<h1 class="blog-title" data-animation="fadeInUp" data-delay="0.5s"><?php the_title() ?></h1>
 									<div class="blog-content">
 										<h5 class="blog-date"><?php echo get_the_date() ?></h5>
 										<?php the_excerpt() ?>

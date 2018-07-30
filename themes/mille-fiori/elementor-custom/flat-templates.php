@@ -25,7 +25,7 @@ class Widget_MilleFiori_Templates_Element extends Widget_Base {
 		$this->add_control(
 			'section_blog_posts',
 			[
-				'label' => __( 'Mille Fiori Templates Shortcodes', 'mille-fiori' ),
+				'label' => __( 'Mille Fiori Templates', 'mille-fiori' ),
 				'type'  => Controls_Manager::SECTION,
 			]
 		);

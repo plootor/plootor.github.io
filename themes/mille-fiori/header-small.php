@@ -22,12 +22,14 @@
 		.elementor-widget-button a.elementor-button,
 		.elementor-widget-button .elementor-button,
 		.btn-xl a, .elementor-button a, button.btn-xl,
-		#commentform .submit,
-		#subscribe-form .btn, #contact .contact-btn {
+		#commentform input.submit a,
+		#subscribe-form .btn, #contact .contact-btn,
+		.woocommerce .product .cart .button {
 			background-color: <?php echo theme_get_option( 'button_color' ) ?>;
 			border: 2px solid <?php echo theme_get_option( 'button_color' ) ?>;
 		}
-		.btn-xl a:after, button.btn-xl:after, #commentform .submit:after {
+		.btn-xl a:after, button.btn-xl:after,
+		.woocommerce .product .cart .button:after {
 			background: <?php echo theme_get_option( 'button_hover_color' ) ?>;
 			opacity: .3;
 		}

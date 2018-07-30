@@ -9,6 +9,12 @@ jQuery(document).ready(function () {
 		var $animatingElements = jQuery('div.hero[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
 		doAnimations($animatingElements);
 	});
+	jQuery('.blog-carousel').on('beforeChange', function (e, slick, currentSlide, nextSlide) {
+		var $animatingElements = jQuery('div.item[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
+		doAnimations($animatingElements);
+	});
+
+
 
 	function doAnimations(elements) {
 		var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
