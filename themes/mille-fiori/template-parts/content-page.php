@@ -12,12 +12,12 @@ global $page;
 <article class="modal-content2" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
-	<div class="page-header">
-		<div class="intro-text">
-			<?php the_title( '<h1 class="intro-heading">', '</h1>' ); ?>
-			<div class="intro-separator"></div>
-		</div><!-- .entry-header -->
-	</div>
+<!--	<div class="page-header">-->
+<!--		<div class="intro-text">-->
+<!--			--><?php //the_title( '<h1 class="intro-heading">', '</h1>' ); ?>
+<!--			<div class="intro-separator"></div>-->
+<!--		</div>-->
+<!--	</div>-->
 	<?php the_post_thumbnail( 'big-featured-image' ); ?>
 
 	<div class="entry-content">
