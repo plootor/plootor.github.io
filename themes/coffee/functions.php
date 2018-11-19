@@ -278,9 +278,9 @@ function include_font_awesome() {
 	add_action( 'wp_enqueue_scripts', 'include_fa' );
 }
 
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
-add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 4 );
-
+//remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+//add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 4 );
+//
 
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 25 );
