@@ -229,6 +229,25 @@ if ( class_exists( 'WooCommerce' ) ) {
 }
 
 
+
+/**
+ * Adds a custom read more link to all excerpts, manually or automatically generated
+ *
+ * @param string $post_excerpt Posts's excerpt.
+ *
+ * @return string
+ */
+function wedding_excerpts_get_more_link( $post_excerpt ) {
+
+    return $post_excerpt . '<div class="read-more-button"><a class="btn" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __( 'Read more',
+            'wedding' ) . '</a></div>';
+}
+
+add_filter( 'wp_trim_excerpt', 'wedding_excerpts_get_more_link' );
+
+
+
+
 function my_menu_notitle( $menu ) {
 	return $menu = preg_replace( '/ title="(.*?)"/', '', $menu );
 }

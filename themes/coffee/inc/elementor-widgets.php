@@ -47,6 +47,12 @@ class ElementorAlexanderThemeCustomElements {
 			if ( $widget_file && is_readable( $widget_file ) ) {
 				require_once $widget_file;
 			}
+
+            //Include custom blog element
+            $widget_file = get_template_directory() . '/elementor-custom/blog-element.php';
+            if ( $widget_file && is_readable( $widget_file ) ) {
+                require_once $widget_file;
+            }
 		}
 	}
 
