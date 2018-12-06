@@ -592,7 +592,7 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	font-weight: 700;
-	/*font-family: 'Playfair Display', serif;*/
+	font-family: 'Josefin Sans', Sans-serif;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	line-height: 1.2;
@@ -1128,7 +1128,7 @@ body.elementor-editor-active header {
 }
 
 #quote .blockquote p {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Josefin Sans', Sans-serif;
 	color: #ffffff;
 	font-weight: 400;
 	font-size: 26px;
@@ -1145,7 +1145,7 @@ body.elementor-editor-active header {
 	font-style: normal;
 	color: #ebaca5;
 	padding: 40px 0 0;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Josefin Sans', Sans-serif;
 	text-align: center;
 }
 
@@ -1427,7 +1427,7 @@ body.elementor-editor-active header {
 }
 
 #portfolio-section .grid-item .portfolio-cell h3 {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Josefin Sans', Sans-serif;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: none;
@@ -1918,7 +1918,7 @@ figure.effect-layla:hover h3 {
 }
 
 #comments .comment-author {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Josefin Sans', Sans-serif;
 	letter-spacing: 1px;
 }
 
@@ -2082,7 +2082,7 @@ ul.children {
 
 .blog-post-title {
 	text-align: center;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Josefin Sans', Sans-serif;
 	margin: 0 70px;
 	text-transform: unset;
 	letter-spacing: 1px;
@@ -2093,11 +2093,11 @@ ul.children {
 .fullwidth-content h2,
 .fullwidth-content h3,
 .fullwidth-content h4 {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Josefin Sans', Sans-serif;
 }
 
 .blockquote-conten {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Josefin Sans', Sans-serif;
 	color: #000000;
 	font-weight: 400;
 	font-size: 17px;
@@ -2147,7 +2147,7 @@ ul.children {
 	text-transform: none;
 	letter-spacing: 1px;
 	margin: 10px 0 20px;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Josefin Sans', Sans-serif;
 }
 
 .nav-links a {
@@ -2588,7 +2588,7 @@ ul.social-buttons li {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	text-align: center;
-	font-family: 'Lato';
+	font-family: 'Josefin Sans', Sans-serif;
 	font-weight: 300;
 	font-size: 1.1rem;
 }
@@ -2672,7 +2672,7 @@ ul.social-buttons li {
 	margin-bottom: 10px;
 	text-align: center;
 	letter-spacing: 2px;
-	font-family: 'Lato';
+	font-family: 'Josefin Sans', Sans-serif;
 	font-weight: 300;
 	text-transform: capitalize;
 }
