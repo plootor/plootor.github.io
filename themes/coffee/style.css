@@ -841,6 +841,10 @@ button.btn-xl:hover:after, input#submit:hover:after,
 	height: 350px;
 }
 
+.shop-header #masthead {
+	margin-top: 90px;
+}
+
 .small-header-image {
 	height: 100%;
 	background-size: cover;
@@ -1187,10 +1191,10 @@ body.elementor-editor-active header {
 	height: 50px;
 	border-radius: 0;
 	border: 0;
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid #4e4e4e;
 	box-shadow: none;
 	background-color: transparent;
-	color: #ffffff !important;
+	color: #4e4e4e !important;
 	letter-spacing: 1px;
 	font-weight: 400;
 	font-size: 12px;
@@ -1198,15 +1202,15 @@ body.elementor-editor-active header {
 }
 
 #contact ::-webkit-input-placeholder {
-	color: #ffffff !important;
+	color: #4e4e4e !important;
 }
 
 #contact ::-moz-placeholder {
-	color: #ffffff !important;
+	color: #4e4e4e !important;
 }
 
 #contact :-ms-input-placeholder {
-	color: #ffffff !important;
+	color: #4e4e4e !important;
 }
 
 #contact .contact-btn {
@@ -1770,6 +1774,10 @@ figure.effect-layla:hover h3 {
 
 #page-container {
 	padding: 100px 0 50px;
+}
+
+.home #page-container {
+	padding-bottom: 0;
 }
 
 .woocommerce-page #page-container {

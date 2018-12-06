@@ -87,15 +87,8 @@ if ( theme_get_option( 'millefiori_page_animation' ) == 'on' ): ?>
 			</div>
 		</div>
 	</nav>
-	<?php if (class_exists( 'WooCommerce' ) && is_woocommerce()): ?>
-		<div class="text-container">
-			<div class="container">
-				<div class="intro-text">
-					<h1 class="intro-heading">Shop</h1>
-					<div class="intro-separator"></div>
-				</div>
-			</div>
-		</div>
-	<?php endif; ?>
+	<?php if (class_exists( 'WooCommerce' ) && is_woocommerce() && function_exists( 'hfe_render_footer' )) {
+		hfe_render_header();
+	} ?>
 </header>
 
