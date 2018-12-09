@@ -643,6 +643,13 @@ figure.woocommerce-product-gallery__wrapper {
 	width: 100%;
 }
 
+.woocommerce-loop-product__title .fa {
+	float: right;
+	font-size: 1.2rem;
+	margin-top: -5px;
+	color: #c6ad8f;
+}
+
 .woocommerce-product-details__short-description p {
 	margin-bottom: 15px;
 	color: #6f7071;
@@ -1299,6 +1306,7 @@ display: none;
 .woocommerce ul.products li.product .price {
 	color: #9fa1a9;
 	font-size: 1rem;
-	font-family: "Josefin Sans", Sans-serif;;
+	font-family: "Josefin Sans", Sans-serif;
+	font-size: 14px;
 }
 

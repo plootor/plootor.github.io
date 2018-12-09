@@ -303,3 +303,25 @@ function include_font_awesome() {
 
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 25 );
+
+//add_filter( 'woocommerce_product_add_to_cart_text', 'bbloomer_add_symbol_add_cart_button_single' );
+//
+//function bbloomer_add_symbol_add_cart_button_single( $button ) {
+//    $button_new = '<i class="fa fa-shopping-bag" aria-hidden="true"></i>';
+//    return $button_new;
+//}
+//
+//add_filter( 'woocommerce_shop_loop_item_title', 'add_symbol_title' );
+//function add_symbol_title( $button ) {
+//    $button_new = '<i class="fa fa-shopping-bag" aria-hidden="true"></i>';
+//    return $button_new;
+//}
+
+
+remove_action('woocommerce_shop_loop_item_title','woocommerce_template_loop_product_title',10);
+add_action('woocommerce_shop_loop_item_title','woocommerce_template_loop_product_title2',10);
+function woocommerce_template_loop_product_title2() {
+    echo '<h2 class="woocommerce-loop-product__title">' . get_the_title() . '<i class="fa fa-shopping-bag" aria-hidden="true"></i></h2>';
+}
+
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart' );
