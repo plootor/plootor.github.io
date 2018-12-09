@@ -1191,7 +1191,7 @@ body.elementor-editor-active header {
 	height: 50px;
 	border-radius: 0;
 	border: 0;
-	border-bottom: 2px solid #4e4e4e;
+	border-bottom: 1px solid #4e4e4e;
 	box-shadow: none;
 	background-color: transparent;
 	color: #4e4e4e !important;
@@ -1214,10 +1214,16 @@ body.elementor-editor-active header {
 }
 
 #contact .contact-btn {
-	padding: 10px 30px;
-	color: #fff;
-	margin-top: 70px;
+	font-family: "Josefin Sans", Sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #f5f0ea;
+	background-color: #c6ad8f;
+	margin-top: 20px;
+	line-height: 13px;
 	font-size: 13px;
+	padding: 10px 25px;
 }
 
 #contact .form-group.submit {

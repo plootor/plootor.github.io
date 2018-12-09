@@ -10,7 +10,7 @@
  */
 
 if ( function_exists( 'hfe_render_footer' ) ) {
-    hfe_render_header();
+    hfe_render_footer();
 }
 wp_footer();
 ?>
