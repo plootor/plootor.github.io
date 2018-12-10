@@ -24,9 +24,10 @@
 		.btn-xl a, .elementor-button a, button.btn-xl,
 		#commentform input.submit a,
 		#subscribe-form .btn, #contact .contact-btn,
-		.woocommerce .product .cart .button {
+		.woocommerce .product .cart .button,
+		.form-submit>.submit {
 			background-color: <?php echo theme_get_option( 'button_color' ) ?>;
-			border: 2px solid <?php echo theme_get_option( 'button_color' ) ?>;
+			border: 1px solid <?php echo theme_get_option( 'button_color' ) ?>;
 		}
 		.btn-xl a:after, button.btn-xl:after,
 		.woocommerce .product .cart .button:after {

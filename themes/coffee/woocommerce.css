@@ -632,11 +632,12 @@ figure.woocommerce-product-gallery__wrapper {
 
 .woocommerce .product .cart .quantity input {
 	padding: 10px;
-	line-height: 15px;
+	line-height: 13px;
 	font-size: 13px;
 	box-sizing: border-box;
 	border: 1px solid #bec2cd;
 	margin-right: 20px;
+	height: 35px;
 }
 
 .woocommerce .product .images .flex-control-thumbs {
@@ -1310,3 +1311,6 @@ display: none;
 	font-size: 14px;
 }
 
+.woocommerce div.product form.cart .button {
+	margin-top: 0;
+}

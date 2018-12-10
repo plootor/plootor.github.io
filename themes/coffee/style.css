@@ -611,45 +611,45 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-.btn-xl a:hover:after, .btn-xl a:active:after,
-button.btn-xl:hover:after, input#submit:hover:after,
-.woocommerce .product .cart .button:hover:after {
-	width: 100%;
-}
+/*.btn-xl a:hover:after, .btn-xl a:active:after,*/
+/*button.btn-xl:hover:after, input#submit:hover:after,*/
+/*.woocommerce .product .cart .button:hover:after {*/
+	/*width: 100%;*/
+/*}*/
 
-.btn-xl a:after, button.btn-xl:after, .woocommerce .product .cart .button:after {
-	content: '';
-	position: absolute;
-	width: 0%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
+/*.btn-xl a:after, button.btn-xl:after, .woocommerce .product .cart .button:after {*/
+	/*content: '';*/
+	/*position: absolute;*/
+	/*width: 0%;*/
+	/*height: 100%;*/
+	/*top: 0;*/
+	/*left: 0;*/
+	/*-webkit-transition: all 0.3s;*/
+	/*-moz-transition: all 0.3s;*/
+	/*transition: all 0.3s;*/
+/*}*/
 
-.submit:after {
-	content: '';
-	position: absolute;
-	width: 0%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
+/*.submit:after {*/
+	/*content: '';*/
+	/*position: absolute;*/
+	/*width: 0%;*/
+	/*height: 100%;*/
+	/*top: 0;*/
+	/*left: 0;*/
+	/*-webkit-transition: all 0.3s;*/
+	/*-moz-transition: all 0.3s;*/
+	/*transition: all 0.3s;*/
+/*}*/
 
-.elementor-widget-button a.elementor-button,
-.elementor-widget-button .elementor-button,
-.btn-xl a, .elementor-button a, button.btn-xl,
-#commentform input.submit a,
-#subscribe-form .btn, #contact .contact-btn, #commentform input.submit {
-	border: 0;
-	color: #fff;
-	position: relative;
-}
+/*.elementor-widget-button a.elementor-button,*/
+/*.elementor-widget-button .elementor-button,*/
+/*.btn-xl a, .elementor-button a, button.btn-xl,*/
+/*#commentform input.submit a,*/
+/*#subscribe-form .btn, #contact .contact-btn, #commentform input.submit {*/
+	/*border: 0;*/
+	/*color: yellow;*/
+	/*position: relative;*/
+/*}*/
 
 
 .mobile-order-first {
@@ -1213,17 +1213,27 @@ body.elementor-editor-active header {
 	color: #4e4e4e !important;
 }
 
-#contact .contact-btn {
-	font-family: "Josefin Sans", Sans-serif;
+#contact .contact-btn,
+.elementor-button,
+.form-submit>.submit,
+.woocommerce div.product form.cart .button {
+	font-family: "Josefin Sans", Sans-serif !important;
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #f5f0ea;
-	background-color: #c6ad8f;
+	color: #f5f0ea !important;
 	margin-top: 20px;
-	line-height: 13px;
+	line-height: 13px !important;
 	font-size: 13px;
-	padding: 10px 25px;
+	padding: 10px 25px !important;
+}
+
+#contact .contact-btn:hover,
+.elementor-button:hover,
+.form-submit>.submit:hover,
+.woocommerce div.product form.cart .button:hover {
+	color: #c6ad8f !important;
+	background-color: #f5f0ea !important;
 }
 
 #contact .form-group.submit {
@@ -1989,19 +1999,19 @@ figure.effect-layla:hover h3 {
 
 
 
-#commentform .form-submit:after {
-	background: #ffffff;
-	opacity: .3;
-	content: '';
-	position: absolute;
-	width: 0%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
+/*#commentform .form-submit:after {*/
+	/*background: #ffffff;*/
+	/*opacity: .3;*/
+	/*content: '';*/
+	/*position: absolute;*/
+	/*width: 0%;*/
+	/*height: 100%;*/
+	/*top: 0;*/
+	/*left: 0;*/
+	/*-webkit-transition: all 0.3s;*/
+	/*-moz-transition: all 0.3s;*/
+	/*transition: all 0.3s;*/
+/*}*/
 
 #commentform p {
 	margin-bottom: 1rem;
@@ -2011,8 +2021,8 @@ figure.effect-layla:hover h3 {
 #commentform .form-submit {
 	margin-top: 15px;
 	display: inline-block;
-	position: relative;
-	border: 2px solid #ebaca5;
+	/*position: relative;*/
+	/*border: 2px solid #ebaca5;*/
 }
 
 #commentform .form-submit:hover:after {
