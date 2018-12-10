@@ -1224,8 +1224,9 @@ body.elementor-editor-active header {
 	color: #f5f0ea !important;
 	margin-top: 20px;
 	line-height: 13px !important;
-	font-size: 13px;
+	font-size: 13px !important;
 	padding: 10px 25px !important;
+	border-radius: 0 !important;
 }
 
 #contact .contact-btn:hover,
@@ -2096,13 +2097,21 @@ ul.children {
 	font-weight: 400;
 }
 
-.blog-post-title {
+/*.blog-title {*/
+	/*margin-bottom: 10px;*/
+	/*text-align: center;*/
+	/*letter-spacing: 2px;*/
+	/*font-family: 'Josefin Sans', Sans-serif;*/
+	/*font-weight: 300;*/
+	/*text-transform: capitalize;*/
+/*}*/
+
+.blog-post-title, .blog-title {
 	text-align: center;
 	font-family: 'Josefin Sans', Sans-serif;
-	margin: 0 70px;
-	text-transform: unset;
-	letter-spacing: 1px;
-	font-weight: 400;
+	margin: 0 100px;
+	font-weight: 300;
+	line-height: 1.4;
 }
 
 .fullwidth-content h1,
@@ -2684,14 +2693,7 @@ ul.social-buttons li {
 	margin: 0;
 }
 
-.blog-title {
-	margin-bottom: 10px;
-	text-align: center;
-	letter-spacing: 2px;
-	font-family: 'Josefin Sans', Sans-serif;
-	font-weight: 300;
-	text-transform: capitalize;
-}
+
 
 .blog-navigation {
 	display: flex;
