@@ -25,6 +25,7 @@
 		#commentform input.submit a,
 		#subscribe-form .btn, #contact .contact-btn,
 		.woocommerce .product .cart .button,
+		.read-more-button>.btn,
 		.form-submit>.submit {
 			background-color: <?php echo theme_get_option( 'button_color' ) ?>;
 			border: 1px solid <?php echo theme_get_option( 'button_color' ) ?> !important;
