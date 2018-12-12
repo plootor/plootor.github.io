@@ -2842,11 +2842,6 @@ ul.social-buttons li {
 		flex-direction: column;
 	}
 
-	.navbar.affix-top {
-		background: rgba(241, 245, 249, .75);
-		margin-top: 0;
-	}
-
 	.header-slider h1 {
 		font-size: 30px;
 		line-height: 45px;
@@ -2881,7 +2876,7 @@ ul.social-buttons li {
 	}
 
 	.navbar.affix-top {
-		background: rgba(241, 245, 249, 0.75);
+		background: #fcfcfc;
 		margin-top: 0;
 	}
 
@@ -3155,7 +3150,7 @@ ul.social-buttons li {
 	}
 
 	.navbar.affix {
-		background-color: rgba(247, 247, 247, 1);
+		background-color: #fcfcfc;
 	}
 
 	.navbar-expand-md .navbar-collapse, .logo-section-section {
@@ -3189,7 +3184,7 @@ ul.social-buttons li {
 	}
 
 	.navbar.affix-top {
-		background-color: rgba(247, 247, 247, 0.75);
+		background-color: #fcfcfc;
 		padding: 0;
 		height: auto;
 	}
