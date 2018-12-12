@@ -1214,6 +1214,7 @@ body.elementor-editor-active header {
 }
 
 #contact .contact-btn,
+.read-more-button>.btn,
 .elementor-button,
 .form-submit>.submit,
 .woocommerce div.product form.cart .button {
@@ -2632,13 +2633,12 @@ ul.social-buttons li {
 	margin-bottom: 50px;
 }
 
-.list-container .blog-cell:last-child {
-	margin-bottom: 0;
-}
-
 .list-container .blog-cell {
 	margin-bottom: 30px;
-	border-bottom: 1px solid #e5e6e8;
+}
+
+.list-container .blog-cell:last-child {
+	margin-bottom: 0;
 }
 
 .list-container .blog-by {
@@ -2656,7 +2656,7 @@ ul.social-buttons li {
 
 .list-container .blog-image-cell {
 	position: relative;
-	height: 300px;
+	height: 400px;
 	padding: 0;
 }
 
@@ -2687,7 +2687,7 @@ ul.social-buttons li {
 	font-weight: 300;
 	font-size: .9rem;
 	color: #caac8b;
-	padding: 0 0 20px;
+	padding: 5px 0 30px;
 	text-transform: none;
 	margin: 0;
 }
