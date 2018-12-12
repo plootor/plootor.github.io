@@ -1233,7 +1233,8 @@ body.elementor-editor-active header {
 #contact .contact-btn:hover,
 .elementor-button:hover,
 .form-submit>.submit:hover,
-.woocommerce div.product form.cart .button:hover {
+.woocommerce div.product form.cart .button:hover,
+.read-more-button>.btn:hover {
 	color: #c6ad8f !important;
 	background-color: #f5f0ea !important;
 }
@@ -1689,6 +1690,10 @@ figure.effect-layla:hover h3 {
 #blog-section .blog-text {
 	text-align: center;
 	margin: 0 10px 10px;
+}
+
+#blog-section .blog-text p {
+	text-indent: 30px;
 }
 
 #blog-section .blog-element {
@@ -2642,11 +2647,11 @@ ul.social-buttons li {
 }
 
 .list-container .blog-by {
-	font-weight: 500;
-	font-size: 0.8rem;
-	color: #bec2cd;
-	padding: 30px 40px 10px;
+	font-weight: 300;
+	font-size: 0.9rem;
+	padding: 30px 30px 0;
 	text-transform: none;
+	font-style: italic;
 }
 
 .list-container .blog-info-cell {

@@ -264,7 +264,7 @@ add_filter( 'wp_list_pages', 'my_menu_notitle' );
  * Filter the except length to 50 words.
  */
 add_filter( 'excerpt_length', function () {
-	return 50;
+	return 60;
 }, 999 );
 
 
