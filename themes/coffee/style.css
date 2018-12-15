@@ -832,6 +832,15 @@ h1, h2, h3, h4, h5, h6 {
 	height: 350px;
 }
 
+.small-header-fullwidthpost {
+	height: 100px;
+}
+
+.full-width-post-image {
+	height: 500px; background-size: cover;
+	background-position: center;
+}
+
 .single-post .single-header {
 	height: 600px;
 	padding-top: 130px;
@@ -1692,7 +1701,7 @@ figure.effect-layla:hover h3 {
 	margin: 0 10px 10px;
 }
 
-#blog-section .blog-text p {
+.blog-text p {
 	text-indent: 30px;
 }
 
@@ -2116,7 +2125,7 @@ ul.children {
 	text-align: center;
 	font-family: 'Josefin Sans', Sans-serif;
 	margin: 0 100px;
-	font-weight: 300;
+	/*font-weight: 300;*/
 	line-height: 1.4;
 }
 

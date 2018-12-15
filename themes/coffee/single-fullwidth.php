@@ -3,19 +3,22 @@
  * Template Name: Blog Post Full
  * Template Post Type: post, page, product
  */
-get_header( 'small' );
+get_header( 'small-fullwidth' );
 ?>
 
 <!-- Blog Post Section -->
 <section id="blog-post" class="visible-over">
 	<div class="container">
-		<div class="row pos-r">
-			<div class="col-12 col-md-12 col-lg-12">
+		<div class="row pos-r justify-content-center">
+			<div class="col-12 col-md-10 col-lg-10">
 				<!-- Start the Loop. -->
           <?php if ( have_posts() ) : while ( have_posts() ) :
           the_post(); ?>
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="post_content single_post_content">
+
+						<div class="full-width-post-image"
+							style="background-image: url('<?php echo get_the_post_thumbnail_url(null, 'big-featured-image'); ?>');"></div>
 
 						<h5 class="blog-post-details"><?php echo get_the_time( 'F j, Y' ) ?> -
                 <?php the_category( ', ' ); ?><!--Travel, Lifestyle--></h5>

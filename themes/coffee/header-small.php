@@ -37,7 +37,6 @@
 		}
 	</style>
 </head>
-
 <body id="page-top" <?php body_class(); ?>>
 <?php
 if ( theme_get_option( 'millefiori_page_animation' ) == 'on' ) { ?>
@@ -85,8 +84,11 @@ if (is_single()) {
 			</div>
 		</div>
 	</nav>
-	<div class="<?php echo is_single() ? 'container' : ''; ?> small-header-image"
-			 <?php if ($header_image_url): ?>style="background-image: url('<?php echo $header_image_url; ?>');"<?php endif; ?>></div>
+
+		<div class="<?php echo is_single() ? 'container' : ''; ?> small-header-image"
+				 <?php if ($header_image_url): ?>style="background-image: url('<?php echo $header_image_url; ?>');"<?php endif; ?>>
+		</div>
+
 	<?php $data = get_the_archive_title();
 	if ( $data && strpos( $data, ":" ) ) {
 		$title = substr( $data, strpos( $data, ":" ) + 2 );
