@@ -168,16 +168,44 @@ class Wedding_Testimonial_Carousel extends Widget_Base {
 
 	protected function render( $instance = [] ) {
 		$content = '<div class="testimonial-carousel slick-carousel" '
-		           . 'data-slick=\'{"autoplaySpeed": 6000, "slidesToShow": 1, "dots": false, "responsive": [{"breakpoint": 800, "settings": {"slidesToShow": 1, "slidesToScroll": 1}}]}\'>';
+		           . 'data-slick=\'{"autoplaySpeed": 4000, "slidesToShow": 1, "dots": true, "responsive": [{"breakpoint": 800, "settings": {"slidesToShow": 1, "slidesToScroll": 1}}]}\'>';
 		for ( $i = 1; $i <= 3; $i ++ ) {
 			$image   = $this->get_settings( 'testimonial_image' . $i );
-			$content .= '<div class="item">' . PHP_EOL
-			            . '<div class="testimonial-cell">' . PHP_EOL
-			            . '<img alt="' . $this->get_settings( 'testimonial_job' . $i ) . '" src="' . $image['url'] . '" >' . PHP_EOL
-			            . '<p class="testimonial-commment">' . $this->get_settings( 'testimonial_content' . $i ) . '</p>' . PHP_EOL
-			            . '<p class="testimonial-name"> - ' . $this->get_settings( 'testimonial_job' . $i ) . ' - </p>' . PHP_EOL
-			            . '</div>' . PHP_EOL
-			            . '</div>';
+			if ($i%2==0) {
+          $content .= '<div class="container-fluid no-gutter">
+					<div class="row no-gutter">
+							<div class="semi-cell col-7 col-md-7 col-lg-7">
+									<div class="testimonial-text"><div class="testimonial-text-box">
+										<span class="testimonial-icon"><i class="fa fa-comments-o" aria-hidden="true"></i></span>
+										<p>' . $this->get_settings( 'testimonial_content' . $i ) . '</p>
+										<h5>' . $this->get_settings( 'testimonial_job' . $i ) . '</h5>
+									</div>
+									</div>
+							</div>
+							<div class="semi-cell testimonial-image col-5 col-md-5 col-lg-5">
+									<div class="testimonial-image" style="background-image: url(' . $image['url'] . ')"></div>
+							</div>
+					</div>
+					</div>';
+			} else {
+          $content .= '<div class="container-fluid no-gutter">
+					<div class="row no-gutter">
+							<div class="semi-cell testimonial-image col-5 col-md-5 col-lg-5">
+									<div class="testimonial-image" style="background-image: url(' . $image['url'] . ')"></div>
+							</div>
+							<div class="semi-cell col-7 col-md-7 col-lg-7">
+									<div class="testimonial-text"><div class="testimonial-text-box">
+										<span class="testimonial-icon"><i class="fa fa-comments-o" aria-hidden="true"></i></span>
+										<p>' . $this->get_settings( 'testimonial_content' . $i ) . '</p>
+										<h5>' . $this->get_settings( 'testimonial_job' . $i ) . '</h5>
+									</div>
+									</div>
+							</div>
+					</div>
+					</div>';
+			}
+
+
 		}
 		$content .= '</div>';
 		echo $content;
@@ -185,3 +213,16 @@ class Wedding_Testimonial_Carousel extends Widget_Base {
 }
 
 Plugin::instance()->widgets_manager->register_widget_type( new Wedding_Testimonial_Carousel );
+?>
+<!---->
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        <div class="col-5 col-md-5 col-lg-5">-->
+<!--            <div class="testimonial-image" style="background-image: url(\'\')"></div>-->
+<!--        </div>-->
+<!--        <div class="col-7 col-md-7 col-lg-7">-->
+<!--            <p> $this->get_settings( 'testimonial_content' . $i ) </p>-->
+<!--            <h5> $this->get_settings( 'testimonial_job' . $i ) </h5>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->

@@ -715,7 +715,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .slick-dots li button:before {
 	font-family: 'slick';
-	font-size: 40px;
+	font-size: 55px;
 	line-height: 20px;
 	position: absolute;
 	top: 0;
@@ -725,7 +725,7 @@ h1, h2, h3, h4, h5, h6 {
 	content: '•';
 	text-align: center;
 	opacity: .5;
-	color: white;
+	color: #c6ad8f;
 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -2721,6 +2721,46 @@ ul.social-buttons li {
 	color: #bec2cd;
 }
 
+.testimonial-image {
+	height: 500px;
+	background-size: cover;
+}
+
+/*.testimonial-image {*/
+	/*padding-right: 30px !important;*/
+	/*padding-left: 0 !important;*/
+/*}*/
+.testimonial-text {
+	padding: 0 150px;
+	background-color: #f5f0ea;
+	text-align: center;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.testimonial-text p {
+	font-style: italic;
+	margin-bottom: 20px;
+}
+
+.testimonial-icon {
+	color: #c6ad8f;
+	border-color: #c6ad8f;
+	font-size: 50px;
+}
+
+.no-gutter.row,
+.no-gutter.container,
+.no-gutter.container-fluid {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.no-gutter .semi-cell {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
 
 
 /* responsive unstructured */
