@@ -839,6 +839,7 @@ h1, h2, h3, h4, h5, h6 {
 .full-width-post-image {
 	height: 500px; background-size: cover;
 	background-position: center;
+	margin-bottom: 50px;
 }
 
 .single-post .single-header {
@@ -2103,14 +2104,14 @@ ul.children {
 /*border-bottom: 1px solid #e5e6e8;*/
 /*}*/
 
-.blog-post-details {
-	text-transform: none;
-	text-align: center;
-	font-size: 13px;
-	color: #bec2cd;
-	margin: 15px 0;
-	font-weight: 400;
-}
+/*.blog-post-details {*/
+	/*text-transform: none;*/
+	/*text-align: center;*/
+	/*font-size: 13px;*/
+	/*color: #bec2cd;*/
+	/*margin: 15px 0;*/
+	/*font-weight: 400;*/
+/*}*/
 
 /*.blog-title {*/
 	/*margin-bottom: 10px;*/
@@ -2696,7 +2697,7 @@ ul.social-buttons li {
 	text-align: center;
 }
 
-.blog-date {
+.blog-date, .blog-post-details {
 	text-align: center;
 	font-weight: 300;
 	font-size: .9rem;
@@ -2709,7 +2710,7 @@ ul.social-buttons li {
 .blog-navigation {
 	display: flex;
 	justify-content: center;
-	margin-top: 40px;
+	/*margin-top: 40px;*/
 }
 
 .blog-navigation .page-numbers {
