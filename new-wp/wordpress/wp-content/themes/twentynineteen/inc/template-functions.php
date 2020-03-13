@@ -86,7 +86,7 @@ function twentynineteen_get_the_archive_title() {
 		$title = __( 'Post Type Archives: ', 'twentynineteen' ) . '<span class="page-description">' . post_type_archive_title( '', false ) . '</span>';
 	} elseif ( is_tax() ) {
 		$tax = get_taxonomy( get_queried_object()->taxonomy );
-		/* translators: %s: Taxonomy singular name */
+		/* translators: %s: Taxonomy singular name. */
 		$title = sprintf( esc_html__( '%s Archives:', 'twentynineteen' ), $tax->labels->singular_name );
 	} else {
 		$title = __( 'Archives:', 'twentynineteen' );
@@ -106,10 +106,7 @@ function twentynineteen_can_show_post_thumbnail() {
  * Returns true if image filters are enabled on the theme options.
  */
 function twentynineteen_image_filters_enabled() {
-	if ( get_theme_mod( 'image_filter', 1 ) ) {
-		return true;
-	}
-	return false;
+	return 0 !== get_theme_mod( 'image_filter', 1 );
 }
 
 /**
@@ -205,24 +202,25 @@ function twentynineteen_add_ellipses_to_nav( $nav_menu, $args ) {
 
 	if ( 'menu-1' === $args->theme_location ) :
 
-		$nav_menu .= '<div class="main-menu-more">';
-		$nav_menu .= '<ul class="main-menu" tabindex="0">';
-		$nav_menu .= '<li class="menu-item menu-item-has-children">';
-		$nav_menu .= '<a href="#" class="screen-reader-text" aria-label="More" aria-haspopup="true" aria-expanded="false">' . esc_html__( 'More', 'twentynineteen' ) . '</a>';
-		$nav_menu .= '<span class="submenu-expand main-menu-more-toggle is-empty" tabindex="-1">';
-		$nav_menu .= twentynineteen_get_icon_svg( 'arrow_drop_down_ellipsis' );
-		$nav_menu .= '</span>';
-		$nav_menu .= '<ul class="sub-menu hidden-links">';
-		$nav_menu .= '<li id="menu-item--1" class="mobile-parent-nav-menu-item menu-item--1">';
-		$nav_menu .= '<span class="menu-item-link-return">';
-		$nav_menu .= twentynineteen_get_icon_svg( 'chevron_left' );
-		$nav_menu .= esc_html__( 'Back', 'twentynineteen' );
-		$nav_menu .= '</span>';
-		$nav_menu .= '</li>';
-		$nav_menu .= '</ul>';
-		$nav_menu .= '</li>';
-		$nav_menu .= '</ul>';
-		$nav_menu .= '</div>';
+		$nav_menu .= '
+			<div class="main-menu-more">
+				<ul class="main-menu">
+					<li class="menu-item menu-item-has-children">
+						<button class="submenu-expand main-menu-more-toggle is-empty" tabindex="-1"
+							aria-label="' . esc_attr__( 'More', 'twentynineteen' ) . '" aria-haspopup="true" aria-expanded="false">' .
+							twentynineteen_get_icon_svg( 'arrow_drop_down_ellipsis' ) . '
+						</button>
+						<ul class="sub-menu hidden-links">
+							<li class="mobile-parent-nav-menu-item">
+								<button class="menu-item-link-return">' .
+									twentynineteen_get_icon_svg( 'chevron_left' ) .
+									esc_html__( 'Back', 'twentynineteen' ) . '
+								</button>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>';
 
 	endif;
 
@@ -272,11 +270,11 @@ function twentynineteen_add_dropdown_icons( $output, $item, $depth, $args ) {
 		// Inject the keyboard_arrow_left SVG inside the parent nav menu item, and let the item link to the parent item.
 		// @todo Only do this for nested submenus? If on a first-level submenu, then really the link could be "#" since the desire is to remove the target entirely.
 		$link = sprintf(
-			'<span class="menu-item-link-return" tabindex="-1">%s',
+			'<button class="menu-item-link-return" tabindex="-1">%s',
 			twentynineteen_get_icon_svg( 'chevron_left', 24 )
 		);
 
-		// replace opening <a> with <span>
+		// replace opening <a> with <button>
 		$output = preg_replace(
 			'/<a\s.*?>/',
 			$link,
@@ -284,10 +282,10 @@ function twentynineteen_add_dropdown_icons( $output, $item, $depth, $args ) {
 			1 // Limit.
 		);
 
-		// replace closing </a> with </span>
+		// replace closing </a> with </button>
 		$output = preg_replace(
 			'#</a>#i',
-			'</span>',
+			'</button>',
 			$output,
 			1 // Limit.
 		);
@@ -298,7 +296,7 @@ function twentynineteen_add_dropdown_icons( $output, $item, $depth, $args ) {
 		$icon = twentynineteen_get_icon_svg( 'keyboard_arrow_down', 24 );
 
 		$output .= sprintf(
-			'<span class="submenu-expand" tabindex="-1">%s</span>',
+			'<button class="submenu-expand" tabindex="-1">%s</button>',
 			$icon
 		);
 	}
@@ -364,14 +362,14 @@ function twentynineteen_hsl_hex( $h, $s, $l, $to_hex = true ) {
 		$mid1;
 		$mid2;
 
-		$m = $l + $l - $v;
-		$sv = ( $v - $m ) / $v;
-		$h *= 6.0;
+		$m       = $l + $l - $v;
+		$sv      = ( $v - $m ) / $v;
+		$h      *= 6.0;
 		$sextant = floor( $h );
-		$fract = $h - $sextant;
-		$vsf = $v * $sv * $fract;
-		$mid1 = $m + $vsf;
-		$mid2 = $v - $vsf;
+		$fract   = $h - $sextant;
+		$vsf     = $v * $sv * $fract;
+		$mid1    = $m + $vsf;
+		$mid2    = $v - $vsf;
 
 		switch ( $sextant ) {
 			case 0:
@@ -418,8 +416,7 @@ function twentynineteen_hsl_hex( $h, $s, $l, $to_hex = true ) {
 
 		return "#$r$g$b";
 
-	} else {
-
-		return "rgb($r, $g, $b)";
 	}
+
+	return "rgb($r, $g, $b)";
 }
